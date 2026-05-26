@@ -1,0 +1,922 @@
+[
+  {
+    "tag": "input",
+    "id": "metodo",
+    "name": "metodo",
+    "type": "hidden",
+    "value": "apresentar",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "acao",
+    "name": "acao",
+    "type": "hidden",
+    "value": "",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "resumoFormacao",
+    "name": "resumoFormacao",
+    "type": "hidden",
+    "value": "",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "resumoAtividade",
+    "name": "resumoAtividade",
+    "type": "hidden",
+    "value": "",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "resumoAtuacao",
+    "name": "resumoAtuacao",
+    "type": "hidden",
+    "value": "",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "resumoProducao",
+    "name": "resumoProducao",
+    "type": "hidden",
+    "value": "",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "resumoPesquisador",
+    "name": "resumoPesquisador",
+    "type": "hidden",
+    "value": "",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "resumoIdioma",
+    "name": "resumoIdioma",
+    "type": "hidden",
+    "value": "",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "resumoPresencaDGP",
+    "name": "resumoPresencaDGP",
+    "type": "hidden",
+    "value": "",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "resumoModalidade",
+    "name": "resumoModalidade",
+    "type": "hidden",
+    "value": "",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "modoIndAdhoc",
+    "name": "modoIndAdhoc",
+    "type": "hidden",
+    "value": "",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "buscaAvancada",
+    "name": "buscaAvancada",
+    "type": "hidden",
+    "value": "0",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "token-recaptchar",
+    "name": "gRecaptcharesponse",
+    "type": "hidden",
+    "value": "",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "buscaNome",
+    "name": "filtros.buscaNome",
+    "type": "checkbox",
+    "value": "true",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "buscaAssunto",
+    "name": "filtros.buscaAssunto",
+    "type": "checkbox",
+    "value": "true",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "textoBusca",
+    "name": "textoBusca",
+    "type": "text",
+    "value": "",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "buscarDoutores",
+    "name": "buscarDoutores",
+    "type": "checkbox",
+    "value": "true",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "buscarDemais",
+    "name": "buscarDemais",
+    "type": "checkbox",
+    "value": "true",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "buscarBrasileiros",
+    "name": "buscarBrasileiros",
+    "type": "checkbox",
+    "value": "true",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "buscarEstrangeiros",
+    "name": "buscarEstrangeiros",
+    "type": "checkbox",
+    "value": "true",
+    "text": ""
+  },
+  {
+    "tag": "select",
+    "id": "paisNascimento",
+    "name": "paisNascimento",
+    "type": null,
+    "value": null,
+    "text": "Todos Afeganistão África do Sul Albânia Alemanha Andorra Angola Antartida Antigua Antilhas Holandesas Arábia Saudita Argélia Argentina Armênia Austrália Austria Azerbaijão Bahamas Bangladesh Barbados Barein Belarus Bélgica Belize Benin Bermudas Myanmar Bolívia Bósnia Botsuana Britsh Indian Ocean Brunei Bulgária Burkina Fasso Burundi Butão Cabo Verde Camarões Camboja Canadá Catar Cazaquistão Chade Chile China Chipre Christmas Island Cingapura Colômbia Comores Congo Coréia do Norte Coréia do Sul Costa do Marfim Costa Rica Croácia Cuba Dinamarca Djibuti Dominica Egito El Salvador Emirados Árabes Equador Escócia Eslováquia Eslovênia Espanha Estados Unidos Estônia Etiópia Fiji Filipinas Finlândia Formosa França Gabão Gales Gâmbia Gana Geórgia Gibraltar Grã-Bretanha Granada Grécia Groênlandia Guadalupe Guam Guatemala Guiana Guiana Francesa Guiné Guiné Bissau Guiné Equatorial Haitii Holanda Honduras Hong Kong Hungria Iêmem Iêmen do Sul Ilhas Cayman Ilhas Cocoss Ilhas Cook Ilhas Falkland Ilhas Faroe Ilhas Midway Ilhas Norfolk Ilhas Salamão Ilhas Santa Helena Ilhas Turcas Caicos Ilhas Vírgens EUA Ilhas Vírgens GBR Ilhas Wake Ilhas Wallis Futuna Índia Indonésia Inglaterra Irã Iraque Irlanda Irlanda do Norte Islândia Israel Itália Iugoslávia Jamaica Japão Jordânia Kiribati Kuweit Laos Lesoto Letônia Líbano Libéria Líbia Liechtenstein Lituânia Luxemburgo Macau Madagascar Malásia Malavi Maldivas Mali Malta Marrocos Martinica Maurício Mauritânia México Mianmar Micronésia Moçambique Moldova Mônaco Mongólia Montserrat Namíbia Nauru Nepal Nicarágua Niger Nigéria Niue Noruega Nova Caledônia Nova Zelândia Oma Pacific Islands Panamá Papua Nova Guiné Paquistão Paraguai Peru Pitcairn Polinésia Francesa Polônia Porto Rico Portugal Quênia Quirgistão Rep.Centro-Africana República Dominicana República Tcheca Reunião Romênia Ruanda Rússia Samoa Americana Samoa Ocidental San Marino Santa Lúcia São Cristóvão Nevis São Pedro Miquelon São Tomé e Príncipe São Vicente Granadi Senegal Serra Leoa Seychelles Síria Somália Sri Lanka Suazilândia Sudão Suécia Suiça Suriname Tadjaquistão Tailândia Tanzânia Timor Togo Tokelau Tonga Trinidad e Tobago Tunísia Turcomenistão Turquia Tuvalu Ucrânia Uganda Uruguai Uzbekistan Vanuatu Vaticano Venezuela Vietnã Western Sahara Zaire Zâmbia Zimbabue"
+  },
+  {
+    "tag": "input",
+    "id": "textoBuscaTodas",
+    "name": "textoBuscaTodas",
+    "type": "text",
+    "value": "",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "textoBuscaFrase",
+    "name": "textoBuscaFrase",
+    "type": "text",
+    "value": "",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "textoBuscaQualquer",
+    "name": "textoBuscaQualquer",
+    "type": "text",
+    "value": "",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "textoBuscaNenhuma",
+    "name": "textoBuscaNenhuma",
+    "type": "text",
+    "value": "",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "buscarDoutoresAvancada",
+    "name": "buscarDoutoresAvancada",
+    "type": "checkbox",
+    "value": "true",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "buscarDemaisAvancada",
+    "name": "buscarDemaisAvancada",
+    "type": "checkbox",
+    "value": "true",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "buscarBrasileirosAvancada",
+    "name": "buscarBrasileirosAvancada",
+    "type": "checkbox",
+    "value": "true",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "buscarEstrangeirosAvancada",
+    "name": "buscarEstrangeirosAvancada",
+    "type": "checkbox",
+    "value": "true",
+    "text": ""
+  },
+  {
+    "tag": "select",
+    "id": "paisNascimentoAvancada",
+    "name": "paisNascimentoAvancada",
+    "type": null,
+    "value": null,
+    "text": "Todos Afeganistão África do Sul Albânia Alemanha Andorra Angola Antartida Antigua Antilhas Holandesas Arábia Saudita Argélia Argentina Armênia Austrália Austria Azerbaijão Bahamas Bangladesh Barbados Barein Belarus Bélgica Belize Benin Bermudas Myanmar Bolívia Bósnia Botsuana Britsh Indian Ocean Brunei Bulgária Burkina Fasso Burundi Butão Cabo Verde Camarões Camboja Canadá Catar Cazaquistão Chade Chile China Chipre Christmas Island Cingapura Colômbia Comores Congo Coréia do Norte Coréia do Sul Costa do Marfim Costa Rica Croácia Cuba Dinamarca Djibuti Dominica Egito El Salvador Emirados Árabes Equador Escócia Eslováquia Eslovênia Espanha Estados Unidos Estônia Etiópia Fiji Filipinas Finlândia Formosa França Gabão Gales Gâmbia Gana Geórgia Gibraltar Grã-Bretanha Granada Grécia Groênlandia Guadalupe Guam Guatemala Guiana Guiana Francesa Guiné Guiné Bissau Guiné Equatorial Haitii Holanda Honduras Hong Kong Hungria Iêmem Iêmen do Sul Ilhas Cayman Ilhas Cocoss Ilhas Cook Ilhas Falkland Ilhas Faroe Ilhas Midway Ilhas Norfolk Ilhas Salamão Ilhas Santa Helena Ilhas Turcas Caicos Ilhas Vírgens EUA Ilhas Vírgens GBR Ilhas Wake Ilhas Wallis Futuna Índia Indonésia Inglaterra Irã Iraque Irlanda Irlanda do Norte Islândia Israel Itália Iugoslávia Jamaica Japão Jordânia Kiribati Kuweit Laos Lesoto Letônia Líbano Libéria Líbia Liechtenstein Lituânia Luxemburgo Macau Madagascar Malásia Malavi Maldivas Mali Malta Marrocos Martinica Maurício Mauritânia México Mianmar Micronésia Moçambique Moldova Mônaco Mongólia Montserrat Namíbia Nauru Nepal Nicarágua Niger Nigéria Niue Noruega Nova Caledônia Nova Zelândia Oma Pacific Islands Panamá Papua Nova Guiné Paquistão Paraguai Peru Pitcairn Polinésia Francesa Polônia Porto Rico Portugal Quênia Quirgistão Rep.Centro-Africana República Dominicana República Tcheca Reunião Romênia Ruanda Rússia Samoa Americana Samoa Ocidental San Marino Santa Lúcia São Cristóvão Nevis São Pedro Miquelon São Tomé e Príncipe São Vicente Granadi Senegal Serra Leoa Seychelles Síria Somália Sri Lanka Suazilândia Sudão Suécia Suiça Suriname Tadjaquistão Tailândia Tanzânia Timor Togo Tokelau Tonga Trinidad e Tobago Tunísia Turcomenistão Turquia Tuvalu Ucrânia Uganda Uruguai Uzbekistan Vanuatu Vaticano Venezuela Vietnã Western Sahara Zaire Zâmbia Zimbabue"
+  },
+  {
+    "tag": "input",
+    "id": "filtro0",
+    "name": "filtro0",
+    "type": "checkbox",
+    "value": "true",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "filtro2",
+    "name": "filtro2",
+    "type": "checkbox",
+    "value": "true",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "filtro4",
+    "name": "filtro4",
+    "type": "checkbox",
+    "value": "true",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "filtro6",
+    "name": "filtro6",
+    "type": "checkbox",
+    "value": "true",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "filtro8",
+    "name": "filtro8",
+    "type": "checkbox",
+    "value": "true",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "filtro1",
+    "name": "filtro1",
+    "type": "checkbox",
+    "value": "true",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "filtro3",
+    "name": "filtro3",
+    "type": "checkbox",
+    "value": "true",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "filtro5",
+    "name": "filtro5",
+    "type": "checkbox",
+    "value": "true",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "filtro7",
+    "name": "filtro7",
+    "type": "checkbox",
+    "value": "true",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "filtro9",
+    "name": "filtro9",
+    "type": "checkbox",
+    "value": "true",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "somenteAtualizados",
+    "name": "filtros.atualizacaoCurriculo",
+    "type": "text",
+    "value": "48",
+    "text": ""
+  },
+  {
+    "tag": "select",
+    "id": "quantidadeRegistros",
+    "name": "quantidadeRegistros",
+    "type": null,
+    "value": null,
+    "text": "10 resultados 20 resultados 50 resultados 100 resultados"
+  },
+  {
+    "tag": "input",
+    "id": "visualizaEnderecoCV",
+    "name": "filtros.visualizaEnderecoCV",
+    "type": "checkbox",
+    "value": "true",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "visualizaFormacaoAcadTitCV",
+    "name": "filtros.visualizaFormacaoAcadTitCV",
+    "type": "checkbox",
+    "value": "true",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "visualizaAtuacaoProfCV",
+    "name": "filtros.visualizaAtuacaoProfCV",
+    "type": "checkbox",
+    "value": "true",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "visualizaAreasAtuacaoCV",
+    "name": "filtros.visualizaAreasAtuacaoCV",
+    "type": "checkbox",
+    "value": "true",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "visualizaIdiomasCV",
+    "name": "filtros.visualizaIdiomasCV",
+    "type": "checkbox",
+    "value": "true",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "visualizaPremiosTitulosCV",
+    "name": "filtros.visualizaPremiosTitulosCV",
+    "type": "checkbox",
+    "value": "true",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "visualizaSoftwaresCV",
+    "name": "filtros.visualizaSoftwaresCV",
+    "type": "checkbox",
+    "value": "true",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "visualizaProdutosCV",
+    "name": "filtros.visualizaProdutosCV",
+    "type": "checkbox",
+    "value": "true",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "visualizaProcessosCV",
+    "name": "filtros.visualizaProcessosCV",
+    "type": "checkbox",
+    "value": "true",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "visualizaTrabalhosTecnicosCV",
+    "name": "filtros.visualizaTrabalhosTecnicosCV",
+    "type": "checkbox",
+    "value": "true",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "visualizaOutrasProdTecCV",
+    "name": "filtros.visualizaOutrasProdTecCV",
+    "type": "checkbox",
+    "value": "true",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "visualizaArtigosCV",
+    "name": "filtros.visualizaArtigosCV",
+    "type": "checkbox",
+    "value": "true",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "visualizaLivrosCapitulosCV",
+    "name": "filtros.visualizaLivrosCapitulosCV",
+    "type": "checkbox",
+    "value": "true",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "visualizaTrabEventosCV",
+    "name": "filtros.visualizaTrabEventosCV",
+    "type": "checkbox",
+    "value": "true",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "visualizaTxtJornalRevistaCV",
+    "name": "filtros.visualizaTxtJornalRevistaCV",
+    "type": "checkbox",
+    "value": "true",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "visualizaOutrasProdBibCV",
+    "name": "filtros.visualizaOutrasProdBibCV",
+    "type": "checkbox",
+    "value": "true",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "visualizaProdArtCultCV",
+    "name": "filtros.visualizaProdArtCultCV",
+    "type": "checkbox",
+    "value": "true",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "visualizaOrientacoesConcluidasCV",
+    "name": "filtros.visualizaOrientacoesConcluidasCV",
+    "type": "checkbox",
+    "value": "true",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "visualizaOrientacoesAndamentoCV",
+    "name": "filtros.visualizaOrientacoesAndamentoCV",
+    "type": "checkbox",
+    "value": "true",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "visualizaDemaisTrabalhosCV",
+    "name": "filtros.visualizaDemaisTrabalhosCV",
+    "type": "checkbox",
+    "value": "true",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "visualizaDadosComplementaresCV",
+    "name": "filtros.visualizaDadosComplementaresCV",
+    "type": "checkbox",
+    "value": "true",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "visualizaOutrasInfRelevantesCV",
+    "name": "filtros.visualizaOutrasInfRelevantesCV",
+    "type": "checkbox",
+    "value": "true",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "visualizaPeriodoProducaoCV",
+    "name": "filtros.radioPeriodoProducao",
+    "type": "radio",
+    "value": "1",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": null,
+    "name": "filtros.radioPeriodoProducao",
+    "type": "radio",
+    "value": "2",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "visualizaPeriodoAnoProducaoCV",
+    "name": "filtros.visualizaPeriodoProducaoCV",
+    "type": "text",
+    "value": "",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "idCategoriaNivelBolsa",
+    "name": "filtros.categoriaNivelBolsa",
+    "type": "hidden",
+    "value": "",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "checkbox1A",
+    "name": null,
+    "type": "checkbox",
+    "value": null,
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "checkbox1B",
+    "name": null,
+    "type": "checkbox",
+    "value": null,
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "checkbox1C",
+    "name": null,
+    "type": "checkbox",
+    "value": null,
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "checkbox1D",
+    "name": null,
+    "type": "checkbox",
+    "value": null,
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "checkbox2",
+    "name": null,
+    "type": "checkbox",
+    "value": null,
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "checkboxA",
+    "name": null,
+    "type": "checkbox",
+    "value": null,
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "checkboxB",
+    "name": null,
+    "type": "checkbox",
+    "value": null,
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "checkboxC",
+    "name": null,
+    "type": "checkbox",
+    "value": null,
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "checkboxD",
+    "name": null,
+    "type": "checkbox",
+    "value": null,
+    "text": ""
+  },
+  {
+    "tag": "select",
+    "id": "idModalidadeBolsa",
+    "name": "filtros.modalidadeBolsa",
+    "type": null,
+    "value": null,
+    "text": "Selecione a Modalidade de Bolsa Aperfeiçoamento Aperfeiçoamento Atividade de Pesquisa Aperfeiçoamento no Exterior Apoio a Competitividade e Difusão Tecnológica Apoio a Núcleos de Excelência Apoio ao Desenvolvimento Científico e Tecnológico Apoio ao Desenvolvimento Tecnológico Apoio ao Programa dos Trópicos Apoio Técnico Apoio Técnico a Pesquisa Apoio Técnico em Extensão no País Autorização de Expedição Científica Auxílio a Editoração e Publicação Auxílio a Especialista Visitante Auxílio a Estágio/Especialização no Exterior Auxílio a Modernização Tecnológica Auxílio a Pesquisa (AI) Auxílio a Pesquisa (APQ) Auxílio a Pesquisa em Áreas Estratégicas Auxílio a Pesquisador Visitante Estrangeiro Auxílio a Projeto Conjunto de Pesquisa Auxílio Coleções Científicas Auxílio Estágio/Especialização Auxílio Participação em Estágio, Visitas e Cursos Auxílio Visita Científica Bolsa de Treinamento no Pais Bolsa Especialista Visitante Bolsa Treinamento no Exterior Bolsa Treinamento no País Ciência Importa Fácil Contrib. Organismos Internacionais Contrib. Organismos Nacionais Desenvolvimento Científico da Metrologia Nacional Desenvolvimento Científico Regional Desenvolvimento em Gestao Institucional Desenvolvimento Tecnológico Desenvolvimento Tecnológico em Semicondutores Desenvolvimento Tecnológico Industrial Doutorado Doutorado no Exterior Doutorado-Sanduíche Empresarial Doutorado Sanduíche no Exterior Doutorado-Sanduíche no País Especialista Visitante (EV) Especialista Visitante (MBV) Especialista Visitante (MEV) Especialista Visitante (SEV) Especialista Visitante FIOCRUZ Especialista Visitante Institucional Estágio/Especialização no Exterior Estágio Júnior no Exterior Estágio Sênior no Exterior Extensão no País Fixação de Doutores Fixação de Recursos Humanos Iniciação Científica Iniciação Científica Júnior Iniciação Tecnológica (IT) Iniciação Tecnológica (MIT) Iniciação Tecnológica Industrial Interiorização do Trabalho em Saúde Mestrado Participação em Eventos Científicos Pensão Alimentícia Pesquisa de Campo Pesquisador Visitante (PV) Pesquisador Visitante (APV) Pesquisador Visitante FIOCRUZ Júnior Pesquisador Visitante FIOCRUZ Pleno Pós-doutorado (PD) Pós-doutorado (PDP) Pós-doutorado Especial em Taxonomia Pós-doutorado Empresarial Pós-doutorado Júnior Pós-doutorado no Exterior Pós-doutorado Sênior Produtividade Desen. Tec. e Extensão Inovadora Produtividade em Pesquisa Promoção de Eventos Científicos Recém-Doutor Repasse Auxílio Pesquisa Inst. Repasse Inst. Bolsas País Repasse Inst. Bolsas Exterior Treinamento no Exterior Treinamento no País"
+  },
+  {
+    "tag": "select",
+    "id": "nivelFormacao",
+    "name": "filtros.nivelFormacao",
+    "type": null,
+    "value": null,
+    "text": "Todas Graduação Especialização Mestrado Doutorado"
+  },
+  {
+    "tag": "select",
+    "id": "paisFormacao",
+    "name": "filtros.paisFormacao",
+    "type": null,
+    "value": null,
+    "text": "Selecione uma opção Todos Brasil Afeganistão África do Sul Albânia Alemanha Andorra Angola Antartida Antigua Antilhas Holandesas Arábia Saudita Argélia Argentina Armênia Austrália Austria Azerbaijão Bahamas Bangladesh Barbados Barein Belarus Bélgica Belize Benin Bermudas Myanmar Bolívia Bósnia Botsuana Britsh Indian Ocean Brunei Bulgária Burkina Fasso Burundi Butão Cabo Verde Camarões Camboja Canadá Catar Cazaquistão Chade Chile China Chipre Christmas Island Cingapura Colômbia Comores Congo Coréia do Norte Coréia do Sul Costa do Marfim Costa Rica Croácia Cuba Dinamarca Djibuti Dominica Egito El Salvador Emirados Árabes Equador Escócia Eslováquia Eslovênia Espanha Estados Unidos Estônia Etiópia Fiji Filipinas Finlândia Formosa França Gabão Gales Gâmbia Gana Geórgia Gibraltar Grã-Bretanha Granada Grécia Groênlandia Guadalupe Guam Guatemala Guiana Guiana Francesa Guiné Guiné Bissau Guiné Equatorial Haitii Holanda Honduras Hong Kong Hungria Iêmem Iêmen do Sul Ilhas Cayman Ilhas Cocoss Ilhas Cook Ilhas Falkland Ilhas Faroe Ilhas Midway Ilhas Norfolk Ilhas Salamão Ilhas Santa Helena Ilhas Turcas Caicos Ilhas Vírgens EUA Ilhas Vírgens GBR Ilhas Wake Ilhas Wallis Futuna Índia Indonésia Inglaterra Irã Iraque Irlanda Irlanda do Norte Islândia Israel Itália Iugoslávia Jamaica Japão Jordânia Kiribati Kuweit Laos Lesoto Letônia Líbano Libéria Líbia Liechtenstein Lituânia Luxemburgo Macau Madagascar Malásia Malavi Maldivas Mali Malta Marrocos Martinica Maurício Mauritânia México Mianmar Micronésia Moçambique Moldova Mônaco Mongólia Montserrat Namíbia Nauru Nepal Nicarágua Niger Nigéria Niue Noruega Nova Caledônia Nova Zelândia Oma Pacific Islands Panamá Papua Nova Guiné Paquistão Paraguai Peru Pitcairn Polinésia Francesa Polônia Porto Rico Portugal Quênia Quirgistão Rep.Centro-Africana República Dominicana República Tcheca Reunião Romênia Ruanda Rússia Samoa Americana Samoa Ocidental San Marino Santa Lúcia São Cristóvão Nevis São Pedro Miquelon São Tomé e Príncipe São Vicente Granadi Senegal Serra Leoa Seychelles Síria Somália Sri Lanka Suazilândia Sudão Suécia Suiça Suriname Tadjaquistão Tailândia Tanzânia Timor Togo Tokelau Tonga Trinidad e Tobago Tunísia Turcomenistão Turquia Tuvalu Ucrânia Uganda Uruguai Uzbekistan Vanuatu Vaticano Venezuela Vietnã Western Sahara Zaire Zâmbia Zimbabue"
+  },
+  {
+    "tag": "select",
+    "id": "regiaoFormacao",
+    "name": "filtros.regiaoFormacao",
+    "type": null,
+    "value": null,
+    "text": "Todas Centro-Oeste Nordeste Norte Sudeste Sul"
+  },
+  {
+    "tag": "select",
+    "id": "ufFormacao",
+    "name": "filtros.ufFormacao",
+    "type": null,
+    "value": null,
+    "text": "Todas Acre Alagoas Amapá Amazonas Bahia Ceará Distrito Federal Espírito Santo Goiás Maranhão Mato Grosso Mato Grosso do Sul Minas Gerais Pará Paraíba Paraná Pernambuco Piauí Rio de Janeiro Rio Grande do Norte Rio Grande do Sul Rondônia Roraima Santa Catarina São Paulo Sergipe Tocantins"
+  },
+  {
+    "tag": "input",
+    "id": "nomeInstFormacao",
+    "name": "filtros.nomeInstFormacao",
+    "type": "text",
+    "value": "",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "conceitoCurso",
+    "name": "filtros.conceitoCurso",
+    "type": "hidden",
+    "value": "",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "checkConceito1",
+    "name": null,
+    "type": "checkbox",
+    "value": null,
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "checkConceito2",
+    "name": null,
+    "type": "checkbox",
+    "value": null,
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "checkConceito3",
+    "name": null,
+    "type": "checkbox",
+    "value": null,
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "checkConceito4",
+    "name": null,
+    "type": "checkbox",
+    "value": null,
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "checkConceito5",
+    "name": null,
+    "type": "checkbox",
+    "value": null,
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "checkConceito6",
+    "name": null,
+    "type": "checkbox",
+    "value": null,
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "checkConceito7",
+    "name": null,
+    "type": "checkbox",
+    "value": null,
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "buscaAtuacao",
+    "name": "filtros.buscaAtuacao",
+    "type": "hidden",
+    "value": "false",
+    "text": ""
+  },
+  {
+    "tag": "select",
+    "id": "codigoGrandeAreaAtuacao",
+    "name": "filtros.codigoGrandeAreaAtuacao",
+    "type": null,
+    "value": null,
+    "text": "Todas Ciências Agrárias Ciências Biológicas Ciências da Saúde Ciências Exatas e da Terra Ciências Humanas Ciências Sociais Aplicadas Engenharias Lingüística, Letras e Artes Outra Tecnologias"
+  },
+  {
+    "tag": "select",
+    "id": "codigoAreaAtuacao",
+    "name": "filtros.codigoAreaAtuacao",
+    "type": null,
+    "value": null,
+    "text": "Todas"
+  },
+  {
+    "tag": "select",
+    "id": "codigoSubareaAtuacao",
+    "name": "filtros.codigoSubareaAtuacao",
+    "type": null,
+    "value": null,
+    "text": "Todas"
+  },
+  {
+    "tag": "select",
+    "id": "codigoEspecialidadeAtuacao",
+    "name": "filtros.codigoEspecialidadeAtuacao",
+    "type": null,
+    "value": null,
+    "text": "Todas"
+  },
+  {
+    "tag": "input",
+    "id": "orientadorCNPq",
+    "name": "filtros.orientadorCNPq",
+    "type": "hidden",
+    "value": "",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "checkboxIC",
+    "name": null,
+    "type": "checkbox",
+    "value": null,
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "checkboxIP",
+    "name": null,
+    "type": "checkbox",
+    "value": null,
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "checkboxME",
+    "name": null,
+    "type": "checkbox",
+    "value": null,
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "checkboxDA",
+    "name": null,
+    "type": "checkbox",
+    "value": null,
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "checkboxDH",
+    "name": null,
+    "type": "checkbox",
+    "value": null,
+    "text": ""
+  },
+  {
+    "tag": "select",
+    "id": "idioma",
+    "name": "filtros.idioma",
+    "type": null,
+    "value": null,
+    "text": "Todos Alemão Espanhol Francês Inglês Italiano Português Abhkazian Afar Afrikaans Aimara Albanês Amarico Árabe Assames Azerbaidjano Baluchi Basco Bashquir Bengali Berbere Bielo-Russo Bihari Birmanês Bislama Bretão Búlgaro Cabie Cachemiriano Cambodjano Canadá Casaque Catalão Chinês Cingalês Coreano Corsico Crioulo Croata Curdo Dinamarquês Divehi Dzongka Erisão Eslovaco Esloveno Esperanto Estoniano Eue Feróico Fijiano Filipino Finlandês Gaelico Escocês Galego Galês Georgiano Grego Groenlandês Guarani Gujarati Harmênio Hausa Hebraico Hindi Holandês Húngaro Iidiche Indonésio Interlíngua Interlíngue Inupiak Ioma Irlandês Islandês Japonês Javanês Laosiano Lapão Latim Letão Lingála Lituano Luxemburguês Macedônio Malaiala Malaio Malgaxe Maltês Mandingo Maori Maratí Moldavio Mongol Nauruano Nepali Norueguês Oria Oromo Persa Polonês Punjabi Pushto Quichua Quiniaruanda Quirquiz Quirundi Quisuahili Reto-Romano Romeno Russo Samoano Sango Sanscrito Serbian Servo-Croata Sesoto Setsuana Shona Sindi Sirmanês Sisvati Somali Suaili Sudanês Suéco Tadjique Tai Talagog Tamil Tatar Tcheco-Eslovaco Telugo Tibetano Tigrina Tongalês Tsonga Tui Turco Turcomano Tuvaloano Ucraniâno Urdu Uzbeco Vietnamita Volupak Wolof Xosa Yoruba Zulú Outros"
+  },
+  {
+    "tag": "select",
+    "id": "grandeAreaProducao",
+    "name": "filtros.grandeAreaProducao",
+    "type": null,
+    "value": null,
+    "text": "Todas Ciências Agrárias Ciências Biológicas Ciências da Saúde Ciências Exatas e da Terra Ciências Humanas Ciências Sociais Aplicadas Engenharias Lingüística, Letras e Artes Outra Tecnologias"
+  },
+  {
+    "tag": "select",
+    "id": "areaProducao",
+    "name": "filtros.areaProducao",
+    "type": null,
+    "value": null,
+    "text": "Todas"
+  },
+  {
+    "tag": "select",
+    "id": "setorProducao",
+    "name": "filtros.setorProducao",
+    "type": null,
+    "value": null,
+    "text": "Todos Abate e Preparação de Produtos de Carne e de Pescado Administração do Estado e da Política Econômica e Social Administração do estado e da política econômica e social Administração Pública, Defesa e Seguridade Social Administração Pública, Defesa e Seguridade Social Administração Pública, Defesa e Seguridade Social Administração pública, defesa e seguridade social Administração pública em geral Aeronáutica e Espaço Agências de viagens, operadores turísticos e serviços de reservas Agricultura, Pecuária e Serviços Relacionados Agricultura, Pecuária e Serviços Relacionados Com  Essas Atividades Agricultura, Pecuária, Produção Florestal, Pesca e Aqüicultura Agricultura, Pecuária, Silvicultura e Exploração Florestal Agricultura, Pecuária, Silvicultura, Exploração Florestal Água, esgoto, atividades de gestão de resíduos e descontaminação Alimentação Alojamento Alojamento e Alimentação Alojamento e Alimentação Alojamento e alimentação Aluguéis não-imobiliários e gestão de ativos intangíveis não-financeiros Aluguel de Automóveis Aluguel de Equipamentos de Construção e Demolição Com Operários Aluguel de Imóveis Aluguel de Máquinas e Equipamentos Aluguel de Objetos Pessoais e Domésticos Aluguel de Outros Meios de Transporte Aluguel de Veículos, Máquinas e Equipamentos Sem Condutores Ou Operadores e de Objetos Pessoais e Domésticos Aparelhamento de Pedras e Fabricação de Cal e de Outros Produtos de Minerais Não-Metálicos Aqüicultura Aqüicultura em água doce Armazenamento e atividades auxiliares dos transportes Arrendamento Mercantil Artes, cultura, esporte e recreação Assessoria Ou Consultoria de Arquitetura Ou Engenharia Assessoria Ou Consultoria em Publicidade Assessoria Ou Consultoria Jurídica, Contábil, de Opinião Pública e Na Gestão de Empresas Atividade de Serviços Relacionados Com A Agricultura e Pecuária, Exceto Atividades Veterinárias Atividades administrativas e serviços complementares Atividades Anexas e Auxiliares do Transporte e Agências de Viagem Atividades artísticas, criativas e de espetáculos Atividades Associativas Atividades associativas não especificadas anteriormente Atividades Auxiliares Aos Transportes Atividades Auxiliares da Intermediação Financeira Atividades Auxiliares da Intermediação Financeira, Exclusive Seguros e Previdência Privada Atividades Auxiliares dos Seguros e da Previdência Privada Atividades auxiliares dos serviços financeiros, seguros, previdência complementar e planos de saúde Atividades Cinematográficas e de Vídeo Atividades cinematográficas, produção de vídeos e de programas de televisão Atividades cinematográficas, produção de vídeos e de programas de televisão; gravação de som e edição de música Atividades de Agências de Notícias Atividades de Agências de Viagens e Organizadores de Viagem Atividades de apoio à agricultura Atividades de apoio à agricultura e à pecuária; atividades de pós-colheita Atividades de apoio à educação Atividades de apoio à educação Atividades de Apoio à Extração de Minerais Atividades de apoio à extração de minerais, exceto petróleo e gás natural Atividades de apoio à extração de minerais, exceto petróleo e gás natural Atividades de apoio à extração de petróleo e gás natural Atividades de apoio à gestão de saúde Atividades de apoio à gestão de saúde Atividades de apoio à pecuária Atividades de apoio à produção florestal Atividades de apoio à produção florestal Atividades de Assessoria e Consultoria Às Empresas Atividades de assistência psicossocial e à saúde a portadores de distúrbios psíquicos, deficiência mental e dependência química Atividades de assistência psicossocial e à saúde a portadores de distúrbios psíquicos, deficiência mental e dependência química Atividades de associações de defesa de direitos sociais Atividades de Atenção À Saúde Atividades de atenção à saúde humana Atividades de atenção à saúde humana integradas com assistência social, prestadas em residências coletivas e particulares Atividades de atenção à saúde humana não especificadas anteriormente Atividades de atenção à saúde humana não especificadas anteriormente Atividades de atenção ambulatorial executadas por médicos e odontólogos Atividades de atenção ambulatorial executadas por médicos e odontólogos Atividades de atendimento hospitalar Atividades de atendimento hospitalar Atividades de Banco de Dados Atividades de Banco de Dados Atividades de Bibliotecas, Arquivos, Museus e Outras Atividades Culturais Atividades de bibliotecas e arquivos Atividades de consultoria em gestão empresarial Atividades de ensino não especificadas anteriormente Atividades de exploração de jogos de azar e apostas Atividades de Informática e Conexas Atividades de Investigação, Vigilância e Segurança Atividades de Limpeza em Prédios e Domicílios Atividades de museus e de exploração, restauração artística e conservação de lugares e prédios históricos e atrações similares Atividades de organizações associativas Atividades de organizações associativas ligadas à cultura e à arte Atividades de Organizações Empresariais, Patronais e Profissionais Atividades de Organizações Sindicais Atividades de prestação de serviços de informação Atividades de produção cinematográfica, de vídeos e de programas de televisão Atividades de profissionais da área de saúde, exceto médicos e odontólogos Atividades de profissionais da área de saúde, exceto médicos e odontólogos Atividades de Rádio e de Televisão Atividades de rádio e de televisão Atividades de sedes de empresas e de consultoria em gestão empresarial Atividades de serviços de complementação diagnóstica e terapêutica Atividades de serviços de complementação diagnóstica e terapêutica Atividades de serviços financeiros Atividades de vigilância, segurança e investigação Atividades Desportivas e Outras Relacionadas Ao Lazer Atividades dos serviços de tecnologia da informação Atividades esportivas Atividades esportivas e de recreação e lazer Atividades financeiras, de seguros e serviços relacionados Atividades Imobiliárias Atividades imobiliárias Atividades imobiliárias Atividades Imobiliárias, Aluguéis e Serviços Prestados Às Empresas Atividades imobiliárias de imóveis próprios Atividades imobiliárias de imóveis próprios Atividades Imobiliárias Por Conta de Terceiros Atividades imobiliárias por contrato ou comissão Atividades Jurídicas, Contábeis e de Assessoria Empresarial Atividades jurídicas, de contabilidade e de auditoria Atividades ligadas ao patrimônio cultural e ambiental Atividades No Campo das Nanotecnologias e Desenvolvimento de Nanoprodutos Atividades profissionais, científicas e técnicas Atividades profissionais, científicas e técnicas não especificadas anteriormente Atividades profissionais, científicas e técnicas não especificadas anteriormente Atividades Recreativas, Culturais e Desportivas Atividades Relacionadas À Organização do Transporte de Cargas Atividades técnicas relacionadas à arquitetura e engenharia Atividades veterinárias Atividades veterinárias Atividades veterinárias Banco Central Beneficiamento de Fibras Têxteis Naturais Caça, Repovoamento Cinegético e Atividades dos Serviços Relacionados Captação, Tratamento e Distribuição de Água Captação, Tratamento e Distribuição de Água Captação, tratamento e distribuição de água Captação, tratamento e distribuição de água Captação, tratamento e distribuição de água Captação, Tratamento e Distribuição de Água, Limpeza Urbana, Esgoto e Atividades Conexas Clubes sociais, esportivos e similares Coleta de resíduos não-perigosos Coleta, tratamento e disposição de resíduos; recuperação de materiais Comércio A Varejo de Combustíveis Comércio A Varejo e Por Atacado de Peças e Acessórios Para Veículos Automotores Comércio A Varejo e Por Atacado de Veículos Automotores Comércio Atacadista de Artigos de Usos Pessoal e Doméstico Comércio atacadista de energia elétrica Comércio atacadista de equipamentos e produtos de tecnologias de informação e comunicação Comércio atacadista de madeira, ferragens, ferramentas, material elétrico e material de construção Comércio Atacadista de Máquinas, Aparelhos e Equipamentos Para Usos Agropecuário, Comercial, de Escritório, Industrial, Técnico e Profissional Comércio atacadista de matérias-primas agrícolas e animais vivos Comércio Atacadista de Mercadorias em Geral Ou Não Compreendidas Nos Grupos Anteriores Comércio Atacadista de Produtos Agropecuários \"In Natura\"; Produtos Alimentícios Para Animais Comércio Atacadista de Produtos Alimentícios, Bebidas e Fumo Comércio atacadista de produtos de consumo não-alimentar Comércio Atacadista de Produtos Intermediários Não-Agropecuários, Resíduos e Sucatas Comércio atacadista especializado em outros produtos Comércio atacadista não-especializado Comércio e reparação de veículos automotores e motocicletas Comércio e Reparação de Veículos Automotores e Motocicletas; e Comércio A Varejo de Combustíveis Comércio, Manutenção e Reparação de Motocicletas, Partes, Peças e Acessórios Comércio Por Atacado e Representantes Comerciais e Agentes  do Comércio Comércio por atacado, exceto veículos automotores e motocicletas Comércio; reparação de veículos automotores e motocicletas Comércio; Reparação de Veículos Automotores, Objetos Pessoais e Domésticos Comércio varejista Comércio Varejista de Artigos Usados, em Lojas Comércio Varejista de Outros Produtos, em Lojas Especializadas Comércio Varejista de Produtos Alimentícios, Bebidas e Fumo, em Lojas Especializadas Comércio Varejista de Tecidos, Artigos de Armarinho, Vestuário, Calçados, em Lojas Especializadas Comércio Varejista e Reparação de Objetos Pessoais e Domésticos Comércio Varejista Não Especializado Comércio Varejista Não Realizado em Lojas Condomínios Prediais Confecção de Artigos do Vestuário Confecção de Artigos do Vestuário e Acessórios Confecção de artigos do vestuário e acessórios Construção Construção Construção Construção Civil Construção de edifícios Construção de edifícios Construção de Edifícios e Obras de Engenharia Civil Construção de embarcações Construção de outras obras de infra-estrutura Construção de rodovias, ferrovias, obras urbanas e obras-de-arte especiais Construção e Reparação de Embarcações Construção, Montagem e Reparação de Aeronaves Construção, Montagem e Reparação de Veículos Ferroviários Consultoria em Sistemas de Informática Consultoria em Sistemas de Informática Consultoria em tecnologia da informação Coquerias Correio Correio e outras atividades de entrega Correio e Telecomunicações Criação de animais não especificados anteriormente Criação de aves Criação de bovinos Criação de caprinos e ovinos Criação de outros animais de grande porte Criação de suínos Cuidado À Saúde das Pessoas Cuidado À Saúde das Populações Humanas Cultivo de cacau Cultivo de café Cultivo de cana-de-açúcar Cultivo de cereais Cultivo de frutas de lavoura permanente, exceto laranja e uva Cultivo de laranja Cultivo de oleaginosas de lavoura temporária, exceto soja Cultivo de plantas de lavoura permanente não especificadas anteriormente Cultivo de plantas de lavoura temporária não especificadas anteriormente Cultivo de soja Cultivo de uva Curtimento e Outras Preparações de Couro Defesa Defesa Civil Descontaminação e outros serviços de gestão de resíduos Descontaminação e outros serviços de gestão de resíduos Descontaminação e outros serviços de gestão de resíduos Desdobramento de Madeira Desenvolvimento de Novos Materiais Desenvolvimento de Produtos Tecnológicos Voltados Para A Saúde Humana Desenvolvimento de programas de computador sob encomenda Desenvolvimento de Programas de Informática Desenvolvimento de Programas (Software) Desenvolvimento de Programas (Software) e Prestação de Serviços em Informática Desenvolvimento e licenciamento de programas de computador customizáveis Desenvolvimento e licenciamento de programas de computador não-customizáveis Desenvolvimento Rural Desenvolvimento Urbano Distribuição de energia elétrica Edição ; Edição e Impressão Edição de livros, jornais, revistas e outras atividades de edição Edição e edição integrada à impressão Edição, Impressão e Reprodução de Gravações Edição, Impressão, Reprodução e Gravação Industriais de Jornais, Revistas, Livros, Discos, Fitas, Vídeos e Filmes Educação Educação Educação Educação Educação Educação Média de Formação Geral Educação Média de Formação Geral, Profissionalizante Ou Técnica Educação Média de Formação Técnica Ou Profissional Educação Pré-Escolar e Fundamental Educação Pré-Escolar e Fundamental Educação profissional de nível técnico Educação profissional de nível técnico e tecnológico Educação profissional de nível tecnológico Educação Superior Educação Superior Educação superior Educação superior - graduação Educação superior - graduação e pós-graduação Educação superior - pós-graduação e extensão Elaboração de Combustíveis Nucleares Elaboração de Combustíveis Nucleares Eletricidade e gás Eletricidade, Gás e Água Quente Eletricidade, gás e outras utilidades Energia Ensaios de Materiais e de Produtos; Análise de Qualidade Ensaios de Materiais e de Produtos; Análise de Qualidade Ensino de arte e cultura Ensino de esportes Ensino fundamental Ensino médio Ensino médio Esgoto e atividades relacionadas Esgoto e atividades relacionadas Estabelecimentos Hoteleiros e Outros Tipos de Alojamento Temporário Extração de Carvão Mineral Extração de Carvão Mineral Extração de Carvão Mineral Extração de carvão mineral Extração de Minerais Metálicos Extração de Minerais Metálicos Extração de Minerais Metálicos Não-Ferrosos Extração de minerais metálicos não-ferrosos Extração de Minerais Não-Metálicos Extração de Minerais Não-Metálicos Extração de minerais para fabricação de adubos, fertilizantes e outros produtos químicos Extração de Minério de Ferro Extração de Outros Minerais Extração de Outros Minerais Não-Metálicos Extração de Pedra, Areia e Argila Extração de Petróleo e Gás Natural Extração de Petróleo e Gás Natural Extração de petróleo e gás natural Extração de petróleo e gás natural Extração de Petróleo e Serviços Correlatos Extração de Petróleo e Serviços Correlatos Fabricação de Acessórios do Vestuário e de Segurança Profissional Fabricação de aditivos de uso industrial Fabricação de aeronaves Fabricação de aguardentes e outras bebidas destiladas Fabricação de álcool Fabricação de alimentos para animais Fabricação de aparelhos e equipamentos de medida, teste e controle Fabricação de Aparelhos e Equipamentos de Telecomunicação Fabricação de Aparelhos e Equipamentos de Telefonia e Radiotelefonia e de Transmissores de Televisão e Rádio Fabricação de Aparelhos e Instrumentos de Medida, Teste e Controle - Exclusive Equipamentos Para Controle de Processos Industriais Fabricação de aparelhos e instrumentos de medida, teste e controle; cronômetros e relógios Fabricação de Aparelhos e Instrumentos Para Usos Médicos-Hospitalares, Odontológicos e de Laboratórios e Aparelhos Ortopédicos Fabricação de aparelhos eletromédicos e eletroterapêuticos e equipamentos de irradiação Fabricação de Aparelhos, Instrumentos e Materiais Ópticos, Fotográficos e Cinematográficos Fabricação de Aparelhos Receptores de Rádio e Televisão e de Reprodução, Gravação Ou Amplificação de Som e Vídeo Fabricação de Armas, Munições e Equipamentos Militares Fabricação de Artefatos de Concreto, Cimento, Fibrocimento, Gesso e Estuque Fabricação de artefatos de concreto, cimento, fibrocimento, gesso e materiais semelhantes Fabricação de artefatos de material plástico não especificados anteriormente Fabricação de Artefatos Diversos de Papel, Papelão, Cartolina e Cartão Fabricação de Artefatos Têxteis A Partir de Tecidos - Exclusive Vestuário - e de Outros Artigos Têxteis Fabricação de Artefatos Têxteis, Incluindo Tecelagem Fabricação de Artigos de Borracha Fabricação de Artigos de Borracha e Plástico Fabricação de Artigos de Cutelaria, de Serralheria e Ferramentas Manuais Fabricação de artigos de vidro Fabricação de Artigos do Mobiliário Fabricação de Artigos Para Viagem e de Artefatos Diversos de Couro Fabricação de Automóveis, Caminhonetas e Utilitários Fabricação de automóveis, camionetas e utilitários Fabricação de Bebidas Fabricação de Bebidas Fabricação de bebidas não-alcoólicas Fabricação de biocombustíveis Fabricação de biocombustíveis, exceto álcool Fabricação de biscoitos e bolachas Fabricação de Cabines, Carrocerias e Reboques Fabricação de Calçados Fabricação de Caminhões e Ônibus Fabricação de caminhões e ônibus Fabricação de Catalisadores Fabricação de catalisadores Fabricação de Celulose e Outras Pastas Para A Fabricação de Papel Fabricação de celulose e outras pastas para a fabricação de papel Fabricação de Celulose, Papel e Produtos de Papel Fabricação de Celulose, Papel e Produtos de Papel Fabricação de celulose, papel e produtos de papel Fabricação de Cimento Fabricação de cimento Fabricação de componentes eletrônicos Fabricação de componentes eletrônicos Fabricação de conservas de frutas Fabricação de conservas de frutas, legumes e outros vegetais Fabricação de Coque Fabricação de coque, de produtos derivados do petróleo e de biocombustíveis Fabricação de Coque, Refino de Petróleo, Elaboração de Combustíveis Nucleares e Produção de Álcool Fabricação de Coque, Refino de Petróleo, Elaboração de Combustíveis Nucleares e Produção de Álcool Fabricação de cosméticos, produtos de perfumaria e de higiene pessoal Fabricação de Cronômetros e Relógios Fabricação de Defensivos Agrícolas Fabricação de Defensivos Agrícolas Fabricação de defensivos agrícolas e desinfestantes domissanitários Fabricação de Eletrodomésticos Fabricação de embalagens de material plástico Fabricação de embalagens de papel, cartolina, papel-cartão e papelão ondulado Fabricação de Embalagens de Papel Ou Papelão Fabricação de equipamento bélico pesado, armas de fogo e munições Fabricação de equipamentos de comunicação Fabricação de Equipamentos de Informática e Máquinas Para Escritório Fabricação de equipamentos de informática, produtos eletrônicos e ópticos Fabricação de Equipamentos de Instrumentação Médico-Hospitalar, Odontológico e de Laboratórios Fabricação de Equipamentos de Instrumentação Médico-Hospitalares, Instrumentos de Precisão e Ópticos, Equipamentos Para Automação Industrial, Cronômetros e Relógios Fabricação de Equipamentos de Instrumentação Médico-Hospitalares, Instrumentos de Precisão e Ópticos, Equipamentos Para Automação Industrial, Cronômetros e Relógios Fabricação de equipamentos e instrumentos ópticos, fotográficos e cinematográficos Fabricação de Equipamentos Para Distribuição e Controle de Energia Elétrica Fabricação de equipamentos transmissores de comunicação Fabricação de especiarias, molhos, temperos e condimentos Fabricação de Estruturas Metálicas, Caldeiraria Pesada, Tanques, Reservatórios e Outros Produtos de Metal, Exclusive Máquinas e Equipamentos Fabricação de Estruturas Metálicas e Obras de Caldeiraria Pesada Fabricação de fibras artificiais e sintéticas Fabricação de Fibras, Fios, Cabos e Filamentos Contínuos, Artificiais e Sintéticos Fabricação de Fibras, Fios, Cabos e Filamentos Contínuos Artificiais e Sintéticos Fabricação de Fios, Cabos e Condutores Elétricos Isolados Fabricação de gases industriais Fabricação de Geradores, Transformadores e Motores Elétricos Fabricação de geradores, transformadores e motores elétricos Fabricação de geradores, transformadores e motores elétricos Fabricação de instrumentos e materiais para uso médico e odontológico e de artigos ópticos Fabricação de laminados planos e tubulares de material plástico Fabricação de Lâmpadas e Equipamentos de Iluminação Fabricação de malte, cervejas e chopes Fabricação de Máquinas, Aparelhos e Equipamentos de Sistemas Eletrônicos Dedicados A Automação Industrial e Controle do Processo Produtivo Fabricação de Máquinas, Aparelhos e Equipamentos de Sistemas Eletrônicos Dedicados À Automação Industrial e Controle do Processo Produtivo Fabricação de Máquinas, Aparelhos e Materiais Elétricos Fabricação de Máquinas, Aparelhos e Materiais Elétricos Fabricação de máquinas, aparelhos e materiais elétricos Fabricação de Máquinas Com Componentes de Mecânica de Precisão Fabricação de Máquinas e Equipamentos Fabricação de máquinas e equipamentos Fabricação de Máquinas e Equipamentos de Sistemas Eletrônicos Para Processamento de Dados Fabricação de Máquinas e Equipamentos de Uso Geral Fabricação de máquinas e equipamentos de uso geral não especificados anteriormente Fabricação de máquinas e equipamentos de uso na extração mineral e na construção Fabricação de Máquinas e Equipamentos, Inclusive Máquinas-Ferramenta Fabricação de Máquinas e Equipamentos Para As Indústrias de Extração Mineral e Construção Fabricação de Máquinas Para Escritório Fabricação de Máquinas Para Escritório e Equipamentos de Informática Fabricação de Máquinas-Ferramenta Fabricação de máquinas-ferramenta Fabricação de massas alimentícias Fabricação de Material Elétrico Para Veículos - Exclusive Baterias Fabricação de Material Eletrônico Básico Fabricação de Material Eletrônico Básico Fabricação de Material Eletrônico e de Aparelhos e Equipamentos de Comunicação Fabricação de Material Eletrônico e de Aparelhos e Equipamentos de Comunicações Fabricação de medicamentos para uso humano Fabricação de medicamentos para uso veterinário Fabricação de Motores, Bombas, Compressores e Equipamentos de Transmissão Fabricação de móveis Fabricação de Móveis e Indústrias Diversas Fabricação de óleos e gorduras vegetais e animais Fabricação de Outras Máquinas e Equipamentos de Uso Específico Fabricação de Outros Aparelhos e Instrumentos de Medida, Teste e Controle, Exceto Equipamentos Para Controle de Processos Industriais Fabricação de Outros Equipamentos de Transporte Fabricação de Outros Equipamentos de Transporte Fabricação de outros equipamentos de transporte, exceto veículos automotores Fabricação de Outros Equipamentos e Aparelhos Elétricos Fabricação de Outros Produtos Alimentícios Fabricação de outros produtos alimentícios Fabricação de Outros Produtos Químicos Fabricação de Papel, Papelão Liso, Cartolina e Cartão Fabricação de Peças e Acessórios Para Veículos Automotores Fabricação de Pilhas, Baterias e Acumuladores Elétricos Fabricação de preparações farmacêuticas Fabricação de Produtos Alimentícios Fabricação de Produtos Alimentícios e Bebidas Fabricação de produtos alimentícios não especificados anteriormente Fabricação de Produtos Cerâmicos Fabricação de Produtos Cerâmicos Fabricação de produtos cerâmicos Fabricação de produtos de borracha e de material plástico Fabricação de Produtos de Borracha e Plástico Fabricação de produtos de carne Fabricação de Produtos de Madeira Fabricação de produtos de madeira Fabricação de Produtos de Madeira, Cortiça e Material Trançado - Exclusive Móveis Fabricação de Produtos de Madeira, Inclusive Móveis Fabricação de produtos de material plástico Fabricação de Produtos de Metal - Exclusive Máquinas e Equipamentos Fabricação de produtos de metal, exceto máquinas e equipamentos Fabricação de Produtos de Minerais Não-Metálicos Fabricação de Produtos de Minerais Não-Metálicos Fabricação de produtos de minerais não-metálicos Fabricação de Produtos de Outros Materiais Não-Metálicos Fabricação de produtos de panificação Fabricação de Produtos de Plástico Fabricação de produtos derivados do cacau, de chocolates e confeitos Fabricação de produtos derivados do petróleo Fabricação de Produtos Diversos Fabricação de produtos diversos Fabricação de produtos diversos Fabricação de Produtos Diversos de Metal Fabricação de produtos diversos não especificados anteriormente Fabricação de Produtos do Fumo Fabricação de Produtos do Fumo Fabricação de Produtos do Fumo Fabricação de Produtos e Preparados Químicos Diversos Fabricação de produtos e preparados químicos diversos Fabricação de Produtos Farmacêuticos Fabricação de Produtos Farmacêuticos Fabricação de produtos farmacêuticos Fabricação de produtos farmoquímicos Fabricação de produtos farmoquímicos e farmacêuticos Fabricação de Produtos Químicos Fabricação de Produtos Químicos Fabricação de produtos químicos Fabricação de Produtos Químicos Inorgânicos Fabricação de Produtos Químicos Inorgânicos Fabricação de produtos químicos inorgânicos Fabricação de produtos químicos inorgânicos não especificados anteriormente Fabricação de Produtos Químicos Orgânicos Fabricação de Produtos Químicos Orgânicos Fabricação de produtos químicos orgânicos Fabricação de Produtos Siderúrgicos - Exclusive em Siderúrgicas Integradas Fabricação de Produtos Siderúrgicos em Geral Fabricação de Produtos Têxteis Fabricação de Produtos Têxteis Fabricação de Produtos Têxteis Fabricação de Produtos Têxteis, de Madeira, Inclusive Móveis, de Celulose, Papel e Produtos de Papel Fabricação de Resinas e Elastômeros Fabricação de Resinas e Elastômeros Fabricação de sabões, detergentes, produtos de limpeza, cosméticos, produtos de perfumaria e de higiene pessoal Fabricação de Sabões, Detergentes, Produtos de Limpeza e Artigos de Perfumaria Fabricação de sorvetes e outros gelados comestíveis Fabricação de sucos de frutas, hortaliças e legumes Fabricação de Tanques, Caldeiras e Reservatórios Metálicos Fabricação de Tecidos e Artigos de Malha Fabricação de Tintas, Vernizes, Esmaltes, Lacas e Produtos Afins Fabricação de Tratores e de Máquinas e Equipamentos Para A Agricultura, Avicultura e Obtenção de Produtos Animais Fabricação de Tubos - Exclusive em Siderúrgicas Integradas Fabricação de veículos automotores, reboques e carrocerias Fabricação de Vidro e de Produtos do Vidro Fabricação de vinho Fabricação e Montagem de Automóveis, Caminhões, Ônibus e Tratores e Demais Máquinas e Implementos Agrícolas, Reboques e Carrocerias Fabricação e Montagem de Embarcações, Veículos Ferroviários e Aeronaves Fabricação e Montagem de Veículos Automotores Para Transporte de Carga e Passageiros Fabricação e Montagem de Veículos Automotores, Reboques e Carrocerias Fabricação e Refino de Açúcar Fiação Forjaria, Estamparia, Metalurgia do Pó e Serviços de Tratamento de Metais Forjaria, estamparia, metalurgia do pó e serviços de tratamento de metais Formação Permanente e Outras Atividades de Ensino Formação Permanente e Outras Atividades de Ensino, Inclusive Educação À Distância e Educação Especial Fundição Fundição de Metais Ferrosos e Não-Ferrosos Fundição de metais não-ferrosos e suas ligas Geração de energia elétrica Geração, transmissão e distribuição de energia elétrica Horticultura Horticultura e floricultura Horticultura e Produtos de Viveiro Impressão e reprodução de gravações Impressão e Serviços Conexos Para Terceiros Incorporação de empreendimentos imobiliários Incorporação e Compra e Venda de Imóveis Industria Eletro-Eletrônica Indústria Metal-Mecânica Indústrias de Transformação Indústrias de Transformação Indústrias Extrativas Indústrias Extrativas Indústrias Extrativas Informação e comunicação Informacao e Gestao C&T Informática Instalações elétricas, hidráulicas e outras instalações em construções Intermediação Financeira Intermediação Financeira, Exclusive Seguros e Previdência Privada Intermediação Monetária - Depósitos À Vista Intermediação Monetária - Outros Tipos de Depósitos Irrigação e Drenagem Justiça Laticínios Laticínios Limpeza Urbana e Esgoto; e Atividades Conexas Limpeza Urbana e Esgoto; e Atividades Conexas Logística de Transporte, Armazenagem e Comunicações Manutenção e reparação de aeronaves Manutenção e Reparação de Máquinas de Escritório e de Informática Manutenção e Reparação de Veículos Automotores Manutenção, reparação e instalação de máquinas e equipamentos Mercado de Trabalho e Mão-De-Obra Metalurgia Metalurgia Básica Metalurgia Básica Metalurgia de Metais Não-Ferrosos Metalurgia de Metais Não-Ferrosos Metalurgia do alumínio e suas ligas Metalurgia dos metais não-ferrosos Metalurgia dos metais não-ferrosos e suas ligas não especificados anteriormente Moagem de trigo e fabricação de derivados Moagem e fabricação de produtos de origem vegetal não especificados anteriormente Moagem, fabricação de produtos amiláceos e de alimentos para animais Moagem, Fabricação de Produtos Amiláceos e de Rações Balanceadas Para Animais Movimentação e Armazenamento de Cargas Neurociências Nutrição e Alimentação Obras de Acabamento Obras de infra-estrutura Obras de Infra-Estrutura Para Engenharia Elétrica e de Telecomunicações Obras de Instalações Obras de instalações em construções não especificadas anteriormente Organismos Internacionais e Outras Instituições Extraterritoriais Organismos Internacionais e Outras Instituições Extraterritoriais Organismos Internacionais e Outras Instituições Extraterritoriais Organismos internacionais e outras instituições extraterritoriais Organismos internacionais e outras instituições extraterritoriais Organismos internacionais e outras instituições extraterritoriais Outras Atividades Artísticas e de Espetáculos Outras Atividades Associativas Outras Atividades de Assessoria e Consultoria Às Empresas Outras Atividades de Concessão de Crédito Outras atividades de ensino Outras Atividades de Informática, Não Especificadas Anteriormente Outras Atividades de Intermediação Financeira, Não Especificadas Anteriormente Outras atividades de prestação de serviços de informação Outras atividades de prestação de serviços de informação não especificadas anteriormente Outras Atividades de Prestação de Serviços em Informática Outras atividades de serviços pessoais Outras Atividades de Serviços Prestados Principalmente Às Empresas Outras atividades de telecomunicações Outras atividades profissionais, científicas e técnicas Outras Indústrias Extrativas Outros Outros Serviços Coletivos, Sociais e Pessoais Outros Setores Outros Transportes Aquaviários Outros transportes aquaviários Outros Transportes Terrestres Pecuária Pecuária Pesca Pesca, Aqüicultura e Atividades dos Serviços Relacionados Com Estas Atividades Pesca, Aqüicultura e Atividades dos Serviços Relacionados Com Estas Atividades Pesca, Aqüicultura e Maricultura Pesca e Aqüicultura Pesca em água doce Pesquisa e Desenvolvimento Pesquisa e desenvolvimento científico Pesquisa e Desenvolvimento das Ciências Físicas e Naturais Pesquisa e Desenvolvimento das Ciências Sociais e Humanas Pesquisa e desenvolvimento experimental em ciências físicas e naturais Pesquisa e desenvolvimento experimental em ciências físicas e naturais Pesquisa e desenvolvimento experimental em ciências sociais e humanas Pesquisa e desenvolvimento experimental em ciências sociais e humanas Planejamento e Gestão das Cidades, Inclusive Política e Planejamento Habitacional Planos de Saúde Política Econômica e Administração Pública em Geral Políticas, Planejamento e Gestão em Saúde Portais, provedores de conteúdo e outros serviços de informação na internet Preparação de Couros e Fabricação de Artefatos de Couro, Artigos de Viagem e Calçados Preparação de couros e fabricação de artefatos de couro, artigos para viagem e calçados Preparação do Terreno Preparação e fiação de fibras têxteis Preparação e fiação de fibras têxteis naturais, exceto algodão Previdência Privada Previsão do Tempo e Prospecção Climática Processamento de Dados Processamento, Preservação e Produção de Conservas de Frutas, Legumes e Outros Vegetais Produção Animal, Inclusive Serviços Veterinários Produção de Álcool Produção de Álcool Produção de artefatos estampados de metal; metalurgia do pó Produção de gás; processamento de gás natural; distribuição de combustíveis gasosos por redes urbanas Produção de Lavouras Permanentes Produção de lavouras permanentes Produção de Lavouras Temporárias Produção de lavouras temporárias Produção de mudas e outras formas de propagação vegetal, certificadas Produção de Óleos e Gorduras Vegetais e Animais Produção de sementes certificadas Produção e distribuição de combustíveis gasosos por redes urbanas Produção e Distribuição de Eletricidade e Gás Produção e Distribuição de Eletricidade, Gás e Água Produção e Distribuição de Energia Elétrica Produção e Distribuição de Energia Elétrica Produção e Distribuição de Gás Através de Tubulações Produção e Distribuição de Gás Através de Tubulações Produção e Distribuição de Vapor e Água Quente Produção Florestal Produção florestal - florestas nativas Produção florestal - florestas plantadas Produção Mista: Lavoura e Pecuária Produção Vegetal Produtos e Processos Biotecnológicos Produtos e Processos Biotecnológicos Vinculados À Agricultura Produtos e Processos Biotecnológicos Vinculados À Saúde Humana Ou dos Animais Produtos e Serviços Recreativos, Culturais, Artísticos e Desportivos Produtos e Serviços Voltados Para A Defesa e Proteção do Meio Ambiente, Incluindo O Desenvolvimento Sustentado Publicidade Publicidade e pesquisa de mercado Qualidade e Produtividade Reciclagem Reciclagem de Sucatas Metálicas Reciclagem de Sucatas Não-Metálicas Recondicionamento Ou Recuperação de Motores Para Veículos Automotores Recuperação de materiais Recuperação de materiais não especificados anteriormente Recursos Minerais Refino de Petróleo Refino de Petróleo Regulação das atividades de saúde, educação, serviços culturais e outros serviços sociais Regulação das atividades econômicas Relações exteriores Reparação de Objetos Pessoais e Domésticos Representantes Comerciais e Agentes do Comércio Representantes comerciais e agentes do comércio, exceto de veículos automotores e motocicletas Reprodução de Materiais Gravados Restaurantes e Outros Estabelecimentos de Serviços de Alimentação Saúde e Serviços Sociais Saúde e Serviços Sociais Saúde Humana Saúde humana e serviços sociais Segurança e ordem pública Seguridade Social Seguros de Vida e Não-Vida Seguros e Previdência Privada Seguros, resseguros, previdência complementar e planos de saúde Seleção, agenciamento e locação de mão-de-obra Seleção, Agenciamento e Locação de Mão-De-Obra Serviços Coletivos Prestados Pela Administração Pública Serviços coletivos prestados pela administração pública Serviços Coletivos Prestados Pela Administração Pública Na Esfera da Defesa Serviços Coletivos Prestados Pela Administração Pública Na Esfera da Justiça Serviços Coletivos Prestados Pela Administração Pública Na Esfera da Segurança e Ordem Pública, Inclusive Defesa Civil Serviços Coletivos Prestados Pela Administração Pública Na Esfera da Seguridade Social Serviços de Acabamento em Fios, Tecidos e Artigos Têxteis Serviços de arquitetura e engenharia e atividades técnicas relacionadas Serviços de Arquitetura e Engenharia e de Assessoramento Técnico Especializado Serviços de arquitetura e engenharia; testes e análises técnicas Serviços de assistência social sem alojamento Serviços de escritório, de apoio administrativo e outros serviços prestados às empresas Serviços Domésticos Serviços Domésticos Serviços Domésticos Serviços domésticos Serviços especializados para construção Serviços para edifícios e atividades paisagísticas Serviços Pessoais Serviços Pessoais Serviços Prestados Principalmente Às Empresas Serviços Relacionados Com A Extração de Petróleo e Gás - Exceto A Prospecção Realizada Por Terceiros Serviços Sociais Serviços Veterinários Siderúrgicas Integradas Silvicultura, Exploração Florestal e Serviços Relacionados Silvicultura, Exploração Florestal e Serviços Relacionados Com Estas Atividades Silvicultura, Exploração Florestal e Serviços Relacionados Com Estas Atividades Tecelagem - Inclusive Fiação e Tecelagem Telecomunicações Telecomunicações Telecomunicações por fio Telecomunicações por satélite Telecomunicações sem fio Telecomunicações sem fio Testes e análises técnicas Testes e análises técnicas Torrefação e Moagem de Café Transmissão de energia elétrica Transporte Aéreo Transporte aéreo Transporte aéreo de carga Transporte aéreo de passageiros Transporte Aéreo, Não Regular Transporte Aéreo, Regular Transporte Aquaviário Transporte aquaviário Transporte, Armazenagem e Comunicações Transporte, armazenagem e correio Transporte Dutoviário Transporte Espacial Transporte espacial Transporte Ferroviário Interurbano Transporte Marítimo de Cabotagem e Longo Curso Transporte rodoviário coletivo de passageiros, com itinerário fixo, municipal e em região metropolitana Transporte rodoviário de carga Transporte rodoviário de passageiros Transporte Terrestre Transporte terrestre Tratamento de dados, hospedagem na internet e outras atividades relacionadas Tratamento de dados, provedores de serviços de aplicação e serviços de hospedagem na internet Tratamento e disposição de resíduos"
+  },
+  {
+    "tag": "select",
+    "id": "naturezaAtividade",
+    "name": "filtros.naturezaAtividade",
+    "type": null,
+    "value": null,
+    "text": "Todas Aperfeiçoamento Cargo administrativo Chefe de Departamento Conselhos, Comissões e Consultoria Consultor Consultor Ad-hoc Coordenador de Curso Coordenador de Programa Decano de Centro Direção e Administração Diretor de Unidade Ensino Ensino de Graduação Ensino fundamental Ensino médio Especialização Estágio Extensão Universitária Graduação Membro de associação científica Membro de Colegiado Superior Membro de Comissão Membro de Comissão Permanente Membro de Comissão Temporária Membro de comitê assessor Membro de comitê de assessoramento Membro de Conselho Membro de Conselho de Centro Membro de Conselho de Unidade Membro de Conselho Editorial Membro de conselho superior Membro de Corpo Editorial Outra Outra atividade técnico-científica Outro Outro Pesquisa e Desenvolvimento Pós-graduação Projetos de pesquisa Reitor Revisor de agência de fomento Revisor de periódico Serviço Técnico Especializado Treinamento Vice-reitor ou Pró-reitor Vínculo com pós-graduação(CAPES)"
+  },
+  {
+    "tag": "input",
+    "id": "atividadeatual",
+    "name": "filtros.atividadeAtual",
+    "type": "checkbox",
+    "value": "true",
+    "text": ""
+  },
+  {
+    "tag": "select",
+    "id": "paisAtividade",
+    "name": "filtros.paisAtividade",
+    "type": null,
+    "value": null,
+    "text": "Selecione uma opção Todos Brasil Afeganistão África do Sul Albânia Alemanha Andorra Angola Antartida Antigua Antilhas Holandesas Arábia Saudita Argélia Argentina Armênia Austrália Austria Azerbaijão Bahamas Bangladesh Barbados Barein Belarus Bélgica Belize Benin Bermudas Myanmar Bolívia Bósnia Botsuana Britsh Indian Ocean Brunei Bulgária Burkina Fasso Burundi Butão Cabo Verde Camarões Camboja Canadá Catar Cazaquistão Chade Chile China Chipre Christmas Island Cingapura Colômbia Comores Congo Coréia do Norte Coréia do Sul Costa do Marfim Costa Rica Croácia Cuba Dinamarca Djibuti Dominica Egito El Salvador Emirados Árabes Equador Escócia Eslováquia Eslovênia Espanha Estados Unidos Estônia Etiópia Fiji Filipinas Finlândia Formosa França Gabão Gales Gâmbia Gana Geórgia Gibraltar Grã-Bretanha Granada Grécia Groênlandia Guadalupe Guam Guatemala Guiana Guiana Francesa Guiné Guiné Bissau Guiné Equatorial Haitii Holanda Honduras Hong Kong Hungria Iêmem Iêmen do Sul Ilhas Cayman Ilhas Cocoss Ilhas Cook Ilhas Falkland Ilhas Faroe Ilhas Midway Ilhas Norfolk Ilhas Salamão Ilhas Santa Helena Ilhas Turcas Caicos Ilhas Vírgens EUA Ilhas Vírgens GBR Ilhas Wake Ilhas Wallis Futuna Índia Indonésia Inglaterra Irã Iraque Irlanda Irlanda do Norte Islândia Israel Itália Iugoslávia Jamaica Japão Jordânia Kiribati Kuweit Laos Lesoto Letônia Líbano Libéria Líbia Liechtenstein Lituânia Luxemburgo Macau Madagascar Malásia Malavi Maldivas Mali Malta Marrocos Martinica Maurício Mauritânia México Mianmar Micronésia Moçambique Moldova Mônaco Mongólia Montserrat Namíbia Nauru Nepal Nicarágua Niger Nigéria Niue Noruega Nova Caledônia Nova Zelândia Oma Pacific Islands Panamá Papua Nova Guiné Paquistão Paraguai Peru Pitcairn Polinésia Francesa Polônia Porto Rico Portugal Quênia Quirgistão Rep.Centro-Africana República Dominicana República Tcheca Reunião Romênia Ruanda Rússia Samoa Americana Samoa Ocidental San Marino Santa Lúcia São Cristóvão Nevis São Pedro Miquelon São Tomé e Príncipe São Vicente Granadi Senegal Serra Leoa Seychelles Síria Somália Sri Lanka Suazilândia Sudão Suécia Suiça Suriname Tadjaquistão Tailândia Tanzânia Timor Togo Tokelau Tonga Trinidad e Tobago Tunísia Turcomenistão Turquia Tuvalu Ucrânia Uganda Uruguai Uzbekistan Vanuatu Vaticano Venezuela Vietnã Western Sahara Zaire Zâmbia Zimbabue"
+  },
+  {
+    "tag": "select",
+    "id": "regiaoAtividade",
+    "name": "filtros.regiaoAtividade",
+    "type": null,
+    "value": null,
+    "text": "Todas Centro-Oeste Nordeste Norte Sudeste Sul"
+  },
+  {
+    "tag": "select",
+    "id": "ufAtividade",
+    "name": "filtros.ufAtividade",
+    "type": null,
+    "value": null,
+    "text": "Todas Acre Alagoas Amapá Amazonas Bahia Ceará Distrito Federal Espírito Santo Goiás Maranhão Mato Grosso Mato Grosso do Sul Minas Gerais Pará Paraíba Paraná Pernambuco Piauí Rio de Janeiro Rio Grande do Norte Rio Grande do Sul Rondônia Roraima Santa Catarina São Paulo Sergipe Tocantins"
+  },
+  {
+    "tag": "input",
+    "id": "nomeInstAtividade",
+    "name": "filtros.nomeInstAtividade",
+    "type": "text",
+    "value": "",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": "participaDGP",
+    "name": "filtros.participaDGP",
+    "type": "checkbox",
+    "value": "true",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": null,
+    "name": null,
+    "type": "button",
+    "value": "Aplicar",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "id": null,
+    "name": null,
+    "type": "button",
+    "value": "Cancelar",
+    "text": ""
+  }
+]

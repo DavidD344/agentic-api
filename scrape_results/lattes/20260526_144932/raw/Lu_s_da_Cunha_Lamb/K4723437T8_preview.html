@@ -1,0 +1,307 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta http-equiv="origin-trial" content="A7vZI3v+Gz7JfuRolKNM4Aff6zaGuT7X0mf3wtoZTnKv6497cVMnhy03KDqX7kBz/q/iidW7srW31oQbBt4VhgoAAACUeyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGUuY29tOjQ0MyIsImZlYXR1cmUiOiJEaXNhYmxlVGhpcmRQYXJ0eVN0b3JhZ2VQYXJ0aXRpb25pbmczIiwiZXhwaXJ5IjoxNzU3OTgwODAwLCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ==">
+
+	<!--[if lt IE 9]><script language="javascript" type="text/javascript" src="js/excanvas.min.js"></script><![endif]-->
+
+	<link rel="Shortcut Icon" href="images/v2/fav_ico_lattes.ico">
+	<link rel="stylesheet" href="css/import.css">
+	<link rel="stylesheet" href="css/home.css">
+	<!--[if !IE]> -->  <link rel="stylesheet" href="css/tablet-mobile.css">  <!-- <![endif]-->
+    <!--[if gte IE 9]> <link rel="stylesheet" href="ccc/tablet-mobile.css" />  <![endif]-->
+	
+	<script type="text/javascript" async="" charset="utf-8" src="https://www.gstatic.com/recaptcha/releases/Br0hYqpfWeFzYCAXLD4UuCIV/recaptcha__en.js" crossorigin="anonymous" integrity="sha384-os1oE9riCJnxvhNQ7O/WqU9GwWx5mE1SEyqiRc2BLb3uEMbNuxEJKZIGYbcNwpF3"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script src="js/jquery.min.js"></script>
+	<script src="js/actions-jquery.js"></script>
+	<script src="js/resultados.js"></script>
+    <!---->
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="js/acessibilidade.js"></script>
+	<link href="http://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet" type="text/css">
+
+    <script>
+    var contexto = '/buscatextual'+'/';
+    var center = {
+    	getX:function( n )  {
+    		return (screen.width - n)/2;
+    	},
+    	getY:function( n )  {
+    		return (screen.height - n)/2;
+    	}
+    }
+
+    function abreCV() {
+    	var codigo = 'K4723437T8';
+        var nome = 'Luís da Cunha Lamb';
+        var modoIndAdhoc = '';
+        var tipoFuncaoIndicacaoAdHoc = '';
+        
+        
+        var parametrosCitacoes = '';
+        //if(document.getElementById('OPCAO_ISI').checked){
+        //	parametrosCitacoes += '&mostrarNroCitacoesISI=true';
+        //}
+        //if(document.getElementById('OPCAO_SCOPUS').checked){
+        //	parametrosCitacoes += '&mostrarNroCitacoesScopus=true';
+        //}
+        //if(document.getElementById('OPCAO_SCIELO').checked){
+        //	parametrosCitacoes += '&mostrarNroCitacoesScielo=true';
+        //}
+		
+				abreJanelaCVNormal(codigo, nome, parametrosCitacoes, modoIndAdhoc);        
+		
+    }
+
+    function abreJanelaCVIdioma(pCodigo, pNome, pParametrosCitacoes, modoIndAdhoc){
+    	var pParametrosIndAdHoc = "";
+    	
+    	if(modoIndAdhoc=="1" || modoIndAdhoc=="2" || modoIndAdhoc=="3"){
+    		pParametrosIndAdHoc = "&modoIndAdhoc="+modoIndAdhoc;
+    	}
+
+   	    grecaptcha.ready(function () {
+	       grecaptcha.execute('6Le8-aQUAAAAAEh7lq-D8bscahYZDZ4RKXBEhiov', { action: 'id_form_previw' }).then(function (token) {
+	              // add token to form
+	              $('#id_form_previw').prepend('<input type="hidden" name="g-recaptcha-response" value="' + token + '">');
+	              $("#token-captchar").val(token);
+	                
+	              var urlCV = contexto+"visualizacv.do?id="+pCodigo+"&idiomaExibicao=1"+pParametrosCitacoes+pParametrosIndAdHoc+"&tokenCaptchar="+token;
+	              var nomeJanela = "detalhePesq"
+	              var paramJanela = "status=yes,scrollbars=yes,fullscreen=no,menubar=no,directories=no,toolbar=no";
+	              var jnl = window.open(urlCV, nomeJanela, paramJanela);
+	              jnl.focus();   
+	        });;
+	    });
+    }
+
+    //Abre em popup
+ /*   function abreJanelaCVNormal(pCodigo, pNome, pParametrosCitacoes){
+    	var urlCV = contexto+"visualizacv.do?id="+pCodigo+pParametrosCitacoes;
+        var nomeJanela = "detalhePesq"
+        var paramJanela = "status=yes,scrollbars=yes,fullscreen=no,menubar=no,directories=no,toolbar=no";
+        var jnl = window.open(urlCV, nomeJanela, paramJanela);
+        jnl.focus();
+    }
+*/
+    //Abre em aba ou popup, depende da configuração do browser
+    function abreJanelaCVNormal(pCodigo, pNome, pParametrosCitacoes,modoIndAdhoc){
+    	var pParametrosIndAdHoc = "";
+    	if(modoIndAdhoc=="1" || modoIndAdhoc=="2" || modoIndAdhoc=="3"){
+    		pParametrosIndAdHoc = "&modoIndAdhoc="+modoIndAdhoc;
+    	}
+   	
+	   	grecaptcha.ready(function () {
+	           grecaptcha.execute('6Le8-aQUAAAAAEh7lq-D8bscahYZDZ4RKXBEhiov', { action: 'id_form_previw' }).then(function (token) {
+	               $('#id_form_previw').prepend('<input type="hidden" name="g-recaptcha-response" value="' + token + '">');
+	               $("#token-captchar").val(token);
+	               
+	               var urlCV = contexto+"visualizacv.do?id="+pCodigo+pParametrosCitacoes+pParametrosIndAdHoc+"&tokenCaptchar="+token;
+	               var jnl = window.open(urlCV, '_blank');
+	               jnl.focus();
+	           });;
+	    });
+    	
+    	
+    }
+    
+	
+    function marcarTodas(){
+		var checkbox = document.getElementById('cktodas');
+		if(checkbox.checked==true){
+			document.getElementById('OPCAO_ISI').checked=true;
+			document.getElementById('OPCAO_SCOPUS').checked=true;
+			document.getElementById('OPCAO_SCIELO').checked=true;
+			document.getElementById('ckNenhuma').checked=false;
+		}	
+	}
+	
+	function desMarcarTodas(){
+		var checkbox = document.getElementById('ckNenhuma');
+		if(checkbox.checked==true){
+			document.getElementById('OPCAO_ISI').checked=false;
+			document.getElementById('OPCAO_SCOPUS').checked=false;
+			document.getElementById('OPCAO_SCIELO').checked=false;
+			document.getElementById('cktodas').checked=false;
+		}	
+	}
+	
+	function verificaTodas(){
+		if(document.getElementById('OPCAO_ISI').checked
+			&& document.getElementById('OPCAO_SCOPUS').checked
+			&& document.getElementById('OPCAO_SCIELO').checked ){
+			document.getElementById('cktodas').checked=true;
+		}else{
+			document.getElementById('cktodas').checked=false;
+		}
+
+		if(!document.getElementById('OPCAO_ISI').checked
+			&& !document.getElementById('OPCAO_SCOPUS').checked
+			&& !document.getElementById('OPCAO_SCIELO').checked ){
+			document.getElementById('ckNenhuma').checked=true;
+		}else{
+			document.getElementById('ckNenhuma').checked=false;
+		}
+	}
+	
+	function envioEmail(seqIdPessoa,nome){
+	   var jnl = window.open(contexto+"email.do?metodo=apresentar&seqIdPessoa="+ 97422 +"&nomeDestinatario="+nome,
+                     "detalhePesq", "resizable=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,width=800,height=500,left=0,top=0");
+       jnl.focus();
+	}
+
+	function abrirLink(urllink){
+		var nomeJanela = "janelaLink";
+        var paramJanela = "status=yes,scrollbars=yes,fullscreen=no,menubar=yes,directories=no,toolbar=yes";
+        var jnl = window.open(urllink, nomeJanela, paramJanela);
+        jnl.focus();		
+	}
+
+
+	
+	function abrirGraficos(){
+		jQuery('.layout-modalcell.conteudo .control-bar-wrapper', window.parent.document).append('<div class="carregando-cont-indicadores">Aguarde, carregando gráficos...</div>'); 
+		
+		var url = contexto + 'graficos.do?metodo=apresentar&codRHCript=K4723437T8&nome=Luís da Cunha Lamb';
+		document.location.href = url;
+	}
+
+    </script>
+    <!-- Analytics - Inicio -->
+
+		<script type="text/javascript">
+		
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-35652740-1']);
+		  _gaq.push(['_trackPageview']);
+		
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		
+		</script>
+		
+<!-- Analytics - Fim -->
+<style type="text/css">
+  	.grecaptcha-badge { visibility: hidden; }
+</style>
+</head>
+<body>
+<form name="previewForm" id="id_form_previw" method="POST" action="/buscatextual/preview.do">
+	<input type="hidden" name="metodo" value="apresentar">
+	<input type="hidden" name="id" value="K4723437T8">
+	<input type="hidden" name="resumo" value="Luís Lamb, PhD in Computer Science pelo Imperial College London, University of London (2000); Master of Business Administration pelo Massachusetts Institute of Technology MIT (2023). Diploma of the Imperial College DIC (2000), MSc UFRGS (1995) e BSc UFRGS (1992) em Ciência da Computação. Realizou estágio pós-doutoral no Group of Logic, Language and Computation, King's College London (2005-2006).  Concluiu o MIT Executive Program in Strategy and Innovation em 2010 e o MIT Executive Program in Management and Leadership em 2014 (Massachusetts Institute of Technology, Sloan School of Management). Foi Visiting Fellow na Sloan School of Management, MIT (2022). ----- Professor Titular do Departamento de Informática Teórica/UFRGS. Tem atuação como pesquisador e gestor de inovação, ciência e tecnologia. Foi Secretário de Estado de Inovação, Ciência e Tecnologia do Rio Grande do Sul (01/2019-01/2022); Pró-Reitor de Pesquisa/UFRGS (2016-2018) e Diretor do Instituto de Informática/UFRGS (2011-2016) --- Contribuiu com resultados e dados de pesquisa em 2019 e 2021 para o ''Stanford AI Index Report'', mais prestigiado relatório anual sobre impacto global da Inteligência Artificial. Coordenou grupo de trabalho sobre sustentabilidade tecnológica em cidades no IEEE Planet Positive 2030 initiative, contribuiu para o relatório da Royal Society of London ''Computing for Net Zero: Science and solutions.'' ---Como Secretário de Estado, recriou a secretaria, liderou a concepção, gestão e execução do Programas de Estado INOVARS focado no desenvolvimento econômico das regiões a partir da inovação, além de conceber e liderar os outros programas de promoção da inovação, ciência, e tecnologia com investimentos significativos.  --- Como Pró-Reitor de Pesquisa, liderou a Aliança para Inovação, UFRGS-PUCRS-Unisinos que resultou no Pacto Pela Inovação de Porto Alegre (Pacto Alegre). ----Foi Honorary Visiting Fellow na City University London (UK) e Visiting Research Fellow no Abductive Systems Group, Department of Philosophy, University of British Columbia, Canada. Foi pesquisador ou professor convidado em diversos períodos na Rice University, Imperial College London (Department of Computing), King's College London (Group of Logic, Language and Computation), City University London (Dept. of Computing) e no 'Abductive Systems Group' do Dept. of Philosophy, Univ. of British Columbia, Canada. Foi Visiting Fellow (2022) na Sloan School of Management, MIT. ---- É autor de dois livros científicos:  Neural-Symbolic Cognitive Reasoning', Springer (2009) e Compiled Labelled Deductive Systems' sobre lógicas não-clássicas (IoP, 2004); publicou diversos artigos em periódicos como: ACM Computing Surveys, Theoretical Computer Science, Neural Computation, IEEE Transactions on Neural Networks, e nas principais conferências internacionais de suas áreas de pesquisa, como AAAI, IJCAI, NIPS, ICSE, HCOMP. --Tem experiência nas áreas de Ciência da Computação, Inteligência Artificial (I.A.),  Lógica, Inovação, e Empreendedorismo dirigido por Inovação. Atua principalmente em temas relacionados a Machine Learning, I.A. Neuro-simbólica, Lógicas em IA e Inovação.   -- Membro do 'Editorial Board' do Logic Journal of the Interest Group in Pure and Applied Logics e do Journal of the Brazilian Computer Society. Foi Co-editor-chefe da Revista de Informática Teórica e Aplicada. --- Atua como revisor de dezenas de journals e/ou como membro de comitês de conferências internacionais. Realizou trabalhos voluntários junto a entidades do setor de Tecnologia da Informação e Inovação e junto a escolas.  ---- É consultor ad hoc de vários órgãos de apoio à pesquisa internacionais. Foi Membro do Comitê Assessor de Ciência da Computação (CA-CC) do CNPq (2012-2015) e coordenador do CA-CC (10/2014 a 09/2015); foi membro do Comitê de avaliação Trienal de Ciência da Computação da CAPES (2011-2013). Foi Embaixador da Rede MCTI/EMBRAPII de Inovação em Inteligência Artificial">
+	<input type="hidden" name="idiomaExibicao" value="">
+	<input type="hidden" name="modoIndAdhoc" value="">
+	<input type="hidden" name="tipoFuncaoIndicacaoAdHoc" value="">
+	
+	<input type="hidden" name="previewForm.tokenCaptchar" value="" id="token-captchar">
+	
+<div class="layout-cell layout-cell-12 moldal-iframe modal-body">
+<a class="avisa-modal escondido" href="#" tabindex="1">Nova janela aberta em um iFrame. Utilize as setas do teclado para navegar no conteúdo ou tab para navegar entre os títulos. Pressione Esc para sair desta janela.</a>  
+  <div class="layout-cell-pad-main conteudo">
+    <div class="layout-cell layout-cell-9">
+      <div class="layout-cell-pad">
+        <div class="layout-cell layout-cell-12">
+          <div class="layout-cell-pad">
+            <div class="title-wrapper">
+				<h1 class="name" tabindex="0">Luís da Cunha Lamb</h1>
+				
+			</div>	
+			<div> 
+				<p class="resumo">
+				<img class="foto" width="95" alt="Foto" src="http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&amp;id=K4723437T8">
+					
+				 
+						Luís Lamb, PhD in Computer Science pelo Imperial College London, University of London (2000); Master of Business Administration pelo Massachusetts Institute of Technology MIT (2023). Diploma of the Imperial College DIC (2000), MSc UFRGS (1995) e BSc UFRGS (1992) em Ciência da Computação. Realizou estágio pós-doutoral no Group of Logic, Language and Computation, King's College London (2005-2006).  Concluiu o MIT Executive Program in Strategy and Innovation em 2010 e o MIT Executive Program in Management and Leadership em 2014 (Massachusetts Institute of Technology, Sloan School of Management). Foi Visiting Fellow na Sloan School of Management, MIT (2022). ----- Professor Titular do Departamento de Informática Teórica/UFRGS. Tem atuação como pesquisador e gestor de inovação, ciência e tecnologia. Foi Secretário de Estado de Inovação, Ciência e Tecnologia do Rio Grande do Sul (01/2019-01/2022); Pró-Reitor de Pesquisa/UFRGS (2016-2018) e Diretor do Instituto de Informática/UFRGS (2011-2016) --- Contribuiu com resultados e dados de pesquisa em 2019 e 2021 para o ''Stanford AI Index Report'', mais prestigiado relatório anual sobre impacto global da Inteligência Artificial. Coordenou grupo de trabalho sobre sustentabilidade tecnológica em cidades no IEEE Planet Positive 2030 initiative, contribuiu para o relatório da Royal Society of London ''Computing for Net Zero: Science and solutions.'' ---Como Secretário de Estado, recriou a secretaria, liderou a concepção, gestão e execução do Programas de Estado INOVARS focado no desenvolvimento econômico das regiões a partir da inovação, além de conceber e liderar os outros programas de promoção da inovação, ciência, e tecnologia com investimentos significativos.  --- Como Pró-Reitor de Pesquisa, liderou a Aliança para Inovação, UFRGS-PUCRS-Unisinos que resultou no Pacto Pela Inovação de Porto Alegre (Pacto Alegre). ----Foi Honorary Visiting Fellow na City University London (UK) e Visiting Research Fellow no Abductive Systems Group, Department of Philosophy, University of British Columbia, Canada. Foi pesquisador ou professor convidado em diversos períodos na Rice University, Imperial College London (Department of Computing), King's College London (Group of Logic, Language and Computation), City University London (Dept. of Computing) e no 'Abductive Systems Group' do Dept. of Philosophy, Univ. of British Columbia, Canada. Foi Visiting Fellow (2022) na Sloan School of Management, MIT. ---- É autor de dois livros científicos:  Neural-Symbolic Cognitive Reasoning', Springer (2009) e Compiled Labelled Deductive Systems' sobre lógicas não-clássicas (IoP, 2004); publicou diversos artigos em periódicos como: ACM Computing Surveys, Theoretical Computer Science, Neural Computation, IEEE Transactions on Neural Networks, e nas principais conferências internacionais de suas áreas de pesquisa, como AAAI, IJCAI, NIPS, ICSE, HCOMP. --Tem experiência nas áreas de Ciência da Computação, Inteligência Artificial (I.A.),  Lógica, Inovação, e Empreendedorismo dirigido por Inovação. Atua principalmente em temas relacionados a Machine Learning, I.A. Neuro-simbólica, Lógicas em IA e Inovação.   -- Membro do 'Editorial Board' do Logic Journal of the Interest Group in Pure and Applied Logics e do Journal of the Brazilian Computer Society. Foi Co-editor-chefe da Revista de Informática Teórica e Aplicada. --- Atua como revisor de dezenas de journals e/ou como membro de comitês de conferências internacionais. Realizou trabalhos voluntários junto a entidades do setor de Tecnologia da Informação e Inovação e junto a escolas.  ---- É consultor ad hoc de vários órgãos de apoio à pesquisa internacionais. Foi Membro do Comitê Assessor de Ciência da Computação (CA-CC) do CNPq (2012-2015) e coordenador do CA-CC (10/2014 a 09/2015); foi membro do Comitê de avaliação Trienal de Ciência da Computação da CAPES (2011-2013). Foi Embaixador da Rede MCTI/EMBRAPII de Inovação em Inteligência Artificial
+					
+				</p>
+					<hr class="separator">	
+				
+					<span>
+						
+							Certificado pelo autor em
+							23/04/2026.
+						
+					</span>
+					
+		
+            
+            </div>
+          </div>
+        </div>
+        <br class="clear">
+      </div>
+    </div>
+    <div class="layout-cell layout-cell-3 linksInstituicoes">
+      <div class="layout-cell-pad">
+        <div class="layout-cell layout-cell-12">
+          <div class="layout-cell-pad"> 
+            <div class="title-wrapper">
+              <h1 tabindex="0">No CNPq</h1>
+            </div>
+            <div class="layout-cell-pad">
+              <ul class="m-isntituicoes">
+                <li><a href="javascript:void(0)" onclick="abreCV()"><span class="m-logo m-logo-lattes"> &nbsp; </span> Currículo Lattes</a></li>
+					  
+                      
+                      
+                          <li><a href="javascript:void(0)" onclick="abrirLink('http://lattes.cnpq.br/240.1/1240066145518940')"><span class="m-logo m-logo-diretorio"> &nbsp; </span> Diretório de grupos de pesquisa</a></li>
+                      
+                      <li><a href="javascript:void(0)" onclick="abrirGraficos()"><span class="m-logo m-logo-graficos"> &nbsp; </span> Indicadores da Produção</a></li>
+                    </ul>
+                  </div>
+
+                  
+                      <div class="title-wrapper">
+                        <h1 tabindex="0">Em outras bases</h1>
+                      </div>
+                      <div class="layout-cell-pad">
+                        <ul class="m-isntituicoes">
+                            
+                              <li><a href="javascript:void(0)" onclick="abrirLink('http://www.scopus.com/authid/detail.url?authorId=10045847500')"><span class="m-logo m-logo-scopus"> &nbsp; </span> Scopus </a></li>
+                          
+                          
+                          
+                          
+                          
+                          
+                          
+                          
+                          
+                          
+                             
+                              <li><a href="javascript:void(0)" onclick="abrirLink('https://orcid.org/0000-0003-1571-165X')"><span class="m-logo m-logo-orcid"> &nbsp; </span> ORCID </a></li>
+                          
+                          
+                        </ul>
+                      </div>
+                   
+                </div>
+              </div>
+            </div>
+          </div>
+          <br class="clear">
+
+          <!--Texto-->
+        </div>
+      </div>
+      <script>
+
+          
+	var lblBtnContato =  'Contato';
+	var lblBtnAbrirCurriculo =  'Abrir Currículo';
+	var lblBtnFechar =  'Fechar';
+	//var lblBtnVoltar =  'Voltar';
+
+	parent.document.getElementById('idbtncontato').innerHTML = '<span class=\'mini-ico mini-ico-mail\'></span>'+ lblBtnContato;
+	parent.document.getElementById('idbtnabrircurriculo').innerHTML = '<span class=\'mini-ico mini-ico-dw\'></span>'+ lblBtnAbrirCurriculo;
+	parent.document.getElementById('idbtnfechar').innerHTML = '<span class=\'mini-ico mini-ico-x\'></span>'+ lblBtnFechar;
+	//parent.document.getElementById('idbtnvoltar').innerHTML = '<span class=\'mini-ico mini-ico-x\'></span>'+ lblBtnVoltar;
+
+</script>
+</form>
+
+
+	<script src="https://www.google.com/recaptcha/api.js?render=6Le8-aQUAAAAAEh7lq-D8bscahYZDZ4RKXBEhiov" async="" defer=""></script>
+
+<div><div class="grecaptcha-badge" data-style="bottomright" style="width: 256px; height: 60px; display: block; transition: right 0.3s; position: fixed; bottom: 14px; right: -186px; box-shadow: gray 0px 0px 5px; border-radius: 2px; overflow: hidden;"><div class="grecaptcha-logo"><iframe title="reCAPTCHA" width="256" height="60" role="presentation" name="a-sm2bxs4y0h63" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6Le8-aQUAAAAAEh7lq-D8bscahYZDZ4RKXBEhiov&amp;co=aHR0cHM6Ly9idXNjYXRleHR1YWwuY25wcS5icjo0NDM.&amp;hl=en&amp;v=Br0hYqpfWeFzYCAXLD4UuCIV&amp;size=invisible&amp;anchor-ms=20000&amp;execute-ms=30000&amp;cb=nocewnpmj450"></iframe></div><div class="grecaptcha-error"></div><textarea id="g-recaptcha-response-100000" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div></div></body></html>

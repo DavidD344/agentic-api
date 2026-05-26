@@ -1,0 +1,305 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta http-equiv="origin-trial" content="A7vZI3v+Gz7JfuRolKNM4Aff6zaGuT7X0mf3wtoZTnKv6497cVMnhy03KDqX7kBz/q/iidW7srW31oQbBt4VhgoAAACUeyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGUuY29tOjQ0MyIsImZlYXR1cmUiOiJEaXNhYmxlVGhpcmRQYXJ0eVN0b3JhZ2VQYXJ0aXRpb25pbmczIiwiZXhwaXJ5IjoxNzU3OTgwODAwLCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ==">
+
+	<!--[if lt IE 9]><script language="javascript" type="text/javascript" src="js/excanvas.min.js"></script><![endif]-->
+
+	<link rel="Shortcut Icon" href="images/v2/fav_ico_lattes.ico">
+	<link rel="stylesheet" href="css/import.css">
+	<link rel="stylesheet" href="css/home.css">
+	<!--[if !IE]> -->  <link rel="stylesheet" href="css/tablet-mobile.css">  <!-- <![endif]-->
+    <!--[if gte IE 9]> <link rel="stylesheet" href="ccc/tablet-mobile.css" />  <![endif]-->
+	
+	<script type="text/javascript" async="" charset="utf-8" src="https://www.gstatic.com/recaptcha/releases/Br0hYqpfWeFzYCAXLD4UuCIV/recaptcha__en.js" crossorigin="anonymous" integrity="sha384-os1oE9riCJnxvhNQ7O/WqU9GwWx5mE1SEyqiRc2BLb3uEMbNuxEJKZIGYbcNwpF3"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script src="js/jquery.min.js"></script>
+	<script src="js/actions-jquery.js"></script>
+	<script src="js/resultados.js"></script>
+    <!---->
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="js/acessibilidade.js"></script>
+	<link href="http://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet" type="text/css">
+
+    <script>
+    var contexto = '/buscatextual'+'/';
+    var center = {
+    	getX:function( n )  {
+    		return (screen.width - n)/2;
+    	},
+    	getY:function( n )  {
+    		return (screen.height - n)/2;
+    	}
+    }
+
+    function abreCV() {
+    	var codigo = 'K4739978Y0';
+        var nome = 'Ezequiel Roberto Zorzal';
+        var modoIndAdhoc = '';
+        var tipoFuncaoIndicacaoAdHoc = '';
+        
+        
+        var parametrosCitacoes = '';
+        //if(document.getElementById('OPCAO_ISI').checked){
+        //	parametrosCitacoes += '&mostrarNroCitacoesISI=true';
+        //}
+        //if(document.getElementById('OPCAO_SCOPUS').checked){
+        //	parametrosCitacoes += '&mostrarNroCitacoesScopus=true';
+        //}
+        //if(document.getElementById('OPCAO_SCIELO').checked){
+        //	parametrosCitacoes += '&mostrarNroCitacoesScielo=true';
+        //}
+		
+				abreJanelaCVNormal(codigo, nome, parametrosCitacoes, modoIndAdhoc);        
+		
+    }
+
+    function abreJanelaCVIdioma(pCodigo, pNome, pParametrosCitacoes, modoIndAdhoc){
+    	var pParametrosIndAdHoc = "";
+    	
+    	if(modoIndAdhoc=="1" || modoIndAdhoc=="2" || modoIndAdhoc=="3"){
+    		pParametrosIndAdHoc = "&modoIndAdhoc="+modoIndAdhoc;
+    	}
+
+   	    grecaptcha.ready(function () {
+	       grecaptcha.execute('6Le8-aQUAAAAAEh7lq-D8bscahYZDZ4RKXBEhiov', { action: 'id_form_previw' }).then(function (token) {
+	              // add token to form
+	              $('#id_form_previw').prepend('<input type="hidden" name="g-recaptcha-response" value="' + token + '">');
+	              $("#token-captchar").val(token);
+	                
+	              var urlCV = contexto+"visualizacv.do?id="+pCodigo+"&idiomaExibicao=1"+pParametrosCitacoes+pParametrosIndAdHoc+"&tokenCaptchar="+token;
+	              var nomeJanela = "detalhePesq"
+	              var paramJanela = "status=yes,scrollbars=yes,fullscreen=no,menubar=no,directories=no,toolbar=no";
+	              var jnl = window.open(urlCV, nomeJanela, paramJanela);
+	              jnl.focus();   
+	        });;
+	    });
+    }
+
+    //Abre em popup
+ /*   function abreJanelaCVNormal(pCodigo, pNome, pParametrosCitacoes){
+    	var urlCV = contexto+"visualizacv.do?id="+pCodigo+pParametrosCitacoes;
+        var nomeJanela = "detalhePesq"
+        var paramJanela = "status=yes,scrollbars=yes,fullscreen=no,menubar=no,directories=no,toolbar=no";
+        var jnl = window.open(urlCV, nomeJanela, paramJanela);
+        jnl.focus();
+    }
+*/
+    //Abre em aba ou popup, depende da configuração do browser
+    function abreJanelaCVNormal(pCodigo, pNome, pParametrosCitacoes,modoIndAdhoc){
+    	var pParametrosIndAdHoc = "";
+    	if(modoIndAdhoc=="1" || modoIndAdhoc=="2" || modoIndAdhoc=="3"){
+    		pParametrosIndAdHoc = "&modoIndAdhoc="+modoIndAdhoc;
+    	}
+   	
+	   	grecaptcha.ready(function () {
+	           grecaptcha.execute('6Le8-aQUAAAAAEh7lq-D8bscahYZDZ4RKXBEhiov', { action: 'id_form_previw' }).then(function (token) {
+	               $('#id_form_previw').prepend('<input type="hidden" name="g-recaptcha-response" value="' + token + '">');
+	               $("#token-captchar").val(token);
+	               
+	               var urlCV = contexto+"visualizacv.do?id="+pCodigo+pParametrosCitacoes+pParametrosIndAdHoc+"&tokenCaptchar="+token;
+	               var jnl = window.open(urlCV, '_blank');
+	               jnl.focus();
+	           });;
+	    });
+    	
+    	
+    }
+    
+	
+    function marcarTodas(){
+		var checkbox = document.getElementById('cktodas');
+		if(checkbox.checked==true){
+			document.getElementById('OPCAO_ISI').checked=true;
+			document.getElementById('OPCAO_SCOPUS').checked=true;
+			document.getElementById('OPCAO_SCIELO').checked=true;
+			document.getElementById('ckNenhuma').checked=false;
+		}	
+	}
+	
+	function desMarcarTodas(){
+		var checkbox = document.getElementById('ckNenhuma');
+		if(checkbox.checked==true){
+			document.getElementById('OPCAO_ISI').checked=false;
+			document.getElementById('OPCAO_SCOPUS').checked=false;
+			document.getElementById('OPCAO_SCIELO').checked=false;
+			document.getElementById('cktodas').checked=false;
+		}	
+	}
+	
+	function verificaTodas(){
+		if(document.getElementById('OPCAO_ISI').checked
+			&& document.getElementById('OPCAO_SCOPUS').checked
+			&& document.getElementById('OPCAO_SCIELO').checked ){
+			document.getElementById('cktodas').checked=true;
+		}else{
+			document.getElementById('cktodas').checked=false;
+		}
+
+		if(!document.getElementById('OPCAO_ISI').checked
+			&& !document.getElementById('OPCAO_SCOPUS').checked
+			&& !document.getElementById('OPCAO_SCIELO').checked ){
+			document.getElementById('ckNenhuma').checked=true;
+		}else{
+			document.getElementById('ckNenhuma').checked=false;
+		}
+	}
+	
+	function envioEmail(seqIdPessoa,nome){
+	   var jnl = window.open(contexto+"email.do?metodo=apresentar&seqIdPessoa="+ 533567 +"&nomeDestinatario="+nome,
+                     "detalhePesq", "resizable=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,width=800,height=500,left=0,top=0");
+       jnl.focus();
+	}
+
+	function abrirLink(urllink){
+		var nomeJanela = "janelaLink";
+        var paramJanela = "status=yes,scrollbars=yes,fullscreen=no,menubar=yes,directories=no,toolbar=yes";
+        var jnl = window.open(urllink, nomeJanela, paramJanela);
+        jnl.focus();		
+	}
+
+
+	
+	function abrirGraficos(){
+		jQuery('.layout-modalcell.conteudo .control-bar-wrapper', window.parent.document).append('<div class="carregando-cont-indicadores">Aguarde, carregando gráficos...</div>'); 
+		
+		var url = contexto + 'graficos.do?metodo=apresentar&codRHCript=K4739978Y0&nome=Ezequiel Roberto Zorzal';
+		document.location.href = url;
+	}
+
+    </script>
+    <!-- Analytics - Inicio -->
+
+		<script type="text/javascript">
+		
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-35652740-1']);
+		  _gaq.push(['_trackPageview']);
+		
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		
+		</script>
+		
+<!-- Analytics - Fim -->
+<style type="text/css">
+  	.grecaptcha-badge { visibility: hidden; }
+</style>
+</head>
+<body>
+<form name="previewForm" id="id_form_previw" method="POST" action="/buscatextual/preview.do">
+	<input type="hidden" name="metodo" value="apresentar">
+	<input type="hidden" name="id" value="K4739978Y0">
+	<input type="hidden" name="resumo" value="&amp;lt;div style=''padding-left:0.5cm; padding-right:0.5cm; font-family:Arial, sans-serif; line-height:1.6;''&amp;gt;  &amp;lt;p&amp;gt;Professor Associado no Instituto de Ciência e Tecnologia da Universidade Federal de São Paulo (ICT/UNIFESP), com mais de 15 anos de experiência em ensino, pesquisa e desenvolvimento de tecnologias emergentes. Sou pesquisador e orientador nos Programas de Pós-Graduação em Inovação Tecnológica e Ciência da Computação da UNIFESP. Possuo Pós-Doutorado em Tecnologias Interativas, Doutorado em Engenharia Elétrica e Bacharelado em Ciência da Computação.&amp;lt;/p&amp;gt;  &amp;lt;p&amp;gt;Meu trabalho é voltado para o desenvolvimento, ensino e treinamento de tecnologias emergentes e interativas, como Realidade Virtual, Aumentada e Mista. Além disso, colaboro como pesquisador associado no Instituto de Engenharia de Sistemas e Computadores, Pesquisa e Desenvolvimento em Lisboa (INESC-ID/IST/ULisboa).&amp;lt;/p&amp;gt;  &amp;lt;p&amp;gt;Entre minhas competências estão:&amp;lt;/p&amp;gt;  &amp;lt;ul&amp;gt;    &amp;lt;li&amp;gt;XR (Realidade Estendida): Especialista em Realidade Aumentada (AR), Mista (MR) e Virtual (VR)&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;Desenvolvimento de Aplicações Interativas: Criação de experiências imersivas&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;Gerenciamento de TI: Liderança em transformação digital&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;HCI e UX: Otimização de interfaces com foco em usabilidade&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;Gamificação: Estratégias para ambientes educacionais&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;Análise de Dados: Transformação de dados em insights&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;Inteligência Artificial: Desenvolvimento de soluções inovadoras&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;Palestras e Treinamentos: Facilitação de workshops e palestras sobre tendências em tecnologias emergentes, capacitando profissionais e empresas.&amp;lt;/li&amp;gt;  &amp;lt;/ul&amp;gt;  &amp;lt;p&amp;gt;Ao longo da minha carreira, liderei equipes multidisciplinares em projetos de inovação tecnológica, prestei consultoria para soluções corporativas e transformação digital, e desenvolvi aplicativos educacionais gamificados. Tenho dezenas de publicações em conferências e periódicos, incluindo artigos científicos e capítulos de livros.&amp;lt;/p&amp;gt;  &amp;lt;p&amp;gt;Possuo experiência em gestão de ambientes corporativos e conhecimento em áreas como recrutamento e seleção (RS) e transformação digital.&amp;lt;/p&amp;gt;  &amp;lt;p&amp;gt;Sou palestrante e adoro compartilhar insights sobre tecnologias emergentes, inovação tecnológica, liderança, criatividade e transformação digital. Se você estiver interessado em discutir possíveis colaborações, organizar palestras, workshops ou apenas trocar ideias sobre o futuro da tecnologia, será um prazer conversar!&amp;lt;/p&amp;gt;  &amp;lt;p&amp;gt;Nacionalidade&amp;lt;/strong&amp;gt;: Italiana / Brasileira&amp;lt;/p&amp;gt;  &amp;lt;p&amp;gt;LinkedIn&amp;lt;/strong&amp;gt;: &amp;lt;a href=''https://www.linkedin.com/in/ezorzal/'' target=''_blank''&amp;gt;https://www.linkedin.com/in/ezorzal/&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;  &amp;lt;p&amp;gt;Homepage&amp;lt;/strong&amp;gt;: &amp;lt;a href=''http://www.ezequielzorzal.com'' target=''_blank''&amp;gt;http://www.ezequielzorzal.com&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;">
+	<input type="hidden" name="idiomaExibicao" value="">
+	<input type="hidden" name="modoIndAdhoc" value="">
+	<input type="hidden" name="tipoFuncaoIndicacaoAdHoc" value="">
+	
+	<input type="hidden" name="previewForm.tokenCaptchar" value="" id="token-captchar">
+	
+<div class="layout-cell layout-cell-12 moldal-iframe modal-body">
+<a class="avisa-modal escondido" href="#" tabindex="1">Nova janela aberta em um iFrame. Utilize as setas do teclado para navegar no conteúdo ou tab para navegar entre os títulos. Pressione Esc para sair desta janela.</a>  
+  <div class="layout-cell-pad-main conteudo">
+    <div class="layout-cell layout-cell-9">
+      <div class="layout-cell-pad">
+        <div class="layout-cell layout-cell-12">
+          <div class="layout-cell-pad">
+            <div class="title-wrapper">
+				<h1 class="name" tabindex="0">Ezequiel Roberto Zorzal</h1>
+				
+			</div>	
+			<div> 
+				<p class="resumo">
+				<img class="foto" width="95" alt="Foto" src="http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&amp;id=K4739978Y0">
+					
+				 
+						&lt;div style=''padding-left:0.5cm; padding-right:0.5cm; font-family:Arial, sans-serif; line-height:1.6;''&gt;  &lt;p&gt;Professor Associado no Instituto de Ciência e Tecnologia da Universidade Federal de São Paulo (ICT/UNIFESP), com mais de 15 anos de experiência em ensino, pesquisa e desenvolvimento de tecnologias emergentes. Sou pesquisador e orientador nos Programas de Pós-Graduação em Inovação Tecnológica e Ciência da Computação da UNIFESP. Possuo Pós-Doutorado em Tecnologias Interativas, Doutorado em Engenharia Elétrica e Bacharelado em Ciência da Computação.&lt;/p&gt;  &lt;p&gt;Meu trabalho é voltado para o desenvolvimento, ensino e treinamento de tecnologias emergentes e interativas, como Realidade Virtual, Aumentada e Mista. Além disso, colaboro como pesquisador associado no Instituto de Engenharia de Sistemas e Computadores, Pesquisa e Desenvolvimento em Lisboa (INESC-ID/IST/ULisboa).&lt;/p&gt;  &lt;p&gt;Entre minhas competências estão:&lt;/p&gt;  &lt;ul&gt;    &lt;li&gt;XR (Realidade Estendida): Especialista em Realidade Aumentada (AR), Mista (MR) e Virtual (VR)&lt;/li&gt;    &lt;li&gt;Desenvolvimento de Aplicações Interativas: Criação de experiências imersivas&lt;/li&gt;    &lt;li&gt;Gerenciamento de TI: Liderança em transformação digital&lt;/li&gt;    &lt;li&gt;HCI e UX: Otimização de interfaces com foco em usabilidade&lt;/li&gt;    &lt;li&gt;Gamificação: Estratégias para ambientes educacionais&lt;/li&gt;    &lt;li&gt;Análise de Dados: Transformação de dados em insights&lt;/li&gt;    &lt;li&gt;Inteligência Artificial: Desenvolvimento de soluções inovadoras&lt;/li&gt;    &lt;li&gt;Palestras e Treinamentos: Facilitação de workshops e palestras sobre tendências em tecnologias emergentes, capacitando profissionais e empresas.&lt;/li&gt;  &lt;/ul&gt;  &lt;p&gt;Ao longo da minha carreira, liderei equipes multidisciplinares em projetos de inovação tecnológica, prestei consultoria para soluções corporativas e transformação digital, e desenvolvi aplicativos educacionais gamificados. Tenho dezenas de publicações em conferências e periódicos, incluindo artigos científicos e capítulos de livros.&lt;/p&gt;  &lt;p&gt;Possuo experiência em gestão de ambientes corporativos e conhecimento em áreas como recrutamento e seleção (RS) e transformação digital.&lt;/p&gt;  &lt;p&gt;Sou palestrante e adoro compartilhar insights sobre tecnologias emergentes, inovação tecnológica, liderança, criatividade e transformação digital. Se você estiver interessado em discutir possíveis colaborações, organizar palestras, workshops ou apenas trocar ideias sobre o futuro da tecnologia, será um prazer conversar!&lt;/p&gt;  &lt;p&gt;Nacionalidade&lt;/strong&gt;: Italiana / Brasileira&lt;/p&gt;  &lt;p&gt;LinkedIn&lt;/strong&gt;: &lt;a href=''https://www.linkedin.com/in/ezorzal/'' target=''_blank''&gt;https://www.linkedin.com/in/ezorzal/&lt;/a&gt;&lt;/p&gt;  &lt;p&gt;Homepage&lt;/strong&gt;: &lt;a href=''http://www.ezequielzorzal.com'' target=''_blank''&gt;http://www.ezequielzorzal.com&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+					
+				</p>
+					<hr class="separator">	
+				
+					<span>
+						
+							Certificado pelo autor em
+							12/05/2026.
+						
+					</span>
+					
+		
+            
+            </div>
+          </div>
+        </div>
+        <br class="clear">
+      </div>
+    </div>
+    <div class="layout-cell layout-cell-3 linksInstituicoes">
+      <div class="layout-cell-pad">
+        <div class="layout-cell layout-cell-12">
+          <div class="layout-cell-pad"> 
+            <div class="title-wrapper">
+              <h1 tabindex="0">No CNPq</h1>
+            </div>
+            <div class="layout-cell-pad">
+              <ul class="m-isntituicoes">
+                <li><a href="javascript:void(0)" onclick="abreCV()"><span class="m-logo m-logo-lattes"> &nbsp; </span> Currículo Lattes</a></li>
+					  
+                      
+                      
+                          <li><a href="javascript:void(0)" onclick="abrirLink('http://lattes.cnpq.br/240.1/3683706649252319')"><span class="m-logo m-logo-diretorio"> &nbsp; </span> Diretório de grupos de pesquisa</a></li>
+                      
+                      <li><a href="javascript:void(0)" onclick="abrirGraficos()"><span class="m-logo m-logo-graficos"> &nbsp; </span> Indicadores da Produção</a></li>
+                    </ul>
+                  </div>
+
+                  
+                      <div class="title-wrapper">
+                        <h1 tabindex="0">Em outras bases</h1>
+                      </div>
+                      <div class="layout-cell-pad">
+                        <ul class="m-isntituicoes">
+                            
+                          
+                          
+                          
+                          
+                          
+                          
+                          
+                          
+                          
+                             
+                              <li><a href="javascript:void(0)" onclick="abrirLink('https://orcid.org/0000-0002-0938-7374')"><span class="m-logo m-logo-orcid"> &nbsp; </span> ORCID </a></li>
+                          
+                          
+                        </ul>
+                      </div>
+                   
+                </div>
+              </div>
+            </div>
+          </div>
+          <br class="clear">
+
+          <!--Texto-->
+        </div>
+      </div>
+      <script>
+
+          
+	var lblBtnContato =  'Contato';
+	var lblBtnAbrirCurriculo =  'Abrir Currículo';
+	var lblBtnFechar =  'Fechar';
+	//var lblBtnVoltar =  'Voltar';
+
+	parent.document.getElementById('idbtncontato').innerHTML = '<span class=\'mini-ico mini-ico-mail\'></span>'+ lblBtnContato;
+	parent.document.getElementById('idbtnabrircurriculo').innerHTML = '<span class=\'mini-ico mini-ico-dw\'></span>'+ lblBtnAbrirCurriculo;
+	parent.document.getElementById('idbtnfechar').innerHTML = '<span class=\'mini-ico mini-ico-x\'></span>'+ lblBtnFechar;
+	//parent.document.getElementById('idbtnvoltar').innerHTML = '<span class=\'mini-ico mini-ico-x\'></span>'+ lblBtnVoltar;
+
+</script>
+</form>
+
+
+	<script src="https://www.google.com/recaptcha/api.js?render=6Le8-aQUAAAAAEh7lq-D8bscahYZDZ4RKXBEhiov" async="" defer=""></script>
+
+</body></html>

@@ -1,0 +1,8 @@
+Nova janela aberta em um iFrame. Utilize as setas do teclado para navegar no conteúdo ou tab para navegar entre os títulos. Pressione Esc para sair desta janela. Marco Serpa Molinaro Marco Molinaro é Professor Adjunto do Departamento de Informática da PUC-Rio, onde ingressou em 2015, tendo sido anteriormente professor nas universidade Georgia Tech e TU Delft (Holanda). 
+
+Possui graduação em Engenharia de Computação pela PUC-RIo (2005), mestrado em informática também pela PUC-Rio (2016), e doutorado em Algorithms, Combinatorics, and Optimization pela Carnegie Mellon University (2013). 
+
+Possui colaboração com universidades e laboratórios de pesquisa internacional de maior prestígio, como Carnegie Mellon University, Georgia Tech, Boston University, University of Wisconsin-Madison, University of Illinois Urbana-Champaign, Johns Hopkins University, University of Toronto, TU Berlin, University of Bonn, Technion, Tel-Aviv University, Google, e IBM.
+
+Atualmente se dedica à pesquisa em Teoria da Computação e Pesquisa Operacional, com ênfase em algoritmos online e programação inteira. . Certificado pelo autor em
+							16/03/2026. No CNPq Currículo Lattes Indicadores da Produção Em outras bases ORCID

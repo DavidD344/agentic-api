@@ -1,0 +1,307 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta http-equiv="origin-trial" content="A7vZI3v+Gz7JfuRolKNM4Aff6zaGuT7X0mf3wtoZTnKv6497cVMnhy03KDqX7kBz/q/iidW7srW31oQbBt4VhgoAAACUeyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGUuY29tOjQ0MyIsImZlYXR1cmUiOiJEaXNhYmxlVGhpcmRQYXJ0eVN0b3JhZ2VQYXJ0aXRpb25pbmczIiwiZXhwaXJ5IjoxNzU3OTgwODAwLCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ==">
+
+	<!--[if lt IE 9]><script language="javascript" type="text/javascript" src="js/excanvas.min.js"></script><![endif]-->
+
+	<link rel="Shortcut Icon" href="images/v2/fav_ico_lattes.ico">
+	<link rel="stylesheet" href="css/import.css">
+	<link rel="stylesheet" href="css/home.css">
+	<!--[if !IE]> -->  <link rel="stylesheet" href="css/tablet-mobile.css">  <!-- <![endif]-->
+    <!--[if gte IE 9]> <link rel="stylesheet" href="ccc/tablet-mobile.css" />  <![endif]-->
+	
+	<script type="text/javascript" async="" charset="utf-8" src="https://www.gstatic.com/recaptcha/releases/Br0hYqpfWeFzYCAXLD4UuCIV/recaptcha__en.js" crossorigin="anonymous" integrity="sha384-os1oE9riCJnxvhNQ7O/WqU9GwWx5mE1SEyqiRc2BLb3uEMbNuxEJKZIGYbcNwpF3"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script src="js/jquery.min.js"></script>
+	<script src="js/actions-jquery.js"></script>
+	<script src="js/resultados.js"></script>
+    <!---->
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="js/acessibilidade.js"></script>
+	<link href="http://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet" type="text/css">
+
+    <script>
+    var contexto = '/buscatextual'+'/';
+    var center = {
+    	getX:function( n )  {
+    		return (screen.width - n)/2;
+    	},
+    	getY:function( n )  {
+    		return (screen.height - n)/2;
+    	}
+    }
+
+    function abreCV() {
+    	var codigo = 'K4796550E9';
+        var nome = 'Flávio Keidi Miyazawa';
+        var modoIndAdhoc = '';
+        var tipoFuncaoIndicacaoAdHoc = '';
+        
+        
+        var parametrosCitacoes = '';
+        //if(document.getElementById('OPCAO_ISI').checked){
+        //	parametrosCitacoes += '&mostrarNroCitacoesISI=true';
+        //}
+        //if(document.getElementById('OPCAO_SCOPUS').checked){
+        //	parametrosCitacoes += '&mostrarNroCitacoesScopus=true';
+        //}
+        //if(document.getElementById('OPCAO_SCIELO').checked){
+        //	parametrosCitacoes += '&mostrarNroCitacoesScielo=true';
+        //}
+		
+				abreJanelaCVNormal(codigo, nome, parametrosCitacoes, modoIndAdhoc);        
+		
+    }
+
+    function abreJanelaCVIdioma(pCodigo, pNome, pParametrosCitacoes, modoIndAdhoc){
+    	var pParametrosIndAdHoc = "";
+    	
+    	if(modoIndAdhoc=="1" || modoIndAdhoc=="2" || modoIndAdhoc=="3"){
+    		pParametrosIndAdHoc = "&modoIndAdhoc="+modoIndAdhoc;
+    	}
+
+   	    grecaptcha.ready(function () {
+	       grecaptcha.execute('6Le8-aQUAAAAAEh7lq-D8bscahYZDZ4RKXBEhiov', { action: 'id_form_previw' }).then(function (token) {
+	              // add token to form
+	              $('#id_form_previw').prepend('<input type="hidden" name="g-recaptcha-response" value="' + token + '">');
+	              $("#token-captchar").val(token);
+	                
+	              var urlCV = contexto+"visualizacv.do?id="+pCodigo+"&idiomaExibicao=1"+pParametrosCitacoes+pParametrosIndAdHoc+"&tokenCaptchar="+token;
+	              var nomeJanela = "detalhePesq"
+	              var paramJanela = "status=yes,scrollbars=yes,fullscreen=no,menubar=no,directories=no,toolbar=no";
+	              var jnl = window.open(urlCV, nomeJanela, paramJanela);
+	              jnl.focus();   
+	        });;
+	    });
+    }
+
+    //Abre em popup
+ /*   function abreJanelaCVNormal(pCodigo, pNome, pParametrosCitacoes){
+    	var urlCV = contexto+"visualizacv.do?id="+pCodigo+pParametrosCitacoes;
+        var nomeJanela = "detalhePesq"
+        var paramJanela = "status=yes,scrollbars=yes,fullscreen=no,menubar=no,directories=no,toolbar=no";
+        var jnl = window.open(urlCV, nomeJanela, paramJanela);
+        jnl.focus();
+    }
+*/
+    //Abre em aba ou popup, depende da configuração do browser
+    function abreJanelaCVNormal(pCodigo, pNome, pParametrosCitacoes,modoIndAdhoc){
+    	var pParametrosIndAdHoc = "";
+    	if(modoIndAdhoc=="1" || modoIndAdhoc=="2" || modoIndAdhoc=="3"){
+    		pParametrosIndAdHoc = "&modoIndAdhoc="+modoIndAdhoc;
+    	}
+   	
+	   	grecaptcha.ready(function () {
+	           grecaptcha.execute('6Le8-aQUAAAAAEh7lq-D8bscahYZDZ4RKXBEhiov', { action: 'id_form_previw' }).then(function (token) {
+	               $('#id_form_previw').prepend('<input type="hidden" name="g-recaptcha-response" value="' + token + '">');
+	               $("#token-captchar").val(token);
+	               
+	               var urlCV = contexto+"visualizacv.do?id="+pCodigo+pParametrosCitacoes+pParametrosIndAdHoc+"&tokenCaptchar="+token;
+	               var jnl = window.open(urlCV, '_blank');
+	               jnl.focus();
+	           });;
+	    });
+    	
+    	
+    }
+    
+	
+    function marcarTodas(){
+		var checkbox = document.getElementById('cktodas');
+		if(checkbox.checked==true){
+			document.getElementById('OPCAO_ISI').checked=true;
+			document.getElementById('OPCAO_SCOPUS').checked=true;
+			document.getElementById('OPCAO_SCIELO').checked=true;
+			document.getElementById('ckNenhuma').checked=false;
+		}	
+	}
+	
+	function desMarcarTodas(){
+		var checkbox = document.getElementById('ckNenhuma');
+		if(checkbox.checked==true){
+			document.getElementById('OPCAO_ISI').checked=false;
+			document.getElementById('OPCAO_SCOPUS').checked=false;
+			document.getElementById('OPCAO_SCIELO').checked=false;
+			document.getElementById('cktodas').checked=false;
+		}	
+	}
+	
+	function verificaTodas(){
+		if(document.getElementById('OPCAO_ISI').checked
+			&& document.getElementById('OPCAO_SCOPUS').checked
+			&& document.getElementById('OPCAO_SCIELO').checked ){
+			document.getElementById('cktodas').checked=true;
+		}else{
+			document.getElementById('cktodas').checked=false;
+		}
+
+		if(!document.getElementById('OPCAO_ISI').checked
+			&& !document.getElementById('OPCAO_SCOPUS').checked
+			&& !document.getElementById('OPCAO_SCIELO').checked ){
+			document.getElementById('ckNenhuma').checked=true;
+		}else{
+			document.getElementById('ckNenhuma').checked=false;
+		}
+	}
+	
+	function envioEmail(seqIdPessoa,nome){
+	   var jnl = window.open(contexto+"email.do?metodo=apresentar&seqIdPessoa="+ 390487 +"&nomeDestinatario="+nome,
+                     "detalhePesq", "resizable=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,width=800,height=500,left=0,top=0");
+       jnl.focus();
+	}
+
+	function abrirLink(urllink){
+		var nomeJanela = "janelaLink";
+        var paramJanela = "status=yes,scrollbars=yes,fullscreen=no,menubar=yes,directories=no,toolbar=yes";
+        var jnl = window.open(urllink, nomeJanela, paramJanela);
+        jnl.focus();		
+	}
+
+
+	
+	function abrirGraficos(){
+		jQuery('.layout-modalcell.conteudo .control-bar-wrapper', window.parent.document).append('<div class="carregando-cont-indicadores">Aguarde, carregando gráficos...</div>'); 
+		
+		var url = contexto + 'graficos.do?metodo=apresentar&codRHCript=K4796550E9&nome=Flávio Keidi Miyazawa';
+		document.location.href = url;
+	}
+
+    </script>
+    <!-- Analytics - Inicio -->
+
+		<script type="text/javascript">
+		
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-35652740-1']);
+		  _gaq.push(['_trackPageview']);
+		
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		
+		</script>
+		
+<!-- Analytics - Fim -->
+<style type="text/css">
+  	.grecaptcha-badge { visibility: hidden; }
+</style>
+</head>
+<body>
+<form name="previewForm" id="id_form_previw" method="POST" action="/buscatextual/preview.do">
+	<input type="hidden" name="metodo" value="apresentar">
+	<input type="hidden" name="id" value="K4796550E9">
+	<input type="hidden" name="resumo" value="Possui graduação em Ciência da Computação pela UFMS (1990), mestrado (1993) e doutorado (1997) em Matemática Aplicada pela USP. É professor da UNICAMP (desde 1998), onde obteve o título de livre-docente (2003), se tornou professor titular (2012) e atuou como coordenador de pós-graduação (2005-2007) e diretor associado (2013-2014). Atuou na Sociedade Brasileira de Computação (SBC) como coordenador do Grupo Especial de Otimização Combinatória (2017-2019), como coordenador (2019-2021) e membro do Comitê Gestor (2021-2023) da Comissão Especial de Algoritmos, Combinatória e Otimização. Atuou como membro do Comitê Diretor do Latin American Theoretical Informatics Symposium (desde 2020), editor-chefe da revista SBC Reviews on Computer Science (2020-06/2025), atualmente como membro do corpo editorial (desde 08/2025), editor associado da revista Connection Science (2021-2025) e membro do corpo editorial da revista Pesquisa Operacional (2018-2021). É membro da Coordenação de Área da FAPESP em Ciência e Engenharia da Computação (desde 2024) e membro titular da Academia de Ciências do Estado de São Paulo (desde 2025). É bolsista de produtividade em pesquisa do CNPq (desde 1998). Sua tese de doutorado obteve o primeiro lugar no Concurso de Teses da SBC (1998) e vários de seus orientados obtiveram prêmios em concursos de teses e dissertações. Recebeu o Prêmio de Excelência Acadêmica do Instituto de Computação (2008) e o Prêmio Zeferino Vaz (2013). Foi um dos fundadores do Laboratório de Otimização e Combinatória da UNICAMP (em 2001). Seus interesses de pesquisa se concentram na área de Teoria da Computação, com ênfase em Análise de Algoritmos e Otimização Combinatória. Tem investigado vários problemas de otimização combinatória, com aplicações em computação, logística, gerência da cadeia de suprimentos, entre outras. Obteve, junto com colaboradores e alunos, os melhores algoritmos de aproximação ou algoritmos exatos para vários problemas no momento da respectiva publicação do resultado, como para variantes de problemas de empacotamento, como o bem conhecido problema de empacotamento unidimensional (bin packing), o problema de corte de estoque unidimensional (cutting stock) e outros envolvendo uma ou mais dimensões, restrições e formas diversas (empacotamentos com rotações, empacotamentos de discos e hiperesferas, quadrados e hipercubos, de itens e recipientes gordos definidos por formas algébricas (cilindros, triângulos, elipsóides, politopos, etc), com restrições de classes e cores, com restrições de descarregamento, com restrições de estabilidade, etc); para variantes de problemas de particionamento e localização de recursos (clustering and facility location); problemas envolvendo restrições de conexidade, como no problema de partição conexa balanceada (balanced connected partition), de spanner em grafos (graph spanners); para variantes de problemas de escalonamento de tarefas (scheduling); para variantes de problemas de roteamento de veículos (vehicle routing); variantes de problemas de cobertura (covering); além de resultados estruturais para problemas diversos. Vários dos fatores de aproximação obtidos são os melhores da literatura, alguns dos quais dificilmente serão melhorados, por serem esquemas de aproximação ou por fatores melhores implicarem que P=NP.">
+	<input type="hidden" name="idiomaExibicao" value="">
+	<input type="hidden" name="modoIndAdhoc" value="">
+	<input type="hidden" name="tipoFuncaoIndicacaoAdHoc" value="">
+	
+	<input type="hidden" name="previewForm.tokenCaptchar" value="" id="token-captchar">
+	
+<div class="layout-cell layout-cell-12 moldal-iframe modal-body">
+<a class="avisa-modal escondido" href="#" tabindex="1">Nova janela aberta em um iFrame. Utilize as setas do teclado para navegar no conteúdo ou tab para navegar entre os títulos. Pressione Esc para sair desta janela.</a>  
+  <div class="layout-cell-pad-main conteudo">
+    <div class="layout-cell layout-cell-9">
+      <div class="layout-cell-pad">
+        <div class="layout-cell layout-cell-12">
+          <div class="layout-cell-pad">
+            <div class="title-wrapper">
+				<h1 class="name" tabindex="0">Flávio Keidi Miyazawa</h1>
+				
+			</div>	
+			<div> 
+				<p class="resumo">
+				<img class="foto" width="95" alt="Foto" src="http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&amp;id=K4796550E9">
+					
+				 
+						Possui graduação em Ciência da Computação pela UFMS (1990), mestrado (1993) e doutorado (1997) em Matemática Aplicada pela USP. É professor da UNICAMP (desde 1998), onde obteve o título de livre-docente (2003), se tornou professor titular (2012) e atuou como coordenador de pós-graduação (2005-2007) e diretor associado (2013-2014). Atuou na Sociedade Brasileira de Computação (SBC) como coordenador do Grupo Especial de Otimização Combinatória (2017-2019), como coordenador (2019-2021) e membro do Comitê Gestor (2021-2023) da Comissão Especial de Algoritmos, Combinatória e Otimização. Atuou como membro do Comitê Diretor do Latin American Theoretical Informatics Symposium (desde 2020), editor-chefe da revista SBC Reviews on Computer Science (2020-06/2025), atualmente como membro do corpo editorial (desde 08/2025), editor associado da revista Connection Science (2021-2025) e membro do corpo editorial da revista Pesquisa Operacional (2018-2021). É membro da Coordenação de Área da FAPESP em Ciência e Engenharia da Computação (desde 2024) e membro titular da Academia de Ciências do Estado de São Paulo (desde 2025). É bolsista de produtividade em pesquisa do CNPq (desde 1998). Sua tese de doutorado obteve o primeiro lugar no Concurso de Teses da SBC (1998) e vários de seus orientados obtiveram prêmios em concursos de teses e dissertações. Recebeu o Prêmio de Excelência Acadêmica do Instituto de Computação (2008) e o Prêmio Zeferino Vaz (2013). Foi um dos fundadores do Laboratório de Otimização e Combinatória da UNICAMP (em 2001). Seus interesses de pesquisa se concentram na área de Teoria da Computação, com ênfase em Análise de Algoritmos e Otimização Combinatória. Tem investigado vários problemas de otimização combinatória, com aplicações em computação, logística, gerência da cadeia de suprimentos, entre outras. Obteve, junto com colaboradores e alunos, os melhores algoritmos de aproximação ou algoritmos exatos para vários problemas no momento da respectiva publicação do resultado, como para variantes de problemas de empacotamento, como o bem conhecido problema de empacotamento unidimensional (bin packing), o problema de corte de estoque unidimensional (cutting stock) e outros envolvendo uma ou mais dimensões, restrições e formas diversas (empacotamentos com rotações, empacotamentos de discos e hiperesferas, quadrados e hipercubos, de itens e recipientes gordos definidos por formas algébricas (cilindros, triângulos, elipsóides, politopos, etc), com restrições de classes e cores, com restrições de descarregamento, com restrições de estabilidade, etc); para variantes de problemas de particionamento e localização de recursos (clustering and facility location); problemas envolvendo restrições de conexidade, como no problema de partição conexa balanceada (balanced connected partition), de spanner em grafos (graph spanners); para variantes de problemas de escalonamento de tarefas (scheduling); para variantes de problemas de roteamento de veículos (vehicle routing); variantes de problemas de cobertura (covering); além de resultados estruturais para problemas diversos. Vários dos fatores de aproximação obtidos são os melhores da literatura, alguns dos quais dificilmente serão melhorados, por serem esquemas de aproximação ou por fatores melhores implicarem que P=NP.
+					
+				</p>
+					<hr class="separator">	
+				
+					<span>
+						
+							Certificado pelo autor em
+							21/04/2026.
+						
+					</span>
+					
+		
+            
+            </div>
+          </div>
+        </div>
+        <br class="clear">
+      </div>
+    </div>
+    <div class="layout-cell layout-cell-3 linksInstituicoes">
+      <div class="layout-cell-pad">
+        <div class="layout-cell layout-cell-12">
+          <div class="layout-cell-pad"> 
+            <div class="title-wrapper">
+              <h1 tabindex="0">No CNPq</h1>
+            </div>
+            <div class="layout-cell-pad">
+              <ul class="m-isntituicoes">
+                <li><a href="javascript:void(0)" onclick="abreCV()"><span class="m-logo m-logo-lattes"> &nbsp; </span> Currículo Lattes</a></li>
+					  
+                      
+                      
+                          <li><a href="javascript:void(0)" onclick="abrirLink('http://lattes.cnpq.br/240.1/8436515676441851')"><span class="m-logo m-logo-diretorio"> &nbsp; </span> Diretório de grupos de pesquisa</a></li>
+                      
+                      <li><a href="javascript:void(0)" onclick="abrirGraficos()"><span class="m-logo m-logo-graficos"> &nbsp; </span> Indicadores da Produção</a></li>
+                    </ul>
+                  </div>
+
+                  
+                      <div class="title-wrapper">
+                        <h1 tabindex="0">Em outras bases</h1>
+                      </div>
+                      <div class="layout-cell-pad">
+                        <ul class="m-isntituicoes">
+                            
+                          
+                          
+                              <li><a href="javascript:void(0)" onclick="abrirLink('http://www.researcherid.com/rid/G-3216-2010')"><span class="m-logo m-logo-researchid"> &nbsp; </span> ResearcherID </a></li>
+                          
+                          
+                          
+                          
+                          
+                          
+                          
+                          
+                             
+                              <li><a href="javascript:void(0)" onclick="abrirLink('https://orcid.org/0000-0002-1067-6421')"><span class="m-logo m-logo-orcid"> &nbsp; </span> ORCID </a></li>
+                          
+                          
+                        </ul>
+                      </div>
+                   
+                </div>
+              </div>
+            </div>
+          </div>
+          <br class="clear">
+
+          <!--Texto-->
+        </div>
+      </div>
+      <script>
+
+          
+	var lblBtnContato =  'Contato';
+	var lblBtnAbrirCurriculo =  'Abrir Currículo';
+	var lblBtnFechar =  'Fechar';
+	//var lblBtnVoltar =  'Voltar';
+
+	parent.document.getElementById('idbtncontato').innerHTML = '<span class=\'mini-ico mini-ico-mail\'></span>'+ lblBtnContato;
+	parent.document.getElementById('idbtnabrircurriculo').innerHTML = '<span class=\'mini-ico mini-ico-dw\'></span>'+ lblBtnAbrirCurriculo;
+	parent.document.getElementById('idbtnfechar').innerHTML = '<span class=\'mini-ico mini-ico-x\'></span>'+ lblBtnFechar;
+	//parent.document.getElementById('idbtnvoltar').innerHTML = '<span class=\'mini-ico mini-ico-x\'></span>'+ lblBtnVoltar;
+
+</script>
+</form>
+
+
+	<script src="https://www.google.com/recaptcha/api.js?render=6Le8-aQUAAAAAEh7lq-D8bscahYZDZ4RKXBEhiov" async="" defer=""></script>
+
+<div><div class="grecaptcha-badge" data-style="bottomright" style="width: 256px; height: 60px; display: block; transition: right 0.3s; position: fixed; bottom: 14px; right: -186px; box-shadow: gray 0px 0px 5px; border-radius: 2px; overflow: hidden;"><div class="grecaptcha-logo"><iframe title="reCAPTCHA" width="256" height="60" role="presentation" name="a-glf4fw6ksog9" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6Le8-aQUAAAAAEh7lq-D8bscahYZDZ4RKXBEhiov&amp;co=aHR0cHM6Ly9idXNjYXRleHR1YWwuY25wcS5icjo0NDM.&amp;hl=en&amp;v=Br0hYqpfWeFzYCAXLD4UuCIV&amp;size=invisible&amp;anchor-ms=20000&amp;execute-ms=30000&amp;cb=1gl0v0qlkkzp"></iframe></div><div class="grecaptcha-error"></div><textarea id="g-recaptcha-response-100000" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div></div></body></html>

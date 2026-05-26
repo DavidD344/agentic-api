@@ -1,0 +1,19 @@
+name,institution,scholarship_level,match_status,review_reason,candidates_count,candidate_names,candidate_codes,error
+Alisson Marques da Silva,CEFET/MG,PQ-C,ambiguous,Mais de um candidato possível,3,Alisson da Silva Marques | Alisson Marques da Silva | Alisson Henrique Marques da Silva,K8610582P0 | K4509401E4 | K4326979P7,
+Carlos Eduardo Pereira,UFRGS,PQ-1C,ambiguous,Mais de um candidato possível,10,Carlos Eduardo Pereira Vega | Carlos Eduardo Klimick Pereira | Carlos Eduardo Pereira | Carlos Eduardo Pereira | Carlos Eduardo Pereira Furlani,K4779072D8 | K4770376Z8 | K4483109U6 | K4253679Z4 | K4210775H6,
+Cristiano Maciel da Silva,UFSJ,PQ-2,ambiguous,Mais de um candidato possível,2,Cristiano Maciel da Silva | Maciel Cristiano da Silva,K4254730H6 | K4256016H9,
+Leandro Dias da Silva,UFAL,PQ-C,ambiguous,Mais de um candidato possível,3,Leandro Dias da Silva | Leandro Dias da Silva | Thiago Leandro da Silva Dias,K4249559J3 | K4766554T7 | K4482710D6,
+Marco Tulio de Oliveira Valente,UFMG,PQ-1C,error,Erro técnico durante scraping,0,,,Lattes retornou 'Stale file handle' sem candidatos
+Marcos André Gonçalves,UFMG,PQ-A,error,Erro técnico durante scraping,0,,,Lattes retornou 'Stale file handle' sem candidatos
+Marcos Antonio Simplicio Junior,USP,PQ-2,error,Erro técnico durante scraping,0,,,Lattes retornou 'Stale file handle' sem candidatos
+Marcos Augusto Menezes Vieira,UFMG,PQ-1C,error,Erro técnico durante scraping,0,,,Lattes retornou 'Stale file handle' sem candidatos
+Marcos de Oliveira Lage Ferreira,UFF,PQ-C,error,Erro técnico durante scraping,0,,,Lattes retornou 'Stale file handle' sem candidatos
+Marcos Eduardo Ribeiro do Valle Mesquita,UNICAMP,PQ-C,error,Erro técnico durante scraping,0,,,Lattes retornou 'Stale file handle' sem candidatos
+Marcos Gonçalves Quiles,UNIFESP,PQ-C,error,Erro técnico durante scraping,0,,,Lattes retornou 'Stale file handle' sem candidatos
+Marcos Kalinowski,PUC-Rio,PQ-1D,error,Erro técnico durante scraping,0,,,Lattes retornou 'Stale file handle' sem candidatos
+Marcus Rolf Peter Ritt,UFRGS,PQ-2,error,Erro técnico durante scraping,0,,,Lattes retornou 'Stale file handle' sem candidatos
+Marcus Vinicius Soledade Poggi de Aragao,PUC-Rio,PQ-1D,error,Erro técnico durante scraping,0,,,Lattes retornou 'Stale file handle' sem candidatos
+Maria Andréia Formico Rodrigues,UNIFOR,PQ-2,error,Erro técnico durante scraping,0,,,Lattes retornou 'Stale file handle' sem candidatos
+Maria Cecília Calani Baranauskas,UNICAMP,PQ-1D,error,Erro técnico durante scraping,0,,,Lattes retornou 'Stale file handle' sem candidatos
+Paulo Roberto Oliveira,UFRJ,PQ-1D,ambiguous,Mais de um candidato possível,10,Paulo Roberto Grimaldi Oliveira | Paulo Roberto de Oliveira | Paulo Roberto Oliveira Emygdio | Paulo Roberto de Oliveira | Paulo Roberto de Oliveira,K4785966U2 | K4776213Y0 | K4789805H3 | K4787980U6 | K4723987P7,
+Thiago Oliveira dos Santos,UFES,PQ-2,ambiguous,Mais de um candidato possível,3,Thiago Oliveira dos Santos | Thiago Oliveira dos Santos | Thiago Oliveira dos Santos,K4537723J8 | K4764975U2 | K4442361A6,

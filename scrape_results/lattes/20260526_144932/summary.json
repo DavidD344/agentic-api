@@ -1,0 +1,8 @@
+{
+  "source_csv": "scrape_results/20260526_143120/scholarships.csv",
+  "total": 480,
+  "matched": 462,
+  "not_found": 0,
+  "ambiguous": 6,
+  "error": 12
+}

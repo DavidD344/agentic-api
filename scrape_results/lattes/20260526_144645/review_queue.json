@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Abilio Pereira de Lucena Filho",
+    "institution": "UFRJ",
+    "scholarship_level": "PQ-C",
+    "match_status": "not_found",
+    "review_reason": "Nenhum candidato encontrado no Lattes",
+    "candidates_count": 0,
+    "lattes_code": null,
+    "lattes_name": null,
+    "lattes_preview_url": null,
+    "certified_at": null,
+    "orcid": null,
+    "summary": null,
+    "error": null,
+    "scholarship": {
+      "name": "Abilio Pereira de Lucena Filho",
+      "scholarship_level": "PQ-C",
+      "scholarship_start": "01/08/2025",
+      "scholarship_end": "31/07/2028",
+      "institution": "UFRJ",
+      "situation": "Em folha de pagamento"
+    },
+    "candidates": []
+  }
+]

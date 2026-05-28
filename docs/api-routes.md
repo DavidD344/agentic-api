@@ -1024,3 +1024,112 @@ http://127.0.0.1:5173
 ```
 
 Isso cobre Next.js, Vite e setups locais parecidos.
+
+## Rotas admin da pipeline
+
+Essas rotas existem para o futuro botão do frontend que regenera os dados.
+
+Importante: a pipeline é um processo demorado. A rota de execução apenas inicia o processo em background. O frontend deve acompanhar usando a rota de status.
+
+## POST /admin/pipeline/run
+
+Inicia a pipeline completa em background.
+
+### Ideia
+
+Essa rota executa o equivalente a:
+
+```bash
+env UV_CACHE_DIR=/tmp/uv-cache uv run python app/scrapers/pipeline_scrape.py
+```
+
+Ela não espera a pipeline terminar. A resposta volta logo com PID, log e estado inicial.
+
+### Request
+
+```http
+POST /admin/pipeline/run
+Content-Type: application/json
+
+{
+  "limit": null
+}
+```
+
+### Campos do body
+
+| Campo | Tipo | Descrição |
+|---|---:|---|
+| `limit` | number/null | Limita a quantidade de pessoas processadas. Use apenas para teste. Em produção/apresentação, deixe `null`. |
+
+### Response
+
+```json
+{
+  "started": true,
+  "running": true,
+  "status": "running",
+  "pid": 12345,
+  "started_at": "2026-05-28T17:40:00",
+  "command": [],
+  "limit": null,
+  "log_path": "logs/pipeline_api_20260528_174000.log",
+  "latest_pipeline_summary_json": "scrape_results/pipeline/.../pipeline_summary.json",
+  "log_tail": []
+}
+```
+
+### Possíveis erros
+
+| Status | Quando acontece |
+|---:|---|
+| `409` | Quando já existe uma pipeline rodando. |
+
+## GET /admin/pipeline/status
+
+Consulta se a pipeline está rodando e mostra as últimas linhas do log.
+
+### Request
+
+```http
+GET /admin/pipeline/status
+```
+
+### Response
+
+```json
+{
+  "running": false,
+  "status": "finished_or_stopped",
+  "pid": 12345,
+  "started_at": "2026-05-28T17:40:00",
+  "command": [],
+  "limit": null,
+  "log_path": "logs/pipeline_api_20260528_174000.log",
+  "latest_pipeline_summary_json": "scrape_results/pipeline/.../pipeline_summary.json",
+  "log_tail": []
+}
+```
+
+### Campos
+
+| Campo | Tipo | Uso no front |
+|---|---:|---|
+| `running` | boolean | Mostrar loading/bloquear novo clique em "Regenerar". |
+| `status` | string | `idle`, `running` ou `finished_or_stopped`. |
+| `pid` | number/null | PID do processo iniciado. Debug/admin. |
+| `started_at` | string/null | Quando a execução começou. |
+| `command` | array/null | Comando executado. Debug/admin. |
+| `limit` | number/null | Limite usado, se foi uma run de teste. |
+| `log_path` | string/null | Caminho do log da execução. |
+| `latest_pipeline_summary_json` | string/null | Último summary encontrado. |
+| `log_tail` | array | Últimas linhas do log para mostrar progresso no front. |
+
+### Fluxo recomendado no front
+
+```txt
+1. usuário clica "Regenerar dados"
+2. frontend chama POST /admin/pipeline/run
+3. frontend faz polling em GET /admin/pipeline/status
+4. quando running=false, frontend recarrega GET / e GET /dashboard/metrics
+```

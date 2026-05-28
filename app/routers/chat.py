@@ -1,8 +1,19 @@
 from fastapi import APIRouter, HTTPException
 
-from app.models.chat import AskChatRequest, CreateChatSessionRequest, SyncVectorStoreRequest
+from app.models.chat import (
+    AskChatRequest,
+    CreateChatSessionRequest,
+    SyncVectorStoreRequest,
+    UpdateChatSessionRequest,
+)
 from app.services.chat_service import ask_chat
-from app.services.chat_storage_service import create_session, get_session, list_sessions
+from app.services.chat_storage_service import (
+    create_session,
+    delete_session,
+    get_session,
+    list_sessions,
+    update_session_title,
+)
 from app.services.openai_vector_store_service import (
     ensure_vector_store,
     get_vector_store_metadata,
@@ -69,6 +80,22 @@ async def get_chat_session(session_id: str):
         raise HTTPException(status_code=404, detail=str(error)) from error
 
 
+@router.patch("/sessions/{session_id}")
+async def patch_chat_session(session_id: str, request: UpdateChatSessionRequest):
+    try:
+        return update_session_title(session_id, request.title)
+    except FileNotFoundError as error:
+        raise HTTPException(status_code=404, detail=str(error)) from error
+
+
+@router.delete("/sessions/{session_id}")
+async def delete_chat_session(session_id: str):
+    try:
+        return delete_session(session_id)
+    except FileNotFoundError as error:
+        raise HTTPException(status_code=404, detail=str(error)) from error
+
+
 @router.post("/sessions/{session_id}/ask")
 async def ask_chat_session(session_id: str, request: AskChatRequest):
     try:
@@ -79,4 +106,3 @@ async def ask_chat_session(session_id: str, request: AskChatRequest):
         )
     except FileNotFoundError as error:
         raise HTTPException(status_code=404, detail=str(error)) from error
-

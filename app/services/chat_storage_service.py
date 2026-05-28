@@ -77,6 +77,27 @@ def save_session(session: dict) -> dict:
     return session
 
 
+def update_session_title(session_id: str, title: str) -> dict:
+    session = get_session(session_id)
+    session["title"] = title
+
+    return save_session(session)
+
+
+def delete_session(session_id: str) -> dict:
+    path = session_path(session_id)
+
+    if not path.exists():
+        raise FileNotFoundError(f"Conversa não encontrada: {session_id}")
+
+    path.unlink()
+
+    return {
+        "deleted": True,
+        "session_id": session_id,
+    }
+
+
 def append_message(session_id: str, role: str, content: str, metadata: dict | None = None) -> dict:
     session = get_session(session_id)
     message = {
@@ -90,4 +111,3 @@ def append_message(session_id: str, role: str, content: str, metadata: dict | No
     save_session(session)
 
     return message
-

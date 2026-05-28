@@ -701,6 +701,44 @@ GET /chat/sessions/{session_id}
 |---:|---|
 | `404` | Quando a conversa não existe. |
 
+## PATCH /chat/sessions/{session_id}
+
+Renomeia uma conversa.
+
+### Request
+
+```http
+PATCH /chat/sessions/{session_id}
+Content-Type: application/json
+
+{
+  "title": "Novo título da conversa"
+}
+```
+
+### Response
+
+Retorna a conversa atualizada.
+
+## DELETE /chat/sessions/{session_id}
+
+Apaga uma conversa do histórico local.
+
+### Request
+
+```http
+DELETE /chat/sessions/{session_id}
+```
+
+### Response
+
+```json
+{
+  "deleted": true,
+  "session_id": "uuid"
+}
+```
+
 ## POST /chat/sessions/{session_id}/ask
 
 Envia uma pergunta para uma conversa existente.
@@ -790,6 +828,8 @@ POST /chat/vector-store/sync
 POST /chat/sessions
 GET /chat/sessions
 GET /chat/sessions/{session_id}
+PATCH /chat/sessions/{session_id}
+DELETE /chat/sessions/{session_id}
 POST /chat/sessions/{session_id}/ask
 ```
 
@@ -801,3 +841,186 @@ POST /chat/vector-store/sync
 ```
 
 Se o hash do corpus não mudou, `/chat/vector-store/sync` reutiliza o Vector Store existente.
+
+## GET /profiles
+
+Lista perfis individuais do dataset ativo.
+
+### Ideia
+
+Essa rota é a fonte para tabela de pesquisadores, tela de busca e filtros do frontend.
+
+Ela não retorna o currículo completo bruto; retorna um resumo prático com identificadores, dados da bolsa e campos semânticos principais.
+
+### Request
+
+```http
+GET /profiles?limit=50&offset=0
+```
+
+### Filtros disponíveis
+
+Todos os filtros são opcionais.
+
+| Query param | Exemplo | Descrição |
+|---|---|---|
+| `q` | `robotica` | Busca textual em nome, instituição, resumo, área, tópicos, domínios e tags. |
+| `name` | `Abilio` | Busca especificamente no nome da pessoa. |
+| `institution` | `UFMG` | Filtra por instituição. |
+| `uf` | `MG` | Filtra por UF inferida. |
+| `region` | `Sudeste` | Filtra por região inferida. |
+| `scholarship_level` | `PQ-1D` | Filtra pelo nível bruto da bolsa. |
+| `scholarship_category` | `PQ-1` | Filtra pela categoria agregada/inferida. |
+| `sex` | `female` | Filtra pelo sexo inferido. |
+| `main_area` | `artificial_intelligence` | Filtra pela área principal inferida. |
+| `topic` | `robotics` | Filtra pelos tópicos de pesquisa. |
+| `needs_review` | `true` | Filtra pessoas com algum campo marcado para revisão. |
+| `limit` | `50` | Tamanho da página. Mínimo `1`, máximo `500`. |
+| `offset` | `0` | Posição inicial da página. |
+
+### Response
+
+```json
+{
+  "total": 480,
+  "limit": 50,
+  "offset": 0,
+  "items": [
+    {
+      "name": "Nome da pessoa",
+      "institution": "UFMG",
+      "scholarship_level": "PQ-2",
+      "lattes_code": "K...",
+      "public_lattes_id": "...",
+      "lattes_url": "http://lattes.cnpq.br/...",
+      "photo_url": "...",
+      "orcid": "...",
+      "needs_review": false,
+      "semantic": {}
+    }
+  ],
+  "current": {}
+}
+```
+
+### Campos de cada item
+
+| Campo | Tipo | Uso no front |
+|---|---:|---|
+| `name` | string | Nome na tabela/card. |
+| `institution` | string | Instituição. |
+| `scholarship_level` | string | Nível da bolsa. |
+| `lattes_code` | string | ID técnico interno do Lattes, bom para rota de detalhe. |
+| `public_lattes_id` | string | ID público numérico do Lattes. |
+| `lattes_url` | string | Link para abrir currículo Lattes. |
+| `photo_url` | string/null | Foto, quando disponível. |
+| `orcid` | string/null | ORCID, quando disponível. |
+| `needs_review` | boolean | Indica se algum campo semântico precisa revisão. |
+| `semantic` | object | Campos inferidos/normalizados úteis para UI. |
+
+### Campos comuns dentro de `semantic`
+
+```txt
+institution_state_uf
+institution_region
+scholarship_category
+doctorate_year
+years_since_doctorate
+sex_inferred
+main_research_area
+research_topics
+methods_and_techniques
+application_domains
+career_stage
+academic_rank
+seniority_level
+has_international_experience
+has_industry_experience
+has_management_experience
+has_editorial_or_event_experience
+has_patents_or_software_outputs
+profile_summary_short
+dashboard_tags
+```
+
+## GET /profiles/{profile_id}
+
+Retorna o perfil completo de uma pessoa.
+
+### Ideia
+
+Usar quando o usuário clicar em uma pessoa na tabela/card.
+
+`profile_id` pode ser:
+
+```txt
+lattes_code
+public_lattes_id
+name exato
+```
+
+Recomendado para o front: usar `lattes_code`.
+
+### Request
+
+```http
+GET /profiles/K4781560E7
+```
+
+### Response
+
+Retorna o objeto completo daquela pessoa, incluindo:
+
+```txt
+dados CNPq
+dados Lattes
+summary
+photo_url
+orcid
+sections_available
+semantic_profile completo
+caminhos locais dos artefatos brutos
+```
+
+### Possíveis erros
+
+| Status | Quando acontece |
+|---:|---|
+| `404` | Quando o perfil não foi encontrado. |
+
+## GET /profiles/export.csv
+
+Exporta o dataset ativo em CSV.
+
+### Ideia
+
+Atende a parte de exportação do requisito. É o caminho mais simples para o professor baixar os dados estruturados.
+
+### Request
+
+```http
+GET /profiles/export.csv
+```
+
+### Response
+
+Retorna um arquivo:
+
+```txt
+profiles.csv
+```
+
+Com colunas básicas e campos semânticos principais.
+
+## CORS
+
+A API já libera CORS para frontends locais comuns:
+
+```txt
+http://localhost:3000
+http://localhost:5173
+http://127.0.0.1:3000
+http://127.0.0.1:5173
+```
+
+Isso cobre Next.js, Vite e setups locais parecidos.

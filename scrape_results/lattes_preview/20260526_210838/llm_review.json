@@ -1,0 +1,55 @@
+{
+  "enabled": true,
+  "model": "gpt-5.4-mini",
+  "confidence_threshold": 0.85,
+  "decisions": [
+    {
+      "name": "Alisson Marques da Silva",
+      "institution": "CEFET/MG",
+      "previous_status": "ambiguous",
+      "final_status": "matched",
+      "decision": {
+        "status": "matched",
+        "lattes_code": "K4509401E4",
+        "confidence": 0.98,
+        "reason": "Nome exato e forte compatibilidade institucional: o candidato atua no CEFET-MG. A área acadêmica também é plausível para a base alvo; os outros candidatos têm nome/instituição/área menos compatíveis."
+      }
+    },
+    {
+      "name": "Cristiano Maciel da Silva",
+      "institution": "UFSJ",
+      "previous_status": "ambiguous",
+      "final_status": "matched",
+      "decision": {
+        "status": "matched",
+        "lattes_code": "K4254730H6",
+        "confidence": 0.99,
+        "reason": "Nome exato, vínculo atual com a UFSJ e área de Ciência da Computação batem fortemente com o alvo; o outro candidato é de Educação e outra instituição, o que o descarta."
+      }
+    },
+    {
+      "name": "Leandro Dias da Silva",
+      "institution": "UFAL",
+      "previous_status": "ambiguous",
+      "final_status": "matched",
+      "decision": {
+        "status": "matched",
+        "lattes_code": "K4766554T7",
+        "confidence": 0.99,
+        "reason": "Nome coincide e o perfil é claramente da UFAL; a área de Computação e vínculo atual com o Instituto de Computação da UFAL batem fortemente com o alvo."
+      }
+    },
+    {
+      "name": "Thiago Oliveira dos Santos",
+      "institution": "UFES",
+      "previous_status": "ambiguous",
+      "final_status": "matched",
+      "decision": {
+        "status": "matched",
+        "lattes_code": "K4764975U2",
+        "confidence": 0.99,
+        "reason": "Nome coincide e o perfil é fortemente compatível com a UFES; o candidato é professor associado da UFES, enquanto os demais são de instituições/áreas claramente diferentes."
+      }
+    }
+  ]
+}

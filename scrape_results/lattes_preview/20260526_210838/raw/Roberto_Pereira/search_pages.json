@@ -1,0 +1,62 @@
+[
+  {
+    "page": 1,
+    "start": 0,
+    "page_size": null,
+    "candidates_count": 10
+  },
+  {
+    "page": 2,
+    "start": 10,
+    "page_size": 10,
+    "candidates_count": 10
+  },
+  {
+    "page": 3,
+    "start": 20,
+    "page_size": 10,
+    "candidates_count": 10
+  },
+  {
+    "page": 4,
+    "start": 30,
+    "page_size": 10,
+    "candidates_count": 10
+  },
+  {
+    "page": 5,
+    "start": 40,
+    "page_size": 10,
+    "candidates_count": 10
+  },
+  {
+    "page": 6,
+    "start": 50,
+    "page_size": 10,
+    "candidates_count": 10
+  },
+  {
+    "page": 7,
+    "start": 60,
+    "page_size": 10,
+    "candidates_count": 10
+  },
+  {
+    "page": 8,
+    "start": 70,
+    "page_size": 10,
+    "candidates_count": 10
+  },
+  {
+    "page": 9,
+    "start": 80,
+    "page_size": 10,
+    "candidates_count": 10
+  },
+  {
+    "page": 10,
+    "start": 90,
+    "page_size": 10,
+    "candidates_count": 10
+  }
+]

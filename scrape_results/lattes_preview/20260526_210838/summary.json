@@ -1,0 +1,12 @@
+{
+  "source_csv": "scrape_results/20260526_210837/scholarships.csv",
+  "total": 480,
+  "matched": 480,
+  "not_found": 0,
+  "ambiguous": 0,
+  "error": 0,
+  "technical_error_retries": 5,
+  "retry_attempts": 0,
+  "llm_review_attempts": 4,
+  "llm_review_matched": 4
+}

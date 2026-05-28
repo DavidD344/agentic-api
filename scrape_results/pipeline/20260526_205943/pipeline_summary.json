@@ -1,0 +1,12 @@
+{
+  "limit": 1,
+  "cnpq_run_dir": "scrape_results/20260526_205943",
+  "scholarships_csv": "scrape_results/20260526_205943/scholarships.csv",
+  "preview_run_dir": "scrape_results/lattes/20260526_205944",
+  "lattes_profiles_csv": "scrape_results/lattes/20260526_205944/lattes_profiles.csv",
+  "full_run_dir": "scrape_results/lattes/20260526_205948",
+  "lattes_full_profiles_csv": "scrape_results/lattes/20260526_205948/lattes_full_profiles.csv",
+  "lattes_full_profiles_json": "scrape_results/lattes/20260526_205948/lattes_full_profiles.json",
+  "review_queue_full_csv": "scrape_results/lattes/20260526_205948/review_queue_full.csv",
+  "summary_json": "scrape_results/lattes/20260526_205948/summary.json"
+}

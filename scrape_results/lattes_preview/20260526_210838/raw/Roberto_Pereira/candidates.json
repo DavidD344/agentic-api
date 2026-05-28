@@ -1,0 +1,702 @@
+[
+  {
+    "text": "Antonio Roberto Pereira Leite de Albuquerque",
+    "href": "javascript:abreDetalhe('K4783219Z3','Antonio_Roberto_Pereira_Leite_de_Albuquerque',4467,)",
+    "code": "K4783219Z3",
+    "slug": "Antonio_Roberto_Pereira_Leite_de_Albuquerque",
+    "person_id": "4467"
+  },
+  {
+    "text": "Roberto Pereira",
+    "href": "javascript:abreDetalhe('K4705604Z1','Roberto_Pereira',280607,)",
+    "code": "K4705604Z1",
+    "slug": "Roberto_Pereira",
+    "person_id": "280607"
+  },
+  {
+    "text": "Roberto Pereira",
+    "href": "javascript:abreDetalhe('K4269758T9','Roberto_Pereira',8350877,)",
+    "code": "K4269758T9",
+    "slug": "Roberto_Pereira",
+    "person_id": "8350877"
+  },
+  {
+    "text": "Roberto Wagner Pereira",
+    "href": "javascript:abreDetalhe('K4763086E0','Roberto_Wagner_Pereira',125620,)",
+    "code": "K4763086E0",
+    "slug": "Roberto_Wagner_Pereira",
+    "person_id": "125620"
+  },
+  {
+    "text": "Roberto Vilela Pereira",
+    "href": "javascript:abreDetalhe('K4774008Y1','Roberto_Vilela_Pereira',47856869,)",
+    "code": "K4774008Y1",
+    "slug": "Roberto_Vilela_Pereira",
+    "person_id": "47856869"
+  },
+  {
+    "text": "Clóvis Roberto Pereira Franco",
+    "href": "javascript:abreDetalhe('K4787883T2','Clóvis_Roberto_Pereira_Franco',14557,)",
+    "code": "K4787883T2",
+    "slug": "Clóvis_Roberto_Pereira_Franco",
+    "person_id": "14557"
+  },
+  {
+    "text": "Antonio Roberto Pereira",
+    "href": "javascript:abreDetalhe('K4780082H1','Antonio_Roberto_Pereira',40209,)",
+    "code": "K4780082H1",
+    "slug": "Antonio_Roberto_Pereira",
+    "person_id": "40209"
+  },
+  {
+    "text": "Wilson Roberto Pereira",
+    "href": "javascript:abreDetalhe('K4200464U8','Wilson_Roberto_Pereira',16788942,)",
+    "code": "K4200464U8",
+    "slug": "Wilson_Roberto_Pereira",
+    "person_id": "16788942"
+  },
+  {
+    "text": "Carlos Roberto Pereira",
+    "href": "javascript:abreDetalhe('K8454072D1','Carlos_Roberto_Pereira',108925068,)",
+    "code": "K8454072D1",
+    "slug": "Carlos_Roberto_Pereira",
+    "person_id": "108925068"
+  },
+  {
+    "text": "Ronaldo Cesar Pereira Roberto",
+    "href": "javascript:abreDetalhe('K8211109T9','Ronaldo_Cesar_Pereira_Roberto',104648830,)",
+    "code": "K8211109T9",
+    "slug": "Ronaldo_Cesar_Pereira_Roberto",
+    "person_id": "104648830"
+  },
+  {
+    "text": "José Roberto Pereira Guedes",
+    "href": "javascript:abreDetalhe('K4232267U6','José_Roberto_Pereira_Guedes',9521384,)",
+    "code": "K4232267U6",
+    "slug": "José_Roberto_Pereira_Guedes",
+    "person_id": "9521384"
+  },
+  {
+    "text": "Roberto Carlos Pereira",
+    "href": "javascript:abreDetalhe('K4750830E9','Roberto_Carlos_Pereira',619964,)",
+    "code": "K4750830E9",
+    "slug": "Roberto_Carlos_Pereira",
+    "person_id": "619964"
+  },
+  {
+    "text": "Roberto Carlos Gomes Pereira",
+    "href": "javascript:abreDetalhe('K4798361D8','Roberto_Carlos_Gomes_Pereira',9061599,)",
+    "code": "K4798361D8",
+    "slug": "Roberto_Carlos_Gomes_Pereira",
+    "person_id": "9061599"
+  },
+  {
+    "text": "Roberto Dias Batista Pereira",
+    "href": "javascript:abreDetalhe('K4258853Z2','Roberto_Dias_Batista_Pereira',10135406,)",
+    "code": "K4258853Z2",
+    "slug": "Roberto_Dias_Batista_Pereira",
+    "person_id": "10135406"
+  },
+  {
+    "text": "Roberto Pereira de Magalhães",
+    "href": "javascript:abreDetalhe('K4739024H8','Roberto_Pereira_de_Magalhães',535874,)",
+    "code": "K4739024H8",
+    "slug": "Roberto_Pereira_de_Magalhães",
+    "person_id": "535874"
+  },
+  {
+    "text": "Jose Roberto Brito Pereira",
+    "href": "javascript:abreDetalhe('K4723316U0','Jose_Roberto_Brito_Pereira',92034,)",
+    "code": "K4723316U0",
+    "slug": "Jose_Roberto_Brito_Pereira",
+    "person_id": "92034"
+  },
+  {
+    "text": "Daniel Roberto Guimarães Pereira",
+    "href": "javascript:abreDetalhe('K4707541Z9','Daniel_Roberto_Guimarães_Pereira',224646,)",
+    "code": "K4707541Z9",
+    "slug": "Daniel_Roberto_Guimarães_Pereira",
+    "person_id": "224646"
+  },
+  {
+    "text": "Jose Roberto Pereira Novaes",
+    "href": "javascript:abreDetalhe('K4788115D2','Jose_Roberto_Pereira_Novaes',32450,)",
+    "code": "K4788115D2",
+    "slug": "Jose_Roberto_Pereira_Novaes",
+    "person_id": "32450"
+  },
+  {
+    "text": "Marcelo Roberto Pereira Shei",
+    "href": "javascript:abreDetalhe('K4594222A6','Marcelo_Roberto_Pereira_Shei',4551384,)",
+    "code": "K4594222A6",
+    "slug": "Marcelo_Roberto_Pereira_Shei",
+    "person_id": "4551384"
+  },
+  {
+    "text": "Paulo Roberto Dias Pereira",
+    "href": "javascript:abreDetalhe('K4788304D7','Paulo_Roberto_Dias_Pereira',29793,)",
+    "code": "K4788304D7",
+    "slug": "Paulo_Roberto_Dias_Pereira",
+    "person_id": "29793"
+  },
+  {
+    "text": "Roberto Pereira Guimarães",
+    "href": "javascript:abreDetalhe('K4133901T9','Roberto_Pereira_Guimarães',798444,)",
+    "code": "K4133901T9",
+    "slug": "Roberto_Pereira_Guimarães",
+    "person_id": "798444"
+  },
+  {
+    "text": "Paulo Roberto Gomes Pereira",
+    "href": "javascript:abreDetalhe('K4783793Y8','Paulo_Roberto_Gomes_Pereira',6694,)",
+    "code": "K4783793Y8",
+    "slug": "Paulo_Roberto_Gomes_Pereira",
+    "person_id": "6694"
+  },
+  {
+    "text": "Márcio Roberto Pereira Tangerino",
+    "href": "javascript:abreDetalhe('K4773977A6','Márcio_Roberto_Pereira_Tangerino',298206,)",
+    "code": "K4773977A6",
+    "slug": "Márcio_Roberto_Pereira_Tangerino",
+    "person_id": "298206"
+  },
+  {
+    "text": "José Roberto Pereira Lauris",
+    "href": "javascript:abreDetalhe('K4708018U0','José_Roberto_Pereira_Lauris',241423,)",
+    "code": "K4708018U0",
+    "slug": "José_Roberto_Pereira_Lauris",
+    "person_id": "241423"
+  },
+  {
+    "text": "Danilo Roberto Pereira Santiago",
+    "href": "javascript:abreDetalhe('K4734603D6','Danilo_Roberto_Pereira_Santiago',573680,)",
+    "code": "K4734603D6",
+    "slug": "Danilo_Roberto_Pereira_Santiago",
+    "person_id": "573680"
+  },
+  {
+    "text": "Fernando Roberto Pereira",
+    "href": "javascript:abreDetalhe('K4536615Y3','Fernando_Roberto_Pereira',903153,)",
+    "code": "K4536615Y3",
+    "slug": "Fernando_Roberto_Pereira",
+    "person_id": "903153"
+  },
+  {
+    "text": "Carlos Roberto Pereira Bertoni",
+    "href": "javascript:abreDetalhe('K4559930E7','Carlos_Roberto_Pereira_Bertoni',20829620,)",
+    "code": "K4559930E7",
+    "slug": "Carlos_Roberto_Pereira_Bertoni",
+    "person_id": "20829620"
+  },
+  {
+    "text": "Roberto Pereira Miguel",
+    "href": "javascript:abreDetalhe('K4210383Z3','Roberto_Pereira_Miguel',14395520,)",
+    "code": "K4210383Z3",
+    "slug": "Roberto_Pereira_Miguel",
+    "person_id": "14395520"
+  },
+  {
+    "text": "Roberto Mendes Ramos Pereira",
+    "href": "javascript:abreDetalhe('K4730488Y1','Roberto_Mendes_Ramos_Pereira',531254,)",
+    "code": "K4730488Y1",
+    "slug": "Roberto_Mendes_Ramos_Pereira",
+    "person_id": "531254"
+  },
+  {
+    "text": "Jonatha Roberto Pereira",
+    "href": "javascript:abreDetalhe('K8754663E8','Jonatha_Roberto_Pereira',82566370,)",
+    "code": "K8754663E8",
+    "slug": "Jonatha_Roberto_Pereira",
+    "person_id": "82566370"
+  },
+  {
+    "text": "Roberto Sobreira Pereira Filho",
+    "href": "javascript:abreDetalhe('K4751095A3','Roberto_Sobreira_Pereira_Filho',599508,)",
+    "code": "K4751095A3",
+    "slug": "Roberto_Sobreira_Pereira_Filho",
+    "person_id": "599508"
+  },
+  {
+    "text": "José Roberto Dias Pereira",
+    "href": "javascript:abreDetalhe('K4792933Y6','José_Roberto_Dias_Pereira',410048,)",
+    "code": "K4792933Y6",
+    "slug": "José_Roberto_Dias_Pereira",
+    "person_id": "410048"
+  },
+  {
+    "text": "Nilson Roberto Pereira",
+    "href": "javascript:abreDetalhe('K4468299U5','Nilson_Roberto_Pereira',27994639,)",
+    "code": "K4468299U5",
+    "slug": "Nilson_Roberto_Pereira",
+    "person_id": "27994639"
+  },
+  {
+    "text": "Marcelo Roberto Pereira Freitas",
+    "href": "javascript:abreDetalhe('K4518471T8','Marcelo_Roberto_Pereira_Freitas',2072533,)",
+    "code": "K4518471T8",
+    "slug": "Marcelo_Roberto_Pereira_Freitas",
+    "person_id": "2072533"
+  },
+  {
+    "text": "Paulo Roberto Pereira",
+    "href": "javascript:abreDetalhe('K4291623E4','Paulo_Roberto_Pereira',27875543,)",
+    "code": "K4291623E4",
+    "slug": "Paulo_Roberto_Pereira",
+    "person_id": "27875543"
+  },
+  {
+    "text": "Paulo Roberto Bueno Pereira",
+    "href": "javascript:abreDetalhe('K4130324H6','Paulo_Roberto_Bueno_Pereira',837676,)",
+    "code": "K4130324H6",
+    "slug": "Paulo_Roberto_Bueno_Pereira",
+    "person_id": "837676"
+  },
+  {
+    "text": "Adilson Roberto Locali Pereira",
+    "href": "javascript:abreDetalhe('K8277519A5','Adilson_Roberto_Locali_Pereira',105782493,)",
+    "code": "K8277519A5",
+    "slug": "Adilson_Roberto_Locali_Pereira",
+    "person_id": "105782493"
+  },
+  {
+    "text": "José Roberto Pereira",
+    "href": "javascript:abreDetalhe('K2535834U8','José_Roberto_Pereira',162475513,)",
+    "code": "K2535834U8",
+    "slug": "José_Roberto_Pereira",
+    "person_id": "162475513"
+  },
+  {
+    "text": "José Roberto Pereira",
+    "href": "javascript:abreDetalhe('K8080308P5','José_Roberto_Pereira',117388906,)",
+    "code": "K8080308P5",
+    "slug": "José_Roberto_Pereira",
+    "person_id": "117388906"
+  },
+  {
+    "text": "Paulo Roberto Alves Pereira",
+    "href": "javascript:abreDetalhe('K4795033J8','Paulo_Roberto_Alves_Pereira',13484933,)",
+    "code": "K4795033J8",
+    "slug": "Paulo_Roberto_Alves_Pereira",
+    "person_id": "13484933"
+  },
+  {
+    "text": "Roberto Matos Pereira",
+    "href": "javascript:abreDetalhe('K4244100Y6','Roberto_Matos_Pereira',12964736,)",
+    "code": "K4244100Y6",
+    "slug": "Roberto_Matos_Pereira",
+    "person_id": "12964736"
+  },
+  {
+    "text": "Wanderson Roberto Pereira",
+    "href": "javascript:abreDetalhe('K4716730D3','Wanderson_Roberto_Pereira',734625,)",
+    "code": "K4716730D3",
+    "slug": "Wanderson_Roberto_Pereira",
+    "person_id": "734625"
+  },
+  {
+    "text": "Max Roberto Pereira Ribeiro",
+    "href": "javascript:abreDetalhe('K4468251J5','Max_Roberto_Pereira_Ribeiro',27985635,)",
+    "code": "K4468251J5",
+    "slug": "Max_Roberto_Pereira_Ribeiro",
+    "person_id": "27985635"
+  },
+  {
+    "text": "Roberto Rodrigues Pereira Junior",
+    "href": "javascript:abreDetalhe('K4706560P6','Roberto_Rodrigues_Pereira_Junior',264197,)",
+    "code": "K4706560P6",
+    "slug": "Roberto_Rodrigues_Pereira_Junior",
+    "person_id": "264197"
+  },
+  {
+    "text": "José Roberto Pereira",
+    "href": "javascript:abreDetalhe('K4784287P4','José_Roberto_Pereira',84155,)",
+    "code": "K4784287P4",
+    "slug": "José_Roberto_Pereira",
+    "person_id": "84155"
+  },
+  {
+    "text": "Roberto Pereira Santos",
+    "href": "javascript:abreDetalhe('K8106023P3','Roberto_Pereira_Santos',96156133,)",
+    "code": "K8106023P3",
+    "slug": "Roberto_Pereira_Santos",
+    "person_id": "96156133"
+  },
+  {
+    "text": "José Roberto Pereira Peres",
+    "href": "javascript:abreDetalhe('K4477970H2','José_Roberto_Pereira_Peres',44528561,)",
+    "code": "K4477970H2",
+    "slug": "José_Roberto_Pereira_Peres",
+    "person_id": "44528561"
+  },
+  {
+    "text": "Marcio Roberto Pinho Pereira",
+    "href": "javascript:abreDetalhe('K4769112A4','Marcio_Roberto_Pinho_Pereira',174255,)",
+    "code": "K4769112A4",
+    "slug": "Marcio_Roberto_Pinho_Pereira",
+    "person_id": "174255"
+  },
+  {
+    "text": "Paulo Roberto Barbosa Pereira",
+    "href": "javascript:abreDetalhe('K4474018Y0','Paulo_Roberto_Barbosa_Pereira',42616945,)",
+    "code": "K4474018Y0",
+    "slug": "Paulo_Roberto_Barbosa_Pereira",
+    "person_id": "42616945"
+  },
+  {
+    "text": "Roberto Pereira de Oliveira",
+    "href": "javascript:abreDetalhe('K4131987A0','Roberto_Pereira_de_Oliveira',817299,)",
+    "code": "K4131987A0",
+    "slug": "Roberto_Pereira_de_Oliveira",
+    "person_id": "817299"
+  },
+  {
+    "text": "Max Roberto Pereira",
+    "href": "javascript:abreDetalhe('K4703653T1','Max_Roberto_Pereira',223909,)",
+    "code": "K4703653T1",
+    "slug": "Max_Roberto_Pereira",
+    "person_id": "223909"
+  },
+  {
+    "text": "Roberto Pereira Furtado",
+    "href": "javascript:abreDetalhe('K4737503H9','Roberto_Pereira_Furtado',480670,)",
+    "code": "K4737503H9",
+    "slug": "Roberto_Pereira_Furtado",
+    "person_id": "480670"
+  },
+  {
+    "text": "Marcio Roberto Pereira",
+    "href": "javascript:abreDetalhe('K4799841A9','Marcio_Roberto_Pereira',386444,)",
+    "code": "K4799841A9",
+    "slug": "Marcio_Roberto_Pereira",
+    "person_id": "386444"
+  },
+  {
+    "text": "Roberto Pereira Silva",
+    "href": "javascript:abreDetalhe('K4215568J5','Roberto_Pereira_Silva',15005718,)",
+    "code": "K4215568J5",
+    "slug": "Roberto_Pereira_Silva",
+    "person_id": "15005718"
+  },
+  {
+    "text": "Roberto Augusto Amancio Pereira",
+    "href": "javascript:abreDetalhe('K4657148A3','Roberto_Augusto_Amancio_Pereira',70914146,)",
+    "code": "K4657148A3",
+    "slug": "Roberto_Augusto_Amancio_Pereira",
+    "person_id": "70914146"
+  },
+  {
+    "text": "José Roberto Pereira Rodrigues",
+    "href": "javascript:abreDetalhe('K4789802D7','José_Roberto_Pereira_Rodrigues',163896519,)",
+    "code": "K4789802D7",
+    "slug": "José_Roberto_Pereira_Rodrigues",
+    "person_id": "163896519"
+  },
+  {
+    "text": "Roberto Pereira Borges",
+    "href": "javascript:abreDetalhe('K4755830Y1','Roberto_Pereira_Borges',646957,)",
+    "code": "K4755830Y1",
+    "slug": "Roberto_Pereira_Borges",
+    "person_id": "646957"
+  },
+  {
+    "text": "Cícero Roberto Pereira",
+    "href": "javascript:abreDetalhe('K4792252Z0','Cícero_Roberto_Pereira',413247,)",
+    "code": "K4792252Z0",
+    "slug": "Cícero_Roberto_Pereira",
+    "person_id": "413247"
+  },
+  {
+    "text": "Mateus Roberto Pereira",
+    "href": "javascript:abreDetalhe('K8000605E0','Mateus_Roberto_Pereira',123797665,)",
+    "code": "K8000605E0",
+    "slug": "Mateus_Roberto_Pereira",
+    "person_id": "123797665"
+  },
+  {
+    "text": "Danillo Roberto Pereira",
+    "href": "javascript:abreDetalhe('K4127642E7','Danillo_Roberto_Pereira',747448,)",
+    "code": "K4127642E7",
+    "slug": "Danillo_Roberto_Pereira",
+    "person_id": "747448"
+  },
+  {
+    "text": "Roberto Pereira Pimentel",
+    "href": "javascript:abreDetalhe('K8166232Z9','Roberto_Pereira_Pimentel',91146138,)",
+    "code": "K8166232Z9",
+    "slug": "Roberto_Pereira_Pimentel",
+    "person_id": "91146138"
+  },
+  {
+    "text": "Paulo Roberto Pereira Andery",
+    "href": "javascript:abreDetalhe('K4723021E9','Paulo_Roberto_Pereira_Andery',93000,)",
+    "code": "K4723021E9",
+    "slug": "Paulo_Roberto_Pereira_Andery",
+    "person_id": "93000"
+  },
+  {
+    "text": "Francisco Fernando Roberto Pereira",
+    "href": "javascript:abreDetalhe('K4291183Z4','Francisco_Fernando_Roberto_Pereira',22092240,)",
+    "code": "K4291183Z4",
+    "slug": "Francisco_Fernando_Roberto_Pereira",
+    "person_id": "22092240"
+  },
+  {
+    "text": "Lucas Roberto Pereira Gomes",
+    "href": "javascript:abreDetalhe('K4312937Z3','Lucas_Roberto_Pereira_Gomes',62567057,)",
+    "code": "K4312937Z3",
+    "slug": "Lucas_Roberto_Pereira_Gomes",
+    "person_id": "62567057"
+  },
+  {
+    "text": "Paulo Roberto Pereira Santiago",
+    "href": "javascript:abreDetalhe('K4757574T3','Paulo_Roberto_Pereira_Santiago',588115,)",
+    "code": "K4757574T3",
+    "slug": "Paulo_Roberto_Pereira_Santiago",
+    "person_id": "588115"
+  },
+  {
+    "text": "Jose Roberto Pereira Rodrigues",
+    "href": "javascript:abreDetalhe('K4706006D6','Jose_Roberto_Pereira_Rodrigues',267433,)",
+    "code": "K4706006D6",
+    "slug": "Jose_Roberto_Pereira_Rodrigues",
+    "person_id": "267433"
+  },
+  {
+    "text": "Roberto Pereira Veras",
+    "href": "javascript:abreDetalhe('K4431933J4','Roberto_Pereira_Veras',29626563,)",
+    "code": "K4431933J4",
+    "slug": "Roberto_Pereira_Veras",
+    "person_id": "29626563"
+  },
+  {
+    "text": "Roberto Pereira do Nascimento",
+    "href": "javascript:abreDetalhe('K4292716U4','Roberto_Pereira_do_Nascimento',21975991,)",
+    "code": "K4292716U4",
+    "slug": "Roberto_Pereira_do_Nascimento",
+    "person_id": "21975991"
+  },
+  {
+    "text": "Paulo Roberto Mendes Pereira",
+    "href": "javascript:abreDetalhe('K4409564H1','Paulo_Roberto_Mendes_Pereira',39489732,)",
+    "code": "K4409564H1",
+    "slug": "Paulo_Roberto_Mendes_Pereira",
+    "person_id": "39489732"
+  },
+  {
+    "text": "Carlos Roberto Pereira Padovani",
+    "href": "javascript:abreDetalhe('K4753323D2','Carlos_Roberto_Pereira_Padovani',576152,)",
+    "code": "K4753323D2",
+    "slug": "Carlos_Roberto_Pereira_Padovani",
+    "person_id": "576152"
+  },
+  {
+    "text": "Roberto Codorniz Leite Pereira",
+    "href": "javascript:abreDetalhe('K4337532J6','Roberto_Codorniz_Leite_Pereira',53707066,)",
+    "code": "K4337532J6",
+    "slug": "Roberto_Codorniz_Leite_Pereira",
+    "person_id": "53707066"
+  },
+  {
+    "text": "Roberto Pereira Santos",
+    "href": "javascript:abreDetalhe('K4784397E1','Roberto_Pereira_Santos',81382,)",
+    "code": "K4784397E1",
+    "slug": "Roberto_Pereira_Santos",
+    "person_id": "81382"
+  },
+  {
+    "text": "Roberto Guimarães Pereira",
+    "href": "javascript:abreDetalhe('K4786536U9','Roberto_Guimarães_Pereira',50096,)",
+    "code": "K4786536U9",
+    "slug": "Roberto_Guimarães_Pereira",
+    "person_id": "50096"
+  },
+  {
+    "text": "Roberto Jose de Carvalho Pereira",
+    "href": "javascript:abreDetalhe('K4787186A6','Roberto_Jose_de_Carvalho_Pereira',13517,)",
+    "code": "K4787186A6",
+    "slug": "Roberto_Jose_de_Carvalho_Pereira",
+    "person_id": "13517"
+  },
+  {
+    "text": "José Roberto Pereira de Britto",
+    "href": "javascript:abreDetalhe('K4218206E6','José_Roberto_Pereira_de_Britto',45505532,)",
+    "code": "K4218206E6",
+    "slug": "José_Roberto_Pereira_de_Britto",
+    "person_id": "45505532"
+  },
+  {
+    "text": "Paulo Roberto Pereira de Araujo",
+    "href": "javascript:abreDetalhe('K4780438J7','Paulo_Roberto_Pereira_de_Araujo',44328,)",
+    "code": "K4780438J7",
+    "slug": "Paulo_Roberto_Pereira_de_Araujo",
+    "person_id": "44328"
+  },
+  {
+    "text": "Silvio Roberto de Sousa Pereira",
+    "href": "javascript:abreDetalhe('K4200256Y9','Silvio_Roberto_de_Sousa_Pereira',16751934,)",
+    "code": "K4200256Y9",
+    "slug": "Silvio_Roberto_de_Sousa_Pereira",
+    "person_id": "16751934"
+  },
+  {
+    "text": "Paulo Roberto Alves Pereira Junior",
+    "href": "javascript:abreDetalhe('K4278205J5','Paulo_Roberto_Alves_Pereira_Junior',18943197,)",
+    "code": "K4278205J5",
+    "slug": "Paulo_Roberto_Alves_Pereira_Junior",
+    "person_id": "18943197"
+  },
+  {
+    "text": "Sérgio Roberto Pereira da Silva",
+    "href": "javascript:abreDetalhe('K4799873E9','Sérgio_Roberto_Pereira_da_Silva',386361,)",
+    "code": "K4799873E9",
+    "slug": "Sérgio_Roberto_Pereira_da_Silva",
+    "person_id": "386361"
+  },
+  {
+    "text": "Paulo Roberto Pfeil Gomes Pereira",
+    "href": "javascript:abreDetalhe('K4700747D7','Paulo_Roberto_Pfeil_Gomes_Pereira',251585,)",
+    "code": "K4700747D7",
+    "slug": "Paulo_Roberto_Pfeil_Gomes_Pereira",
+    "person_id": "251585"
+  },
+  {
+    "text": "Jose Roberto Pretel Pereira Job",
+    "href": "javascript:abreDetalhe('K4778618E4','Jose_Roberto_Pretel_Pereira_Job',333408,)",
+    "code": "K4778618E4",
+    "slug": "Jose_Roberto_Pretel_Pereira_Job",
+    "person_id": "333408"
+  },
+  {
+    "text": "Magnus Roberto de Mello Pereira",
+    "href": "javascript:abreDetalhe('K4786420T2','Magnus_Roberto_de_Mello_Pereira',58429,)",
+    "code": "K4786420T2",
+    "slug": "Magnus_Roberto_de_Mello_Pereira",
+    "person_id": "58429"
+  },
+  {
+    "text": "Paulo Roberto Couto Terra Pereira",
+    "href": "javascript:abreDetalhe('K4790891A4','Paulo_Roberto_Couto_Terra_Pereira',376507,)",
+    "code": "K4790891A4",
+    "slug": "Paulo_Roberto_Couto_Terra_Pereira",
+    "person_id": "376507"
+  },
+  {
+    "text": "José Roberto Pereira de Sousa",
+    "href": "javascript:abreDetalhe('K4770080A6','José_Roberto_Pereira_de_Sousa',337398,)",
+    "code": "K4770080A6",
+    "slug": "José_Roberto_Pereira_de_Sousa",
+    "person_id": "337398"
+  },
+  {
+    "text": "Paulo Roberto Pereira de Souza",
+    "href": "javascript:abreDetalhe('K4793525T9','Paulo_Roberto_Pereira_de_Souza',339441,)",
+    "code": "K4793525T9",
+    "slug": "Paulo_Roberto_Pereira_de_Souza",
+    "person_id": "339441"
+  },
+  {
+    "text": "Roberto César Pereira do Prado",
+    "href": "javascript:abreDetalhe('K4779238D4','Roberto_César_Pereira_do_Prado',449573,)",
+    "code": "K4779238D4",
+    "slug": "Roberto_César_Pereira_do_Prado",
+    "person_id": "449573"
+  },
+  {
+    "text": "Roberto Horácio de Sá Pereira",
+    "href": "javascript:abreDetalhe('K4787165D8','Roberto_Horácio_de_Sá_Pereira',13184,)",
+    "code": "K4787165D8",
+    "slug": "Roberto_Horácio_de_Sá_Pereira",
+    "person_id": "13184"
+  },
+  {
+    "text": "Roberto Augusto Pereira de Sousa",
+    "href": "javascript:abreDetalhe('K8950431A4','Roberto_Augusto_Pereira_de_Sousa',127537505,)",
+    "code": "K8950431A4",
+    "slug": "Roberto_Augusto_Pereira_de_Sousa",
+    "person_id": "127537505"
+  },
+  {
+    "text": "Pedro Roberto da Silva Pereira",
+    "href": "javascript:abreDetalhe('K4511453T7','Pedro_Roberto_da_Silva_Pereira',1942378,)",
+    "code": "K4511453T7",
+    "slug": "Pedro_Roberto_da_Silva_Pereira",
+    "person_id": "1942378"
+  },
+  {
+    "text": "Paulo Roberto Cardoso Pereira Junior",
+    "href": "javascript:abreDetalhe('K4253788H9','Paulo_Roberto_Cardoso_Pereira_Junior',9791079,)",
+    "code": "K4253788H9",
+    "slug": "Paulo_Roberto_Cardoso_Pereira_Junior",
+    "person_id": "9791079"
+  },
+  {
+    "text": "Roberto Pereira da Silva Júnior",
+    "href": "javascript:abreDetalhe('K4212789H4','Roberto_Pereira_da_Silva_Júnior',15382984,)",
+    "code": "K4212789H4",
+    "slug": "Roberto_Pereira_da_Silva_Júnior",
+    "person_id": "15382984"
+  },
+  {
+    "text": "Roberto Benedito de Oliveira Pereira",
+    "href": "javascript:abreDetalhe('K4556216U9','Roberto_Benedito_de_Oliveira_Pereira',1222287,)",
+    "code": "K4556216U9",
+    "slug": "Roberto_Benedito_de_Oliveira_Pereira",
+    "person_id": "1222287"
+  },
+  {
+    "text": "Roberto César Pereira Lima Júnior",
+    "href": "javascript:abreDetalhe('K4739475Y8','Roberto_César_Pereira_Lima_Júnior',540037,)",
+    "code": "K4739475Y8",
+    "slug": "Roberto_César_Pereira_Lima_Júnior",
+    "person_id": "540037"
+  },
+  {
+    "text": "José Roberto Pereira de Sousa",
+    "href": "javascript:abreDetalhe('K4744236D6','José_Roberto_Pereira_de_Sousa',676745,)",
+    "code": "K4744236D6",
+    "slug": "José_Roberto_Pereira_de_Sousa",
+    "person_id": "676745"
+  },
+  {
+    "text": "Paulo Roberto Pereira da Silva",
+    "href": "javascript:abreDetalhe('K4804036P5','Paulo_Roberto_Pereira_da_Silva',78487714,)",
+    "code": "K4804036P5",
+    "slug": "Paulo_Roberto_Pereira_da_Silva",
+    "person_id": "78487714"
+  },
+  {
+    "text": "José Roberto Pereira dos Santos",
+    "href": "javascript:abreDetalhe('K4718226Y9','José_Roberto_Pereira_dos_Santos',10198481,)",
+    "code": "K4718226Y9",
+    "slug": "José_Roberto_Pereira_dos_Santos",
+    "person_id": "10198481"
+  },
+  {
+    "text": "Roberto Carlos Soares Nalon Pereira Souza",
+    "href": "javascript:abreDetalhe('K4465916Y6','Roberto_Carlos_Soares_Nalon_Pereira_Souza',42665489,)",
+    "code": "K4465916Y6",
+    "slug": "Roberto_Carlos_Soares_Nalon_Pereira_Souza",
+    "person_id": "42665489"
+  },
+  {
+    "text": "Marcelo Roberto Baptista Pereira Luis Jimenez",
+    "href": "javascript:abreDetalhe('K4786819Z4','Marcelo_Roberto_Baptista_Pereira_Luis_Jimenez',56573,)",
+    "code": "K4786819Z4",
+    "slug": "Marcelo_Roberto_Baptista_Pereira_Luis_Jimenez",
+    "person_id": "56573"
+  },
+  {
+    "text": "Roberto de Almeida Pereira de Barros",
+    "href": "javascript:abreDetalhe('K4775558J1','Roberto_de_Almeida_Pereira_de_Barros',447309,)",
+    "code": "K4775558J1",
+    "slug": "Roberto_de_Almeida_Pereira_de_Barros",
+    "person_id": "447309"
+  },
+  {
+    "text": "Paulo Roberto Valle da Silva Pereira",
+    "href": "javascript:abreDetalhe('K4792385A2','Paulo_Roberto_Valle_da_Silva_Pereira',411674,)",
+    "code": "K4792385A2",
+    "slug": "Paulo_Roberto_Valle_da_Silva_Pereira",
+    "person_id": "411674"
+  }
+]

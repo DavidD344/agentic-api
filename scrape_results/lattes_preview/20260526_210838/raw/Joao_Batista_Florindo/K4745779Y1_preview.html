@@ -1,0 +1,305 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta http-equiv="origin-trial" content="A7vZI3v+Gz7JfuRolKNM4Aff6zaGuT7X0mf3wtoZTnKv6497cVMnhy03KDqX7kBz/q/iidW7srW31oQbBt4VhgoAAACUeyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGUuY29tOjQ0MyIsImZlYXR1cmUiOiJEaXNhYmxlVGhpcmRQYXJ0eVN0b3JhZ2VQYXJ0aXRpb25pbmczIiwiZXhwaXJ5IjoxNzU3OTgwODAwLCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ==">
+
+	<!--[if lt IE 9]><script language="javascript" type="text/javascript" src="js/excanvas.min.js"></script><![endif]-->
+
+	<link rel="Shortcut Icon" href="images/v2/fav_ico_lattes.ico">
+	<link rel="stylesheet" href="css/import.css">
+	<link rel="stylesheet" href="css/home.css">
+	<!--[if !IE]> -->  <link rel="stylesheet" href="css/tablet-mobile.css">  <!-- <![endif]-->
+    <!--[if gte IE 9]> <link rel="stylesheet" href="ccc/tablet-mobile.css" />  <![endif]-->
+	
+	<script type="text/javascript" async="" charset="utf-8" src="https://www.gstatic.com/recaptcha/releases/hsFBb1u5wWWWkWP4in1ua2cQ/recaptcha__en.js" crossorigin="anonymous" integrity="sha384-lIGkJy/ifBvYLcMC4DQHp6MP4+CdsSQsdz5dRsF5u+8bggv6r0m96jXICY4RQXSL"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script src="js/jquery.min.js"></script>
+	<script src="js/actions-jquery.js"></script>
+	<script src="js/resultados.js"></script>
+    <!---->
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="js/acessibilidade.js"></script>
+	<link href="http://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet" type="text/css">
+
+    <script>
+    var contexto = '/buscatextual'+'/';
+    var center = {
+    	getX:function( n )  {
+    		return (screen.width - n)/2;
+    	},
+    	getY:function( n )  {
+    		return (screen.height - n)/2;
+    	}
+    }
+
+    function abreCV() {
+    	var codigo = 'K4745779Y1';
+        var nome = 'Joao Batista Florindo';
+        var modoIndAdhoc = '';
+        var tipoFuncaoIndicacaoAdHoc = '';
+        
+        
+        var parametrosCitacoes = '';
+        //if(document.getElementById('OPCAO_ISI').checked){
+        //	parametrosCitacoes += '&mostrarNroCitacoesISI=true';
+        //}
+        //if(document.getElementById('OPCAO_SCOPUS').checked){
+        //	parametrosCitacoes += '&mostrarNroCitacoesScopus=true';
+        //}
+        //if(document.getElementById('OPCAO_SCIELO').checked){
+        //	parametrosCitacoes += '&mostrarNroCitacoesScielo=true';
+        //}
+		
+				abreJanelaCVNormal(codigo, nome, parametrosCitacoes, modoIndAdhoc);        
+		
+    }
+
+    function abreJanelaCVIdioma(pCodigo, pNome, pParametrosCitacoes, modoIndAdhoc){
+    	var pParametrosIndAdHoc = "";
+    	
+    	if(modoIndAdhoc=="1" || modoIndAdhoc=="2" || modoIndAdhoc=="3"){
+    		pParametrosIndAdHoc = "&modoIndAdhoc="+modoIndAdhoc;
+    	}
+
+   	    grecaptcha.ready(function () {
+	       grecaptcha.execute('6Le8-aQUAAAAAEh7lq-D8bscahYZDZ4RKXBEhiov', { action: 'id_form_previw' }).then(function (token) {
+	              // add token to form
+	              $('#id_form_previw').prepend('<input type="hidden" name="g-recaptcha-response" value="' + token + '">');
+	              $("#token-captchar").val(token);
+	                
+	              var urlCV = contexto+"visualizacv.do?id="+pCodigo+"&idiomaExibicao=1"+pParametrosCitacoes+pParametrosIndAdHoc+"&tokenCaptchar="+token;
+	              var nomeJanela = "detalhePesq"
+	              var paramJanela = "status=yes,scrollbars=yes,fullscreen=no,menubar=no,directories=no,toolbar=no";
+	              var jnl = window.open(urlCV, nomeJanela, paramJanela);
+	              jnl.focus();   
+	        });;
+	    });
+    }
+
+    //Abre em popup
+ /*   function abreJanelaCVNormal(pCodigo, pNome, pParametrosCitacoes){
+    	var urlCV = contexto+"visualizacv.do?id="+pCodigo+pParametrosCitacoes;
+        var nomeJanela = "detalhePesq"
+        var paramJanela = "status=yes,scrollbars=yes,fullscreen=no,menubar=no,directories=no,toolbar=no";
+        var jnl = window.open(urlCV, nomeJanela, paramJanela);
+        jnl.focus();
+    }
+*/
+    //Abre em aba ou popup, depende da configuração do browser
+    function abreJanelaCVNormal(pCodigo, pNome, pParametrosCitacoes,modoIndAdhoc){
+    	var pParametrosIndAdHoc = "";
+    	if(modoIndAdhoc=="1" || modoIndAdhoc=="2" || modoIndAdhoc=="3"){
+    		pParametrosIndAdHoc = "&modoIndAdhoc="+modoIndAdhoc;
+    	}
+   	
+	   	grecaptcha.ready(function () {
+	           grecaptcha.execute('6Le8-aQUAAAAAEh7lq-D8bscahYZDZ4RKXBEhiov', { action: 'id_form_previw' }).then(function (token) {
+	               $('#id_form_previw').prepend('<input type="hidden" name="g-recaptcha-response" value="' + token + '">');
+	               $("#token-captchar").val(token);
+	               
+	               var urlCV = contexto+"visualizacv.do?id="+pCodigo+pParametrosCitacoes+pParametrosIndAdHoc+"&tokenCaptchar="+token;
+	               var jnl = window.open(urlCV, '_blank');
+	               jnl.focus();
+	           });;
+	    });
+    	
+    	
+    }
+    
+	
+    function marcarTodas(){
+		var checkbox = document.getElementById('cktodas');
+		if(checkbox.checked==true){
+			document.getElementById('OPCAO_ISI').checked=true;
+			document.getElementById('OPCAO_SCOPUS').checked=true;
+			document.getElementById('OPCAO_SCIELO').checked=true;
+			document.getElementById('ckNenhuma').checked=false;
+		}	
+	}
+	
+	function desMarcarTodas(){
+		var checkbox = document.getElementById('ckNenhuma');
+		if(checkbox.checked==true){
+			document.getElementById('OPCAO_ISI').checked=false;
+			document.getElementById('OPCAO_SCOPUS').checked=false;
+			document.getElementById('OPCAO_SCIELO').checked=false;
+			document.getElementById('cktodas').checked=false;
+		}	
+	}
+	
+	function verificaTodas(){
+		if(document.getElementById('OPCAO_ISI').checked
+			&& document.getElementById('OPCAO_SCOPUS').checked
+			&& document.getElementById('OPCAO_SCIELO').checked ){
+			document.getElementById('cktodas').checked=true;
+		}else{
+			document.getElementById('cktodas').checked=false;
+		}
+
+		if(!document.getElementById('OPCAO_ISI').checked
+			&& !document.getElementById('OPCAO_SCOPUS').checked
+			&& !document.getElementById('OPCAO_SCIELO').checked ){
+			document.getElementById('ckNenhuma').checked=true;
+		}else{
+			document.getElementById('ckNenhuma').checked=false;
+		}
+	}
+	
+	function envioEmail(seqIdPessoa,nome){
+	   var jnl = window.open(contexto+"email.do?metodo=apresentar&seqIdPessoa="+ 660688 +"&nomeDestinatario="+nome,
+                     "detalhePesq", "resizable=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,width=800,height=500,left=0,top=0");
+       jnl.focus();
+	}
+
+	function abrirLink(urllink){
+		var nomeJanela = "janelaLink";
+        var paramJanela = "status=yes,scrollbars=yes,fullscreen=no,menubar=yes,directories=no,toolbar=yes";
+        var jnl = window.open(urllink, nomeJanela, paramJanela);
+        jnl.focus();		
+	}
+
+
+	
+	function abrirGraficos(){
+		jQuery('.layout-modalcell.conteudo .control-bar-wrapper', window.parent.document).append('<div class="carregando-cont-indicadores">Aguarde, carregando gráficos...</div>'); 
+		
+		var url = contexto + 'graficos.do?metodo=apresentar&codRHCript=K4745779Y1&nome=Joao Batista Florindo';
+		document.location.href = url;
+	}
+
+    </script>
+    <!-- Analytics - Inicio -->
+
+		<script type="text/javascript">
+		
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-35652740-1']);
+		  _gaq.push(['_trackPageview']);
+		
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		
+		</script>
+		
+<!-- Analytics - Fim -->
+<style type="text/css">
+  	.grecaptcha-badge { visibility: hidden; }
+</style>
+</head>
+<body>
+<form name="previewForm" id="id_form_previw" method="POST" action="/buscatextual/preview.do">
+	<input type="hidden" name="metodo" value="apresentar">
+	<input type="hidden" name="id" value="K4745779Y1">
+	<input type="hidden" name="resumo" value="Atualmente é Professor Associado no Instituto de Matemática, Estatística e Computação Científica (IMECC) da Universidade Estadual de Campinas (Unicamp). Possui pós-doutorado em Física Computacional pelo Instituto de Física de São Carlos (IFSC) da Universidade de São Paulo (USP) (2016),  estágio pós-doutoral na University of Birmingham (Inglaterra) (2014/2015), doutorado (2013) e mestrado (2009) pelo IFSC/USP e bacharelado em Ciências de Computação pelo Instituto de Ciências Matemáticas e de Computação (ICMC/USP) (2006). Tem experiência nas áreas de Matemática Computacional e Ciência da Computação, atuando principalmente nos seguintes temas: redes neurais profundas, análise de imagens digitais e séries temporais, medidas de generalização de redes neurais e aplicações em imagens biológicas. Conta atualmente com 90 trabalhos indexados no Scopus e Web of Science (FATOR H 17), publicados em revistas e conferências internacionais respeitadas em áreas como Computação, Medicina e afins. Em seu trabalho, tem contado também com parcerias internacionais com as universidades Incheon National University (Coreia do Sul) e Birmingham (Reino Unido), além de colaborações com a Faculdade de Ciências Médicas da Unicamp e outras universidades brasileiras, entre elas, unidades da USP/São Carlos, USP/São Paulo, UFU, UTFPR, UFPR, entre outras.Foi grantee do Instituto Serrapilheira em 2019 e no momento é pesquisador associado do centro FAPESP de inteligência artificial BIOS (Brazilian Institute of Data Science). É também membro da diretoria da Academia Brasileira de Jovens Cientistas.">
+	<input type="hidden" name="idiomaExibicao" value="">
+	<input type="hidden" name="modoIndAdhoc" value="">
+	<input type="hidden" name="tipoFuncaoIndicacaoAdHoc" value="">
+	
+	<input type="hidden" name="previewForm.tokenCaptchar" value="" id="token-captchar">
+	
+<div class="layout-cell layout-cell-12 moldal-iframe modal-body">
+<a class="avisa-modal escondido" href="#" tabindex="1">Nova janela aberta em um iFrame. Utilize as setas do teclado para navegar no conteúdo ou tab para navegar entre os títulos. Pressione Esc para sair desta janela.</a>  
+  <div class="layout-cell-pad-main conteudo">
+    <div class="layout-cell layout-cell-9">
+      <div class="layout-cell-pad">
+        <div class="layout-cell layout-cell-12">
+          <div class="layout-cell-pad">
+            <div class="title-wrapper">
+				<h1 class="name" tabindex="0">Joao Batista Florindo</h1>
+				
+			</div>	
+			<div> 
+				<p class="resumo">
+				<img class="foto" width="95" alt="Foto" src="http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&amp;id=K4745779Y1">
+					
+				 
+						Atualmente é Professor Associado no Instituto de Matemática, Estatística e Computação Científica (IMECC) da Universidade Estadual de Campinas (Unicamp). Possui pós-doutorado em Física Computacional pelo Instituto de Física de São Carlos (IFSC) da Universidade de São Paulo (USP) (2016),  estágio pós-doutoral na University of Birmingham (Inglaterra) (2014/2015), doutorado (2013) e mestrado (2009) pelo IFSC/USP e bacharelado em Ciências de Computação pelo Instituto de Ciências Matemáticas e de Computação (ICMC/USP) (2006). Tem experiência nas áreas de Matemática Computacional e Ciência da Computação, atuando principalmente nos seguintes temas: redes neurais profundas, análise de imagens digitais e séries temporais, medidas de generalização de redes neurais e aplicações em imagens biológicas. Conta atualmente com 90 trabalhos indexados no Scopus e Web of Science (FATOR H 17), publicados em revistas e conferências internacionais respeitadas em áreas como Computação, Medicina e afins. Em seu trabalho, tem contado também com parcerias internacionais com as universidades Incheon National University (Coreia do Sul) e Birmingham (Reino Unido), além de colaborações com a Faculdade de Ciências Médicas da Unicamp e outras universidades brasileiras, entre elas, unidades da USP/São Carlos, USP/São Paulo, UFU, UTFPR, UFPR, entre outras.Foi grantee do Instituto Serrapilheira em 2019 e no momento é pesquisador associado do centro FAPESP de inteligência artificial BIOS (Brazilian Institute of Data Science). É também membro da diretoria da Academia Brasileira de Jovens Cientistas.
+					
+				</p>
+					<hr class="separator">	
+				
+					<span>
+						
+							Certificado pelo autor em
+							08/01/2026.
+						
+					</span>
+					
+		
+            
+            </div>
+          </div>
+        </div>
+        <br class="clear">
+      </div>
+    </div>
+    <div class="layout-cell layout-cell-3 linksInstituicoes">
+      <div class="layout-cell-pad">
+        <div class="layout-cell layout-cell-12">
+          <div class="layout-cell-pad"> 
+            <div class="title-wrapper">
+              <h1 tabindex="0">No CNPq</h1>
+            </div>
+            <div class="layout-cell-pad">
+              <ul class="m-isntituicoes">
+                <li><a href="javascript:void(0)" onclick="abreCV()"><span class="m-logo m-logo-lattes"> &nbsp; </span> Currículo Lattes</a></li>
+					  
+                      
+                      
+                          <li><a href="javascript:void(0)" onclick="abrirLink('http://lattes.cnpq.br/240.1/4462635233301972')"><span class="m-logo m-logo-diretorio"> &nbsp; </span> Diretório de grupos de pesquisa</a></li>
+                      
+                      <li><a href="javascript:void(0)" onclick="abrirGraficos()"><span class="m-logo m-logo-graficos"> &nbsp; </span> Indicadores da Produção</a></li>
+                    </ul>
+                  </div>
+
+                  
+                      <div class="title-wrapper">
+                        <h1 tabindex="0">Em outras bases</h1>
+                      </div>
+                      <div class="layout-cell-pad">
+                        <ul class="m-isntituicoes">
+                            
+                          
+                          
+                              <li><a href="javascript:void(0)" onclick="abrirLink('http://www.researcherid.com/rid/S-5823-2019')"><span class="m-logo m-logo-researchid"> &nbsp; </span> ResearcherID </a></li>
+                          
+                          
+                          
+                          
+                          
+                          
+                          
+                          
+                             
+                          
+                        </ul>
+                      </div>
+                   
+                </div>
+              </div>
+            </div>
+          </div>
+          <br class="clear">
+
+          <!--Texto-->
+        </div>
+      </div>
+      <script>
+
+          
+	var lblBtnContato =  'Contato';
+	var lblBtnAbrirCurriculo =  'Abrir Currículo';
+	var lblBtnFechar =  'Fechar';
+	//var lblBtnVoltar =  'Voltar';
+
+	parent.document.getElementById('idbtncontato').innerHTML = '<span class=\'mini-ico mini-ico-mail\'></span>'+ lblBtnContato;
+	parent.document.getElementById('idbtnabrircurriculo').innerHTML = '<span class=\'mini-ico mini-ico-dw\'></span>'+ lblBtnAbrirCurriculo;
+	parent.document.getElementById('idbtnfechar').innerHTML = '<span class=\'mini-ico mini-ico-x\'></span>'+ lblBtnFechar;
+	//parent.document.getElementById('idbtnvoltar').innerHTML = '<span class=\'mini-ico mini-ico-x\'></span>'+ lblBtnVoltar;
+
+</script>
+</form>
+
+
+	<script src="https://www.google.com/recaptcha/api.js?render=6Le8-aQUAAAAAEh7lq-D8bscahYZDZ4RKXBEhiov" async="" defer=""></script>
+
+</body></html>

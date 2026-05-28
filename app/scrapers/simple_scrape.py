@@ -104,7 +104,7 @@ def save_scholarships_csv(path: Path, scholarships: list[dict]) -> None:
         writer.writerows(scholarships)
 
 
-async def scrape(url: str) -> None:
+async def scrape(url: str) -> Path:
     chromium_path = which("chromium") or which("chromium-browser")
     run_dir = create_run_dir()
 
@@ -170,6 +170,8 @@ async def scrape(url: str) -> None:
 
             for index, table in enumerate(tables, start=1):
                 print(f"- table_{index}.csv: {len(table)} rows")
+
+            return run_dir
         finally:
             await browser.close()
 

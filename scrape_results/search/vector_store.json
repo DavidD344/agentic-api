@@ -1,0 +1,11 @@
+{
+  "updated_at": "2026-05-28T17:19:29",
+  "vector_store_id": "vs_6a18a341349c8191a796dad6bb55d3f0",
+  "openai_file_id": "file-XVGDCVh6ohG45Pty9N8HYb",
+  "corpus_path": "scrape_results/search/profiles_search_corpus.json",
+  "corpus_sha256": "22e68e5a55759ed6cbf520027ebf01d129a8b14e00b703b7f127b75da2f83472",
+  "corpus_records_count": 480,
+  "status": "completed",
+  "last_error": null,
+  "reused": false
+}

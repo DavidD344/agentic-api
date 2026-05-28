@@ -1,0 +1,559 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head>
+		<title>Busca Textual - Currículo Lattes</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<link rel="Shortcut Icon" href="images/v2/fav_ico_lattes.ico">
+
+		<link rel="stylesheet" href="css/tooltip.css">
+
+		<script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script src="js/util.js" language="Javascript"></script>
+		<script src="js/tooltip.js" language="Javascript"></script>
+		<script src="js/resultados.js" language="Javascript"></script>
+		<script src="js/busca_textual.js" language="Javascript"></script>
+		<script src="js/comum.js" language="Javascript"></script>
+
+		<!-- Imports Novos -->
+		<link rel="stylesheet" href="css/import.css">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/tooltip-position.js"></script>
+		<script src="js/jquery.tipsy.js"></script>
+		<script src="js/actions-jquery.js"></script>
+		<script src="js/font-size.js"></script>
+		<script src="js/jquery.cookie.js"></script>
+		<script src="js/acessibilidade.js" language="Javascript"></script>
+
+
+
+		<!--[if IE]>
+            <style>
+                .holder ul input[type="checkbox"] {margin:-2px 5px}
+            </style>
+
+            <style>
+              .paginacao a.is-disabled { pointer-events: none; opacity: .5; cursor: default; }
+              .paginacao a.is-current  { font-weight: 700; text-decoration: underline; }
+            </style>
+        <![endif]-->
+
+		<script language="javaScript" type="text/javascript">
+			setContexto('/buscatextual'+'/');
+		</script>
+
+		<script>
+
+			function chamarFuncaoAbreCV(){
+				window.frames["frameModalPreview"].abreCV();
+			}
+
+		</script>
+		<!-- Analytics - Inicio -->
+
+		<script type="text/javascript">
+
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-35652740-1']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+
+		</script>
+
+		<!-- Analytics - Fim -->
+
+	</head>
+	<body>
+
+	<form name="buscaForm" method="POST" action="/buscatextual/busca.do">
+		<input type="hidden" name="metodo" value="forwardPaginaResultados" id="metodo">
+		<input type="hidden" name="acao" value="" id="acao">
+		<!-- valores da consulta anterior -->
+		<input type="hidden" name="filtros.paisAtividade" value="0">
+		<input type="hidden" name="filtros.regiaoAtividade" value="0">
+		<input type="hidden" name="filtros.ufAtividade" value="0">
+		<input type="hidden" name="filtros.siglaInstAtividade" value="">
+		<input type="hidden" name="filtros.nomeInstAtividade" value="">
+		<input type="hidden" name="filtros.naturezaAtividade" value="0">
+		<input type="hidden" name="filtros.atividadeAtual" value="false">
+		<input type="hidden" name="filtros.paisFormacao" value="0">
+		<input type="hidden" name="filtros.regiaoFormacao" value="0">
+		<input type="hidden" name="filtros.ufFormacao" value="0">
+		<input type="hidden" name="filtros.siglaInstFormacao" value="">
+		<input type="hidden" name="filtros.nomeInstFormacao" value="">
+		<input type="hidden" name="filtros.nivelFormacao" value="0">
+		<input type="hidden" name="filtros.grdAreaFormacao" value="0">
+		<input type="hidden" name="filtros.areaFormacao" value="0">
+		<input type="hidden" name="filtros.idioma" value="0">
+		<input type="hidden" name="filtros.proeficienciaLeitura" value="">
+		<input type="hidden" name="filtros.proeficienciaEscrita" value="">
+		<input type="hidden" name="filtros.proeficienciaFala" value="">
+		<input type="hidden" name="filtros.proeficienciaCompreensao" value="">
+		<input type="hidden" name="filtros.grandeAreaAtuacao" value="0">
+		<input type="hidden" name="filtros.areaAtuacao" value="0">
+		<input type="hidden" name="filtros.subareaAtuacao" value="0">
+		<input type="hidden" name="filtros.especialidadeAtuacao" value="0">
+		<input type="hidden" name="filtros.codigoGrandeAreaAtuacao" value="0">
+		<input type="hidden" name="filtros.codigoAreaAtuacao" value="0">
+		<input type="hidden" name="filtros.codigoSubareaAtuacao" value="0">
+		<input type="hidden" name="filtros.codigoEspecialidadeAtuacao" value="0">
+		<input type="hidden" name="filtros.grandeAreaProducao" value="0">
+		<input type="hidden" name="filtros.areaProducao" value="0">
+		<input type="hidden" name="filtros.setorProducao" value="0">
+		<input type="hidden" name="filtros.subSetorProducao" value="0">
+		<input type="hidden" name="filtros.tipoRelacao" value="AND">
+		<input type="hidden" name="filtros.categoriaNivelBolsa" value="">
+		<input type="hidden" name="filtros.orientadorCNPq" value="">
+		<input type="hidden" name="filtros.conceitoCurso" value="">
+		<input type="hidden" name="filtros.participaDGP" value="false">
+		<input type="hidden" name="filtros.modalidadeBolsa" value="0" id="modalidadeBolsa">
+		<input type="hidden" name="filtros.buscaNome" value="true" id="buscaNome">
+		<input type="hidden" name="filtros.buscaAssunto" value="false" id="buscaAssunto">
+		<input type="hidden" name="filtros.buscaCPF" value="false" id="buscaCPF">
+		<input type="hidden" name="filtros.buscaAtuacao" value="false">
+		<input type="hidden" name="filtros.tipoOrdenacao" value="SCR">
+		<input type="hidden" name="filtros.atualizacaoCurriculo" value="48">
+		<input type="hidden" name="filtros.quantidadeRegistros" value="25">
+		<input type="hidden" name="filtros.registroInicial" value="60">
+		<input type="hidden" name="filtros.registroFinal" value="10">
+		<input type="hidden" name="textoBuscaTodas" value="">
+		<input type="hidden" name="textoBuscaFrase" value="">
+		<input type="hidden" name="textoBuscaQualquer" value="">
+		<input type="hidden" name="textoBuscaNenhuma" value="">
+		<input type="hidden" name="textoExpressao" value="">
+		<input type="hidden" name="particaoProcura" value="">
+		<input type="hidden" name="buscarDoutores" value="true">
+		<input type="hidden" name="buscarDemais" value="false">
+		<input type="hidden" name="buscarDoutoresAvancada" value="true">
+		<input type="hidden" name="buscarDemaisAvancada" value="false">
+		<input type="hidden" name="textoBuscaAssunto" value="">
+		<input type="hidden" name="tipoConector" value="AND">
+		<input type="hidden" name="resumoFormacao" value="">
+		<input type="hidden" name="resumoAtividade" value="">
+		<input type="hidden" name="resumoAtuacao" value="">
+		<input type="hidden" name="resumoProducao" value="">
+		<input type="hidden" name="resumoPesquisador" value="">
+		<input type="hidden" name="resumoIdioma" value="">
+		<input type="hidden" name="resumoPresencaDGP" value="">
+		<input type="hidden" name="resumoModalidade" value="Bolsas de PQ de categorias0">
+		<input type="hidden" name="intCPaginaAtual" value="1">
+		<input type="hidden" name="parametrosBusca" value=" 'Roberto Pereira'">
+		<input type="hidden" name="strCNavegador" value="">
+		<input type="hidden" name="strCSistemaOperacional" value="">
+		<input type="hidden" name="strCIP" value="">
+		<input type="hidden" name="buscaAvancada" value="0">
+		<input type="hidden" name="moduloIndicacaoAdhoc" value="false">
+		<input type="hidden" name="query" value="(+idx_nme_pessoa:(roberto) +idx_nme_pessoa:(pereira)  +idx_particao:1 +idx_nacionalidade:e) or (+idx_nme_pessoa:(roberto) +idx_nme_pessoa:(pereira)  +idx_particao:1 +idx_nacionalidade:b)">
+		<input type="hidden" name="modoIndAdhoc" value="">
+		<input type="hidden" name="buscarBrasileirosAvancada" value="true">
+		<input type="hidden" name="buscarEstrangeirosAvancada" value="true">
+		<input type="hidden" name="buscarBrasileiros" value="true">
+		<input type="hidden" name="buscarEstrangeiros" value="true">
+
+		<div class="page min-width"><div class="moldal moldalHeigh" style="height: 962px; display: none;"> <div class="moldal-interna "> <div class="layout-modalcell layout-modalcell-12 moldal-background">  <div class="layout-modalcell-pad-main"> <br>  <div class="bt-moldal"> <a href="#" class="bt-fechar"> Fechar </a> </div> <div class="layout-modalcell conteudo"> </div> </div> </div> </div> </div>
+			<div class="header">
+				<div class="header-content max-width">
+					<div class="identity center">
+
+						
+
+
+
+
+
+
+
+
+<div class="combo">
+	<a target="_blank" title="Currículo Lattes" href="http://lattes.cnpq.br/"><img src="/buscatextual/images/titulo-sistema.png" alt="Currículo Lattes"> </a>
+</div>
+<div class="logo">
+	<a href="http://www.cnpq.br" target="_blank" title="CNPq - Conselho Nacional de Desenvolvimento Científico e Tecnológico"> </a>
+</div>
+<div class="menu-header">
+    <span>
+        <div style="font-size: 11px; color: rgb(0,99,148); font-weight: bold; padding: 6px; text-align: right">
+            Versão: 2.0.14.124-88
+        </div>
+    </span>
+	<div>
+		<a title="Aumentar a fonte" href="javascript:void(0)" class="bt-menu-header titBottom fontMais icons-top icons-top-fontMais"> </a>
+		<a title="Fonte padrão" href="javascript:void(0)" class="bt-menu-header titBottom fontMenos icons-top icons-top-fontMenos "> </a>
+
+		
+			
+			
+				<a title="Alto contraste" href="javascript:void(0)" class="bt-menu-header titBottom contraste icons-top icons-top-contraste"></a>
+				<a href="javascript:void(0)" id="idBandeira" onclick="forcarMudancaIdioma('2')" class="bt-menu-header titBottom icons-top icons-top-enUK" title="Click here to change the language to english"> </a>
+			
+		
+
+		<a title="Ajuda" href="http://cnpq.br" target="_blank" class="bt-menu-header titBottom icons-top icons-top-help"> </a>
+	</div>
+</div>
+
+<script type="text/javascript">
+	function forcarMudancaIdioma(valor) {
+		var formulario = document.forms[0];
+		if (formulario) {
+			var input = formulario.elements['idiomaAplicacao'];
+			if (!input) {
+				input = document.createElement('input');
+				input.type = 'hidden';
+				input.name = 'idiomaAplicacao';
+				formulario.appendChild(input);
+			}
+			input.value = valor;
+			if (typeof mudarIdioma === 'function') {
+				mudarIdioma();
+			}
+		}
+	}
+</script>
+
+
+					</div>
+				</div>
+			</div>
+
+			<div class="navigation-wrapper">
+				<div class="max-width center navigation-wrapper-line">
+					<!--Local para o menu-->
+				</div>
+			</div>
+
+			<div class="content-wrapper">
+				<div class="main-content max-width  min-width center">
+					<div class="layout-cell layout-cell-12">
+						<div class="layout-cell-pad-main">
+							<div class="layout-cell layout-cell-6">
+								<div class="layout-cell-pad">
+									<div class="title-wrapper" id="busca2_simples">
+										<h1 tabindex="0">Buscar Currículo Lattes (Busca Simples)</h1>
+									</div>
+									<div class="title-wrapper" id="busca2_avancada" style="display:none">
+										<h1 tabindex="0">Busca Avançada (por Assunto)</h1>
+									</div>
+								</div>
+							</div>
+							<div class="layout-cell layout-cell-6">
+								<div class="layout-cell-pad">
+									<div class="control-bar-top" id="tit2_simples">
+										<a class="button" href="javascript:void(0)" onclick="javascript:novaBusca()">
+											<span class="mini-ico mini-ico-lupa"></span>Busca Simples
+										</a>
+									</div>
+									<div class="control-bar-top" id="tit2_avancada" style="display:none">
+										<a class="button" href="javascript:void(0)" onclick="javascript:novaBusca()">
+											<span class="mini-ico mini-ico-lupa"></span>Busca Avançada
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="layout-cell layout-cell-12">
+								<div class="layout-cell-pad">
+									<div class="tit_form">
+										
+										Resultados de
+										61 - 70
+										dos
+										<b>100</b>
+										encontrados para:
+										<b> 'Roberto Pereira' </b>
+										
+									</div>
+									<div class="paginacao">
+										<script type="text/javascript">
+function submeterPaginacao(inicio, qtd) {
+    var form = document.forms['buscaForm'];
+    if(!form) form = document.getElementsByName('buscaForm')[0];
+    if(!form) form = document.forms[0];
+    if(form) {
+        form.metodo.value = 'forwardPaginaResultados';
+        if(form['filtros.registroInicial']) form['filtros.registroInicial'].value = inicio;
+        if(form['filtros.registroFinal']) form['filtros.registroFinal'].value = qtd;
+        var valorCombinado = inicio + ';' + qtd;
+        if(form['registros']) {
+            form['registros'].value = valorCombinado;
+        } else {
+            var input = document.createElement('input');
+            input.type = 'hidden';
+            input.name = 'registros';
+            input.value = valorCombinado;
+            form.appendChild(input);
+        }
+        form.submit();
+    } else {
+        alert('Erro: Formulário de busca não encontrado para paginação.');
+    }
+}
+
+var intLTotReg = 100;
+var intLRegInicio = 60;
+var intLRegPagina = 10;
+var intLPagina = 1;
+var intLPaginaIni = intLPagina; 
+document.write("");
+if (intLRegInicio > 0) { 
+   intLRegInicio = (intLPagina * intLRegPagina) - intLRegPagina; 
+} 
+if (intLPagina > 1) { 
+   var inicioAnt = (intLRegInicio - intLRegPagina);
+   document.write("... <a data-role='paginacao' href='javascript:void(0)' onclick='submeterPaginacao(" + inicioAnt + ", " + intLRegPagina + ")'>anterior</a>&nbsp;"); 
+}
+document.write("&nbsp;&nbsp;"); 
+while ((intLPaginaIni < intLPagina + 11) && (intLRegInicio < intLTotReg)) { 
+   if (60 == intLRegInicio) { 
+       document.write("<a data-role='paginacao' href='javascript:void(0)' onclick='submeterPaginacao(" + intLRegInicio + ", " + intLRegPagina + ")'><font color='#ff0000'>" + intLPaginaIni + "</font></a>&nbsp;");
+   } else { 
+       document.write("<a data-role='paginacao' href='javascript:void(0)' onclick='submeterPaginacao(" + intLRegInicio + ", " + intLRegPagina + ")'>" + intLPaginaIni + "</a>&nbsp;"); 
+   } 
+   intLRegInicio += intLRegPagina; 
+   intLPaginaIni++; 
+} 
+document.write("&nbsp;&nbsp;"); 
+if (intLRegInicio < intLTotReg) { 
+   document.write("<a data-role='paginacao' href='javascript:void(0)' onclick='submeterPaginacao(" + intLRegInicio + ", " + intLRegPagina + ")'>pr&oacute;ximo</a> ..."); 
+}
+document.write("");
+</script>&nbsp;&nbsp;<a data-role="paginacao" onclick="submeterPaginacao(0, 10)" class="is-current is-disabled" aria-current="page">1</a>&nbsp;<a data-role="paginacao" href="javascript:void(0)" onclick="submeterPaginacao(10, 10)">2</a>&nbsp;<a data-role="paginacao" href="javascript:void(0)" onclick="submeterPaginacao(20, 10)">3</a>&nbsp;<a data-role="paginacao" href="javascript:void(0)" onclick="submeterPaginacao(30, 10)">4</a>&nbsp;<a data-role="paginacao" href="javascript:void(0)" onclick="submeterPaginacao(40, 10)">5</a>&nbsp;<a data-role="paginacao" href="javascript:void(0)" onclick="submeterPaginacao(50, 10)">6</a>&nbsp;<a data-role="paginacao" href="javascript:void(0)" onclick="submeterPaginacao(60, 10)"><font color="#ff0000">7</font></a>&nbsp;<a data-role="paginacao" href="javascript:void(0)" onclick="submeterPaginacao(70, 10)">8</a>&nbsp;<a data-role="paginacao" href="javascript:void(0)" onclick="submeterPaginacao(80, 10)">9</a>&nbsp;<a data-role="paginacao" href="javascript:void(0)" onclick="submeterPaginacao(90, 10)">10</a>&nbsp;&nbsp;&nbsp; 
+
+									</div>
+									<div class="resultado">
+										<ol type="1" start="61">
+											<li><b><a href="javascript:abreDetalhe('K8166232Z9','Roberto_Pereira_Pimentel',91146138,)">Roberto Pereira Pimentel</a></b>&nbsp;<img alt="Brasil" title="País de nacionalidade: Brasil" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA
+IGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAI1SURBVHjapJNLSFRh
+GIaf/5yjc5xxnEaHaWwqJEWFSaaMiNy2aVNktO+yqiykZVBGO3eBixatgmhXtoqIEJGGJswQJRqs
+xrIa5+IFzbmcy5zztxG1y0b8Nt/i/Xh4+XhfIaVkJyOAWqB+fW9nLKCoAYGzz+4U/lYlYDoKIPAo
+DkL8SxjuvRvWAJ/jOsTDrRuCLRUUJMcjyyhC8ibXRNUV1Cruxs1UIQ3g0wDVdh3WrDKLlSKGo9IW
+WOPMvjxNpgAJkehnhn/uJrXkp05zaKqrx3YdAFUDMG2LQrlC0SrR25LldHSJocc9jL7bA1VJd1eW
+mxeTvGoI8iTdjCNVTNsCQAMoGyaRcI7zsQ90RfK8SJ5ithLnWA/kl0qMvN9P0DvP7f4xund952H6
+ILMLWwAtnkUG4lM06AWwVe4/KjI6kcIfdGmOetnbEeBHKUx1JUNn6BsD/jmuLcRJAgrAZEHlciLG
+5Hwj6BUOdWRwqx5K5SpfZn4x+nyFwwfyaIEyH3MB+hIxkllt04FpGLzONZDIHuFq7CtXzr1leibE
+y2QbqAonjn7iZPdThibauTfdio2PWmN1E2AZBl7FS7kqGJxsZ2Q+xI3+MW5dSIAUrAYtrqdiJDIh
+fDVVfJpN2TC2OLAsdCS6pqJrktRyiL7xRi51zuGpcXkw3kLFVgnVOYCKi8S0Np9oScdlJZ39I2UV
+YHBGB0BXcwghMf8TZwEEgCjg32YX1oCMANT1IqnbBDiAJXZa598DAP+m5+4+KeCCAAAAAElFTkSu
+QmCC"><br>Doutorado em Odontologia pela Universidade Federal do Rio Grande do Sul, Brasil(2021)<br>Professor do Centro de Pesquisas Odontológicas São Leopoldo Mandic , Brasil<br><br></li>
+<li><b><a href="javascript:abreDetalhe('K4723021E9','Paulo_Roberto_Pereira_Andery',93000,)">Paulo Roberto Pereira Andery</a></b>&nbsp;<img alt="Brasil" title="País de nacionalidade: Brasil" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA
+IGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAI1SURBVHjapJNLSFRh
+GIaf/5yjc5xxnEaHaWwqJEWFSaaMiNy2aVNktO+yqiykZVBGO3eBixatgmhXtoqIEJGGJswQJRqs
+xrIa5+IFzbmcy5zztxG1y0b8Nt/i/Xh4+XhfIaVkJyOAWqB+fW9nLKCoAYGzz+4U/lYlYDoKIPAo
+DkL8SxjuvRvWAJ/jOsTDrRuCLRUUJMcjyyhC8ibXRNUV1Cruxs1UIQ3g0wDVdh3WrDKLlSKGo9IW
+WOPMvjxNpgAJkehnhn/uJrXkp05zaKqrx3YdAFUDMG2LQrlC0SrR25LldHSJocc9jL7bA1VJd1eW
+mxeTvGoI8iTdjCNVTNsCQAMoGyaRcI7zsQ90RfK8SJ5ithLnWA/kl0qMvN9P0DvP7f4xund952H6
+ILMLWwAtnkUG4lM06AWwVe4/KjI6kcIfdGmOetnbEeBHKUx1JUNn6BsD/jmuLcRJAgrAZEHlciLG
+5Hwj6BUOdWRwqx5K5SpfZn4x+nyFwwfyaIEyH3MB+hIxkllt04FpGLzONZDIHuFq7CtXzr1leibE
+y2QbqAonjn7iZPdThibauTfdio2PWmN1E2AZBl7FS7kqGJxsZ2Q+xI3+MW5dSIAUrAYtrqdiJDIh
+fDVVfJpN2TC2OLAsdCS6pqJrktRyiL7xRi51zuGpcXkw3kLFVgnVOYCKi8S0Np9oScdlJZ39I2UV
+YHBGB0BXcwghMf8TZwEEgCjg32YX1oCMANT1IqnbBDiAJXZa598DAP+m5+4+KeCCAAAAAElFTkSu
+QmCC"><br>Doutorado em Engenharia Metalúrgica e de Minas pela Universidade Federal de Minas Gerais, Brasil(1997)<br>Professor Associado da Universidade Federal de Minas Gerais , Brasil<br><br></li>
+<li><b><a href="javascript:abreDetalhe('K4291183Z4','Francisco_Fernando_Roberto_Pereira',22092240,)">Francisco Fernando Roberto Pereira</a></b>&nbsp;<img alt="Brasil" title="País de nacionalidade: Brasil" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA
+IGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAI1SURBVHjapJNLSFRh
+GIaf/5yjc5xxnEaHaWwqJEWFSaaMiNy2aVNktO+yqiykZVBGO3eBixatgmhXtoqIEJGGJswQJRqs
+xrIa5+IFzbmcy5zztxG1y0b8Nt/i/Xh4+XhfIaVkJyOAWqB+fW9nLKCoAYGzz+4U/lYlYDoKIPAo
+DkL8SxjuvRvWAJ/jOsTDrRuCLRUUJMcjyyhC8ibXRNUV1Cruxs1UIQ3g0wDVdh3WrDKLlSKGo9IW
+WOPMvjxNpgAJkehnhn/uJrXkp05zaKqrx3YdAFUDMG2LQrlC0SrR25LldHSJocc9jL7bA1VJd1eW
+mxeTvGoI8iTdjCNVTNsCQAMoGyaRcI7zsQ90RfK8SJ5ithLnWA/kl0qMvN9P0DvP7f4xund952H6
+ILMLWwAtnkUG4lM06AWwVe4/KjI6kcIfdGmOetnbEeBHKUx1JUNn6BsD/jmuLcRJAgrAZEHlciLG
+5Hwj6BUOdWRwqx5K5SpfZn4x+nyFwwfyaIEyH3MB+hIxkllt04FpGLzONZDIHuFq7CtXzr1leibE
+y2QbqAonjn7iZPdThibauTfdio2PWmN1E2AZBl7FS7kqGJxsZ2Q+xI3+MW5dSIAUrAYtrqdiJDIh
+fDVVfJpN2TC2OLAsdCS6pqJrktRyiL7xRi51zuGpcXkw3kLFVgnVOYCKi8S0Np9oScdlJZ39I2UV
+YHBGB0BXcwghMf8TZwEEgCjg32YX1oCMANT1IqnbBDiAJXZa598DAP+m5+4+KeCCAAAAAElFTkSu
+QmCC"><br>Doutorado em Ciência dos Materiais pela Universidade de Cambridge, Inglaterra(2018)<br>Pesquisador do PROGRESS RAIL EQUIPAMENTOS E SERVICOS FERROVIARIOS DO BRASIL LTDA. , Brasil<br><br></li>
+<li><b><a href="javascript:abreDetalhe('K4312937Z3','Lucas_Roberto_Pereira_Gomes',62567057,)">Lucas Roberto Pereira Gomes</a></b>&nbsp;<img alt="Brasil" title="País de nacionalidade: Brasil" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA
+IGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAI1SURBVHjapJNLSFRh
+GIaf/5yjc5xxnEaHaWwqJEWFSaaMiNy2aVNktO+yqiykZVBGO3eBixatgmhXtoqIEJGGJswQJRqs
+xrIa5+IFzbmcy5zztxG1y0b8Nt/i/Xh4+XhfIaVkJyOAWqB+fW9nLKCoAYGzz+4U/lYlYDoKIPAo
+DkL8SxjuvRvWAJ/jOsTDrRuCLRUUJMcjyyhC8ibXRNUV1Cruxs1UIQ3g0wDVdh3WrDKLlSKGo9IW
+WOPMvjxNpgAJkehnhn/uJrXkp05zaKqrx3YdAFUDMG2LQrlC0SrR25LldHSJocc9jL7bA1VJd1eW
+mxeTvGoI8iTdjCNVTNsCQAMoGyaRcI7zsQ90RfK8SJ5ithLnWA/kl0qMvN9P0DvP7f4xund952H6
+ILMLWwAtnkUG4lM06AWwVe4/KjI6kcIfdGmOetnbEeBHKUx1JUNn6BsD/jmuLcRJAgrAZEHlciLG
+5Hwj6BUOdWRwqx5K5SpfZn4x+nyFwwfyaIEyH3MB+hIxkllt04FpGLzONZDIHuFq7CtXzr1leibE
+y2QbqAonjn7iZPdThibauTfdio2PWmN1E2AZBl7FS7kqGJxsZ2Q+xI3+MW5dSIAUrAYtrqdiJDIh
+fDVVfJpN2TC2OLAsdCS6pqJrktRyiL7xRi51zuGpcXkw3kLFVgnVOYCKi8S0Np9oScdlJZ39I2UV
+YHBGB0BXcwghMf8TZwEEgCjg32YX1oCMANT1IqnbBDiAJXZa598DAP+m5+4+KeCCAAAAAElFTkSu
+QmCC"><br>Doutorado em Ciências Biológicas (Entomologia) pela Universidade Federal do Paraná, Brasil(2022)<br>Pesquisador T.A. nível C, T.C. do Universidad Nacional Autónoma de Mexico , México<br><br></li>
+<li><b><a href="javascript:abreDetalhe('K4757574T3','Paulo_Roberto_Pereira_Santiago',588115,)">Paulo Roberto Pereira Santiago</a></b>&nbsp;<img alt="Brasil" title="País de nacionalidade: Brasil" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA
+IGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAI1SURBVHjapJNLSFRh
+GIaf/5yjc5xxnEaHaWwqJEWFSaaMiNy2aVNktO+yqiykZVBGO3eBixatgmhXtoqIEJGGJswQJRqs
+xrIa5+IFzbmcy5zztxG1y0b8Nt/i/Xh4+XhfIaVkJyOAWqB+fW9nLKCoAYGzz+4U/lYlYDoKIPAo
+DkL8SxjuvRvWAJ/jOsTDrRuCLRUUJMcjyyhC8ibXRNUV1Cruxs1UIQ3g0wDVdh3WrDKLlSKGo9IW
+WOPMvjxNpgAJkehnhn/uJrXkp05zaKqrx3YdAFUDMG2LQrlC0SrR25LldHSJocc9jL7bA1VJd1eW
+mxeTvGoI8iTdjCNVTNsCQAMoGyaRcI7zsQ90RfK8SJ5ithLnWA/kl0qMvN9P0DvP7f4xund952H6
+ILMLWwAtnkUG4lM06AWwVe4/KjI6kcIfdGmOetnbEeBHKUx1JUNn6BsD/jmuLcRJAgrAZEHlciLG
+5Hwj6BUOdWRwqx5K5SpfZn4x+nyFwwfyaIEyH3MB+hIxkllt04FpGLzONZDIHuFq7CtXzr1leibE
+y2QbqAonjn7iZPdThibauTfdio2PWmN1E2AZBl7FS7kqGJxsZ2Q+xI3+MW5dSIAUrAYtrqdiJDIh
+fDVVfJpN2TC2OLAsdCS6pqJrktRyiL7xRi51zuGpcXkw3kLFVgnVOYCKi8S0Np9oScdlJZ39I2UV
+YHBGB0BXcwghMf8TZwEEgCjg32YX1oCMANT1IqnbBDiAJXZa598DAP+m5+4+KeCCAAAAAElFTkSu
+QmCC"><br><span class="tooltip coautor" alt="Pesquisador com bolsa de produtividade em pesquisa vigente no CNPq.">Bolsista de Produtividade em Pesquisa C</span><br>Doutorado em Ciências do Movimento pela Universidade Estadual Paulista Júlio de Mesquita Filho, Brasil(2009)<br>Professor Associado RDIDP, MS-5 nível 3 da Universidade de São Paulo , Brasil<br><br></li>
+<li><b><a href="javascript:abreDetalhe('K4706006D6','Jose_Roberto_Pereira_Rodrigues',267433,)">Jose Roberto Pereira Rodrigues</a></b>&nbsp;<img alt="Brasil" title="País de nacionalidade: Brasil" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA
+IGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAI1SURBVHjapJNLSFRh
+GIaf/5yjc5xxnEaHaWwqJEWFSaaMiNy2aVNktO+yqiykZVBGO3eBixatgmhXtoqIEJGGJswQJRqs
+xrIa5+IFzbmcy5zztxG1y0b8Nt/i/Xh4+XhfIaVkJyOAWqB+fW9nLKCoAYGzz+4U/lYlYDoKIPAo
+DkL8SxjuvRvWAJ/jOsTDrRuCLRUUJMcjyyhC8ibXRNUV1Cruxs1UIQ3g0wDVdh3WrDKLlSKGo9IW
+WOPMvjxNpgAJkehnhn/uJrXkp05zaKqrx3YdAFUDMG2LQrlC0SrR25LldHSJocc9jL7bA1VJd1eW
+mxeTvGoI8iTdjCNVTNsCQAMoGyaRcI7zsQ90RfK8SJ5ithLnWA/kl0qMvN9P0DvP7f4xund952H6
+ILMLWwAtnkUG4lM06AWwVe4/KjI6kcIfdGmOetnbEeBHKUx1JUNn6BsD/jmuLcRJAgrAZEHlciLG
+5Hwj6BUOdWRwqx5K5SpfZn4x+nyFwwfyaIEyH3MB+hIxkllt04FpGLzONZDIHuFq7CtXzr1leibE
+y2QbqAonjn7iZPdThibauTfdio2PWmN1E2AZBl7FS7kqGJxsZ2Q+xI3+MW5dSIAUrAYtrqdiJDIh
+fDVVfJpN2TC2OLAsdCS6pqJrktRyiL7xRi51zuGpcXkw3kLFVgnVOYCKi8S0Np9oScdlJZ39I2UV
+YHBGB0BXcwghMf8TZwEEgCjg32YX1oCMANT1IqnbBDiAJXZa598DAP+m5+4+KeCCAAAAAElFTkSu
+QmCC"><br>Doutorado em Engenharia Mecânica pela Universidade Estadual de Campinas, Brasil(2004)<br>Professor Adjunto III da Universidade Federal do Maranhão  , Brasil<br><br></li>
+<li><b><a href="javascript:abreDetalhe('K4431933J4','Roberto_Pereira_Veras',29626563,)">Roberto Pereira Veras</a></b>&nbsp;<img alt="Brasil" title="País de nacionalidade: Brasil" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA
+IGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAI1SURBVHjapJNLSFRh
+GIaf/5yjc5xxnEaHaWwqJEWFSaaMiNy2aVNktO+yqiykZVBGO3eBixatgmhXtoqIEJGGJswQJRqs
+xrIa5+IFzbmcy5zztxG1y0b8Nt/i/Xh4+XhfIaVkJyOAWqB+fW9nLKCoAYGzz+4U/lYlYDoKIPAo
+DkL8SxjuvRvWAJ/jOsTDrRuCLRUUJMcjyyhC8ibXRNUV1Cruxs1UIQ3g0wDVdh3WrDKLlSKGo9IW
+WOPMvjxNpgAJkehnhn/uJrXkp05zaKqrx3YdAFUDMG2LQrlC0SrR25LldHSJocc9jL7bA1VJd1eW
+mxeTvGoI8iTdjCNVTNsCQAMoGyaRcI7zsQ90RfK8SJ5ithLnWA/kl0qMvN9P0DvP7f4xund952H6
+ILMLWwAtnkUG4lM06AWwVe4/KjI6kcIfdGmOetnbEeBHKUx1JUNn6BsD/jmuLcRJAgrAZEHlciLG
+5Hwj6BUOdWRwqx5K5SpfZn4x+nyFwwfyaIEyH3MB+hIxkllt04FpGLzONZDIHuFq7CtXzr1leibE
+y2QbqAonjn7iZPdThibauTfdio2PWmN1E2AZBl7FS7kqGJxsZ2Q+xI3+MW5dSIAUrAYtrqdiJDIh
+fDVVfJpN2TC2OLAsdCS6pqJrktRyiL7xRi51zuGpcXkw3kLFVgnVOYCKi8S0Np9oScdlJZ39I2UV
+YHBGB0BXcwghMf8TZwEEgCjg32YX1oCMANT1IqnbBDiAJXZa598DAP+m5+4+KeCCAAAAAElFTkSu
+QmCC"><br>Doutorado em Ciências das Religiões pela Universidade Federal da Paraíba, Brasil(2019)<br>Professor EBTT B-004 do Colégio Militar de Brasília (DF) , Brasil<br><br></li>
+<li><b><a href="javascript:abreDetalhe('K4292716U4','Roberto_Pereira_do_Nascimento',21975991,)">Roberto Pereira do Nascimento</a></b>&nbsp;<img alt="Brasil" title="País de nacionalidade: Brasil" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA
+IGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAI1SURBVHjapJNLSFRh
+GIaf/5yjc5xxnEaHaWwqJEWFSaaMiNy2aVNktO+yqiykZVBGO3eBixatgmhXtoqIEJGGJswQJRqs
+xrIa5+IFzbmcy5zztxG1y0b8Nt/i/Xh4+XhfIaVkJyOAWqB+fW9nLKCoAYGzz+4U/lYlYDoKIPAo
+DkL8SxjuvRvWAJ/jOsTDrRuCLRUUJMcjyyhC8ibXRNUV1Cruxs1UIQ3g0wDVdh3WrDKLlSKGo9IW
+WOPMvjxNpgAJkehnhn/uJrXkp05zaKqrx3YdAFUDMG2LQrlC0SrR25LldHSJocc9jL7bA1VJd1eW
+mxeTvGoI8iTdjCNVTNsCQAMoGyaRcI7zsQ90RfK8SJ5ithLnWA/kl0qMvN9P0DvP7f4xund952H6
+ILMLWwAtnkUG4lM06AWwVe4/KjI6kcIfdGmOetnbEeBHKUx1JUNn6BsD/jmuLcRJAgrAZEHlciLG
+5Hwj6BUOdWRwqx5K5SpfZn4x+nyFwwfyaIEyH3MB+hIxkllt04FpGLzONZDIHuFq7CtXzr1leibE
+y2QbqAonjn7iZPdThibauTfdio2PWmN1E2AZBl7FS7kqGJxsZ2Q+xI3+MW5dSIAUrAYtrqdiJDIh
+fDVVfJpN2TC2OLAsdCS6pqJrktRyiL7xRi51zuGpcXkw3kLFVgnVOYCKi8S0Np9oScdlJZ39I2UV
+YHBGB0BXcwghMf8TZwEEgCjg32YX1oCMANT1IqnbBDiAJXZa598DAP+m5+4+KeCCAAAAAElFTkSu
+QmCC"><br>Doutorado em Informática na Educação pela Universidade Federal do Rio Grande do Sul, Brasil(2025)<br>Professor Adjunto da Universidade Federal de Alagoas , Brasil<br><br></li>
+<li><b><a href="javascript:abreDetalhe('K4409564H1','Paulo_Roberto_Mendes_Pereira',39489732,)">Paulo Roberto Mendes Pereira</a></b>&nbsp;<img alt="Brasil" title="País de nacionalidade: Brasil" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA
+IGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAI1SURBVHjapJNLSFRh
+GIaf/5yjc5xxnEaHaWwqJEWFSaaMiNy2aVNktO+yqiykZVBGO3eBixatgmhXtoqIEJGGJswQJRqs
+xrIa5+IFzbmcy5zztxG1y0b8Nt/i/Xh4+XhfIaVkJyOAWqB+fW9nLKCoAYGzz+4U/lYlYDoKIPAo
+DkL8SxjuvRvWAJ/jOsTDrRuCLRUUJMcjyyhC8ibXRNUV1Cruxs1UIQ3g0wDVdh3WrDKLlSKGo9IW
+WOPMvjxNpgAJkehnhn/uJrXkp05zaKqrx3YdAFUDMG2LQrlC0SrR25LldHSJocc9jL7bA1VJd1eW
+mxeTvGoI8iTdjCNVTNsCQAMoGyaRcI7zsQ90RfK8SJ5ithLnWA/kl0qMvN9P0DvP7f4xund952H6
+ILMLWwAtnkUG4lM06AWwVe4/KjI6kcIfdGmOetnbEeBHKUx1JUNn6BsD/jmuLcRJAgrAZEHlciLG
+5Hwj6BUOdWRwqx5K5SpfZn4x+nyFwwfyaIEyH3MB+hIxkllt04FpGLzONZDIHuFq7CtXzr1leibE
+y2QbqAonjn7iZPdThibauTfdio2PWmN1E2AZBl7FS7kqGJxsZ2Q+xI3+MW5dSIAUrAYtrqdiJDIh
+fDVVfJpN2TC2OLAsdCS6pqJrktRyiL7xRi51zuGpcXkw3kLFVgnVOYCKi8S0Np9oScdlJZ39I2UV
+YHBGB0BXcwghMf8TZwEEgCjg32YX1oCMANT1IqnbBDiAJXZa598DAP+m5+4+KeCCAAAAAElFTkSu
+QmCC"><br>Doutorado em Geografia pela Universidade Estadual de Campinas, Brasil(2024)<br>Pesquisador Voluntário do Núcleo de Estudos e Pesquisas Ambientais , Brasil<br><br></li>
+<li><b><a href="javascript:abreDetalhe('K4753323D2','Carlos_Roberto_Pereira_Padovani',576152,)">Carlos Roberto Pereira Padovani</a></b>&nbsp;<img alt="Brasil" title="País de nacionalidade: Brasil" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA
+IGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAI1SURBVHjapJNLSFRh
+GIaf/5yjc5xxnEaHaWwqJEWFSaaMiNy2aVNktO+yqiykZVBGO3eBixatgmhXtoqIEJGGJswQJRqs
+xrIa5+IFzbmcy5zztxG1y0b8Nt/i/Xh4+XhfIaVkJyOAWqB+fW9nLKCoAYGzz+4U/lYlYDoKIPAo
+DkL8SxjuvRvWAJ/jOsTDrRuCLRUUJMcjyyhC8ibXRNUV1Cruxs1UIQ3g0wDVdh3WrDKLlSKGo9IW
+WOPMvjxNpgAJkehnhn/uJrXkp05zaKqrx3YdAFUDMG2LQrlC0SrR25LldHSJocc9jL7bA1VJd1eW
+mxeTvGoI8iTdjCNVTNsCQAMoGyaRcI7zsQ90RfK8SJ5ithLnWA/kl0qMvN9P0DvP7f4xund952H6
+ILMLWwAtnkUG4lM06AWwVe4/KjI6kcIfdGmOetnbEeBHKUx1JUNn6BsD/jmuLcRJAgrAZEHlciLG
+5Hwj6BUOdWRwqx5K5SpfZn4x+nyFwwfyaIEyH3MB+hIxkllt04FpGLzONZDIHuFq7CtXzr1leibE
+y2QbqAonjn7iZPdThibauTfdio2PWmN1E2AZBl7FS7kqGJxsZ2Q+xI3+MW5dSIAUrAYtrqdiJDIh
+fDVVfJpN2TC2OLAsdCS6pqJrktRyiL7xRi51zuGpcXkw3kLFVgnVOYCKi8S0Np9oScdlJZ39I2UV
+YHBGB0BXcwghMf8TZwEEgCjg32YX1oCMANT1IqnbBDiAJXZa598DAP+m5+4+KeCCAAAAAElFTkSu
+QmCC"><br>Doutorado em Agronomia (Energia na Agricultura) pela Universidade Estadual Paulista Júlio de Mesquita Filho, Brasil(2007)<br>Docente da Faculdade de Tecnologia de Botucatu , Brasil<br><br></li>
+
+										</ol>
+									</div>
+									
+									<div class="paginacao">
+										<script type="text/javascript">
+function submeterPaginacao(inicio, qtd) {
+    var form = document.forms['buscaForm'];
+    if(!form) form = document.getElementsByName('buscaForm')[0];
+    if(!form) form = document.forms[0];
+    if(form) {
+        form.metodo.value = 'forwardPaginaResultados';
+        if(form['filtros.registroInicial']) form['filtros.registroInicial'].value = inicio;
+        if(form['filtros.registroFinal']) form['filtros.registroFinal'].value = qtd;
+        var valorCombinado = inicio + ';' + qtd;
+        if(form['registros']) {
+            form['registros'].value = valorCombinado;
+        } else {
+            var input = document.createElement('input');
+            input.type = 'hidden';
+            input.name = 'registros';
+            input.value = valorCombinado;
+            form.appendChild(input);
+        }
+        form.submit();
+    } else {
+        alert('Erro: Formulário de busca não encontrado para paginação.');
+    }
+}
+
+var intLTotReg = 100;
+var intLRegInicio = 60;
+var intLRegPagina = 10;
+var intLPagina = 1;
+var intLPaginaIni = intLPagina; 
+document.write("");
+if (intLRegInicio > 0) { 
+   intLRegInicio = (intLPagina * intLRegPagina) - intLRegPagina; 
+} 
+if (intLPagina > 1) { 
+   var inicioAnt = (intLRegInicio - intLRegPagina);
+   document.write("... <a data-role='paginacao' href='javascript:void(0)' onclick='submeterPaginacao(" + inicioAnt + ", " + intLRegPagina + ")'>anterior</a>&nbsp;"); 
+}
+document.write("&nbsp;&nbsp;"); 
+while ((intLPaginaIni < intLPagina + 11) && (intLRegInicio < intLTotReg)) { 
+   if (60 == intLRegInicio) { 
+       document.write("<a data-role='paginacao' href='javascript:void(0)' onclick='submeterPaginacao(" + intLRegInicio + ", " + intLRegPagina + ")'><font color='#ff0000'>" + intLPaginaIni + "</font></a>&nbsp;");
+   } else { 
+       document.write("<a data-role='paginacao' href='javascript:void(0)' onclick='submeterPaginacao(" + intLRegInicio + ", " + intLRegPagina + ")'>" + intLPaginaIni + "</a>&nbsp;"); 
+   } 
+   intLRegInicio += intLRegPagina; 
+   intLPaginaIni++; 
+} 
+document.write("&nbsp;&nbsp;"); 
+if (intLRegInicio < intLTotReg) { 
+   document.write("<a data-role='paginacao' href='javascript:void(0)' onclick='submeterPaginacao(" + intLRegInicio + ", " + intLRegPagina + ")'>pr&oacute;ximo</a> ..."); 
+}
+document.write("");
+</script>&nbsp;&nbsp;<a data-role="paginacao" onclick="submeterPaginacao(0, 10)" class="is-current is-disabled" aria-current="page">1</a>&nbsp;<a data-role="paginacao" href="javascript:void(0)" onclick="submeterPaginacao(10, 10)">2</a>&nbsp;<a data-role="paginacao" href="javascript:void(0)" onclick="submeterPaginacao(20, 10)">3</a>&nbsp;<a data-role="paginacao" href="javascript:void(0)" onclick="submeterPaginacao(30, 10)">4</a>&nbsp;<a data-role="paginacao" href="javascript:void(0)" onclick="submeterPaginacao(40, 10)">5</a>&nbsp;<a data-role="paginacao" href="javascript:void(0)" onclick="submeterPaginacao(50, 10)">6</a>&nbsp;<a data-role="paginacao" href="javascript:void(0)" onclick="submeterPaginacao(60, 10)"><font color="#ff0000">7</font></a>&nbsp;<a data-role="paginacao" href="javascript:void(0)" onclick="submeterPaginacao(70, 10)">8</a>&nbsp;<a data-role="paginacao" href="javascript:void(0)" onclick="submeterPaginacao(80, 10)">9</a>&nbsp;<a data-role="paginacao" href="javascript:void(0)" onclick="submeterPaginacao(90, 10)">10</a>&nbsp;&nbsp;&nbsp; 
+
+
+									</div>
+									<div class="control-bar-wrapper">
+										<a class="button" id="botaoBuscaFiltros" href="javascript:void(0)" onclick="javascript:novaBusca()">
+											<span class="mini-ico mini-ico-lupa"></span>Nova consulta
+										</a>
+									</div>
+									<br class="clear">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+	
+
+<script language="javaScript" type="text/javascript">
+	cvsSemPermissao = ['0'
+		
+	];
+</script>
+<script>
+	(function () {
+		var paginaAtual = parseInt('1', 10);
+
+		document.querySelectorAll('.paginacao').forEach(function (container) {
+			var links = Array.from(container.querySelectorAll('a'));
+
+
+			links.forEach(function (a) {
+				var txt = (a.textContent || '').trim();
+				var n = parseInt(txt, 10);
+				if (!isNaN(n) && n === paginaAtual) {
+					a.classList.add('is-current', 'is-disabled');
+					a.setAttribute('aria-current', 'page');
+					a.removeAttribute('href');
+				}
+			});
+		});
+	})();
+</script>
+
+</body></html>

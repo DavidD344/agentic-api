@@ -1,6 +1,8 @@
 import csv
 import io
 import json
+import re
+import unicodedata
 from pathlib import Path
 from typing import Any
 
@@ -42,6 +44,24 @@ SEMANTIC_LIST_FIELDS = [
     "dashboard_tags",
 ]
 
+SEARCH_ALIASES = {
+    "integer programming": ["programacao inteira", "programacao linear inteira", "integer programming"],
+    "integer": ["inteira", "inteiro", "integer"],
+    "programming": ["programacao", "programming"],
+    "mathematical programming": ["programacao matematica", "mathematical programming"],
+    "operations research": ["pesquisa operacional", "operations research"],
+    "optimization": ["otimizacao", "optimization"],
+    "robotics": ["robotica", "robotics"],
+    "robotica": ["robotica", "robotics"],
+    "mobile robotics": ["robotica movel", "mobile robotics"],
+    "robotica movel": ["robotica movel", "mobile robotics"],
+    "electronic": ["eletronica", "electronic"],
+    "electronics": ["eletronica", "electronics"],
+    "eletronica": ["eletronica", "electronic", "electronics"],
+    "artificial intelligence": ["inteligencia artificial", "artificial intelligence", "ai"],
+    "inteligencia artificial": ["inteligencia artificial", "artificial intelligence", "ai"],
+}
+
 
 def read_json(path: Path) -> Any:
     return json.loads(path.read_text(encoding="utf-8"))
@@ -63,6 +83,58 @@ def stringify(value) -> str:
         return json.dumps(value, ensure_ascii=False)
 
     return str(value)
+
+
+def normalize_search_text(value: str) -> str:
+    without_accents = "".join(
+        char
+        for char in unicodedata.normalize("NFKD", value.casefold())
+        if not unicodedata.combining(char)
+    )
+    spaced = re.sub(r"[_/\-]+", " ", without_accents)
+    cleaned = re.sub(r"[^a-z0-9]+", " ", spaced)
+    return re.sub(r"\s+", " ", cleaned).strip()
+
+
+def search_terms(query: str) -> list[str]:
+    normalized = normalize_search_text(query)
+    terms = {normalized}
+
+    for source, aliases in SEARCH_ALIASES.items():
+        normalized_source = normalize_search_text(source)
+        if normalized_source and normalized_source in normalized:
+            terms.update(normalize_search_text(alias) for alias in aliases)
+
+    words = normalized.split()
+    if len(words) == 1:
+        for word in words:
+            terms.update(
+                normalize_search_text(alias)
+                for alias in SEARCH_ALIASES.get(word, [])
+            )
+
+    return [term for term in terms if term]
+
+
+def text_matches(value: str, query: str | None) -> bool:
+    if not query:
+        return True
+
+    haystack = normalize_search_text(value)
+    if not haystack:
+        return False
+
+    haystack_tokens = set(haystack.split())
+
+    for term in search_terms(query):
+        if term in haystack:
+            return True
+
+        term_tokens = term.split()
+        if term_tokens and all(token in haystack_tokens for token in term_tokens):
+            return True
+
+    return False
 
 
 def load_active_profiles() -> tuple[dict, list[dict]]:
@@ -108,12 +180,10 @@ def value_matches(value, expected: str | None) -> bool:
     if value is None:
         return False
 
-    expected_lower = expected.casefold()
-
     if isinstance(value, list):
-        return any(expected_lower in str(item).casefold() for item in value)
+        return any(text_matches(str(item), expected) for item in value)
 
-    return expected_lower in str(value).casefold()
+    return text_matches(str(value), expected)
 
 
 def profile_matches(
@@ -147,7 +217,7 @@ def profile_matches(
             ]
         )
 
-        if q.casefold() not in searchable.casefold():
+        if not text_matches(searchable, q):
             return False
 
     checks = [

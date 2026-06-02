@@ -21,6 +21,24 @@ Depois disso, o projeto busca cada pessoa no Lattes para descobrir o currículo 
 
 O resultado esperado é uma base enriquecida que pode ser revisada por humanos ou por agentes antes de ser usada em análises, resumos, embeddings, banco de dados ou interface web.
 
+## Documentação principal
+
+Para uma visão consolidada do sistema, incluindo agentes, modelos, etapas, custos por pergunta, handoffs, guardrails e arquivos gerados, veja:
+
+```txt
+docs/system-overview.md
+```
+
+Documentos complementares:
+
+```txt
+docs/scraping.md
+docs/api-routes.md
+docs/dataset-contract.md
+docs/adr/
+SCRAPING_PIPELINE_DETAILED.md
+```
+
 ## Por que o scraping está separado
 
 Scraping costuma ser instável: páginas mudam, servidores falham, há homônimos, timeouts, bloqueios e diferenças pequenas no HTML. Por isso a coleta foi mantida como uma feature isolada, com arquivos próprios em:
@@ -376,6 +394,8 @@ publication_or_output_focus, profile_summary_short,
 profile_summary_bullets, search_keywords, dashboard_tags,
 chart_suggestions, data_quality_notes, qa_context
 ```
+
+Observação sobre `sex_inferred`: é uma inferência operacional para estatística e dashboard, não confirmação documental. A regra atual usa nome completo, `lattes_name` e marcadores textuais do Lattes. `unknown` só deve permanecer quando o nome for quase impossível de inferir, ambíguo ou houver evidência conflitante.
 
 O prompt completo da etapa está documentado em `docs/scraping.md`.
 

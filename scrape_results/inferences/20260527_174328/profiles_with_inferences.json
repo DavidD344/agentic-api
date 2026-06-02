@@ -1699,10 +1699,10 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.6,
-        "source": "llm_corrected_rule",
-        "reason": "Gênero não explícito no resumo.",
+        "value": "male",
+        "confidence": 0.75,
+        "source": "llm:unknown_sex_review",
+        "reason": "Resumo indica 'professor adjunto'; nome Adriano.",
         "needs_review": true
       },
       "main_research_area": {
@@ -2341,11 +2341,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.0,
-        "source": "rule+llm_validated",
-        "reason": "Sem evidência textual.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.99,
+        "source": "llm:unknown_sex_review",
+        "reason": "Nome Afonso tipicamente masculino.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "applied_mathematics",
@@ -6268,11 +6268,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.6,
-        "source": "llm_corrected_rule",
-        "reason": "Gênero não inferível com evidência suficiente.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.99,
+        "source": "llm:unknown_sex_review",
+        "reason": "Resumo com 'professor' e nome Alex masculino.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "networks",
@@ -9203,11 +9203,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.6,
-        "source": "llm_corrected_rule",
-        "reason": "Gênero não indicado no texto.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.99,
+        "source": "llm:unknown_sex_review",
+        "reason": "Nome Alisson tipicamente masculino.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "artificial_intelligence",
@@ -9538,11 +9538,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.6,
-        "source": "llm_corrected_rule",
-        "reason": "Ausência de evidência confiável de gênero no resumo.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.99,
+        "source": "llm:unknown_sex_review",
+        "reason": "Nome Alisson tipicamente masculino.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "embedded_systems",
@@ -10496,11 +10496,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.4,
-        "source": "llm_corrected_rule",
-        "reason": "Inferência sensível; gênero não determinado apenas por termos.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.99,
+        "source": "llm:unknown_sex_review",
+        "reason": "Nome Aluizio tipicamente masculino.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "artificial_intelligence",
@@ -14007,11 +14007,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.8,
-        "source": "llm_corrected_rule",
-        "reason": "Gênero não determinado: evidência insuficiente.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.85,
+        "source": "llm:unknown_sex_review",
+        "reason": "Resumo usa 'Professor Associado' e nome André.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "bioinformatics",
@@ -16921,11 +16921,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.4,
-        "source": "llm_corrected_rule",
-        "reason": "Dados insuficientes para inferir sexo.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.99,
+        "source": "llm:unknown_sex_review",
+        "reason": "Nome Anselmo tipicamente masculino.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "computer_science",
@@ -20186,11 +20186,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.0,
-        "source": "rule+llm_validated",
-        "reason": "Sem evidência textual local para inferir sexo.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.99,
+        "source": "llm:unknown_sex_review",
+        "reason": "Nome Baldoino tipicamente masculino.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "software_engineering",
@@ -20825,11 +20825,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.4,
-        "source": "llm_corrected_rule",
-        "reason": "Gênero não deduzível a partir do resumo.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.99,
+        "source": "llm:unknown_sex_review",
+        "reason": "Resumo com 'Professor adjunto' e nome Breno masculino.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "software_engineering",
@@ -21441,11 +21441,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.4,
-        "source": "llm_corrected_rule",
-        "reason": "Indicação de gênero pela palavra 'professor' não confiável.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.99,
+        "source": "llm:unknown_sex_review",
+        "reason": "Nome Bruno tipicamente masculino.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "optimization",
@@ -21781,10 +21781,10 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.5,
-        "source": "llm_corrected_rule",
-        "reason": "Evidência insuficiente para sexo.",
+        "value": "male",
+        "confidence": 0.8,
+        "source": "llm:unknown_sex_review",
+        "reason": "Resumo abre com 'O Prof. Bruno...' (forma masculina) e nome Bruno.",
         "needs_review": true
       },
       "main_research_area": {
@@ -23060,11 +23060,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.0,
-        "source": "rule+llm_validated",
-        "reason": "Sem evidência textual local para inferir sexo.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.98,
+        "source": "llm:unknown_sex_review",
+        "reason": "Resumo com 'Prof. Titular' e nome Carlile usado como masculino no contexto.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "geometria_distancias",
@@ -26961,11 +26961,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.6,
-        "source": "llm_corrected_rule",
-        "reason": "Gênero não determinado com evidência confiável.",
-        "needs_review": true
+        "value": "female",
+        "confidence": 0.95,
+        "source": "llm:unknown_sex_review",
+        "reason": "Nome 'Claudia' e texto 'Professor titular' com nome feminino (Claudia).",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "databases",
@@ -28579,11 +28579,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.25,
-        "source": "llm_corrected_rule",
-        "reason": "Não há evidência confiável de gênero no resumo.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.99,
+        "source": "llm:unknown_sex_review",
+        "reason": "Resumo com 'Professor Titular' e nome Cleber masculino.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "artificial_intelligence",
@@ -30557,11 +30557,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.6,
-        "source": "llm_corrected_rule",
-        "reason": "Gênero não determinado a partir do resumo.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.99,
+        "source": "llm:unknown_sex_review",
+        "reason": "Resumo com 'PROFESSOR' e nome Cristiano masculino.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "networks",
@@ -32516,11 +32516,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.3,
-        "source": "rule+llm_validated",
-        "reason": "Sem evidência textual para inferir sexo.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.99,
+        "source": "llm:unknown_sex_review",
+        "reason": "Nome Daniel tipicamente masculino.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "computer_networks",
@@ -33154,11 +33154,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.2,
-        "source": "rule+llm_validated",
-        "reason": "Sem evidência textual local para inferir sexo.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.99,
+        "source": "llm:unknown_sex_review",
+        "reason": "Nome Daniel tipicamente masculino.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "computer_systems",
@@ -33490,11 +33490,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.4,
-        "source": "llm_corrected_rule",
-        "reason": "Evidência insuficiente para inferir gênero.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.99,
+        "source": "llm:unknown_sex_review",
+        "reason": "Nome Danielo tipicamente masculino.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "computacao_aplicada",
@@ -36076,11 +36076,11 @@
         "needs_review": true
       },
       "sex_inferred": {
-        "value": "unknown",
+        "value": "female",
         "confidence": 0.9,
-        "source": "llm_corrected_rule",
-        "reason": "Sexo não comprovado pelo resumo.",
-        "needs_review": true
+        "source": "llm:unknown_sex_review",
+        "reason": "Nome 'Dianne' e resumo em inglês descreve 'adjunct professor' sem ambiguidade nominal.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "telecommunications",
@@ -36669,17 +36669,17 @@
     ],
     "semantic_profile": {
       "institution_state_uf": {
-        "value": "unknown",
-        "confidence": 0.9,
-        "source": "rule+llm_validated",
-        "reason": "UF não mapeada no dataset.",
+        "value": "RJ",
+        "confidence": 1,
+        "source": "rule:normalization",
+        "reason": "UF normalizada pela sigla da instituição: FGV.",
         "needs_review": false
       },
       "institution_region": {
-        "value": "unknown",
-        "confidence": 0.9,
-        "source": "rule+llm_validated",
-        "reason": "Região não determinável pela UF.",
+        "value": "Sudeste",
+        "confidence": 1,
+        "source": "rule:normalization",
+        "reason": "Região normalizada a partir da UF RJ.",
         "needs_review": false
       },
       "scholarship_category": {
@@ -36718,11 +36718,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.9,
-        "source": "llm_corrected_rule",
-        "reason": "Gênero não determinado pelo resumo.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.99,
+        "source": "llm:unknown_sex_review",
+        "reason": "Texto em primeira pessoa 'I am an assistant professor' e nome Diego masculino.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "machine_learning",
@@ -41586,11 +41586,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.6,
-        "source": "llm_corrected_rule",
-        "reason": "Não há pronome claro no resumo.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.99,
+        "source": "llm:unknown_sex_review",
+        "reason": "Resumo com 'Full Professor' e nome Edson masculino.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "robotics",
@@ -42231,10 +42231,10 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 1.0,
-        "source": "rule+llm_validated",
-        "reason": "Validado: não há evidência textual para inferir sexo.",
+        "value": "male",
+        "confidence": 0.99,
+        "source": "llm:unknown_sex_review",
+        "reason": "Nome Eduardo tipicamente masculino.",
         "needs_review": false
       },
       "main_research_area": {
@@ -43220,11 +43220,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.4,
-        "source": "llm_corrected_rule",
-        "reason": "Gênero não determinado no resumo.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.99,
+        "source": "llm:unknown_sex_review",
+        "reason": "Resumo com 'Professor Titular' e nome Eduardo masculino.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "databases",
@@ -44608,11 +44608,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.6,
-        "source": "llm_corrected_rule",
-        "reason": "Gênero não indicado no resumo.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.9,
+        "source": "llm:unknown_sex_review",
+        "reason": "Resumo usa pronome 'Ele' para 'Eduardo Ogasawara'.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "data_mining",
@@ -46235,10 +46235,10 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.6,
-        "source": "llm_corrected_rule",
-        "reason": "Gênero não determinável pelo texto.",
+        "value": "male",
+        "confidence": 0.82,
+        "source": "llm:unknown_sex_review",
+        "reason": "Marcador implícito: “professor titular” no resumo + nome Emerson (masculino).",
         "needs_review": true
       },
       "main_research_area": {
@@ -47190,10 +47190,10 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.6,
-        "source": "llm_corrected_rule",
-        "reason": "Gênero não confiável a partir do texto; confirmação necessária.",
+        "value": "male",
+        "confidence": 0.78,
+        "source": "llm:unknown_sex_review",
+        "reason": "Marcadores no texto: “professor Titular”; nome Esteban (comum masculino).",
         "needs_review": true
       },
       "main_research_area": {
@@ -47519,10 +47519,10 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 1.0,
-        "source": "rule+llm_validated",
-        "reason": "Regra válida: sem evidência local para inferir sexo.",
+        "value": "male",
+        "confidence": 0.99,
+        "source": "llm:unknown_sex_review",
+        "reason": "Nome Estevão tipicamente masculino.",
         "needs_review": false
       },
       "main_research_area": {
@@ -48518,11 +48518,11 @@
         "needs_review": true
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.0,
-        "source": "rule+llm_validated",
-        "reason": "Sem evidência textual local para inferir sexo.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.93,
+        "source": "llm:unknown_sex_review",
+        "reason": "Nome completo com primeiro nome masculino comum: Ezequiel.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "artificial_intelligence",
@@ -49176,10 +49176,10 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.6,
-        "source": "llm_corrected_rule",
-        "reason": "Gênero não confirmado; inferência duvidosa.",
+        "value": "male",
+        "confidence": 0.8,
+        "source": "llm:unknown_sex_review",
+        "reason": "Marcadores no texto: “Prof. Hessel é PhD” e “lider do grupo”; nome Fabiano (masculino).",
         "needs_review": true
       },
       "main_research_area": {
@@ -50156,11 +50156,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.4,
-        "source": "llm_corrected_rule",
-        "reason": "Gênero não determinado pelo texto.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.99,
+        "source": "llm:unknown_sex_review",
+        "reason": "Nome Fábio tipicamente masculino.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "graph_theory",
@@ -50790,11 +50790,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.0,
-        "source": "rule+llm_validated",
-        "reason": "Sem evidência textual local para inferir sexo.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.99,
+        "source": "llm:unknown_sex_review",
+        "reason": "Nome Fabio tipicamente masculino.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "computer_networking",
@@ -55279,18 +55279,18 @@
     ],
     "semantic_profile": {
       "institution_state_uf": {
-        "value": "unknown",
-        "confidence": 0.0,
-        "source": "rule+llm_validated",
-        "reason": "Regra validada: UPE sem UF explícita no dado fornecido.",
-        "needs_review": true
+        "value": "PE",
+        "confidence": 1,
+        "source": "rule:normalization",
+        "reason": "UF normalizada pela sigla da instituição: UPE.",
+        "needs_review": false
       },
       "institution_region": {
-        "value": "unknown",
-        "confidence": 0.0,
-        "source": "rule+llm_validated",
-        "reason": "Regra validada: UF desconhecida impede derivação regional.",
-        "needs_review": true
+        "value": "Nordeste",
+        "confidence": 1,
+        "source": "rule:normalization",
+        "reason": "Região normalizada a partir da UF PE.",
+        "needs_review": false
       },
       "scholarship_category": {
         "value": "PQ-C",
@@ -55996,11 +55996,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.0,
-        "source": "rule+llm_validated",
-        "reason": "Sem evidência textual local para inferir sexo.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.99,
+        "source": "llm:unknown_sex_review",
+        "reason": "Nome Fernando tipicamente masculino.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "programming_languages",
@@ -60819,11 +60819,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.8,
-        "source": "llm_corrected_rule",
-        "reason": "Sexo não determinado com evidência confiável.",
-        "needs_review": true
+        "value": "female",
+        "confidence": 0.85,
+        "source": "llm:unknown_sex_review",
+        "reason": "Resumo em inglês usa “She”; nome Genaina é feminino.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "software_engineering",
@@ -61803,11 +61803,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.5,
-        "source": "llm_corrected_rule",
-        "reason": "Texto não indica gênero; ambíguo.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.99,
+        "source": "llm:unknown_sex_review",
+        "reason": "Resumo com 'Doutor' e nome Geraldo masculino.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "artificial_intelligence",
@@ -64369,11 +64369,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.2,
-        "source": "rule+llm_validated",
-        "reason": "Marcadores de gênero ambíguos no resumo.",
-        "needs_review": true
+        "value": "female",
+        "confidence": 0.9,
+        "source": "llm:unknown_sex_review",
+        "reason": "Marcador textual: “Professora Assistente III”; nome Graçaliz (feminino).",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "mathematics_of_computing",
@@ -65674,11 +65674,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.0,
-        "source": "rule+llm_validated",
-        "reason": "Sem evidência textual local para inferir sexo.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.98,
+        "source": "llm:unknown_sex_review",
+        "reason": "Nome Guilherme é tipicamente masculino; resumo confirma graduação/doutorado sem conflito.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "high_performance_computing",
@@ -66909,18 +66909,18 @@
     ],
     "semantic_profile": {
       "institution_state_uf": {
-        "value": "unknown",
-        "confidence": 1.0,
-        "source": "rule+llm_validated",
-        "reason": "Validação: ITV sem UF mapeada.",
+        "value": "PA",
+        "confidence": 1,
+        "source": "rule:normalization",
+        "reason": "UF normalizada pela sigla da instituição: ITV.",
         "needs_review": false
       },
       "institution_region": {
-        "value": "unknown",
-        "confidence": 0.0,
-        "source": "rule+llm_validated",
-        "reason": "UF desconhecida; região não derivável.",
-        "needs_review": true
+        "value": "Norte",
+        "confidence": 1,
+        "source": "rule:normalization",
+        "reason": "Região normalizada a partir da UF PA.",
+        "needs_review": false
       },
       "scholarship_category": {
         "value": "PQ-1",
@@ -67552,18 +67552,18 @@
     ],
     "semantic_profile": {
       "institution_state_uf": {
-        "value": "unknown",
-        "confidence": 0.0,
-        "source": "rule+llm_validated",
-        "reason": "Regra: UF não mapeada; validação pendente.",
-        "needs_review": true
+        "value": "MG",
+        "confidence": 1,
+        "source": "rule:normalization",
+        "reason": "UF normalizada pela sigla da instituição: UFJF.",
+        "needs_review": false
       },
       "institution_region": {
-        "value": "unknown",
-        "confidence": 0.0,
-        "source": "rule+llm_validated",
-        "reason": "Região não derivada pela UF desconhecida.",
-        "needs_review": true
+        "value": "Sudeste",
+        "confidence": 1,
+        "source": "rule:normalization",
+        "reason": "Região normalizada a partir da UF MG.",
+        "needs_review": false
       },
       "scholarship_category": {
         "value": "PQ-C",
@@ -67907,10 +67907,10 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.4,
-        "source": "llm_corrected_rule",
-        "reason": "Gênero não determinado pelas evidências.",
+        "value": "male",
+        "confidence": 0.75,
+        "source": "llm:unknown_sex_review",
+        "reason": "Nome Heitor (masculino) e menção “professor associado”; marcador ocupacional favorece masculino.",
         "needs_review": true
       },
       "main_research_area": {
@@ -76954,11 +76954,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.6,
-        "source": "llm_corrected_rule",
-        "reason": "Gênero não determinável pelo texto.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.95,
+        "source": "llm:unknown_sex_review",
+        "reason": "Resumo traz \"professor adjunto\" e nome Jomi é associado a masculino.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "artificial_intelligence",
@@ -77223,17 +77223,17 @@
     ],
     "semantic_profile": {
       "institution_state_uf": {
-        "value": "unknown",
-        "confidence": 1.0,
-        "source": "rule+llm_validated",
-        "reason": "UF não aplicável para FGV, não mapeada",
+        "value": "RJ",
+        "confidence": 1,
+        "source": "rule:normalization",
+        "reason": "UF normalizada pela sigla da instituição: FGV.",
         "needs_review": false
       },
       "institution_region": {
-        "value": "unknown",
-        "confidence": 1.0,
-        "source": "rule+llm_validated",
-        "reason": "UF desconhecida, região não definida",
+        "value": "Sudeste",
+        "confidence": 1,
+        "source": "rule:normalization",
+        "reason": "Região normalizada a partir da UF RJ.",
         "needs_review": false
       },
       "scholarship_category": {
@@ -78247,11 +78247,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.6,
-        "source": "llm_corrected_rule",
-        "reason": "Gênero não determinado pela evidência.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.98,
+        "source": "llm:unknown_sex_review",
+        "reason": "Nome José Augusto é tipicamente masculino; resumo traz \"professor\" sem conflito.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "computer_science",
@@ -81508,11 +81508,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.25,
-        "source": "llm_corrected_rule",
-        "reason": "Gênero não confiável; termo ocupacional não indica sexo.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.98,
+        "source": "llm:unknown_sex_review",
+        "reason": "Nome Julio Cesar é tipicamente masculino; resumo traz \"professor visitante\".",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "software_engineering",
@@ -84412,11 +84412,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.4,
-        "source": "llm_corrected_rule",
-        "reason": "Gênero não determinado a partir do resumo.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.97,
+        "source": "llm:unknown_sex_review",
+        "reason": "Resumo usa \"Prof.\" e \"Professor Assistente\"; nome Kleinner é usado como masculino.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "software_engineering",
@@ -85058,11 +85058,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.6,
-        "source": "llm_corrected_rule",
-        "reason": "Gênero não claramente determinado nos dados.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.98,
+        "source": "llm:unknown_sex_review",
+        "reason": "Resumo traz \"Professor Associado\" e pronomes masculinos; nome Leandro é masculino.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "artificial_intelligence",
@@ -86005,11 +86005,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.4,
-        "source": "llm_corrected_rule",
-        "reason": "Incerteza sobre sexo a partir do texto.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.98,
+        "source": "llm:unknown_sex_review",
+        "reason": "Resumo traz \"Professor Adjunto\"; nome Leandro é tipicamente masculino.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "artificial_intelligence",
@@ -91159,11 +91159,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.6,
-        "source": "llm_corrected_rule",
-        "reason": "Indício insuficiente para sexo.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.95,
+        "source": "llm:unknown_sex_review",
+        "reason": "Resumo traz \"Professor Associado\"; nome Luidi é associado a masculino.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "mathematical_programming",
@@ -92770,11 +92770,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.4,
-        "source": "llm_corrected_rule",
-        "reason": "Gênero não determinado.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.98,
+        "source": "llm:unknown_sex_review",
+        "reason": "Resumo traz \"Professor Adjunto\"; nome Luís Felipe é tipicamente masculino.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "combinatorial_optimization",
@@ -94649,18 +94649,18 @@
     ],
     "semantic_profile": {
       "institution_state_uf": {
-        "value": "unknown",
-        "confidence": 0.0,
-        "source": "rule+llm_validated",
-        "reason": "Instituição sem UF mapeada: INMETRO.",
-        "needs_review": true
+        "value": "RJ",
+        "confidence": 1,
+        "source": "rule:normalization",
+        "reason": "UF normalizada pela sigla da instituição: INMETRO.",
+        "needs_review": false
       },
       "institution_region": {
-        "value": "unknown",
-        "confidence": 0.0,
-        "source": "rule+llm_validated",
-        "reason": "Região derivada da UF da instituição.",
-        "needs_review": true
+        "value": "Sudeste",
+        "confidence": 1,
+        "source": "rule:normalization",
+        "reason": "Região normalizada a partir da UF RJ.",
+        "needs_review": false
       },
       "scholarship_category": {
         "value": "PQ-C",
@@ -98254,18 +98254,18 @@
     ],
     "semantic_profile": {
       "institution_state_uf": {
-        "value": "unknown",
-        "confidence": 0.4,
-        "source": "rule+llm_validated",
-        "reason": "UF não mapeada nos dados.",
-        "needs_review": true
+        "value": "RS",
+        "confidence": 1,
+        "source": "rule:normalization",
+        "reason": "UF normalizada pela sigla da instituição: UNIPAMPA.",
+        "needs_review": false
       },
       "institution_region": {
-        "value": "unknown",
-        "confidence": 0.4,
-        "source": "rule+llm_validated",
-        "reason": "Região derivada não fornecida.",
-        "needs_review": true
+        "value": "Sul",
+        "confidence": 1,
+        "source": "rule:normalization",
+        "reason": "Região normalizada a partir da UF RS.",
+        "needs_review": false
       },
       "scholarship_category": {
         "value": "PQ-C",
@@ -101196,11 +101196,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.4,
-        "source": "llm_corrected_rule",
-        "reason": "Evidência insuficiente; inferência de sexo não suportada.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.98,
+        "source": "llm:unknown_sex_review",
+        "reason": "Resumo traz \"professor titular\"; nome Marcelo é tipicamente masculino.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "biomedical_engineering",
@@ -102494,11 +102494,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.6,
-        "source": "llm_corrected_rule",
-        "reason": "Evidência de gênero insuficiente.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.98,
+        "source": "llm:unknown_sex_review",
+        "reason": "Resumo traz \"Professor Associado\"; nome Márcio é tipicamente masculino.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "bioinformatics",
@@ -104119,11 +104119,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.4,
-        "source": "llm_corrected_rule",
-        "reason": "Gênero não determinado a partir do resumo.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.98,
+        "source": "llm:unknown_sex_review",
+        "reason": "Resumo traz \"professor Titular\"; nome Marcos André é tipicamente masculino.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "information_retrieval",
@@ -105102,11 +105102,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.25,
-        "source": "llm_corrected_rule",
-        "reason": "Gênero não explicitamente indicado no texto.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.98,
+        "source": "llm:unknown_sex_review",
+        "reason": "Resumo traz \"professor Associado IV\" e \"vice-diretor\"; nome Marcos é tipicamente masculino.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "visualization",
@@ -106363,11 +106363,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.0,
-        "source": "rule+llm_validated",
-        "reason": "Sem evidência textual local para inferir sexo.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.96,
+        "source": "llm:unknown_sex_review",
+        "reason": "Nome Marcus é tipicamente masculino; resumo sem conflito.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "high_performance_computing",
@@ -109532,17 +109532,17 @@
     ],
     "semantic_profile": {
       "institution_state_uf": {
-        "value": "unknown",
-        "confidence": 0.99,
-        "source": "rule+llm_validated",
-        "reason": "UF não mapeada no registro.",
+        "value": "PR",
+        "confidence": 1,
+        "source": "rule:normalization",
+        "reason": "UF normalizada pela sigla da instituição: UEL.",
         "needs_review": false
       },
       "institution_region": {
-        "value": "unknown",
-        "confidence": 0.85,
-        "source": "rule+llm_validated",
-        "reason": "Região derivada da UF indisponível.",
+        "value": "Sul",
+        "confidence": 1,
+        "source": "rule:normalization",
+        "reason": "Região normalizada a partir da UF PR.",
         "needs_review": false
       },
       "scholarship_category": {
@@ -113181,11 +113181,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.0,
-        "source": "rule+llm_validated",
-        "reason": "Sem evidência textual local para inferir sexo.",
-        "needs_review": true
+        "value": "female",
+        "confidence": 0.95,
+        "source": "llm:unknown_sex_review",
+        "reason": "Nome próprio Mirella é tipicamente feminino.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "data_science",
@@ -122436,18 +122436,18 @@
     ],
     "semantic_profile": {
       "institution_state_uf": {
-        "value": "unknown",
-        "confidence": 0.2,
-        "source": "rule+llm_validated",
-        "reason": "UF não mapeada para Mackenzie.",
-        "needs_review": true
+        "value": "SP",
+        "confidence": 1,
+        "source": "rule:normalization",
+        "reason": "UF normalizada pela sigla da instituição: MACKENZIE.",
+        "needs_review": false
       },
       "institution_region": {
-        "value": "unknown",
-        "confidence": 0.2,
-        "source": "rule+llm_validated",
-        "reason": "Região desconhecida pela UF.",
-        "needs_review": true
+        "value": "Sudeste",
+        "confidence": 1,
+        "source": "rule:normalization",
+        "reason": "Região normalizada a partir da UF SP.",
+        "needs_review": false
       },
       "scholarship_category": {
         "value": "PQ-2",
@@ -122485,11 +122485,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.2,
-        "source": "llm_corrected_rule",
-        "reason": "Termo não indica gênero.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.98,
+        "source": "llm:unknown_sex_review",
+        "reason": "Nome Pedro Paulo é tipicamente masculino; resumo confirma vínculo docente.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "cellular_automata",
@@ -124761,10 +124761,10 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.3,
-        "source": "llm_corrected_rule",
-        "reason": "Gênero não determinado pelo resumo.",
+        "value": "male",
+        "confidence": 0.8,
+        "source": "llm:unknown_sex_review",
+        "reason": "Resumo usa 'Ele' e 'Dr.' sem indicar feminino.",
         "needs_review": true
       },
       "main_research_area": {
@@ -126969,18 +126969,18 @@
     ],
     "semantic_profile": {
       "institution_state_uf": {
-        "value": "unknown",
-        "confidence": 0.0,
-        "source": "rule+llm_validated",
-        "reason": "Instituição sem UF mapeada: UFJF.",
-        "needs_review": true
+        "value": "MG",
+        "confidence": 1,
+        "source": "rule:normalization",
+        "reason": "UF normalizada pela sigla da instituição: UFJF.",
+        "needs_review": false
       },
       "institution_region": {
-        "value": "unknown",
-        "confidence": 0.0,
-        "source": "rule+llm_validated",
-        "reason": "Região derivada da UF da instituição.",
-        "needs_review": true
+        "value": "Sudeste",
+        "confidence": 1,
+        "source": "rule:normalization",
+        "reason": "Região normalizada a partir da UF MG.",
+        "needs_review": false
       },
       "scholarship_category": {
         "value": "PQ-2",
@@ -129913,10 +129913,10 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.4,
-        "source": "llm_corrected_rule",
-        "reason": "Não há evidência confiável de gênero.",
+        "value": "male",
+        "confidence": 0.8,
+        "source": "llm:unknown_sex_review",
+        "reason": "Resumo usa 'Atualmente é professor' sem marcadores, e 'Rian' tende a ser masculino (evidence fraca).",
         "needs_review": true
       },
       "main_research_area": {
@@ -131550,10 +131550,10 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.4,
-        "source": "llm_corrected_rule",
-        "reason": "Gênero não determinado pelo resumo.",
+        "value": "male",
+        "confidence": 0.75,
+        "source": "llm:unknown_sex_review",
+        "reason": "Nome próprio Ricardo é tipicamente masculino.",
         "needs_review": true
       },
       "main_research_area": {
@@ -131897,10 +131897,10 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.0,
-        "source": "rule+llm_validated",
-        "reason": "Sem evidência textual local para inferir sexo.",
+        "value": "male",
+        "confidence": 0.75,
+        "source": "llm:unknown_sex_review",
+        "reason": "Nome próprio Ricardo é tipicamente masculino.",
         "needs_review": true
       },
       "main_research_area": {
@@ -134137,10 +134137,10 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.4,
-        "source": "llm_corrected_rule",
-        "reason": "Gênero não explicitamente informado; inferência sensível.",
+        "value": "male",
+        "confidence": 0.8,
+        "source": "llm:unknown_sex_review",
+        "reason": "Nome próprio Rodrigo é tipicamente masculino.",
         "needs_review": true
       },
       "main_research_area": {
@@ -136771,11 +136771,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.4,
-        "source": "llm_corrected_rule",
-        "reason": "Não há evidência confiável de gênero no resumo.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.95,
+        "source": "llm:unknown_sex_review",
+        "reason": "Resumo em inglês: 'He is a Full Professor' (masculino).",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "computer_networks",
@@ -142549,11 +142549,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.3,
-        "source": "rule+llm_validated",
-        "reason": "Condição ambígua: marcadores contraditórios.",
-        "needs_review": true
+        "value": "female",
+        "confidence": 0.92,
+        "source": "llm:unknown_sex_review",
+        "reason": "Nome próprio Tatiane é tipicamente feminino.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "artificial_intelligence",
@@ -144825,10 +144825,10 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.4,
-        "source": "llm_corrected_rule",
-        "reason": "Pouca evidência de gênero no resumo.",
+        "value": "male",
+        "confidence": 0.8,
+        "source": "llm:unknown_sex_review",
+        "reason": "Nome próprio Thiago é tipicamente masculino.",
         "needs_review": true
       },
       "main_research_area": {
@@ -147755,10 +147755,10 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.3,
-        "source": "rule+llm_validated",
-        "reason": "Sem evidência textual local para inferir sexo.",
+        "value": "male",
+        "confidence": 0.75,
+        "source": "llm:unknown_sex_review",
+        "reason": "Nome próprio Valmir é tipicamente masculino.",
         "needs_review": true
       },
       "main_research_area": {
@@ -148094,11 +148094,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.4,
-        "source": "llm_corrected_rule",
-        "reason": "Não há evidência confiável de gênero.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.85,
+        "source": "llm:unknown_sex_review",
+        "reason": "Pronome implícito em 'Vander Ramos Alves' (forma masculina) e 'Vander' é tipicamente masculino.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "software_engineering",
@@ -148738,11 +148738,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.0,
-        "source": "rule+llm_validated",
-        "reason": "Sem evidência textual local para sexo.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.9,
+        "source": "llm:unknown_sex_review",
+        "reason": "Nome próprio Vasco é tipicamente masculino.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "artificial_intelligence",
@@ -149068,11 +149068,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.6,
-        "source": "llm_corrected_rule",
-        "reason": "Gênero não pode ser inferido apenas por título.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.98,
+        "source": "llm:unknown_sex_review",
+        "reason": "Resumo traz \"professor adjunto\"; nome Victor é tipicamente masculino.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "algoritmos_e_complexidade",
@@ -149335,18 +149335,18 @@
     ],
     "semantic_profile": {
       "institution_state_uf": {
-        "value": "unknown",
-        "confidence": 0.0,
-        "source": "rule+llm_validated",
-        "reason": "Instituição sem UF mapeada: UFJF.",
-        "needs_review": true
+        "value": "MG",
+        "confidence": 1,
+        "source": "rule:normalization",
+        "reason": "UF normalizada pela sigla da instituição: UFJF.",
+        "needs_review": false
       },
       "institution_region": {
-        "value": "unknown",
-        "confidence": 0.0,
-        "source": "rule+llm_validated",
-        "reason": "Região derivada da UF da instituição.",
-        "needs_review": true
+        "value": "Sudeste",
+        "confidence": 1,
+        "source": "rule:normalization",
+        "reason": "Região normalizada a partir da UF MG.",
+        "needs_review": false
       },
       "scholarship_category": {
         "value": "PQ-2",
@@ -152639,10 +152639,10 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.6,
-        "source": "llm_corrected_rule",
-        "reason": "Título não determina sexo com confiabilidade.",
+        "value": "male",
+        "confidence": 0.75,
+        "source": "llm:unknown_sex_review",
+        "reason": "Nome próprio Windson é tipicamente masculino.",
         "needs_review": true
       },
       "main_research_area": {
@@ -154221,10 +154221,10 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.0,
-        "source": "rule+llm_validated",
-        "reason": "Sem evidência textual local para inferir sexo.",
+        "value": "male",
+        "confidence": 0.8,
+        "source": "llm:unknown_sex_review",
+        "reason": "Nome próprio Yuri é tipicamente masculino.",
         "needs_review": true
       },
       "main_research_area": {

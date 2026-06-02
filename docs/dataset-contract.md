@@ -92,7 +92,7 @@ Estes campos ficam na raiz de cada pessoa.
 |---|---:|---|---|---|
 | `name` | string | required | CNPq | dashboard, perfil, chat, busca |
 | `institution` | string | required | CNPq | dashboard, filtros, chat |
-| `scholarship_level` | string | required | CNPq | dashboard, filtros |
+| `scholarship_level` | string | required | CNPq | dashboard, filtros, chat |
 | `lattes_code` | string | required | Lattes preview | identificador tecnico, detalhe |
 | `lattes_name` | string | required | Lattes preview/full | validacao, perfil |
 | `lattes_url` | string | required | Lattes full | link externo |
@@ -103,6 +103,8 @@ Observacoes:
 ```txt
 name e o nome da tabela do CNPq.
 lattes_name e o nome encontrado no Lattes.
+scholarship_level e o nível real da bolsa e deve ser usado por padrão em UI e respostas do chat.
+scholarship_category e apenas uma agregação derivada para análises agrupadas.
 Normalmente eles devem ser iguais ou muito parecidos.
 lattes_code e codigo tecnico interno da busca textual.
 lattes_url e a URL publica mais importante para exibir ao usuario.
@@ -275,12 +277,14 @@ Valores:
   unknown
 
 Origem:
-  marcadores textuais no Lattes, como professor/professora, pesquisador/pesquisadora,
-  doutor/doutora, graduado/graduada.
+  nome completo, lattes_name e marcadores textuais no Lattes, como
+  professor/professora, pesquisador/pesquisadora, doutor/doutora,
+  graduado/graduada.
 
 Observacao:
   Campo sensivel e aproximado.
-  unknown e aceitavel.
+  A política atual e inferir sempre que o nome completo permitir.
+  unknown fica reservado para casos quase impossiveis, ambíguos ou conflitantes.
   Para relatorios, sempre deixar claro que e inferido.
 ```
 

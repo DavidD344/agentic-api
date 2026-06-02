@@ -1,0 +1,41 @@
+{
+  "model": "gpt-5.4-mini",
+  "batch_size": 25,
+  "min_apply_confidence": 0.5,
+  "initial_unknown": 1,
+  "applied": 1,
+  "remaining_unknown": 0,
+  "errors_count": 0,
+  "errors": [],
+  "changes": [
+    {
+      "name": "Ezequiel Roberto Zorzal",
+      "old_value": "unknown",
+      "new_value": "male",
+      "confidence": 0.93,
+      "applied": true,
+      "needs_review": false,
+      "reason": "Nome completo com primeiro nome masculino comum: Ezequiel."
+    }
+  ],
+  "llm_batches": [
+    {
+      "model": "gpt-5.4-mini",
+      "response_id": "resp_0b94bac70ad361b8006a1f24d45ec881a0a671715797ace4a8",
+      "indexes": [
+        150
+      ],
+      "changes": [
+        {
+          "name": "Ezequiel Roberto Zorzal",
+          "old_value": "unknown",
+          "new_value": "male",
+          "confidence": 0.93,
+          "applied": true,
+          "needs_review": false,
+          "reason": "Nome completo com primeiro nome masculino comum: Ezequiel."
+        }
+      ]
+    }
+  ]
+}

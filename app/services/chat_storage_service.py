@@ -9,7 +9,7 @@ SESSIONS_DIR = CHAT_DIR / "sessions"
 
 
 def now_iso() -> str:
-    return datetime.now().isoformat(timespec="seconds")
+    return datetime.now().astimezone().isoformat(timespec="seconds")
 
 
 def write_json(path: Path, data) -> None:

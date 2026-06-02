@@ -1051,10 +1051,10 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.6,
-        "source": "llm_corrected_rule",
-        "reason": "Gênero não explícito no resumo.",
+        "value": "male",
+        "confidence": 0.75,
+        "source": "llm:unknown_sex_review",
+        "reason": "Resumo indica 'professor adjunto'; nome Adriano.",
         "needs_review": true
       },
       "main_research_area": {
@@ -1693,11 +1693,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.0,
-        "source": "rule+llm_validated",
-        "reason": "Sem evidência textual.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.99,
+        "source": "llm:unknown_sex_review",
+        "reason": "Nome Afonso tipicamente masculino.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "applied_mathematics",
@@ -4965,11 +4965,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.6,
-        "source": "llm_corrected_rule",
-        "reason": "Gênero não inferível com evidência suficiente.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.99,
+        "source": "llm:unknown_sex_review",
+        "reason": "Resumo com 'professor' e nome Alex masculino.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "networks",
@@ -7558,11 +7558,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.6,
-        "source": "llm_corrected_rule",
-        "reason": "Gênero não indicado no texto.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.99,
+        "source": "llm:unknown_sex_review",
+        "reason": "Nome Alisson tipicamente masculino.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "artificial_intelligence",
@@ -7893,11 +7893,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.6,
-        "source": "llm_corrected_rule",
-        "reason": "Ausência de evidência confiável de gênero no resumo.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.99,
+        "source": "llm:unknown_sex_review",
+        "reason": "Nome Alisson tipicamente masculino.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "embedded_systems",
@@ -8851,11 +8851,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.4,
-        "source": "llm_corrected_rule",
-        "reason": "Inferência sensível; gênero não determinado apenas por termos.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.99,
+        "source": "llm:unknown_sex_review",
+        "reason": "Nome Aluizio tipicamente masculino.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "artificial_intelligence",
@@ -11308,320 +11308,6 @@
     }
   },
   {
-    "name": "André Fujita",
-    "institution": "USP",
-    "scholarship_level": "PQ-2",
-    "match_status": "matched",
-    "lattes_code": "K4771440E2",
-    "lattes_name": "André Fujita",
-    "public_lattes_id": "0247990329725342",
-    "lattes_url": "http://lattes.cnpq.br/0247990329725342",
-    "photo_url": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4771440E2",
-    "last_updated": "16/01/2026",
-    "orcid": "",
-    "summary": "possui graduação em Ciência da Computação (2003), doutorado em Bioinformática (2007) e livre-docência (2016), todos pela Universidade de São Paulo. Realizou pós-doutorado no Instituto de Ciências Médicas da Universidade de Tóquio (2007-2009) e no Computational Science Research Program do RIKEN (2009-2011) (Japão). Foi Pesquisador Visitante no Cancer Research Institute da Kanazawa University (Japão), no Dept. de Ciência da Computação da Leipzig University (Alemanha), no Institute of Psychiatry, Psychology Neuroscience do King's College London (Reino Unido) e no Dept. de Matemática e Estatística da Boston University. Recebeu diversos prêmios nacionais (melhor tese em computação - SBC, Menção Honrosa no prêmio de teses - CAPES, Jovem Pesquisador Destaque - AB3C) e internacionais (Latin America Research Award - Google, Alexander von Humboldt Fellowship - Alemanha, Newton Advanced Fellowship - Reino Unido, SPDR Fellowship - Japão, Fulbright Fellowship - EUA e Intercontinental Academia Fellowship - University-Based Institutes for Advanced Study). Trabalha com temas relacionados à conectividade e métodos estatísticos em grafos, ambos com aplicações na análise de dados biológicos. Atualmente é Professor Associado do Instituto de Matemática e Estatística da Universidade de São Paulo, Professor Titular no Medical Institute of Bioregulation da Kyushu University (Japão) e Pesquisador Adjunto no Institute for Human Robot Co-Creation da Waseda University (Japão). (Texto informado pelo autor)",
-    "full_cv_text_length": 143851,
-    "looks_like_full_cv": true,
-    "blocked_or_invalid": false,
-    "sections_count": 12,
-    "detail_json_path": "scrape_results/lattes_full/20260526_212601/raw/K4771440E2_Andr_Fujita/full_profile.json",
-    "raw_html_path": "scrape_results/lattes_full/20260526_212601/raw/K4771440E2_Andr_Fujita/full_cv.html",
-    "raw_text_path": "scrape_results/lattes_full/20260526_212601/raw/K4771440E2_Andr_Fujita/full_cv.txt",
-    "error": null,
-    "sections_available": [
-      "AreasAtuacao",
-      "AtuacaoProfissional",
-      "Bancas",
-      "Citacoes",
-      "Endereco",
-      "Eventos",
-      "FormacaoAcademicaTitulacao",
-      "Identificacao",
-      "Orientacoes",
-      "ProducaoBibliografica",
-      "ProducaoTecnica",
-      "ProjetosPesquisa"
-    ],
-    "semantic_profile": {
-      "institution_state_uf": {
-        "value": "SP",
-        "confidence": 1.0,
-        "source": "rule+llm_validated",
-        "reason": "Regra validada: SP.",
-        "needs_review": false
-      },
-      "institution_region": {
-        "value": "Sudeste",
-        "confidence": 1.0,
-        "source": "rule+llm_validated",
-        "reason": "Regra validada: Sudeste.",
-        "needs_review": false
-      },
-      "scholarship_category": {
-        "value": "PQ-2",
-        "confidence": 1.0,
-        "source": "rule+llm_validated",
-        "reason": "Regra validada: PQ-2.",
-        "needs_review": false
-      },
-      "scholarship_level_rank": {
-        "value": 2,
-        "confidence": 1.0,
-        "source": "rule+llm_validated",
-        "reason": "Regra validada: 2.",
-        "needs_review": false
-      },
-      "doctorate_year": {
-        "value": 2007,
-        "confidence": 1.0,
-        "source": "llm_corrected_rule",
-        "reason": "Ano de doutorado indicado no resumo (2007).",
-        "needs_review": false
-      },
-      "years_since_doctorate": {
-        "value": 19,
-        "confidence": 1.0,
-        "source": "llm_corrected_rule",
-        "reason": "Anos desde doutorado até 2026.",
-        "needs_review": false
-      },
-      "profile_language": {
-        "value": "pt",
-        "confidence": 1.0,
-        "source": "rule+llm_validated",
-        "reason": "Resumo em PT confirmado.",
-        "needs_review": false
-      },
-      "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.8,
-        "source": "llm_corrected_rule",
-        "reason": "Gênero não determinado: evidência insuficiente.",
-        "needs_review": true
-      },
-      "main_research_area": {
-        "value": "bioinformatics",
-        "confidence": 0.92,
-        "source": "llm",
-        "reason": "Resumo indica conectividade e grafos em bioinformática.",
-        "needs_review": false
-      },
-      "secondary_research_areas": {
-        "value": [
-          "graph_theory",
-          "network_science",
-          "systems_biology",
-          "bioinformatics"
-        ],
-        "confidence": 0.85,
-        "source": "llm",
-        "reason": "Baseado em áreas mencionadas na descrição (grafos, bioinformática).",
-        "needs_review": false
-      },
-      "research_topics": {
-        "value": [
-          "graph_connectivity",
-          "statistical_network_analysis",
-          "biological_data_analysis",
-          "complex_networks"
-        ],
-        "confidence": 0.85,
-        "source": "llm",
-        "reason": "Tópicos derivados do resumo.",
-        "needs_review": false
-      },
-      "methods_and_techniques": {
-        "value": [
-          "graph_analysis",
-          "statistical_methods",
-          "network_analysis",
-          "spectral_graph_theory"
-        ],
-        "confidence": 0.85,
-        "source": "llm",
-        "reason": "Técnicas mencionadas: grafos e métodos estatísticos.",
-        "needs_review": false
-      },
-      "application_domains": {
-        "value": [
-          "biomedicine",
-          "bioinformatics",
-          "biological_research"
-        ],
-        "confidence": 0.8,
-        "source": "llm",
-        "reason": "Aplicações na biologia/médica indicadas no resumo.",
-        "needs_review": false
-      },
-      "career_stage": {
-        "value": "senior",
-        "confidence": 1.0,
-        "source": "llm",
-        "reason": "Reconhecido como professor sênior (Associado/Titular).",
-        "needs_review": false
-      },
-      "academic_rank": {
-        "value": "Professor Associado; Professor Titular",
-        "confidence": 0.95,
-        "source": "llm",
-        "reason": "Cargos citados no perfil.",
-        "needs_review": false
-      },
-      "has_international_experience": {
-        "value": true,
-        "confidence": 1.0,
-        "source": "llm",
-        "reason": "Experiência internacional no Japão, Reino Unido, Alemanha, EUA.",
-        "needs_review": false
-      },
-      "international_countries": {
-        "value": [
-          "Japan",
-          "United Kingdom",
-          "Germany",
-          "United States"
-        ],
-        "confidence": 0.92,
-        "source": "llm",
-        "reason": "Países estrangeiros citados.",
-        "needs_review": false
-      },
-      "has_industry_experience": {
-        "value": false,
-        "confidence": 1.0,
-        "source": "llm",
-        "reason": "Nenhuma evidência de experiência industrial.",
-        "needs_review": false
-      },
-      "industry_organizations": {
-        "value": [],
-        "confidence": 1.0,
-        "source": "llm",
-        "reason": "Nenhuma organização privada citada.",
-        "needs_review": false
-      },
-      "has_management_experience": {
-        "value": true,
-        "confidence": 0.95,
-        "source": "llm",
-        "reason": "Coordenação e cargos de gestão são citados.",
-        "needs_review": false
-      },
-      "management_roles": {
-        "value": [
-          "Coordenador de Grupo de Pesquisa",
-          "Presidente da CPG em Bioinformática"
-        ],
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Papéis de gestão citados.",
-        "needs_review": false
-      },
-      "has_editorial_or_event_experience": {
-        "value": true,
-        "confidence": 1.0,
-        "source": "llm",
-        "reason": "Membro de corpo editorial e revisor de periódicos.",
-        "needs_review": false
-      },
-      "has_patents_or_software_outputs": {
-        "value": true,
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Software: StatGraph; produção técnica de software.",
-        "needs_review": false
-      },
-      "publication_or_output_focus": {
-        "value": [
-          "journal_articles",
-          "conferences",
-          "software_packages"
-        ],
-        "confidence": 0.88,
-        "source": "llm",
-        "reason": "Publicações de periódicos, conferências e software.",
-        "needs_review": false
-      },
-      "profile_summary_short": {
-        "value": "Professor associado da USP com doutorado em Bioinformática; pesquisa em conectividade e grafos aplicada a dados biológicos, com atuação internacional e lideranças editoriais.",
-        "confidence": 0.95,
-        "source": "llm",
-        "reason": "Resumo curto gerado a partir do resumo.",
-        "needs_review": false
-      },
-      "profile_summary_bullets": {
-        "value": [
-          "Doutorado em Bioinformática pela USP (2007); livre-docência (2016).",
-          "Pós-doutoramentos no Japão e Reino Unido; pesquisa em grafos e conectividade.",
-          "Professor Associado na USP; Professor Titular na Kyushu University e Pesquisador Adjunto na Waseda University.",
-          "Prêmios nacionais e internacionais; atua como editor e revisor."
-        ],
-        "confidence": 0.88,
-        "source": "llm",
-        "reason": "Bullets resumem formação e atuação.",
-        "needs_review": false
-      },
-      "search_keywords": {
-        "value": [
-          "bioinformatics",
-          "graph_networks",
-          "connectivity",
-          "biological_data",
-          "statistical_methods",
-          "complex_networks",
-          "USP",
-          "Kyushu University",
-          "Waseda University"
-        ],
-        "confidence": 0.88,
-        "source": "llm",
-        "reason": "Palavras-chave derivadas do resumo e afiliações.",
-        "needs_review": false
-      },
-      "dashboard_tags": {
-        "value": [
-          "bioinformatics",
-          "network_science",
-          "graph_theory",
-          "international_experience",
-          "leaders",
-          "ed_editorial"
-        ],
-        "confidence": 0.88,
-        "source": "llm",
-        "reason": "Tags para filtros no dashboard.",
-        "needs_review": false
-      },
-      "chart_suggestions": {
-        "value": [
-          "network_statistics",
-          "editorial_activity",
-          "biological_data_analysis"
-        ],
-        "confidence": 0.85,
-        "source": "llm",
-        "reason": "Gráficos sugeridos com base no perfil.",
-        "needs_review": false
-      },
-      "data_quality_notes": {
-        "value": [
-          "doctorate_year atualizado para 2007 com base no resumo; inconsistência anterior resolvida."
-        ],
-        "confidence": 0.8,
-        "source": "llm",
-        "reason": "Notas de qualidade de dados.",
-        "needs_review": false
-      },
-      "qa_context": {
-        "value": "Perfil de André Fujita: USP; doutorado em Bioinformática (2007); professor associado na USP, titular na Kyushu University; pesquisa em conectividade e grafos em dados biológicos; experiência internacional no Japão, Reino Unido, Alemanha, EUA; atuação editorial e de liderança.",
-        "confidence": 0.92,
-        "source": "llm",
-        "reason": "Contexto para responder perguntas sobre o perfil.",
-        "needs_review": false
-      }
-    }
-  },
-  {
     "name": "Andre Luiz Lins de Aquino",
     "institution": "UFAL",
     "scholarship_level": "PQ-1D",
@@ -13549,333 +13235,6 @@
         "confidence": 0.92,
         "source": "llm",
         "reason": "Contexto de QA pronto.",
-        "needs_review": false
-      }
-    }
-  },
-  {
-    "name": "Anselmo Cardoso de Paiva",
-    "institution": "UFMA",
-    "scholarship_level": "PQ-2",
-    "match_status": "matched",
-    "lattes_code": "K4793222D7",
-    "lattes_name": "Anselmo Cardoso de Paiva",
-    "public_lattes_id": "6446831084215512",
-    "lattes_url": "http://lattes.cnpq.br/6446831084215512",
-    "photo_url": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4793222D7",
-    "last_updated": "16/05/2026",
-    "orcid": "https://orcid.org/0000-0003-4921-0626",
-    "summary": "Possui graduação em Engenharia Civil pela Universidade Estadual do Maranhão (1990), mestrado em Engenharia Civil - Estruturas pela Pontifícia Universidade Católica do Rio de Janeiro (1993) e doutorado em Informática pela Pontifícia Universidade Católica do Rio de Janeiro (2001). Atualmente é Professor Titular da Universidade Federal do Maranhão. Sendo coordenador do Núcleo de Computação Aplicada NCA-UFMA. Tem experiência na área de Ciência da Computação, com ênfase em Processamento Gráfico (Graphics), atuando principalmente nos seguintes temas: Processamento de Imagens Médicas. Processamento de Linguagem Natural, Realidade Virtual e Aumentada, GIS e Inteligência Artificial. É membro da SBC (Sociedade Brasileira de Computação). (Texto informado pelo autor)",
-    "full_cv_text_length": 510193,
-    "looks_like_full_cv": true,
-    "blocked_or_invalid": false,
-    "sections_count": 14,
-    "detail_json_path": "scrape_results/lattes_full/20260526_212601/raw/K4793222D7_Anselmo_Cardoso_de_Paiva/full_profile.json",
-    "raw_html_path": "scrape_results/lattes_full/20260526_212601/raw/K4793222D7_Anselmo_Cardoso_de_Paiva/full_cv.html",
-    "raw_text_path": "scrape_results/lattes_full/20260526_212601/raw/K4793222D7_Anselmo_Cardoso_de_Paiva/full_cv.txt",
-    "error": null,
-    "sections_available": [
-      "AreasAtuacao",
-      "AtuacaoProfissional",
-      "Bancas",
-      "Citacoes",
-      "Endereco",
-      "Eventos",
-      "FormacaoAcademicaPosDoutorado",
-      "FormacaoAcademicaTitulacao",
-      "Identificacao",
-      "Orientacoes",
-      "PatentesRegistros",
-      "ProducaoBibliografica",
-      "ProducaoTecnica",
-      "ProjetosPesquisa"
-    ],
-    "semantic_profile": {
-      "institution_state_uf": {
-        "value": "MA",
-        "confidence": 1.0,
-        "source": "llm_corrected_rule",
-        "reason": "Validação: UFMA está no Maranhão.",
-        "needs_review": false
-      },
-      "institution_region": {
-        "value": "Nordeste",
-        "confidence": 1.0,
-        "source": "llm_corrected_rule",
-        "reason": "Validação: MA está na região Nordeste.",
-        "needs_review": false
-      },
-      "scholarship_category": {
-        "value": "PQ-2",
-        "confidence": 1.0,
-        "source": "rule+llm_validated",
-        "reason": "Categoria derivada do nível da bolsa.",
-        "needs_review": false
-      },
-      "scholarship_level_rank": {
-        "value": 2,
-        "confidence": 1.0,
-        "source": "rule+llm_validated",
-        "reason": "Ranking simples derivado do nível da bolsa.",
-        "needs_review": false
-      },
-      "doctorate_year": {
-        "value": 2001,
-        "confidence": 0.88,
-        "source": "rule+llm_validated",
-        "reason": "Ano de doutorado informado no resumo.",
-        "needs_review": false
-      },
-      "years_since_doctorate": {
-        "value": 25,
-        "confidence": 1.0,
-        "source": "rule+llm_validated",
-        "reason": "Diferença entre ano atual e ano de doutorado.",
-        "needs_review": false
-      },
-      "profile_language": {
-        "value": "pt",
-        "confidence": 0.86,
-        "source": "rule+llm_validated",
-        "reason": "Resumo contém marcadores em português.",
-        "needs_review": false
-      },
-      "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.4,
-        "source": "llm_corrected_rule",
-        "reason": "Dados insuficientes para inferir sexo.",
-        "needs_review": true
-      },
-      "main_research_area": {
-        "value": "computer_science",
-        "confidence": 0.8,
-        "source": "llm",
-        "reason": "Área principal sugere Ciência da Computação.",
-        "needs_review": false
-      },
-      "secondary_research_areas": {
-        "value": [
-          "graphics",
-          "medical_imaging",
-          "natural_language_processing",
-          "virtual_reality"
-        ],
-        "confidence": 0.85,
-        "source": "llm",
-        "reason": "Áreas secundárias derivadas do resumo.",
-        "needs_review": false
-      },
-      "research_topics": {
-        "value": [
-          "medical_image_processing",
-          "natural_language_processing",
-          "virtual_reality",
-          "gis",
-          "artificial_intelligence",
-          "computer_graphics"
-        ],
-        "confidence": 0.75,
-        "source": "llm",
-        "reason": "Tópicos de pesquisa mencionados no resumo.",
-        "needs_review": false
-      },
-      "methods_and_techniques": {
-        "value": [
-          "image_processing",
-          "nlp",
-          "virtual_reality",
-          "augmented_reality",
-          "gis",
-          "artificial_intelligence"
-        ],
-        "confidence": 0.8,
-        "source": "llm",
-        "reason": "Métodos citados no resumo.",
-        "needs_review": false
-      },
-      "application_domains": {
-        "value": [
-          "healthcare",
-          "geospatial",
-          "education"
-        ],
-        "confidence": 0.7,
-        "source": "llm",
-        "reason": "Domínios de aplicação inferidos do resumo.",
-        "needs_review": false
-      },
-      "career_stage": {
-        "value": "very_senior",
-        "confidence": 0.92,
-        "source": "llm",
-        "reason": "Carreira consolidada como professor titular.",
-        "needs_review": false
-      },
-      "academic_rank": {
-        "value": "Professor Titular",
-        "confidence": 0.92,
-        "source": "llm",
-        "reason": "Rank acadêmico indicado.",
-        "needs_review": false
-      },
-      "seniority_level": {
-        "value": "very_senior",
-        "confidence": 0.92,
-        "source": "llm",
-        "reason": "Nível de senioridade alto.",
-        "needs_review": false
-      },
-      "has_international_experience": {
-        "value": true,
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Pós-doutorado em Portugal indicado nos dados.",
-        "needs_review": false
-      },
-      "international_countries": {
-        "value": [
-          "Portugal"
-        ],
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Países estrangeiros citados.",
-        "needs_review": false
-      },
-      "has_industry_experience": {
-        "value": false,
-        "confidence": 1.0,
-        "source": "llm",
-        "reason": "Não há evidência de atuação na indústria.",
-        "needs_review": false
-      },
-      "industry_organizations": {
-        "value": [],
-        "confidence": 1.0,
-        "source": "llm",
-        "reason": "Nenhuma organização da indústria citada.",
-        "needs_review": false
-      },
-      "has_management_experience": {
-        "value": true,
-        "confidence": 0.92,
-        "source": "llm",
-        "reason": "Coordena NCA-UFMA; gerenciamento.",
-        "needs_review": false
-      },
-      "management_roles": {
-        "value": [
-          "Coordenador do Núcleo de Computação Aplicada - NCA-UFMA",
-          "Coordenador do Doutorado em Ciência da Computação UFMA/UFPI",
-          "Coordenador de curso de Especialização em Redes de Computadores"
-        ],
-        "confidence": 0.92,
-        "source": "llm",
-        "reason": "Papéis de gestão citados no perfil.",
-        "needs_review": false
-      },
-      "has_editorial_or_event_experience": {
-        "value": true,
-        "confidence": 0.92,
-        "source": "llm",
-        "reason": "Membro de conselho editorial; participação em eventos.",
-        "needs_review": false
-      },
-      "has_patents_or_software_outputs": {
-        "value": true,
-        "confidence": 0.92,
-        "source": "llm",
-        "reason": "Patentes citadas: SAIM; registro BR512013000166-8.",
-        "needs_review": false
-      },
-      "publication_or_output_focus": {
-        "value": [
-          "patentes",
-          "conferencias",
-          "artigos"
-        ],
-        "confidence": 0.8,
-        "source": "llm",
-        "reason": "Foco de produção citado (patentes, conferências, artigos).",
-        "needs_review": false
-      },
-      "profile_summary_short": {
-        "value": "Professor titular da UFMA com atuação em computação gráfica, IA e GIS.",
-        "confidence": 0.92,
-        "source": "llm",
-        "reason": "Resumo curto gerado a partir do resumo.",
-        "needs_review": false
-      },
-      "profile_summary_bullets": {
-        "value": [
-          "Doutorado em Informática pela PUC-Rio (2001).",
-          "Professor Titular na UFMA; coordena o NCA-UFMA.",
-          "Pesquisas em processamento gráfico, imagens médicas, NLP, VR/AR e GIS.",
-          "Membro SBC; patente SAIM, sistema de análise de imagens médicas."
-        ],
-        "confidence": 0.85,
-        "source": "llm",
-        "reason": "Bullets resumem atuação e formação.",
-        "needs_review": false
-      },
-      "search_keywords": {
-        "value": [
-          "anselmo_paiva",
-          "ufma",
-          "ma",
-          "computacao",
-          "processamento_de_imagens_medicas",
-          "processamento_de_linguagem_natural",
-          "realidade_virtual",
-          "realidade_aumentada",
-          "gis",
-          "inteligencia_artificial"
-        ],
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Palavras-chave para busca.",
-        "needs_review": false
-      },
-      "dashboard_tags": {
-        "value": [
-          "ufma",
-          "ma",
-          "pq2",
-          "professor_titular",
-          "graphics",
-          "nlp",
-          "vr_ar",
-          "gis"
-        ],
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Tags para filtros do dashboard.",
-        "needs_review": false
-      },
-      "chart_suggestions": {
-        "value": [
-          "region_of_institution",
-          "patent_count",
-          "international_experience",
-          "career_stage"
-        ],
-        "confidence": 0.85,
-        "source": "llm",
-        "reason": "Sugestões de gráficos.",
-        "needs_review": false
-      },
-      "data_quality_notes": {
-        "value": [],
-        "confidence": 1.0,
-        "source": "llm",
-        "reason": "Sem alertas de dados.",
-        "needs_review": false
-      },
-      "qa_context": {
-        "value": "Anselmo Cardoso de Paiva, UFMA; PQ-2; PhD 2001; Graphics, medical imaging, NLP, VR/AR, GIS; international experience Portugal; patent SAIM.",
-        "confidence": 0.92,
-        "source": "llm",
-        "reason": "Contexto para responder perguntas sobre a pessoa.",
         "needs_review": false
       }
     }
@@ -16173,328 +15532,6 @@
     }
   },
   {
-    "name": "Baldoino Fonseca dos Santos Neto",
-    "institution": "UFAL",
-    "scholarship_level": "PQ-C",
-    "match_status": "matched",
-    "lattes_code": "K4123451H5",
-    "lattes_name": "Baldoino Fonseca dos Santos Neto",
-    "public_lattes_id": "0306751604362704",
-    "lattes_url": "http://lattes.cnpq.br/0306751604362704",
-    "photo_url": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4123451H5",
-    "last_updated": "23/09/2025",
-    "orcid": "https://orcid.org/0000-0002-0730-0319",
-    "summary": "Possui graduação em Bacharelado em Ciência da Computação pela Universidade Federal de Alagoas (2008), obteve o título de Mestre e Doutorado em Informática pela Pontifícia Universidade Católica do Rio de Janeiro (2012). O doutorado foi em cooperação com a University of Waterloo (Canadá). Tem experiência na área de Ciência da Computação, com ênfase em Engenharia de Software e Inteligência Artificial, atuando principalmente nos seguintes temas: Qualidade de Software, Aprendizagem de Máquina, Grandes Modelos de Linguagem, Segurança de Software e Estudos Empíricos. Publicou artigos em \"top-ranked journals and conferences\" como TSE, IST, EMSE, ICSE, ESEC/FSE, ICPC, ICSME, SANER e ISSRE. Foi premiado com o \"ACM Distinguished Paper Awards\" no ICSE 2018 (conferência Qualis A1), e omelhor artigo no ESEM e SBQS 2023. Foi Coordenador Geral do Congresso Brasileiro de Software (CBSoft 2014), realizado na cidade de Maceió-AL. Tem atuado como revisor de periódicos altamente qualificados, tais como, TSE, IST, EMSE, JSS, Information Science, e Artificial Intelligence Review. Coordenador do grupo de pesquisa EASY (http://dgp.cnpq.br/dgp/espelhogrupo/1042122723650355).Já integrou/integra o Comitê de Programa de conferências nacionais e internacionais como ISSRE, EDCC, LADC e SBCARS. Colabora com vários pesquisadores no Brasil (UFAL, UFPE, UFCG, UFPA, UTFPR, UEM, PUC-Rio, UFRJ, UFC, UNB, e UFBA) e no exterior (Estados Unidos, Canadá, Alemanha, Dinamarca, Itália, Bélgica, Portugal, Singapura, e Nova Zelândia). eus projetos de pesquisa são financiados por instituições públicas (tais como, CNPq, FAPEAL, Newton Fund e European Commission) e privada. (Texto informado pelo autor)",
-    "full_cv_text_length": 132087,
-    "looks_like_full_cv": true,
-    "blocked_or_invalid": false,
-    "sections_count": 13,
-    "detail_json_path": "scrape_results/lattes_full/20260526_212601/raw/K4123451H5_Baldoino_Fonseca_dos_Santos_Neto/full_profile.json",
-    "raw_html_path": "scrape_results/lattes_full/20260526_212601/raw/K4123451H5_Baldoino_Fonseca_dos_Santos_Neto/full_cv.html",
-    "raw_text_path": "scrape_results/lattes_full/20260526_212601/raw/K4123451H5_Baldoino_Fonseca_dos_Santos_Neto/full_cv.txt",
-    "error": null,
-    "sections_available": [
-      "AreasAtuacao",
-      "AtuacaoProfissional",
-      "Bancas",
-      "Citacoes",
-      "Endereco",
-      "Eventos",
-      "FormacaoAcademicaTitulacao",
-      "Identificacao",
-      "Orientacoes",
-      "PatentesRegistros",
-      "ProducaoBibliografica",
-      "ProducaoTecnica",
-      "ProjetosPesquisa"
-    ],
-    "semantic_profile": {
-      "institution_state_uf": {
-        "value": "AL",
-        "confidence": 1.0,
-        "source": "rule+llm_validated",
-        "reason": "Validação: UFAL mapeada corretamente pela sigla.",
-        "needs_review": false
-      },
-      "institution_region": {
-        "value": "Nordeste",
-        "confidence": 1.0,
-        "source": "rule+llm_validated",
-        "reason": "Validação: região Nordeste derivada da UF.",
-        "needs_review": false
-      },
-      "scholarship_category": {
-        "value": "PQ-C",
-        "confidence": 1.0,
-        "source": "rule+llm_validated",
-        "reason": "Validação: categoria PQ-C derivada.",
-        "needs_review": false
-      },
-      "scholarship_level_rank": {
-        "value": 3,
-        "confidence": 1.0,
-        "source": "rule+llm_validated",
-        "reason": "Validação: rank 3 derivado do PQ-C.",
-        "needs_review": false
-      },
-      "doctorate_year": {
-        "value": 2012,
-        "confidence": 1.0,
-        "source": "rule+llm_validated",
-        "reason": "Ano de doutorado encontrado no resumo (2012).",
-        "needs_review": false
-      },
-      "years_since_doctorate": {
-        "value": 14,
-        "confidence": 1.0,
-        "source": "rule+llm_validated",
-        "reason": "Anos desde doutorado calculados a partir de 2012.",
-        "needs_review": false
-      },
-      "profile_language": {
-        "value": "pt",
-        "confidence": 1.0,
-        "source": "rule+llm_validated",
-        "reason": "Validação: resumo em PT confirmado.",
-        "needs_review": false
-      },
-      "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.0,
-        "source": "rule+llm_validated",
-        "reason": "Sem evidência textual local para inferir sexo.",
-        "needs_review": true
-      },
-      "main_research_area": {
-        "value": "software_engineering",
-        "confidence": 1.0,
-        "source": "llm",
-        "reason": "Validação: área principal em Engenharia de Software.",
-        "needs_review": false
-      },
-      "secondary_research_areas": {
-        "value": [
-          "artificial_intelligence",
-          "software_engineering",
-          "empirical_software_engineering"
-        ],
-        "confidence": 1.0,
-        "source": "llm",
-        "reason": "Validação: áreas secundárias extraídas do resumo.",
-        "needs_review": false
-      },
-      "research_topics": {
-        "value": [
-          "qualidade_de_software",
-          "aprendizagem_de_maquina",
-          "grandes_modelos_de_linguagem",
-          "seguranca_de_software",
-          "estudos_empiricos"
-        ],
-        "confidence": 1.0,
-        "source": "llm",
-        "reason": "Extraídos do resumo: tópicos de pesquisa.",
-        "needs_review": false
-      },
-      "methods_and_techniques": {
-        "value": [
-          "quality_assurance",
-          "machine_learning",
-          "empirical_studies",
-          "software_security",
-          "language_modeling"
-        ],
-        "confidence": 1.0,
-        "source": "llm",
-        "reason": "Derivados do resumo: métodos e técnicas.",
-        "needs_review": false
-      },
-      "application_domains": {
-        "value": [],
-        "confidence": 1.0,
-        "source": "llm",
-        "reason": "Domínios de aplicação não especificados no resumo.",
-        "needs_review": false
-      },
-      "career_stage": {
-        "value": "senior",
-        "confidence": 1.0,
-        "source": "llm",
-        "reason": "Validação: carreira sênior.",
-        "needs_review": false
-      },
-      "academic_rank": {
-        "value": "Professor Adjunto",
-        "confidence": 1.0,
-        "source": "llm",
-        "reason": "Validação: cargo de Professor Adjunto.",
-        "needs_review": false
-      },
-      "seniority_level": {
-        "value": "senior",
-        "confidence": 1.0,
-        "source": "llm",
-        "reason": "Validação: senioridade senior.",
-        "needs_review": false
-      },
-      "has_international_experience": {
-        "value": true,
-        "confidence": 1.0,
-        "source": "llm",
-        "reason": "Validação: cooperação internacional com Waterloo e atuação internacional.",
-        "needs_review": false
-      },
-      "international_countries": {
-        "value": [
-          "Canadá",
-          "Estados Unidos",
-          "Alemanha",
-          "Dinamarca",
-          "Itália",
-          "Bélgica",
-          "Portugal",
-          "Singapura",
-          "Nova Zelândia"
-        ],
-        "confidence": 1.0,
-        "source": "llm",
-        "reason": "Validação: países internacionais citados.",
-        "needs_review": false
-      },
-      "has_industry_experience": {
-        "value": false,
-        "confidence": 1.0,
-        "source": "llm",
-        "reason": "Sem evidência de indústria.",
-        "needs_review": false
-      },
-      "industry_organizations": {
-        "value": [],
-        "confidence": 1.0,
-        "source": "llm",
-        "reason": "Nenhuma organização industrial citada.",
-        "needs_review": false
-      },
-      "has_management_experience": {
-        "value": true,
-        "confidence": 1.0,
-        "source": "llm",
-        "reason": "Validação: experiência em gestão citada.",
-        "needs_review": false
-      },
-      "management_roles": {
-        "value": [
-          "Coordenador Geral CBSoft 2014",
-          "Coordenador do grupo EASY",
-          "Membro de comitê de programa (ISSRE, EDCC, LADC, SBCARS)"
-        ],
-        "confidence": 1.0,
-        "source": "llm",
-        "reason": "Validação: papéis de gestão citados.",
-        "needs_review": false
-      },
-      "has_editorial_or_event_experience": {
-        "value": true,
-        "confidence": 1.0,
-        "source": "llm",
-        "reason": "Validação: experiência editorial/eventos citada.",
-        "needs_review": false
-      },
-      "has_patents_or_software_outputs": {
-        "value": true,
-        "confidence": 1.0,
-        "source": "llm",
-        "reason": "Validação: patente de Programa de Computador (2020).",
-        "needs_review": false
-      },
-      "publication_or_output_focus": {
-        "value": [
-          "journals",
-          "conferences"
-        ],
-        "confidence": 1.0,
-        "source": "llm",
-        "reason": "Validação: foco em periódicos e conferências.",
-        "needs_review": false
-      },
-      "profile_summary_short": {
-        "value": "Bolsista PQ-C com atuação em Engenharia de Software e IA; liderança EASY e colaboração internacional.",
-        "confidence": 1.0,
-        "source": "llm",
-        "reason": "Validação: resumo curto consolidado.",
-        "needs_review": false
-      },
-      "profile_summary_bullets": {
-        "value": [
-          "Graduação em Ciência da Computação pela UFAL (2008) e Doutorado em Informática (PUC-RJ, 2012) com coop. Waterloo.",
-          "Atua em Engenharia de Software e Inteligência Artificial: qualidade de software, ML, grandes modelos, segurança.",
-          "Coordenador Geral CBSoft 2014 e líder do grupo EASY; revisor de periódicos.",
-          "Patente de Programa de Computador (2020) e colaborações nacionais e internacionais."
-        ],
-        "confidence": 1.0,
-        "source": "llm",
-        "reason": "Validação: bullets resumem formação e atuação.",
-        "needs_review": false
-      },
-      "search_keywords": {
-        "value": [
-          "qualidade_de_software",
-          "aprendizagem_de_maquina",
-          "grandes_modelos_de_linguagem",
-          "seguranca_de_software",
-          "estudos_empiricos",
-          "engenharia_de_software",
-          "inteligencia_artificial"
-        ],
-        "confidence": 1.0,
-        "source": "llm",
-        "reason": "Validação: palavras-chave extraídas.",
-        "needs_review": false
-      },
-      "dashboard_tags": {
-        "value": [
-          "pq_c",
-          "ufal",
-          "coordenador_cbsoft",
-          "engenharia_de_software",
-          "ia",
-          "pesquisador_senior",
-          "patente_software"
-        ],
-        "confidence": 1.0,
-        "source": "llm",
-        "reason": "Validação: tags para filtros.",
-        "needs_review": false
-      },
-      "chart_suggestions": {
-        "value": [
-          "research_area_distribution",
-          "publication_output",
-          "patents_count",
-          "leadership_roles_over_time"
-        ],
-        "confidence": 1.0,
-        "source": "llm",
-        "reason": "Validação: gráficos sugeridos coerentes.",
-        "needs_review": false
-      },
-      "data_quality_notes": {
-        "value": [],
-        "confidence": 1.0,
-        "source": "llm",
-        "reason": "Validação: sem alertas de qualidade.",
-        "needs_review": false
-      },
-      "qa_context": {
-        "value": "Perfil: Baldoino F. dos Santos Neto, UFAL; PQ-C; Doutorado 2012 (PUC-RJ, coop. Waterloo). Áreas: Engenharia de Software e IA; tópicos: qualidade de software, ML, grandes modelos de linguagem, segurança; líder EASY; CBSoft 2014; patente 2020; colaboração internacional.",
-        "confidence": 1.0,
-        "source": "llm",
-        "reason": "Validação: contexto QA compacto gerado.",
-        "needs_review": false
-      }
-    }
-  },
-  {
     "name": "Benjamín René Callejas Bedregal",
     "institution": "UFRN",
     "scholarship_level": "PQ-A",
@@ -16898,11 +15935,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.4,
-        "source": "llm_corrected_rule",
-        "reason": "Gênero não deduzível a partir do resumo.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.99,
+        "source": "llm:unknown_sex_review",
+        "reason": "Resumo com 'Professor adjunto' e nome Breno masculino.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "software_engineering",
@@ -17514,11 +16551,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.4,
-        "source": "llm_corrected_rule",
-        "reason": "Indicação de gênero pela palavra 'professor' não confiável.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.99,
+        "source": "llm:unknown_sex_review",
+        "reason": "Nome Bruno tipicamente masculino.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "optimization",
@@ -17854,10 +16891,10 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.5,
-        "source": "llm_corrected_rule",
-        "reason": "Evidência insuficiente para sexo.",
+        "value": "male",
+        "confidence": 0.8,
+        "source": "llm:unknown_sex_review",
+        "reason": "Resumo abre com 'O Prof. Bruno...' (forma masculina) e nome Bruno.",
         "needs_review": true
       },
       "main_research_area": {
@@ -19133,11 +18170,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.0,
-        "source": "rule+llm_validated",
-        "reason": "Sem evidência textual local para inferir sexo.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.98,
+        "source": "llm:unknown_sex_review",
+        "reason": "Resumo com 'Prof. Titular' e nome Carlile usado como masculino no contexto.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "geometria_distancias",
@@ -22406,11 +21443,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.6,
-        "source": "llm_corrected_rule",
-        "reason": "Gênero não determinado com evidência confiável.",
-        "needs_review": true
+        "value": "female",
+        "confidence": 0.95,
+        "source": "llm:unknown_sex_review",
+        "reason": "Nome 'Claudia' e texto 'Professor titular' com nome feminino (Claudia).",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "databases",
@@ -23704,11 +22741,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.25,
-        "source": "llm_corrected_rule",
-        "reason": "Não há evidência confiável de gênero no resumo.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.99,
+        "source": "llm:unknown_sex_review",
+        "reason": "Resumo com 'Professor Titular' e nome Cleber masculino.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "artificial_intelligence",
@@ -25356,11 +24393,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.6,
-        "source": "llm_corrected_rule",
-        "reason": "Gênero não determinado a partir do resumo.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.99,
+        "source": "llm:unknown_sex_review",
+        "reason": "Resumo com 'PROFESSOR' e nome Cristiano masculino.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "networks",
@@ -26657,11 +25694,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.3,
-        "source": "rule+llm_validated",
-        "reason": "Sem evidência textual para inferir sexo.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.99,
+        "source": "llm:unknown_sex_review",
+        "reason": "Nome Daniel tipicamente masculino.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "computer_networks",
@@ -27203,666 +26240,6 @@
         "confidence": 0.9,
         "source": "llm",
         "reason": "Contexto para responder perguntas sobre a pessoa.",
-        "needs_review": false
-      }
-    }
-  },
-  {
-    "name": "Daniel Sadoc Menasche",
-    "institution": "UFRJ",
-    "scholarship_level": "PQ-2",
-    "match_status": "matched",
-    "lattes_code": "K4762189U9",
-    "lattes_name": "Daniel Sadoc Menasche",
-    "public_lattes_id": "9931198850020140",
-    "lattes_url": "http://lattes.cnpq.br/9931198850020140",
-    "photo_url": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4762189U9",
-    "last_updated": "08/03/2026",
-    "orcid": "https://orcid.org/0000-0002-8953-4003",
-    "summary": "Daniel Sadoc Menasché received his MSc and PhD degrees in Computer Science from the University of Massachusetts, Amherst, in 2011. He received a BS cum laude degree in Computer Science and MSc degree in Computer and Systems Engineering from the Federal University of Rio de Janeiro (UFRJ) Brazil, in 2002 and 2005, respectively. He did internships at INRIA Sophia Antipolis, University of Avignon and Technicolor. In 2011, he joined the Department of Computer Science at the Federal University of Rio de Janeiro (UFRJ), Brazil. His main interests are in the modeling and analysis of computer systems, including computer networks, and smart grids. (Texto informado pelo autor)",
-    "full_cv_text_length": 88662,
-    "looks_like_full_cv": true,
-    "blocked_or_invalid": false,
-    "sections_count": 14,
-    "detail_json_path": "scrape_results/lattes_full/20260526_212601/raw/K4762189U9_Daniel_Sadoc_Menasche/full_profile.json",
-    "raw_html_path": "scrape_results/lattes_full/20260526_212601/raw/K4762189U9_Daniel_Sadoc_Menasche/full_cv.html",
-    "raw_text_path": "scrape_results/lattes_full/20260526_212601/raw/K4762189U9_Daniel_Sadoc_Menasche/full_cv.txt",
-    "error": null,
-    "sections_available": [
-      "AreasAtuacao",
-      "AtuacaoProfissional",
-      "Bancas",
-      "Citacoes",
-      "Endereco",
-      "Eventos",
-      "FormacaoAcademicaPosDoutorado",
-      "FormacaoAcademicaTitulacao",
-      "Identificacao",
-      "Orientacoes",
-      "PatentesRegistros",
-      "ProducaoBibliografica",
-      "ProducaoTecnica",
-      "ProjetosPesquisa"
-    ],
-    "semantic_profile": {
-      "institution_state_uf": {
-        "value": "RJ",
-        "confidence": 1.0,
-        "source": "rule+llm_validated",
-        "reason": "UF mapeada pela sigla da instituição: UFRJ.",
-        "needs_review": false
-      },
-      "institution_region": {
-        "value": "Sudeste",
-        "confidence": 1.0,
-        "source": "rule+llm_validated",
-        "reason": "Região derivada da UF da instituição.",
-        "needs_review": false
-      },
-      "scholarship_category": {
-        "value": "PQ-2",
-        "confidence": 1.0,
-        "source": "rule+llm_validated",
-        "reason": "Categoria derivada do nível da bolsa.",
-        "needs_review": false
-      },
-      "scholarship_level_rank": {
-        "value": 2,
-        "confidence": 1.0,
-        "source": "rule+llm_validated",
-        "reason": "Ranking simples derivado do nível da bolsa.",
-        "needs_review": false
-      },
-      "doctorate_year": {
-        "value": 2011,
-        "confidence": 1.0,
-        "source": "llm_corrected_rule",
-        "reason": "Doutorado concluído em 2011.",
-        "needs_review": false
-      },
-      "years_since_doctorate": {
-        "value": 15,
-        "confidence": 1.0,
-        "source": "llm_corrected_rule",
-        "reason": "Tempo desde doutorado calculado a partir de 2011.",
-        "needs_review": false
-      },
-      "profile_language": {
-        "value": "en",
-        "confidence": 0.95,
-        "source": "rule+llm_validated",
-        "reason": "Resumo predominantemente em inglês.",
-        "needs_review": false
-      },
-      "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.2,
-        "source": "rule+llm_validated",
-        "reason": "Sem evidência textual local para inferir sexo.",
-        "needs_review": true
-      },
-      "main_research_area": {
-        "value": "computer_systems",
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Foco principal em sistemas de computação.",
-        "needs_review": false
-      },
-      "secondary_research_areas": {
-        "value": [
-          "computer_networks",
-          "smart_grids",
-          "distributed_systems",
-          "network_modeling"
-        ],
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Áreas secundárias derivadas do resumo.",
-        "needs_review": false
-      },
-      "research_topics": {
-        "value": [
-          "peer_to_peer_networks",
-          "multi_commodity_dissemination",
-          "network_modeling",
-          "grid_analytics",
-          "distributed_computing"
-        ],
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Tópicos evidenciados em resumo e publicações.",
-        "needs_review": false
-      },
-      "methods_and_techniques": {
-        "value": [
-          "analytical_models",
-          "simulation",
-          "reinforcement_learning",
-          "multicast",
-          "peer_to_peer_networks",
-          "workflow_optimization"
-        ],
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Métodos citados: modelos analíticos, simulação, RL, multicast.",
-        "needs_review": false
-      },
-      "application_domains": {
-        "value": [
-          "computer_networks",
-          "smart_grid",
-          "distributed_computing",
-          "research_infrastructure"
-        ],
-        "confidence": 0.85,
-        "source": "llm",
-        "reason": "Domínios de aplicação relacionados a CS.",
-        "needs_review": false
-      },
-      "career_stage": {
-        "value": "senior",
-        "confidence": 0.85,
-        "source": "llm",
-        "reason": "Carreira consolidada desde 2011.",
-        "needs_review": false
-      },
-      "academic_rank": {
-        "value": "Professor Universitário",
-        "confidence": 0.8,
-        "source": "llm",
-        "reason": "Vínculo institucional atual indica Professor Universitário.",
-        "needs_review": false
-      },
-      "seniority_level": {
-        "value": "senior",
-        "confidence": 0.85,
-        "source": "llm",
-        "reason": "Senioridade consistente com carreira longa.",
-        "needs_review": false
-      },
-      "has_international_experience": {
-        "value": true,
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Experiência internacional: doutorado nos EUA e estágios na França.",
-        "needs_review": false
-      },
-      "international_countries": {
-        "value": [
-          "United States",
-          "France"
-        ],
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Países estrangeiros citados: EUA e França.",
-        "needs_review": false
-      },
-      "has_industry_experience": {
-        "value": true,
-        "confidence": 0.75,
-        "source": "llm",
-        "reason": "Estágios na indústria (Technicolor).",
-        "needs_review": false
-      },
-      "industry_organizations": {
-        "value": [
-          "Technicolor"
-        ],
-        "confidence": 0.75,
-        "source": "llm",
-        "reason": "Instituição privada citada.",
-        "needs_review": false
-      },
-      "has_management_experience": {
-        "value": true,
-        "confidence": 0.85,
-        "source": "llm",
-        "reason": "Indícios de coordenação e gestão em CV.",
-        "needs_review": false
-      },
-      "management_roles": {
-        "value": [
-          "Coordinator of research activities",
-          "Committee member",
-          "Editorial board member"
-        ],
-        "confidence": 0.75,
-        "source": "llm",
-        "reason": "Papéis de gestão citados no CV.",
-        "needs_review": false
-      },
-      "has_editorial_or_event_experience": {
-        "value": true,
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Membro de comitês, revisões e participação em conferências.",
-        "needs_review": false
-      },
-      "has_patents_or_software_outputs": {
-        "value": true,
-        "confidence": 0.95,
-        "source": "llm",
-        "reason": "Patentes e softwares citados no CV.",
-        "needs_review": false
-      },
-      "publication_or_output_focus": {
-        "value": [
-          "journals",
-          "conferences",
-          "patents",
-          "software_outputs"
-        ],
-        "confidence": 0.85,
-        "source": "llm",
-        "reason": "Focos de produção citados: periódicos, conferências, patentes.",
-        "needs_review": false
-      },
-      "profile_summary_short": {
-        "value": "PhD em Ciência da Computação pela UMASS; Professor na UFRJ; pesquisa em sistemas, redes e smart grids.",
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Resumo curto derivado dos dados de formação e interesses.",
-        "needs_review": false
-      },
-      "profile_summary_bullets": {
-        "value": [
-          "Doutorado em Ciência da Computação pela UMASS (2011).",
-          "Bacharelado em CS e MSc em Engenharia de Computação pela UFRJ (2002, 2005).",
-          "Estágios na França (INRIA, Avignon) e Technicolor.",
-          "Interesses: sistemas computacionais, redes e smart grids."
-        ],
-        "confidence": 0.85,
-        "source": "llm",
-        "reason": "Bullets resumem formação e interesses.",
-        "needs_review": false
-      },
-      "search_keywords": {
-        "value": [
-          "daniel_sadoc_menasche",
-          "peer_to_peer",
-          "grid_computing",
-          "smart_grids",
-          "distributed_systems",
-          "network_modeling",
-          "umass",
-          "ufrj",
-          "inria",
-          "technicolor",
-          "p2p",
-          "multicast",
-          "reliability",
-          "workflow_optimization"
-        ],
-        "confidence": 0.8,
-        "source": "llm",
-        "reason": "Palavras-chave para busca.",
-        "needs_review": false
-      },
-      "dashboard_tags": {
-        "value": [
-          "ufrj",
-          "pq2",
-          "international_experience",
-          "networks",
-          "grid",
-          "distributed_systems"
-        ],
-        "confidence": 0.8,
-        "source": "llm",
-        "reason": "Tags curtas para filtros.",
-        "needs_review": false
-      },
-      "chart_suggestions": {
-        "value": [
-          "main_research_area_pie",
-          "international_experience_bar",
-          "patents_timeline",
-          "publications_by_type"
-        ],
-        "confidence": 0.8,
-        "source": "llm",
-        "reason": "Sugestões de gráficos úteis.",
-        "needs_review": false
-      },
-      "data_quality_notes": {
-        "value": [
-          "doctorate_year_resolved_from_summary",
-          "sex_inferred_uncertainty",
-          "incomplete_info_on_bs_msc"
-        ],
-        "confidence": 0.8,
-        "source": "llm",
-        "reason": "Notas sobre qualidade de dados.",
-        "needs_review": false
-      },
-      "qa_context": {
-        "value": "Perguntas sobre bolsista Daniel S. Menasche: UFRJ; PQ-2; doutorado 2011 nos EUA; áreas: sistemas, redes, smart grids; experiências Brasil/EUA/frança; patentes e RL.",
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Contexto para respostas rápidas.",
-        "needs_review": false
-      }
-    }
-  },
-  {
-    "name": "Danielo Gonçalves Gomes",
-    "institution": "UFC",
-    "scholarship_level": "PQ-2",
-    "match_status": "matched",
-    "lattes_code": "K4796753T8",
-    "lattes_name": "Danielo Gonçalves Gomes",
-    "public_lattes_id": "6303297687237256",
-    "lattes_url": "http://lattes.cnpq.br/6303297687237256",
-    "photo_url": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4796753T8",
-    "last_updated": "12/04/2026",
-    "orcid": "https://orcid.org/0000-0002-8285-4629",
-    "summary": "Professor Associado da Universidade Federal do Ceará (UFC), Departamento de Engenharia de Teleinformática, Centro de Tecnologia. Doutor em Réseaux et Télécom pela Université d'Évry, França (2004), desde ago/2023 está como Cientista Chefe da Transformação Digital do Governo do Ceará junto ao Laboratório Iris de Inovação Pública e Dados . Docente permanente do Programa de Pós-Graduação em Engenharia de Teleinformática da UFC (conceito 7 CAPES) e vice-coordenador do GREat/UFC. Foi secretário regional da Sociedade Brasileira de Computação (SBC) - regional Ceará (mar/2017 a mar/2024), diretor vice-presidente da Fundação ASTEF (set/2021 a set/2023), coordenador do bacharelado em Engenharia de Computação CT/UFC (2019-2023) e presidente do seu Núcleo Docente Estruturante (NDE). Além da transformação digital ancorada em evidências com foco no cidadão comum, seus interesses atuais de pesquisa estão principalmente na Computação aplicada ao agro, ao meio ambiente e à saúde. Membro associado da Sociedade Brasileira de Computação (SBC) e da Sociedade Brasileira de Diabetes (SBD). (Texto informado pelo autor)",
-    "full_cv_text_length": 201782,
-    "looks_like_full_cv": true,
-    "blocked_or_invalid": false,
-    "sections_count": 13,
-    "detail_json_path": "scrape_results/lattes_full/20260526_212601/raw/K4796753T8_Danielo_Gon_alves_Gomes/full_profile.json",
-    "raw_html_path": "scrape_results/lattes_full/20260526_212601/raw/K4796753T8_Danielo_Gon_alves_Gomes/full_cv.html",
-    "raw_text_path": "scrape_results/lattes_full/20260526_212601/raw/K4796753T8_Danielo_Gon_alves_Gomes/full_cv.txt",
-    "error": null,
-    "sections_available": [
-      "AreasAtuacao",
-      "AtuacaoProfissional",
-      "Bancas",
-      "Citacoes",
-      "Endereco",
-      "Eventos",
-      "FormacaoAcademicaTitulacao",
-      "Identificacao",
-      "Orientacoes",
-      "PatentesRegistros",
-      "ProducaoBibliografica",
-      "ProducaoTecnica",
-      "ProjetosPesquisa"
-    ],
-    "semantic_profile": {
-      "institution_state_uf": {
-        "value": "CE",
-        "confidence": 1.0,
-        "source": "rule+llm_validated",
-        "reason": "Regra validada: sigla UFC corresponde a CE.",
-        "needs_review": false
-      },
-      "institution_region": {
-        "value": "Nordeste",
-        "confidence": 1.0,
-        "source": "rule+llm_validated",
-        "reason": "Região validada pela UF CE.",
-        "needs_review": false
-      },
-      "scholarship_category": {
-        "value": "PQ-2",
-        "confidence": 1.0,
-        "source": "rule+llm_validated",
-        "reason": "Regra validada: PQ-2 corresponde ao nível 2.",
-        "needs_review": false
-      },
-      "scholarship_level_rank": {
-        "value": 2,
-        "confidence": 1.0,
-        "source": "rule+llm_validated",
-        "reason": "Regra validada: PQ-2 tem rank 2.",
-        "needs_review": false
-      },
-      "doctorate_year": {
-        "value": 2004,
-        "confidence": 1.0,
-        "source": "llm_corrected_rule",
-        "reason": "Ano de doutoramento identificado (2004).",
-        "needs_review": false
-      },
-      "years_since_doctorate": {
-        "value": 22,
-        "confidence": 1.0,
-        "source": "llm_corrected_rule",
-        "reason": "Diferença entre ano atual e ano de doutorado (2004).",
-        "needs_review": false
-      },
-      "profile_language": {
-        "value": "pt",
-        "confidence": 1.0,
-        "source": "rule+llm_validated",
-        "reason": "Validação: resumo em pt.",
-        "needs_review": false
-      },
-      "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.4,
-        "source": "llm_corrected_rule",
-        "reason": "Evidência insuficiente para inferir gênero.",
-        "needs_review": true
-      },
-      "main_research_area": {
-        "value": "computacao_aplicada",
-        "confidence": 0.85,
-        "source": "llm",
-        "reason": "Resumo aponta foco em computação aplicada.",
-        "needs_review": false
-      },
-      "secondary_research_areas": {
-        "value": [
-          "agro_computacao",
-          "meio_ambiente",
-          "saude"
-        ],
-        "confidence": 0.7,
-        "source": "llm",
-        "reason": "Domínios de aplicação citados no resumo.",
-        "needs_review": false
-      },
-      "research_topics": {
-        "value": [
-          "trafego_ip",
-          "redes_de_computadores",
-          "teleinformática",
-          "transformacao_digital"
-        ],
-        "confidence": 0.8,
-        "source": "llm",
-        "reason": "Palavras-chave relevantes do histórico.",
-        "needs_review": false
-      },
-      "methods_and_techniques": {
-        "value": [
-          "modelos_connexionnistes",
-          "predicao_banda_passante",
-          "trafego_ip",
-          "teleinformática"
-        ],
-        "confidence": 0.75,
-        "source": "llm",
-        "reason": "Técnicas citadas no histórico acadêmico e de atuação.",
-        "needs_review": false
-      },
-      "application_domains": {
-        "value": [
-          "agro",
-          "saude",
-          "meio_ambiente"
-        ],
-        "confidence": 0.8,
-        "source": "llm",
-        "reason": "Domínios de aplicação citados no resumo.",
-        "needs_review": false
-      },
-      "career_stage": {
-        "value": "senior",
-        "confidence": 0.7,
-        "source": "llm",
-        "reason": "Professor associado com atuação consolidada.",
-        "needs_review": false
-      },
-      "academic_rank": {
-        "value": "Professor Associado",
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Rank indicado no texto.",
-        "needs_review": false
-      },
-      "seniority_level": {
-        "value": "senior",
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Senioridade correspondente a professor associado.",
-        "needs_review": false
-      },
-      "has_international_experience": {
-        "value": true,
-        "confidence": 0.8,
-        "source": "llm",
-        "reason": "Doutoramento no exterior (França).",
-        "needs_review": false
-      },
-      "international_countries": {
-        "value": [
-          "França"
-        ],
-        "confidence": 1.0,
-        "source": "llm",
-        "reason": "Formação no exterior na França.",
-        "needs_review": false
-      },
-      "has_industry_experience": {
-        "value": false,
-        "confidence": 1.0,
-        "source": "llm",
-        "reason": "Experiência associada a governo público; indústria não indicada.",
-        "needs_review": false
-      },
-      "industry_organizations": {
-        "value": [],
-        "confidence": 1.0,
-        "source": "llm",
-        "reason": "Nenhuma organização industrial citada.",
-        "needs_review": false
-      },
-      "has_management_experience": {
-        "value": true,
-        "confidence": 1.0,
-        "source": "llm",
-        "reason": "Cargos de gestão citados no resumo.",
-        "needs_review": false
-      },
-      "management_roles": {
-        "value": [
-          "Cientista Chefe da Transformação Digital do Governo do Ceará",
-          "vice-coordenador do GREat/UFC",
-          "coordenador do Bacharelado em Engenharia de Computação CT/UFC (2019-2023)",
-          "presidente do Núcleo Docente Estruturante (NDE) do curso de Engenharia de Computação"
-        ],
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Papéis de gestão citados no perfil.",
-        "needs_review": false
-      },
-      "has_editorial_or_event_experience": {
-        "value": true,
-        "confidence": 1.0,
-        "source": "llm",
-        "reason": "Membro editorial e revisor de periódicos.",
-        "needs_review": false
-      },
-      "has_patents_or_software_outputs": {
-        "value": true,
-        "confidence": 1.0,
-        "source": "llm",
-        "reason": "Patentes e registros mencionados no histórico.",
-        "needs_review": false
-      },
-      "publication_or_output_focus": {
-        "value": [
-          "journals",
-          "conferences",
-          "patents"
-        ],
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Foco de produção citados: periódicos, conferências, patentes.",
-        "needs_review": false
-      },
-      "profile_summary_short": {
-        "value": "Professor Associado da UFC com atuação em computação aplicada e transformação digital.",
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Resumo curto adequado ao card e relatórios.",
-        "needs_review": false
-      },
-      "profile_summary_bullets": {
-        "value": [
-          "Doutor em Réseaux et Télécoms, UEVE (2004)",
-          "Professor Associado na UFC, Centro de Tecnologia",
-          "Liderança em transformação digital no Governo do Ceará",
-          "Interesses de pesquisa: agro, meio ambiente e saúde"
-        ],
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Bullets extraídos do resumo e histórico.",
-        "needs_review": false
-      },
-      "search_keywords": {
-        "value": [
-          "computacao_aplicada",
-          "agro",
-          "teleinformática",
-          "redes_de_computadores",
-          "trafego_ip",
-          "transformacao_digital",
-          "ufc",
-          "ce",
-          "cnpq",
-          "sbc"
-        ],
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Palavras-chave relevantes extraídas do perfil.",
-        "needs_review": false
-      },
-      "dashboard_tags": {
-        "value": [
-          "ufc",
-          "ce",
-          "transformacao_digital",
-          "computacao_aplicada",
-          "professor_associado"
-        ],
-        "confidence": 1.0,
-        "source": "llm",
-        "reason": "Tags compatíveis com o perfil.",
-        "needs_review": false
-      },
-      "chart_suggestions": {
-        "value": [
-          "career_path",
-          "research_area_heatmap",
-          "international_experience_map",
-          "patents_vs_publications"
-        ],
-        "confidence": 0.8,
-        "source": "llm",
-        "reason": "Sugestões de gráficos adequadas ao histórico.",
-        "needs_review": false
-      },
-      "data_quality_notes": {
-        "value": [
-          "Ajuste de doctorate_year para 2004 com base no resumo.",
-          "Sex_inferred marcado como unknown devido evidência fraca.",
-          "Dados internacionais limitados (apenas França)."
-        ],
-        "confidence": 0.8,
-        "source": "llm",
-        "reason": "Notas de qualidade de dados agregadas.",
-        "needs_review": false
-      },
-      "qa_context": {
-        "value": "Danielo G. Gomes, UFC, PQ-2, PhD 2004, área principal: computação aplicada; atua em transformação digital pública; líder acadêmico e gestor.",
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Contexto pronto para responder perguntas sobre a pessoa.",
         "needs_review": false
       }
     }
@@ -29897,11 +28274,11 @@
         "needs_review": true
       },
       "sex_inferred": {
-        "value": "unknown",
+        "value": "female",
         "confidence": 0.9,
-        "source": "llm_corrected_rule",
-        "reason": "Sexo não comprovado pelo resumo.",
-        "needs_review": true
+        "source": "llm:unknown_sex_review",
+        "reason": "Nome 'Dianne' e resumo em inglês descreve 'adjunct professor' sem ambiguidade nominal.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "telecommunications",
@@ -30490,17 +28867,17 @@
     ],
     "semantic_profile": {
       "institution_state_uf": {
-        "value": "unknown",
-        "confidence": 0.9,
-        "source": "rule+llm_validated",
-        "reason": "UF não mapeada no dataset.",
+        "value": "RJ",
+        "confidence": 1,
+        "source": "rule:normalization",
+        "reason": "UF normalizada pela sigla da instituição: FGV.",
         "needs_review": false
       },
       "institution_region": {
-        "value": "unknown",
-        "confidence": 0.9,
-        "source": "rule+llm_validated",
-        "reason": "Região não determinável pela UF.",
+        "value": "Sudeste",
+        "confidence": 1,
+        "source": "rule:normalization",
+        "reason": "Região normalizada a partir da UF RJ.",
         "needs_review": false
       },
       "scholarship_category": {
@@ -30539,11 +28916,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.9,
-        "source": "llm_corrected_rule",
-        "reason": "Gênero não determinado pelo resumo.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.99,
+        "source": "llm:unknown_sex_review",
+        "reason": "Texto em primeira pessoa 'I am an assistant professor' e nome Diego masculino.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "machine_learning",
@@ -34676,331 +33053,6 @@
     }
   },
   {
-    "name": "Edson Prestes e Silva Júnior",
-    "institution": "UFRGS",
-    "scholarship_level": "PQ-C",
-    "match_status": "matched",
-    "lattes_code": "K4703109P9",
-    "lattes_name": "Edson Prestes e Silva Júnior",
-    "public_lattes_id": "2604911000898464",
-    "lattes_url": "http://lattes.cnpq.br/2604911000898464",
-    "photo_url": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4703109P9",
-    "last_updated": "19/05/2026",
-    "orcid": "",
-    "summary": "Edson Prestes is Full Professor at Institute of Informatics of the Federal University of Rio Grande do Sul, Brazil. He is leader of the Phi Robotics Research Group and CNPq Research Fellow. He received his BSc in Computer Science from the Federal University of Pará (1996), Amazon, Brazil, and MSc (1999) and PhD (2003) in Computer Science from Federal University of Rio Grande do Sul, Brazil. Edson is Senior Member of the IEEE Robotics and Automation Society (IEEE RAS) and IEEE Standards Association (IEEE SA); and Member of Association for Computing Machinery (ACM). Throughout his career, Edson has worked on several initiatives related to Standardization, Robotics, Artificial Intelligence, Ethics of Artificial Intelligence and Human Rights in Academia, Industry, International and Multilateral Organizations. As examples, Edson is Member of the Global Commission on Responsible Artificial Intelligence in the Military Domain; South America Ambassador at IEEE TechEthics; Chair of the IEEE RAS/SA 7007 - Ontologies for Ethically Driven Robotics and Automation Systems Working Group; Vice-Chair of the IEEE RAS/SA Ontologies for Robotics and Automation Working Group; Member of the ACM Global Technology Policy Council; Former Member of the United Nations Secretary-Generals High-level Panel on Digital Cooperation; Former Member of the UNESCO Ad Hoc Expert Group (AHEG) for the Recommendation on the Ethics of Artificial Intelligence and Former Member of the Global Future Council on the Future of Artificial Intelligence and of the G20 Digital Agenda Working Group at World Economic Forum;.Additional information can be found at www.inf.ufrgs.br/~prestes/ or https://www.linkedin.com/in/edson-prestes/. (Texto informado pelo autor)",
-    "full_cv_text_length": 130519,
-    "looks_like_full_cv": true,
-    "blocked_or_invalid": false,
-    "sections_count": 12,
-    "detail_json_path": "scrape_results/lattes_full/20260526_212601/raw/K4703109P9_Edson_Prestes_e_Silva_J_nior/full_profile.json",
-    "raw_html_path": "scrape_results/lattes_full/20260526_212601/raw/K4703109P9_Edson_Prestes_e_Silva_J_nior/full_cv.html",
-    "raw_text_path": "scrape_results/lattes_full/20260526_212601/raw/K4703109P9_Edson_Prestes_e_Silva_J_nior/full_cv.txt",
-    "error": null,
-    "sections_available": [
-      "AreasAtuacao",
-      "AtuacaoProfissional",
-      "Bancas",
-      "Citacoes",
-      "Endereco",
-      "Eventos",
-      "FormacaoAcademicaTitulacao",
-      "Identificacao",
-      "Orientacoes",
-      "ProducaoBibliografica",
-      "ProducaoTecnica",
-      "ProjetosPesquisa"
-    ],
-    "semantic_profile": {
-      "institution_state_uf": {
-        "value": "RS",
-        "confidence": 1.0,
-        "source": "rule+llm_validated",
-        "reason": "Validação: sigla corresponde à UFRGS.",
-        "needs_review": false
-      },
-      "institution_region": {
-        "value": "Sul",
-        "confidence": 1.0,
-        "source": "rule+llm_validated",
-        "reason": "Validação: região Sul correspondente.",
-        "needs_review": false
-      },
-      "scholarship_category": {
-        "value": "PQ-C",
-        "confidence": 1.0,
-        "source": "rule+llm_validated",
-        "reason": "Categoria derivada do nível da bolsa.",
-        "needs_review": false
-      },
-      "scholarship_level_rank": {
-        "value": 3,
-        "confidence": 1.0,
-        "source": "rule+llm_validated",
-        "reason": "Ranking derivado do nível da bolsa.",
-        "needs_review": false
-      },
-      "doctorate_year": {
-        "value": 2003,
-        "confidence": 1.0,
-        "source": "rule+llm_validated",
-        "reason": "Ano confirmado no resumo (Doutorado 2003).",
-        "needs_review": false
-      },
-      "years_since_doctorate": {
-        "value": 23,
-        "confidence": 1.0,
-        "source": "rule+llm_validated",
-        "reason": "Diferença entre ano atual e doutorado.",
-        "needs_review": false
-      },
-      "profile_language": {
-        "value": "mixed",
-        "confidence": 1.0,
-        "source": "rule+llm_validated",
-        "reason": "Validação: resumo em pt e en.",
-        "needs_review": false
-      },
-      "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.6,
-        "source": "llm_corrected_rule",
-        "reason": "Não há pronome claro no resumo.",
-        "needs_review": true
-      },
-      "main_research_area": {
-        "value": "robotics",
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Deriva de foco principal em Robótica e IA no resumo.",
-        "needs_review": false
-      },
-      "secondary_research_areas": {
-        "value": [],
-        "confidence": 1.0,
-        "source": "llm",
-        "reason": "Nenhuma área secundária explicitamente citada.",
-        "needs_review": false
-      },
-      "research_topics": {
-        "value": [
-          "robotics",
-          "artificial_intelligence",
-          "ethics_of_ai",
-          "standards",
-          "ontologies",
-          "navigation"
-        ],
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Tópicos centrais: robótica, IA, ética, padrões.",
-        "needs_review": false
-      },
-      "methods_and_techniques": {
-        "value": [
-          "ontologies",
-          "standardization",
-          "robotics",
-          "navigation",
-          "mapping",
-          "harmonic_functions"
-        ],
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Menciona ontologias, padronização, navegação, robótica.",
-        "needs_review": false
-      },
-      "application_domains": {
-        "value": [
-          "academia",
-          "industry",
-          "policy_and_governance",
-          "international_organizations"
-        ],
-        "confidence": 0.8,
-        "source": "llm",
-        "reason": "Atuação relacionada a academia, indústria e políticas.",
-        "needs_review": false
-      },
-      "career_stage": {
-        "value": "senior",
-        "confidence": 1.0,
-        "source": "llm",
-        "reason": "Posição de professor titular.",
-        "needs_review": false
-      },
-      "academic_rank": {
-        "value": "full_professor",
-        "confidence": 1.0,
-        "source": "llm",
-        "reason": "Titulação correspondente.",
-        "needs_review": false
-      },
-      "seniority_level": {
-        "value": "senior",
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Carreira elevada, professor titular.",
-        "needs_review": false
-      },
-      "has_international_experience": {
-        "value": true,
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Vínculos com entidades internacionais citados.",
-        "needs_review": false
-      },
-      "international_countries": {
-        "value": [
-          "United States",
-          "Egypt",
-          "Malaysia",
-          "Portugal",
-          "Hungary",
-          "Italy"
-        ],
-        "confidence": 0.8,
-        "source": "llm",
-        "reason": "Países citados em atividades internacionais.",
-        "needs_review": false
-      },
-      "has_industry_experience": {
-        "value": false,
-        "confidence": 0.7,
-        "source": "llm",
-        "reason": "Nenhuma experiência de indústria explicitamente citada.",
-        "needs_review": false
-      },
-      "industry_organizations": {
-        "value": [],
-        "confidence": 1.0,
-        "source": "llm",
-        "reason": "Nenhuma organização industrial citada.",
-        "needs_review": false
-      },
-      "has_management_experience": {
-        "value": true,
-        "confidence": 0.95,
-        "source": "llm",
-        "reason": "Liderança de grupo de pesquisa.",
-        "needs_review": false
-      },
-      "management_roles": {
-        "value": [
-          "Leader of Phi Robotics Research Group",
-          "Chair of IEEE RAS/SA Ontologies for Ethically Driven Robotics and Automation Systems WG",
-          "Vice-Chair of IEEE RAS/SA Ontologies for Robotics and Automation Working Group"
-        ],
-        "confidence": 0.92,
-        "source": "llm",
-        "reason": "Papéis de liderança citados.",
-        "needs_review": false
-      },
-      "has_editorial_or_event_experience": {
-        "value": true,
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Participação em eventos e editoria citada.",
-        "needs_review": false
-      },
-      "has_patents_or_software_outputs": {
-        "value": false,
-        "confidence": 0.8,
-        "source": "llm",
-        "reason": "Não há patente registrada citada.",
-        "needs_review": false
-      },
-      "publication_or_output_focus": {
-        "value": [
-          "journal_articles",
-          "conference_proceedings",
-          "standards_documents"
-        ],
-        "confidence": 0.8,
-        "source": "llm",
-        "reason": "Produção associada a periódicos, conferências e padrões.",
-        "needs_review": false
-      },
-      "profile_summary_short": {
-        "value": "Professor titular na UFRGS; líder do Phi Robotics; bolsista PQ-C; atua em robótica, IA e ética.",
-        "confidence": 0.95,
-        "source": "llm",
-        "reason": "Resumo curto fornecido no perfil.",
-        "needs_review": false
-      },
-      "profile_summary_bullets": {
-        "value": [
-          "Professor titular, Instituto de Informática, UFRGS",
-          "Líder do Phi Robotics Research Group",
-          "Bolsista PQ-C do CNPq",
-          "Interesses: robótica, IA, ética e direitos humanos na IA"
-        ],
-        "confidence": 0.92,
-        "source": "llm",
-        "reason": "Bullets curtos extraídos do resumo.",
-        "needs_review": false
-      },
-      "search_keywords": {
-        "value": [
-          "robótica",
-          "inteligência_artificial",
-          "ética",
-          "direitos_humanos",
-          "padrões",
-          "ontologias",
-          "navegação",
-          "mapeamento"
-        ],
-        "confidence": 0.92,
-        "source": "llm",
-        "reason": "Palavras-chave derivadas do resumo.",
-        "needs_review": false
-      },
-      "dashboard_tags": {
-        "value": [
-          "professor_senior",
-          "ufrs",
-          "pq-c",
-          "robotics",
-          "ai",
-          "ethics",
-          "international_experience"
-        ],
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Tags curtas para filtros.",
-        "needs_review": false
-      },
-      "chart_suggestions": {
-        "value": [
-          "research_area_breakdown",
-          "international_experience_by_country",
-          "career_timeline",
-          "publication_venue_distribution"
-        ],
-        "confidence": 0.8,
-        "source": "llm",
-        "reason": "Sugestões de gráficos compatíveis com o perfil.",
-        "needs_review": false
-      },
-      "data_quality_notes": {
-        "value": [
-          "missing_orcid"
-        ],
-        "confidence": 0.8,
-        "source": "llm",
-        "reason": "ORCID não fornecido no perfil.",
-        "needs_review": false
-      },
-      "qa_context": {
-        "value": "Edson Prestes e Silva Júnior é professor titular na UFRGS, líder de grupo de robótica Phi, bolsista PQ-C; foco em robótica, IA, ética e governança.",
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Contexto QA consolidado a partir do resumo.",
-        "needs_review": false
-      }
-    }
-  },
-  {
     "name": "Edson Takashi Matsubara",
     "institution": "UFMS",
     "scholarship_level": "PQ-2",
@@ -35406,10 +33458,10 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 1.0,
-        "source": "rule+llm_validated",
-        "reason": "Validado: não há evidência textual para inferir sexo.",
+        "value": "male",
+        "confidence": 0.99,
+        "source": "llm:unknown_sex_review",
+        "reason": "Nome Eduardo tipicamente masculino.",
         "needs_review": false
       },
       "main_research_area": {
@@ -36303,330 +34355,6 @@
         "confidence": 0.9,
         "source": "llm",
         "reason": "Contexto para respostas a perguntas sobre o perfil.",
-        "needs_review": false
-      }
-    }
-  },
-  {
-    "name": "Eduardo Cunha de Almeida",
-    "institution": "UFPR",
-    "scholarship_level": "PQ-2",
-    "match_status": "matched",
-    "lattes_code": "K4758029H6",
-    "lattes_name": "Eduardo Cunha de Almeida",
-    "public_lattes_id": "0130205470596637",
-    "lattes_url": "http://lattes.cnpq.br/0130205470596637",
-    "photo_url": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4758029H6",
-    "last_updated": "11/02/2026",
-    "orcid": "https://orcid.org/0000-0002-6644-956X",
-    "summary": "Eduardo Cunha de Almeida é Professor Titular na Universidade Federal do Paraná (UFPR), onde atua desde 2009. Sua pesquisa concentra-se em sistemas de banco de dados, gestão de dados e engenharia de dados, com foco em estruturas e algoritmos para hardware emergente, processamento distribuído de consultas, e qualidade de dados. Possui Doutorado em Informática pela Universidade de Nantes, França (INRIA/GDD, 2009), com pós-doutorados no laboratório SnT da Universidade de Luxemburgo (2013-2014) e no laboratório Exascale da Universidade de Friburgo, Suíça (2023-2024). Coordenou e participou de projetos de pesquisa internacionais com instituições na França (INRIA, CAPES/Cofecub), Luxemburgo (CORE) e Suíça (SNF), além de projetos nacionais CNPq (PQ e Universal) e FAPs. Na UFPR, atuou como Vice-Coordenador do Programa de Pós-Graduação e do curso de Bacharelado em Ciência da Computação. Possui também experiência em tecnologia tendo trabalhado no Banco HSBC e na GVT Telecom (1998-2005) antes de sua carreira acadêmica. (Texto informado pelo autor)",
-    "full_cv_text_length": 113963,
-    "looks_like_full_cv": true,
-    "blocked_or_invalid": false,
-    "sections_count": 14,
-    "detail_json_path": "scrape_results/lattes_full/20260526_212601/raw/K4758029H6_Eduardo_Cunha_de_Almeida/full_profile.json",
-    "raw_html_path": "scrape_results/lattes_full/20260526_212601/raw/K4758029H6_Eduardo_Cunha_de_Almeida/full_cv.html",
-    "raw_text_path": "scrape_results/lattes_full/20260526_212601/raw/K4758029H6_Eduardo_Cunha_de_Almeida/full_cv.txt",
-    "error": null,
-    "sections_available": [
-      "AreasAtuacao",
-      "AtuacaoProfissional",
-      "Bancas",
-      "Citacoes",
-      "Endereco",
-      "Eventos",
-      "FormacaoAcademicaPosDoutorado",
-      "FormacaoAcademicaTitulacao",
-      "Identificacao",
-      "Orientacoes",
-      "PatentesRegistros",
-      "ProducaoBibliografica",
-      "ProducaoTecnica",
-      "ProjetosPesquisa"
-    ],
-    "semantic_profile": {
-      "institution_state_uf": {
-        "value": "PR",
-        "confidence": 1.0,
-        "source": "rule+llm_validated",
-        "reason": "UF mapeada pela sigla da instituição: PR.",
-        "needs_review": false
-      },
-      "institution_region": {
-        "value": "Sul",
-        "confidence": 1.0,
-        "source": "rule+llm_validated",
-        "reason": "Região derivada da UF da instituição.",
-        "needs_review": false
-      },
-      "scholarship_category": {
-        "value": "PQ-2",
-        "confidence": 1.0,
-        "source": "rule+llm_validated",
-        "reason": "Categoria derivada do nível da bolsa.",
-        "needs_review": false
-      },
-      "scholarship_level_rank": {
-        "value": 2,
-        "confidence": 1.0,
-        "source": "rule+llm_validated",
-        "reason": "Ranking simples derivado do nível da bolsa.",
-        "needs_review": false
-      },
-      "doctorate_year": {
-        "value": 2009,
-        "confidence": 1.0,
-        "source": "llm_corrected_rule",
-        "reason": "Doutorado concluído em 2009 (Nantes).",
-        "needs_review": false
-      },
-      "years_since_doctorate": {
-        "value": 17,
-        "confidence": 1.0,
-        "source": "llm_corrected_rule",
-        "reason": "Anos desde doutorado com base em 2009-2026.",
-        "needs_review": false
-      },
-      "profile_language": {
-        "value": "pt",
-        "confidence": 0.86,
-        "source": "rule+llm_validated",
-        "reason": "Resumo em português.",
-        "needs_review": false
-      },
-      "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.4,
-        "source": "llm_corrected_rule",
-        "reason": "Gênero não determinado no resumo.",
-        "needs_review": true
-      },
-      "main_research_area": {
-        "value": "databases",
-        "confidence": 1.0,
-        "source": "llm",
-        "reason": "Área principal em bancos de dados.",
-        "needs_review": false
-      },
-      "secondary_research_areas": {
-        "value": [
-          "data_management",
-          "distributed_systems",
-          "data_engineering",
-          "quality_of_data"
-        ],
-        "confidence": 0.92,
-        "source": "llm",
-        "reason": "Áreas secundárias derivadas do resumo.",
-        "needs_review": false
-      },
-      "research_topics": {
-        "value": [
-          "distributed_query_processing",
-          "data_management",
-          "data_engineering",
-          "hardware_emergent_architectures",
-          "data_quality"
-        ],
-        "confidence": 0.85,
-        "source": "llm",
-        "reason": "Tópicos extraídos do resumo.",
-        "needs_review": false
-      },
-      "methods_and_techniques": {
-        "value": [
-          "distributed_processing",
-          "database_systems",
-          "peer_to_peer",
-          "DHT",
-          "hardware_aware_algorithms"
-        ],
-        "confidence": 0.85,
-        "source": "llm",
-        "reason": "Métodos citados no resumo.",
-        "needs_review": false
-      },
-      "application_domains": {
-        "value": [
-          "banking",
-          "telecommunications",
-          "information_technology",
-          "education",
-          "finance"
-        ],
-        "confidence": 0.8,
-        "source": "llm",
-        "reason": "Domínios de aplicação implícitos.",
-        "needs_review": false
-      },
-      "career_stage": {
-        "value": "senior",
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Carreira acadêmica consolidada.",
-        "needs_review": false
-      },
-      "academic_rank": {
-        "value": "Professor Titular",
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Cargo inferido: Professor Titular.",
-        "needs_review": false
-      },
-      "seniority_level": {
-        "value": "very_senior",
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Senioridade muito alta.",
-        "needs_review": false
-      },
-      "has_international_experience": {
-        "value": true,
-        "confidence": 0.95,
-        "source": "llm",
-        "reason": "Experiência internacional confirmada por pós-doutorados.",
-        "needs_review": false
-      },
-      "international_countries": {
-        "value": [
-          "France",
-          "Luxembourg",
-          "Switzerland"
-        ],
-        "confidence": 0.95,
-        "source": "llm",
-        "reason": "Países de atuação internacional citados.",
-        "needs_review": false
-      },
-      "has_industry_experience": {
-        "value": true,
-        "confidence": 0.95,
-        "source": "llm",
-        "reason": "Experiência em indústria citada.",
-        "needs_review": false
-      },
-      "industry_organizations": {
-        "value": [
-          "HSBC",
-          "GVT Telecom"
-        ],
-        "confidence": 0.95,
-        "source": "llm",
-        "reason": "Organizações privadas citadas.",
-        "needs_review": false
-      },
-      "has_management_experience": {
-        "value": true,
-        "confidence": 0.95,
-        "source": "llm",
-        "reason": "Experiência de gestão citada.",
-        "needs_review": false
-      },
-      "management_roles": {
-        "value": [
-          "Vice-Coordinator of Postgraduate Program",
-          "Vice-Coordinator of the BSc Computer Science program"
-        ],
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Papéis de gestão mencionados.",
-        "needs_review": false
-      },
-      "has_editorial_or_event_experience": {
-        "value": true,
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Experiência editorial/eventos citada.",
-        "needs_review": false
-      },
-      "has_patents_or_software_outputs": {
-        "value": true,
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Patentes/outputs citados.",
-        "needs_review": false
-      },
-      "publication_or_output_focus": {
-        "value": [
-          "journals",
-          "conferences",
-          "patents"
-        ],
-        "confidence": 0.85,
-        "source": "llm",
-        "reason": "Foco de produção citado no resumo.",
-        "needs_review": false
-      },
-      "profile_summary_short": {
-        "value": "Professor titular da UFPR com foco em bancos de dados, gestão de dados e engenharia de dados.",
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Resumo curto gerado a partir do perfil.",
-        "needs_review": false
-      },
-      "profile_summary_bullets": {
-        "value": [
-          "Professor Titular na UFPR desde 2009.",
-          "Doutor em Informática pela Université de Nantes (2009).",
-          "Pós-doutorados em SnT, Luxemburgo (2013-2014) e Exascale, Friburgo (2023-2024).",
-          "Experiência em HSBC e GVT (1998-2005)."
-        ],
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Bullets extraídos do resumo.",
-        "needs_review": false
-      },
-      "search_keywords": {
-        "value": [
-          "banco de dados",
-          "gestão de dados",
-          "engenharia de dados",
-          "hardware emergent",
-          "distributed processing",
-          "qualidade de dados"
-        ],
-        "confidence": 0.8,
-        "source": "llm",
-        "reason": "Palavras-chave normalizadas para busca.",
-        "needs_review": false
-      },
-      "dashboard_tags": {
-        "value": [
-          "ufpr",
-          "professor_titular",
-          "database_systems",
-          "data_management",
-          "distributed_processing"
-        ],
-        "confidence": 0.8,
-        "source": "llm",
-        "reason": "Tags para filtros de dashboard.",
-        "needs_review": false
-      },
-      "chart_suggestions": {
-        "value": [
-          "academic_rank",
-          "research_area",
-          "international_experience",
-          "industry_experience"
-        ],
-        "confidence": 0.8,
-        "source": "llm",
-        "reason": "Gráficos potenciais para o perfil.",
-        "needs_review": false
-      },
-      "data_quality_notes": {
-        "value": [],
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Sem notas de qualidade.",
-        "needs_review": false
-      },
-      "qa_context": {
-        "value": "Contexto: Eduardo Cunha de Almeida, UFPR, PQ-2, áreas centrais em bancos de dados, gestão de dados e engenharia de dados; doutor 2009 Nantes; pós-doutorados Luxembourg/Friburgo; experiência internacional e indústria.",
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Contexto para responder perguntas sobre a pessoa.",
         "needs_review": false
       }
     }
@@ -37689,11 +35417,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.6,
-        "source": "llm_corrected_rule",
-        "reason": "Gênero não indicado no resumo.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.9,
+        "source": "llm:unknown_sex_review",
+        "reason": "Resumo usa pronome 'Ele' para 'Eduardo Ogasawara'.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "data_mining",
@@ -38669,10 +36397,10 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.6,
-        "source": "llm_corrected_rule",
-        "reason": "Gênero não determinável pelo texto.",
+        "value": "male",
+        "confidence": 0.82,
+        "source": "llm:unknown_sex_review",
+        "reason": "Marcador implícito: “professor titular” no resumo + nome Emerson (masculino).",
         "needs_review": true
       },
       "main_research_area": {
@@ -39624,10 +37352,10 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.6,
-        "source": "llm_corrected_rule",
-        "reason": "Gênero não confiável a partir do texto; confirmação necessária.",
+        "value": "male",
+        "confidence": 0.78,
+        "source": "llm:unknown_sex_review",
+        "reason": "Marcadores no texto: “professor Titular”; nome Esteban (comum masculino).",
         "needs_review": true
       },
       "main_research_area": {
@@ -39953,10 +37681,10 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 1.0,
-        "source": "rule+llm_validated",
-        "reason": "Regra válida: sem evidência local para inferir sexo.",
+        "value": "male",
+        "confidence": 0.99,
+        "source": "llm:unknown_sex_review",
+        "reason": "Nome Estevão tipicamente masculino.",
         "needs_review": false
       },
       "main_research_area": {
@@ -40605,11 +38333,11 @@
         "needs_review": true
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.0,
-        "source": "rule+llm_validated",
-        "reason": "Sem evidência textual local para inferir sexo.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.93,
+        "source": "llm:unknown_sex_review",
+        "reason": "Nome completo com primeiro nome masculino comum: Ezequiel.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "artificial_intelligence",
@@ -41263,10 +38991,10 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.6,
-        "source": "llm_corrected_rule",
-        "reason": "Gênero não confirmado; inferência duvidosa.",
+        "value": "male",
+        "confidence": 0.8,
+        "source": "llm:unknown_sex_review",
+        "reason": "Marcadores no texto: “Prof. Hessel é PhD” e “lider do grupo”; nome Fabiano (masculino).",
         "needs_review": true
       },
       "main_research_area": {
@@ -42243,11 +39971,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.4,
-        "source": "llm_corrected_rule",
-        "reason": "Gênero não determinado pelo texto.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.99,
+        "source": "llm:unknown_sex_review",
+        "reason": "Nome Fábio tipicamente masculino.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "graph_theory",
@@ -42877,11 +40605,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.0,
-        "source": "rule+llm_validated",
-        "reason": "Sem evidência textual local para inferir sexo.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.99,
+        "source": "llm:unknown_sex_review",
+        "reason": "Nome Fabio tipicamente masculino.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "computer_networking",
@@ -46377,18 +44105,18 @@
     ],
     "semantic_profile": {
       "institution_state_uf": {
-        "value": "unknown",
-        "confidence": 0.0,
-        "source": "rule+llm_validated",
-        "reason": "Regra validada: UPE sem UF explícita no dado fornecido.",
-        "needs_review": true
+        "value": "PE",
+        "confidence": 1,
+        "source": "rule:normalization",
+        "reason": "UF normalizada pela sigla da instituição: UPE.",
+        "needs_review": false
       },
       "institution_region": {
-        "value": "unknown",
-        "confidence": 0.0,
-        "source": "rule+llm_validated",
-        "reason": "Regra validada: UF desconhecida impede derivação regional.",
-        "needs_review": true
+        "value": "Nordeste",
+        "confidence": 1,
+        "source": "rule:normalization",
+        "reason": "Região normalizada a partir da UF PE.",
+        "needs_review": false
       },
       "scholarship_category": {
         "value": "PQ-C",
@@ -47094,11 +44822,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.0,
-        "source": "rule+llm_validated",
-        "reason": "Sem evidência textual local para inferir sexo.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.99,
+        "source": "llm:unknown_sex_review",
+        "reason": "Nome Fernando tipicamente masculino.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "programming_languages",
@@ -51270,11 +48998,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.8,
-        "source": "llm_corrected_rule",
-        "reason": "Sexo não determinado com evidência confiável.",
-        "needs_review": true
+        "value": "female",
+        "confidence": 0.85,
+        "source": "llm:unknown_sex_review",
+        "reason": "Resumo em inglês usa “She”; nome Genaina é feminino.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "software_engineering",
@@ -52254,11 +49982,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.5,
-        "source": "llm_corrected_rule",
-        "reason": "Texto não indica gênero; ambíguo.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.99,
+        "source": "llm:unknown_sex_review",
+        "reason": "Resumo com 'Doutor' e nome Geraldo masculino.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "artificial_intelligence",
@@ -54166,11 +51894,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.2,
-        "source": "rule+llm_validated",
-        "reason": "Marcadores de gênero ambíguos no resumo.",
-        "needs_review": true
+        "value": "female",
+        "confidence": 0.9,
+        "source": "llm:unknown_sex_review",
+        "reason": "Marcador textual: “Professora Assistente III”; nome Graçaliz (feminino).",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "mathematics_of_computing",
@@ -55471,11 +53199,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.0,
-        "source": "rule+llm_validated",
-        "reason": "Sem evidência textual local para inferir sexo.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.98,
+        "source": "llm:unknown_sex_review",
+        "reason": "Nome Guilherme é tipicamente masculino; resumo confirma graduação/doutorado sem conflito.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "high_performance_computing",
@@ -56399,18 +54127,18 @@
     ],
     "semantic_profile": {
       "institution_state_uf": {
-        "value": "unknown",
-        "confidence": 1.0,
-        "source": "rule+llm_validated",
-        "reason": "Validação: ITV sem UF mapeada.",
+        "value": "PA",
+        "confidence": 1,
+        "source": "rule:normalization",
+        "reason": "UF normalizada pela sigla da instituição: ITV.",
         "needs_review": false
       },
       "institution_region": {
-        "value": "unknown",
-        "confidence": 0.0,
-        "source": "rule+llm_validated",
-        "reason": "UF desconhecida; região não derivável.",
-        "needs_review": true
+        "value": "Norte",
+        "confidence": 1,
+        "source": "rule:normalization",
+        "reason": "Região normalizada a partir da UF PA.",
+        "needs_review": false
       },
       "scholarship_category": {
         "value": "PQ-1",
@@ -56719,18 +54447,18 @@
     ],
     "semantic_profile": {
       "institution_state_uf": {
-        "value": "unknown",
-        "confidence": 0.0,
-        "source": "rule+llm_validated",
-        "reason": "Regra: UF não mapeada; validação pendente.",
-        "needs_review": true
+        "value": "MG",
+        "confidence": 1,
+        "source": "rule:normalization",
+        "reason": "UF normalizada pela sigla da instituição: UFJF.",
+        "needs_review": false
       },
       "institution_region": {
-        "value": "unknown",
-        "confidence": 0.0,
-        "source": "rule+llm_validated",
-        "reason": "Região não derivada pela UF desconhecida.",
-        "needs_review": true
+        "value": "Sudeste",
+        "confidence": 1,
+        "source": "rule:normalization",
+        "reason": "Região normalizada a partir da UF MG.",
+        "needs_review": false
       },
       "scholarship_category": {
         "value": "PQ-C",
@@ -57074,10 +54802,10 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.4,
-        "source": "llm_corrected_rule",
-        "reason": "Gênero não determinado pelas evidências.",
+        "value": "male",
+        "confidence": 0.75,
+        "source": "llm:unknown_sex_review",
+        "reason": "Nome Heitor (masculino) e menção “professor associado”; marcador ocupacional favorece masculino.",
         "needs_review": true
       },
       "main_research_area": {
@@ -65147,11 +62875,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.6,
-        "source": "llm_corrected_rule",
-        "reason": "Gênero não determinável pelo texto.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.95,
+        "source": "llm:unknown_sex_review",
+        "reason": "Resumo traz \"professor adjunto\" e nome Jomi é associado a masculino.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "artificial_intelligence",
@@ -65416,17 +63144,17 @@
     ],
     "semantic_profile": {
       "institution_state_uf": {
-        "value": "unknown",
-        "confidence": 1.0,
-        "source": "rule+llm_validated",
-        "reason": "UF não aplicável para FGV, não mapeada",
+        "value": "RJ",
+        "confidence": 1,
+        "source": "rule:normalization",
+        "reason": "UF normalizada pela sigla da instituição: FGV.",
         "needs_review": false
       },
       "institution_region": {
-        "value": "unknown",
-        "confidence": 1.0,
-        "source": "rule+llm_validated",
-        "reason": "UF desconhecida, região não definida",
+        "value": "Sudeste",
+        "confidence": 1,
+        "source": "rule:normalization",
+        "reason": "Região normalizada a partir da UF RJ.",
         "needs_review": false
       },
       "scholarship_category": {
@@ -66440,11 +64168,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.6,
-        "source": "llm_corrected_rule",
-        "reason": "Gênero não determinado pela evidência.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.98,
+        "source": "llm:unknown_sex_review",
+        "reason": "Nome José Augusto é tipicamente masculino; resumo traz \"professor\" sem conflito.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "computer_science",
@@ -68406,11 +66134,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.25,
-        "source": "llm_corrected_rule",
-        "reason": "Gênero não confiável; termo ocupacional não indica sexo.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.98,
+        "source": "llm:unknown_sex_review",
+        "reason": "Nome Julio Cesar é tipicamente masculino; resumo traz \"professor visitante\".",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "software_engineering",
@@ -70257,336 +67985,6 @@
     }
   },
   {
-    "name": "Kleinner Silva Farias de Oliveira",
-    "institution": "UNISINOS",
-    "scholarship_level": "PQ-C",
-    "match_status": "matched",
-    "lattes_code": "K4131325H1",
-    "lattes_name": "Kleinner Silva Farias de Oliveira",
-    "public_lattes_id": "2582456631204400",
-    "lattes_url": "http://lattes.cnpq.br/2582456631204400",
-    "photo_url": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4131325H1",
-    "last_updated": "27/11/2025",
-    "orcid": "",
-    "summary": "Kleinner Farias é um proeminente pesquisador na área de Engenharia de Software, cujo tragetória acadêmica é marcada por contribuições e reconhecimentos importantes. Possui doutorado em Informática pela Pontifícia Universidade Católica do Rio de Janeiro (2012), mestrado em Ciência da Computação pela Pontifícia Universidade Católica do Rio Grande do Sul (2008), graduação em Ciência da Computação pela Universidade Federal de Alagoas (2006) e em Tecnologia da Informação pelo Instituto Federal de Alagoas (2006). Atuou como Professor no Instituto Federal Sul-rio-grandense (2012), como pesquisador visitante na Universidade de Waterloo (Canadá) (2008) e consultor no Laboratório de Engenharia de Software da PUC-Rio (2009-2011). Prof. Farias é Bolsista de Produtividade PQ C (CNPq), Professor Assistente do Programa de Pós-graduação em Computação Aplicada da Universidade do Vale do Rio dos Sinos (Unisinos) desde 2013 e lidera o Grupo Pesquisa de Engenharia de Software Aplicada da Unisinos. Tem experiência na área de Ciência da Computação, com ênfase em Engenharia de Software, atuando principalmente nos seguintes temas: projeto e arquitetura de software, modelagem de software, engenharia de software experimental, neurociência aplicada à engenharia de software, integração de artefatos e desenvolvimento de software dirigido por modelos. O Prof. Farias tem recebido alguns prêmios, distinções e reconhecimentos, tais como Tese Indicada para Representar o Departamento de Informática da PUC-Rio no Concurso de Teses da CAPES (2012), dois artigos escolhidos entre os três melhores da International Conference on Model Driven Engineering Languages and Systems (Qualis A3, 2012), Best Paper Award no Simpósio Brasileiro de Engenharia de Software (Qualis A3, 2020), um artigo indicado ao Best Paper Award na International Conference on Aspect-Oriented Software Development (2010), duas menções honrosas no Simpósio Brasileiro de Sistema de Informação (Qualis A4, 2018 e 2019), um artigo escolhido entre os TOP-5 no Simpósio Brasileiro de Engenharia de Software (Qualis A3, 2021), entre os TOP-5 pesquisadores que mais publicaram no Simpósio Brasileiro de Sistema de Informação (2024), escolhido entre os melhores revisores do Simpósio Brasileiro de Sistema de Informação (2023) e um artigo escolhido entre os melhores da International Conference on Software Engineering and Knowledge Engineering (Qualis B1, 2015). Tem desenvolvido trabalhos em colaboração com pesquisadores de universidades nacionais (UFRJ, PUC-Rio) e internacionais (California Polytechnic State University, USA). Ele atua como revisor de periódicos nacionais e internacionais, tais como ACM Transactions on Software Engineering and Methodology, Journal of Systems and Software, ACM Computing Surveys, Empirical Software Engineering, entre outros. Ele também participa de diversos comitês de programas de eventos nacionais e internacionais, tais como Simpósio Brasileiro de Sistemas de Informação, International Model-Driven Requirements Engineering Workshop, entre outros. Embora seja um jovem pesquisador, sua dedicação à excelência acadêmica é refletida na supervisão de mais de 60 orientações, abrangendo dissertações de doutorado, mestrado e graduação. Obteve financiamento de projetos de pesquisa através de editais concorridos do CNPq e da FAPERGS. Destacam-se como suas principais áreas de atuação: Engenharia de Software, Advanced Machine Intelligence, Modelagem de Software, Software Merge, Agentic AI, Machine Learning for SE, MDD, UML, Arquitetura de Software, Neurociência Aplicada à Engenharia de Software e Engenharia de Software Experimental. A participação do professor junto ao ensino de graduação vem sendo intensa nos últimos 11 anos, com mais de 65 disciplinas ministradas, contribuindo na formação de mais de 1300 alunos. (Texto informado pelo autor)",
-    "full_cv_text_length": 292592,
-    "looks_like_full_cv": true,
-    "blocked_or_invalid": false,
-    "sections_count": 13,
-    "detail_json_path": "scrape_results/lattes_full/20260526_212601/raw/K4131325H1_Kleinner_Silva_Farias_de_Oliveira/full_profile.json",
-    "raw_html_path": "scrape_results/lattes_full/20260526_212601/raw/K4131325H1_Kleinner_Silva_Farias_de_Oliveira/full_cv.html",
-    "raw_text_path": "scrape_results/lattes_full/20260526_212601/raw/K4131325H1_Kleinner_Silva_Farias_de_Oliveira/full_cv.txt",
-    "error": null,
-    "sections_available": [
-      "AreasAtuacao",
-      "AtuacaoProfissional",
-      "Bancas",
-      "Citacoes",
-      "Endereco",
-      "Eventos",
-      "FormacaoAcademicaTitulacao",
-      "Identificacao",
-      "Orientacoes",
-      "PatentesRegistros",
-      "ProducaoBibliografica",
-      "ProducaoTecnica",
-      "ProjetosPesquisa"
-    ],
-    "semantic_profile": {
-      "institution_state_uf": {
-        "value": "RS",
-        "confidence": 1.0,
-        "source": "rule+llm_validated",
-        "reason": "UF mapeada pela sigla da instituição: UNISINOS.",
-        "needs_review": false
-      },
-      "institution_region": {
-        "value": "Sul",
-        "confidence": 1.0,
-        "source": "rule+llm_validated",
-        "reason": "Região derivada da UF da instituição.",
-        "needs_review": false
-      },
-      "scholarship_category": {
-        "value": "PQ-C",
-        "confidence": 1.0,
-        "source": "rule+llm_validated",
-        "reason": "Categoria derivada do nível da bolsa.",
-        "needs_review": false
-      },
-      "scholarship_level_rank": {
-        "value": 3,
-        "confidence": 1.0,
-        "source": "rule+llm_validated",
-        "reason": "Ranking simples derivado do nível da bolsa.",
-        "needs_review": false
-      },
-      "doctorate_year": {
-        "value": 2012,
-        "confidence": 0.92,
-        "source": "llm_corrected_rule",
-        "reason": "Doutorado em Informática pela PUC-Rio em 2012.",
-        "needs_review": false
-      },
-      "years_since_doctorate": {
-        "value": 14,
-        "confidence": 1.0,
-        "source": "llm_corrected_rule",
-        "reason": "Ano atual (2026) menos doutorado (2012).",
-        "needs_review": false
-      },
-      "profile_language": {
-        "value": "pt",
-        "confidence": 0.92,
-        "source": "rule+llm_validated",
-        "reason": "Resumo público em PT.",
-        "needs_review": false
-      },
-      "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.4,
-        "source": "llm_corrected_rule",
-        "reason": "Gênero não determinado a partir do resumo.",
-        "needs_review": true
-      },
-      "main_research_area": {
-        "value": "software_engineering",
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Área principal de atuação: Engenharia de Software.",
-        "needs_review": false
-      },
-      "secondary_research_areas": {
-        "value": [
-          "neuroscience_in_software_engineering",
-          "model_driven_development",
-          "software_architecture",
-          "experimental_software_engineering"
-        ],
-        "confidence": 0.75,
-        "source": "llm",
-        "reason": "Principais áreas citadas na trajetória.",
-        "needs_review": false
-      },
-      "research_topics": {
-        "value": [
-          "software_project_and_architecture",
-          "software_modeling",
-          "experimental_software_engineering",
-          "neuroscience_in_software_engineering",
-          "model_driven_development",
-          "integration_of_artifacts",
-          "agentic_ai",
-          "machine_learning_for_se",
-          "uml",
-          "software_architecture_design"
-        ],
-        "confidence": 0.85,
-        "source": "llm",
-        "reason": "Temas citados no resumo.",
-        "needs_review": false
-      },
-      "methods_and_techniques": {
-        "value": [
-          "model_driven_development",
-          "uml",
-          "software_merge",
-          "neuroscience_methods",
-          "machine_learning_for_se",
-          "architecture_design"
-        ],
-        "confidence": 0.8,
-        "source": "llm",
-        "reason": "Métodos e técnicas mencionados.",
-        "needs_review": false
-      },
-      "application_domains": {
-        "value": [],
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Domínios de aplicação não explicitados.",
-        "needs_review": false
-      },
-      "career_stage": {
-        "value": "senior",
-        "confidence": 0.8,
-        "source": "llm",
-        "reason": "Carreira consolidada como pesquisador sênior.",
-        "needs_review": false
-      },
-      "academic_rank": {
-        "value": "Professor Assistente",
-        "confidence": 0.85,
-        "source": "llm",
-        "reason": "Atua como Professor Assistente do PPG em Computação Aplicada.",
-        "needs_review": false
-      },
-      "seniority_level": {
-        "value": "senior",
-        "confidence": 0.85,
-        "source": "llm",
-        "reason": "Longa experiência acadêmica e liderança.",
-        "needs_review": false
-      },
-      "has_international_experience": {
-        "value": true,
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Experiência internacional: Waterloo (Canadá) e colabora com EUA.",
-        "needs_review": false
-      },
-      "international_countries": {
-        "value": [
-          "Canada",
-          "USA"
-        ],
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Experiência internacional citada.",
-        "needs_review": false
-      },
-      "has_industry_experience": {
-        "value": false,
-        "confidence": 0.8,
-        "source": "llm",
-        "reason": "Sem evidência clara de atuação na indústria.",
-        "needs_review": false
-      },
-      "industry_organizations": {
-        "value": [],
-        "confidence": 0.8,
-        "source": "llm",
-        "reason": "Nenhuma organização industrial citada.",
-        "needs_review": false
-      },
-      "has_management_experience": {
-        "value": true,
-        "confidence": 0.95,
-        "source": "llm",
-        "reason": "Lidera grupo de pesquisa e participa de comissões.",
-        "needs_review": false
-      },
-      "management_roles": {
-        "value": [
-          "Líder do Grupo Pesquisa de Engenharia de Software Aplicada na Unisinos",
-          "Presidente da Comissão de Seleção de Mestrado e Doutorado do PPG em Computação Aplicada"
-        ],
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Papéis de liderança citados.",
-        "needs_review": false
-      },
-      "has_editorial_or_event_experience": {
-        "value": true,
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Revisor de periódicos e participante de comitês.",
-        "needs_review": false
-      },
-      "has_patents_or_software_outputs": {
-        "value": true,
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Patentes/registros citados; ferramentas como UMLSim.",
-        "needs_review": false
-      },
-      "publication_or_output_focus": {
-        "value": [
-          "journal_articles",
-          "conference_papers",
-          "patents"
-        ],
-        "confidence": 0.92,
-        "source": "llm",
-        "reason": "Foco de produção citado.",
-        "needs_review": false
-      },
-      "profile_summary_short": {
-        "value": "Pesquisador sênior em Engenharia de Software na Unisinos, PQ-C, com atuação em modelagem, engenharia de software experimental e neurociência aplicada.",
-        "confidence": 0.8,
-        "source": "llm",
-        "reason": "Resumo curto consolidado.",
-        "needs_review": false
-      },
-      "profile_summary_bullets": {
-        "value": [
-          "Doutorado em Informática pela PUC-Rio (2012).",
-          "Líder do Grupo de Engenharia de Software Aplicada na Unisinos.",
-          "Experiência internacional: Waterloo (Canadá) e colabora com EUA.",
-          "Publica em Engenharia de Software, Modelagem, ML para SE e Neurociência Aplicada."
-        ],
-        "confidence": 0.85,
-        "source": "llm",
-        "reason": "Bullets resumem carreira.",
-        "needs_review": false
-      },
-      "search_keywords": {
-        "value": [
-          "engenharia_de_software",
-          "modelagem_de_software",
-          "software_architecture",
-          "uml",
-          "neuroscience_in_software_engineering",
-          "machine_learning_for_se",
-          "agentic_ai",
-          "model_driven_development",
-          "softwAre_merge",
-          "software_engineering_experimental"
-        ],
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Palavras-chave para busca.",
-        "needs_review": false
-      },
-      "dashboard_tags": {
-        "value": [
-          "software_engineering",
-          "pq_c",
-          "unisinos",
-          "leadership",
-          "international_experience",
-          "software_modeling",
-          "uml",
-          "neuroscience",
-          "model_driven_development"
-        ],
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Tags para filtros.",
-        "needs_review": false
-      },
-      "chart_suggestions": {
-        "value": [
-          "area_by_region",
-          "scholarship_by_level",
-          "doctorate_year_distribution",
-          "international_experience_map",
-          "publication_output"
-        ],
-        "confidence": 0.85,
-        "source": "llm",
-        "reason": "Sugestões de gráficos.",
-        "needs_review": false
-      },
-      "data_quality_notes": {
-        "value": [
-          "doctorate_year atualizado para 2012 com base no CV; sexo inference necessário revisar."
-        ],
-        "confidence": 0.8,
-        "source": "llm",
-        "reason": "Notas sobre qualidade de dados.",
-        "needs_review": false
-      },
-      "qa_context": {
-        "value": "Kleinner Farias é bolsista PQ-C na Unisinos, Doutor em Informática (2012) pela PUC-Rio, líder do Grupo de Engenharia de Software Aplicada, com experiência internacional (Waterloo, Canadá; colabora com EUA) e atuação em Engenharia de Software, Modelagem, ML para SE e Neurociência Aplicada.",
-        "confidence": 0.88,
-        "source": "llm",
-        "reason": "Contexto para responder perguntas.",
-        "needs_review": false
-      }
-    }
-  },
-  {
     "name": "Leandro Alves Neves",
     "institution": "UNESP",
     "scholarship_level": "PQ-C",
@@ -70989,11 +68387,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.6,
-        "source": "llm_corrected_rule",
-        "reason": "Gênero não claramente determinado nos dados.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.98,
+        "source": "llm:unknown_sex_review",
+        "reason": "Resumo traz \"Professor Associado\" e pronomes masculinos; nome Leandro é masculino.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "artificial_intelligence",
@@ -71613,11 +69011,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.4,
-        "source": "llm_corrected_rule",
-        "reason": "Incerteza sobre sexo a partir do texto.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.98,
+        "source": "llm:unknown_sex_review",
+        "reason": "Resumo traz \"Professor Adjunto\"; nome Leandro é tipicamente masculino.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "artificial_intelligence",
@@ -75775,11 +73173,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.6,
-        "source": "llm_corrected_rule",
-        "reason": "Indício insuficiente para sexo.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.95,
+        "source": "llm:unknown_sex_review",
+        "reason": "Resumo traz \"Professor Associado\"; nome Luidi é associado a masculino.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "mathematical_programming",
@@ -77060,11 +74458,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.4,
-        "source": "llm_corrected_rule",
-        "reason": "Gênero não determinado.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.98,
+        "source": "llm:unknown_sex_review",
+        "reason": "Resumo traz \"Professor Adjunto\"; nome Luís Felipe é tipicamente masculino.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "combinatorial_optimization",
@@ -77982,18 +75380,18 @@
     ],
     "semantic_profile": {
       "institution_state_uf": {
-        "value": "unknown",
-        "confidence": 0.0,
-        "source": "rule+llm_validated",
-        "reason": "Instituição sem UF mapeada: INMETRO.",
-        "needs_review": true
+        "value": "RJ",
+        "confidence": 1,
+        "source": "rule:normalization",
+        "reason": "UF normalizada pela sigla da instituição: INMETRO.",
+        "needs_review": false
       },
       "institution_region": {
-        "value": "unknown",
-        "confidence": 0.0,
-        "source": "rule+llm_validated",
-        "reason": "Região derivada da UF da instituição.",
-        "needs_review": true
+        "value": "Sudeste",
+        "confidence": 1,
+        "source": "rule:normalization",
+        "reason": "Região normalizada a partir da UF RJ.",
+        "needs_review": false
       },
       "scholarship_category": {
         "value": "PQ-C",
@@ -80583,18 +77981,18 @@
     ],
     "semantic_profile": {
       "institution_state_uf": {
-        "value": "unknown",
-        "confidence": 0.4,
-        "source": "rule+llm_validated",
-        "reason": "UF não mapeada nos dados.",
-        "needs_review": true
+        "value": "RS",
+        "confidence": 1,
+        "source": "rule:normalization",
+        "reason": "UF normalizada pela sigla da instituição: UNIPAMPA.",
+        "needs_review": false
       },
       "institution_region": {
-        "value": "unknown",
-        "confidence": 0.4,
-        "source": "rule+llm_validated",
-        "reason": "Região derivada não fornecida.",
-        "needs_review": true
+        "value": "Sul",
+        "confidence": 1,
+        "source": "rule:normalization",
+        "reason": "Região normalizada a partir da UF RS.",
+        "needs_review": false
       },
       "scholarship_category": {
         "value": "PQ-C",
@@ -83200,11 +80598,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.4,
-        "source": "llm_corrected_rule",
-        "reason": "Evidência insuficiente; inferência de sexo não suportada.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.98,
+        "source": "llm:unknown_sex_review",
+        "reason": "Resumo traz \"professor titular\"; nome Marcelo é tipicamente masculino.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "biomedical_engineering",
@@ -83521,11 +80919,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.6,
-        "source": "llm_corrected_rule",
-        "reason": "Evidência de gênero insuficiente.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.98,
+        "source": "llm:unknown_sex_review",
+        "reason": "Resumo traz \"Professor Associado\"; nome Márcio é tipicamente masculino.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "bioinformatics",
@@ -85146,11 +82544,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.4,
-        "source": "llm_corrected_rule",
-        "reason": "Gênero não determinado a partir do resumo.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.98,
+        "source": "llm:unknown_sex_review",
+        "reason": "Resumo traz \"professor Titular\"; nome Marcos André é tipicamente masculino.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "information_retrieval",
@@ -85371,313 +82769,6 @@
         "confidence": 0.92,
         "source": "llm",
         "reason": "Contexto para perguntas sobre a pessoa.",
-        "needs_review": false
-      }
-    }
-  },
-  {
-    "name": "Marcos de Oliveira Lage Ferreira",
-    "institution": "UFF",
-    "scholarship_level": "PQ-C",
-    "match_status": "matched",
-    "lattes_code": "K4188696P6",
-    "lattes_name": "Marcos de Oliveira Lage Ferreira",
-    "public_lattes_id": "1679486689581930",
-    "lattes_url": "http://lattes.cnpq.br/1679486689581930",
-    "photo_url": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4188696P6",
-    "last_updated": "13/11/2025",
-    "orcid": "https://orcid.org/0000-0003-3868-8886",
-    "summary": "Possui graduação em Matemática obtida na Universidade do Estado do Rio de Janeiro no ano de 2004. Obteve os títulos de mestre (2006) e doutor (2009) em Matemática Aplicada pela Pontifícia Universidade Católica do Rio de Janeiro. Sua dissertação de mestrado recebeu menção honrosa no workshop de teses e dissertações do SIBGRAPI 2006. Em 2008, durante o doutorado, fez estágio de pesquisa na Freie Universität em Berlin na área de Processamento Geométrico. Em 2015 realizou pós-doutorado na New York University na área de Visualização. No primeiro semestre de 2018, foi convidado para atuar como pesquisador visitante na New York University.É professor Associado IV do Departamento de Ciência da Computação e vice-diretor do Instituto de Computação. Atua no programa de Pós-Graduação em Computação do Instituto de Computação da Universidade Federal Fluminense (UFF) em Niterói. É bolsista de produtividade nível 2 do CNPq e Cientista do Nosso Estado da FAPERJ. É um dos fundadores do Laboratório Prograf, também do Instituto de Computação da UFF. Sua pesquisa tem ênfase em computação visual, atuando principalmente na área de visualização. Em especial, tem interesse em problemas de visualização de dados urbanos. Durante sua carreira, tem publicado nos melhores jornais e conferências da área como IEEE TVCG, IEEE VIS, ACM TOG, ACM SIGGRAPH, ACM CHI, ACM SIGMOD entre outros.Trabalhou projetos de pesquisa financiados pela PETROBRAS que, dentre outros temas, estudavam soluções para problemas de simulações de fluidos multifásicos, aprendizagem estatística aplicada a reservatórios de petróleo, simulação de juntas e fraturas em análogos de reservatórios carbonáticos de petróleo e modelagem estocástica de objetos geológicos.É membro da Comissão Especial de Computação Gráfica e Processamento de Imagens (CEGRAPI) da SBC pela segunda oportunidade, tendo composto a mesma entre 2018 e 2020. Em 2017 foi um dos General Chair do SIBGRAPI 2017, realizado nas dependências do Instituto de Computação da UFF. Em 2019, foi um dos Program Chairs do SIBGRAPI 2019, realizado no Rio de Janeiro.Nos últimos anos tem atuado como revisor de periódicos e conferências importantes da área como a IEEE VIS, EuroVis, Eurographics, I3D, SIBGRAPI, Computer Graphics Fórum, Computer Graphics, Computer Graphics Applications entre outros. (Texto informado pelo autor)",
-    "full_cv_text_length": 103128,
-    "looks_like_full_cv": true,
-    "blocked_or_invalid": false,
-    "sections_count": 13,
-    "detail_json_path": "scrape_results/lattes_full/20260526_212601/raw/K4188696P6_Marcos_de_Oliveira_Lage_Ferreira/full_profile.json",
-    "raw_html_path": "scrape_results/lattes_full/20260526_212601/raw/K4188696P6_Marcos_de_Oliveira_Lage_Ferreira/full_cv.html",
-    "raw_text_path": "scrape_results/lattes_full/20260526_212601/raw/K4188696P6_Marcos_de_Oliveira_Lage_Ferreira/full_cv.txt",
-    "error": null,
-    "sections_available": [
-      "AreasAtuacao",
-      "AtuacaoProfissional",
-      "Bancas",
-      "Citacoes",
-      "Endereco",
-      "Eventos",
-      "FormacaoAcademicaPosDoutorado",
-      "FormacaoAcademicaTitulacao",
-      "Identificacao",
-      "Orientacoes",
-      "ProducaoBibliografica",
-      "ProducaoTecnica",
-      "ProjetosPesquisa"
-    ],
-    "semantic_profile": {
-      "institution_state_uf": {
-        "value": "RJ",
-        "confidence": 1.0,
-        "source": "rule+llm_validated",
-        "reason": "Validação local: sigla RJ corresponde à UF da instituição.",
-        "needs_review": false
-      },
-      "institution_region": {
-        "value": "Sudeste",
-        "confidence": 1.0,
-        "source": "rule+llm_validated",
-        "reason": "Região derivada da UF.",
-        "needs_review": false
-      },
-      "scholarship_category": {
-        "value": "PQ-C",
-        "confidence": 1.0,
-        "source": "rule+llm_validated",
-        "reason": "Categoria derivada do nível da bolsa.",
-        "needs_review": false
-      },
-      "scholarship_level_rank": {
-        "value": 3,
-        "confidence": 1.0,
-        "source": "rule+llm_validated",
-        "reason": "Ranking derivado do nível da bolsa.",
-        "needs_review": false
-      },
-      "doctorate_year": {
-        "value": 2009,
-        "confidence": 1.0,
-        "source": "rule+llm_validated",
-        "reason": "Doutorado confirmado no resumo.",
-        "needs_review": false
-      },
-      "years_since_doctorate": {
-        "value": 17,
-        "confidence": 1.0,
-        "source": "rule+llm_validated",
-        "reason": "Diferença entre ano atual e doutorado confirmada.",
-        "needs_review": false
-      },
-      "profile_language": {
-        "value": "pt",
-        "confidence": 1.0,
-        "source": "rule+llm_validated",
-        "reason": "Resumo em PT confirmado.",
-        "needs_review": false
-      },
-      "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.25,
-        "source": "llm_corrected_rule",
-        "reason": "Gênero não explicitamente indicado no texto.",
-        "needs_review": true
-      },
-      "main_research_area": {
-        "value": "visualization",
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Área principal derivada do resumo: visualização.",
-        "needs_review": false
-      },
-      "secondary_research_areas": {
-        "value": [
-          "visualization",
-          "computer_graphics",
-          "geometry_processing",
-          "data_visualization"
-        ],
-        "confidence": 0.85,
-        "source": "llm",
-        "reason": "Áreas secundárias inferidas a partir do resumo.",
-        "needs_review": false
-      },
-      "research_topics": {
-        "value": [
-          "urban_data_visualization",
-          "visualization",
-          "geometry_processing",
-          "multiphase_fluid_simulation"
-        ],
-        "confidence": 0.85,
-        "source": "llm",
-        "reason": "Principais tópicos de pesquisa derivados do resumo.",
-        "needs_review": false
-      },
-      "methods_and_techniques": {
-        "value": [
-          "visualization",
-          "geometric_processing",
-          "statistical_learning",
-          "fluid_simulation"
-        ],
-        "confidence": 0.8,
-        "source": "llm",
-        "reason": "Métodos mencionados ou implícitos no histórico de pesquisa.",
-        "needs_review": false
-      },
-      "application_domains": {
-        "value": [
-          "urban_visualization",
-          "petroleum_reservoirs"
-        ],
-        "confidence": 0.8,
-        "source": "llm",
-        "reason": "Domínios de aplicação mencionados no resumo.",
-        "needs_review": false
-      },
-      "career_stage": {
-        "value": "senior",
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Indícios de posição de senioridade (Associado IV).",
-        "needs_review": false
-      },
-      "academic_rank": {
-        "value": "Professor Associado IV",
-        "confidence": 0.95,
-        "source": "llm",
-        "reason": "Rank inferred do título no texto.",
-        "needs_review": false
-      },
-      "has_international_experience": {
-        "value": true,
-        "confidence": 1.0,
-        "source": "llm",
-        "reason": "Experiência internacional (NYU; Berlim) descrita.",
-        "needs_review": false
-      },
-      "international_countries": {
-        "value": [
-          "Germany",
-          "United States"
-        ],
-        "confidence": 1.0,
-        "source": "llm",
-        "reason": "Países citados em formação/pós-doutorado/visita.",
-        "needs_review": false
-      },
-      "has_industry_experience": {
-        "value": true,
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Projetos de pesquisa financiados pela PETROBRAS.",
-        "needs_review": false
-      },
-      "industry_organizations": {
-        "value": [
-          "PETROBRAS"
-        ],
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "PETROBRAS citado como financiador/colaboração.",
-        "needs_review": false
-      },
-      "has_management_experience": {
-        "value": true,
-        "confidence": 1.0,
-        "source": "llm",
-        "reason": "Vice-diretor e chairs citados no texto.",
-        "needs_review": false
-      },
-      "management_roles": {
-        "value": [
-          "vice_director_instituto_de_computacao",
-          "general_chair_SIBGRAPI_2017",
-          "program_chair_SIBGRAPI_2019",
-          "cegrapi_committee_member_2018_2020"
-        ],
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Papéis de gestão mencionados no texto.",
-        "needs_review": false
-      },
-      "has_editorial_or_event_experience": {
-        "value": true,
-        "confidence": 1.0,
-        "source": "llm",
-        "reason": "General Chair/Program Chair; revisor de periódicos.",
-        "needs_review": false
-      },
-      "has_patents_or_software_outputs": {
-        "value": false,
-        "confidence": 1.0,
-        "source": "llm",
-        "reason": "Nenhuma patente/saída de software citada.",
-        "needs_review": false
-      },
-      "publication_or_output_focus": {
-        "value": [
-          "journals",
-          "conferences"
-        ],
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Publicações em jornais e conferências citadas.",
-        "needs_review": false
-      },
-      "profile_summary_short": {
-        "value": "Professor Associado IV da UFF com atuação em computação visual e visualização de dados urbanos.",
-        "confidence": 0.95,
-        "source": "llm",
-        "reason": "Resumo curto gerado a partir do texto.",
-        "needs_review": false
-      },
-      "profile_summary_bullets": {
-        "value": [
-          "Graduação em Matemática pela UERJ (2004).",
-          "Mestrado (2006) e Doutorado (2009) em Matemática Aplicada pela PUC-Rio.",
-          "Pós-doutorado na NYU (2015) e pesquisador visitante na NYU (2018).",
-          "Professor Associado IV na UFF e vice-diretor do Instituto de Computação; bolsista PQ-C do CNPq e Cientista do Nosso Estado da FAPERJ."
-        ],
-        "confidence": 0.88,
-        "source": "llm",
-        "reason": "Bullets extraídos do resumo.",
-        "needs_review": false
-      },
-      "search_keywords": {
-        "value": [
-          "computacao_visual",
-          "visualizacao",
-          "dados_urbanos",
-          "simulacao_de_fluidos_multifasicos"
-        ],
-        "confidence": 0.85,
-        "source": "llm",
-        "reason": "Palavras-chave derivadas do resumo.",
-        "needs_review": false
-      },
-      "dashboard_tags": {
-        "value": [
-          "visualization",
-          "urban_data",
-          "urban_visualization",
-          "petroleum_reservoirs"
-        ],
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Tags curtas derivadas do perfil.",
-        "needs_review": false
-      },
-      "chart_suggestions": {
-        "value": [
-          "publication_trends_by_venues",
-          "city_visualization_projects",
-          "research_topics_distribution",
-          "academic_positions_over_time"
-        ],
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Sugestões de gráficos com base no perfil.",
-        "needs_review": false
-      },
-      "data_quality_notes": {
-        "value": [],
-        "confidence": 1.0,
-        "source": "llm",
-        "reason": "Sem alertas de qualidade de dados.",
-        "needs_review": false
-      },
-      "qa_context": {
-        "value": "Perfil de bolsista PQ-C da UFF, com foco em visualização e dados urbanos; doutorado em 2009; NYU; PETROBRAS.",
-        "confidence": 0.95,
-        "source": "llm",
-        "reason": "Contexto para responder perguntas sobre a pessoa.",
         "needs_review": false
       }
     }
@@ -86723,11 +83814,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.0,
-        "source": "rule+llm_validated",
-        "reason": "Sem evidência textual local para inferir sexo.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.96,
+        "source": "llm:unknown_sex_review",
+        "reason": "Nome Marcus é tipicamente masculino; resumo sem conflito.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "high_performance_computing",
@@ -89892,17 +86983,17 @@
     ],
     "semantic_profile": {
       "institution_state_uf": {
-        "value": "unknown",
-        "confidence": 0.99,
-        "source": "rule+llm_validated",
-        "reason": "UF não mapeada no registro.",
+        "value": "PR",
+        "confidence": 1,
+        "source": "rule:normalization",
+        "reason": "UF normalizada pela sigla da instituição: UEL.",
         "needs_review": false
       },
       "institution_region": {
-        "value": "unknown",
-        "confidence": 0.85,
-        "source": "rule+llm_validated",
-        "reason": "Região derivada da UF indisponível.",
+        "value": "Sul",
+        "confidence": 1,
+        "source": "rule:normalization",
+        "reason": "Região normalizada a partir da UF PR.",
         "needs_review": false
       },
       "scholarship_category": {
@@ -93210,11 +90301,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.0,
-        "source": "rule+llm_validated",
-        "reason": "Sem evidência textual local para inferir sexo.",
-        "needs_review": true
+        "value": "female",
+        "confidence": 0.95,
+        "source": "llm:unknown_sex_review",
+        "reason": "Nome próprio Mirella é tipicamente feminino.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "data_science",
@@ -102146,18 +99237,18 @@
     ],
     "semantic_profile": {
       "institution_state_uf": {
-        "value": "unknown",
-        "confidence": 0.2,
-        "source": "rule+llm_validated",
-        "reason": "UF não mapeada para Mackenzie.",
-        "needs_review": true
+        "value": "SP",
+        "confidence": 1,
+        "source": "rule:normalization",
+        "reason": "UF normalizada pela sigla da instituição: MACKENZIE.",
+        "needs_review": false
       },
       "institution_region": {
-        "value": "unknown",
-        "confidence": 0.2,
-        "source": "rule+llm_validated",
-        "reason": "Região desconhecida pela UF.",
-        "needs_review": true
+        "value": "Sudeste",
+        "confidence": 1,
+        "source": "rule:normalization",
+        "reason": "Região normalizada a partir da UF SP.",
+        "needs_review": false
       },
       "scholarship_category": {
         "value": "PQ-2",
@@ -102195,11 +99286,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.2,
-        "source": "llm_corrected_rule",
-        "reason": "Termo não indica gênero.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.98,
+        "source": "llm:unknown_sex_review",
+        "reason": "Nome Pedro Paulo é tipicamente masculino; resumo confirma vínculo docente.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "cellular_automata",
@@ -104154,10 +101245,10 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.3,
-        "source": "llm_corrected_rule",
-        "reason": "Gênero não determinado pelo resumo.",
+        "value": "male",
+        "confidence": 0.8,
+        "source": "llm:unknown_sex_review",
+        "reason": "Resumo usa 'Ele' e 'Dr.' sem indicar feminino.",
         "needs_review": true
       },
       "main_research_area": {
@@ -106028,18 +103119,18 @@
     ],
     "semantic_profile": {
       "institution_state_uf": {
-        "value": "unknown",
-        "confidence": 0.0,
-        "source": "rule+llm_validated",
-        "reason": "Instituição sem UF mapeada: UFJF.",
-        "needs_review": true
+        "value": "MG",
+        "confidence": 1,
+        "source": "rule:normalization",
+        "reason": "UF normalizada pela sigla da instituição: UFJF.",
+        "needs_review": false
       },
       "institution_region": {
-        "value": "unknown",
-        "confidence": 0.0,
-        "source": "rule+llm_validated",
-        "reason": "Região derivada da UF da instituição.",
-        "needs_review": true
+        "value": "Sudeste",
+        "confidence": 1,
+        "source": "rule:normalization",
+        "reason": "Região normalizada a partir da UF MG.",
+        "needs_review": false
       },
       "scholarship_category": {
         "value": "PQ-2",
@@ -108641,10 +105732,10 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.4,
-        "source": "llm_corrected_rule",
-        "reason": "Não há evidência confiável de gênero.",
+        "value": "male",
+        "confidence": 0.8,
+        "source": "llm:unknown_sex_review",
+        "reason": "Resumo usa 'Atualmente é professor' sem marcadores, e 'Rian' tende a ser masculino (evidence fraca).",
         "needs_review": true
       },
       "main_research_area": {
@@ -109960,10 +107051,10 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.4,
-        "source": "llm_corrected_rule",
-        "reason": "Gênero não determinado pelo resumo.",
+        "value": "male",
+        "confidence": 0.75,
+        "source": "llm:unknown_sex_review",
+        "reason": "Nome próprio Ricardo é tipicamente masculino.",
         "needs_review": true
       },
       "main_research_area": {
@@ -110307,10 +107398,10 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.0,
-        "source": "rule+llm_validated",
-        "reason": "Sem evidência textual local para inferir sexo.",
+        "value": "male",
+        "confidence": 0.75,
+        "source": "llm:unknown_sex_review",
+        "reason": "Nome próprio Ricardo é tipicamente masculino.",
         "needs_review": true
       },
       "main_research_area": {
@@ -112547,10 +109638,10 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.4,
-        "source": "llm_corrected_rule",
-        "reason": "Gênero não explicitamente informado; inferência sensível.",
+        "value": "male",
+        "confidence": 0.8,
+        "source": "llm:unknown_sex_review",
+        "reason": "Nome próprio Rodrigo é tipicamente masculino.",
         "needs_review": true
       },
       "main_research_area": {
@@ -114524,11 +111615,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.4,
-        "source": "llm_corrected_rule",
-        "reason": "Não há evidência confiável de gênero no resumo.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.95,
+        "source": "llm:unknown_sex_review",
+        "reason": "Resumo em inglês: 'He is a Full Professor' (masculino).",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "computer_networks",
@@ -119361,11 +116452,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.3,
-        "source": "rule+llm_validated",
-        "reason": "Condição ambígua: marcadores contraditórios.",
-        "needs_review": true
+        "value": "female",
+        "confidence": 0.92,
+        "source": "llm:unknown_sex_review",
+        "reason": "Nome próprio Tatiane é tipicamente feminino.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "artificial_intelligence",
@@ -120967,10 +118058,10 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.4,
-        "source": "llm_corrected_rule",
-        "reason": "Pouca evidência de gênero no resumo.",
+        "value": "male",
+        "confidence": 0.8,
+        "source": "llm:unknown_sex_review",
+        "reason": "Nome próprio Thiago é tipicamente masculino.",
         "needs_review": true
       },
       "main_research_area": {
@@ -123561,10 +120652,10 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.3,
-        "source": "rule+llm_validated",
-        "reason": "Sem evidência textual local para inferir sexo.",
+        "value": "male",
+        "confidence": 0.75,
+        "source": "llm:unknown_sex_review",
+        "reason": "Nome próprio Valmir é tipicamente masculino.",
         "needs_review": true
       },
       "main_research_area": {
@@ -123813,333 +120904,6 @@
     }
   },
   {
-    "name": "Vander Ramos Alves",
-    "institution": "UnB",
-    "scholarship_level": "PQ-C",
-    "match_status": "matched",
-    "lattes_code": "K4767318D6",
-    "lattes_name": "Vander Ramos Alves",
-    "public_lattes_id": "7500979195469357",
-    "lattes_url": "http://lattes.cnpq.br/7500979195469357",
-    "photo_url": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4767318D6",
-    "last_updated": "23/03/2026",
-    "orcid": "https://orcid.org/0000-0003-1573-048X",
-    "summary": "Vander Ramos Alves é Professor Associado 3 do Departamento de Ciência da Computação da Universidade de Brasília. Ele participou do Programa CAPES/Humboldt na Universidade de Passau (Alemanha), sendo a CAPES a instituição de fomento. Anteriormente, ele trabalhou como pesquisador pós-doutor no Fraunhofer Institute for Experimental Software Engineering (Alemanha) e na Lancaster University (Inglaterra), participando de projetos europeus nas áreas de Linha de Produtos de Software, Desenvolvimento de Software Orientado a Aspectos e a Modelos, Ambient Assited Living, e Smart Homes. Ele também trabalhou no IBM Silicon Valley laboratory em San Jose, Califórnia (EUA), na implementação da linha de produtos Information Integration, e é co-autor de uma patente licenciada nos EUA. Ele se interessa por pesquisa, desenvolvimento, e ensino em Engenharia de Software (sub-áreas Linha de Produtos de Software, Desenvolvimento de Software Orientado a Modelos) e em Comando e Controle (C2). Vander é doutor em Ciência da Computação (Engenharia de Software) pela Universidade Federal de Pernambuco. (Texto informado pelo autor)",
-    "full_cv_text_length": 92476,
-    "looks_like_full_cv": true,
-    "blocked_or_invalid": false,
-    "sections_count": 14,
-    "detail_json_path": "scrape_results/lattes_full/20260526_212601/raw/K4767318D6_Vander_Ramos_Alves/full_profile.json",
-    "raw_html_path": "scrape_results/lattes_full/20260526_212601/raw/K4767318D6_Vander_Ramos_Alves/full_cv.html",
-    "raw_text_path": "scrape_results/lattes_full/20260526_212601/raw/K4767318D6_Vander_Ramos_Alves/full_cv.txt",
-    "error": null,
-    "sections_available": [
-      "AreasAtuacao",
-      "AtuacaoProfissional",
-      "Bancas",
-      "Citacoes",
-      "Endereco",
-      "Eventos",
-      "FormacaoAcademicaPosDoutorado",
-      "FormacaoAcademicaTitulacao",
-      "Identificacao",
-      "Orientacoes",
-      "PatentesRegistros",
-      "ProducaoBibliografica",
-      "ProducaoTecnica",
-      "ProjetosPesquisa"
-    ],
-    "semantic_profile": {
-      "institution_state_uf": {
-        "value": "DF",
-        "confidence": 1.0,
-        "source": "rule+llm_validated",
-        "reason": "UF mapeada pela sigla da instituição: DF.",
-        "needs_review": false
-      },
-      "institution_region": {
-        "value": "Centro-Oeste",
-        "confidence": 1.0,
-        "source": "rule+llm_validated",
-        "reason": "Região derivada da UF da instituição.",
-        "needs_review": false
-      },
-      "scholarship_category": {
-        "value": "PQ-C",
-        "confidence": 1.0,
-        "source": "rule+llm_validated",
-        "reason": "Categoria derivada do nível da bolsa.",
-        "needs_review": false
-      },
-      "scholarship_level_rank": {
-        "value": 3,
-        "confidence": 1.0,
-        "source": "rule+llm_validated",
-        "reason": "Ranking simples derivado do nível da bolsa.",
-        "needs_review": false
-      },
-      "doctorate_year": {
-        "value": null,
-        "confidence": 1.0,
-        "source": "rule+llm_validated",
-        "reason": "Ano de doutorado não informado no resumo.",
-        "needs_review": false
-      },
-      "years_since_doctorate": {
-        "value": null,
-        "confidence": 1.0,
-        "source": "rule+llm_validated",
-        "reason": "Sem ano de doutorado para calcular tempo.",
-        "needs_review": false
-      },
-      "profile_language": {
-        "value": "pt",
-        "confidence": 0.95,
-        "source": "rule+llm_validated",
-        "reason": "Resumo em PT.",
-        "needs_review": false
-      },
-      "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.4,
-        "source": "llm_corrected_rule",
-        "reason": "Não há evidência confiável de gênero.",
-        "needs_review": true
-      },
-      "main_research_area": {
-        "value": "software_engineering",
-        "confidence": 0.85,
-        "source": "llm",
-        "reason": "Área principal sugerida pelo resumo.",
-        "needs_review": false
-      },
-      "secondary_research_areas": {
-        "value": [
-          "software_product_line",
-          "model_driven_software_development",
-          "ambient_assisted_living",
-          "smart_homes"
-        ],
-        "confidence": 0.8,
-        "source": "llm",
-        "reason": "Áreas secundárias derivadas do resumo.",
-        "needs_review": false
-      },
-      "research_topics": {
-        "value": [
-          "software_product_line",
-          "model_driven_software_development",
-          "ambient_assisted_living",
-          "smart_homes",
-          "command_and_control"
-        ],
-        "confidence": 0.8,
-        "source": "llm",
-        "reason": "Tópicos de pesquisa derivados do resumo.",
-        "needs_review": false
-      },
-      "methods_and_techniques": {
-        "value": [
-          "software_product_line_engineering",
-          "model_driven_development",
-          "aspect_oriented_software_development",
-          "ambient_assisted_living_technologies",
-          "smart_home_technologies"
-        ],
-        "confidence": 0.8,
-        "source": "llm",
-        "reason": "Métodos citados no resumo.",
-        "needs_review": false
-      },
-      "application_domains": {
-        "value": [],
-        "confidence": 1.0,
-        "source": "llm",
-        "reason": "Ausência explícita de domínio de aplicação.",
-        "needs_review": false
-      },
-      "career_stage": {
-        "value": "senior",
-        "confidence": 0.75,
-        "source": "llm",
-        "reason": "Carreira de professor associado sugere senior.",
-        "needs_review": false
-      },
-      "academic_rank": {
-        "value": "Professor Associado",
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Rank inferido a partir do título.",
-        "needs_review": false
-      },
-      "seniority_level": {
-        "value": "senior",
-        "confidence": 0.8,
-        "source": "llm",
-        "reason": "Carreira acadêmica consolidada.",
-        "needs_review": false
-      },
-      "has_international_experience": {
-        "value": true,
-        "confidence": 0.95,
-        "source": "llm",
-        "reason": "Experiência internacional descrita.",
-        "needs_review": false
-      },
-      "international_countries": {
-        "value": [
-          "Germany",
-          "United Kingdom",
-          "United States"
-        ],
-        "confidence": 0.85,
-        "source": "llm",
-        "reason": "Experiência internacional citada (Alemanha, Inglaterra, EUA).",
-        "needs_review": false
-      },
-      "has_industry_experience": {
-        "value": true,
-        "confidence": 0.95,
-        "source": "llm",
-        "reason": "Experiência na indústria citada (IBM).",
-        "needs_review": false
-      },
-      "industry_organizations": {
-        "value": [
-          "IBM"
-        ],
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Indústria citada.",
-        "needs_review": false
-      },
-      "has_management_experience": {
-        "value": true,
-        "confidence": 0.75,
-        "source": "llm",
-        "reason": "Mensões de comissões e cargos de gestão citadas.",
-        "needs_review": false
-      },
-      "management_roles": {
-        "value": [
-          "Membro da comissão para seleção de candidatos ao mestrado (2010)"
-        ],
-        "confidence": 0.75,
-        "source": "llm",
-        "reason": "Gestão citada.",
-        "needs_review": false
-      },
-      "has_editorial_or_event_experience": {
-        "value": true,
-        "confidence": 0.92,
-        "source": "llm",
-        "reason": "Experiência editorial/eventos citados (revisor, conferências).",
-        "needs_review": false
-      },
-      "has_patents_or_software_outputs": {
-        "value": true,
-        "confidence": 0.92,
-        "source": "llm",
-        "reason": "Patentes/licenciadas citadas.",
-        "needs_review": false
-      },
-      "publication_or_output_focus": {
-        "value": [
-          "journals",
-          "conferences",
-          "patents"
-        ],
-        "confidence": 0.85,
-        "source": "llm",
-        "reason": "Foco de produção em journals, conferences e patents.",
-        "needs_review": false
-      },
-      "profile_summary_short": {
-        "value": "Professor Associado 3 na UnB com atuação em Engenharia de Software e C2.",
-        "confidence": 0.85,
-        "source": "llm",
-        "reason": "Resumo curto para cards.",
-        "needs_review": false
-      },
-      "profile_summary_bullets": {
-        "value": [
-          "Professor Associado 3, UnB, Departamento de Ciência da Computação.",
-          "Experiência internacional: Passau, Fraunhofer IESE, Lancaster, IBM Silicon Valley.",
-          "Interesses: Engenharia de Software (Linha de Produtos de Software; Model-Driven Development) e C2.",
-          "Coautor de patentes licenciadas nos EUA."
-        ],
-        "confidence": 0.8,
-        "source": "llm",
-        "reason": "Bullets curtos para perfil.",
-        "needs_review": false
-      },
-      "search_keywords": {
-        "value": [
-          "vander_ramos_alves",
-          "unb",
-          "engenharia_de_software",
-          "linha_de_produtos_de_software",
-          "model_driven_software_development",
-          "comando_e_controle",
-          "ambient_assisted_living",
-          "smart_homes",
-          "patentes",
-          "fraunhofer_iese",
-          "lancaster_university",
-          "ibm"
-        ],
-        "confidence": 0.85,
-        "source": "llm",
-        "reason": "Palavras-chave para busca.",
-        "needs_review": false
-      },
-      "dashboard_tags": {
-        "value": [
-          "unb",
-          "software_engineering",
-          "international_experience",
-          "patents",
-          "education",
-          "associate_professor",
-          "c2"
-        ],
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Tags para filtros no dashboard.",
-        "needs_review": false
-      },
-      "chart_suggestions": {
-        "value": [
-          "areas_of_interest",
-          "international_experience",
-          "patents_count",
-          "publications_by_type"
-        ],
-        "confidence": 0.8,
-        "source": "llm",
-        "reason": "Agrupamentos sugeridos para gráficos.",
-        "needs_review": false
-      },
-      "data_quality_notes": {
-        "value": [
-          "doctorate_year_missing",
-          "doutorado_year_informação ausente"
-        ],
-        "confidence": 0.8,
-        "source": "llm",
-        "reason": "Verificações de dados incompletas.",
-        "needs_review": false
-      },
-      "qa_context": {
-        "value": "Perguntas sobre Vander Ramos Alves: UnB, PQ-C, áreas de Software Engineering e C2; experiência internacional e patentes.",
-        "confidence": 0.8,
-        "source": "llm",
-        "reason": "Contexto para QA.",
-        "needs_review": false
-      }
-    }
-  },
-  {
     "name": "Vasco Furtado",
     "institution": "UNIFOR",
     "scholarship_level": "PQ-2",
@@ -124227,11 +120991,11 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.0,
-        "source": "rule+llm_validated",
-        "reason": "Sem evidência textual local para sexo.",
-        "needs_review": true
+        "value": "male",
+        "confidence": 0.9,
+        "source": "llm:unknown_sex_review",
+        "reason": "Nome próprio Vasco é tipicamente masculino.",
+        "needs_review": false
       },
       "main_research_area": {
         "value": "artificial_intelligence",
@@ -124472,322 +121236,6 @@
     }
   },
   {
-    "name": "Victor Almeida Campos",
-    "institution": "UFC",
-    "scholarship_level": "PQ-C",
-    "match_status": "matched",
-    "lattes_code": "K4765194E8",
-    "lattes_name": "Victor Almeida Campos",
-    "public_lattes_id": "0802023762311924",
-    "lattes_url": "http://lattes.cnpq.br/0802023762311924",
-    "photo_url": "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4765194E8",
-    "last_updated": "10/11/2025",
-    "orcid": "https://orcid.org/0000-0002-2730-4640",
-    "summary": "Possui graduação em Ciências da Computação pela Universidade Federal do Ceará (2002), mestrado em Ciências da Computação pela Universidade Federal do Ceará (2005) e doutorado em Ciências da Computação pela Universidade Federal do Ceará (2011). Atualmente é professor adjunto da Universidade Federal do Ceará. Tem experiência na área de Ciência da Computação, com ênfase em Análise de Algoritmos e Complexidade de Computação, atuando principalmente nos seguintes temas: teoria de grafos, convexidade em grafos, coloração de grafos e otimização combinatória. (Texto informado pelo autor)",
-    "full_cv_text_length": 67223,
-    "looks_like_full_cv": true,
-    "blocked_or_invalid": false,
-    "sections_count": 12,
-    "detail_json_path": "scrape_results/lattes_full/20260526_212601/raw/K4765194E8_Victor_Almeida_Campos/full_profile.json",
-    "raw_html_path": "scrape_results/lattes_full/20260526_212601/raw/K4765194E8_Victor_Almeida_Campos/full_cv.html",
-    "raw_text_path": "scrape_results/lattes_full/20260526_212601/raw/K4765194E8_Victor_Almeida_Campos/full_cv.txt",
-    "error": null,
-    "sections_available": [
-      "AreasAtuacao",
-      "AtuacaoProfissional",
-      "Bancas",
-      "Citacoes",
-      "Endereco",
-      "Eventos",
-      "FormacaoAcademicaTitulacao",
-      "Identificacao",
-      "Orientacoes",
-      "ProducaoBibliografica",
-      "ProducaoTecnica",
-      "ProjetosPesquisa"
-    ],
-    "semantic_profile": {
-      "institution_state_uf": {
-        "value": "CE",
-        "confidence": 1.0,
-        "source": "rule+llm_validated",
-        "reason": "UF mapeada pela sigla da instituição: UFC.",
-        "needs_review": false
-      },
-      "institution_region": {
-        "value": "Nordeste",
-        "confidence": 1.0,
-        "source": "rule+llm_validated",
-        "reason": "Região derivada da UF da instituição.",
-        "needs_review": false
-      },
-      "scholarship_category": {
-        "value": "PQ-C",
-        "confidence": 1.0,
-        "source": "rule+llm_validated",
-        "reason": "Categoria derivada do nível da bolsa.",
-        "needs_review": false
-      },
-      "scholarship_level_rank": {
-        "value": 3,
-        "confidence": 1.0,
-        "source": "rule+llm_validated",
-        "reason": "Ranking simples derivado do nível da bolsa.",
-        "needs_review": false
-      },
-      "doctorate_year": {
-        "value": 2011,
-        "confidence": 0.88,
-        "source": "rule+llm_validated",
-        "reason": "Ano encontrado em trecho de doutorado no resumo.",
-        "needs_review": false
-      },
-      "years_since_doctorate": {
-        "value": 15,
-        "confidence": 1.0,
-        "source": "rule+llm_validated",
-        "reason": "Diferença entre ano atual e ano de doutorado.",
-        "needs_review": false
-      },
-      "profile_language": {
-        "value": "pt",
-        "confidence": 0.86,
-        "source": "rule+llm_validated",
-        "reason": "Resumo contém marcadores em português.",
-        "needs_review": false
-      },
-      "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.6,
-        "source": "llm_corrected_rule",
-        "reason": "Gênero não pode ser inferido apenas por título.",
-        "needs_review": true
-      },
-      "main_research_area": {
-        "value": "algoritmos_e_complexidade",
-        "confidence": 0.8,
-        "source": "llm",
-        "reason": "Resumo aponta foco em algoritmos e complexidade.",
-        "needs_review": false
-      },
-      "secondary_research_areas": {
-        "value": [
-          "teoria_de_grafos",
-          "convexidade_em_grafos",
-          "coloracao_de_grafos",
-          "otimizacao_combinatoria"
-        ],
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Temas citados: grafos, coloração, convexidade, otimização.",
-        "needs_review": false
-      },
-      "research_topics": {
-        "value": [
-          "teoria_de_grafos",
-          "convexidade_em_grafos",
-          "coloracao_de_grafos",
-          "otimizacao_combinatoria"
-        ],
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Tópicos recorrentes nas atividades: grafos e otimização.",
-        "needs_review": false
-      },
-      "methods_and_techniques": {
-        "value": [
-          "analise_de_algoritmos",
-          "teoria_de_grafos",
-          "coloracao_de_grafos",
-          "otimizacao_combinatoria",
-          "complexidade_de_computacao"
-        ],
-        "confidence": 0.85,
-        "source": "llm",
-        "reason": "Métodos citados: análise, grafos, coloração, otimização.",
-        "needs_review": false
-      },
-      "application_domains": {
-        "value": [],
-        "confidence": 1.0,
-        "source": "llm",
-        "reason": "Nenhum domínio de aplicação explícito no resumo.",
-        "needs_review": false
-      },
-      "career_stage": {
-        "value": "senior",
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Professor adjunto com ampla experiência.",
-        "needs_review": false
-      },
-      "academic_rank": {
-        "value": "professor_adjunto",
-        "confidence": 0.95,
-        "source": "llm",
-        "reason": "Título: professor adjunto.",
-        "needs_review": false
-      },
-      "seniority_level": {
-        "value": "senior",
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Carreira consolidada.",
-        "needs_review": false
-      },
-      "has_international_experience": {
-        "value": true,
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Experiência internacional citada (Canadá).",
-        "needs_review": false
-      },
-      "international_countries": {
-        "value": [
-          "Canada"
-        ],
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Citado Canadá/Canadá em formação/pós-doutorado.",
-        "needs_review": false
-      },
-      "has_industry_experience": {
-        "value": false,
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Nenhuma evidência de indústria no resumo.",
-        "needs_review": false
-      },
-      "industry_organizations": {
-        "value": [],
-        "confidence": 1.0,
-        "source": "llm",
-        "reason": "Sem organizações da indústria citadas.",
-        "needs_review": false
-      },
-      "has_management_experience": {
-        "value": true,
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Há referências a coordenação e papéis de gestão.",
-        "needs_review": false
-      },
-      "management_roles": {
-        "value": [
-          "coordenador",
-          "coordenação de projetos de pesquisa"
-        ],
-        "confidence": 0.75,
-        "source": "llm",
-        "reason": "Papéis gerenciais citados como coordenador/coordenação.",
-        "needs_review": false
-      },
-      "has_editorial_or_event_experience": {
-        "value": true,
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Experiência editorial/eventos citada: workshop, simposio.",
-        "needs_review": false
-      },
-      "has_patents_or_software_outputs": {
-        "value": false,
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Não identificado patente/outputs.",
-        "needs_review": false
-      },
-      "publication_or_output_focus": {
-        "value": [
-          "journal_articles",
-          "conference_proceedings",
-          "workshop_proceedings",
-          "book_chapters"
-        ],
-        "confidence": 0.85,
-        "source": "llm",
-        "reason": "Publicações e eventos citados no CV.",
-        "needs_review": false
-      },
-      "profile_summary_short": {
-        "value": "Professor adjunto da UFC com foco em algoritmos, grafos e otimização.",
-        "confidence": 0.92,
-        "source": "llm",
-        "reason": "Resumo curto gerado a partir do resumo.",
-        "needs_review": false
-      },
-      "profile_summary_bullets": {
-        "value": [
-          "Formação em Ciência da Computação pela UFC (2002, 2005, 2011).",
-          "Experiência em teoria de grafos, coloração de grafos e otimização.",
-          "Atua como professor adjunto na UFC.",
-          "Publica artigos em periódicos e conferências; atua em eventos."
-        ],
-        "confidence": 0.92,
-        "source": "llm",
-        "reason": "Bullets extraídos de formação e atuação.",
-        "needs_review": false
-      },
-      "search_keywords": {
-        "value": [
-          "algoritmos",
-          "complexidade",
-          "teoria_de_grafos",
-          "coloracao_de_grafos",
-          "convexidade_em_grafos",
-          "otimizacao_combinatoria",
-          "ufc",
-          "ceara",
-          "computacao"
-        ],
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Palavras-chave extraídas do resumo.",
-        "needs_review": false
-      },
-      "dashboard_tags": {
-        "value": [
-          "ufc",
-          "ceara",
-          "computacao",
-          "algoritmos",
-          "grafos",
-          "pq_c",
-          "internacional"
-        ],
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Tags para filtros do dashboard.",
-        "needs_review": false
-      },
-      "chart_suggestions": {
-        "value": [
-          "research_area_distribution",
-          "topics_by_keywords",
-          "international_collaborations",
-          "publication_trends"
-        ],
-        "confidence": 0.9,
-        "source": "llm",
-        "reason": "Sugestões de gráficos com base no perfil.",
-        "needs_review": false
-      },
-      "data_quality_notes": {
-        "value": [],
-        "confidence": 1.0,
-        "source": "llm",
-        "reason": "Sem observações de qualidade de dados.",
-        "needs_review": false
-      },
-      "qa_context": {
-        "value": "Victor Almeida Campos, UFC, PQ-C, Doutorado 2011, áreas: teoria de grafos, otimização; experiência internacional Canadá.",
-        "confidence": 0.95,
-        "source": "llm",
-        "reason": "Contexto pronto para perguntas.",
-        "needs_review": false
-      }
-    }
-  },
-  {
     "name": "Victor Ströele de Andrade Menezes",
     "institution": "UFJF",
     "scholarship_level": "PQ-2",
@@ -124824,18 +121272,18 @@
     ],
     "semantic_profile": {
       "institution_state_uf": {
-        "value": "unknown",
-        "confidence": 0.0,
-        "source": "rule+llm_validated",
-        "reason": "Instituição sem UF mapeada: UFJF.",
-        "needs_review": true
+        "value": "MG",
+        "confidence": 1,
+        "source": "rule:normalization",
+        "reason": "UF normalizada pela sigla da instituição: UFJF.",
+        "needs_review": false
       },
       "institution_region": {
-        "value": "unknown",
-        "confidence": 0.0,
-        "source": "rule+llm_validated",
-        "reason": "Região derivada da UF da instituição.",
-        "needs_review": true
+        "value": "Sudeste",
+        "confidence": 1,
+        "source": "rule:normalization",
+        "reason": "Região normalizada a partir da UF MG.",
+        "needs_review": false
       },
       "scholarship_category": {
         "value": "PQ-2",
@@ -127127,10 +123575,10 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.6,
-        "source": "llm_corrected_rule",
-        "reason": "Título não determina sexo com confiabilidade.",
+        "value": "male",
+        "confidence": 0.75,
+        "source": "llm:unknown_sex_review",
+        "reason": "Nome próprio Windson é tipicamente masculino.",
         "needs_review": true
       },
       "main_research_area": {
@@ -128709,10 +125157,10 @@
         "needs_review": false
       },
       "sex_inferred": {
-        "value": "unknown",
-        "confidence": 0.0,
-        "source": "rule+llm_validated",
-        "reason": "Sem evidência textual local para inferir sexo.",
+        "value": "male",
+        "confidence": 0.8,
+        "source": "llm:unknown_sex_review",
+        "reason": "Nome próprio Yuri é tipicamente masculino.",
         "needs_review": true
       },
       "main_research_area": {

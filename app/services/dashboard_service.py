@@ -290,16 +290,37 @@ def build_dashboard_metrics() -> dict:
                     lambda profile: semantic_value(profile, "scholarship_category"),
                     row_limit=30,
                 ),
+                "area_by_scholarship_level": crosstab(
+                    profiles,
+                    lambda profile: semantic_value(profile, "main_research_area"),
+                    lambda profile: profile.get("scholarship_level"),
+                    row_limit=30,
+                ),
                 "institution_by_main_area_top_20": crosstab(
                     profiles,
                     lambda profile: profile.get("institution"),
                     lambda profile: semantic_value(profile, "main_research_area"),
                     row_limit=20,
                 ),
+                "institution_by_sex": crosstab(
+                    profiles,
+                    lambda profile: profile.get("institution"),
+                    lambda profile: semantic_value(profile, "sex_inferred"),
+                ),
+                "state_by_sex": crosstab(
+                    profiles,
+                    lambda profile: semantic_value(profile, "institution_state_uf"),
+                    lambda profile: semantic_value(profile, "sex_inferred"),
+                ),
                 "sex_by_scholarship_category": crosstab(
                     profiles,
                     lambda profile: semantic_value(profile, "sex_inferred"),
                     lambda profile: semantic_value(profile, "scholarship_category"),
+                ),
+                "sex_by_scholarship_level": crosstab(
+                    profiles,
+                    lambda profile: profile.get("scholarship_level"),
+                    lambda profile: semantic_value(profile, "sex_inferred"),
                 ),
                 "sex_by_main_area_top_30": crosstab(
                     profiles,
@@ -314,10 +335,22 @@ def build_dashboard_metrics() -> dict:
                     ),
                     lambda profile: semantic_value(profile, "scholarship_category"),
                 ),
+                "scholarship_level_by_doctorate_age": crosstab(
+                    profiles,
+                    lambda profile: years_since_doctorate_bucket(
+                        semantic_value(profile, "years_since_doctorate")
+                    ),
+                    lambda profile: profile.get("scholarship_level"),
+                ),
                 "region_by_scholarship_category": crosstab(
                     profiles,
                     lambda profile: semantic_value(profile, "institution_region"),
                     lambda profile: semantic_value(profile, "scholarship_category"),
+                ),
+                "region_by_scholarship_level": crosstab(
+                    profiles,
+                    lambda profile: semantic_value(profile, "institution_region"),
+                    lambda profile: profile.get("scholarship_level"),
                 ),
             },
         },

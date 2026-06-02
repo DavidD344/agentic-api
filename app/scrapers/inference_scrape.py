@@ -3,6 +3,7 @@ import json
 import os
 import re
 import sys
+import unicodedata
 from datetime import datetime
 from pathlib import Path
 
@@ -90,7 +91,11 @@ RULE_FIELD_DEFINITIONS = [
         "type": "enum",
         "description": (
             "Inferência sensível e aproximada de sexo/gênero para análise estatística. "
-            "Use male, female ou unknown. Use unknown se houver dúvida."
+            "Use male, female ou unknown. Use principalmente o nome completo. "
+            "Use também marcadores textuais do Lattes como professor/professora, "
+            "pesquisador/pesquisadora, doutor/doutora. "
+            "Só use unknown se for quase impossível inferir pelo nome completo, "
+            "se o nome for realmente ambíguo/incomum, ou se houver evidência conflitante."
         ),
         "allowed_values": ["male", "female", "unknown"],
     },
@@ -273,12 +278,17 @@ CSV_FIELDS = BASE_FIELDS + [
 INSTITUTION_UF = {
     "CEFET-RJ": "RJ",
     "FURG": "RS",
+    "FGV": "RJ",
     "IFCE": "CE",
+    "INMETRO": "RJ",
     "ITA": "SP",
+    "ITV": "PA",
     "LNCC": "RJ",
+    "MACKENZIE": "SP",
     "PUC-RIO": "RJ",
     "PUCRS": "RS",
     "UCB": "DF",
+    "UEL": "PR",
     "UEM": "PR",
     "UERJ": "RJ",
     "UFABC": "SP",
@@ -289,6 +299,7 @@ INSTITUTION_UF = {
     "UFCG": "PB",
     "UFF": "RJ",
     "UFG": "GO",
+    "UFJF": "MG",
     "UFMG": "MG",
     "UFMS": "MS",
     "UFMT": "MT",
@@ -314,7 +325,9 @@ INSTITUTION_UF = {
     "UNIRIO": "RJ",
     "UNISINOS": "RS",
     "UNESP": "SP",
+    "UNIPAMPA": "RS",
     "USP": "SP",
+    "UPE": "PE",
     "UTFPR": "PR",
 }
 
@@ -359,6 +372,84 @@ SEX_TEXT_PATTERNS = [
     ("male", 0.88, r"\bgraduado\b", "Resumo usa o termo graduado."),
 ]
 
+FIRST_NAME_SEX = {
+    "abilio": "male",
+    "adailton": "male",
+    "adenilso": "male",
+    "adenilton": "male",
+    "adiel": "male",
+    "adriano": "male",
+    "adriana": "female",
+    "afonso": "male",
+    "alberto": "male",
+    "alex": "male",
+    "alisson": "male",
+    "aluizio": "male",
+    "andre": "male",
+    "anna": "female",
+    "anselmo": "male",
+    "baldoino": "male",
+    "breno": "male",
+    "bruno": "male",
+    "carlile": "male",
+    "claudia": "female",
+    "cleber": "male",
+    "cristiano": "male",
+    "daniel": "male",
+    "danielo": "male",
+    "denis": "male",
+    "dianne": "female",
+    "diego": "male",
+    "edna": "female",
+    "edson": "male",
+    "eduardo": "male",
+    "emerson": "male",
+    "elisa": "female",
+    "esteban": "male",
+    "estevao": "male",
+    "ezequiel": "male",
+    "fabiano": "male",
+    "fabio": "male",
+    "fernando": "male",
+    "genaina": "female",
+    "geraldo": "male",
+    "gracaliz": "female",
+    "guilherme": "male",
+    "heitor": "male",
+    "jomi": "male",
+    "jose": "male",
+    "julio": "male",
+    "kleinner": "male",
+    "leandro": "male",
+    "luidi": "male",
+    "luis": "male",
+    "marcelo": "male",
+    "marcio": "male",
+    "marcos": "male",
+    "marcus": "male",
+    "maria": "female",
+    "mariana": "female",
+    "michele": "female",
+    "mirella": "female",
+    "nina": "female",
+    "pedro": "male",
+    "rafael": "male",
+    "rian": "male",
+    "ricardo": "male",
+    "renata": "female",
+    "rodrigo": "male",
+    "ronaldo": "male",
+    "simone": "female",
+    "tatiane": "female",
+    "thiago": "male",
+    "valmir": "male",
+    "vander": "male",
+    "vasco": "male",
+    "victor": "male",
+    "windson": "male",
+    "yuri": "male",
+}
+
 EVIDENCE_PATTERNS = [
     ("doctorate", r"\b(doutorado|doutor|doutora|ph\.?d)\b"),
     ("postdoc_or_international", r"\b(p[oó]s-doutorado|p[oó]s-doutoramento|visitante|exterior|internacional|canad[aá]|fran[cç]a|reino unido|estados unidos|eua|alemanha|holanda|b[eé]lgica|portugal|espanha|it[aá]lia)\b"),
@@ -391,6 +482,23 @@ def inferred(value, confidence: float, source: str, reason: str, needs_review: b
 
 def normalize(value: str | None) -> str:
     return " ".join((value or "").split()).casefold()
+
+
+def normalize_name_token(value: str | None) -> str:
+    normalized = unicodedata.normalize("NFKD", value or "")
+    without_accents = "".join(
+        char
+        for char in normalized
+        if not unicodedata.combining(char)
+    )
+
+    return re.sub(r"[^a-zA-Z]", "", without_accents).casefold()
+
+
+def first_name(value: str | None) -> str:
+    parts = re.findall(r"[\wÀ-ÿ]+", value or "", flags=re.UNICODE)
+
+    return normalize_name_token(parts[0]) if parts else ""
 
 
 def detect_language(text: str | None) -> dict:
@@ -506,19 +614,49 @@ def infer_sex_by_text(profile: dict) -> dict | None:
     return max(matches, key=lambda match: match["confidence"])
 
 
+def infer_sex_by_name(profile: dict) -> dict | None:
+    name = profile.get("name") or profile.get("lattes_name") or ""
+    token = first_name(name)
+    value = FIRST_NAME_SEX.get(token)
+
+    if not value:
+        return None
+
+    return inferred(
+        value,
+        0.93,
+        "rule:first_name",
+        f"Primeiro nome comum inferido: {token}.",
+        False,
+    )
+
+
 def build_rule_profile(profile: dict) -> dict:
     institution_uf = detect_institution_uf(profile.get("institution"))
     region_value = REGION_BY_UF.get(institution_uf["value"])
     doctorate_year = infer_doctorate_year(profile.get("summary"))
     scholarship = scholarship_category(profile.get("scholarship_level"))
-    sex = infer_sex_by_text(profile)
+    sex_by_text = infer_sex_by_text(profile)
+    sex_by_name = infer_sex_by_name(profile)
+    sex = sex_by_text or sex_by_name
+
+    if sex_by_text and sex_by_text.get("value") == "unknown" and sex_by_name:
+        sex = sex_by_name
+
+    if (
+        sex_by_text
+        and sex_by_name
+        and sex_by_text.get("value") == "male"
+        and sex_by_name.get("value") == "female"
+    ):
+        sex = sex_by_name
 
     if not sex:
         sex = inferred(
             "unknown",
             0,
             "rule",
-            "Sem evidência textual local para inferir sexo.",
+            "Nome e resumo insuficientes para inferir sexo.",
             True,
         )
 
@@ -683,6 +821,8 @@ def build_rule_validation_prompt(profile: dict, current_semantic_profile: dict) 
         "Use somente os dados fornecidos. Não invente fatos.\n"
         "Para cada campo permitido, repita o value se a regra estiver correta ou corrija se houver evidência forte.\n"
         "Se houver dúvida, use unknown/null e needs_review=true.\n"
+        "Para sex_inferred, use principalmente o nome completo. Não mantenha unknown apenas porque falta marcador textual no resumo. "
+        "Só use unknown se for quase impossível inferir pelo nome completo ou houver conflito real.\n"
         "Cada campo deve ter value, confidence, reason e needs_review.\n"
         "Mantenha cada reason curta, com no máximo 14 palavras.\n\n"
         "Responda apenas JSON válido neste formato:\n"
@@ -744,6 +884,8 @@ def build_llm_prompt(profile: dict, current_semantic_profile: dict) -> str:
         "Você também deve validar as inferências feitas por regra local. Se a regra estiver correta, "
         "repita o mesmo value com confiança alta e explique que validou. Se a regra parecer errada, "
         "corrija o value e marque needs_review=true quando a correção não for óbvia.\n"
+        "Para sex_inferred, use principalmente o nome completo. Não mantenha unknown apenas porque falta marcador textual no resumo. "
+        "Só use unknown se for quase impossível inferir pelo nome completo ou houver conflito real.\n"
         "Você deve retornar TODOS os campos permitidos, tanto os campos de regra quanto os campos "
         "semânticos. Não retorne apenas campos alterados.\n"
         "Cada campo deve ter value, confidence, reason e needs_review.\n"

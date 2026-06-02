@@ -62,9 +62,8 @@
     "qa_context"
   ],
   "sex_counts": {
-    "male": 336,
-    "female": 77,
-    "unknown": 67
+    "male": 397,
+    "female": 83
   },
   "main_area_counts": {
     "operations_research": 2,
@@ -176,7 +175,7 @@
     "graph_theory_and_algorithms": 1,
     "computacao_grafica": 1
   },
-  "needs_review": 401,
+  "needs_review": 390,
   "llm_decisions": 488,
   "llm_errors": 0,
   "llm_error_attempts": 8,

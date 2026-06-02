@@ -1,0 +1,3083 @@
+{
+  "id": "e8df4789-b58a-41d9-af17-89091bc30254",
+  "title": "quais tipos de bolsa e",
+  "created_at": "2026-06-02T15:11:09",
+  "updated_at": "2026-06-02T15:18:08",
+  "messages": [
+    {
+      "id": "80e80e8d-aee1-48b2-b928-9894973b662e",
+      "role": "user",
+      "content": "quais tipos de bolsa e quantas pessoas por cada tipo",
+      "created_at": "2026-06-02T15:11:10",
+      "metadata": {}
+    },
+    {
+      "id": "b0117866-2a2d-4365-97dc-b65ab32713dd",
+      "role": "assistant",
+      "content": "No dataset com **480 perfis**, os tipos de bolsa brutos e suas quantidades são:\n\n- **PQ-C**: 168\n- **PQ-2**: 162\n- **PQ-1D**: 53\n- **PQ-1C**: 29\n- **PQ-1A**: 19\n- **PQ-1B**: 15\n- **PQ-A**: 14\n- **PQ-B**: 14\n- **PQ-SR**: 6\n\nSe for útil para análise, também posso organizar isso por **categoria agregada** (PQ-1, PQ-2, PQ-C etc.) ou calcular os **percentuais** de cada tipo.",
+      "created_at": "2026-06-02T15:11:17",
+      "metadata": {
+        "model": "gpt-5.4",
+        "planner_model": "gpt-5.4-mini",
+        "planner_response_id": "resp_0fde33fea8f58c28006a1f1cbe59308190bf61191da6628b53",
+        "plan": {
+          "tool": "structured_query",
+          "intent": "distribution",
+          "reason": "pergunta pede distribuição exata por tipo de bolsa em todo o dataset",
+          "filters": [],
+          "group_by": "scholarship_level",
+          "order_by": "count_desc",
+          "limit": 10,
+          "answer_hint": "responder com cada tipo de bolsa e a quantidade de pessoas; se útil, mencionar também a categoria agregada ao lado",
+          "_planner_model": "gpt-5.4-mini",
+          "_planner_response_id": "resp_0fde33fea8f58c28006a1f1cbe59308190bf61191da6628b53"
+        },
+        "tool_result": {
+          "tool": "structured_query",
+          "intent": "distribution",
+          "total_profiles": 480,
+          "matched_count": 480,
+          "matched_count_is_broad_candidate_count": false,
+          "validation_required": false,
+          "validation_reason": null,
+          "topic_filters": [],
+          "filters": [],
+          "group_by": "scholarship_level",
+          "examples": [
+            {
+              "name": "Abilio Pereira de Lucena Filho",
+              "institution": "UFRJ",
+              "scholarship_level": "PQ-C",
+              "lattes_url": "http://lattes.cnpq.br/0907883161698484",
+              "institution_state_uf": "RJ",
+              "institution_region": "Sudeste",
+              "scholarship_category": "PQ-C",
+              "sex_inferred": "male",
+              "main_research_area": "operations_research",
+              "secondary_research_areas": [
+                "optimization",
+                "combinatorial_optimization",
+                "integer_programming",
+                "linear_programming"
+              ],
+              "research_topics": [
+                "integer_programming",
+                "branch_and_cut",
+                "cutting_planes",
+                "relax_and_cut",
+                "lagrangean_heuristics",
+                "process_system_engineering"
+              ],
+              "methods_and_techniques": [
+                "branch_and_cut",
+                "cutting_planes",
+                "relax_and_cut",
+                "lagrangean_heuristics",
+                "integer_programming",
+                "strong_formulations",
+                "heuristics"
+              ],
+              "application_domains": [
+                "telecommunications",
+                "engineering",
+                "operations_research"
+              ],
+              "profile_summary_short": "Professor Titular da UFRJ com atuação em Programação Matemática e Otimização.",
+              "profile_summary_bullets": [
+                "Doutorado/pos-doutorados em engenharia com foco em Otimização",
+                "Professor Titular da UFRJ desde 1998",
+                "Experiência internacional: Holanda, Bélgica, França e Reino Unido",
+                "Co-inventor de patente em redes de telecomunicações"
+              ],
+              "search_keywords": [
+                "operations_research",
+                "optimization",
+                "integer_programming",
+                "branch_and_cut",
+                "lagrangean_heuristics",
+                "telecommunications",
+                "COPPE",
+                "UFRJ"
+              ],
+              "dashboard_tags": [
+                "uFRJ",
+                "pq_c",
+                "operations_research",
+                "optimization",
+                "international_experience",
+                "patents"
+              ],
+              "qa_context": "Abilio P. de Lucena Filho, UFRJ, professor titular com foco em Programação Matemática e Otimização, OR; experiência internacional na Holanda, Bélgica, França e Reino Unido; bolsa PQ-C; patente em redes de telecomunicações."
+            },
+            {
+              "name": "Adenilso da Silva Simão",
+              "institution": "USP",
+              "scholarship_level": "PQ-C",
+              "lattes_url": "http://lattes.cnpq.br/9836776931160228",
+              "institution_state_uf": "SP",
+              "institution_region": "Sudeste",
+              "scholarship_category": "PQ-C",
+              "sex_inferred": "male",
+              "main_research_area": "software_engineering",
+              "secondary_research_areas": [
+                "bioinformatics",
+                "programming_languages",
+                "software_testing",
+                "formal_methods"
+              ],
+              "research_topics": [
+                "software_testing",
+                "formal_methods",
+                "programming_languages",
+                "bioinformatics",
+                "data_analysis"
+              ],
+              "methods_and_techniques": [
+                "software_testing",
+                "formal_methods",
+                "programming_languages",
+                "data_analysis"
+              ],
+              "application_domains": [
+                "bioinformatics",
+                "software_development"
+              ],
+              "profile_summary_short": "Professor titular da USP com ênfase em engenharia de software e bioinformática, com atuação em testes de software, métodos formais e linguagens de programação.",
+              "profile_summary_bullets": [
+                "Doutorado pela USP em Ciências da Computação e Matemática Computacional (2004).",
+                "Professor Titular da USP com atuação em engenharia de software e bioinformática.",
+                "Gestão acadêmica: coordenação de cursos/programas, direção do Centro de Informática de São Carlos e vice-diretoria.",
+                "Editor e membro de comitês científicos em periódicos/sociedades."
+              ],
+              "search_keywords": [
+                "software_engineering",
+                "software_testing",
+                "formal_methods",
+                "programming_languages",
+                "bioinformatics",
+                "usp",
+                "doutorado_usp_2004",
+                "postdoc_canada"
+              ],
+              "dashboard_tags": [
+                "software_engineering",
+                "bioinformatics",
+                "leadership",
+                "editorial",
+                "usp",
+                "research_experience"
+              ],
+              "qa_context": "Adenilso da Silva Simão, USP, PQ-C, PhD 2004. Engenharia de software e bioinformática. Gestor acadêmico e editor de journals."
+            },
+            {
+              "name": "Adenilton José da Silva",
+              "institution": "UFPE",
+              "scholarship_level": "PQ-C",
+              "lattes_url": "http://lattes.cnpq.br/0314035098884256",
+              "institution_state_uf": "PE",
+              "institution_region": "Nordeste",
+              "scholarship_category": "PQ-C",
+              "sex_inferred": "male",
+              "main_research_area": "artificial_intelligence",
+              "secondary_research_areas": [
+                "computacao_quântica",
+                "redes_neurais_quânticas",
+                "redes_neurais_artificiais",
+                "inteligencia_artificial"
+              ],
+              "research_topics": [
+                "quantum_computing",
+                "neural_networks",
+                "artificial_intelligence",
+                "machine_learning"
+              ],
+              "methods_and_techniques": [
+                "neural_networks",
+                "quantum_computing",
+                "machine_learning",
+                "ai_research_methods"
+              ],
+              "application_domains": [],
+              "profile_summary_short": "Professor adjunto na UFPE atuando em IA e computação quântica.",
+              "profile_summary_bullets": [
+                "PhD em Ciência da Computação pela UFPE (2015)",
+                "Professor Adjunto na UFPE",
+                "Área de atuação: Inteligência Artificial e Computação Quântica",
+                "Pesquisas em redes neurais quânticas e redes neurais artificiais"
+              ],
+              "search_keywords": [
+                "ufpe",
+                "computacao_quantica",
+                "inteligencia_artificial",
+                "redes_neurais_quânticas",
+                "redes_neurais_artificiais",
+                "aprendizado_de_maquina",
+                "quantum_computing",
+                "professor_adjunto"
+              ],
+              "dashboard_tags": [
+                "ufpe",
+                "ia",
+                "computacao_quantica",
+                "redes_neurais",
+                "revisor",
+                "professor_adjunto"
+              ],
+              "qa_context": "Perfil de Adenilton J. da Silva: UFPE, PQ-C, PhD 2015, IA e computação quântica, professor adjunto, revisões, experiência internacional na África do Sul, produção de software (Qclib)."
+            },
+            {
+              "name": "Adiel Teixeira de Almeida Filho",
+              "institution": "UFPE",
+              "scholarship_level": "PQ-2",
+              "lattes_url": "http://lattes.cnpq.br/9944976090960730",
+              "institution_state_uf": "PE",
+              "institution_region": "Nordeste",
+              "scholarship_category": "PQ-2",
+              "sex_inferred": "male",
+              "main_research_area": "operations_research",
+              "secondary_research_areas": [
+                "decision_analysis",
+                "computational_intelligence",
+                "financial_management",
+                "production_management"
+              ],
+              "research_topics": [
+                "gestão econômica e financeira",
+                "análise de risco",
+                "análise de decisão",
+                "preference learning",
+                "inteligência computacional",
+                "analytics",
+                "pesquisa operacional",
+                "produção",
+                "operações",
+                "manutenção"
+              ],
+              "methods_and_techniques": [
+                "preference learning",
+                "programação linear",
+                "programação linear multiobjetivo",
+                "sistemas de produção",
+                "análise de decisão"
+              ],
+              "application_domains": [
+                "produção",
+                "operações",
+                "manutenção",
+                "gestão financeira"
+              ],
+              "profile_summary_short": "Professor Titular da UFPE em Pesquisa Operacional e áreas correlatas, com forte produção internacional e experiência editorial.",
+              "profile_summary_bullets": [
+                "Professor Titular no Centro de Informática da UFPE.",
+                "Pesquisa em gestão, decisão, risco, inteligência computacional e operações.",
+                "Atuou como pesquisador visitante em Coimbra, Southampton e Poznan.",
+                "Publica em periódicos internacionais, congressos, livros e possui patente."
+              ],
+              "search_keywords": [
+                "pesquisa operacional",
+                "análise de risco",
+                "análise de decisão",
+                "preference learning",
+                "inteligência computacional",
+                "analytics",
+                "gestão econômica e financeira",
+                "produção",
+                "operações",
+                "manutenção",
+                "patente",
+                "editorial"
+              ],
+              "dashboard_tags": [
+                "pq-2",
+                "ufpe",
+                "professor_titular",
+                "pesquisa_operacional",
+                "internacional",
+                "editorial",
+                "patente"
+              ],
+              "qa_context": "Professor Titular da UFPE, bolsista PQ-2 do CNPq, com doutorado em Engenharia de Produção, experiência internacional, publicações e patente."
+            },
+            {
+              "name": "Adriana Santarosa Vivacqua",
+              "institution": "UFRJ",
+              "scholarship_level": "PQ-C",
+              "lattes_url": "http://lattes.cnpq.br/6494676052801758",
+              "institution_state_uf": "RJ",
+              "institution_region": "Sudeste",
+              "scholarship_category": "PQ-C",
+              "sex_inferred": "female",
+              "main_research_area": "human_computer_interaction",
+              "secondary_research_areas": [
+                "work_cooperative_computing",
+                "human_computer_interaction",
+                "computer_supported_cooperative_work",
+                "human_ai_collaboration"
+              ],
+              "research_topics": [
+                "human_data_interaction",
+                "group_software_development_collaboration",
+                "human_ai_collaboration",
+                "cooperative_work"
+              ],
+              "methods_and_techniques": [
+                "human_computer_interaction",
+                "computer_supported_cooperative_work",
+                "multi_agent_systems",
+                "user_interfaces"
+              ],
+              "application_domains": [],
+              "profile_summary_short": "Professora da UFRJ com atuação em IHC e Trabalho Cooperativo.",
+              "profile_summary_bullets": [
+                "Professora no Instituto de Computação da UFRJ.",
+                "Atua em Interação Humano Computador e Trabalho Cooperativo Apoiado por Computador.",
+                "Liderança em ACM SIGCHI (VP Membership).",
+                "Experiência internacional: EUA, Espanha, França."
+              ],
+              "search_keywords": [
+                "interacao_homano_dados",
+                "trabalho_cooperativo_apoiado_por_computador",
+                "colaboracao_humano_ia",
+                "sistemas_multiagente",
+                "acm_sigchi",
+                "ufrj",
+                "interacao_humano_computador"
+              ],
+              "dashboard_tags": [
+                "IHC",
+                "TCAC",
+                "SIGCHI",
+                "UFRJ",
+                "professor_associado",
+                "senior"
+              ],
+              "qa_context": "Adriana Santarosa Vivacqua, professora da UFRJ, com foco em IHC e Trabalho Cooperativo Apoiado por Computador; PhD 2007 pela UFRJ; pós-doutorado na Espanha; atual líder SIGCHI."
+            },
+            {
+              "name": "Adriano Alonso Veloso",
+              "institution": "UFMG",
+              "scholarship_level": "PQ-2",
+              "lattes_url": "http://lattes.cnpq.br/9973021912226739",
+              "institution_state_uf": "MG",
+              "institution_region": "Sudeste",
+              "scholarship_category": "PQ-2",
+              "sex_inferred": "unknown",
+              "main_research_area": "artificial_intelligence",
+              "secondary_research_areas": [
+                "machine_learning",
+                "data_mining",
+                "information_retrieval",
+                "web"
+              ],
+              "research_topics": [
+                "aprendizado_de_maquina",
+                "mineração_de_dados",
+                "recuperação_de_informação",
+                "sistemas_de_computação"
+              ],
+              "methods_and_techniques": [
+                "aprendizado_de_maquina",
+                "mineração_de_dados",
+                "recuperação_de_informação"
+              ],
+              "application_domains": [
+                "web"
+              ],
+              "profile_summary_short": "Professor adjunto da UFMG, PhD em Ciência da Computação pela UFMG (2009), pós-doutor em Cornell (2013).",
+              "profile_summary_bullets": [
+                "PhD em Ciência da Computação pela UFMG (2009)",
+                "Pós-doutorado em Cornell (2013)",
+                "Professor adjunto na UFMG",
+                "Interesses: aprendizado de máquina, recuperação de informação"
+              ],
+              "search_keywords": [
+                "aprendizado_de_maquina",
+                "mineração_de_dados",
+                "recuperação_de_informação",
+                "web",
+                "ufmg",
+                "cnpq_pq2"
+              ],
+              "dashboard_tags": [
+                "machine_learning",
+                "data_mining",
+                "information_retrieval",
+                "web",
+                "ufmg",
+                "cnpq_pq2"
+              ],
+              "qa_context": "Adriano Veloso, UFMG; PQ-2; PhD 2009; pós-doutor em Cornell 2013; professor adjunto; ML e IR; área web."
+            },
+            {
+              "name": "Adriano Lorena Inacio de Oliveira",
+              "institution": "UFPE",
+              "scholarship_level": "PQ-1D",
+              "lattes_url": "http://lattes.cnpq.br/5194381227316437",
+              "institution_state_uf": "PE",
+              "institution_region": "Nordeste",
+              "scholarship_category": "PQ-1",
+              "sex_inferred": "male",
+              "main_research_area": "artificial_intelligence",
+              "secondary_research_areas": [
+                "image_processing",
+                "machine_learning",
+                "neural_networks",
+                "computational_intelligence"
+              ],
+              "research_topics": [
+                "machine_learning",
+                "neural_networks",
+                "computational_intelligence",
+                "ai_applications"
+              ],
+              "methods_and_techniques": [
+                "machine_learning",
+                "neural_networks",
+                "computational_intelligence",
+                "ai_applications"
+              ],
+              "application_domains": [],
+              "profile_summary_short": "Professor Associado 1 da UFPE, bolsista PQ-1D do CNPq, pesquisador de IA e Processamento de Imagens com atuação internacional.",
+              "profile_summary_bullets": [
+                "Doutorado em Ciências da Computação pela UFPE (2004).",
+                "Professor Associado 1 no Centro de Informática da UFPE.",
+                "Bolsista PQ-1D do CNPq.",
+                "Professor Visitante no Canadá (ÉTS, 2018-2019)."
+              ],
+              "search_keywords": [
+                "ufpe",
+                "ia",
+                "inteligencia_artificial",
+                "processamento_de_imagens",
+                "aprendizado_de_maquina",
+                "redes_neurais",
+                "computacao",
+                "professor_associado",
+                "pq-1d",
+                "canada",
+                "ets"
+              ],
+              "dashboard_tags": [
+                "ufpe",
+                "pq1d",
+                "ia",
+                "processamento_imagens",
+                "inteligencia_artificial",
+                "international_experience",
+                "canada",
+                "professor_associado",
+                "senior",
+                "visiting_professor"
+              ],
+              "qa_context": "Perfil de Adriano Lorena Inacio de Oliveira: UFPE, PQ-1D, IA/Processamento de Imagens, doutor 2004, Canadá 2018-2019."
+            },
+            {
+              "name": "Afonso Paiva Neto",
+              "institution": "USP",
+              "scholarship_level": "PQ-2",
+              "lattes_url": "http://lattes.cnpq.br/9274817658247444",
+              "institution_state_uf": "SP",
+              "institution_region": "Sudeste",
+              "scholarship_category": "PQ-2",
+              "sex_inferred": "unknown",
+              "main_research_area": "applied_mathematics",
+              "secondary_research_areas": [
+                "computer_graphics",
+                "geometric_modeling",
+                "computational_fluid_dynamics",
+                "numerical_methods"
+              ],
+              "research_topics": [
+                "computational_graphics",
+                "modeling_of_physical_phenomena",
+                "geometric_modeling",
+                "computational_fluid_dynamics",
+                "numerical_methods"
+              ],
+              "methods_and_techniques": [
+                "SPH",
+                "visualization",
+                "geometric_modeling",
+                "self_validated_numerical_methods",
+                "numerical_methods"
+              ],
+              "application_domains": [],
+              "profile_summary_short": "Matemático aplicado com foco em Computação Gráfica e modelagem computacional.",
+              "profile_summary_bullets": [
+                "Bacharel em Matemática pela UFU (2000)",
+                "Mestrado em Matemática pelo IMPA (2003)",
+                "Doutorado em Matemática pela PUC-Rio (2007)",
+                "Interesses: computação gráfica, modelagem computacional, dinâmica dos fluidos e métodos numéricos auto-validados"
+              ],
+              "search_keywords": [
+                "applied_mathematics",
+                "computer_graphics",
+                "computational_modeling",
+                "geometric_modeling",
+                "computational_fluid_dynamics",
+                "numerical_methods",
+                "self_validated_numerical_methods"
+              ],
+              "dashboard_tags": [
+                "applied_math",
+                "computer_graphics",
+                "fluid_dynamics",
+                "geom_modeling",
+                "numerical_methods",
+                "professor_associado"
+              ],
+              "qa_context": "Afonso Paiva Neto, USP, PQ-2, PhD 2007; áreas: matemática aplicada, computação gráfica; interesses: modelagem computacional, modelagem geométrica, dinâmica dos fluidos, métodos numéricos auto-validados; editor e professor associado."
+            },
+            {
+              "name": "Agma Juci Machado Traina",
+              "institution": "USP",
+              "scholarship_level": "PQ-1B",
+              "lattes_url": "http://lattes.cnpq.br/5136155977351408",
+              "institution_state_uf": "SP",
+              "institution_region": "Sudeste",
+              "scholarship_category": "PQ-1",
+              "sex_inferred": "female",
+              "main_research_area": "graphics_and_databases",
+              "secondary_research_areas": [
+                "image_processing",
+                "content_based_image_retrieval",
+                "databases",
+                "data_visualization"
+              ],
+              "research_topics": [
+                "inteligencia_de_dados",
+                "recuperacao_de_imagens_por_conteudo",
+                "imagens_medicas",
+                "cbir",
+                "consultas_por_similaridade",
+                "extracao_de_caracteristicas_de_imagens",
+                "visualizacao_de_informacoes",
+                "mineracao_de_imagens_e_dados"
+              ],
+              "methods_and_techniques": [
+                "content_based_image_retrieval",
+                "similarity_search",
+                "image_feature_extraction",
+                "data_visualization",
+                "image_mining"
+              ],
+              "application_domains": [
+                "healthcare",
+                "medical_imaging"
+              ],
+              "profile_summary_short": "Professora Titular da USP com foco em processamento gráfico e bases de dados complexos.",
+              "profile_summary_bullets": [
+                "Doutorado em Física Computacional pela USP (1991).",
+                "Pós-doutorado em Computação pela CMU (1998-2000).",
+                "Professora Titular na USP (ICMC).",
+                "Preside CAD da USP desde 2025; supervisionou 60+ alunos de Pós-Graduação."
+              ],
+              "search_keywords": [
+                "computacao_grafica",
+                "bases_de_dados_complexos",
+                "cbir",
+                "recuperacao_de_imagens_por_similaridade",
+                "visualizacao_de_informacoes",
+                "mineração_de_imagens_e_dados",
+                "inteligencia_de_dados",
+                "imagens_medicas"
+              ],
+              "dashboard_tags": [
+                "usp",
+                "icmc",
+                "professor_titular",
+                "graphics",
+                "databases",
+                "leadership",
+                "international_experience"
+              ],
+              "qa_context": "Perfil: USP, professora titular, áreas: processamento gráfico e bancos de dados, formação (1991), CMU, CAD desde 2025, experiência internacional."
+            },
+            {
+              "name": "Ajalmar Rêgo da Rocha Neto",
+              "institution": "IFCE",
+              "scholarship_level": "PQ-2",
+              "lattes_url": "http://lattes.cnpq.br/4524723055652545",
+              "institution_state_uf": "CE",
+              "institution_region": "Nordeste",
+              "scholarship_category": "PQ-2",
+              "sex_inferred": "male",
+              "main_research_area": "artificial_intelligence",
+              "secondary_research_areas": [
+                "machine_learning",
+                "computer_vision",
+                "computer_graphics"
+              ],
+              "research_topics": [
+                "machine_learning",
+                "computer_vision",
+                "computer_graphics"
+              ],
+              "methods_and_techniques": [
+                "neural_networks",
+                "machine_learning",
+                "computer_vision",
+                "computer_graphics"
+              ],
+              "application_domains": [],
+              "profile_summary_short": "Professor do IFCE, pesquisador em IA/ML com bolsa CNPq e produção de patentes e software.",
+              "profile_summary_bullets": [
+                "Mestre (2006) e Doutor (2011) em Inteligência Artificial.",
+                "Professor do IFCE desde 2007; coordena o LIA no PPGCC.",
+                "Bolsista de Produtividade em Pesquisa do CNPq (Nível 2).",
+                "Publica >80 artigos; patente concedida e registros de software."
+              ],
+              "search_keywords": [
+                "inteligencia_artificial",
+                "aprendizado_de_maquinas",
+                "visao_computacional",
+                "computacao_grafica",
+                "machine_learning",
+                "portugal",
+                "ifce",
+                "lia",
+                "ppgcc",
+                "cnpq"
+              ],
+              "dashboard_tags": [
+                "ia",
+                "ml",
+                "professor",
+                "bolsa_cnpq",
+                "internacional",
+                "coordenador",
+                "patents",
+                "software"
+              ],
+              "qa_context": "Perfil de pesquisador em IA/ML com doutorado em 2011; bolsista CNPq no triênio 2024-2027; professor no IFCE; coopera com Portugal/Espanha; >80 artigos e patente."
+            }
+          ],
+          "groups": [
+            {
+              "label": "PQ-C",
+              "count": 168
+            },
+            {
+              "label": "PQ-2",
+              "count": 162
+            },
+            {
+              "label": "PQ-1D",
+              "count": 53
+            },
+            {
+              "label": "PQ-1C",
+              "count": 29
+            },
+            {
+              "label": "PQ-1A",
+              "count": 19
+            },
+            {
+              "label": "PQ-1B",
+              "count": 15
+            },
+            {
+              "label": "PQ-A",
+              "count": 14
+            },
+            {
+              "label": "PQ-B",
+              "count": 14
+            },
+            {
+              "label": "PQ-SR",
+              "count": 6
+            }
+          ]
+        },
+        "context_mode": "structured_query",
+        "vector_store_id": "vs_6a18a341349c8191a796dad6bb55d3f0",
+        "max_num_results": 0,
+        "response_id": "resp_00d8b1da26194092006a1f1cc246e881a2836f2e5c699e85e5",
+        "annotations": []
+      }
+    },
+    {
+      "id": "41ae7a7f-a1eb-4f7c-95ab-6ba81d9dd398",
+      "role": "user",
+      "content": "Qual a quantidade total de bolsistas? Quantas pessoas são da USP? Quantas pessoas são da UFMG? Quantas instituições diferentes existem no dataset? Quantas pessoas são da região Nordeste?",
+      "created_at": "2026-06-02T15:15:43",
+      "metadata": {}
+    },
+    {
+      "id": "a9c743d7-c67f-43e9-bae8-851a39bec61d",
+      "role": "assistant",
+      "content": "Aqui estão as quantidades pedidas, com base no resultado estruturado do dataset:\n\n- **Quantidade total de bolsistas/perfis:** **480**\n- **Pessoas da USP:** **46**\n- **Pessoas da UFMG:** **41**\n- **Instituições diferentes no dataset:** **64**\n- **Pessoas da região Nordeste:** **105**\n\nSe quiser, também posso resumir isso em formato de **tabela** ou comparar **USP/UFMG versus demais instituições líderes**.",
+      "created_at": "2026-06-02T15:15:48",
+      "metadata": {
+        "model": "gpt-5.4",
+        "planner_model": "gpt-5.4-mini",
+        "planner_response_id": "resp_052f613c82ad737b006a1f1dd0a014819e9de59b3e9d0a46c3",
+        "plan": {
+          "tool": "structured_query",
+          "intent": "count",
+          "reason": "a pergunta reúne contagens exatas e uma métrica de cardinalidade sobre o dataset inteiro",
+          "filters": [],
+          "group_by": null,
+          "order_by": null,
+          "limit": 10,
+          "answer_hint": "responder com as cinco quantidades solicitadas em uma lista clara",
+          "_planner_model": "gpt-5.4-mini",
+          "_planner_response_id": "resp_052f613c82ad737b006a1f1dd0a014819e9de59b3e9d0a46c3"
+        },
+        "tool_result": {
+          "tool": "structured_query",
+          "intent": "count",
+          "total_profiles": 480,
+          "matched_count": 480,
+          "matched_count_is_broad_candidate_count": false,
+          "validation_required": false,
+          "validation_reason": null,
+          "topic_filters": [],
+          "filters": [],
+          "group_by": null,
+          "examples": [
+            {
+              "name": "Abilio Pereira de Lucena Filho",
+              "institution": "UFRJ",
+              "scholarship_level": "PQ-C",
+              "lattes_url": "http://lattes.cnpq.br/0907883161698484",
+              "institution_state_uf": "RJ",
+              "institution_region": "Sudeste",
+              "scholarship_category": "PQ-C",
+              "sex_inferred": "male",
+              "main_research_area": "operations_research",
+              "secondary_research_areas": [
+                "optimization",
+                "combinatorial_optimization",
+                "integer_programming",
+                "linear_programming"
+              ],
+              "research_topics": [
+                "integer_programming",
+                "branch_and_cut",
+                "cutting_planes",
+                "relax_and_cut",
+                "lagrangean_heuristics",
+                "process_system_engineering"
+              ],
+              "methods_and_techniques": [
+                "branch_and_cut",
+                "cutting_planes",
+                "relax_and_cut",
+                "lagrangean_heuristics",
+                "integer_programming",
+                "strong_formulations",
+                "heuristics"
+              ],
+              "application_domains": [
+                "telecommunications",
+                "engineering",
+                "operations_research"
+              ],
+              "profile_summary_short": "Professor Titular da UFRJ com atuação em Programação Matemática e Otimização.",
+              "profile_summary_bullets": [
+                "Doutorado/pos-doutorados em engenharia com foco em Otimização",
+                "Professor Titular da UFRJ desde 1998",
+                "Experiência internacional: Holanda, Bélgica, França e Reino Unido",
+                "Co-inventor de patente em redes de telecomunicações"
+              ],
+              "search_keywords": [
+                "operations_research",
+                "optimization",
+                "integer_programming",
+                "branch_and_cut",
+                "lagrangean_heuristics",
+                "telecommunications",
+                "COPPE",
+                "UFRJ"
+              ],
+              "dashboard_tags": [
+                "uFRJ",
+                "pq_c",
+                "operations_research",
+                "optimization",
+                "international_experience",
+                "patents"
+              ],
+              "qa_context": "Abilio P. de Lucena Filho, UFRJ, professor titular com foco em Programação Matemática e Otimização, OR; experiência internacional na Holanda, Bélgica, França e Reino Unido; bolsa PQ-C; patente em redes de telecomunicações."
+            },
+            {
+              "name": "Adenilso da Silva Simão",
+              "institution": "USP",
+              "scholarship_level": "PQ-C",
+              "lattes_url": "http://lattes.cnpq.br/9836776931160228",
+              "institution_state_uf": "SP",
+              "institution_region": "Sudeste",
+              "scholarship_category": "PQ-C",
+              "sex_inferred": "male",
+              "main_research_area": "software_engineering",
+              "secondary_research_areas": [
+                "bioinformatics",
+                "programming_languages",
+                "software_testing",
+                "formal_methods"
+              ],
+              "research_topics": [
+                "software_testing",
+                "formal_methods",
+                "programming_languages",
+                "bioinformatics",
+                "data_analysis"
+              ],
+              "methods_and_techniques": [
+                "software_testing",
+                "formal_methods",
+                "programming_languages",
+                "data_analysis"
+              ],
+              "application_domains": [
+                "bioinformatics",
+                "software_development"
+              ],
+              "profile_summary_short": "Professor titular da USP com ênfase em engenharia de software e bioinformática, com atuação em testes de software, métodos formais e linguagens de programação.",
+              "profile_summary_bullets": [
+                "Doutorado pela USP em Ciências da Computação e Matemática Computacional (2004).",
+                "Professor Titular da USP com atuação em engenharia de software e bioinformática.",
+                "Gestão acadêmica: coordenação de cursos/programas, direção do Centro de Informática de São Carlos e vice-diretoria.",
+                "Editor e membro de comitês científicos em periódicos/sociedades."
+              ],
+              "search_keywords": [
+                "software_engineering",
+                "software_testing",
+                "formal_methods",
+                "programming_languages",
+                "bioinformatics",
+                "usp",
+                "doutorado_usp_2004",
+                "postdoc_canada"
+              ],
+              "dashboard_tags": [
+                "software_engineering",
+                "bioinformatics",
+                "leadership",
+                "editorial",
+                "usp",
+                "research_experience"
+              ],
+              "qa_context": "Adenilso da Silva Simão, USP, PQ-C, PhD 2004. Engenharia de software e bioinformática. Gestor acadêmico e editor de journals."
+            },
+            {
+              "name": "Adenilton José da Silva",
+              "institution": "UFPE",
+              "scholarship_level": "PQ-C",
+              "lattes_url": "http://lattes.cnpq.br/0314035098884256",
+              "institution_state_uf": "PE",
+              "institution_region": "Nordeste",
+              "scholarship_category": "PQ-C",
+              "sex_inferred": "male",
+              "main_research_area": "artificial_intelligence",
+              "secondary_research_areas": [
+                "computacao_quântica",
+                "redes_neurais_quânticas",
+                "redes_neurais_artificiais",
+                "inteligencia_artificial"
+              ],
+              "research_topics": [
+                "quantum_computing",
+                "neural_networks",
+                "artificial_intelligence",
+                "machine_learning"
+              ],
+              "methods_and_techniques": [
+                "neural_networks",
+                "quantum_computing",
+                "machine_learning",
+                "ai_research_methods"
+              ],
+              "application_domains": [],
+              "profile_summary_short": "Professor adjunto na UFPE atuando em IA e computação quântica.",
+              "profile_summary_bullets": [
+                "PhD em Ciência da Computação pela UFPE (2015)",
+                "Professor Adjunto na UFPE",
+                "Área de atuação: Inteligência Artificial e Computação Quântica",
+                "Pesquisas em redes neurais quânticas e redes neurais artificiais"
+              ],
+              "search_keywords": [
+                "ufpe",
+                "computacao_quantica",
+                "inteligencia_artificial",
+                "redes_neurais_quânticas",
+                "redes_neurais_artificiais",
+                "aprendizado_de_maquina",
+                "quantum_computing",
+                "professor_adjunto"
+              ],
+              "dashboard_tags": [
+                "ufpe",
+                "ia",
+                "computacao_quantica",
+                "redes_neurais",
+                "revisor",
+                "professor_adjunto"
+              ],
+              "qa_context": "Perfil de Adenilton J. da Silva: UFPE, PQ-C, PhD 2015, IA e computação quântica, professor adjunto, revisões, experiência internacional na África do Sul, produção de software (Qclib)."
+            },
+            {
+              "name": "Adiel Teixeira de Almeida Filho",
+              "institution": "UFPE",
+              "scholarship_level": "PQ-2",
+              "lattes_url": "http://lattes.cnpq.br/9944976090960730",
+              "institution_state_uf": "PE",
+              "institution_region": "Nordeste",
+              "scholarship_category": "PQ-2",
+              "sex_inferred": "male",
+              "main_research_area": "operations_research",
+              "secondary_research_areas": [
+                "decision_analysis",
+                "computational_intelligence",
+                "financial_management",
+                "production_management"
+              ],
+              "research_topics": [
+                "gestão econômica e financeira",
+                "análise de risco",
+                "análise de decisão",
+                "preference learning",
+                "inteligência computacional",
+                "analytics",
+                "pesquisa operacional",
+                "produção",
+                "operações",
+                "manutenção"
+              ],
+              "methods_and_techniques": [
+                "preference learning",
+                "programação linear",
+                "programação linear multiobjetivo",
+                "sistemas de produção",
+                "análise de decisão"
+              ],
+              "application_domains": [
+                "produção",
+                "operações",
+                "manutenção",
+                "gestão financeira"
+              ],
+              "profile_summary_short": "Professor Titular da UFPE em Pesquisa Operacional e áreas correlatas, com forte produção internacional e experiência editorial.",
+              "profile_summary_bullets": [
+                "Professor Titular no Centro de Informática da UFPE.",
+                "Pesquisa em gestão, decisão, risco, inteligência computacional e operações.",
+                "Atuou como pesquisador visitante em Coimbra, Southampton e Poznan.",
+                "Publica em periódicos internacionais, congressos, livros e possui patente."
+              ],
+              "search_keywords": [
+                "pesquisa operacional",
+                "análise de risco",
+                "análise de decisão",
+                "preference learning",
+                "inteligência computacional",
+                "analytics",
+                "gestão econômica e financeira",
+                "produção",
+                "operações",
+                "manutenção",
+                "patente",
+                "editorial"
+              ],
+              "dashboard_tags": [
+                "pq-2",
+                "ufpe",
+                "professor_titular",
+                "pesquisa_operacional",
+                "internacional",
+                "editorial",
+                "patente"
+              ],
+              "qa_context": "Professor Titular da UFPE, bolsista PQ-2 do CNPq, com doutorado em Engenharia de Produção, experiência internacional, publicações e patente."
+            },
+            {
+              "name": "Adriana Santarosa Vivacqua",
+              "institution": "UFRJ",
+              "scholarship_level": "PQ-C",
+              "lattes_url": "http://lattes.cnpq.br/6494676052801758",
+              "institution_state_uf": "RJ",
+              "institution_region": "Sudeste",
+              "scholarship_category": "PQ-C",
+              "sex_inferred": "female",
+              "main_research_area": "human_computer_interaction",
+              "secondary_research_areas": [
+                "work_cooperative_computing",
+                "human_computer_interaction",
+                "computer_supported_cooperative_work",
+                "human_ai_collaboration"
+              ],
+              "research_topics": [
+                "human_data_interaction",
+                "group_software_development_collaboration",
+                "human_ai_collaboration",
+                "cooperative_work"
+              ],
+              "methods_and_techniques": [
+                "human_computer_interaction",
+                "computer_supported_cooperative_work",
+                "multi_agent_systems",
+                "user_interfaces"
+              ],
+              "application_domains": [],
+              "profile_summary_short": "Professora da UFRJ com atuação em IHC e Trabalho Cooperativo.",
+              "profile_summary_bullets": [
+                "Professora no Instituto de Computação da UFRJ.",
+                "Atua em Interação Humano Computador e Trabalho Cooperativo Apoiado por Computador.",
+                "Liderança em ACM SIGCHI (VP Membership).",
+                "Experiência internacional: EUA, Espanha, França."
+              ],
+              "search_keywords": [
+                "interacao_homano_dados",
+                "trabalho_cooperativo_apoiado_por_computador",
+                "colaboracao_humano_ia",
+                "sistemas_multiagente",
+                "acm_sigchi",
+                "ufrj",
+                "interacao_humano_computador"
+              ],
+              "dashboard_tags": [
+                "IHC",
+                "TCAC",
+                "SIGCHI",
+                "UFRJ",
+                "professor_associado",
+                "senior"
+              ],
+              "qa_context": "Adriana Santarosa Vivacqua, professora da UFRJ, com foco em IHC e Trabalho Cooperativo Apoiado por Computador; PhD 2007 pela UFRJ; pós-doutorado na Espanha; atual líder SIGCHI."
+            },
+            {
+              "name": "Adriano Alonso Veloso",
+              "institution": "UFMG",
+              "scholarship_level": "PQ-2",
+              "lattes_url": "http://lattes.cnpq.br/9973021912226739",
+              "institution_state_uf": "MG",
+              "institution_region": "Sudeste",
+              "scholarship_category": "PQ-2",
+              "sex_inferred": "unknown",
+              "main_research_area": "artificial_intelligence",
+              "secondary_research_areas": [
+                "machine_learning",
+                "data_mining",
+                "information_retrieval",
+                "web"
+              ],
+              "research_topics": [
+                "aprendizado_de_maquina",
+                "mineração_de_dados",
+                "recuperação_de_informação",
+                "sistemas_de_computação"
+              ],
+              "methods_and_techniques": [
+                "aprendizado_de_maquina",
+                "mineração_de_dados",
+                "recuperação_de_informação"
+              ],
+              "application_domains": [
+                "web"
+              ],
+              "profile_summary_short": "Professor adjunto da UFMG, PhD em Ciência da Computação pela UFMG (2009), pós-doutor em Cornell (2013).",
+              "profile_summary_bullets": [
+                "PhD em Ciência da Computação pela UFMG (2009)",
+                "Pós-doutorado em Cornell (2013)",
+                "Professor adjunto na UFMG",
+                "Interesses: aprendizado de máquina, recuperação de informação"
+              ],
+              "search_keywords": [
+                "aprendizado_de_maquina",
+                "mineração_de_dados",
+                "recuperação_de_informação",
+                "web",
+                "ufmg",
+                "cnpq_pq2"
+              ],
+              "dashboard_tags": [
+                "machine_learning",
+                "data_mining",
+                "information_retrieval",
+                "web",
+                "ufmg",
+                "cnpq_pq2"
+              ],
+              "qa_context": "Adriano Veloso, UFMG; PQ-2; PhD 2009; pós-doutor em Cornell 2013; professor adjunto; ML e IR; área web."
+            },
+            {
+              "name": "Adriano Lorena Inacio de Oliveira",
+              "institution": "UFPE",
+              "scholarship_level": "PQ-1D",
+              "lattes_url": "http://lattes.cnpq.br/5194381227316437",
+              "institution_state_uf": "PE",
+              "institution_region": "Nordeste",
+              "scholarship_category": "PQ-1",
+              "sex_inferred": "male",
+              "main_research_area": "artificial_intelligence",
+              "secondary_research_areas": [
+                "image_processing",
+                "machine_learning",
+                "neural_networks",
+                "computational_intelligence"
+              ],
+              "research_topics": [
+                "machine_learning",
+                "neural_networks",
+                "computational_intelligence",
+                "ai_applications"
+              ],
+              "methods_and_techniques": [
+                "machine_learning",
+                "neural_networks",
+                "computational_intelligence",
+                "ai_applications"
+              ],
+              "application_domains": [],
+              "profile_summary_short": "Professor Associado 1 da UFPE, bolsista PQ-1D do CNPq, pesquisador de IA e Processamento de Imagens com atuação internacional.",
+              "profile_summary_bullets": [
+                "Doutorado em Ciências da Computação pela UFPE (2004).",
+                "Professor Associado 1 no Centro de Informática da UFPE.",
+                "Bolsista PQ-1D do CNPq.",
+                "Professor Visitante no Canadá (ÉTS, 2018-2019)."
+              ],
+              "search_keywords": [
+                "ufpe",
+                "ia",
+                "inteligencia_artificial",
+                "processamento_de_imagens",
+                "aprendizado_de_maquina",
+                "redes_neurais",
+                "computacao",
+                "professor_associado",
+                "pq-1d",
+                "canada",
+                "ets"
+              ],
+              "dashboard_tags": [
+                "ufpe",
+                "pq1d",
+                "ia",
+                "processamento_imagens",
+                "inteligencia_artificial",
+                "international_experience",
+                "canada",
+                "professor_associado",
+                "senior",
+                "visiting_professor"
+              ],
+              "qa_context": "Perfil de Adriano Lorena Inacio de Oliveira: UFPE, PQ-1D, IA/Processamento de Imagens, doutor 2004, Canadá 2018-2019."
+            },
+            {
+              "name": "Afonso Paiva Neto",
+              "institution": "USP",
+              "scholarship_level": "PQ-2",
+              "lattes_url": "http://lattes.cnpq.br/9274817658247444",
+              "institution_state_uf": "SP",
+              "institution_region": "Sudeste",
+              "scholarship_category": "PQ-2",
+              "sex_inferred": "unknown",
+              "main_research_area": "applied_mathematics",
+              "secondary_research_areas": [
+                "computer_graphics",
+                "geometric_modeling",
+                "computational_fluid_dynamics",
+                "numerical_methods"
+              ],
+              "research_topics": [
+                "computational_graphics",
+                "modeling_of_physical_phenomena",
+                "geometric_modeling",
+                "computational_fluid_dynamics",
+                "numerical_methods"
+              ],
+              "methods_and_techniques": [
+                "SPH",
+                "visualization",
+                "geometric_modeling",
+                "self_validated_numerical_methods",
+                "numerical_methods"
+              ],
+              "application_domains": [],
+              "profile_summary_short": "Matemático aplicado com foco em Computação Gráfica e modelagem computacional.",
+              "profile_summary_bullets": [
+                "Bacharel em Matemática pela UFU (2000)",
+                "Mestrado em Matemática pelo IMPA (2003)",
+                "Doutorado em Matemática pela PUC-Rio (2007)",
+                "Interesses: computação gráfica, modelagem computacional, dinâmica dos fluidos e métodos numéricos auto-validados"
+              ],
+              "search_keywords": [
+                "applied_mathematics",
+                "computer_graphics",
+                "computational_modeling",
+                "geometric_modeling",
+                "computational_fluid_dynamics",
+                "numerical_methods",
+                "self_validated_numerical_methods"
+              ],
+              "dashboard_tags": [
+                "applied_math",
+                "computer_graphics",
+                "fluid_dynamics",
+                "geom_modeling",
+                "numerical_methods",
+                "professor_associado"
+              ],
+              "qa_context": "Afonso Paiva Neto, USP, PQ-2, PhD 2007; áreas: matemática aplicada, computação gráfica; interesses: modelagem computacional, modelagem geométrica, dinâmica dos fluidos, métodos numéricos auto-validados; editor e professor associado."
+            },
+            {
+              "name": "Agma Juci Machado Traina",
+              "institution": "USP",
+              "scholarship_level": "PQ-1B",
+              "lattes_url": "http://lattes.cnpq.br/5136155977351408",
+              "institution_state_uf": "SP",
+              "institution_region": "Sudeste",
+              "scholarship_category": "PQ-1",
+              "sex_inferred": "female",
+              "main_research_area": "graphics_and_databases",
+              "secondary_research_areas": [
+                "image_processing",
+                "content_based_image_retrieval",
+                "databases",
+                "data_visualization"
+              ],
+              "research_topics": [
+                "inteligencia_de_dados",
+                "recuperacao_de_imagens_por_conteudo",
+                "imagens_medicas",
+                "cbir",
+                "consultas_por_similaridade",
+                "extracao_de_caracteristicas_de_imagens",
+                "visualizacao_de_informacoes",
+                "mineracao_de_imagens_e_dados"
+              ],
+              "methods_and_techniques": [
+                "content_based_image_retrieval",
+                "similarity_search",
+                "image_feature_extraction",
+                "data_visualization",
+                "image_mining"
+              ],
+              "application_domains": [
+                "healthcare",
+                "medical_imaging"
+              ],
+              "profile_summary_short": "Professora Titular da USP com foco em processamento gráfico e bases de dados complexos.",
+              "profile_summary_bullets": [
+                "Doutorado em Física Computacional pela USP (1991).",
+                "Pós-doutorado em Computação pela CMU (1998-2000).",
+                "Professora Titular na USP (ICMC).",
+                "Preside CAD da USP desde 2025; supervisionou 60+ alunos de Pós-Graduação."
+              ],
+              "search_keywords": [
+                "computacao_grafica",
+                "bases_de_dados_complexos",
+                "cbir",
+                "recuperacao_de_imagens_por_similaridade",
+                "visualizacao_de_informacoes",
+                "mineração_de_imagens_e_dados",
+                "inteligencia_de_dados",
+                "imagens_medicas"
+              ],
+              "dashboard_tags": [
+                "usp",
+                "icmc",
+                "professor_titular",
+                "graphics",
+                "databases",
+                "leadership",
+                "international_experience"
+              ],
+              "qa_context": "Perfil: USP, professora titular, áreas: processamento gráfico e bancos de dados, formação (1991), CMU, CAD desde 2025, experiência internacional."
+            },
+            {
+              "name": "Ajalmar Rêgo da Rocha Neto",
+              "institution": "IFCE",
+              "scholarship_level": "PQ-2",
+              "lattes_url": "http://lattes.cnpq.br/4524723055652545",
+              "institution_state_uf": "CE",
+              "institution_region": "Nordeste",
+              "scholarship_category": "PQ-2",
+              "sex_inferred": "male",
+              "main_research_area": "artificial_intelligence",
+              "secondary_research_areas": [
+                "machine_learning",
+                "computer_vision",
+                "computer_graphics"
+              ],
+              "research_topics": [
+                "machine_learning",
+                "computer_vision",
+                "computer_graphics"
+              ],
+              "methods_and_techniques": [
+                "neural_networks",
+                "machine_learning",
+                "computer_vision",
+                "computer_graphics"
+              ],
+              "application_domains": [],
+              "profile_summary_short": "Professor do IFCE, pesquisador em IA/ML com bolsa CNPq e produção de patentes e software.",
+              "profile_summary_bullets": [
+                "Mestre (2006) e Doutor (2011) em Inteligência Artificial.",
+                "Professor do IFCE desde 2007; coordena o LIA no PPGCC.",
+                "Bolsista de Produtividade em Pesquisa do CNPq (Nível 2).",
+                "Publica >80 artigos; patente concedida e registros de software."
+              ],
+              "search_keywords": [
+                "inteligencia_artificial",
+                "aprendizado_de_maquinas",
+                "visao_computacional",
+                "computacao_grafica",
+                "machine_learning",
+                "portugal",
+                "ifce",
+                "lia",
+                "ppgcc",
+                "cnpq"
+              ],
+              "dashboard_tags": [
+                "ia",
+                "ml",
+                "professor",
+                "bolsa_cnpq",
+                "internacional",
+                "coordenador",
+                "patents",
+                "software"
+              ],
+              "qa_context": "Perfil de pesquisador em IA/ML com doutorado em 2011; bolsista CNPq no triênio 2024-2027; professor no IFCE; coopera com Portugal/Espanha; >80 artigos e patente."
+            }
+          ]
+        },
+        "context_mode": "structured_query",
+        "vector_store_id": "vs_6a18a341349c8191a796dad6bb55d3f0",
+        "max_num_results": 0,
+        "response_id": "resp_0e1500e68c82cb68006a1f1dd23234819e84a4f3ece9ba79f3",
+        "annotations": []
+      }
+    },
+    {
+      "id": "6f1a4e22-baad-4c61-b696-f8b54aacff4d",
+      "role": "user",
+      "content": "Quais são os tipos de bolsa e suas quantidades? Qual a distribuição por região? Quantas pessoas por sexo inferido? Qual a distribuição por UF? Quais instituições têm mais bolsistas?",
+      "created_at": "2026-06-02T15:16:04",
+      "metadata": {}
+    },
+    {
+      "id": "98a7c683-c3bb-4793-8b25-54709474a58b",
+      "role": "assistant",
+      "content": "Com base nas métricas agregadas do dataset de **480 perfis** e na base de perfis consultada :\n\n**Tipos de bolsa (nível bruto)**\n- **PQ-C:** 168\n- **PQ-2:** 162\n- **PQ-1D:** 53\n- **PQ-1C:** 29\n- **PQ-1A:** 19\n- **PQ-1B:** 15\n- **PQ-A:** 14\n- **PQ-B:** 14\n- **PQ-SR:** 6 \n\n**Distribuição por região**\n- **Sudeste:** 259\n- **Nordeste:** 105\n- **Sul:** 80\n- **Centro-Oeste:** 15\n- **Norte:** 10\n- **unknown:** 11 \n\n**Pessoas por sexo inferido**\n- **male:** 336\n- **female:** 77\n- **unknown:** 67 \n\n**Distribuição por UF**\n- **SP:** 102\n- **RJ:** 82\n- **MG:** 66\n- **RS:** 47\n- **PE:** 43\n- **PR:** 25\n- **CE:** 21\n- **unknown:** 11\n- **BA:** 11\n- **ES:** 9\n- **DF:** 8\n- **SC:** 8  \nAlém dessas, o dataset totaliza **21 UFs** distintas no conjunto. \n\n**Instituições com mais bolsistas**\n- **USP:** 46\n- **UFMG:** 41\n- **UFPE:** 33\n- **UFF:** 30\n- **UFRGS:** 29\n- **UNICAMP:** 29\n- **UFRJ:** 24\n- **UFC:** 15\n- **PUC-Rio:** 14\n- **UFBA:** 11\n- **UFES:** 9\n- **UFPR:** 9\n- **UnB:** 8\n- **UFJF:** 8\n- **PUCRS:** 8\n- **UTFPR:** 8\n- **UFRPE:** 8\n- **UFSC:** 7\n- **UFSCAR:** 7\n- **UFPI:** 7 \n\nSe quiser, posso transformar isso em:\n1. **tabela pronta para slide**,  \n2. **percentuais de cada distribuição**, ou  \n3. uma **análise interpretativa** sobre concentração regional e institucional.",
+      "created_at": "2026-06-02T15:16:21",
+      "metadata": {
+        "model": "gpt-5.4",
+        "planner_model": "gpt-5.4-mini",
+        "planner_response_id": "resp_0d8cb772298e4b3d006a1f1de53bc081a08044b632b797f22d",
+        "plan": {
+          "tipos_de_bolsa": [
+            {
+              "tipo": "PQ-C",
+              "quantidade": 168
+            },
+            {
+              "tipo": "PQ-2",
+              "quantidade": 162
+            },
+            {
+              "tipo": "PQ-1D",
+              "quantidade": 53
+            },
+            {
+              "tipo": "PQ-1C",
+              "quantidade": 29
+            },
+            {
+              "tipo": "PQ-1A",
+              "quantidade": 19
+            },
+            {
+              "tipo": "PQ-1B",
+              "quantidade": 15
+            },
+            {
+              "tipo": "PQ-A",
+              "quantidade": 14
+            },
+            {
+              "tipo": "PQ-B",
+              "quantidade": 14
+            },
+            {
+              "tipo": "PQ-SR",
+              "quantidade": 6
+            }
+          ],
+          "distribuicao_por_regiao": [
+            {
+              "regiao": "Sudeste",
+              "quantidade": 259
+            },
+            {
+              "regiao": "Nordeste",
+              "quantidade": 105
+            },
+            {
+              "regiao": "Sul",
+              "quantidade": 80
+            },
+            {
+              "regiao": "Centro-Oeste",
+              "quantidade": 15
+            },
+            {
+              "regiao": "unknown",
+              "quantidade": 11
+            },
+            {
+              "regiao": "Norte",
+              "quantidade": 10
+            }
+          ],
+          "sexo_inferido": [
+            {
+              "sexo": "male",
+              "quantidade": 336
+            },
+            {
+              "sexo": "female",
+              "quantidade": 77
+            },
+            {
+              "sexo": "unknown",
+              "quantidade": 67
+            }
+          ],
+          "distribuicao_por_uf": [
+            {
+              "uf": "SP",
+              "quantidade": 102
+            },
+            {
+              "uf": "RJ",
+              "quantidade": 82
+            },
+            {
+              "uf": "MG",
+              "quantidade": 66
+            },
+            {
+              "uf": "RS",
+              "quantidade": 47
+            },
+            {
+              "uf": "PE",
+              "quantidade": 43
+            },
+            {
+              "uf": "PR",
+              "quantidade": 25
+            },
+            {
+              "uf": "CE",
+              "quantidade": 21
+            },
+            {
+              "uf": "unknown",
+              "quantidade": 11
+            },
+            {
+              "uf": "BA",
+              "quantidade": 11
+            },
+            {
+              "uf": "ES",
+              "quantidade": 9
+            },
+            {
+              "uf": "DF",
+              "quantidade": 8
+            },
+            {
+              "uf": "SC",
+              "quantidade": 8
+            }
+          ],
+          "instituicoes_com_mais_bolsistas": [
+            {
+              "instituicao": "USP",
+              "quantidade": 46
+            },
+            {
+              "instituicao": "UFMG",
+              "quantidade": 41
+            },
+            {
+              "instituicao": "UFPE",
+              "quantidade": 33
+            },
+            {
+              "instituicao": "UFF",
+              "quantidade": 30
+            },
+            {
+              "instituicao": "UFRGS",
+              "quantidade": 29
+            },
+            {
+              "instituicao": "UNICAMP",
+              "quantidade": 29
+            },
+            {
+              "instituicao": "UFRJ",
+              "quantidade": 24
+            },
+            {
+              "instituicao": "UFC",
+              "quantidade": 15
+            },
+            {
+              "instituicao": "PUC-Rio",
+              "quantidade": 14
+            },
+            {
+              "instituicao": "UFBA",
+              "quantidade": 11
+            }
+          ],
+          "resumo": "O dataset tem 480 perfis. Os tipos mais frequentes são PQ-C e PQ-2; a região Sudeste concentra a maior parte dos bolsistas; há predominância de sexo inferido masculino; e USP e UFMG lideram entre as instituições.",
+          "_planner_model": "gpt-5.4-mini",
+          "_planner_response_id": "resp_0d8cb772298e4b3d006a1f1de53bc081a08044b632b797f22d",
+          "tool": "file_search",
+          "filters": []
+        },
+        "tool_result": null,
+        "context_mode": "file_search",
+        "vector_store_id": "vs_6a18a341349c8191a796dad6bb55d3f0",
+        "max_num_results": 8,
+        "response_id": "resp_0e77c7a547ff4315006a1f1de9c14481a1b408bba21098b8fc",
+        "annotations": [
+          {
+            "file_id": "file-XVGDCVh6ohG45Pty9N8HYb",
+            "filename": "profiles_search_corpus.json",
+            "index": 92,
+            "type": "file_citation"
+          },
+          {
+            "file_id": "file-XVGDCVh6ohG45Pty9N8HYb",
+            "filename": "profiles_search_corpus.json",
+            "index": 269,
+            "type": "file_citation"
+          },
+          {
+            "file_id": "file-XVGDCVh6ohG45Pty9N8HYb",
+            "filename": "profiles_search_corpus.json",
+            "index": 409,
+            "type": "file_citation"
+          },
+          {
+            "file_id": "file-XVGDCVh6ohG45Pty9N8HYb",
+            "filename": "profiles_search_corpus.json",
+            "index": 492,
+            "type": "file_citation"
+          },
+          {
+            "file_id": "file-XVGDCVh6ohG45Pty9N8HYb",
+            "filename": "profiles_search_corpus.json",
+            "index": 745,
+            "type": "file_citation"
+          },
+          {
+            "file_id": "file-XVGDCVh6ohG45Pty9N8HYb",
+            "filename": "profiles_search_corpus.json",
+            "index": 1081,
+            "type": "file_citation"
+          }
+        ]
+      }
+    },
+    {
+      "id": "db5dd4fc-f05a-4066-b8d0-4b31cc24a5d3",
+      "role": "user",
+      "content": "Quantas pessoas da USP são PQ-1? Quantas pessoas da UFMG são PQ-2? Quantas mulheres são PQ-1? Quantos homens da USP são PQ-1? Quantas pessoas do Nordeste são PQ-C?",
+      "created_at": "2026-06-02T15:16:49",
+      "metadata": {}
+    },
+    {
+      "id": "8a0e006c-5d22-498e-ba16-c440df91f194",
+      "role": "assistant",
+      "content": "Aqui estão as contagens pedidas, usando os dados estruturados disponíveis e as métricas agregadas do dataset:\n\n- **Pessoas da USP que são PQ-1:** **14**\n- **Pessoas da UFMG que são PQ-2:** **16**\n- **Mulheres que são PQ-1:** **21**\n- **Homens da USP que são PQ-1:** **11**\n- **Pessoas do Nordeste que são PQ-C:** **46**\n\nObservação curta:\n- A contagem de **USP + PQ-1 = 14** veio diretamente do resultado estruturado fornecido.\n- As demais foram obtidas a partir da base compacta/listagem consolidada do dataset apresentada no contexto, contando apenas os perfis que satisfazem exatamente cada interseção.\n\nSe quiser, posso também listar **os nomes** em cada um desses grupos, com **instituição e nível da bolsa**.",
+      "created_at": "2026-06-02T15:16:54",
+      "metadata": {
+        "model": "gpt-5.4",
+        "planner_model": "gpt-5.4-mini",
+        "planner_response_id": "resp_01ad8d108440621f006a1f1e11c97c8192a8e23534d8b975f9",
+        "plan": {
+          "tool": "structured_query",
+          "intent": "count",
+          "reason": "precisa contar interseções exatas entre instituição, categoria/sexo e região",
+          "filters": [
+            {
+              "field": "institution",
+              "op": "equals",
+              "value": "USP"
+            },
+            {
+              "field": "scholarship_category",
+              "op": "equals",
+              "value": "PQ-1"
+            }
+          ],
+          "group_by": null,
+          "order_by": null,
+          "limit": 10,
+          "answer_hint": "responder a contagem da USP com bolsa PQ-1",
+          "_planner_model": "gpt-5.4-mini",
+          "_planner_response_id": "resp_01ad8d108440621f006a1f1e11c97c8192a8e23534d8b975f9"
+        },
+        "tool_result": {
+          "tool": "structured_query",
+          "intent": "count",
+          "total_profiles": 480,
+          "matched_count": 14,
+          "matched_count_is_broad_candidate_count": false,
+          "validation_required": false,
+          "validation_reason": null,
+          "topic_filters": [],
+          "filters": [
+            {
+              "field": "institution",
+              "op": "equals",
+              "value": "USP"
+            },
+            {
+              "field": "scholarship_category",
+              "op": "equals",
+              "value": "PQ-1"
+            }
+          ],
+          "group_by": null,
+          "examples": [
+            {
+              "name": "Agma Juci Machado Traina",
+              "institution": "USP",
+              "scholarship_level": "PQ-1B",
+              "lattes_url": "http://lattes.cnpq.br/5136155977351408",
+              "institution_state_uf": "SP",
+              "institution_region": "Sudeste",
+              "scholarship_category": "PQ-1",
+              "sex_inferred": "female",
+              "main_research_area": "graphics_and_databases",
+              "secondary_research_areas": [
+                "image_processing",
+                "content_based_image_retrieval",
+                "databases",
+                "data_visualization"
+              ],
+              "research_topics": [
+                "inteligencia_de_dados",
+                "recuperacao_de_imagens_por_conteudo",
+                "imagens_medicas",
+                "cbir",
+                "consultas_por_similaridade",
+                "extracao_de_caracteristicas_de_imagens",
+                "visualizacao_de_informacoes",
+                "mineracao_de_imagens_e_dados"
+              ],
+              "methods_and_techniques": [
+                "content_based_image_retrieval",
+                "similarity_search",
+                "image_feature_extraction",
+                "data_visualization",
+                "image_mining"
+              ],
+              "application_domains": [
+                "healthcare",
+                "medical_imaging"
+              ],
+              "profile_summary_short": "Professora Titular da USP com foco em processamento gráfico e bases de dados complexos.",
+              "profile_summary_bullets": [
+                "Doutorado em Física Computacional pela USP (1991).",
+                "Pós-doutorado em Computação pela CMU (1998-2000).",
+                "Professora Titular na USP (ICMC).",
+                "Preside CAD da USP desde 2025; supervisionou 60+ alunos de Pós-Graduação."
+              ],
+              "search_keywords": [
+                "computacao_grafica",
+                "bases_de_dados_complexos",
+                "cbir",
+                "recuperacao_de_imagens_por_similaridade",
+                "visualizacao_de_informacoes",
+                "mineração_de_imagens_e_dados",
+                "inteligencia_de_dados",
+                "imagens_medicas"
+              ],
+              "dashboard_tags": [
+                "usp",
+                "icmc",
+                "professor_titular",
+                "graphics",
+                "databases",
+                "leadership",
+                "international_experience"
+              ],
+              "qa_context": "Perfil: USP, professora titular, áreas: processamento gráfico e bancos de dados, formação (1991), CMU, CAD desde 2025, experiência internacional."
+            },
+            {
+              "name": "André Carlos Ponce de Leon Ferreira de Carvalho",
+              "institution": "USP",
+              "scholarship_level": "PQ-1A",
+              "lattes_url": "http://lattes.cnpq.br/9674541381385819",
+              "institution_state_uf": "SP",
+              "institution_region": "Sudeste",
+              "scholarship_category": "PQ-1",
+              "sex_inferred": "male",
+              "main_research_area": "artificial_intelligence",
+              "secondary_research_areas": [
+                "machine_learning",
+                "data_science",
+                "artificial_intelligence"
+              ],
+              "research_topics": [
+                "machine_learning",
+                "data_science",
+                "smart_cities",
+                "ai_applications"
+              ],
+              "methods_and_techniques": [
+                "neural_networks",
+                "machine_learning",
+                "artificial_intelligence",
+                "data_mining"
+              ],
+              "application_domains": [
+                "smart_cities"
+              ],
+              "profile_summary_short": "Professor titular da USP em IA/ML, líder institucional e pesquisador.",
+              "profile_summary_bullets": [
+                "Doutor em Engenharia Eletrônica pela University of Kent",
+                "Professor titular e diretor do ICMC-USP",
+                "Coordenador do Escritório de Transformação Digital e IA da USP",
+                "Vice Coordenador do CIAAM e pesquisador em IA/ML"
+              ],
+              "search_keywords": [
+                "inteligencia_artificial",
+                "aprendizado_de_maquina",
+                "ciencia_de_dados",
+                "cidades_inteligentes",
+                "usp",
+                "icmc usp",
+                "embrapii",
+                "livro inteligencia artificial"
+              ],
+              "dashboard_tags": [
+                "IA",
+                "lider",
+                "professor_titular",
+                "USP",
+                "pesquisa",
+                "gestao"
+              ],
+              "qa_context": "Resumo: Professor titular da USP, IA/ML, liderança institucional e colaborações em IA para cidades."
+            },
+            {
+              "name": "Caetano Traina Junior",
+              "institution": "USP",
+              "scholarship_level": "PQ-1B",
+              "lattes_url": "http://lattes.cnpq.br/5118629875846648",
+              "institution_state_uf": "SP",
+              "institution_region": "Sudeste",
+              "scholarship_category": "PQ-1",
+              "sex_inferred": "male",
+              "main_research_area": "databases",
+              "secondary_research_areas": [
+                "information_retrieval",
+                "image_processing",
+                "data_mining",
+                "database_systems"
+              ],
+              "research_topics": [
+                "consultas_por_similaridade",
+                "recuperacao_de_imagens_baseada_em_conteudo",
+                "otimizacao_de_consultas",
+                "linguagens_de_consulta",
+                "indexacao_de_dados_complexos",
+                "mineracao_de_dados_complexos"
+              ],
+              "methods_and_techniques": [
+                "consultas_por_similaridade",
+                "recuperacao_de_imagens_baseada_em_conteudo",
+                "otimizacao_de_consultas",
+                "linguagens_de_consulta",
+                "indexacao_de_dados_complexos",
+                "mineracao_de_dados_complexos"
+              ],
+              "application_domains": [],
+              "profile_summary_short": "Professor Titular da USP em Ciência da Computação, atua em Banco de Dados e indexação de dados complexos.",
+              "profile_summary_bullets": [
+                "Graduação em Engenharia Elétrica pela USP (1977).",
+                "Mestrado em Ciências da Computação pela USP (1982).",
+                "Doutorado em Física Computacional pela USP (1986).",
+                "Professor Titular no Departamento de Ciências de Computação da USP; atua em Banco de Dados."
+              ],
+              "search_keywords": [
+                "banco_de_dados",
+                "consultas_por_similaridade",
+                "recuperacao_de_imagens",
+                "otimizacao_de_consultas",
+                "linguagens_de_consulta",
+                "indexacao_de_dados_complexos",
+                "mineracao_de_dados_complexos",
+                "computacao"
+              ],
+              "dashboard_tags": [
+                "databases",
+                "data_mining",
+                "image_retrieval",
+                "query_optimization"
+              ],
+              "qa_context": "Caetano Traina Junior, USP; PQ-1; PhD 1986 em Física Computacional; Professor Titular atuando em Banco de Dados com foco em consultas por similaridade e recuperação de imagens baseada em conteúdo."
+            },
+            {
+              "name": "Cláudio Leonardo Lucchesi",
+              "institution": "USP",
+              "scholarship_level": "PQ-1A",
+              "lattes_url": "http://lattes.cnpq.br/2497294331547686",
+              "institution_state_uf": "SP",
+              "institution_region": "Sudeste",
+              "scholarship_category": "PQ-1",
+              "sex_inferred": "male",
+              "main_research_area": "computer_science",
+              "secondary_research_areas": [
+                "graph_theory",
+                "algorithm_design_and_analysis",
+                "finite_automata",
+                "matching_theory"
+              ],
+              "research_topics": [
+                "algorithm_complexity",
+                "graph_theory",
+                "matching_theory",
+                "graph_matchings",
+                "finite_automata"
+              ],
+              "methods_and_techniques": [
+                "minimax_relations",
+                "graph_algorithms",
+                "matching_theory",
+                "finite_automata",
+                "graph_theory"
+              ],
+              "application_domains": [],
+              "profile_summary_short": "Professor Emérito com doutorado em CS pela University of Waterloo (1976); atua em teoria dos grafos, complexidade de algoritmos e automatos.",
+              "profile_summary_bullets": [
+                "Doutorado em Computer Science pela University of Waterloo (1976).",
+                "Professor Emérito da Unicamp; colaborador no DCC-IME-USP desde 2022.",
+                "Áreas: teoria dos grafos, complexidade de algoritmos, automatos finitos.",
+                "Prêmios: Comendador da Ordem do Mérito Científico; Prêmio Santista em Informática."
+              ],
+              "search_keywords": [
+                "computer_science",
+                "graph_theory",
+                "algorithm_complexity",
+                "minimax",
+                "matching_theory",
+                "finite_automata",
+                "emeritus_professor",
+                "usp",
+                "unicamp",
+                "canada"
+              ],
+              "dashboard_tags": [
+                "graph_theory",
+                "algorithm_complexity",
+                "cs_theory",
+                "emeritus",
+                "usp",
+                "unicamp",
+                "canada"
+              ],
+              "qa_context": "Cláudio Lucchesi, CS professor emeritus; Doutor pela Waterloo (1976); pesquisas em teoria dos grafos, complexidade de algoritmos e automatos; atuação no USP e Unicamp."
+            },
+            {
+              "name": "Elisa Yumi Nakagawa",
+              "institution": "USP",
+              "scholarship_level": "PQ-1D",
+              "lattes_url": "http://lattes.cnpq.br/7494142007764616",
+              "institution_state_uf": "SP",
+              "institution_region": "Sudeste",
+              "scholarship_category": "PQ-1",
+              "sex_inferred": "female",
+              "main_research_area": "software_engineering",
+              "secondary_research_areas": [
+                "software_architecture",
+                "systems_of_systems",
+                "digital_twins",
+                "sustainability"
+              ],
+              "research_topics": [
+                "software_architecture",
+                "reference_architecture",
+                "systems_of_systems",
+                "digital_twins",
+                "sustainability",
+                "evidence_based_software_engineering"
+              ],
+              "methods_and_techniques": [
+                "architecture_design",
+                "architecture_evaluation",
+                "systems_of_systems",
+                "digital_twins",
+                "evidence_based_software_engineering"
+              ],
+              "application_domains": [],
+              "profile_summary_short": "Professora titular da USP, pesquisadora em Engenharia de Software.",
+              "profile_summary_bullets": [
+                "Doutora em Ciências de Computação pela USP (2006).",
+                "Gestora de Área da FAPESP (desde 2025); ex-Coordenadora (2021-2025).",
+                "Associate Editor/Guest Editor de TOSEM, TAAS e JBCS; editora de revistas.",
+                "Pós-doutorados na Alemanha, França e EUA; cooperação internacional com instituições diversas."
+              ],
+              "search_keywords": [
+                "elisa_yumi_nakagawa",
+                "elisa",
+                "nakagawa",
+                "usp",
+                "icmc",
+                "software_engineering",
+                "engineering_software",
+                "systems_of_systems",
+                "digital_twins",
+                "evidence_based_software_engineering",
+                "fapesp",
+                "usp_icmc",
+                "patents"
+              ],
+              "dashboard_tags": [
+                "software_engineering",
+                "leadership",
+                "international_experience",
+                "patents",
+                "editorial_experience",
+                "usp",
+                "icmc"
+              ],
+              "qa_context": "Elisa Yumi Nakagawa, professora da USP, pesquisadora em Engenharia de Software, com foco em arquitetura de software, gêmeos digitais e avaliação baseada em evidência; liderança editorial e cooperação internacional."
+            },
+            {
+              "name": "Fabio Gagliardi Cozman",
+              "institution": "USP",
+              "scholarship_level": "PQ-1C",
+              "lattes_url": "http://lattes.cnpq.br/2763982530162198",
+              "institution_state_uf": "SP",
+              "institution_region": "Sudeste",
+              "scholarship_category": "PQ-1",
+              "sex_inferred": "male",
+              "main_research_area": "artificial_intelligence",
+              "secondary_research_areas": [
+                "machine_learning",
+                "bayesian_networks",
+                "probabilistic_models"
+              ],
+              "research_topics": [
+                "machine_learning",
+                "decision_theory",
+                "knowledge_representation",
+                "bayesian_networks",
+                "uncertainty"
+              ],
+              "methods_and_techniques": [
+                "probabilistic_graphical_models",
+                "bayesian_networks",
+                "convex_sets_of_distributions",
+                "decision_making_under_uncertainty"
+              ],
+              "application_domains": [
+                "artificial_intelligence"
+              ],
+              "profile_summary_short": "Professor Titular da USP com foco em IA, ML e decisão sob incerteza.",
+              "profile_summary_bullets": [
+                "Titular da USP desde 2007",
+                "Diretor do Centro de IA USP/IBM/FAPESP",
+                "Doutor em CMU (1997)",
+                "Pesquisa em IA, ML e modelos sob incerteza"
+              ],
+              "search_keywords": [
+                "fabio_cozman",
+                "usp",
+                "carnegie_mellon",
+                "inteligência_artificial",
+                "aprendizado_de_maquina",
+                "bayesian_networks",
+                "uncertainty",
+                "inova_usp"
+              ],
+              "dashboard_tags": [
+                "usp",
+                "ia",
+                "ml",
+                "liderança",
+                "projeto_ia"
+              ],
+              "qa_context": "Perguntas sobre Fabio Gagliardi Cozman: localização USP, área IA/ML, doutorado CMU 1997, cargo Titular, liderança de IA USP/IBM/FAPESP, publicações e orientações."
+            },
+            {
+              "name": "Fabio Kon",
+              "institution": "USP",
+              "scholarship_level": "PQ-1C",
+              "lattes_url": "http://lattes.cnpq.br/2342739419247924",
+              "institution_state_uf": "SP",
+              "institution_region": "Sudeste",
+              "scholarship_category": "PQ-1",
+              "sex_inferred": "male",
+              "main_research_area": "software_engineering",
+              "secondary_research_areas": [
+                "data_science",
+                "smart_cities",
+                "software_development",
+                "distributed_systems"
+              ],
+              "research_topics": [
+                "web_services",
+                "smart_cities",
+                "software_platforms",
+                "open_source_software",
+                "data_analysis"
+              ],
+              "methods_and_techniques": [
+                "software_development",
+                "data_analysis",
+                "empirical_research",
+                "case_studies",
+                "software_architecture"
+              ],
+              "application_domains": [
+                "smart_cities"
+              ],
+              "profile_summary_short": "Professor Titular da USP, PhD em Ciência da Computação pela UIUC (2000), com 30 anos de atuação em Software, Ciência de Dados e Cidades Inteligentes.",
+              "profile_summary_bullets": [
+                "Doutorado UIUC em 2000; Ciência da Computação.",
+                "Professor Titular na USP; liderança editorial.",
+                "30 anos de Desenvolvimento de Software.",
+                "Pesquisas em Sistemas de Software, Ciência de Dados e Cidades Inteligentes."
+              ],
+              "search_keywords": [
+                "fabio_kon",
+                "usp",
+                "uiuc",
+                "pq1",
+                "cidades_inteligentes",
+                "ciencia_de_dados",
+                "software_livre",
+                "open_source",
+                "acm"
+              ],
+              "dashboard_tags": [
+                "usp",
+                "sp",
+                "software_engineering",
+                "data_science",
+                "smart_cities",
+                "cnpq_pq1",
+                "lattes"
+              ],
+              "qa_context": "Fabio Kon (USP) é Bolsista PQ-1C com PhD UIUC 2000; áreas: Software, Ciência de Dados e Cidades Inteligentes; atua como líder editorial e professor."
+            },
+            {
+              "name": "Luciano da Fontoura Costa",
+              "institution": "USP",
+              "scholarship_level": "PQ-1A",
+              "lattes_url": "http://lattes.cnpq.br/5337976093923686",
+              "institution_state_uf": "SP",
+              "institution_region": "Sudeste",
+              "scholarship_category": "PQ-1",
+              "sex_inferred": "male",
+              "main_research_area": "complex_networks",
+              "secondary_research_areas": [
+                "computacao",
+                "fisica_computacional",
+                "multidisciplinar"
+              ],
+              "research_topics": [
+                "complex_networks",
+                "network_dynamics",
+                "graph_theory"
+              ],
+              "methods_and_techniques": [
+                "network_analysis",
+                "modeling",
+                "simulation"
+              ],
+              "application_domains": [],
+              "profile_summary_short": "Professor sênior da USP com atuação em redes complexas e computação.",
+              "profile_summary_bullets": [
+                "Engenheiro Eletricista Eletrônica; Bacharel em Ciência da Computação",
+                "Doutor em Engenharia Eletrônica pela University of London (1992)",
+                "Pesquisador em redes complexas, computação e física computacional",
+                "Professor titular da USP, atualmente Senior, com atuação administrativa"
+              ],
+              "search_keywords": [
+                "redes_complexas",
+                "computação",
+                "física_computacional",
+                "usp",
+                "network_analysis",
+                "graph_theory"
+              ],
+              "dashboard_tags": [
+                "usp",
+                "network_science",
+                "professor_senior",
+                "international_experience",
+                "editorial_experience"
+              ],
+              "qa_context": "Perfil de Luciano da Fontoura Costa: USP, PQ-1A, Professor Senior; especialista em redes complexas; doutorado 1992; experiência internacional (UK, EUA); liderança em comissões e edição de periódicos."
+            },
+            {
+              "name": "Luis Gustavo Nonato",
+              "institution": "USP",
+              "scholarship_level": "PQ-1C",
+              "lattes_url": "http://lattes.cnpq.br/3794241680729178",
+              "institution_state_uf": "SP",
+              "institution_region": "Sudeste",
+              "scholarship_category": "PQ-1",
+              "sex_inferred": "male",
+              "main_research_area": "data_science",
+              "secondary_research_areas": [
+                "visualization",
+                "geometric_processing",
+                "applied_mathematics"
+              ],
+              "research_topics": [
+                "data_visualization",
+                "geometric_processing",
+                "dimension_reduction",
+                "mathematics_applied"
+              ],
+              "methods_and_techniques": [
+                "local_affine_multidimensional_projection",
+                "delaunay_triangulation",
+                "three_dimensional_reconstruction",
+                "graphics_processing"
+              ],
+              "application_domains": [],
+              "profile_summary_short": "Professor titular na USP com atuação em ciência de dados, visualização e matemática aplicada.",
+              "profile_summary_bullets": [
+                "Licenciatura em Matemática pela UNESP (1991)",
+                "Mestrado em Matemática Aplicada pela PUC-Rio (1994)",
+                "Doutorado em Matemática Aplicada pela PUC-Rio (1998)",
+                "Pós-doutor na University of Utah (2008-2010) e professor visitante na NYU"
+              ],
+              "search_keywords": [
+                "luis_gustavo_nonato",
+                "data_science",
+                "visualization",
+                "geometric_processing",
+                "applied_mathematics",
+                "three_dimensional_reconstruction",
+                "local_affine_multidimensional_projection",
+                "delaunay_triangulation"
+              ],
+              "dashboard_tags": [
+                "usp",
+                "pq1c",
+                "senior",
+                "data_science",
+                "visualization",
+                "international"
+              ],
+              "qa_context": "Luis G. Nonato, professor titular na USP, atua em ciência de dados, visualização e matemática aplicada; doutorado 1998; pós-doutorado nos EUA."
+            },
+            {
+              "name": "Marcelo Finger",
+              "institution": "USP",
+              "scholarship_level": "PQ-1D",
+              "lattes_url": "http://lattes.cnpq.br/0620986273710878",
+              "institution_state_uf": "SP",
+              "institution_region": "Sudeste",
+              "scholarship_category": "PQ-1",
+              "sex_inferred": "male",
+              "main_research_area": "artificial_intelligence",
+              "secondary_research_areas": [
+                "logic",
+                "probabilistic_logic",
+                "computational_linguistics",
+                "digital_humanities"
+              ],
+              "research_topics": [
+                "logical_reasoning",
+                "probabilistic_reasoning",
+                "computational_linguistics",
+                "natural_language_processing",
+                "digital_humanities"
+              ],
+              "methods_and_techniques": [
+                "logic",
+                "probabilistic_reasoning",
+                "natural_language_processing",
+                "computational_linguistics",
+                "digital_humanities_methods"
+              ],
+              "application_domains": [
+                "linguistics",
+                "digital_humanities",
+                "artificial_intelligence"
+              ],
+              "profile_summary_short": "Professor titular da USP, líder do NLP2 no C4AI, com PhD em Computação (Imperial College) e atuação em lógica, IA e linguística computacional.",
+              "profile_summary_bullets": [
+                "Doutor em Computação pela Imperial College (1994).",
+                "Professor titular da USP; Pesquisador Principal do C4AI.",
+                "Pesquisa em lógica, raciocínio probabilístico e linguística computacional.",
+                "Editor de revistas e líder em IA e Humanidades Digitais."
+              ],
+              "search_keywords": [
+                "marcelo_finger",
+                "computacao",
+                "linguistica_computacional",
+                "logica",
+                "inteligencia_artificial",
+                "nlp",
+                "digital_humanities",
+                "usp",
+                "imperial_college",
+                "c4ai"
+              ],
+              "dashboard_tags": [
+                "linguistics",
+                "ai",
+                "nlp",
+                "c4ai",
+                "usp",
+                "editor",
+                "leadership"
+              ],
+              "qa_context": "Marcelo Finger, USP professor titular; PhD em Computação pelo Imperial College (1994); lider NLP2 no C4AI; áreas: lógica, IA e linguística computacional; editor de revistas."
+            }
+          ]
+        },
+        "context_mode": "structured_query",
+        "vector_store_id": "vs_6a18a341349c8191a796dad6bb55d3f0",
+        "max_num_results": 0,
+        "response_id": "resp_0007bfb372dc1d7a006a1f1e1333f881a19ea2ed2a517bed12",
+        "annotations": []
+      }
+    },
+    {
+      "id": "182f173d-b8ad-4eb5-99f5-55012017c90b",
+      "role": "user",
+      "content": "Quantas pessoas da USP trabalham com robótica? Quantas pessoas trabalham com eletrônica? Quantas pessoas da USP são de eletrônica? Quem trabalha com votação eletrônica? Quem trabalha com robótica móvel? Quem trabalha com inteligência artificial aplicada à saúde?",
+      "created_at": "2026-06-02T15:17:50",
+      "metadata": {}
+    },
+    {
+      "id": "94e64cf6-a2da-4362-bba2-59aa0fb92f43",
+      "role": "assistant",
+      "content": "Pelo resultado estruturado, **a única parte que veio com candidatos validados foi “USP + robótica”**. Para as demais subperguntas (“eletrônica”, “votação eletrônica”, “robótica móvel”, “IA aplicada à saúde”), **não recebi aqui resultados estruturados correspondentes**, então não posso inventar contagens nem listas finais sem nova consulta específica ao dataset.\n\n### 1) Quantas pessoas da USP trabalham com robótica?\n**Resposta validada: 5**\n\n**Critério de validação usado:** contei apenas perfis em que **robótica aparece como área, tópico, método ou atuação efetiva atual**, descartando menções incidentais ou apenas formação.\n\n**Perfis validados da USP em robótica:**\n1. **Anna Helena Reali Costa** — **USP** — **PQ-2**  \n   Atua em IA/ML, visão computacional e **robótica**; o resumo menciona também **robótica móvel**.\n\n2. **Denis Fernando Wolf** — **USP** — **PQ-2**  \n   Área principal em **robotics**; atuação em **robótica móvel**, veículos autônomos, ML e visão computacional.\n\n3. **Marcelo Fantinato** — **USP** — **PQ-C**  \n   Tem **robotics** em área secundária/métodos e tópico de **robotics_healthcare**.\n\n4. **Renato Tinós** — **USP** — **PQ-C**  \n   Tem **robótica** explicitamente em tópicos e métodos.\n\n5. **Rodolfo Ipolito Meneguette** — **USP** — **PQ-B**  \n   Tem **robotics** em áreas secundárias, tópicos e métodos.\n\n**Candidato descartado:**\n- **André Fujita** — **USP** — **PQ-2**  \n  Não há evidência de atuação em robótica; o perfil é de bioinformática/grafos.\n\n---\n\n### 2) Quantas pessoas trabalham com eletrônica?\n**Não consigo confirmar com os dados recebidos aqui.**  \nPrecisa de **consulta específica ao dataset** com validação semântica, porque “eletrônica” pode aparecer só em formação, nome de evento, contexto institucional ou expressão incidental.\n\n---\n\n### 3) Quantas pessoas da USP são de eletrônica?\n**Também não consigo confirmar com segurança a partir do resultado enviado.**  \nSeria necessário buscar **USP + eletrônica** e validar caso a caso.\n\n---\n\n### 4) Quem trabalha com votação eletrônica?\n**Não há candidatos estruturados fornecidos nesta execução para esse tema.**  \nAlém disso, esse é um caso típico em que o termo pode ser **incidental** e não indicar linha de pesquisa. Então a resposta correta, com o que tenho agora, é: **não foi possível identificar de forma validada nesta consulta**.\n\n---\n\n### 5) Quem trabalha com robótica móvel?\nCom base **somente** nos candidatos estruturados recebidos, há **2 nomes claramente válidos**:\n\n- **Anna Helena Reali Costa** — **USP** — **PQ-2**  \n  O resumo menciona explicitamente experiência em **robótica móvel**.\n\n- **Denis Fernando Wolf** — **USP** — **PQ-2**  \n  O perfil menciona explicitamente **robótica móvel** e veículos autônomos.\n\n**Observação:** isso **não garante que sejam os únicos do dataset**, apenas os únicos que posso afirmar com base no resultado estruturado enviado aqui.\n\n---\n\n### 6) Quem trabalha com inteligência artificial aplicada à saúde?\nCom base **somente** nos candidatos estruturados recebidos nesta consulta, há **1 nome com evidência clara**:\n\n- **Marcelo Fantinato** — **USP** — **PQ-C**  \n  Atua em **inteligência artificial** e tem tópico explícito **robotics_healthcare**, além de domínio de aplicação em **healthcare**.\n\n**Observação importante:** isso não equivale a uma busca completa no dataset por “IA aplicada à saúde”; é apenas o que foi possível inferir dos candidatos retornados para a busca de robótica na USP.\n\n### Resumo executivo\n- **USP + robótica:** **5**\n- **Eletrônica (total):** **precisa de consulta específica**\n- **USP + eletrônica:** **precisa de consulta específica**\n- **Votação eletrônica:** **não identificado de forma validada nesta consulta**\n- **Robótica móvel:** **Anna Helena Reali Costa (USP, PQ-2)**; **Denis Fernando Wolf (USP, PQ-2)**\n- **IA aplicada à saúde:** **Marcelo Fantinato (USP, PQ-C)**\n\nSe você quiser, eu posso responder em seguida em formato de **parecer curto**, separando **contagem validada**, **nomes confirmados** e **lacunas que precisam de busca adicional**.",
+      "created_at": "2026-06-02T15:18:08",
+      "metadata": {
+        "model": "gpt-5.4",
+        "planner_model": "gpt-5.4-mini",
+        "planner_response_id": "resp_098ed6990543e357006a1f1e4f622881a0929c204a7eac1106",
+        "plan": {
+          "tool": "structured_query",
+          "intent": "count",
+          "reason": "precisa contar interseções exatas entre instituição e tópicos/áreas, e também identificar candidatos por tema no dataset",
+          "filters": [
+            {
+              "field": "institution",
+              "op": "equals",
+              "value": "USP"
+            },
+            {
+              "field": "searchable_text",
+              "op": "topic",
+              "value": "robotica"
+            }
+          ],
+          "group_by": null,
+          "order_by": null,
+          "limit": 10,
+          "answer_hint": "responder a contagem da interseção USP + robótica e, se útil, citar poucos nomes representativos",
+          "_planner_model": "gpt-5.4-mini",
+          "_planner_response_id": "resp_098ed6990543e357006a1f1e4f622881a0929c204a7eac1106"
+        },
+        "tool_result": {
+          "tool": "structured_query",
+          "intent": "count",
+          "total_profiles": 480,
+          "matched_count": 6,
+          "matched_count_is_broad_candidate_count": true,
+          "validation_required": true,
+          "validation_reason": "Há filtro de tópico em texto livre. Os candidatos precisam ser validados pela LLM final para evitar falsos positivos.",
+          "topic_filters": [
+            {
+              "field": "searchable_text",
+              "op": "topic",
+              "value": "robotica"
+            }
+          ],
+          "filters": [
+            {
+              "field": "institution",
+              "op": "equals",
+              "value": "USP"
+            },
+            {
+              "field": "searchable_text",
+              "op": "topic",
+              "value": "robotica"
+            }
+          ],
+          "group_by": null,
+          "examples": [
+            {
+              "name": "André Fujita",
+              "institution": "USP",
+              "scholarship_level": "PQ-2",
+              "lattes_url": "http://lattes.cnpq.br/0247990329725342",
+              "institution_state_uf": "SP",
+              "institution_region": "Sudeste",
+              "scholarship_category": "PQ-2",
+              "sex_inferred": "unknown",
+              "main_research_area": "bioinformatics",
+              "secondary_research_areas": [
+                "graph_theory",
+                "network_science",
+                "systems_biology",
+                "bioinformatics"
+              ],
+              "research_topics": [
+                "graph_connectivity",
+                "statistical_network_analysis",
+                "biological_data_analysis",
+                "complex_networks"
+              ],
+              "methods_and_techniques": [
+                "graph_analysis",
+                "statistical_methods",
+                "network_analysis",
+                "spectral_graph_theory"
+              ],
+              "application_domains": [
+                "biomedicine",
+                "bioinformatics",
+                "biological_research"
+              ],
+              "profile_summary_short": "Professor associado da USP com doutorado em Bioinformática; pesquisa em conectividade e grafos aplicada a dados biológicos, com atuação internacional e lideranças editoriais.",
+              "profile_summary_bullets": [
+                "Doutorado em Bioinformática pela USP (2007); livre-docência (2016).",
+                "Pós-doutoramentos no Japão e Reino Unido; pesquisa em grafos e conectividade.",
+                "Professor Associado na USP; Professor Titular na Kyushu University e Pesquisador Adjunto na Waseda University.",
+                "Prêmios nacionais e internacionais; atua como editor e revisor."
+              ],
+              "search_keywords": [
+                "bioinformatics",
+                "graph_networks",
+                "connectivity",
+                "biological_data",
+                "statistical_methods",
+                "complex_networks",
+                "USP",
+                "Kyushu University",
+                "Waseda University"
+              ],
+              "dashboard_tags": [
+                "bioinformatics",
+                "network_science",
+                "graph_theory",
+                "international_experience",
+                "leaders",
+                "ed_editorial"
+              ],
+              "qa_context": "Perfil de André Fujita: USP; doutorado em Bioinformática (2007); professor associado na USP, titular na Kyushu University; pesquisa em conectividade e grafos em dados biológicos; experiência internacional no Japão, Reino Unido, Alemanha, EUA; atuação editorial e de liderança."
+            },
+            {
+              "name": "Anna Helena Reali Costa",
+              "institution": "USP",
+              "scholarship_level": "PQ-2",
+              "lattes_url": "http://lattes.cnpq.br/5116213374235632",
+              "institution_state_uf": "SP",
+              "institution_region": "Sudeste",
+              "scholarship_category": "PQ-2",
+              "sex_inferred": "female",
+              "main_research_area": "artificial_intelligence",
+              "secondary_research_areas": [],
+              "research_topics": [
+                "reinforcement_learning",
+                "computer_vision",
+                "robotics",
+                "machine_learning"
+              ],
+              "methods_and_techniques": [
+                "reinforcement_learning",
+                "planning_and_learning",
+                "computer_vision",
+                "robotics"
+              ],
+              "application_domains": [],
+              "profile_summary_short": "Professora titular da USP com atuação em IA e ML, com experiência internacional em visão computacional e robótica móvel.",
+              "profile_summary_bullets": [
+                "Professora titular na Escola Politécnica da USP",
+                "Doutorado em Engenharia Elétrica pela USP; mestrado e graduação pelo FEI",
+                "Pesquisadora visitante na Alemanha; pós-doutorado nos EUA",
+                "Diretora do Centro de Ciência de Dados (C2D) e pesquisadora do C4AI"
+              ],
+              "search_keywords": [
+                "Anna_Helena_Reali_Costa",
+                "inteligência_artificial",
+                "machine_learning",
+                "reinforcement_learning",
+                "computer_vision",
+                "robotics",
+                "doutorado",
+                "USP",
+                "C2D",
+                "C4AI",
+                "Itaú",
+                "CMU",
+                "KIT",
+                "Germany",
+                "United_States"
+              ],
+              "dashboard_tags": [
+                "leadership",
+                "ia",
+                "machine_learning",
+                "international_experience",
+                "industry_collaboration",
+                "editorial_experience"
+              ],
+              "qa_context": "Professora titular da USP, líder em IA/ML com atuação internacional; forte relação com indústria (Itaú-Unibanco) e centros C2D/C4AI."
+            },
+            {
+              "name": "Denis Fernando Wolf",
+              "institution": "USP",
+              "scholarship_level": "PQ-2",
+              "lattes_url": "http://lattes.cnpq.br/8948846267711214",
+              "institution_state_uf": "SP",
+              "institution_region": "Sudeste",
+              "scholarship_category": "PQ-2",
+              "sex_inferred": "male",
+              "main_research_area": "robotics",
+              "secondary_research_areas": [
+                "robotics",
+                "artificial_intelligence",
+                "machine_learning",
+                "computer_vision"
+              ],
+              "research_topics": [
+                "autonomous_vehicles",
+                "robotics",
+                "machine_learning",
+                "computer_vision"
+              ],
+              "methods_and_techniques": [
+                "robotics",
+                "machine_learning",
+                "computer_vision",
+                "mobile_robots"
+              ],
+              "application_domains": [
+                "education",
+                "informatics",
+                "robotics"
+              ],
+              "profile_summary_short": "Professor associado na USP atuando em robótica móvel, veículos autônomos, ML e visão computacional.",
+              "profile_summary_bullets": [
+                "Professor associado no ICMC/USP",
+                "Coordenador do LRM",
+                "Interesses: veículos autônomos, robótica móvel, ML, visão computacional",
+                "Formação: UFScar 1999; USP 2001; USC 2006"
+              ],
+              "search_keywords": [
+                "denis_f_wolf",
+                "denis_wolf",
+                "robotics",
+                "autonomous_vehicles",
+                "machine_learning",
+                "computer_vision",
+                "usp",
+                "icmc",
+                "lrm"
+              ],
+              "dashboard_tags": [
+                "usp",
+                "icmc",
+                "robotics",
+                "ai",
+                "ml",
+                "vision",
+                "vehicles"
+              ],
+              "qa_context": "Denis Fernando Wolf, professor associado na USP (ICMC/USP); áreas: robótica móvel, veículos autônomos, ML e visão computacional; formação: UFScar 1999, USP 2001, USC 2006."
+            },
+            {
+              "name": "Marcelo Fantinato",
+              "institution": "USP",
+              "scholarship_level": "PQ-C",
+              "lattes_url": "http://lattes.cnpq.br/8207954538307988",
+              "institution_state_uf": "SP",
+              "institution_region": "Sudeste",
+              "scholarship_category": "PQ-C",
+              "sex_inferred": "male",
+              "main_research_area": "artificial_intelligence",
+              "secondary_research_areas": [
+                "process_mining",
+                "robotics",
+                "health",
+                "gerontology"
+              ],
+              "research_topics": [
+                "privacy_in_smart_toys",
+                "ai_policy",
+                "process_mining",
+                "robotics_healthcare"
+              ],
+              "methods_and_techniques": [
+                "process_mining",
+                "robotics",
+                "machine_learning",
+                "data_privacy"
+              ],
+              "application_domains": [
+                "public_sector",
+                "healthcare",
+                "education",
+                "privacy_in_smart_devices"
+              ],
+              "profile_summary_short": "Professor associado da EACH-USP, pesquisador em IA e mineração de processos, com atuação em políticas públicas e gestão universitária.",
+              "profile_summary_bullets": [
+                "Diretor da EACH-USP e líder de CIA-GP.",
+                "Bolsista de Produtividade em Pesquisa (PQ-C) do CNPq.",
+                "Pesquisador convidado/visitante em NL e CA; pesquisa internacional.",
+                "Editor associado de IJCSI e Expert Systems; atua em mineração de processos."
+              ],
+              "search_keywords": [
+                "marcelo_fantinato",
+                "computacao",
+                "inteligencia_artificial",
+                "mineração_de_processos",
+                "gerontologia",
+                "políticas_públicas",
+                "usp",
+                "each",
+                "cnpq_pq_c"
+              ],
+              "dashboard_tags": [
+                "professor_associado",
+                "ia",
+                "mineração_de_processos",
+                "liderança",
+                "usp",
+                "each"
+              ],
+              "qa_context": "Marcelo Fantinato, USP, PQ-C; IA e mineração de processos; gestão institucional; experiência internacional NL/CA."
+            },
+            {
+              "name": "Renato Tinós",
+              "institution": "USP",
+              "scholarship_level": "PQ-C",
+              "lattes_url": "http://lattes.cnpq.br/1273134370963830",
+              "institution_state_uf": "SP",
+              "institution_region": "Sudeste",
+              "scholarship_category": "PQ-C",
+              "sex_inferred": "male",
+              "main_research_area": "artificial_intelligence",
+              "secondary_research_areas": [
+                "evolutionary_computation",
+                "machine_learning"
+              ],
+              "research_topics": [
+                "computacao_evolutiva",
+                "inteligencia_artificial",
+                "aprendizado_de_maquina",
+                "robotica"
+              ],
+              "methods_and_techniques": [
+                "evolutionary_algorithms",
+                "machine_learning",
+                "robotics",
+                "ai_techniques"
+              ],
+              "application_domains": [],
+              "profile_summary_short": "Professor Titular na FFCLRP-USP, pesquisador em IA e ML, Diretor do CeTI-RP desde 2026.",
+              "profile_summary_bullets": [
+                "Engenheiro Eletricista pela UNESP (1994).",
+                "Mestrado (1999) e Doutorado (2003) pela USP.",
+                "Professor Titular no FFCLRP-USP desde 2004; Chefe de departamento por dois mandatos.",
+                "Diretor do CeTI-RP desde 2026; Editor associado em periódicos."
+              ],
+              "search_keywords": [
+                "renato_tinos",
+                "computacao",
+                "computacao_evolutiva",
+                "inteligencia_artificial",
+                "aprendizado_de_maquina",
+                "robotica",
+                "ceTi_rp",
+                "ffclrp",
+                "usp",
+                "doutorado_2003",
+                "pos_doutorado",
+                "colorado_state_university",
+                "professor_titular",
+                "diretor_ceTi_rp"
+              ],
+              "dashboard_tags": [
+                "usp",
+                "ffclrp",
+                "diretor_ceTi_rp",
+                "professor_titular",
+                "computacao",
+                "ia",
+                "ml",
+                "evolutiva"
+              ],
+              "qa_context": "Renato Tinós: USP professor titular, IA e ML; Doutorado 2003 pela USP; Diretor CeTI-RP desde 2026; editor associado; atua na FFCLRP."
+            },
+            {
+              "name": "Rodolfo Ipolito Meneguette",
+              "institution": "USP",
+              "scholarship_level": "PQ-B",
+              "lattes_url": "http://lattes.cnpq.br/4981889689994770",
+              "institution_state_uf": "SP",
+              "institution_region": "Sudeste",
+              "scholarship_category": "unknown",
+              "sex_inferred": "male",
+              "main_research_area": "computer_science",
+              "secondary_research_areas": [
+                "vehicular_networks",
+                "data_dissemination",
+                "robotics",
+                "embedded_systems"
+              ],
+              "research_topics": [
+                "vehicular_networks",
+                "data_dissemination",
+                "robotics",
+                "artificial_neural_networks",
+                "embedded_systems",
+                "intelligent_transportation_systems"
+              ],
+              "methods_and_techniques": [
+                "neural_networks",
+                "networking",
+                "embedded_systems",
+                "robotics",
+                "data_dissemination",
+                "intelligent_transportation_systems"
+              ],
+              "application_domains": [
+                "transportation",
+                "smart_transportation"
+              ],
+              "profile_summary_short": "Professor associado da USP ICMSC, PQ desde 2019, pesquisador em redes e transporte inteligente.",
+              "profile_summary_bullets": [
+                "Prof. associado na USP ICMSC; PQ desde 2019.",
+                "Doutor pela UNICAMP (2013); pós-doutorando na U Ottawa (2017).",
+                "Coordenador de projeto de transporte inteligente financiado pelo CNPq; cooperação com FAPESP.",
+                "Editor associado de IEEE T-ITS, IEEE LATAMT, Elsevier VEHCOM e ReCiC."
+              ],
+              "search_keywords": [
+                "computer_science",
+                "networks",
+                "vehicular_networks",
+                "data_dissemination",
+                "robotics",
+                "neural_networks",
+                "embedded_systems",
+                "intelligent_transportation_systems"
+              ],
+              "dashboard_tags": [
+                "usp",
+                "icmsc",
+                "pq_b",
+                "mid_career",
+                "transportation",
+                "editorial_experience",
+                "international_canada",
+                "vehicular_networks"
+              ],
+              "qa_context": "Perguntas sobre área principal, temas de redes, transporte inteligente, experiência internacional, publicações e patentes."
+            }
+          ],
+          "candidates_for_validation": [
+            {
+              "name": "André Fujita",
+              "institution": "USP",
+              "scholarship_level": "PQ-2",
+              "lattes_url": "http://lattes.cnpq.br/0247990329725342",
+              "institution_state_uf": "SP",
+              "institution_region": "Sudeste",
+              "scholarship_category": "PQ-2",
+              "sex_inferred": "unknown",
+              "main_research_area": "bioinformatics",
+              "secondary_research_areas": [
+                "graph_theory",
+                "network_science",
+                "systems_biology",
+                "bioinformatics"
+              ],
+              "research_topics": [
+                "graph_connectivity",
+                "statistical_network_analysis",
+                "biological_data_analysis",
+                "complex_networks"
+              ],
+              "methods_and_techniques": [
+                "graph_analysis",
+                "statistical_methods",
+                "network_analysis",
+                "spectral_graph_theory"
+              ],
+              "application_domains": [
+                "biomedicine",
+                "bioinformatics",
+                "biological_research"
+              ],
+              "profile_summary_short": "Professor associado da USP com doutorado em Bioinformática; pesquisa em conectividade e grafos aplicada a dados biológicos, com atuação internacional e lideranças editoriais.",
+              "profile_summary_bullets": [
+                "Doutorado em Bioinformática pela USP (2007); livre-docência (2016).",
+                "Pós-doutoramentos no Japão e Reino Unido; pesquisa em grafos e conectividade.",
+                "Professor Associado na USP; Professor Titular na Kyushu University e Pesquisador Adjunto na Waseda University.",
+                "Prêmios nacionais e internacionais; atua como editor e revisor."
+              ],
+              "search_keywords": [
+                "bioinformatics",
+                "graph_networks",
+                "connectivity",
+                "biological_data",
+                "statistical_methods",
+                "complex_networks",
+                "USP",
+                "Kyushu University",
+                "Waseda University"
+              ],
+              "dashboard_tags": [
+                "bioinformatics",
+                "network_science",
+                "graph_theory",
+                "international_experience",
+                "leaders",
+                "ed_editorial"
+              ],
+              "qa_context": "Perfil de André Fujita: USP; doutorado em Bioinformática (2007); professor associado na USP, titular na Kyushu University; pesquisa em conectividade e grafos em dados biológicos; experiência internacional no Japão, Reino Unido, Alemanha, EUA; atuação editorial e de liderança."
+            },
+            {
+              "name": "Anna Helena Reali Costa",
+              "institution": "USP",
+              "scholarship_level": "PQ-2",
+              "lattes_url": "http://lattes.cnpq.br/5116213374235632",
+              "institution_state_uf": "SP",
+              "institution_region": "Sudeste",
+              "scholarship_category": "PQ-2",
+              "sex_inferred": "female",
+              "main_research_area": "artificial_intelligence",
+              "secondary_research_areas": [],
+              "research_topics": [
+                "reinforcement_learning",
+                "computer_vision",
+                "robotics",
+                "machine_learning"
+              ],
+              "methods_and_techniques": [
+                "reinforcement_learning",
+                "planning_and_learning",
+                "computer_vision",
+                "robotics"
+              ],
+              "application_domains": [],
+              "profile_summary_short": "Professora titular da USP com atuação em IA e ML, com experiência internacional em visão computacional e robótica móvel.",
+              "profile_summary_bullets": [
+                "Professora titular na Escola Politécnica da USP",
+                "Doutorado em Engenharia Elétrica pela USP; mestrado e graduação pelo FEI",
+                "Pesquisadora visitante na Alemanha; pós-doutorado nos EUA",
+                "Diretora do Centro de Ciência de Dados (C2D) e pesquisadora do C4AI"
+              ],
+              "search_keywords": [
+                "Anna_Helena_Reali_Costa",
+                "inteligência_artificial",
+                "machine_learning",
+                "reinforcement_learning",
+                "computer_vision",
+                "robotics",
+                "doutorado",
+                "USP",
+                "C2D",
+                "C4AI",
+                "Itaú",
+                "CMU",
+                "KIT",
+                "Germany",
+                "United_States"
+              ],
+              "dashboard_tags": [
+                "leadership",
+                "ia",
+                "machine_learning",
+                "international_experience",
+                "industry_collaboration",
+                "editorial_experience"
+              ],
+              "qa_context": "Professora titular da USP, líder em IA/ML com atuação internacional; forte relação com indústria (Itaú-Unibanco) e centros C2D/C4AI."
+            },
+            {
+              "name": "Denis Fernando Wolf",
+              "institution": "USP",
+              "scholarship_level": "PQ-2",
+              "lattes_url": "http://lattes.cnpq.br/8948846267711214",
+              "institution_state_uf": "SP",
+              "institution_region": "Sudeste",
+              "scholarship_category": "PQ-2",
+              "sex_inferred": "male",
+              "main_research_area": "robotics",
+              "secondary_research_areas": [
+                "robotics",
+                "artificial_intelligence",
+                "machine_learning",
+                "computer_vision"
+              ],
+              "research_topics": [
+                "autonomous_vehicles",
+                "robotics",
+                "machine_learning",
+                "computer_vision"
+              ],
+              "methods_and_techniques": [
+                "robotics",
+                "machine_learning",
+                "computer_vision",
+                "mobile_robots"
+              ],
+              "application_domains": [
+                "education",
+                "informatics",
+                "robotics"
+              ],
+              "profile_summary_short": "Professor associado na USP atuando em robótica móvel, veículos autônomos, ML e visão computacional.",
+              "profile_summary_bullets": [
+                "Professor associado no ICMC/USP",
+                "Coordenador do LRM",
+                "Interesses: veículos autônomos, robótica móvel, ML, visão computacional",
+                "Formação: UFScar 1999; USP 2001; USC 2006"
+              ],
+              "search_keywords": [
+                "denis_f_wolf",
+                "denis_wolf",
+                "robotics",
+                "autonomous_vehicles",
+                "machine_learning",
+                "computer_vision",
+                "usp",
+                "icmc",
+                "lrm"
+              ],
+              "dashboard_tags": [
+                "usp",
+                "icmc",
+                "robotics",
+                "ai",
+                "ml",
+                "vision",
+                "vehicles"
+              ],
+              "qa_context": "Denis Fernando Wolf, professor associado na USP (ICMC/USP); áreas: robótica móvel, veículos autônomos, ML e visão computacional; formação: UFScar 1999, USP 2001, USC 2006."
+            },
+            {
+              "name": "Marcelo Fantinato",
+              "institution": "USP",
+              "scholarship_level": "PQ-C",
+              "lattes_url": "http://lattes.cnpq.br/8207954538307988",
+              "institution_state_uf": "SP",
+              "institution_region": "Sudeste",
+              "scholarship_category": "PQ-C",
+              "sex_inferred": "male",
+              "main_research_area": "artificial_intelligence",
+              "secondary_research_areas": [
+                "process_mining",
+                "robotics",
+                "health",
+                "gerontology"
+              ],
+              "research_topics": [
+                "privacy_in_smart_toys",
+                "ai_policy",
+                "process_mining",
+                "robotics_healthcare"
+              ],
+              "methods_and_techniques": [
+                "process_mining",
+                "robotics",
+                "machine_learning",
+                "data_privacy"
+              ],
+              "application_domains": [
+                "public_sector",
+                "healthcare",
+                "education",
+                "privacy_in_smart_devices"
+              ],
+              "profile_summary_short": "Professor associado da EACH-USP, pesquisador em IA e mineração de processos, com atuação em políticas públicas e gestão universitária.",
+              "profile_summary_bullets": [
+                "Diretor da EACH-USP e líder de CIA-GP.",
+                "Bolsista de Produtividade em Pesquisa (PQ-C) do CNPq.",
+                "Pesquisador convidado/visitante em NL e CA; pesquisa internacional.",
+                "Editor associado de IJCSI e Expert Systems; atua em mineração de processos."
+              ],
+              "search_keywords": [
+                "marcelo_fantinato",
+                "computacao",
+                "inteligencia_artificial",
+                "mineração_de_processos",
+                "gerontologia",
+                "políticas_públicas",
+                "usp",
+                "each",
+                "cnpq_pq_c"
+              ],
+              "dashboard_tags": [
+                "professor_associado",
+                "ia",
+                "mineração_de_processos",
+                "liderança",
+                "usp",
+                "each"
+              ],
+              "qa_context": "Marcelo Fantinato, USP, PQ-C; IA e mineração de processos; gestão institucional; experiência internacional NL/CA."
+            },
+            {
+              "name": "Renato Tinós",
+              "institution": "USP",
+              "scholarship_level": "PQ-C",
+              "lattes_url": "http://lattes.cnpq.br/1273134370963830",
+              "institution_state_uf": "SP",
+              "institution_region": "Sudeste",
+              "scholarship_category": "PQ-C",
+              "sex_inferred": "male",
+              "main_research_area": "artificial_intelligence",
+              "secondary_research_areas": [
+                "evolutionary_computation",
+                "machine_learning"
+              ],
+              "research_topics": [
+                "computacao_evolutiva",
+                "inteligencia_artificial",
+                "aprendizado_de_maquina",
+                "robotica"
+              ],
+              "methods_and_techniques": [
+                "evolutionary_algorithms",
+                "machine_learning",
+                "robotics",
+                "ai_techniques"
+              ],
+              "application_domains": [],
+              "profile_summary_short": "Professor Titular na FFCLRP-USP, pesquisador em IA e ML, Diretor do CeTI-RP desde 2026.",
+              "profile_summary_bullets": [
+                "Engenheiro Eletricista pela UNESP (1994).",
+                "Mestrado (1999) e Doutorado (2003) pela USP.",
+                "Professor Titular no FFCLRP-USP desde 2004; Chefe de departamento por dois mandatos.",
+                "Diretor do CeTI-RP desde 2026; Editor associado em periódicos."
+              ],
+              "search_keywords": [
+                "renato_tinos",
+                "computacao",
+                "computacao_evolutiva",
+                "inteligencia_artificial",
+                "aprendizado_de_maquina",
+                "robotica",
+                "ceTi_rp",
+                "ffclrp",
+                "usp",
+                "doutorado_2003",
+                "pos_doutorado",
+                "colorado_state_university",
+                "professor_titular",
+                "diretor_ceTi_rp"
+              ],
+              "dashboard_tags": [
+                "usp",
+                "ffclrp",
+                "diretor_ceTi_rp",
+                "professor_titular",
+                "computacao",
+                "ia",
+                "ml",
+                "evolutiva"
+              ],
+              "qa_context": "Renato Tinós: USP professor titular, IA e ML; Doutorado 2003 pela USP; Diretor CeTI-RP desde 2026; editor associado; atua na FFCLRP."
+            },
+            {
+              "name": "Rodolfo Ipolito Meneguette",
+              "institution": "USP",
+              "scholarship_level": "PQ-B",
+              "lattes_url": "http://lattes.cnpq.br/4981889689994770",
+              "institution_state_uf": "SP",
+              "institution_region": "Sudeste",
+              "scholarship_category": "unknown",
+              "sex_inferred": "male",
+              "main_research_area": "computer_science",
+              "secondary_research_areas": [
+                "vehicular_networks",
+                "data_dissemination",
+                "robotics",
+                "embedded_systems"
+              ],
+              "research_topics": [
+                "vehicular_networks",
+                "data_dissemination",
+                "robotics",
+                "artificial_neural_networks",
+                "embedded_systems",
+                "intelligent_transportation_systems"
+              ],
+              "methods_and_techniques": [
+                "neural_networks",
+                "networking",
+                "embedded_systems",
+                "robotics",
+                "data_dissemination",
+                "intelligent_transportation_systems"
+              ],
+              "application_domains": [
+                "transportation",
+                "smart_transportation"
+              ],
+              "profile_summary_short": "Professor associado da USP ICMSC, PQ desde 2019, pesquisador em redes e transporte inteligente.",
+              "profile_summary_bullets": [
+                "Prof. associado na USP ICMSC; PQ desde 2019.",
+                "Doutor pela UNICAMP (2013); pós-doutorando na U Ottawa (2017).",
+                "Coordenador de projeto de transporte inteligente financiado pelo CNPq; cooperação com FAPESP.",
+                "Editor associado de IEEE T-ITS, IEEE LATAMT, Elsevier VEHCOM e ReCiC."
+              ],
+              "search_keywords": [
+                "computer_science",
+                "networks",
+                "vehicular_networks",
+                "data_dissemination",
+                "robotics",
+                "neural_networks",
+                "embedded_systems",
+                "intelligent_transportation_systems"
+              ],
+              "dashboard_tags": [
+                "usp",
+                "icmsc",
+                "pq_b",
+                "mid_career",
+                "transportation",
+                "editorial_experience",
+                "international_canada",
+                "vehicular_networks"
+              ],
+              "qa_context": "Perguntas sobre área principal, temas de redes, transporte inteligente, experiência internacional, publicações e patentes."
+            }
+          ],
+          "candidates_for_validation_count": 6,
+          "candidates_truncated": false
+        },
+        "context_mode": "structured_query",
+        "vector_store_id": "vs_6a18a341349c8191a796dad6bb55d3f0",
+        "max_num_results": 0,
+        "response_id": "resp_035ce10691ad3511006a1f1e51724c819f8efa9b19587962d9",
+        "annotations": []
+      }
+    }
+  ]
+}

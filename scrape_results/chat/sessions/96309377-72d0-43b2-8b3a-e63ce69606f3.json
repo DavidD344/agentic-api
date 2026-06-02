@@ -1,0 +1,57 @@
+{
+  "id": "96309377-72d0-43b2-8b3a-e63ce69606f3",
+  "title": "Qual a quantidade de alunos",
+  "created_at": "2026-06-02T14:25:07",
+  "updated_at": "2026-06-02T14:27:14",
+  "messages": [
+    {
+      "id": "2ce00ca9-30e5-4d48-976b-b027f637c81b",
+      "role": "user",
+      "content": "Qual a quantidade de alunos da USP",
+      "created_at": "2026-06-02T14:25:07",
+      "metadata": {}
+    },
+    {
+      "id": "35f1b3a9-8b10-4c09-bbcc-7fb975807a5f",
+      "role": "assistant",
+      "content": "O dataset ativo tem 46 pessoa(s) vinculada(s) à instituição USP.",
+      "created_at": "2026-06-02T14:25:08",
+      "metadata": {
+        "model": "deterministic",
+        "vector_store_id": "vs_6a18a341349c8191a796dad6bb55d3f0",
+        "max_num_results": 0,
+        "response_id": null,
+        "annotations": [],
+        "source": "profiles_with_inferences_json"
+      }
+    },
+    {
+      "id": "d47e5894-ec7c-439b-9e2a-6ba1fcd230b9",
+      "role": "user",
+      "content": "Quantas pessoas da usp sao de robotica",
+      "created_at": "2026-06-02T14:25:26",
+      "metadata": {}
+    },
+    {
+      "id": "9a35213e-7594-4392-90f6-62b4c13e28da",
+      "role": "assistant",
+      "content": "O dataset ativo tem 46 pessoa(s) vinculada(s) à instituição USP.",
+      "created_at": "2026-06-02T14:25:26",
+      "metadata": {
+        "model": "deterministic",
+        "vector_store_id": "vs_6a18a341349c8191a796dad6bb55d3f0",
+        "max_num_results": 0,
+        "response_id": null,
+        "annotations": [],
+        "source": "profiles_with_inferences_json"
+      }
+    },
+    {
+      "id": "39ab0e5e-cb58-4013-8348-70bdc4c65c3c",
+      "role": "user",
+      "content": "Quantos alunos da usp fazem robotica",
+      "created_at": "2026-06-02T14:27:14",
+      "metadata": {}
+    }
+  ]
+}

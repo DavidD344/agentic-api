@@ -20,6 +20,60 @@ Nesse caso, a base vira:
 http://localhost:8001
 ```
 
+## POST /login
+
+Rota hardcoded de autenticação para o frontend atual.
+
+### Ideia
+
+Essa rota existe apenas para o MVP/apresentação. Ela permite que o frontend use o fluxo de login já implementado sem precisarmos mexer no backend antigo.
+
+Credenciais:
+
+```txt
+email: admin@admin.com
+senha: admin
+```
+
+### Request
+
+```http
+POST /login
+Content-Type: application/json
+
+{
+  "email": "admin@admin.com",
+  "password": "admin"
+}
+```
+
+### Response
+
+```json
+{
+  "id": "admin",
+  "name": "Administrador",
+  "token": "jwt-demo",
+  "role": "DOCTOR",
+  "email": "admin@admin.com"
+}
+```
+
+### Observações
+
+O token é um JWT demo sem assinatura real, criado apenas para ser decodificado pelo frontend com `jwt-decode`. Ele contém:
+
+```txt
+sub
+email
+name
+role
+iat
+exp
+```
+
+Essa rota não deve ser tratada como autenticação de produção.
+
 ## GET /
 
 Rota de saúde da API e estado geral dos dados ativos.
@@ -798,11 +852,107 @@ Content-Type: application/json
 | `session_id` | string | Conversa usada. |
 | `answer` | string | Resposta final do modelo. |
 | `message` | object | Mensagem salva no histórico local. |
-| `metadata.model` | string | Modelo usado no chat. Padrão atual: `gpt-5.4-mini`. Pode ser alterado por `CHAT_MODEL`. |
+| `metadata.model` | string | Modelo usado pela LLM final do chat. Config atual: `gpt-5.4`. Pode ser alterado por `CHAT_MODEL`. |
 | `metadata.vector_store_id` | string | Vector Store consultado. |
 | `metadata.max_num_results` | number | Limite de trechos recuperados. |
 | `metadata.response_id` | string | ID da resposta na OpenAI. |
 | `metadata.annotations` | array | Anotações/citações retornadas pela API, quando existirem. |
+
+### Como o chat decide a fonte da resposta
+
+O chat usa uma arquitetura hibrida com duas chamadas de LLM:
+
+```txt
+1. LLM planejadora:
+   entende a pergunta e decide qual ferramenta usar
+
+2. Ferramenta:
+   structured_query para filtros/agregacoes no JSON local
+   ou file_search para busca semantica no Vector Store
+
+3. LLM final:
+   recebe o resultado da ferramenta e escreve a resposta
+```
+
+A LLM nunca executa codigo Python livre. Ela gera um plano JSON com filtros e agregacoes permitidas. O backend executa esse plano em uma DSL segura.
+
+Exemplos de perguntas que usam `structured_query`:
+
+```txt
+Qual a quantidade total de bolsistas?
+Quantas pessoas da USP?
+Quantas pessoas da USP sao de robotica?
+Quantas pessoas da USP sao homens e PQ-1?
+Qual a distribuicao por regiao?
+Quantas pessoas por sexo?
+```
+
+Exemplos de perguntas que usam `file_search`:
+
+```txt
+Quem trabalha com robotica?
+Cite pesquisadores que atuam com IA aplicada a saude.
+Quais perfis tem experiencia internacional?
+```
+
+O backend nao envia o corpus inteiro para a LLM. Isso evita erro de limite de contexto e reduz custo.
+
+Config atual recomendada:
+
+```txt
+CHAT_MODEL=gpt-5.4
+CHAT_PLANNER_MODEL=gpt-5.4-mini
+CHAT_TITLE_MODEL=gpt-5.4-nano
+CHAT_DISABLE_STRUCTURED_QUERY=0
+```
+
+`CHAT_TITLE_MODEL` é usado só para gerar o título curto da conversa quando o front cria uma sessão pela rota legada `POST /session` enviando `content`. Se a chamada falhar ou não houver chave, o backend usa um título local baseado nas primeiras palavras da pergunta.
+
+### Quanto contexto cada LLM recebe
+
+Na configuração atual, o chat usa duas chamadas:
+
+```txt
+1. LLM planejadora: CHAT_PLANNER_MODEL=gpt-5.4-mini
+2. LLM final:       CHAT_MODEL=gpt-5.4
+```
+
+O arquivo completo de busca não é enviado inteiro a cada pergunta:
+
+```txt
+profiles_search_corpus.json: aproximadamente 2.564.904 caracteres
+```
+
+O que é enviado como contexto base em cada chamada é menor:
+
+```txt
+dashboard_metrics_context:       3.201 caracteres  (~800 tokens)
+minimal_profiles_context_text:  38.210 caracteres  (~9.552 tokens)
+full_agent_context:             41.413 caracteres  (~10.353 tokens)
+```
+
+Esses tokens são estimados por `caracteres / 4`; o valor real pode variar.
+
+A primeira LLM recebe:
+
+```txt
+prompt de planejamento
+full_agent_context
+até 4 mensagens recentes
+pergunta atual
+```
+
+A segunda LLM recebe:
+
+```txt
+prompt de resposta final
+full_agent_context
+até 8 mensagens recentes
+plano da primeira LLM
+resultados da structured_query ou trechos do file_search
+```
+
+Em perguntas temáticas, a `structured_query` pode retornar até `CHAT_TOPIC_VALIDATION_LIMIT` candidatos compactos para a LLM final validar. O padrão atual é `120`. Por isso, perguntas compostas ou com temas amplos custam mais.
 
 ### Possíveis erros
 

@@ -298,9 +298,10 @@ profile_language
 
 sex_inferred
   origem: summary/name/lattes_name
-  regra: evidência textual como professor/professora, pesquisador/pesquisadora, doutor/doutora
+  regra: primeiro usa marcadores textuais como professor/professora, pesquisador/pesquisadora, doutor/doutora;
+         se faltar evidência textual, usa primeiro nome comum do nome completo
   validação LLM: sim
-  observação: campo sensível, sempre tratado como inferência e revisável
+  observação: campo sensível, sempre tratado como inferência; unknown só fica quando o nome for quase impossível, ambíguo ou conflitante
 ```
 
 Campos semânticos por LLM:

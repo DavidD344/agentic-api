@@ -1,0 +1,482 @@
+LISTA COMPACTA DE PERFIS
+Cada linha tem: nome | primeiro_nome | sexo_inferido | instituição | bolsa | categoria_bolsa | UF | região
+Abilio Pereira de Lucena Filho | Abilio | male | UFRJ | PQ-C | PQ-C | RJ | Sudeste
+Adenilso da Silva Simão | Adenilso | male | USP | PQ-C | PQ-C | SP | Sudeste
+Adenilton José da Silva | Adenilton | male | UFPE | PQ-C | PQ-C | PE | Nordeste
+Adiel Teixeira de Almeida Filho | Adiel | male | UFPE | PQ-2 | PQ-2 | PE | Nordeste
+Adriana Santarosa Vivacqua | Adriana | female | UFRJ | PQ-C | PQ-C | RJ | Sudeste
+Adriano Alonso Veloso | Adriano | male | UFMG | PQ-2 | PQ-2 | MG | Sudeste
+Adriano Lorena Inacio de Oliveira | Adriano | male | UFPE | PQ-1D | PQ-1 | PE | Nordeste
+Afonso Paiva Neto | Afonso | male | USP | PQ-2 | PQ-2 | SP | Sudeste
+Agma Juci Machado Traina | Agma | female | USP | PQ-1B | PQ-1 | SP | Sudeste
+Ajalmar Rêgo da Rocha Neto | Ajalmar | male | IFCE | PQ-2 | PQ-2 | CE | Nordeste
+Alba Cristina Magalhães Alves de Melo | Alba | male | UnB | PQ-1C | PQ-1 | DF | Centro-Oeste
+Alberto Egon Schaeffer Filho | Alberto | male | UFRGS | PQ-C | PQ-C | RS | Sul
+Alberto Ferreira De Souza | Alberto | male | UFES | PQ-2 | PQ-2 | ES | Sudeste
+Alberto Henrique Frade Laender | Alberto | male | UFMG | PQ-A | unknown | MG | Sudeste
+Alceu de Souza Britto Jr | Alceu | male | PUC/PR | PQ-1D | PQ-1 | PR | Sul
+Aldo von Wangenheim | Aldo | male | UFSC | PQ-2 | PQ-2 | SC | Sul
+Aldri Luiz dos Santos | Aldri | male | UFMG | PQ-2 | PQ-2 | MG | Sudeste
+Alessandro Fabricio Garcia | Alessandro | male | PUC-Rio | PQ-A | unknown | RJ | Sudeste
+Aletéia Patrícia Favacho de Araújo von Paumgartten | Aletéia | female | UnB | PQ-C | PQ-C | DF | Centro-Oeste
+Alex Borges Vieira | Alex | male | UFJF | PQ-C | PQ-C | MG | Sudeste
+Alexandre Cabral Mota | Alexandre | male | UFPE | PQ-C | PQ-C | PE | Nordeste
+Alexandre Luís Magalhães Levada | Alexandre | male | UFSCAR | PQ-C | PQ-C | SP | Sudeste
+Alexandre Plastino de Carvalho | Alexandre | male | UFF | PQ-C | PQ-C | RJ | Sudeste
+Alexandre Salles da Cunha | Alexandre | male | UFMG | PQ-C | PQ-C | MG | Sudeste
+Alexandre Xavier Falcão | Alexandre | male | UNICAMP | PQ-1A | PQ-1 | SP | Sudeste
+Alexandro José Baldassin | Alexandro | male | UNESP | PQ-2 | PQ-2 | SP | Sudeste
+Alfredo Goldman vel Lejbman | Alfredo | male | USP | PQ-2 | PQ-2 | SP | Sudeste
+Aline Marins Paes Carvalho | Aline | female | UFF | PQ-2 | PQ-2 | RJ | Sudeste
+Alisson Marques da Silva | Alisson | male | CEFET/MG | PQ-C | PQ-C | MG | Sudeste
+Alisson Vasconcelos de Brito | Alisson | male | UFPB | PQ-C | PQ-C | PB | Nordeste
+Alneu de Andrade Lopes | Alneu | male | USP | PQ-2 | PQ-2 | SP | Sudeste
+Altigran Soares da Silva | Altigran | male | UFAM | PQ-A | unknown | AM | Norte
+Aluizio Fausto Ribeiro Araújo | Aluizio | male | UFPE | PQ-1C | PQ-1 | PE | Nordeste
+Amauri Holanda de Souza Júnior | Amauri | male | IFCE | PQ-C | PQ-C | CE | Nordeste
+Ana Carolina Lorena | Ana | female | ITA | PQ-2 | PQ-2 | SP | Sudeste
+Ana Cristina Bicharra Garcia | Ana | female | UNIRIO | PQ-C | PQ-C | RJ | Sudeste
+Ana Lucia Cetertich Bazzan | Ana | female | UFRGS | PQ-1C | PQ-C | RS | Sul
+Ana Paula Couto da Silva | Ana | female | UFMG | PQ-2 | PQ-2 | MG | Sudeste
+Ana Shirley Ferreira da Silva | Ana | female | UFC | PQ-2 | PQ-2 | CE | Nordeste
+Anderson de Rezende Rocha | Anderson | male | UNICAMP | PQ-1C | PQ-1 | SP | Sudeste
+André Carlos Ponce de Leon Ferreira de Carvalho | André | male | USP | PQ-1A | PQ-1 | SP | Sudeste
+André Castelo Branco Soares | André | male | UFPI | PQ-C | PQ-C | PI | Nordeste
+Andre Cavalcante Hora | Andre | male | UFMG | PQ-2 | PQ-2 | MG | Sudeste
+André Fujita | André | male | USP | PQ-2 | PQ-2 | SP | Sudeste
+Andre Luiz Lins de Aquino | Andre | male | UFAL | PQ-1D | PQ-1 | AL | Nordeste
+André Pimenta Freire | André | male | UFLA | PQ-C | PQ-C | MG | Sudeste
+André Ricardo Abed Grégio | André | male | UFPR | PQ-2 | PQ-2 | PR | Sul
+André Ricardo Backes | André | male | UFSCAR | PQ-C | PQ-C | SP | Sudeste
+Andreia Malucelli | Andreia | female | PUC/PR | PQ-C | PQ-C | PR | Sul
+Angelo Perkusich | Angelo | male | UFCG | PQ-C | PQ-C | PB | Nordeste
+Anisio Mendes Lacerda | Anisio | male | UFMG | PQ-2 | PQ-2 | MG | Sudeste
+Anna Helena Reali Costa | Anna | female | USP | PQ-2 | PQ-2 | SP | Sudeste
+Anselmo Cardoso de Paiva | Anselmo | male | UFMA | PQ-2 | PQ-2 | MA | Nordeste
+Antonio Alfredo Ferreira Loureiro | Antonio | male | UFMG | PQ-A | unknown | MG | Sudeste
+Antonio Augusto de Aragao Rocha | Antonio | male | UFF | PQ-C | PQ-C | RJ | Sudeste
+Antonio Augusto Medeiros Fröhlich | Antonio | male | UFSC | PQ-2 | PQ-2 | SC | Sul
+Antonio de Padua Braga | Antonio | male | UFMG | PQ-1D | PQ-1 | MG | Sudeste
+Aristófanes Corrêa Silva | Aristófanes | male | UFMA | PQ-2 | PQ-2 | MA | Norte
+Augusto Cezar Alves Sampaio | Augusto | male | UFPE | PQ-1A | PQ-1 | PE | Nordeste
+Augusto José Venâncio Neto | Augusto | male | UFRN | PQ-C | PQ-C | RN | Nordeste
+Aurora Trinidad Ramirez Pozo | Aurora | female | UFPR | PQ-1D | PQ-1 | PR | Sul
+Avelino Francisco Zorzo | Avelino | male | PUCRS | PQ-C | PQ-C | RS | Sul
+Baldoino Fonseca dos Santos Neto | Baldoino | male | UFAL | PQ-C | PQ-C | AL | Nordeste
+Benjamín René Callejas Bedregal | Benjamín | male | UFRN | PQ-A | unknown | RN | Nordeste
+Breno Alexandro Ferreira de Miranda | Breno | male | UFPE | PQ-2 | PQ-2 | PE | Nordeste
+Bruno Augusto Nassif Travençolo | Bruno | male | UFU | PQ-2 | PQ-2 | MG | Sudeste
+Bruno Costa e Silva Nogueira | Bruno | male | UFAL | PQ-C | PQ-C | AL | Nordeste
+Bruno Freitas Gadelha | Bruno | male | UFAM | PQ-C | PQ-C | AM | Norte
+Caetano Traina Junior | Caetano | male | USP | PQ-1B | PQ-1 | SP | Sudeste
+Carla Maria Dal Sasso Freitas | Carla | female | UFRGS | PQ-1C | PQ-1 | RS | Sul
+Carla Negri Lintzmayer | Carla | female | UFABC | PQ-C | PQ-C | SP | Sudeste
+Carlile Campos Lavor | Carlile | male | UNICAMP | PQ-1B | PQ-1 | SP | Sudeste
+Carlos Alberto Kamienski | Carlos | male | UFABC | PQ-2 | PQ-2 | SP | Sudeste
+Carlos Becker Westphall | Carlos | male | UFSC | PQ-1D | PQ-1 | SC | Sul
+Carlos Eduardo Pereira | Carlos | male | UFRGS | PQ-1C | PQ-1 | RS | Sul
+Celina Miraglia Herrera de Figueiredo | Celina | female | UFRJ | PQ-1A | PQ-1 | RJ | Sudeste
+Célio Vinicius Neves de Albuquerque | Célio | male | UFF | PQ-1D | PQ-1 | RJ | Sudeste
+Celso Alberto Saibel Santos | Celso | male | UFES | PQ-2 | PQ-2 | ES | Sudeste
+Celso da Cruz Carneiro Ribeiro | Celso | male | UFF | PQ-1A | PQ-1 | RJ | Sudeste
+Celso Massaki Hirata | Celso | male | ITA | PQ-C | PQ-C | SP | Sudeste
+Cesar Augusto Fonticielha De Rose | Cesar | male | PUCRS | PQ-C | PQ-C | RS | Sul
+César Lincoln Cavalcante Mattos | César | male | UFC | PQ-C | PQ-C | CE | Nordeste
+Claudia Linhares Sales | Claudia | female | UFC | PQ-1D | PQ-1 | CE | Nordeste
+Claudia Maria Bauzer Medeiros | Claudia | female | UNICAMP | PQ-1B | PQ-1 | SP | Sudeste
+Claudia Maria Lima Werner | Claudia | female | UFRJ | PQ-1D | unknown | RJ | Sudeste
+Claudine Santos Baduê | Claudine | female | UFES | PQ-2 | PQ-2 | ES | Sudeste
+Cláudio Leonardo Lucchesi | Cláudio | male | USP | PQ-1A | PQ-1 | SP | Sudeste
+Cláudio Rosito Jung | Cláudio | male | UFRGS | PQ-1B | PQ-1 | RS | Sul
+Cleber Zanchettin | Cleber | male | UFPE | PQ-C | PQ-C | PE | Nordeste
+Clodoveu Augusto Davis Junior | Clodoveu | male | UFMG | PQ-C | PQ-C | MG | Sudeste
+Cristiane Neri Nobre | Cristiane | female | PUC Minas | PQ-2 | PQ-2 | MG | Sudeste
+Cristiano André da Costa | Cristiano | male | UNISINOS | PQ-2 | PQ-2 | RS | Sul
+Cristiano Bonato Both | Cristiano | male | UNISINOS | PQ-C | PQ-C | RS | Sul
+Cristiano Maciel | Cristiano | male | UFMT | PQ-2 | PQ-2 | MT | Centro-Oeste
+Cristiano Maciel da Silva | Cristiano | male | UFSJ | PQ-2 | PQ-2 | MG | Sudeste
+Cristina Gomes Fernandes | Cristina | female | USP | PQ-B | unknown | SP | Sudeste
+Dalcimar Casanova | Dalcimar | male | UTFPR | PQ-2 | PQ-2 | PR | Sul
+Daniel Cardoso Moraes de Oliveira | Daniel | male | UFF | PQ-C | PQ-C | RJ | Sudeste
+Daniel Carlos Guimarães Pedronette | Daniel | male | UNESP | PQ-2 | PQ-2 | SP | Sudeste
+Daniel Fernandes Macedo | Daniel | male | UFMG | PQ-C | PQ-C | MG | Sudeste
+Daniel Ludovico Guidoni | Daniel | male | UFOP | PQ-C | PQ-C | MG | Sudeste
+Daniel Ratton Figueiredo | Daniel | male | UFRJ | PQ-2 | PQ-2 | RJ | Sudeste
+Daniel Sadoc Menasche | Daniel | male | UFRJ | PQ-2 | PQ-2 | RJ | Sudeste
+Danielo Gonçalves Gomes | Danielo | male | UFC | PQ-2 | PQ-2 | CE | Nordeste
+Danilo Medeiros Eler | Danilo | male | UNESP | PQ-C | PQ-C | SP | Sudeste
+Davi Viana dos Santos | Davi | male | UFMA | PQ-C | PQ-C | MA | Nordeste
+David Menotti Gomes | David | male | UFPR | PQ-1D | PQ-1 | PR | Sul
+Denis Deratani Mauá | Denis | male | USP | PQ-2 | PQ-2 | SP | Sudeste
+Denis Fernando Wolf | Denis | male | USP | PQ-2 | PQ-2 | SP | Sudeste
+Denis Lima do Rosário | Denis | male | UFPA | PQ-2 | PQ-2 | PA | Norte
+Diana Sasaki Nobrega | Diana | female | UERJ | PQ-2 | PQ-2 | RJ | Sudeste
+Dianne Scherly Varela de Medeiros | Dianne | female | UFF | PQ-2 | PQ-2 | RJ | Sudeste
+Diego Leonel Cadette Dutra | Diego | male | UFRJ | PQ-C | PQ-C | RJ | Sudeste
+Diego Parente Paiva Mesquita | Diego | male | FGV | PQ-C | PQ-C | RJ | Sudeste
+Diego Raphael Amancio | Diego | male | USP | PQ-C | PQ-C | SP | Sudeste
+Diogo Menezes Ferrazani Mattos | Diogo | male | UFF | PQ-C | PQ-C | RJ | Sudeste
+Divanilson Rodrigo de Sousa Campelo | Divanilson | male | UFPE | PQ-C | PQ-C | PE | Nordeste
+Djamel Fawzi Hadj Sadok | Djamel | male | UFPE | PQ-1C | PQ-1 | PE | Nordeste
+Dorgival Olavo Guedes Neto | Dorgival | male | UFMG | PQ-2 | PQ-2 | MG | Sudeste
+Douglas Dyllon Jeronimo de Macedo | Douglas | male | UFSC | PQ-2 | PQ-2 | SC | Sul
+Douglas Guimarães Macharet | Douglas | male | UFMG | PQ-2 | PQ-2 | MG | Sudeste
+Edelberto Franco Silva | Edelberto | male | UFJF | PQ-2 | PQ-2 | MG | Sudeste
+Edison Pignaton de Freitas | Edison | male | UFRGS | PQ-2 | PQ-2 | RS | Sul
+Edleno Silva de Moura | Edleno | male | UFAM | PQ-1B | PQ-1 | AM | Norte
+Edmundo Albuquerque de Souza e Silva | Edmundo | male | UFRJ | PQ-SR | unknown | RJ | Sudeste
+Edmundo Roberto Mauro Madeira | Edmundo | male | UNICAMP | PQ-1D | PQ-1 | SP | Sudeste
+Edna Dias Canedo | Edna | female | UnB | PQ-C | PQ-C | DF | Centro-Oeste
+Edson Borin | Edson | male | UNICAMP | PQ-2 | PQ-2 | SP | Sudeste
+Edson Prestes e Silva Júnior | Edson | male | UFRGS | PQ-C | PQ-C | RS | Sul
+Edson Takashi Matsubara | Edson | male | UFMS | PQ-2 | PQ-2 | MS | Centro-Oeste
+Eduardo Antonio Guimaraes Tavares | Eduardo | male | UFPE | PQ-C | PQ-C | PE | Nordeste
+Eduardo Camponogara | Eduardo | male | UFSC | PQ-1D | PQ-1 | SC | Sul
+Eduardo Coelho Cerqueira | Eduardo | male | UFPA | PQ-B | unknown | PA | Norte
+Eduardo Cunha de Almeida | Eduardo | male | UFPR | PQ-2 | PQ-2 | PR | Sul
+Eduardo Figueiredo | Eduardo | male | UFMG | PQ-B | unknown | MG | Sudeste
+Eduardo Freire Nakamura | Eduardo | male | UFAM | PQ-C | PQ-C | AM | Norte
+Eduardo Santana de Almeida | Eduardo | male | UFBA | PQ-A | unknown | BA | Nordeste
+Eduardo Sany Laber | Eduardo | male | PUC-Rio | PQ-1D | PQ-1 | RJ | Sudeste
+Eduardo Soares Ogasawara | Eduardo | male | CEFET/RJ | PQ-C | PQ-C | RJ | Sudeste
+Edward Hermann Haeusler | Edward | male | PUC-Rio | PQ-2 | PQ-2 | RJ | Sudeste
+Elias Procópio Duarte Júnior | Elias | male | UFPR | PQ-B | unknown | PR | Sul
+Elisa Yumi Nakagawa | Elisa | female | USP | PQ-1D | PQ-1 | SP | Sudeste
+Ellen Francine Barbosa | Ellen | female | USP | PQ-C | PQ-C | SP | Sudeste
+Emerson Cabrera Paraiso | Emerson | male | PUC/PR | PQ-C | PQ-C | PR | Sul
+Erickson Rangel do Nascimento | Erickson | male | UFMG | PQ-C | PQ-C | MG | Sudeste
+Ermeson Carneiro de Andrade | Ermeson | male | UFRPE | PQ-2 | PQ-2 | PE | Nordeste
+Esteban Walter Gonzalez Clua | Esteban | male | UFF | PQ-B | unknown | RJ | Sudeste
+Estevão Esmi Laureano | Estevão | male | UNICAMP | PQ-1D | PQ-1 | SP | Sudeste
+Esther Luna Colombini | Esther | female | UNICAMP | PQ-C | PQ-C | SP | Sudeste
+Evandro de Barros Costa | Evandro | male | UFAL | PQ-2 | PQ-2 | AL | Nordeste
+Ezequiel Roberto Zorzal | Ezequiel | male | UNIFESP | PQ-C | PQ-C | SP | Sudeste
+Fabiano Cutigi Ferrari | Fabiano | male | UFSCAR | PQ-C | PQ-C | SP | Sudeste
+Fabiano Passuelo Hessel | Fabiano | male | PUCRS | PQ-C | PQ-C | RS | Sul
+Fabio Andre Machado Porto | Fabio | male | LNCC | PQ-C | PQ-C | RJ | Sudeste
+Fabio Gagliardi Cozman | Fabio | male | USP | PQ-1C | PQ-1 | SP | Sudeste
+Fábio Happ Botler | Fábio | male | UFRJ | PQ-2 | PQ-2 | RJ | Sudeste
+Fabio Kon | Fabio | male | USP | PQ-1C | PQ-1 | SP | Sudeste
+Fabio Luciano Verdi | Fabio | male | UFSCAR | PQ-2 | PQ-2 | SP | Sudeste
+Fábio Protti | Fábio | male | UFF | PQ-A | unknown | RJ | Sudeste
+Fabio Queda Bueno da Silva | Fabio | male | UFPE | PQ-2 | PQ-2 | PE | Nordeste
+Fabio Ribeiro Cerqueira | Fabio | male | UFF | PQ-C | PQ-C | RJ | Sudeste
+Fabricia Carneiro Roos Frantz | Fabricia | female | UNIJUI | PQ-2 | PQ-2 | RS | Sul
+Fabrício Aguiar Silva | Fabrício | male | UFV | PQ-C | PQ-C | MG | Sudeste
+Fabrício Benevenuto de Souza | Fabrício | male | UFMG | PQ-1D | PQ-1 | MG | Sudeste
+Fabrício Enembreck | Fabrício | male | PUC/PR | PQ-2 | PQ-2 | PR | Sul
+Fabricio Olivetti de França | Fabricio | male | UFABC | PQ-2 | PQ-2 | SP | Sudeste
+Fabricio Siqueira Benevides | Fabricio | male | UFC | PQ-C | PQ-C | CE | Nordeste
+Fabrízzio Alphonsus Alves de Melo Nunes Soares | Fabrízzio | male | UFG | PQ-C | PQ-C | GO | Centro-Oeste
+Fátima de Lourdes dos Santos Nunes Marques | Fátima | female | USP | PQ-2 | PQ-2 | SP | Sudeste
+Fátima Nelsizeuma Sombra de Medeiros | Fátima | male | UFC | PQ-2 | PQ-2 | CE | Nordeste
+Felipe Alves da Louza | Felipe | male | UFU | PQ-C | PQ-C | MG | Sudeste
+Fernando Buarque de Lima Neto | Fernando | male | UPE | PQ-C | PQ-C | PE | Nordeste
+Fernando José Von Zuben | Fernando | male | UNICAMP | PQ-1B | PQ-1 | SP | Sudeste
+Fernando Magno Quintão Pereira | Fernando | male | UFMG | PQ-1D | PQ-1 | MG | Sudeste
+Filipe Rolim Cordeiro | Filipe | male | UFRPE | PQ-C | PQ-C | PE | Nordeste
+Flávia Coimbra Delicato | Flávia | female | UFF | PQ-1D | PQ-1 | RJ | Sudeste
+Flávia Maria Santoro | Flávia | female | UERJ | PQ-2 | PQ-2 | RJ | Sudeste
+Flavio Henrique Duarte de Araujo | Flavio | male | UFPI | PQ-2 | PQ-2 | PI | Nordeste
+Flávio Keidi Miyazawa | Flávio | male | UNICAMP | PQ-1B | PQ-1 | SP | Sudeste
+Flavio Miguel Varejao | Flavio | male | UFES | PQ-C | PQ-C | ES | Sudeste
+Francisco Airton Pereira da Silva | Francisco | male | UFPI | PQ-2 | PQ-2 | PI | Nordeste
+Francisco de Assis Tenorio de Carvalho | Francisco | male | UFPE | PQ-1A | PQ-1 | PE | Nordeste
+Francisco Madeiro Bernardino Junior | Francisco | male | UPE | PQ-C | PQ-C | PE | Nordeste
+Franklin de Lima Marquezino | Franklin | male | UFRJ | PQ-C | PQ-C | RJ | Sudeste
+Frederico Luiz Gonçalves de Freitas | Frederico | male | UFPE | PQ-2 | PQ-2 | PE | Nordeste
+Gabriel de Morais Coutinho | Gabriel | male | UFMG | PQ-2 | PQ-2 | MG | Sudeste
+Gabriel de Oliveira Ramos | Gabriel | male | UNISINOS | PQ-2 | PQ-2 | RS | Sul
+Gabriel Luca Nazar | Gabriel | male | UFRGS | PQ-2 | PQ-2 | RS | Sul
+Genaina Nunes Rodrigues | Genaina | female | UnB | PQ-C | PQ-C | DF | Centro-Oeste
+George Darmiton da Cunha Cavalcanti | George | male | UFPE | PQ-B | unknown | PE | Nordeste
+George Luiz Medeiros Teodoro | George | male | UFMG | PQ-1D | PQ-1 | MG | Sudeste
+Geraldo Braz Júnior | Geraldo | male | UFMA | PQ-C | PQ-C | MA | Nordeste
+Geraldo Pereira Rocha Filho | Geraldo | male | UnB | PQ-2 | PQ-2 | DF | Centro-Oeste
+Geraldo Robson Mateus | Geraldo | male | UFMG | PQ-1A | PQ-1 | MG | Sudeste
+Gerson Zaverucha | Gerson | male | UFRJ | PQ-1D | PQ-1 | RJ | Sudeste
+Gilson Antonio Giraldi | Gilson | male | LNCC | PQ-2 | PQ-2 | RJ | Sudeste
+Gisele Lobo Pappa | Gisele | female | UFMG | PQ-1D | PQ-1 | MG | Sudeste
+Gladston Juliano Prates Moreira | Gladston | male | UFOP | PQ-2 | PQ-2 | MG | Sudeste
+Gleison dos Santos Souza | Gleison | male | UNIRIO | PQ-C | PQ-C | RJ | Sudeste
+Graçaliz Pereira Dimuro | Graçaliz | female | FURG | PQ-1C | PQ-1 | RS | Sul
+Guido Costa Souza de Araújo | Guido | male | UNICAMP | PQ-1B | PQ-1 | SP | Sudeste
+Guilherme Horta Travassos | Guilherme | male | UFRJ | PQ-1C | PQ-1 | RJ | Sudeste
+Guilherme Oliveira Mota | Guilherme | male | USP | PQ-2 | PQ-2 | SP | Sudeste
+Guilherme Piêgas Koslovski | Guilherme | male | UDESC | PQ-C | PQ-C | SC | Sul
+Guilherme Pimentel Telles | Guilherme | male | UNICAMP | PQ-C | PQ-C | SP | Sudeste
+Gustavo Bittencourt Figueiredo | Gustavo | male | UFBA | PQ-2 | PQ-2 | BA | Nordeste
+Gustavo Henrique Lima Pinto | Gustavo | male | UFPA | PQ-2 | PQ-2 | PA | Norte
+Gustavo Pessin | Gustavo | male | ITV | PQ-1D | PQ-1 | PA | Norte
+Gustavo Rau de Almeida Callou | Gustavo | male | UFRPE | PQ-C | PQ-C | PE | Nordeste
+Heder Soares Bernardino | Heder | male | UFJF | PQ-C | PQ-C | MG | Sudeste
+Heitor Soares Ramos Filho | Heitor | male | UFMG | PQ-C | PQ-C | MG | Sudeste
+Helder May Nunes da Silva Oliveira | Helder | male | UFABC | PQ-2 | PQ-2 | SP | Sudeste
+Helio Côrtes Vieira Lopes | Helio | male | PUC-Rio | PQ-B | unknown | RJ | Sudeste
+Hélio Pedrini | Hélio | male | UNICAMP | PQ-1C | PQ-1 | SP | Sudeste
+Henrique Coelho Fernandes | Henrique | male | UFU | PQ-2 | PQ-2 | MG | Sudeste
+Henrique Cota de Freitas | Henrique | male | PUC Minas | PQ-2 | PQ-2 | MG | Sudeste
+Horacio Antonio Braga Fernandes de Oliveira | Horacio | male | UFAM | PQ-C | PQ-C | AM | Norte
+Hugo Valadares Siqueira | Hugo | male | UTFPR | PQ-2 | PQ-2 | PR | Sul
+Igor Machado Coelho | Igor | male | UFF | PQ-C | PQ-C | RJ | Sudeste
+Isabel Cristina Mello Rosseti | Isabel | female | UFF | PQ-C | PQ-C | RJ | Sudeste
+Italo Fernando Scotá Cunha | Italo | male | UFMG | PQ-C | PQ-C | MG | Sudeste
+Ivan do Carmo Machado | Ivan | male | UFBA | PQ-2 | PQ-2 | BA | Nordeste
+Jacob Scharcanski | Jacob | male | UFRGS | PQ-1C | PQ-1 | RS | Sul
+Jaelson Freire Brelaz de Castro | Jaelson | male | UFPE | PQ-2 | PQ-2 | PE | Nordeste
+Jamilson Ramalho Dantas | Jamilson | male | UFPE | PQ-2 | PQ-2 | PE | Nordeste
+Javam de Castro Machado | Javam | male | UFC | PQ-C | PQ-C | CE | Nordeste
+Jayme Luiz Szwarcfiter | Jayme | male | UERJ | PQ-1A | PQ-1 | RJ | Sudeste
+Jean Paul Barddal | Jean | male | PUC/PR | PQ-C | PQ-C | PR | Sul
+Jeferson Campos Nobre | Jeferson | male | UFRGS | PQ-2 | PQ-2 | RS | Sul
+Joao Batista Florindo | Joao | male | UNICAMP | PQ-2 | PQ-2 | SP | Sudeste
+João Carlos de Oliveira Souza | João | male | UFPI | PQ-2 | PQ-2 | PI | Nordeste
+João Dallyson Sousa de Almeida | João | male | UFMA | PQ-C | PQ-C | MA | Nordeste
+João Eduardo Ferreira | João | male | USP | PQ-C | PQ-C | SP | Sudeste
+João Luiz Dihl Comba | João | male | UFRGS | PQ-1C | PQ-1 | RS | Sul
+João Paulo Andrade Almeida | João | male | UFES | PQ-2 | PQ-2 | ES | Sudeste
+João Paulo Papa | João | male | UNESP | PQ-1D | PQ-1 | SP | Sudeste
+Joaquim Bento Cavalcante Neto | Joaquim | male | UFC | PQ-2 | PQ-2 | CE | Nordeste
+Joel Luis Carbonera | Joel | male | UFRGS | PQ-C | PQ-C | RS | Sul
+Jomi Fred Hübner | Jomi | male | UFSC | PQ-C | PQ-C | SC | Sul
+Jorge Luis Poco-Medina | Jorge | male | FGV | PQ-2 | PQ-2 | RJ | Sudeste
+Jose Alberto Rodrigues Pereira Sardinha | Jose | male | PUC-Rio | PQ-C | PQ-C | RJ | Sudeste
+José Antonio Fernandes de Macêdo | José | male | UFC | PQ-C | PQ-C | CE | Nordeste
+José Augusto Miranda Nacif | José | male | UFV | PQ-2 | PQ-2 | MG | Sudeste
+José Fernando Rodrigues Júnior | José | male | USP | PQ-C | PQ-C | SP | Sudeste
+José Ferreira de Rezende | José | male | UFRJ | PQ-1D | PQ-1 | RJ | Sudeste
+Jose Maria Nazar David | Jose | male | UFJF | PQ-C | PQ-C | MG | Sudeste
+Jose Neuman de Souza | Jose | male | UFC | PQ-1C | PQ-1 | CE | Nordeste
+José Palazzo Moreira de Oliveira | José | male | UFRGS | PQ-SR | unknown | RS | Sul
+José Viterbo Filho | José | male | UFF | PQ-C | PQ-C | RJ | Sudeste
+Judith Kelner | Judith | female | UFPE | PQ-1D | PQ-1 | PE | Nordeste
+Juliano Araujo Wickboldt | Juliano | male | UFRGS | PQ-C | PQ-C | RS | Sul
+Julio Cesar dos Reis | Julio | male | UNICAMP | PQ-C | PQ-C | SP | Sudeste
+Julio Cesar Sampaio do Prado Leite | Julio | male | UFBA | PQ-SR | unknown | BA | Nordeste
+Júlio César Silva Araújo | Júlio | male | UFC | PQ-C | PQ-C | CE | Nordeste
+Jurandir de Oliveira Lopes | Jurandir | male | UFPI | PQ-C | PQ-C | PI | Nordeste
+Jurandy Gomes de Almeida Junior | Jurandy | male | UFSCAR | PQ-2 | PQ-2 | SP | Sudeste
+Jussara Marques de Almeida Goncalves | Jussara | female | UFMG | PQ-1C | PQ-1 | MG | Sudeste
+Karin Becker | Karin | female | UFRGS | PQ-2 | PQ-2 | RS | Sul
+Katia Romero Felizardo Scannavino | Katia | female | UTFPR | PQ-2 | PQ-2 | PR | Sul
+Kelvin Lopes Dias | Kelvin | male | UFPE | PQ-2 | PQ-2 | PE | Nordeste
+Kleber Vieira Cardoso | Kleber | male | UFG | PQ-C | PQ-C | GO | Centro-Oeste
+Kleinner Silva Farias de Oliveira | Kleinner | male | UNISINOS | PQ-C | PQ-C | RS | Sul
+Leandro Alves Neves | Leandro | male | UNESP | PQ-C | PQ-C | SP | Sudeste
+Leandro Aparecido Villas | Leandro | male | UNICAMP | PQ-1D | PQ-1 | SP | Sudeste
+Leandro Augusto Frata Fernandes | Leandro | male | UFF | PQ-C | PQ-C | RJ | Sudeste
+Leandro Dias da Silva | Leandro | male | UFAL | PQ-C | PQ-C | AL | Nordeste
+Leandro Santiago de Araujo | Leandro | male | UFF | PQ-C | PQ-C | RJ | Sudeste
+Lehilton Lelis Chaves Pedrosa | Lehilton | male | UNICAMP | PQ-2 | PQ-2 | SP | Sudeste
+Leobino Nascimento Sampaio | Leobino | male | UFBA | PQ-C | PQ-C | BA | Nordeste
+Leonardo Chaves Dutra da Rocha | Leonardo | male | UFSJ | PQ-C | PQ-C | MG | Sudeste
+Leonardo Gresta Paulino Murta | Leonardo | male | UFF | PQ-1D | PQ-1 | RJ | Sudeste
+Leopoldo Motta Teixeira | Leopoldo | male | UFPE | PQ-C | PQ-C | PE | Nordeste
+Lilian Berton | Lilian | female | UNIFESP | PQ-2 | PQ-2 | SP | Sudeste
+Lisandro Zambenedetti Granville | Lisandro | male | UFRGS | PQ-1C | PQ-1 | RS | Sul
+Lucas Francisco Wanner | Lucas | male | UNICAMP | PQ-C | PQ-C | SP | Sudeste
+Lúcia Maria de Assumpção Drummond | Lúcia | female | UFF | PQ-1D | PQ-1 | RJ | Sudeste
+Luciana Porcher Nedel | Luciana | female | UFRGS | PQ-C | PQ-C | RS | Sul
+Luciano Antonio Digiampietri | Luciano | male | USP | PQ-C | PQ-C | SP | Sudeste
+Luciano da Fontoura Costa | Luciano | male | USP | PQ-1A | PQ-1 | SP | Sudeste
+Luciano Paschoal Gaspary | Luciano | male | UFRGS | PQ-A | unknown | RS | Sul
+Luciano Rebouças de Oliveira | Luciano | male | UFBA | PQ-C | PQ-C | BA | Nordeste
+Luerbio Faria | Luerbio | male | UERJ | PQ-2 | PQ-2 | RJ | Sudeste
+Luidi Gelabert Simonetti | Luidi | male | UFRJ | PQ-2 | PQ-2 | RJ | Sudeste
+Luigi Carro | Luigi | male | UFRGS | PQ-1A | PQ-1 | RS | Sul
+Luis Carlos Erpen de Bona | Luis | male | UFPR | PQ-2 | PQ-2 | PR | Sul
+Luís da Cunha Lamb | Luís | male | UFRGS | PQ-1A | PQ-1 | RS | Sul
+Luis Enrique Zárate Gálvez | Luis | male | PUC Minas | PQ-C | PQ-C | MG | Sudeste
+Luís Felipe Ignácio Cunha | Luís | male | UFF | PQ-C | PQ-C | RJ | Sudeste
+Luis Gustavo Nonato | Luis | male | USP | PQ-1C | PQ-1 | SP | Sudeste
+Luis Henrique Maciel Kosmalski Costa | Luis | male | UFRJ | PQ-1C | PQ-1 | RJ | Sudeste
+Luiz Chaimowicz | Luiz | male | UFMG | PQ-2 | PQ-2 | MG | Sudeste
+Luiz Eduardo Soares de Oliveira | Luiz | male | UFPR | PQ-1D | PQ-1 | PR | Sul
+Luiz Fernando Bittencourt | Luiz | male | UNICAMP | PQ-1C | PQ-1 | SP | Sudeste
+Luiz Fernando Rust da Costa Carmo | Luiz | male | INMETRO | PQ-C | PQ-C | RJ | Sudeste
+Luiz Filipe Menezes Vieira | Luiz | male | UFMG | PQ-1D | PQ-1 | MG | Sudeste
+Luiz Gustavo Leão Fernandes | Luiz | male | PUCRS | PQ-2 | PQ-2 | RS | Sul
+Luiz Marcos Garcia Goncalves | Luiz | male | UFRN | PQ-C | PQ-C | RN | Nordeste
+Luiz Satoru Ochi | Luiz | male | UFF | PQ-1C | PQ-1 | RJ | Sudeste
+Luiza de Macedo Mourelle | Luiza | female | UERJ | PQ-1D | PQ-1 | RJ | Sudeste
+Magnos Martinello | Magnos | male | UFES | PQ-2 | PQ-2 | ES | Sudeste
+Manoel Bezerra Campêlo Neto | Manoel | male | UFC | PQ-1D | PQ-1 | CE | Nordeste
+Manoel Gomes de Mendonça Neto | Manoel | male | UFBA | PQ-2 | PQ-2 | BA | Nordeste
+Manuel Menezes de Oliveira Neto | Manuel | male | UFRGS | PQ-1B | PQ-1 | RS | Sul
+Marcella Scoczynski Ribeiro Martins | Marcella | female | UTFPR | PQ-C | PQ-C | PR | Sul
+Marcelo Caggiani Luizelli | Marcelo | male | UNIPAMPA | PQ-C | PQ-C | RS | Sul
+Marcelo de Almeida Maia | Marcelo | male | UFU | PQ-C | PQ-C | MG | Sudeste
+Marcelo Fantinato | Marcelo | male | USP | PQ-C | PQ-C | SP | Sudeste
+Marcelo Finger | Marcelo | male | USP | PQ-1D | PQ-1 | SP | Sudeste
+Marcelo Garcia Manzato | Marcelo | male | USP | PQ-C | PQ-C | SP | Sudeste
+Marcelo Keese Albertini | Marcelo | male | UFU | PQ-2 | PQ-2 | MG | Sudeste
+Marcelo Lobosco | Marcelo | male | UFJF | PQ-C | PQ-C | MG | Sudeste
+Marcelo Teixeira | Marcelo | male | UTFPR | PQ-2 | PQ-2 | PR | Sul
+Marcelo Walter | Marcelo | male | UFRGS | PQ-2 | PQ-2 | RS | Sul
+Marcelo Zanchetta do Nascimento | Marcelo | male | UFU | PQ-C | PQ-C | MG | Sudeste
+Marcia Helena Costa Fampa | Marcia | female | UFRJ | PQ-2 | PQ-2 | RJ | Sudeste
+Márcio Bastos Castro | Márcio | male | UFSC | PQ-2 | PQ-2 | SC | Sul
+Márcio de Medeiros Ribeiro | Márcio | male | UFAL | PQ-1D | PQ-1 | AL | Nordeste
+Márcio Dorn | Márcio | male | UFRGS | PQ-B | unknown | RS | Sul
+Márcio Porto Basgalupp | Márcio | male | UNIFESP | PQ-2 | PQ-2 | SP | Sudeste
+Marco Antonio Casanova | Marco | male | PUC-Rio | PQ-1B | unknown | RJ | Sudeste
+Marco Serpa Molinaro | Marco | male | PUC-Rio | PQ-C | PQ-C | RJ | Sudeste
+Marco Tulio de Oliveira Valente | Marco | male | UFMG | PQ-1C | PQ-1 | MG | Sudeste
+Marcos André Gonçalves | Marcos | male | UFMG | PQ-A | unknown | MG | Sudeste
+Marcos Antonio Simplicio Junior | Marcos | male | USP | PQ-2 | PQ-2 | SP | Sudeste
+Marcos Augusto Menezes Vieira | Marcos | male | UFMG | PQ-1C | PQ-1 | MG | Sudeste
+Marcos de Oliveira Lage Ferreira | Marcos | male | UFF | PQ-C | PQ-C | RJ | Sudeste
+Marcos Eduardo Ribeiro do Valle Mesquita | Marcos | male | UNICAMP | PQ-C | PQ-C | SP | Sudeste
+Marcos Gonçalves Quiles | Marcos | male | UNIFESP | PQ-C | PQ-C | SP | Sudeste
+Marcos Kalinowski | Marcos | male | PUC-Rio | PQ-1D | PQ-1 | RJ | Sudeste
+Marcus Rolf Peter Ritt | Marcus | male | UFRGS | PQ-2 | PQ-2 | RS | Sul
+Marcus Vinicius Soledade Poggi de Aragao | Marcus | male | PUC-Rio | PQ-1D | PQ-1 | RJ | Sudeste
+Maria Andréia Formico Rodrigues | Maria | female | UNIFOR | PQ-2 | PQ-2 | CE | Nordeste
+Maria Cecília Calani Baranauskas | Maria | female | UNICAMP | PQ-1D | PQ-1 | SP | Sudeste
+Maria Cristina Ferreira de Oliveira | Maria | female | USP | PQ-A | unknown | SP | Sudeste
+Maria do Carmo Nicoletti | Maria | female | UFSCAR | PQ-C | PQ-C | SP | Sudeste
+Mariana Luderitz Kolberg | Mariana | female | UFRGS | PQ-C | PQ-C | RS | Sul
+Mariana Recamonde Mendoza | Mariana | female | UFRGS | PQ-2 | PQ-2 | RS | Sul
+Mario Antonio Ribeiro Dantas | Mario | male | UFJF | PQ-C | PQ-C | MG | Sudeste
+Mario Fernando Montenegro Campos | Mario | male | UFMG | PQ-1B | PQ-1 | MG | Sudeste
+Mario Lemes Proença Junior | Mario | male | UEL | PQ-2 | PQ-2 | PR | Sul
+Mario Roberto Folhadela Benevides | Mario | male | UFF | PQ-2 | PQ-2 | RJ | Sudeste
+Marley Maria Bernardes Rebuzzi Vellasco | Marley | female | PUC-Rio | PQ-A | unknown | RJ | Sudeste
+Marta Lima de Queiros Mattoso | Marta | female | UFRJ | PQ-1B | PQ-1 | RJ | Sudeste
+Mauricio Ayala Rincon | Mauricio | male | UnB | PQ-1D | PQ-1 | DF | Centro-Oeste
+Mauro Antonio Rincon | Mauro | male | UFRJ | PQ-2 | PQ-2 | RJ | Sudeste
+Mauro Sergio Pereira Fonseca | Mauro | male | UTFPR | PQ-C | PQ-C | PR | Sul
+Maycon Leone Maciel Peixoto | Maycon | male | UFBA | PQ-C | PQ-C | BA | Nordeste
+Michele Nogueira Lima | Michele | female | UFMG | PQ-B | unknown | MG | Sudeste
+Miguel Elias Mitre Campista | Miguel | male | UFRJ | PQ-B | unknown | RJ | Sudeste
+Milton Yutaka Nishiyama Junior | Milton | male | IBU | PQ-2 | PQ-2 | SP | Sudeste
+Mirella Moura Moro | Mirella | female | UFMG | PQ-2 | PQ-2 | MG | Sudeste
+Mitre Costa Dourado | Mitre | male | UFRJ | PQ-B | unknown | RJ | Sudeste
+Moacir Antonelli Ponti | Moacir | male | USP | PQ-2 | PQ-2 | SP | Sudeste
+Monalessa Perini Barcellos | Monalessa | female | UFES | PQ-C | PQ-C | ES | Sudeste
+Myriam Regattieri De Biase da Silva Delgado | Myriam | female | UTFPR | PQ-2 | PQ-2 | PR | Sul
+Nabor das Chagas Mendonça | Nabor | male | UNIFOR | PQ-2 | PQ-2 | CE | Nordeste
+Nadia Nedjah | Nadia | female | UERJ | PQ-1D | PQ-1 | RJ | Sudeste
+Nalvo Franco de Almeida Junior | Nalvo | male | UFMS | PQ-2 | PQ-2 | MS | Centro-Oeste
+Nelson Luis Saldanha da Fonseca | Nelson | male | UNICAMP | PQ-A | unknown | SP | Sudeste
+Nelson Maculan Filho | Nelson | male | UFRJ | PQ-A | unknown | RJ | Sudeste
+Nelson Souto Rosa | Nelson | male | UFPE | PQ-C | PQ-C | PE | Nordeste
+Nina Sumiko Tomita Hirata | Nina | female | USP | PQ-C | PQ-C | SP | Sudeste
+Nivan Roberto Ferreira Júnior | Nivan | male | UFPE | PQ-2 | PQ-2 | PE | Nordeste
+Nivio Ziviani | Nivio | male | UFMG | PQ-1A | PQ-1 | MG | Sudeste
+Odemir Martinez Bruno | Odemir | male | USP | PQ-1C | PQ-1 | SP | Sudeste
+Orlando Lee | Orlando | male | UNICAMP | PQ-2 | PQ-2 | SP | Sudeste
+Patricia Takako Endo | Patricia | female | UPE | PQ-C | PQ-C | PE | Nordeste
+Paulo André Vechiatto de Miranda | Paulo | male | USP | PQ-C | PQ-C | SP | Sudeste
+Paulo de Figueiredo Pires | Paulo | male | UFF | PQ-2 | PQ-2 | RJ | Sudeste
+Paulo Henrique Monteiro Borba | Paulo | male | UFPE | PQ-1C | PQ-1 | PE | Nordeste
+Paulo Roberto Freire Cunha | Paulo | male | UFPE | PQ-SR | unknown | PE | Nordeste
+Paulo Roberto Oliveira | Paulo | male | UFRJ | PQ-1D | PQ-1 | RJ | Sudeste
+Paulo Romero Martins Maciel | Paulo | male | UFPE | PQ-1A | PQ-1 | PE | Nordeste
+Paulo Salgado Gomes de Mattos Neto | Paulo | male | UFPE | PQ-C | PQ-C | PE | Nordeste
+Paulo Sérgio Lopes de Souza | Paulo | male | USP | PQ-C | PQ-C | SP | Sudeste
+Paulo Sergio Marques dos Santos | Paulo | male | UFDPar | PQ-2 | PQ-2 | PI | Nordeste
+Pedro Henrique González Silva | Pedro | male | UFRJ | PQ-C | PQ-C | RJ | Sudeste
+Pedro Jussieu de Rezende | Pedro | male | UNICAMP | PQ-2 | PQ-2 | SP | Sudeste
+Pedro Olmo Stancioli Vaz De Melo | Pedro | male | UFMG | PQ-C | PQ-C | MG | Sudeste
+Pedro Paulo Balbi de Oliveira | Pedro | male | MACKENZIE | PQ-2 | PQ-2 | SP | Sudeste
+Pedro Pedrosa Rebouças Filho | Pedro | male | IFCE | PQ-2 | PQ-2 | CE | Nordeste
+Péricles Barbosa Cunha de Miranda | Péricles | male | UFRPE | PQ-C | PQ-C | PE | Nordeste
+Philippe Olivier Alexandre Navaux | Philippe | male | UFRGS | PQ-1A | PQ-1 | RS | Sul
+Rafael Augusto de Melo | Rafael | male | UFBA | PQ-2 | PQ-2 | BA | Nordeste
+Rafael Crivellari Saliba Schouery | Rafael | male | UNICAMP | PQ-2 | PQ-2 | SP | Sudeste
+Rafael Dueire Lins | Rafael | male | UFRPE | PQ-SR | unknown | PE | Nordeste
+Rafael Ferreira Leite de Mello | Rafael | male | UFRPE | PQ-C | PQ-C | PE | Nordeste
+Rafael Kunst | Rafael | male | UNISINOS | PQ-C | PQ-C | RS | Sul
+Rafael Prikladnicki | Rafael | male | PUCRS | PQ-1D | PQ-1 | RS | Sul
+Rafael Zancan Frantz | Rafael | male | UNIJUI | PQ-2 | PQ-2 | RS | Sul
+Raphael Carlos Santos Machado | Raphael | male | UFF | PQ-1D | PQ-1 | RJ | Sudeste
+Raphael Yokoingawa de Camargo | Raphael | male | UFABC | PQ-2 | PQ-2 | SP | Sudeste
+Raquel Cardoso de Melo Minardi | Raquel | female | UFMG | PQ-2 | PQ-2 | MG | Sudeste
+Regina Maria Maciel Braga | Regina | female | UFJF | PQ-2 | PQ-2 | MG | Sudeste
+Reinaldo Augusto da Costa Bianchi | Reinaldo | male | FEI | PQ-2 | PQ-2 | SP | Sudeste
+Renata Hax Sander Reiser | Renata | female | UFPEL | PQ-2 | PQ-2 | RS | Sul
+Renata Lopes Rosa | Renata | female | UFLA | PQ-C | PQ-C | MG | Sudeste
+Renata Maria Cardoso Rodrigues de Souza | Renata | female | UFPE | PQ-1D | PQ-1 | PE | Nordeste
+Renato Antonio Celso Ferreira | Renato | male | UFMG | PQ-1D | PQ-1 | MG | Sudeste
+Renato Antonio Krohling | Renato | male | UFES | PQ-C | PQ-C | ES | Sudeste
+Renato Portugal | Renato | male | LNCC | PQ-1D | PQ-1 | RJ | Sudeste
+Renato Tinós | Renato | male | USP | PQ-C | PQ-C | SP | Sudeste
+Rian Gabriel Santos Pinheiro | Rian | male | UFAL | PQ-C | PQ-C | AL | Nordeste
+Ricardo Araújo Rios | Ricardo | male | UFBA | PQ-2 | PQ-2 | BA | Nordeste
+Ricardo Bastos Cavalcante Prudencio | Ricardo | male | UFPE | PQ-1D | PQ-1 | PE | Nordeste
+Ricardo Cerri | Ricardo | male | USP | PQ-B | unknown | SP | Sudeste
+Ricardo de Andrade Lira Rabêlo | Ricardo | male | UFPI | PQ-2 | PQ-2 | PI | Nordeste
+Ricardo dos Santos Ferreira | Ricardo | male | UFV | PQ-C | PQ-C | MG | Sudeste
+Ricardo Marcondes Marcacini | Ricardo | male | USP | PQ-2 | PQ-2 | SP | Sudeste
+Roberto Marcondes Cesar Junior | Roberto | male | USP | PQ-A | unknown | SP | Sudeste
+Roberto Pereira | Roberto | male | UFPR | PQ-2 | PQ-2 | PR | Sul
+Roberto Souto Maior de Barros | Roberto | male | UFPE | PQ-2 | PQ-2 | PE | Nordeste
+Rodolfo Ipolito Meneguette | Rodolfo | male | USP | PQ-B | unknown | SP | Sudeste
+Rodolfo Jardim de Azevedo | Rodolfo | male | UNICAMP | PQ-2 | PQ-2 | SP | Sudeste
+Rodrigo Bonifacio de Almeida | Rodrigo | male | UnB | PQ-C | PQ-C | DF | Centro-Oeste
+Rodrigo Coelho Barros | Rodrigo | male | PUCRS | PQ-2 | PQ-2 | RS | Sul
+Rodrigo da Rosa Righi | Rodrigo | male | UNISINOS | PQ-C | PQ-C | RS | Sul
+Rodrigo de Melo Souza Veras | Rodrigo | male | UFPI | PQ-2 | PQ-2 | PI | Nordeste
+Rodrigo Minetto | Rodrigo | male | UTFPR | PQ-2 | PQ-2 | PR | Sul
+Rodrigo Pereira dos Santos | Rodrigo | male | UNIRIO | PQ-2 | PQ-2 | RJ | Sudeste
+Rodrygo Luis Teodoro Santos | Rodrygo | male | UFMG | PQ-C | PQ-C | MG | Sudeste
+Roger Kreutz Immich | Roger | male | UFRN | PQ-2 | PQ-2 | RN | Nordeste
+Rohit Gheyi | Rohit | male | UFCG | PQ-2 | PQ-2 | PB | Nordeste
+Ronaldo Alves Ferreira | Ronaldo | male | UFMS | PQ-2 | PQ-2 | MS | Centro-Oeste
+Ronaldo Cristiano Prati | Ronaldo | male | UFABC | PQ-C | PQ-C | SP | Sudeste
+Ronaldo Fumio Hashimoto | Ronaldo | male | USP | PQ-C | PQ-C | SP | Sudeste
+Rudini Menezes Sampaio | Rudini | male | UFC | PQ-1D | PQ-1 | CE | Nordeste
+Ruy José Guerra Barretto de Queiroz | Ruy | male | UFPE | PQ-C | PQ-C | PE | Nordeste
+Sabrina dos Santos Marczak | Sabrina | female | PUCRS | PQ-C | PQ-C | RS | Sul
+Sandra Eliza Fontes de Avila | Sandra | female | UNICAMP | PQ-2 | PQ-2 | SP | Sudeste
+Sergio Castelo Branco Soares | Sergio | male | UFPE | PQ-2 | PQ-2 | PE | Nordeste
+Sergio Lifschitz | Sergio | male | PUC-Rio | PQ-C | PQ-C | RJ | Sudeste
+Sheila dos Santos Reinehr | Sheila | female | PUC/PR | PQ-C | PQ-C | PR | Sul
+Silvia Regina Vergilio | Silvia | female | UFPR | PQ-1D | PQ-1 | PR | Sul
+Silvio Jamil Ferzoli Guimarães | Silvio | male | PUC Minas | PQ-2 | PQ-2 | MG | Sudeste
+Simone Dantas de Souza | Simone | female | UFF | PQ-1C | PQ-1 | RJ | Sudeste
+Simone Diniz Junqueira Barbosa | Simone | female | PUC-Rio | PQ-1D | PQ-1 | RJ | Sudeste
+Simone do Rocio Senger de Souza | Simone | female | USP | PQ-C | PQ-C | SP | Sudeste
+Solange Oliveira Rezende | Solange | female | USP | PQ-C | PQ-C | SP | Sudeste
+Soraia Raupp Musse | Soraia | female | PUCRS | PQ-1C | PQ-1 | RS | Sul
+Sulamita Klein | Sulamita | female | UFRJ | PQ-1B | PQ-1 | RJ | Sudeste
+Tatiane Nogueira Rios | Tatiane | female | UFBA | PQ-2 | PQ-2 | BA | Nordeste
+Tayana Uchôa Conte | Tayana | female | UFAM | PQ-1D | PQ-1 | AM | Norte
+Teobaldo Leite Bulhões Júnior | Teobaldo | male | UFPB | PQ-C | PQ-C | PB | Nordeste
+Teresa Bernarda Ludermir | Teresa | female | UFPE | PQ-1A | PQ-1 | PE | Nordeste
+Thais Vasconcelos Batista | Thais | female | UFRN | PQ-1C | PQ-1 | RN | Nordeste
+Thelma Elita Colanzi | Thelma | female | UEM | PQ-C | PQ-C | PR | Sul
+Thiago Ferreira de Noronha | Thiago | male | UFMG | PQ-C | PQ-C | MG | Sudeste
+Thiago Oliveira dos Santos | Thiago | male | UFES | PQ-2 | PQ-2 | ES | Sudeste
+Tiago Agostinho de Almeida | Tiago | male | UFSCAR | PQ-2 | PQ-2 | SP | Sudeste
+Tiago Alessandro Espinola Ferreira | Tiago | male | UFRPE | PQ-C | PQ-C | PE | Nordeste
+Tiago Pereira do Nascimento | Tiago | male | UFPB | PQ-1D | PQ-1 | PB | Nordeste
+Troy Costa Kohwalter | Troy | male | UFF | PQ-C | PQ-C | RJ | Sudeste
+Tsang Ing Ren | Tsang | male | UFPE | PQ-2 | PQ-2 | PE | Nordeste
+Uéverton dos Santos Souza | Uéverton | male | UFF | PQ-1D | PQ-1 | RJ | Sudeste
+Uira Kulesza | Uira | male | UFRN | PQ-C | PQ-C | RN | Nordeste
+Ulisses Martins Dias | Ulisses | male | UNICAMP | PQ-2 | PQ-2 | SP | Sudeste
+Valmir Carneiro Barbosa | Valmir | male | UERJ | PQ-SR | unknown | RJ | Sudeste
+Vander Ramos Alves | Vander | male | UnB | PQ-C | PQ-C | DF | Centro-Oeste
+Vanessa Braganholo Murta | Vanessa | female | UFF | PQ-2 | PQ-2 | RJ | Sudeste
+Vasco Furtado | Vasco | male | UNIFOR | PQ-2 | PQ-2 | CE | Nordeste
+Victor Almeida Campos | Victor | male | UFC | PQ-C | PQ-C | CE | Nordeste
+Victor Ströele de Andrade Menezes | Victor | male | UFJF | PQ-2 | PQ-2 | MG | Sudeste
+Vinicius Fernandes dos Santos | Vinicius | male | UFMG | PQ-B | unknown | MG | Sudeste
+Viviane Pereira Moreira | Viviane | female | UFRGS | PQ-C | PQ-C | RS | Sul
+Wagner Meira Junior | Wagner | male | UFMG | PQ-1A | PQ-1 | MG | Sudeste
+Waldemar Celes Filho | Waldemar | male | PUC-Rio | PQ-2 | PQ-2 | RJ | Sudeste
+Wallace Correa de Oliveira Casaca | Wallace | male | UNESP | PQ-C | PQ-C | SP | Sudeste
+Wesley Nunes Gonçalves | Wesley | male | UFMS | PQ-2 | PQ-2 | MS | Centro-Oeste
+Weverton Luis da Costa Cordeiro | Weverton | male | UFRGS | PQ-2 | PQ-2 | RS | Sul
+William Robson Schwartz | William | male | UFMG | PQ-1C | PQ-1 | MG | Sudeste
+Wilson Rosa de Oliveira Junior | Wilson | male | UFRPE | PQ-C | PQ-C | PE | Nordeste
+Windson Viana de Carvalho | Windson | male | UFC | PQ-C | PQ-C | CE | Nordeste
+Wouter Caarls | Wouter | male | PUC-Rio | PQ-C | PQ-C | RJ | Sudeste
+Yandre Maldonado e Gomes da Costa | Yandre | male | UEM | PQ-2 | PQ-2 | PR | Sul
+Yoshiharu Kohayakawa | Yoshiharu | male | USP | PQ-1A | PQ-1 | SP | Sudeste
+Yoshiko Wakabayashi | Yoshiko | female | USP | PQ-1A | PQ-1 | SP | Sudeste
+Yuri Abitbol de Menezes Frota | Yuri | male | UFF | PQ-C | PQ-C | RJ | Sudeste
+Zanoni Dias | Zanoni | male | UNICAMP | PQ-1D | PQ-1 | SP | Sudeste
+Zhao Liang | Zhao | male | USP | PQ-1B | PQ-1 | SP | Sudeste

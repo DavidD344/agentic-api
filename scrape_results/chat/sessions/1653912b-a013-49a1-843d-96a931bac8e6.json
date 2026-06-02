@@ -1,0 +1,1749 @@
+{
+  "id": "1653912b-a013-49a1-843d-96a931bac8e6",
+  "title": "Teste multi-pergunta",
+  "created_at": "2026-06-02T15:22:09",
+  "updated_at": "2026-06-02T15:22:18",
+  "messages": [
+    {
+      "id": "9942356e-fa9c-44a5-89a2-979305b74f01",
+      "role": "user",
+      "content": "Quantas pessoas da USP trabalham com robótica? Quem trabalha com votação eletrônica?",
+      "created_at": "2026-06-02T15:22:09",
+      "metadata": {}
+    },
+    {
+      "id": "a49d29b1-b42f-4e86-9592-1831880fc90e",
+      "role": "assistant",
+      "content": "Para **USP + robótica**, a busca ampla retornou 6 candidatos e, validando apenas quem realmente tem **atuação atual em área/tópicos/métodos ligados a robótica**, o total é **5 pessoas**.\n\n**Critério de validação:** contei apenas perfis em que “robótica/robotics” aparece como área secundária, tópico de pesquisa, método/técnica ou resumo de atuação; descartei menções sem evidência de atuação.\n\n**Pessoas validadas na USP com atuação em robótica:**\n1. **Anna Helena Reali Costa** — USP — **PQ-2**  \n2. **Denis Fernando Wolf** — USP — **PQ-2**  \n3. **Marcelo Fantinato** — USP — **PQ-C**  \n4. **Renato Tinós** — USP — **PQ-C**  \n5. **Rodolfo Ipolito Meneguette** — USP — **PQ-B**\n\n**Descartado na validação:**\n- **André Fujita** — USP — **PQ-2**  \n  Não há evidência de atuação em robótica; o perfil está centrado em bioinformática, grafos e análise de redes biológicas.\n\nSobre **quem trabalha com votação eletrônica**:  \nA busca no dataset retornou **0 nomes**. Portanto, **não identifiquei bolsistas com atuação em votação eletrônica** nesta base. Se isso existir fora do dataset, precisaria ser conferido em outras fontes ou pode estar ausente/não explicitado nos perfis.",
+      "created_at": "2026-06-02T15:22:18",
+      "metadata": {
+        "model": "gpt-5.4",
+        "planner_model": "gpt-5.4-mini",
+        "planner_response_id": "resp_04df5fa79903caf4006a1f1f51efa88195a0e881da2ed18eea",
+        "plan": {
+          "queries": [
+            {
+              "tool": "structured_query",
+              "question": "Quantas pessoas da USP trabalham com robótica?",
+              "intent": "count",
+              "reason": "precisa contar a interseção entre instituição e tópico",
+              "filters": [
+                {
+                  "field": "institution",
+                  "op": "equals",
+                  "value": "USP"
+                },
+                {
+                  "field": "searchable_text",
+                  "op": "topic",
+                  "value": "robotica"
+                }
+              ],
+              "group_by": null,
+              "order_by": null,
+              "limit": 10,
+              "answer_hint": "responder com a contagem exata e mencionar exemplos apenas se útil"
+            },
+            {
+              "tool": "structured_query",
+              "question": "Quem trabalha com votação eletrônica?",
+              "intent": "list",
+              "reason": "é uma busca temática no dataset inteiro, com validação posterior de pertinência",
+              "filters": [
+                {
+                  "field": "searchable_text",
+                  "op": "topic",
+                  "value": "votacao_eletronica"
+                }
+              ],
+              "group_by": null,
+              "order_by": null,
+              "limit": 20,
+              "answer_hint": "listar nomes relevantes com instituição e bolsa após validação semântica"
+            }
+          ],
+          "reason": "a pergunta contém duas subperguntas independentes: uma contagem exata e uma listagem temática",
+          "raw_plan": {
+            "queries": [
+              {
+                "tool": "structured_query",
+                "question": "Quantas pessoas da USP trabalham com robótica?",
+                "intent": "count",
+                "reason": "precisa contar a interseção entre instituição e tópico",
+                "filters": [
+                  {
+                    "field": "institution",
+                    "op": "equals",
+                    "value": "USP"
+                  },
+                  {
+                    "field": "searchable_text",
+                    "op": "topic",
+                    "value": "robotica"
+                  }
+                ],
+                "group_by": null,
+                "order_by": null,
+                "limit": 10,
+                "answer_hint": "responder com a contagem exata e mencionar exemplos apenas se útil"
+              },
+              {
+                "tool": "structured_query",
+                "question": "Quem trabalha com votação eletrônica?",
+                "intent": "list",
+                "reason": "é uma busca temática no dataset inteiro, com validação posterior de pertinência",
+                "filters": [
+                  {
+                    "field": "searchable_text",
+                    "op": "topic",
+                    "value": "votacao_eletronica"
+                  }
+                ],
+                "group_by": null,
+                "order_by": null,
+                "limit": 20,
+                "answer_hint": "listar nomes relevantes com instituição e bolsa após validação semântica"
+              }
+            ],
+            "reason": "a pergunta contém duas subperguntas independentes: uma contagem exata e uma listagem temática"
+          },
+          "_planner_model": "gpt-5.4-mini",
+          "_planner_response_id": "resp_04df5fa79903caf4006a1f1f51efa88195a0e881da2ed18eea"
+        },
+        "tool_result": {
+          "tool": "structured_query",
+          "intent": "count",
+          "total_profiles": 480,
+          "matched_count": 6,
+          "matched_count_is_broad_candidate_count": true,
+          "validation_required": true,
+          "validation_reason": "Há filtro de tópico em texto livre. Os candidatos precisam ser validados pela LLM final para evitar falsos positivos.",
+          "topic_filters": [
+            {
+              "field": "searchable_text",
+              "op": "topic",
+              "value": "robotica"
+            }
+          ],
+          "filters": [
+            {
+              "field": "institution",
+              "op": "equals",
+              "value": "USP"
+            },
+            {
+              "field": "searchable_text",
+              "op": "topic",
+              "value": "robotica"
+            }
+          ],
+          "group_by": null,
+          "examples": [
+            {
+              "name": "André Fujita",
+              "institution": "USP",
+              "scholarship_level": "PQ-2",
+              "lattes_url": "http://lattes.cnpq.br/0247990329725342",
+              "institution_state_uf": "SP",
+              "institution_region": "Sudeste",
+              "scholarship_category": "PQ-2",
+              "sex_inferred": "unknown",
+              "main_research_area": "bioinformatics",
+              "secondary_research_areas": [
+                "graph_theory",
+                "network_science",
+                "systems_biology",
+                "bioinformatics"
+              ],
+              "research_topics": [
+                "graph_connectivity",
+                "statistical_network_analysis",
+                "biological_data_analysis",
+                "complex_networks"
+              ],
+              "methods_and_techniques": [
+                "graph_analysis",
+                "statistical_methods",
+                "network_analysis",
+                "spectral_graph_theory"
+              ],
+              "application_domains": [
+                "biomedicine",
+                "bioinformatics",
+                "biological_research"
+              ],
+              "profile_summary_short": "Professor associado da USP com doutorado em Bioinformática; pesquisa em conectividade e grafos aplicada a dados biológicos, com atuação internacional e lideranças editoriais.",
+              "profile_summary_bullets": [
+                "Doutorado em Bioinformática pela USP (2007); livre-docência (2016).",
+                "Pós-doutoramentos no Japão e Reino Unido; pesquisa em grafos e conectividade.",
+                "Professor Associado na USP; Professor Titular na Kyushu University e Pesquisador Adjunto na Waseda University.",
+                "Prêmios nacionais e internacionais; atua como editor e revisor."
+              ],
+              "search_keywords": [
+                "bioinformatics",
+                "graph_networks",
+                "connectivity",
+                "biological_data",
+                "statistical_methods",
+                "complex_networks",
+                "USP",
+                "Kyushu University",
+                "Waseda University"
+              ],
+              "dashboard_tags": [
+                "bioinformatics",
+                "network_science",
+                "graph_theory",
+                "international_experience",
+                "leaders",
+                "ed_editorial"
+              ],
+              "qa_context": "Perfil de André Fujita: USP; doutorado em Bioinformática (2007); professor associado na USP, titular na Kyushu University; pesquisa em conectividade e grafos em dados biológicos; experiência internacional no Japão, Reino Unido, Alemanha, EUA; atuação editorial e de liderança."
+            },
+            {
+              "name": "Anna Helena Reali Costa",
+              "institution": "USP",
+              "scholarship_level": "PQ-2",
+              "lattes_url": "http://lattes.cnpq.br/5116213374235632",
+              "institution_state_uf": "SP",
+              "institution_region": "Sudeste",
+              "scholarship_category": "PQ-2",
+              "sex_inferred": "female",
+              "main_research_area": "artificial_intelligence",
+              "secondary_research_areas": [],
+              "research_topics": [
+                "reinforcement_learning",
+                "computer_vision",
+                "robotics",
+                "machine_learning"
+              ],
+              "methods_and_techniques": [
+                "reinforcement_learning",
+                "planning_and_learning",
+                "computer_vision",
+                "robotics"
+              ],
+              "application_domains": [],
+              "profile_summary_short": "Professora titular da USP com atuação em IA e ML, com experiência internacional em visão computacional e robótica móvel.",
+              "profile_summary_bullets": [
+                "Professora titular na Escola Politécnica da USP",
+                "Doutorado em Engenharia Elétrica pela USP; mestrado e graduação pelo FEI",
+                "Pesquisadora visitante na Alemanha; pós-doutorado nos EUA",
+                "Diretora do Centro de Ciência de Dados (C2D) e pesquisadora do C4AI"
+              ],
+              "search_keywords": [
+                "Anna_Helena_Reali_Costa",
+                "inteligência_artificial",
+                "machine_learning",
+                "reinforcement_learning",
+                "computer_vision",
+                "robotics",
+                "doutorado",
+                "USP",
+                "C2D",
+                "C4AI",
+                "Itaú",
+                "CMU",
+                "KIT",
+                "Germany",
+                "United_States"
+              ],
+              "dashboard_tags": [
+                "leadership",
+                "ia",
+                "machine_learning",
+                "international_experience",
+                "industry_collaboration",
+                "editorial_experience"
+              ],
+              "qa_context": "Professora titular da USP, líder em IA/ML com atuação internacional; forte relação com indústria (Itaú-Unibanco) e centros C2D/C4AI."
+            },
+            {
+              "name": "Denis Fernando Wolf",
+              "institution": "USP",
+              "scholarship_level": "PQ-2",
+              "lattes_url": "http://lattes.cnpq.br/8948846267711214",
+              "institution_state_uf": "SP",
+              "institution_region": "Sudeste",
+              "scholarship_category": "PQ-2",
+              "sex_inferred": "male",
+              "main_research_area": "robotics",
+              "secondary_research_areas": [
+                "robotics",
+                "artificial_intelligence",
+                "machine_learning",
+                "computer_vision"
+              ],
+              "research_topics": [
+                "autonomous_vehicles",
+                "robotics",
+                "machine_learning",
+                "computer_vision"
+              ],
+              "methods_and_techniques": [
+                "robotics",
+                "machine_learning",
+                "computer_vision",
+                "mobile_robots"
+              ],
+              "application_domains": [
+                "education",
+                "informatics",
+                "robotics"
+              ],
+              "profile_summary_short": "Professor associado na USP atuando em robótica móvel, veículos autônomos, ML e visão computacional.",
+              "profile_summary_bullets": [
+                "Professor associado no ICMC/USP",
+                "Coordenador do LRM",
+                "Interesses: veículos autônomos, robótica móvel, ML, visão computacional",
+                "Formação: UFScar 1999; USP 2001; USC 2006"
+              ],
+              "search_keywords": [
+                "denis_f_wolf",
+                "denis_wolf",
+                "robotics",
+                "autonomous_vehicles",
+                "machine_learning",
+                "computer_vision",
+                "usp",
+                "icmc",
+                "lrm"
+              ],
+              "dashboard_tags": [
+                "usp",
+                "icmc",
+                "robotics",
+                "ai",
+                "ml",
+                "vision",
+                "vehicles"
+              ],
+              "qa_context": "Denis Fernando Wolf, professor associado na USP (ICMC/USP); áreas: robótica móvel, veículos autônomos, ML e visão computacional; formação: UFScar 1999, USP 2001, USC 2006."
+            },
+            {
+              "name": "Marcelo Fantinato",
+              "institution": "USP",
+              "scholarship_level": "PQ-C",
+              "lattes_url": "http://lattes.cnpq.br/8207954538307988",
+              "institution_state_uf": "SP",
+              "institution_region": "Sudeste",
+              "scholarship_category": "PQ-C",
+              "sex_inferred": "male",
+              "main_research_area": "artificial_intelligence",
+              "secondary_research_areas": [
+                "process_mining",
+                "robotics",
+                "health",
+                "gerontology"
+              ],
+              "research_topics": [
+                "privacy_in_smart_toys",
+                "ai_policy",
+                "process_mining",
+                "robotics_healthcare"
+              ],
+              "methods_and_techniques": [
+                "process_mining",
+                "robotics",
+                "machine_learning",
+                "data_privacy"
+              ],
+              "application_domains": [
+                "public_sector",
+                "healthcare",
+                "education",
+                "privacy_in_smart_devices"
+              ],
+              "profile_summary_short": "Professor associado da EACH-USP, pesquisador em IA e mineração de processos, com atuação em políticas públicas e gestão universitária.",
+              "profile_summary_bullets": [
+                "Diretor da EACH-USP e líder de CIA-GP.",
+                "Bolsista de Produtividade em Pesquisa (PQ-C) do CNPq.",
+                "Pesquisador convidado/visitante em NL e CA; pesquisa internacional.",
+                "Editor associado de IJCSI e Expert Systems; atua em mineração de processos."
+              ],
+              "search_keywords": [
+                "marcelo_fantinato",
+                "computacao",
+                "inteligencia_artificial",
+                "mineração_de_processos",
+                "gerontologia",
+                "políticas_públicas",
+                "usp",
+                "each",
+                "cnpq_pq_c"
+              ],
+              "dashboard_tags": [
+                "professor_associado",
+                "ia",
+                "mineração_de_processos",
+                "liderança",
+                "usp",
+                "each"
+              ],
+              "qa_context": "Marcelo Fantinato, USP, PQ-C; IA e mineração de processos; gestão institucional; experiência internacional NL/CA."
+            },
+            {
+              "name": "Renato Tinós",
+              "institution": "USP",
+              "scholarship_level": "PQ-C",
+              "lattes_url": "http://lattes.cnpq.br/1273134370963830",
+              "institution_state_uf": "SP",
+              "institution_region": "Sudeste",
+              "scholarship_category": "PQ-C",
+              "sex_inferred": "male",
+              "main_research_area": "artificial_intelligence",
+              "secondary_research_areas": [
+                "evolutionary_computation",
+                "machine_learning"
+              ],
+              "research_topics": [
+                "computacao_evolutiva",
+                "inteligencia_artificial",
+                "aprendizado_de_maquina",
+                "robotica"
+              ],
+              "methods_and_techniques": [
+                "evolutionary_algorithms",
+                "machine_learning",
+                "robotics",
+                "ai_techniques"
+              ],
+              "application_domains": [],
+              "profile_summary_short": "Professor Titular na FFCLRP-USP, pesquisador em IA e ML, Diretor do CeTI-RP desde 2026.",
+              "profile_summary_bullets": [
+                "Engenheiro Eletricista pela UNESP (1994).",
+                "Mestrado (1999) e Doutorado (2003) pela USP.",
+                "Professor Titular no FFCLRP-USP desde 2004; Chefe de departamento por dois mandatos.",
+                "Diretor do CeTI-RP desde 2026; Editor associado em periódicos."
+              ],
+              "search_keywords": [
+                "renato_tinos",
+                "computacao",
+                "computacao_evolutiva",
+                "inteligencia_artificial",
+                "aprendizado_de_maquina",
+                "robotica",
+                "ceTi_rp",
+                "ffclrp",
+                "usp",
+                "doutorado_2003",
+                "pos_doutorado",
+                "colorado_state_university",
+                "professor_titular",
+                "diretor_ceTi_rp"
+              ],
+              "dashboard_tags": [
+                "usp",
+                "ffclrp",
+                "diretor_ceTi_rp",
+                "professor_titular",
+                "computacao",
+                "ia",
+                "ml",
+                "evolutiva"
+              ],
+              "qa_context": "Renato Tinós: USP professor titular, IA e ML; Doutorado 2003 pela USP; Diretor CeTI-RP desde 2026; editor associado; atua na FFCLRP."
+            },
+            {
+              "name": "Rodolfo Ipolito Meneguette",
+              "institution": "USP",
+              "scholarship_level": "PQ-B",
+              "lattes_url": "http://lattes.cnpq.br/4981889689994770",
+              "institution_state_uf": "SP",
+              "institution_region": "Sudeste",
+              "scholarship_category": "unknown",
+              "sex_inferred": "male",
+              "main_research_area": "computer_science",
+              "secondary_research_areas": [
+                "vehicular_networks",
+                "data_dissemination",
+                "robotics",
+                "embedded_systems"
+              ],
+              "research_topics": [
+                "vehicular_networks",
+                "data_dissemination",
+                "robotics",
+                "artificial_neural_networks",
+                "embedded_systems",
+                "intelligent_transportation_systems"
+              ],
+              "methods_and_techniques": [
+                "neural_networks",
+                "networking",
+                "embedded_systems",
+                "robotics",
+                "data_dissemination",
+                "intelligent_transportation_systems"
+              ],
+              "application_domains": [
+                "transportation",
+                "smart_transportation"
+              ],
+              "profile_summary_short": "Professor associado da USP ICMSC, PQ desde 2019, pesquisador em redes e transporte inteligente.",
+              "profile_summary_bullets": [
+                "Prof. associado na USP ICMSC; PQ desde 2019.",
+                "Doutor pela UNICAMP (2013); pós-doutorando na U Ottawa (2017).",
+                "Coordenador de projeto de transporte inteligente financiado pelo CNPq; cooperação com FAPESP.",
+                "Editor associado de IEEE T-ITS, IEEE LATAMT, Elsevier VEHCOM e ReCiC."
+              ],
+              "search_keywords": [
+                "computer_science",
+                "networks",
+                "vehicular_networks",
+                "data_dissemination",
+                "robotics",
+                "neural_networks",
+                "embedded_systems",
+                "intelligent_transportation_systems"
+              ],
+              "dashboard_tags": [
+                "usp",
+                "icmsc",
+                "pq_b",
+                "mid_career",
+                "transportation",
+                "editorial_experience",
+                "international_canada",
+                "vehicular_networks"
+              ],
+              "qa_context": "Perguntas sobre área principal, temas de redes, transporte inteligente, experiência internacional, publicações e patentes."
+            }
+          ],
+          "candidates_for_validation": [
+            {
+              "name": "André Fujita",
+              "institution": "USP",
+              "scholarship_level": "PQ-2",
+              "lattes_url": "http://lattes.cnpq.br/0247990329725342",
+              "institution_state_uf": "SP",
+              "institution_region": "Sudeste",
+              "scholarship_category": "PQ-2",
+              "sex_inferred": "unknown",
+              "main_research_area": "bioinformatics",
+              "secondary_research_areas": [
+                "graph_theory",
+                "network_science",
+                "systems_biology",
+                "bioinformatics"
+              ],
+              "research_topics": [
+                "graph_connectivity",
+                "statistical_network_analysis",
+                "biological_data_analysis",
+                "complex_networks"
+              ],
+              "methods_and_techniques": [
+                "graph_analysis",
+                "statistical_methods",
+                "network_analysis",
+                "spectral_graph_theory"
+              ],
+              "application_domains": [
+                "biomedicine",
+                "bioinformatics",
+                "biological_research"
+              ],
+              "profile_summary_short": "Professor associado da USP com doutorado em Bioinformática; pesquisa em conectividade e grafos aplicada a dados biológicos, com atuação internacional e lideranças editoriais.",
+              "profile_summary_bullets": [
+                "Doutorado em Bioinformática pela USP (2007); livre-docência (2016).",
+                "Pós-doutoramentos no Japão e Reino Unido; pesquisa em grafos e conectividade.",
+                "Professor Associado na USP; Professor Titular na Kyushu University e Pesquisador Adjunto na Waseda University.",
+                "Prêmios nacionais e internacionais; atua como editor e revisor."
+              ],
+              "search_keywords": [
+                "bioinformatics",
+                "graph_networks",
+                "connectivity",
+                "biological_data",
+                "statistical_methods",
+                "complex_networks",
+                "USP",
+                "Kyushu University",
+                "Waseda University"
+              ],
+              "dashboard_tags": [
+                "bioinformatics",
+                "network_science",
+                "graph_theory",
+                "international_experience",
+                "leaders",
+                "ed_editorial"
+              ],
+              "qa_context": "Perfil de André Fujita: USP; doutorado em Bioinformática (2007); professor associado na USP, titular na Kyushu University; pesquisa em conectividade e grafos em dados biológicos; experiência internacional no Japão, Reino Unido, Alemanha, EUA; atuação editorial e de liderança."
+            },
+            {
+              "name": "Anna Helena Reali Costa",
+              "institution": "USP",
+              "scholarship_level": "PQ-2",
+              "lattes_url": "http://lattes.cnpq.br/5116213374235632",
+              "institution_state_uf": "SP",
+              "institution_region": "Sudeste",
+              "scholarship_category": "PQ-2",
+              "sex_inferred": "female",
+              "main_research_area": "artificial_intelligence",
+              "secondary_research_areas": [],
+              "research_topics": [
+                "reinforcement_learning",
+                "computer_vision",
+                "robotics",
+                "machine_learning"
+              ],
+              "methods_and_techniques": [
+                "reinforcement_learning",
+                "planning_and_learning",
+                "computer_vision",
+                "robotics"
+              ],
+              "application_domains": [],
+              "profile_summary_short": "Professora titular da USP com atuação em IA e ML, com experiência internacional em visão computacional e robótica móvel.",
+              "profile_summary_bullets": [
+                "Professora titular na Escola Politécnica da USP",
+                "Doutorado em Engenharia Elétrica pela USP; mestrado e graduação pelo FEI",
+                "Pesquisadora visitante na Alemanha; pós-doutorado nos EUA",
+                "Diretora do Centro de Ciência de Dados (C2D) e pesquisadora do C4AI"
+              ],
+              "search_keywords": [
+                "Anna_Helena_Reali_Costa",
+                "inteligência_artificial",
+                "machine_learning",
+                "reinforcement_learning",
+                "computer_vision",
+                "robotics",
+                "doutorado",
+                "USP",
+                "C2D",
+                "C4AI",
+                "Itaú",
+                "CMU",
+                "KIT",
+                "Germany",
+                "United_States"
+              ],
+              "dashboard_tags": [
+                "leadership",
+                "ia",
+                "machine_learning",
+                "international_experience",
+                "industry_collaboration",
+                "editorial_experience"
+              ],
+              "qa_context": "Professora titular da USP, líder em IA/ML com atuação internacional; forte relação com indústria (Itaú-Unibanco) e centros C2D/C4AI."
+            },
+            {
+              "name": "Denis Fernando Wolf",
+              "institution": "USP",
+              "scholarship_level": "PQ-2",
+              "lattes_url": "http://lattes.cnpq.br/8948846267711214",
+              "institution_state_uf": "SP",
+              "institution_region": "Sudeste",
+              "scholarship_category": "PQ-2",
+              "sex_inferred": "male",
+              "main_research_area": "robotics",
+              "secondary_research_areas": [
+                "robotics",
+                "artificial_intelligence",
+                "machine_learning",
+                "computer_vision"
+              ],
+              "research_topics": [
+                "autonomous_vehicles",
+                "robotics",
+                "machine_learning",
+                "computer_vision"
+              ],
+              "methods_and_techniques": [
+                "robotics",
+                "machine_learning",
+                "computer_vision",
+                "mobile_robots"
+              ],
+              "application_domains": [
+                "education",
+                "informatics",
+                "robotics"
+              ],
+              "profile_summary_short": "Professor associado na USP atuando em robótica móvel, veículos autônomos, ML e visão computacional.",
+              "profile_summary_bullets": [
+                "Professor associado no ICMC/USP",
+                "Coordenador do LRM",
+                "Interesses: veículos autônomos, robótica móvel, ML, visão computacional",
+                "Formação: UFScar 1999; USP 2001; USC 2006"
+              ],
+              "search_keywords": [
+                "denis_f_wolf",
+                "denis_wolf",
+                "robotics",
+                "autonomous_vehicles",
+                "machine_learning",
+                "computer_vision",
+                "usp",
+                "icmc",
+                "lrm"
+              ],
+              "dashboard_tags": [
+                "usp",
+                "icmc",
+                "robotics",
+                "ai",
+                "ml",
+                "vision",
+                "vehicles"
+              ],
+              "qa_context": "Denis Fernando Wolf, professor associado na USP (ICMC/USP); áreas: robótica móvel, veículos autônomos, ML e visão computacional; formação: UFScar 1999, USP 2001, USC 2006."
+            },
+            {
+              "name": "Marcelo Fantinato",
+              "institution": "USP",
+              "scholarship_level": "PQ-C",
+              "lattes_url": "http://lattes.cnpq.br/8207954538307988",
+              "institution_state_uf": "SP",
+              "institution_region": "Sudeste",
+              "scholarship_category": "PQ-C",
+              "sex_inferred": "male",
+              "main_research_area": "artificial_intelligence",
+              "secondary_research_areas": [
+                "process_mining",
+                "robotics",
+                "health",
+                "gerontology"
+              ],
+              "research_topics": [
+                "privacy_in_smart_toys",
+                "ai_policy",
+                "process_mining",
+                "robotics_healthcare"
+              ],
+              "methods_and_techniques": [
+                "process_mining",
+                "robotics",
+                "machine_learning",
+                "data_privacy"
+              ],
+              "application_domains": [
+                "public_sector",
+                "healthcare",
+                "education",
+                "privacy_in_smart_devices"
+              ],
+              "profile_summary_short": "Professor associado da EACH-USP, pesquisador em IA e mineração de processos, com atuação em políticas públicas e gestão universitária.",
+              "profile_summary_bullets": [
+                "Diretor da EACH-USP e líder de CIA-GP.",
+                "Bolsista de Produtividade em Pesquisa (PQ-C) do CNPq.",
+                "Pesquisador convidado/visitante em NL e CA; pesquisa internacional.",
+                "Editor associado de IJCSI e Expert Systems; atua em mineração de processos."
+              ],
+              "search_keywords": [
+                "marcelo_fantinato",
+                "computacao",
+                "inteligencia_artificial",
+                "mineração_de_processos",
+                "gerontologia",
+                "políticas_públicas",
+                "usp",
+                "each",
+                "cnpq_pq_c"
+              ],
+              "dashboard_tags": [
+                "professor_associado",
+                "ia",
+                "mineração_de_processos",
+                "liderança",
+                "usp",
+                "each"
+              ],
+              "qa_context": "Marcelo Fantinato, USP, PQ-C; IA e mineração de processos; gestão institucional; experiência internacional NL/CA."
+            },
+            {
+              "name": "Renato Tinós",
+              "institution": "USP",
+              "scholarship_level": "PQ-C",
+              "lattes_url": "http://lattes.cnpq.br/1273134370963830",
+              "institution_state_uf": "SP",
+              "institution_region": "Sudeste",
+              "scholarship_category": "PQ-C",
+              "sex_inferred": "male",
+              "main_research_area": "artificial_intelligence",
+              "secondary_research_areas": [
+                "evolutionary_computation",
+                "machine_learning"
+              ],
+              "research_topics": [
+                "computacao_evolutiva",
+                "inteligencia_artificial",
+                "aprendizado_de_maquina",
+                "robotica"
+              ],
+              "methods_and_techniques": [
+                "evolutionary_algorithms",
+                "machine_learning",
+                "robotics",
+                "ai_techniques"
+              ],
+              "application_domains": [],
+              "profile_summary_short": "Professor Titular na FFCLRP-USP, pesquisador em IA e ML, Diretor do CeTI-RP desde 2026.",
+              "profile_summary_bullets": [
+                "Engenheiro Eletricista pela UNESP (1994).",
+                "Mestrado (1999) e Doutorado (2003) pela USP.",
+                "Professor Titular no FFCLRP-USP desde 2004; Chefe de departamento por dois mandatos.",
+                "Diretor do CeTI-RP desde 2026; Editor associado em periódicos."
+              ],
+              "search_keywords": [
+                "renato_tinos",
+                "computacao",
+                "computacao_evolutiva",
+                "inteligencia_artificial",
+                "aprendizado_de_maquina",
+                "robotica",
+                "ceTi_rp",
+                "ffclrp",
+                "usp",
+                "doutorado_2003",
+                "pos_doutorado",
+                "colorado_state_university",
+                "professor_titular",
+                "diretor_ceTi_rp"
+              ],
+              "dashboard_tags": [
+                "usp",
+                "ffclrp",
+                "diretor_ceTi_rp",
+                "professor_titular",
+                "computacao",
+                "ia",
+                "ml",
+                "evolutiva"
+              ],
+              "qa_context": "Renato Tinós: USP professor titular, IA e ML; Doutorado 2003 pela USP; Diretor CeTI-RP desde 2026; editor associado; atua na FFCLRP."
+            },
+            {
+              "name": "Rodolfo Ipolito Meneguette",
+              "institution": "USP",
+              "scholarship_level": "PQ-B",
+              "lattes_url": "http://lattes.cnpq.br/4981889689994770",
+              "institution_state_uf": "SP",
+              "institution_region": "Sudeste",
+              "scholarship_category": "unknown",
+              "sex_inferred": "male",
+              "main_research_area": "computer_science",
+              "secondary_research_areas": [
+                "vehicular_networks",
+                "data_dissemination",
+                "robotics",
+                "embedded_systems"
+              ],
+              "research_topics": [
+                "vehicular_networks",
+                "data_dissemination",
+                "robotics",
+                "artificial_neural_networks",
+                "embedded_systems",
+                "intelligent_transportation_systems"
+              ],
+              "methods_and_techniques": [
+                "neural_networks",
+                "networking",
+                "embedded_systems",
+                "robotics",
+                "data_dissemination",
+                "intelligent_transportation_systems"
+              ],
+              "application_domains": [
+                "transportation",
+                "smart_transportation"
+              ],
+              "profile_summary_short": "Professor associado da USP ICMSC, PQ desde 2019, pesquisador em redes e transporte inteligente.",
+              "profile_summary_bullets": [
+                "Prof. associado na USP ICMSC; PQ desde 2019.",
+                "Doutor pela UNICAMP (2013); pós-doutorando na U Ottawa (2017).",
+                "Coordenador de projeto de transporte inteligente financiado pelo CNPq; cooperação com FAPESP.",
+                "Editor associado de IEEE T-ITS, IEEE LATAMT, Elsevier VEHCOM e ReCiC."
+              ],
+              "search_keywords": [
+                "computer_science",
+                "networks",
+                "vehicular_networks",
+                "data_dissemination",
+                "robotics",
+                "neural_networks",
+                "embedded_systems",
+                "intelligent_transportation_systems"
+              ],
+              "dashboard_tags": [
+                "usp",
+                "icmsc",
+                "pq_b",
+                "mid_career",
+                "transportation",
+                "editorial_experience",
+                "international_canada",
+                "vehicular_networks"
+              ],
+              "qa_context": "Perguntas sobre área principal, temas de redes, transporte inteligente, experiência internacional, publicações e patentes."
+            }
+          ],
+          "candidates_for_validation_count": 6,
+          "candidates_truncated": false
+        },
+        "tool_results": [
+          {
+            "index": 1,
+            "question": "Quantas pessoas da USP trabalham com robótica?",
+            "plan": {
+              "tool": "structured_query",
+              "question": "Quantas pessoas da USP trabalham com robótica?",
+              "intent": "count",
+              "reason": "precisa contar a interseção entre instituição e tópico",
+              "filters": [
+                {
+                  "field": "institution",
+                  "op": "equals",
+                  "value": "USP"
+                },
+                {
+                  "field": "searchable_text",
+                  "op": "topic",
+                  "value": "robotica"
+                }
+              ],
+              "group_by": null,
+              "order_by": null,
+              "limit": 10,
+              "answer_hint": "responder com a contagem exata e mencionar exemplos apenas se útil"
+            },
+            "result": {
+              "tool": "structured_query",
+              "intent": "count",
+              "total_profiles": 480,
+              "matched_count": 6,
+              "matched_count_is_broad_candidate_count": true,
+              "validation_required": true,
+              "validation_reason": "Há filtro de tópico em texto livre. Os candidatos precisam ser validados pela LLM final para evitar falsos positivos.",
+              "topic_filters": [
+                {
+                  "field": "searchable_text",
+                  "op": "topic",
+                  "value": "robotica"
+                }
+              ],
+              "filters": [
+                {
+                  "field": "institution",
+                  "op": "equals",
+                  "value": "USP"
+                },
+                {
+                  "field": "searchable_text",
+                  "op": "topic",
+                  "value": "robotica"
+                }
+              ],
+              "group_by": null,
+              "examples": [
+                {
+                  "name": "André Fujita",
+                  "institution": "USP",
+                  "scholarship_level": "PQ-2",
+                  "lattes_url": "http://lattes.cnpq.br/0247990329725342",
+                  "institution_state_uf": "SP",
+                  "institution_region": "Sudeste",
+                  "scholarship_category": "PQ-2",
+                  "sex_inferred": "unknown",
+                  "main_research_area": "bioinformatics",
+                  "secondary_research_areas": [
+                    "graph_theory",
+                    "network_science",
+                    "systems_biology",
+                    "bioinformatics"
+                  ],
+                  "research_topics": [
+                    "graph_connectivity",
+                    "statistical_network_analysis",
+                    "biological_data_analysis",
+                    "complex_networks"
+                  ],
+                  "methods_and_techniques": [
+                    "graph_analysis",
+                    "statistical_methods",
+                    "network_analysis",
+                    "spectral_graph_theory"
+                  ],
+                  "application_domains": [
+                    "biomedicine",
+                    "bioinformatics",
+                    "biological_research"
+                  ],
+                  "profile_summary_short": "Professor associado da USP com doutorado em Bioinformática; pesquisa em conectividade e grafos aplicada a dados biológicos, com atuação internacional e lideranças editoriais.",
+                  "profile_summary_bullets": [
+                    "Doutorado em Bioinformática pela USP (2007); livre-docência (2016).",
+                    "Pós-doutoramentos no Japão e Reino Unido; pesquisa em grafos e conectividade.",
+                    "Professor Associado na USP; Professor Titular na Kyushu University e Pesquisador Adjunto na Waseda University.",
+                    "Prêmios nacionais e internacionais; atua como editor e revisor."
+                  ],
+                  "search_keywords": [
+                    "bioinformatics",
+                    "graph_networks",
+                    "connectivity",
+                    "biological_data",
+                    "statistical_methods",
+                    "complex_networks",
+                    "USP",
+                    "Kyushu University",
+                    "Waseda University"
+                  ],
+                  "dashboard_tags": [
+                    "bioinformatics",
+                    "network_science",
+                    "graph_theory",
+                    "international_experience",
+                    "leaders",
+                    "ed_editorial"
+                  ],
+                  "qa_context": "Perfil de André Fujita: USP; doutorado em Bioinformática (2007); professor associado na USP, titular na Kyushu University; pesquisa em conectividade e grafos em dados biológicos; experiência internacional no Japão, Reino Unido, Alemanha, EUA; atuação editorial e de liderança."
+                },
+                {
+                  "name": "Anna Helena Reali Costa",
+                  "institution": "USP",
+                  "scholarship_level": "PQ-2",
+                  "lattes_url": "http://lattes.cnpq.br/5116213374235632",
+                  "institution_state_uf": "SP",
+                  "institution_region": "Sudeste",
+                  "scholarship_category": "PQ-2",
+                  "sex_inferred": "female",
+                  "main_research_area": "artificial_intelligence",
+                  "secondary_research_areas": [],
+                  "research_topics": [
+                    "reinforcement_learning",
+                    "computer_vision",
+                    "robotics",
+                    "machine_learning"
+                  ],
+                  "methods_and_techniques": [
+                    "reinforcement_learning",
+                    "planning_and_learning",
+                    "computer_vision",
+                    "robotics"
+                  ],
+                  "application_domains": [],
+                  "profile_summary_short": "Professora titular da USP com atuação em IA e ML, com experiência internacional em visão computacional e robótica móvel.",
+                  "profile_summary_bullets": [
+                    "Professora titular na Escola Politécnica da USP",
+                    "Doutorado em Engenharia Elétrica pela USP; mestrado e graduação pelo FEI",
+                    "Pesquisadora visitante na Alemanha; pós-doutorado nos EUA",
+                    "Diretora do Centro de Ciência de Dados (C2D) e pesquisadora do C4AI"
+                  ],
+                  "search_keywords": [
+                    "Anna_Helena_Reali_Costa",
+                    "inteligência_artificial",
+                    "machine_learning",
+                    "reinforcement_learning",
+                    "computer_vision",
+                    "robotics",
+                    "doutorado",
+                    "USP",
+                    "C2D",
+                    "C4AI",
+                    "Itaú",
+                    "CMU",
+                    "KIT",
+                    "Germany",
+                    "United_States"
+                  ],
+                  "dashboard_tags": [
+                    "leadership",
+                    "ia",
+                    "machine_learning",
+                    "international_experience",
+                    "industry_collaboration",
+                    "editorial_experience"
+                  ],
+                  "qa_context": "Professora titular da USP, líder em IA/ML com atuação internacional; forte relação com indústria (Itaú-Unibanco) e centros C2D/C4AI."
+                },
+                {
+                  "name": "Denis Fernando Wolf",
+                  "institution": "USP",
+                  "scholarship_level": "PQ-2",
+                  "lattes_url": "http://lattes.cnpq.br/8948846267711214",
+                  "institution_state_uf": "SP",
+                  "institution_region": "Sudeste",
+                  "scholarship_category": "PQ-2",
+                  "sex_inferred": "male",
+                  "main_research_area": "robotics",
+                  "secondary_research_areas": [
+                    "robotics",
+                    "artificial_intelligence",
+                    "machine_learning",
+                    "computer_vision"
+                  ],
+                  "research_topics": [
+                    "autonomous_vehicles",
+                    "robotics",
+                    "machine_learning",
+                    "computer_vision"
+                  ],
+                  "methods_and_techniques": [
+                    "robotics",
+                    "machine_learning",
+                    "computer_vision",
+                    "mobile_robots"
+                  ],
+                  "application_domains": [
+                    "education",
+                    "informatics",
+                    "robotics"
+                  ],
+                  "profile_summary_short": "Professor associado na USP atuando em robótica móvel, veículos autônomos, ML e visão computacional.",
+                  "profile_summary_bullets": [
+                    "Professor associado no ICMC/USP",
+                    "Coordenador do LRM",
+                    "Interesses: veículos autônomos, robótica móvel, ML, visão computacional",
+                    "Formação: UFScar 1999; USP 2001; USC 2006"
+                  ],
+                  "search_keywords": [
+                    "denis_f_wolf",
+                    "denis_wolf",
+                    "robotics",
+                    "autonomous_vehicles",
+                    "machine_learning",
+                    "computer_vision",
+                    "usp",
+                    "icmc",
+                    "lrm"
+                  ],
+                  "dashboard_tags": [
+                    "usp",
+                    "icmc",
+                    "robotics",
+                    "ai",
+                    "ml",
+                    "vision",
+                    "vehicles"
+                  ],
+                  "qa_context": "Denis Fernando Wolf, professor associado na USP (ICMC/USP); áreas: robótica móvel, veículos autônomos, ML e visão computacional; formação: UFScar 1999, USP 2001, USC 2006."
+                },
+                {
+                  "name": "Marcelo Fantinato",
+                  "institution": "USP",
+                  "scholarship_level": "PQ-C",
+                  "lattes_url": "http://lattes.cnpq.br/8207954538307988",
+                  "institution_state_uf": "SP",
+                  "institution_region": "Sudeste",
+                  "scholarship_category": "PQ-C",
+                  "sex_inferred": "male",
+                  "main_research_area": "artificial_intelligence",
+                  "secondary_research_areas": [
+                    "process_mining",
+                    "robotics",
+                    "health",
+                    "gerontology"
+                  ],
+                  "research_topics": [
+                    "privacy_in_smart_toys",
+                    "ai_policy",
+                    "process_mining",
+                    "robotics_healthcare"
+                  ],
+                  "methods_and_techniques": [
+                    "process_mining",
+                    "robotics",
+                    "machine_learning",
+                    "data_privacy"
+                  ],
+                  "application_domains": [
+                    "public_sector",
+                    "healthcare",
+                    "education",
+                    "privacy_in_smart_devices"
+                  ],
+                  "profile_summary_short": "Professor associado da EACH-USP, pesquisador em IA e mineração de processos, com atuação em políticas públicas e gestão universitária.",
+                  "profile_summary_bullets": [
+                    "Diretor da EACH-USP e líder de CIA-GP.",
+                    "Bolsista de Produtividade em Pesquisa (PQ-C) do CNPq.",
+                    "Pesquisador convidado/visitante em NL e CA; pesquisa internacional.",
+                    "Editor associado de IJCSI e Expert Systems; atua em mineração de processos."
+                  ],
+                  "search_keywords": [
+                    "marcelo_fantinato",
+                    "computacao",
+                    "inteligencia_artificial",
+                    "mineração_de_processos",
+                    "gerontologia",
+                    "políticas_públicas",
+                    "usp",
+                    "each",
+                    "cnpq_pq_c"
+                  ],
+                  "dashboard_tags": [
+                    "professor_associado",
+                    "ia",
+                    "mineração_de_processos",
+                    "liderança",
+                    "usp",
+                    "each"
+                  ],
+                  "qa_context": "Marcelo Fantinato, USP, PQ-C; IA e mineração de processos; gestão institucional; experiência internacional NL/CA."
+                },
+                {
+                  "name": "Renato Tinós",
+                  "institution": "USP",
+                  "scholarship_level": "PQ-C",
+                  "lattes_url": "http://lattes.cnpq.br/1273134370963830",
+                  "institution_state_uf": "SP",
+                  "institution_region": "Sudeste",
+                  "scholarship_category": "PQ-C",
+                  "sex_inferred": "male",
+                  "main_research_area": "artificial_intelligence",
+                  "secondary_research_areas": [
+                    "evolutionary_computation",
+                    "machine_learning"
+                  ],
+                  "research_topics": [
+                    "computacao_evolutiva",
+                    "inteligencia_artificial",
+                    "aprendizado_de_maquina",
+                    "robotica"
+                  ],
+                  "methods_and_techniques": [
+                    "evolutionary_algorithms",
+                    "machine_learning",
+                    "robotics",
+                    "ai_techniques"
+                  ],
+                  "application_domains": [],
+                  "profile_summary_short": "Professor Titular na FFCLRP-USP, pesquisador em IA e ML, Diretor do CeTI-RP desde 2026.",
+                  "profile_summary_bullets": [
+                    "Engenheiro Eletricista pela UNESP (1994).",
+                    "Mestrado (1999) e Doutorado (2003) pela USP.",
+                    "Professor Titular no FFCLRP-USP desde 2004; Chefe de departamento por dois mandatos.",
+                    "Diretor do CeTI-RP desde 2026; Editor associado em periódicos."
+                  ],
+                  "search_keywords": [
+                    "renato_tinos",
+                    "computacao",
+                    "computacao_evolutiva",
+                    "inteligencia_artificial",
+                    "aprendizado_de_maquina",
+                    "robotica",
+                    "ceTi_rp",
+                    "ffclrp",
+                    "usp",
+                    "doutorado_2003",
+                    "pos_doutorado",
+                    "colorado_state_university",
+                    "professor_titular",
+                    "diretor_ceTi_rp"
+                  ],
+                  "dashboard_tags": [
+                    "usp",
+                    "ffclrp",
+                    "diretor_ceTi_rp",
+                    "professor_titular",
+                    "computacao",
+                    "ia",
+                    "ml",
+                    "evolutiva"
+                  ],
+                  "qa_context": "Renato Tinós: USP professor titular, IA e ML; Doutorado 2003 pela USP; Diretor CeTI-RP desde 2026; editor associado; atua na FFCLRP."
+                },
+                {
+                  "name": "Rodolfo Ipolito Meneguette",
+                  "institution": "USP",
+                  "scholarship_level": "PQ-B",
+                  "lattes_url": "http://lattes.cnpq.br/4981889689994770",
+                  "institution_state_uf": "SP",
+                  "institution_region": "Sudeste",
+                  "scholarship_category": "unknown",
+                  "sex_inferred": "male",
+                  "main_research_area": "computer_science",
+                  "secondary_research_areas": [
+                    "vehicular_networks",
+                    "data_dissemination",
+                    "robotics",
+                    "embedded_systems"
+                  ],
+                  "research_topics": [
+                    "vehicular_networks",
+                    "data_dissemination",
+                    "robotics",
+                    "artificial_neural_networks",
+                    "embedded_systems",
+                    "intelligent_transportation_systems"
+                  ],
+                  "methods_and_techniques": [
+                    "neural_networks",
+                    "networking",
+                    "embedded_systems",
+                    "robotics",
+                    "data_dissemination",
+                    "intelligent_transportation_systems"
+                  ],
+                  "application_domains": [
+                    "transportation",
+                    "smart_transportation"
+                  ],
+                  "profile_summary_short": "Professor associado da USP ICMSC, PQ desde 2019, pesquisador em redes e transporte inteligente.",
+                  "profile_summary_bullets": [
+                    "Prof. associado na USP ICMSC; PQ desde 2019.",
+                    "Doutor pela UNICAMP (2013); pós-doutorando na U Ottawa (2017).",
+                    "Coordenador de projeto de transporte inteligente financiado pelo CNPq; cooperação com FAPESP.",
+                    "Editor associado de IEEE T-ITS, IEEE LATAMT, Elsevier VEHCOM e ReCiC."
+                  ],
+                  "search_keywords": [
+                    "computer_science",
+                    "networks",
+                    "vehicular_networks",
+                    "data_dissemination",
+                    "robotics",
+                    "neural_networks",
+                    "embedded_systems",
+                    "intelligent_transportation_systems"
+                  ],
+                  "dashboard_tags": [
+                    "usp",
+                    "icmsc",
+                    "pq_b",
+                    "mid_career",
+                    "transportation",
+                    "editorial_experience",
+                    "international_canada",
+                    "vehicular_networks"
+                  ],
+                  "qa_context": "Perguntas sobre área principal, temas de redes, transporte inteligente, experiência internacional, publicações e patentes."
+                }
+              ],
+              "candidates_for_validation": [
+                {
+                  "name": "André Fujita",
+                  "institution": "USP",
+                  "scholarship_level": "PQ-2",
+                  "lattes_url": "http://lattes.cnpq.br/0247990329725342",
+                  "institution_state_uf": "SP",
+                  "institution_region": "Sudeste",
+                  "scholarship_category": "PQ-2",
+                  "sex_inferred": "unknown",
+                  "main_research_area": "bioinformatics",
+                  "secondary_research_areas": [
+                    "graph_theory",
+                    "network_science",
+                    "systems_biology",
+                    "bioinformatics"
+                  ],
+                  "research_topics": [
+                    "graph_connectivity",
+                    "statistical_network_analysis",
+                    "biological_data_analysis",
+                    "complex_networks"
+                  ],
+                  "methods_and_techniques": [
+                    "graph_analysis",
+                    "statistical_methods",
+                    "network_analysis",
+                    "spectral_graph_theory"
+                  ],
+                  "application_domains": [
+                    "biomedicine",
+                    "bioinformatics",
+                    "biological_research"
+                  ],
+                  "profile_summary_short": "Professor associado da USP com doutorado em Bioinformática; pesquisa em conectividade e grafos aplicada a dados biológicos, com atuação internacional e lideranças editoriais.",
+                  "profile_summary_bullets": [
+                    "Doutorado em Bioinformática pela USP (2007); livre-docência (2016).",
+                    "Pós-doutoramentos no Japão e Reino Unido; pesquisa em grafos e conectividade.",
+                    "Professor Associado na USP; Professor Titular na Kyushu University e Pesquisador Adjunto na Waseda University.",
+                    "Prêmios nacionais e internacionais; atua como editor e revisor."
+                  ],
+                  "search_keywords": [
+                    "bioinformatics",
+                    "graph_networks",
+                    "connectivity",
+                    "biological_data",
+                    "statistical_methods",
+                    "complex_networks",
+                    "USP",
+                    "Kyushu University",
+                    "Waseda University"
+                  ],
+                  "dashboard_tags": [
+                    "bioinformatics",
+                    "network_science",
+                    "graph_theory",
+                    "international_experience",
+                    "leaders",
+                    "ed_editorial"
+                  ],
+                  "qa_context": "Perfil de André Fujita: USP; doutorado em Bioinformática (2007); professor associado na USP, titular na Kyushu University; pesquisa em conectividade e grafos em dados biológicos; experiência internacional no Japão, Reino Unido, Alemanha, EUA; atuação editorial e de liderança."
+                },
+                {
+                  "name": "Anna Helena Reali Costa",
+                  "institution": "USP",
+                  "scholarship_level": "PQ-2",
+                  "lattes_url": "http://lattes.cnpq.br/5116213374235632",
+                  "institution_state_uf": "SP",
+                  "institution_region": "Sudeste",
+                  "scholarship_category": "PQ-2",
+                  "sex_inferred": "female",
+                  "main_research_area": "artificial_intelligence",
+                  "secondary_research_areas": [],
+                  "research_topics": [
+                    "reinforcement_learning",
+                    "computer_vision",
+                    "robotics",
+                    "machine_learning"
+                  ],
+                  "methods_and_techniques": [
+                    "reinforcement_learning",
+                    "planning_and_learning",
+                    "computer_vision",
+                    "robotics"
+                  ],
+                  "application_domains": [],
+                  "profile_summary_short": "Professora titular da USP com atuação em IA e ML, com experiência internacional em visão computacional e robótica móvel.",
+                  "profile_summary_bullets": [
+                    "Professora titular na Escola Politécnica da USP",
+                    "Doutorado em Engenharia Elétrica pela USP; mestrado e graduação pelo FEI",
+                    "Pesquisadora visitante na Alemanha; pós-doutorado nos EUA",
+                    "Diretora do Centro de Ciência de Dados (C2D) e pesquisadora do C4AI"
+                  ],
+                  "search_keywords": [
+                    "Anna_Helena_Reali_Costa",
+                    "inteligência_artificial",
+                    "machine_learning",
+                    "reinforcement_learning",
+                    "computer_vision",
+                    "robotics",
+                    "doutorado",
+                    "USP",
+                    "C2D",
+                    "C4AI",
+                    "Itaú",
+                    "CMU",
+                    "KIT",
+                    "Germany",
+                    "United_States"
+                  ],
+                  "dashboard_tags": [
+                    "leadership",
+                    "ia",
+                    "machine_learning",
+                    "international_experience",
+                    "industry_collaboration",
+                    "editorial_experience"
+                  ],
+                  "qa_context": "Professora titular da USP, líder em IA/ML com atuação internacional; forte relação com indústria (Itaú-Unibanco) e centros C2D/C4AI."
+                },
+                {
+                  "name": "Denis Fernando Wolf",
+                  "institution": "USP",
+                  "scholarship_level": "PQ-2",
+                  "lattes_url": "http://lattes.cnpq.br/8948846267711214",
+                  "institution_state_uf": "SP",
+                  "institution_region": "Sudeste",
+                  "scholarship_category": "PQ-2",
+                  "sex_inferred": "male",
+                  "main_research_area": "robotics",
+                  "secondary_research_areas": [
+                    "robotics",
+                    "artificial_intelligence",
+                    "machine_learning",
+                    "computer_vision"
+                  ],
+                  "research_topics": [
+                    "autonomous_vehicles",
+                    "robotics",
+                    "machine_learning",
+                    "computer_vision"
+                  ],
+                  "methods_and_techniques": [
+                    "robotics",
+                    "machine_learning",
+                    "computer_vision",
+                    "mobile_robots"
+                  ],
+                  "application_domains": [
+                    "education",
+                    "informatics",
+                    "robotics"
+                  ],
+                  "profile_summary_short": "Professor associado na USP atuando em robótica móvel, veículos autônomos, ML e visão computacional.",
+                  "profile_summary_bullets": [
+                    "Professor associado no ICMC/USP",
+                    "Coordenador do LRM",
+                    "Interesses: veículos autônomos, robótica móvel, ML, visão computacional",
+                    "Formação: UFScar 1999; USP 2001; USC 2006"
+                  ],
+                  "search_keywords": [
+                    "denis_f_wolf",
+                    "denis_wolf",
+                    "robotics",
+                    "autonomous_vehicles",
+                    "machine_learning",
+                    "computer_vision",
+                    "usp",
+                    "icmc",
+                    "lrm"
+                  ],
+                  "dashboard_tags": [
+                    "usp",
+                    "icmc",
+                    "robotics",
+                    "ai",
+                    "ml",
+                    "vision",
+                    "vehicles"
+                  ],
+                  "qa_context": "Denis Fernando Wolf, professor associado na USP (ICMC/USP); áreas: robótica móvel, veículos autônomos, ML e visão computacional; formação: UFScar 1999, USP 2001, USC 2006."
+                },
+                {
+                  "name": "Marcelo Fantinato",
+                  "institution": "USP",
+                  "scholarship_level": "PQ-C",
+                  "lattes_url": "http://lattes.cnpq.br/8207954538307988",
+                  "institution_state_uf": "SP",
+                  "institution_region": "Sudeste",
+                  "scholarship_category": "PQ-C",
+                  "sex_inferred": "male",
+                  "main_research_area": "artificial_intelligence",
+                  "secondary_research_areas": [
+                    "process_mining",
+                    "robotics",
+                    "health",
+                    "gerontology"
+                  ],
+                  "research_topics": [
+                    "privacy_in_smart_toys",
+                    "ai_policy",
+                    "process_mining",
+                    "robotics_healthcare"
+                  ],
+                  "methods_and_techniques": [
+                    "process_mining",
+                    "robotics",
+                    "machine_learning",
+                    "data_privacy"
+                  ],
+                  "application_domains": [
+                    "public_sector",
+                    "healthcare",
+                    "education",
+                    "privacy_in_smart_devices"
+                  ],
+                  "profile_summary_short": "Professor associado da EACH-USP, pesquisador em IA e mineração de processos, com atuação em políticas públicas e gestão universitária.",
+                  "profile_summary_bullets": [
+                    "Diretor da EACH-USP e líder de CIA-GP.",
+                    "Bolsista de Produtividade em Pesquisa (PQ-C) do CNPq.",
+                    "Pesquisador convidado/visitante em NL e CA; pesquisa internacional.",
+                    "Editor associado de IJCSI e Expert Systems; atua em mineração de processos."
+                  ],
+                  "search_keywords": [
+                    "marcelo_fantinato",
+                    "computacao",
+                    "inteligencia_artificial",
+                    "mineração_de_processos",
+                    "gerontologia",
+                    "políticas_públicas",
+                    "usp",
+                    "each",
+                    "cnpq_pq_c"
+                  ],
+                  "dashboard_tags": [
+                    "professor_associado",
+                    "ia",
+                    "mineração_de_processos",
+                    "liderança",
+                    "usp",
+                    "each"
+                  ],
+                  "qa_context": "Marcelo Fantinato, USP, PQ-C; IA e mineração de processos; gestão institucional; experiência internacional NL/CA."
+                },
+                {
+                  "name": "Renato Tinós",
+                  "institution": "USP",
+                  "scholarship_level": "PQ-C",
+                  "lattes_url": "http://lattes.cnpq.br/1273134370963830",
+                  "institution_state_uf": "SP",
+                  "institution_region": "Sudeste",
+                  "scholarship_category": "PQ-C",
+                  "sex_inferred": "male",
+                  "main_research_area": "artificial_intelligence",
+                  "secondary_research_areas": [
+                    "evolutionary_computation",
+                    "machine_learning"
+                  ],
+                  "research_topics": [
+                    "computacao_evolutiva",
+                    "inteligencia_artificial",
+                    "aprendizado_de_maquina",
+                    "robotica"
+                  ],
+                  "methods_and_techniques": [
+                    "evolutionary_algorithms",
+                    "machine_learning",
+                    "robotics",
+                    "ai_techniques"
+                  ],
+                  "application_domains": [],
+                  "profile_summary_short": "Professor Titular na FFCLRP-USP, pesquisador em IA e ML, Diretor do CeTI-RP desde 2026.",
+                  "profile_summary_bullets": [
+                    "Engenheiro Eletricista pela UNESP (1994).",
+                    "Mestrado (1999) e Doutorado (2003) pela USP.",
+                    "Professor Titular no FFCLRP-USP desde 2004; Chefe de departamento por dois mandatos.",
+                    "Diretor do CeTI-RP desde 2026; Editor associado em periódicos."
+                  ],
+                  "search_keywords": [
+                    "renato_tinos",
+                    "computacao",
+                    "computacao_evolutiva",
+                    "inteligencia_artificial",
+                    "aprendizado_de_maquina",
+                    "robotica",
+                    "ceTi_rp",
+                    "ffclrp",
+                    "usp",
+                    "doutorado_2003",
+                    "pos_doutorado",
+                    "colorado_state_university",
+                    "professor_titular",
+                    "diretor_ceTi_rp"
+                  ],
+                  "dashboard_tags": [
+                    "usp",
+                    "ffclrp",
+                    "diretor_ceTi_rp",
+                    "professor_titular",
+                    "computacao",
+                    "ia",
+                    "ml",
+                    "evolutiva"
+                  ],
+                  "qa_context": "Renato Tinós: USP professor titular, IA e ML; Doutorado 2003 pela USP; Diretor CeTI-RP desde 2026; editor associado; atua na FFCLRP."
+                },
+                {
+                  "name": "Rodolfo Ipolito Meneguette",
+                  "institution": "USP",
+                  "scholarship_level": "PQ-B",
+                  "lattes_url": "http://lattes.cnpq.br/4981889689994770",
+                  "institution_state_uf": "SP",
+                  "institution_region": "Sudeste",
+                  "scholarship_category": "unknown",
+                  "sex_inferred": "male",
+                  "main_research_area": "computer_science",
+                  "secondary_research_areas": [
+                    "vehicular_networks",
+                    "data_dissemination",
+                    "robotics",
+                    "embedded_systems"
+                  ],
+                  "research_topics": [
+                    "vehicular_networks",
+                    "data_dissemination",
+                    "robotics",
+                    "artificial_neural_networks",
+                    "embedded_systems",
+                    "intelligent_transportation_systems"
+                  ],
+                  "methods_and_techniques": [
+                    "neural_networks",
+                    "networking",
+                    "embedded_systems",
+                    "robotics",
+                    "data_dissemination",
+                    "intelligent_transportation_systems"
+                  ],
+                  "application_domains": [
+                    "transportation",
+                    "smart_transportation"
+                  ],
+                  "profile_summary_short": "Professor associado da USP ICMSC, PQ desde 2019, pesquisador em redes e transporte inteligente.",
+                  "profile_summary_bullets": [
+                    "Prof. associado na USP ICMSC; PQ desde 2019.",
+                    "Doutor pela UNICAMP (2013); pós-doutorando na U Ottawa (2017).",
+                    "Coordenador de projeto de transporte inteligente financiado pelo CNPq; cooperação com FAPESP.",
+                    "Editor associado de IEEE T-ITS, IEEE LATAMT, Elsevier VEHCOM e ReCiC."
+                  ],
+                  "search_keywords": [
+                    "computer_science",
+                    "networks",
+                    "vehicular_networks",
+                    "data_dissemination",
+                    "robotics",
+                    "neural_networks",
+                    "embedded_systems",
+                    "intelligent_transportation_systems"
+                  ],
+                  "dashboard_tags": [
+                    "usp",
+                    "icmsc",
+                    "pq_b",
+                    "mid_career",
+                    "transportation",
+                    "editorial_experience",
+                    "international_canada",
+                    "vehicular_networks"
+                  ],
+                  "qa_context": "Perguntas sobre área principal, temas de redes, transporte inteligente, experiência internacional, publicações e patentes."
+                }
+              ],
+              "candidates_for_validation_count": 6,
+              "candidates_truncated": false
+            }
+          },
+          {
+            "index": 2,
+            "question": "Quem trabalha com votação eletrônica?",
+            "plan": {
+              "tool": "structured_query",
+              "question": "Quem trabalha com votação eletrônica?",
+              "intent": "list",
+              "reason": "é uma busca temática no dataset inteiro, com validação posterior de pertinência",
+              "filters": [
+                {
+                  "field": "searchable_text",
+                  "op": "topic",
+                  "value": "votacao_eletronica"
+                }
+              ],
+              "group_by": null,
+              "order_by": null,
+              "limit": 20,
+              "answer_hint": "listar nomes relevantes com instituição e bolsa após validação semântica"
+            },
+            "result": {
+              "tool": "structured_query",
+              "intent": "list",
+              "total_profiles": 480,
+              "matched_count": 0,
+              "matched_count_is_broad_candidate_count": true,
+              "validation_required": true,
+              "validation_reason": "Há filtro de tópico em texto livre. Os candidatos precisam ser validados pela LLM final para evitar falsos positivos.",
+              "topic_filters": [
+                {
+                  "field": "searchable_text",
+                  "op": "topic",
+                  "value": "votacao_eletronica"
+                }
+              ],
+              "filters": [
+                {
+                  "field": "searchable_text",
+                  "op": "topic",
+                  "value": "votacao_eletronica"
+                }
+              ],
+              "group_by": null,
+              "examples": [],
+              "candidates_for_validation": [],
+              "candidates_for_validation_count": 0,
+              "candidates_truncated": false
+            }
+          }
+        ],
+        "file_search_plans": [],
+        "context_mode": "structured_query",
+        "vector_store_id": "vs_6a18a341349c8191a796dad6bb55d3f0",
+        "max_num_results": 0,
+        "response_id": "resp_0a4ef4a642aab39e006a1f1f552fb4819f9582368afd49b91f",
+        "annotations": []
+      }
+    }
+  ]
+}

@@ -6,7 +6,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[2]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
-from app.scrapers.inference_scrape import save_outputs
+from app.scrapers.inference_scrape import INSTITUTION_UF, REGION_BY_UF, save_outputs
 
 
 REGION_VALUE_MAP = {
@@ -18,6 +18,20 @@ REGION_VALUE_MAP = {
     "Southeast": "Sudeste",
     "South": "Sul",
 }
+
+
+def normalize_institution_acronym(institution: str | None) -> str:
+    return (institution or "").strip().upper()
+
+
+def ensure_semantic_field(semantic_profile: dict, field_id: str) -> dict:
+    field = semantic_profile.get(field_id)
+
+    if not isinstance(field, dict):
+        field = {}
+        semantic_profile[field_id] = field
+
+    return field
 
 
 def normalize_inference_run(run_dir: Path) -> None:
@@ -32,6 +46,7 @@ def normalize_inference_run(run_dir: Path) -> None:
 
     for row in rows:
         semantic_profile = row.get("semantic_profile") or {}
+        row["semantic_profile"] = semantic_profile
         region = semantic_profile.get("institution_region") or {}
         value = region.get("value")
         normalized_value = REGION_VALUE_MAP.get(value)
@@ -45,6 +60,47 @@ def normalize_inference_run(run_dir: Path) -> None:
                     "field": "institution_region",
                     "from": value,
                     "to": normalized_value,
+                }
+            )
+
+        institution = row.get("institution")
+        acronym = normalize_institution_acronym(institution)
+        mapped_uf = INSTITUTION_UF.get(acronym)
+        mapped_region = REGION_BY_UF.get(mapped_uf) if mapped_uf else None
+        uf_field = ensure_semantic_field(semantic_profile, "institution_state_uf")
+        region_field = ensure_semantic_field(semantic_profile, "institution_region")
+        current_uf = uf_field.get("value") or "unknown"
+        current_region = region_field.get("value") or "unknown"
+
+        if mapped_uf and current_uf == "unknown":
+            uf_field["value"] = mapped_uf
+            uf_field["confidence"] = 1
+            uf_field["source"] = "rule:normalization"
+            uf_field["needs_review"] = False
+            uf_field["reason"] = f"UF normalizada pela sigla da instituição: {acronym}."
+            changes.append(
+                {
+                    "name": row.get("name"),
+                    "institution": institution,
+                    "field": "institution_state_uf",
+                    "from": current_uf,
+                    "to": mapped_uf,
+                }
+            )
+
+        if mapped_region and current_region == "unknown":
+            region_field["value"] = mapped_region
+            region_field["confidence"] = 1
+            region_field["source"] = "rule:normalization"
+            region_field["needs_review"] = False
+            region_field["reason"] = f"Região normalizada a partir da UF {mapped_uf}."
+            changes.append(
+                {
+                    "name": row.get("name"),
+                    "institution": institution,
+                    "field": "institution_region",
+                    "from": current_region,
+                    "to": mapped_region,
                 }
             )
 

@@ -1,0 +1,259 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body,
+html {
+  overflow-x: hidden !important;
+}
+body {
+  background-color: #fff;
+}
+:root {
+  --header-height: 8rem;
+  --pading-section: 3.2rem;
+
+}
+._pading_section {
+  padding-left: var(--pading-section);
+  padding-right: var(--pading-section);
+}
+
+@media (min-width: 1440px) {
+  :root {
+    --pading-section: calc((100vw - 1340px) / 2);
+  }
+}
+@media (min-width: 768px) {
+  :root {
+    --header-height: 8rem;
+  }
+}
+
+/* animation accordion */
+
+.transition-height-father {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 300ms;
+}
+.transition-height-father-active {
+  grid-template-rows: 1fr;
+  transition: grid-template-rows 300ms;
+}
+
+.transition-height-child {
+  overflow: hidden;
+}
+
+/* shadow flag element */
+.shadow-Flag {
+  box-shadow: 0px 8px 12px 0px #091e4226;
+}
+
+/* Notification slide */
+@keyframes slideIn {
+  from {
+    transform: translateX(calc(-100% - 3.2rem));
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}
+
+.notification {
+  animation-name: slideIn;
+  animation-duration: 0.4s;
+  animation-timing-function: ease-in-out;
+}
+
+/* dropdown animations */
+
+@keyframes DropdownfadeInOut {
+  0% {
+    transform: translateY(0.2rem);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.dropdown-fade-in-out {
+  animation: DropdownfadeInOut 0.2s;
+  animation-duration: 0.2s;
+  animation-timing-function: ease-in-out;
+}
+/* loading animation */
+@keyframes loading {
+  0% {
+    width: 0%;
+    left: 50;
+  }
+
+  100% {
+    width: 100%;
+    left: 50;
+  }
+}
+
+.animate-loading {
+  animation: loading 1s infinite linear;
+}
+
+/* Remove arrow for input number */
+.remove-input-arrow::-webkit-inner-spin-button,
+.remove-input-arrow::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.remove-input-arrow {
+  -moz-appearance: textfield;
+}
+
+/* Text style for marker groups in map */
+
+.leaflet-marker-iconlabel {
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-12px);
+}
+
+.leaflet-marker-label {
+  color: white;
+  font-weight: bold;
+}
+.internborder {
+  -webkit-box-shadow: inset 0px 0px 0px 7px #f00;
+  -moz-box-shadow: inset 0px 0px 0px 7px #f00;
+  box-shadow: inset 0px 0px 0px 7px #f00;
+}
+
+/* Dashboard Stars */
+.ratings {
+  position: relative;
+  vertical-align: middle;
+  display: inline-block;
+  color: #cce0ff;
+  overflow: hidden;
+  padding-bottom: 5px;
+}
+
+.full-stars {
+  position: absolute;
+  left: 0;
+  top: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #0c66e4;
+}
+
+.empty-stars:before,
+.full-stars:before {
+  content: "\2605\2605\2605\2605\2605";
+  font-size: 14pt;
+}
+
+.empty-stars:before {
+  -webkit-text-stroke: 1px #0c66e4;
+}
+
+.full-stars:before {
+  -webkit-text-stroke: 1px #0c66e4;
+}
+
+/* Firefox */
+@-moz-document url-prefix() {
+  .full-stars {
+    color: #0c66e4;
+  }
+}
+/* IE10+ */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .full-stars {
+    color: #0c66e4;
+  }
+}
+
+/* Slider */
+/*********** Baseline, reset styles ***********/
+
+/*********** Baseline, reset styles ***********/
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  width: 100%;
+  --progress: 50%; /* Valor inicial da variável de progresso */
+}
+
+/* Removes default focus */
+input[type="range"]:focus {
+  outline: none;
+}
+
+/******** Chrome, Safari, Opera and Edge Chromium styles ********/
+/* slider track */
+input[type="range"]::-webkit-slider-runnable-track {
+  background: linear-gradient(
+    to right,
+    #0052cc var(--progress),
+    #d3d3d3 var(--progress)
+  );
+  border-radius: 0.3rem;
+  height: 0.4rem;
+}
+
+/* slider thumb */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  margin-top: -0.54rem; /* Centers thumb on the track */
+  background-color: #ffffff;
+  border-radius: 0.6rem;
+  height: 1.2rem;
+  width: 1.2rem;
+}
+
+input[type="range"]:focus::-webkit-slider-thumb {
+  outline: 3px solid #2684ff;
+  outline-offset: 0.125rem;
+}
+
+/*********** Firefox styles ***********/
+/* slider track */
+input[type="range"]::-moz-range-track {
+  background-color: #d3d3d3;
+  border-radius: 0.3rem;
+  height: 0.4rem;
+}
+
+/* slider thumb */
+input[type="range"]::-moz-range-thumb {
+  background-color: #ffffff;
+  border: none; /*Removes extra border that FF applies*/
+  border-radius: 0.6rem;
+  height: 1.2rem;
+  width: 1.2rem;
+}
+
+input[type="range"]:focus::-moz-range-thumb {
+  outline: 3px solid #2684ff;
+  outline-offset: 0.125rem;
+}
+
+/* Firefox progress bar */
+input[type="range"]::-moz-range-progress {
+  background-color: #2684ff;
+  border-radius: 0.3rem;
+  height: 0.4rem;
+}

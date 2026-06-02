@@ -1,0 +1,297 @@
+{
+  "id": "16d36211-753d-4d55-90b2-e9877c61b581",
+  "title": "Quem na UFBA está recebendo bolsa",
+  "created_at": "2026-06-02T19:59:29-03:00",
+  "updated_at": "2026-06-02T19:59:34-03:00",
+  "messages": [
+    {
+      "id": "7b2ffcc2-a395-4601-bc6e-4ce82190686f",
+      "role": "user",
+      "content": "Quais mulheres da ufba estão recebdno a bolda?",
+      "created_at": "2026-06-02T19:59:29-03:00",
+      "metadata": {}
+    },
+    {
+      "id": "03b86f2e-1807-42c7-9085-a961b04c3ad3",
+      "role": "assistant",
+      "content": "Na base, há **1 mulher da UFBA** recebendo bolsa PQ:\n\n- **Tatiane Nogueira Rios** — **UFBA** — **PQ-2**\n\nSe for útil, também posso trazer a **área de pesquisa dela** e sugerir **possíveis colaborações dentro da UFBA/Nordeste**.",
+      "created_at": "2026-06-02T19:59:34-03:00",
+      "metadata": {
+        "model": "gpt-5.4",
+        "planner_model": "gpt-5.4-mini",
+        "planner_response_id": "resp_065f1f713520036a006a1f6052111881a29a4c6f7dd35f88f5",
+        "plan": {
+          "queries": [
+            {
+              "tool": "structured_query",
+              "question": "Quais mulheres da UFBA estão recebendo a bolsa?",
+              "intent": "list",
+              "reason": "precisa listar interseção exata entre instituição UFBA e sexo feminino, retornando o nível de bolsa",
+              "filters": [
+                {
+                  "field": "institution",
+                  "op": "equals",
+                  "value": "UFBA"
+                },
+                {
+                  "field": "sex_inferred",
+                  "op": "equals",
+                  "value": "female"
+                }
+              ],
+              "group_by": null,
+              "order_by": null,
+              "limit": 20,
+              "answer_hint": "listar as mulheres da UFBA e informar o respectivo scholarship_level"
+            }
+          ],
+          "reason": "precisa listar interseção exata entre instituição UFBA e sexo feminino, retornando o nível de bolsa",
+          "raw_plan": {
+            "tool": "structured_query",
+            "question": "Quais mulheres da UFBA estão recebendo a bolsa?",
+            "intent": "list",
+            "reason": "precisa listar interseção exata entre instituição UFBA e sexo feminino, retornando o nível de bolsa",
+            "filters": [
+              {
+                "field": "institution",
+                "op": "equals",
+                "value": "UFBA"
+              },
+              {
+                "field": "sex_inferred",
+                "op": "equals",
+                "value": "female"
+              }
+            ],
+            "group_by": null,
+            "order_by": null,
+            "limit": 20,
+            "answer_hint": "listar as mulheres da UFBA e informar o respectivo scholarship_level"
+          },
+          "_planner_model": "gpt-5.4-mini",
+          "_planner_response_id": "resp_065f1f713520036a006a1f6052111881a29a4c6f7dd35f88f5"
+        },
+        "tool_result": {
+          "tool": "structured_query",
+          "intent": "list",
+          "total_profiles": 480,
+          "matched_count": 1,
+          "matched_count_is_broad_candidate_count": false,
+          "validation_required": false,
+          "validation_reason": null,
+          "topic_filters": [],
+          "filters": [
+            {
+              "field": "institution",
+              "op": "equals",
+              "value": "UFBA"
+            },
+            {
+              "field": "sex_inferred",
+              "op": "equals",
+              "value": "female"
+            }
+          ],
+          "group_by": null,
+          "examples": [
+            {
+              "name": "Tatiane Nogueira Rios",
+              "institution": "UFBA",
+              "scholarship_level": "PQ-2",
+              "lattes_url": "http://lattes.cnpq.br/0851148137941240",
+              "institution_state_uf": "BA",
+              "institution_region": "Nordeste",
+              "scholarship_category": "PQ-2",
+              "sex_inferred": "female",
+              "main_research_area": "artificial_intelligence",
+              "secondary_research_areas": [
+                "machine_learning",
+                "reinforcement_learning",
+                "fuzzy_systems",
+                "explainable_ai"
+              ],
+              "research_topics": [
+                "artificial_intelligence",
+                "machine_learning",
+                "reinforcement_learning",
+                "fuzzy_systems",
+                "explainable_ai",
+                "time_series"
+              ],
+              "methods_and_techniques": [
+                "fuzzy_clustering",
+                "text_mining",
+                "fuzzy_classification",
+                "time_series_representation",
+                "uncertainty_decision_making"
+              ],
+              "application_domains": [],
+              "profile_summary_short": "Professor Adjunto na UFBA com doutorado pela USP, atuação em IA e colaboração internacional.",
+              "profile_summary_bullets": [
+                "Doutorado em Ciência da Computação e Matemática Computacional pela USP.",
+                "Professor Adjunto no Instituto de Computação da UFBA.",
+                "Interesses: Inteligência Artificial, Aprendizado de Máquina, Aprendizado por Reforço, Sistemas Fuzzy e XAI.",
+                "Colaborações internacionais com Espanha, Canadá, Japão e Portugal; participação em revisões e conferências."
+              ],
+              "search_keywords": [
+                "tatiane_nogueira_rios",
+                "ufba",
+                "inteligencia_artificial",
+                "mineração_de_textos",
+                "fuzzy",
+                "aprendizado_de_maquina",
+                "aprendizado_por_reforco",
+                "sistemas_fuzzy",
+                "explainable_ai",
+                "series_temporais",
+                "usp",
+                "granada",
+                "mcgill",
+                "japao",
+                "portugal"
+              ],
+              "dashboard_tags": [
+                "ufba",
+                "pq2",
+                "ia",
+                "machine_learning",
+                "fuzzy",
+                "text_mining",
+                "international_collaboration",
+                "professor_adjunct"
+              ],
+              "qa_context": "Perguntas sobre Tatiane Nogueira Rios: UFBA, PQ-2, doutorado USP, IA e colaboração internacional com Espanha, Canadá, Japão e Portugal."
+            }
+          ]
+        },
+        "tool_results": [
+          {
+            "index": 1,
+            "question": "Quais mulheres da UFBA estão recebendo a bolsa?",
+            "plan": {
+              "tool": "structured_query",
+              "question": "Quais mulheres da UFBA estão recebendo a bolsa?",
+              "intent": "list",
+              "reason": "precisa listar interseção exata entre instituição UFBA e sexo feminino, retornando o nível de bolsa",
+              "filters": [
+                {
+                  "field": "institution",
+                  "op": "equals",
+                  "value": "UFBA"
+                },
+                {
+                  "field": "sex_inferred",
+                  "op": "equals",
+                  "value": "female"
+                }
+              ],
+              "group_by": null,
+              "order_by": null,
+              "limit": 20,
+              "answer_hint": "listar as mulheres da UFBA e informar o respectivo scholarship_level"
+            },
+            "result": {
+              "tool": "structured_query",
+              "intent": "list",
+              "total_profiles": 480,
+              "matched_count": 1,
+              "matched_count_is_broad_candidate_count": false,
+              "validation_required": false,
+              "validation_reason": null,
+              "topic_filters": [],
+              "filters": [
+                {
+                  "field": "institution",
+                  "op": "equals",
+                  "value": "UFBA"
+                },
+                {
+                  "field": "sex_inferred",
+                  "op": "equals",
+                  "value": "female"
+                }
+              ],
+              "group_by": null,
+              "examples": [
+                {
+                  "name": "Tatiane Nogueira Rios",
+                  "institution": "UFBA",
+                  "scholarship_level": "PQ-2",
+                  "lattes_url": "http://lattes.cnpq.br/0851148137941240",
+                  "institution_state_uf": "BA",
+                  "institution_region": "Nordeste",
+                  "scholarship_category": "PQ-2",
+                  "sex_inferred": "female",
+                  "main_research_area": "artificial_intelligence",
+                  "secondary_research_areas": [
+                    "machine_learning",
+                    "reinforcement_learning",
+                    "fuzzy_systems",
+                    "explainable_ai"
+                  ],
+                  "research_topics": [
+                    "artificial_intelligence",
+                    "machine_learning",
+                    "reinforcement_learning",
+                    "fuzzy_systems",
+                    "explainable_ai",
+                    "time_series"
+                  ],
+                  "methods_and_techniques": [
+                    "fuzzy_clustering",
+                    "text_mining",
+                    "fuzzy_classification",
+                    "time_series_representation",
+                    "uncertainty_decision_making"
+                  ],
+                  "application_domains": [],
+                  "profile_summary_short": "Professor Adjunto na UFBA com doutorado pela USP, atuação em IA e colaboração internacional.",
+                  "profile_summary_bullets": [
+                    "Doutorado em Ciência da Computação e Matemática Computacional pela USP.",
+                    "Professor Adjunto no Instituto de Computação da UFBA.",
+                    "Interesses: Inteligência Artificial, Aprendizado de Máquina, Aprendizado por Reforço, Sistemas Fuzzy e XAI.",
+                    "Colaborações internacionais com Espanha, Canadá, Japão e Portugal; participação em revisões e conferências."
+                  ],
+                  "search_keywords": [
+                    "tatiane_nogueira_rios",
+                    "ufba",
+                    "inteligencia_artificial",
+                    "mineração_de_textos",
+                    "fuzzy",
+                    "aprendizado_de_maquina",
+                    "aprendizado_por_reforco",
+                    "sistemas_fuzzy",
+                    "explainable_ai",
+                    "series_temporais",
+                    "usp",
+                    "granada",
+                    "mcgill",
+                    "japao",
+                    "portugal"
+                  ],
+                  "dashboard_tags": [
+                    "ufba",
+                    "pq2",
+                    "ia",
+                    "machine_learning",
+                    "fuzzy",
+                    "text_mining",
+                    "international_collaboration",
+                    "professor_adjunct"
+                  ],
+                  "qa_context": "Perguntas sobre Tatiane Nogueira Rios: UFBA, PQ-2, doutorado USP, IA e colaboração internacional com Espanha, Canadá, Japão e Portugal."
+                }
+              ]
+            }
+          }
+        ],
+        "file_search_plans": [],
+        "context_mode": "structured_query",
+        "vector_store_id": "vs_6a18a341349c8191a796dad6bb55d3f0",
+        "max_num_results": 0,
+        "response_id": "resp_070e555d8583ce5b006a1f605472b481a39cac3140026b5351",
+        "annotations": []
+      }
+    }
+  ]
+}

@@ -1,5 +1,14 @@
 # Processo detalhado de scraping, enriquecimento e inferencias
 
+Nota de manutencao: para a apresentacao atual, os documentos mais completos e atualizados da raiz sao:
+
+```txt
+TOOL_PROCESS_FROM_ZERO.md
+AGENTS_AND_LLM_CALLS.md
+```
+
+Este arquivo permanece como historico detalhado do desenvolvimento do pipeline.
+
 Este documento registra o estado atual do pipeline de dados do projeto. A ideia e deixar claro o que ja existe, por que foi feito assim, quais arquivos sao gerados, quais chaves aparecem em cada saida e como esses dados vao alimentar rotas, dashboard e chat depois.
 
 Nenhuma chave de API deve ser documentada aqui. Variaveis como `OPENAI_API_KEY` devem ficar apenas no `.env`.
@@ -53,10 +62,7 @@ Ainda pendente ou em standby:
 
 ```txt
 Google Scholar
-embeddings/vector search
-rotas de consulta dos dados enriquecidos
-chat em linguagem natural
-dashboard/exportacao PDF/CSV
+exportacao PDF do dashboard
 parser estruturado mais profundo de secoes do curriculo completo
 ```
 
@@ -85,7 +91,8 @@ Pastas principais de saida:
 ```txt
 scrape_results/
 logs/
-docs/
+arquivos .md na raiz
+ADR/
 ```
 
 ## Visao geral do fluxo
@@ -108,10 +115,20 @@ Fluxo completo atual:
    -> scrape_results/inferences/<run_inference>/profiles_with_inferences.json
    -> scrape_results/inferences/<run_inference>/inference_review_queue.csv
 
-4. Manifest ativo
+4. Normalizacao pos-inferencia
+   -> scrape_results/inferences/<run_inference>/normalization_log.json
+
+5. Revisao sex_inferred unknown
+   -> scrape_results/inferences/<run_inference>/sex_unknown_review_log.json
+
+6. Manifest ativo
    -> scrape_results/current.json
 
-5. Logs
+7. Corpus/contexto de busca
+   -> scrape_results/search/profiles_search_corpus.json
+   -> scrape_results/search/minimal_profiles_context.txt
+
+8. Logs
    -> logs/pipeline_<timestamp>.log
 ```
 
@@ -1896,14 +1913,17 @@ GET /profiles
 GET /profiles/{lattes_code}
   detalhe de uma pessoa
 
-GET /dashboard/summary
-  agregados para dashboard
+GET /dashboard/metrics
+  metricas e agregados para dashboard
 
-POST /chat
-  pergunta em linguagem natural usando busca local + LLM
+POST /session/{session_id}/message
+  pergunta em linguagem natural usando structured_query, file_search e LLM
 
-POST /pipeline/run
-  futuramente dispara pipeline completo
+POST /admin/pipeline/run
+  dispara pipeline completo em background
+
+GET /admin/pipeline/status
+  informa se a pipeline esta rodando e mostra log recente
 ```
 
 ## Relacao com os agentes do trabalho

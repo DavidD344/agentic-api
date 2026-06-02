@@ -1,0 +1,31 @@
+.DSGradientBackground {
+  background: linear-gradient(to bottom, #fbeca7, #f48037, #da291c);
+}
+.DSGradientBackgroundToLeft {
+  background: linear-gradient(to right, #da291c, #f48037, #fbeca7);
+}
+
+.DSGradientBackgroundToBottom {
+  background: linear-gradient(to bottom, #fbeca7, #f48037, #da291c);
+}
+.DSGradientBackgroundDisabled {
+  background: linear-gradient(to right, #fbeca7, #f48037, #da291c);
+}
+
+.DSGradientBackgroundText {
+  background: linear-gradient(180deg, #fbeca7 0%, #f48037 50%, #da291c 100%);
+  -webkit-background-clip: text; /* Para que o gradiente apareça no texto */
+  -webkit-text-fill-color: transparent; /* Preenche o texto com o gradiente */
+  background-clip: text; /* Compatibilidade adicional para navegadores */
+  text-fill-color: transparent; /* Faz o preenchimento do texto transparente */
+}
+
+.rotateBannerGradient {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 41.82%,
+      rgba(0, 0, 0, 0) 41.82%,
+      rgba(0, 0, 0, 0.7) 100%
+    ),
+    linear-gradient(90deg, rgba(0, 0, 0, 0) 82.73%, rgba(0, 0, 0, 0.5) 94.82%);
+}

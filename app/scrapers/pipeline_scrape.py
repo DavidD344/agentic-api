@@ -1,6 +1,7 @@
 import asyncio
 from contextlib import redirect_stderr, redirect_stdout
 import json
+import os
 import sys
 from datetime import datetime
 from pathlib import Path
@@ -11,7 +12,16 @@ if str(PROJECT_ROOT) not in sys.path:
 
 from app.scrapers.inference_scrape import infer_full_profiles
 from app.scrapers.lattes_scrape import enrich_full_profiles, enrich_scholarships
+from app.scrapers.normalize_inferences import normalize_inference_run
+from app.scrapers.review_unknown_sex import (
+    DEFAULT_BATCH_SIZE as SEX_REVIEW_DEFAULT_BATCH_SIZE,
+    DEFAULT_MIN_APPLY_CONFIDENCE as SEX_REVIEW_DEFAULT_MIN_APPLY_CONFIDENCE,
+    DEFAULT_MODEL as SEX_REVIEW_DEFAULT_MODEL,
+    review_unknown_sex,
+)
 from app.scrapers.simple_scrape import DEFAULT_URL, scrape
+from app.services.minimal_profiles_context_service import build_minimal_profiles_context
+from app.services.search_corpus_service import build_search_corpus
 
 
 RESULTS_DIR = Path("scrape_results")
@@ -74,6 +84,16 @@ def build_active_manifest(
         "lattes_full_profiles_json": str(full_run_dir / "lattes_full_profiles.json"),
         "review_queue_full_csv": str(full_run_dir / "review_queue_full.csv"),
         "summary_json": str(full_run_dir / "summary.json"),
+        "profiles_search_corpus_json": str(RESULTS_DIR / "search" / "profiles_search_corpus.json"),
+        "profiles_search_corpus_metadata_json": str(
+            RESULTS_DIR / "search" / "profiles_search_corpus_metadata.json"
+        ),
+        "minimal_profiles_context_json": str(
+            RESULTS_DIR / "search" / "minimal_profiles_context.json"
+        ),
+        "minimal_profiles_context_txt": str(
+            RESULTS_DIR / "search" / "minimal_profiles_context.txt"
+        ),
         "log_path": str(log_path) if log_path else None,
     }
 
@@ -170,6 +190,32 @@ async def run_pipeline(limit: int | None = None, log_path: Path | None = None) -
     print("== Etapa 3: Inferências ==", flush=True)
     inference_run_dir = infer_full_profiles(full_run_dir / "lattes_full_profiles.json")
 
+    print("== Etapa 4: Normalização pós-inferência ==", flush=True)
+    normalize_inference_run(inference_run_dir)
+
+    sex_review_log = None
+    if os.getenv("OPENAI_API_KEY"):
+        print("== Etapa 5: Revisão LLM de sex_inferred unknown ==", flush=True)
+        sex_review_log = review_unknown_sex(
+            inference_run_dir,
+            os.getenv("SEX_REVIEW_MODEL", SEX_REVIEW_DEFAULT_MODEL),
+            int(os.getenv("SEX_REVIEW_BATCH_SIZE", str(SEX_REVIEW_DEFAULT_BATCH_SIZE))),
+            float(
+                os.getenv(
+                    "SEX_REVIEW_MIN_APPLY_CONFIDENCE",
+                    str(SEX_REVIEW_DEFAULT_MIN_APPLY_CONFIDENCE),
+                )
+            ),
+        )
+        print(
+            "Revisão de sexo concluída: "
+            f"{sex_review_log.get('applied', 0)} aplicado(s), "
+            f"{sex_review_log.get('remaining_unknown', 0)} unknown restante(s)",
+            flush=True,
+        )
+    else:
+        print("== Etapa 5: Revisão LLM de sexo pulada sem OPENAI_API_KEY ==", flush=True)
+
     is_valid, validation_reasons = validate_full_run(full_run_dir)
     promoted = False
     active_manifest = None
@@ -186,6 +232,19 @@ async def run_pipeline(limit: int | None = None, log_path: Path | None = None) -
             log_path,
         )
         promoted = True
+
+        print("== Etapa 6: Artefatos de busca e contexto ==", flush=True)
+        search_corpus_metadata = build_search_corpus()
+        minimal_profiles_context = build_minimal_profiles_context()
+        print(
+            "Busca/contexto atualizados: "
+            f"{search_corpus_metadata.get('records_count')} registros no corpus, "
+            f"{len(minimal_profiles_context)} registros no contexto mínimo",
+            flush=True,
+        )
+    else:
+        search_corpus_metadata = None
+        minimal_profiles_context = None
 
     summary = {
         "limit": limit,
@@ -214,6 +273,14 @@ async def run_pipeline(limit: int | None = None, log_path: Path | None = None) -
             inference_run_dir / "inference_review_queue.csv"
         ),
         "inference_summary_json": str(inference_run_dir / "summary.json"),
+        "normalization_log_json": str(inference_run_dir / "normalization_log.json"),
+        "sex_unknown_review_log_json": str(inference_run_dir / "sex_unknown_review_log.json")
+        if sex_review_log
+        else None,
+        "search_corpus_metadata": search_corpus_metadata,
+        "minimal_profiles_context_count": len(minimal_profiles_context)
+        if minimal_profiles_context is not None
+        else None,
         "active_manifest": active_manifest,
     }
     summary_path = pipeline_run_dir / "pipeline_summary.json"

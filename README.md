@@ -1,8 +1,8 @@
 # Agentic API
 
-Projeto em Python para coletar, normalizar e enriquecer dados de bolsistas do CNPq com informações públicas do Currículo Lattes.
+Projeto em Python/FastAPI com frontend Next/React para coletar, normalizar, enriquecer, visualizar e consultar dados de bolsistas do CNPq com informações públicas do Currículo Lattes.
 
-O foco atual do projeto é o pipeline de scraping. A API FastAPI existe como base para a aplicação, mas a coleta ainda está sendo desenvolvida e validada primeiro por comandos locais. Isso deixa o scraping mais fácil de testar, repetir e auditar antes de virar endpoint.
+O foco do projeto é um pipeline auditável de scraping e enriquecimento, consumido por API, dashboard, tela de pesquisadores e chat em linguagem natural. A coleta continua isolada em scripts/serviços próprios para ser fácil de testar, repetir e auditar.
 
 ## Objetivo
 
@@ -23,19 +23,29 @@ O resultado esperado é uma base enriquecida que pode ser revisada por humanos o
 
 ## Documentação principal
 
-Para uma visão consolidada do sistema, incluindo agentes, modelos, etapas, custos por pergunta, handoffs, guardrails e arquivos gerados, veja:
+Para apresentar o projeto do zero, use primeiro estes dois arquivos da raiz:
 
 ```txt
-docs/system-overview.md
+TOOL_PROCESS_FROM_ZERO.md
+AGENTS_AND_LLM_CALLS.md
+```
+
+Eles explicam o funcionamento completo da ferramenta, desde o primeiro scraping ate dashboard/chat, e documentam todos os agentes e chamadas LLM usadas.
+
+Para uma visão consolidada mais técnica do sistema, incluindo agentes, modelos, etapas, custos por pergunta, handoffs, guardrails e arquivos gerados, veja:
+
+```txt
+SYSTEM_OVERVIEW.md
 ```
 
 Documentos complementares:
 
 ```txt
-docs/scraping.md
-docs/api-routes.md
-docs/dataset-contract.md
-docs/adr/
+SCRAPING.md
+API_ROUTES.md
+DATASET_CONTRACT.md
+SCRAPING_DECISIONS.md
+ADR/
 SCRAPING_PIPELINE_DETAILED.md
 ```
 
@@ -397,7 +407,7 @@ chart_suggestions, data_quality_notes, qa_context
 
 Observação sobre `sex_inferred`: é uma inferência operacional para estatística e dashboard, não confirmação documental. A regra atual usa nome completo, `lattes_name` e marcadores textuais do Lattes. `unknown` só deve permanecer quando o nome for quase impossível de inferir, ambíguo ou houver evidência conflitante.
 
-O prompt completo da etapa está documentado em `docs/scraping.md`.
+O prompt completo da etapa está documentado em `SCRAPING.md`.
 
 ## Rodando tudo em um comando
 
@@ -405,6 +415,7 @@ Para uso no backend ou em um botão do frontend, existe um comando orquestrador 
 
 ```txt
 CNPq -> preview Lattes -> currículo completo -> inferências
+-> normalização -> revisão de sex_inferred unknown -> corpus/contexto de busca
 ```
 
 Comando completo:
@@ -443,6 +454,10 @@ lattes_full_profiles.json
 profiles_with_inferences.csv
 profiles_with_inferences.json
 inference_review_queue_csv
+normalization_log.json
+sex_unknown_review_log.json
+profiles_search_corpus.json
+minimal_profiles_context.json
 review_queue_full.csv
 summary.json
 log_path
@@ -452,6 +467,15 @@ Quando o pipeline roda sem limite e termina sem `error`, sem `skipped` e sem `re
 
 ```txt
 scrape_results/current.json
+```
+
+Depois da promoção, o pipeline reconstrói automaticamente:
+
+```txt
+scrape_results/search/profiles_search_corpus.json
+scrape_results/search/profiles_search_corpus_metadata.json
+scrape_results/search/minimal_profiles_context.json
+scrape_results/search/minimal_profiles_context.txt
 ```
 
 A UI deve ler esse arquivo para descobrir quais dados estão ativos. Se uma nova execução falhar, o `current.json` não é trocado, então os dados bons anteriores continuam valendo.
@@ -788,13 +812,13 @@ Use `resolved_status=ambiguous` ou `resolved_status=not_found` quando quiser man
 O passo a passo operacional fica em:
 
 ```txt
-docs/scraping.md
+SCRAPING.md
 ```
 
 As decisões e justificativas, em formato próximo de ADR, ficam em:
 
 ```txt
-docs/scraping-decisions.md
+SCRAPING_DECISIONS.md
 ```
 
 ## Dependências principais

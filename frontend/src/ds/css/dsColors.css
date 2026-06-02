@@ -1,0 +1,16 @@
+:root {
+  --ds-global-background: #ffffff;
+  --ds-global-text: #1D1D1D;
+  --ds-global-primary: #0077B6;
+
+  /* Header colors */
+  --ds-header-background: #ffffff;
+  --ds-header-text: #1D1D1D;
+  --ds-header-border: #1D1D1D;
+  /* Footer colors */
+  --ds-footer-background: #ffffff;
+  --ds-footer-text: #1D1D1D;
+  --ds-footer-border: #1D1D1D;
+
+}
+

@@ -1,0 +1,12 @@
+.DSGradientBorder {
+  border-image: linear-gradient(to right, #FBECA7, #F48037, #DA291C) 1;
+}
+
+.DSTransparentBorder{
+  border-image: rgba(255, 255, 255, 0.2)
+}
+
+
+.DSTransparentBorderTab{
+  border: rgba(255, 255, 255, 0.2)
+}

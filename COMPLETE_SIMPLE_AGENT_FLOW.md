@@ -23,7 +23,7 @@ Usuário/Admin
   -> Backend Tools
   -> Query Answer Agent
   -> Chat Title Agent
-  -> Frontend
+  -> Frontendz
   -> Usuário/Professor
 ```
 

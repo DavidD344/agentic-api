@@ -65,6 +65,7 @@ export function SettingsScreen() {
   const [pipelineStatus, setPipelineStatus] = useState<PipelineStatus | null>(null);
   const [pipelineHistory, setPipelineHistory] = useState<PipelineHistory | null>(null);
   const [loading, setLoading] = useState(true);
+  const [exporting, setExporting] = useState(false);
 
   useEffect(() => {
     let active = true;
@@ -100,6 +101,26 @@ export function SettingsScreen() {
     };
   }, []);
 
+  async function exportProfilesCsv() {
+    try {
+      setExporting(true);
+      const response = await mainApi.get<Blob>("/profiles/export.csv", {
+        responseType: "blob",
+      });
+      const url = window.URL.createObjectURL(response.data);
+      const link = document.createElement("a");
+
+      link.href = url;
+      link.download = `agentic-api-perfis-${pipelineHistory?.current.run_id || "atual"}.csv`;
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      window.URL.revokeObjectURL(url);
+    } finally {
+      setExporting(false);
+    }
+  }
+
   return (
     <main className="min-h-screen bg-[#F8FAFC] px-6 py-8 md:px-10">
       <div className="mx-auto max-w-[132rem]">
@@ -128,6 +149,27 @@ export function SettingsScreen() {
               type="button"
             >
               Rodar pipeline
+            </button>
+          </div>
+        </section>
+
+        <section className="mt-6 rounded-lg border border-[#E3E6EA] bg-white p-5 shadow-sm">
+          <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+            <div>
+              <h3 className="text-[1.7rem] font-semibold text-[#111827]">
+                Exportar base
+              </h3>
+              <Body className="mt-1 text-[1.25rem] text-[#667085]" weight="Regular">
+                CSV com os perfis e campos inferidos da base atual.
+              </Body>
+            </div>
+            <button
+              className="h-11 rounded-md border border-[#D0D5DD] bg-white px-4 text-[1.25rem] font-semibold text-[#344054] hover:border-[#98A2B3] disabled:cursor-not-allowed disabled:opacity-60"
+              disabled={exporting}
+              onClick={exportProfilesCsv}
+              type="button"
+            >
+              {exporting ? "Exportando..." : "Baixar CSV"}
             </button>
           </div>
         </section>

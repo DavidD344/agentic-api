@@ -35,6 +35,7 @@ The adopted heuristic was:
 Current ADRs:
 
 ```txt
+0000-scraping-over-llm-agent-data-collection.md
 0001-local-csv-json-storage.md
 0002-scraping-pipeline-stages.md
 0003-file-search-and-structured-query-chat.md
@@ -59,7 +60,7 @@ Current ADRs:
 
 ```txt
 RF01 dataset:
-  0001, 0002, 0008, 0009, 0010, 0011, 0012, 0016
+  0000, 0001, 0002, 0008, 0009, 0010, 0011, 0012, 0016
 
 RF02 dashboard:
   0007, 0013
@@ -80,26 +81,26 @@ Google Scholar:
   0016
 
 MCP/tools/implementation:
-  0008, 0014, 0018
+  0000, 0008, 0014, 0018
 ```
 
 ## Coverage by agent
 
 ```txt
 orchestrator_agent:
-  0002, 0008
+  0000, 0002, 0008
 
 collector_agent:
-  0009
+  0000, 0009
 
 lattes_preview_agent:
-  0009, 0010
+  0000, 0009, 0010
 
 lattes_full_agent:
-  0009
+  0000, 0009
 
 inference_agent:
-  0011
+  0000, 0011
 
 normalization_agent:
   0011

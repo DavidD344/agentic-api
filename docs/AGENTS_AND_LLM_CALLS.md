@@ -624,6 +624,8 @@ devolver JSON com plano de ferramentas
 Modelo:
 
 ```txt
+etapa do chat: 1
+modelo atual no .env: gpt-5.4-mini
 padrao: gpt-5.4-mini
 env: CHAT_PLANNER_MODEL
 fallback env: CHAT_MODEL
@@ -754,6 +756,8 @@ salvar resposta e metadata no historico do chat
 Modelo:
 
 ```txt
+etapa do chat: 2
+modelo atual no .env: gpt-5.4
 padrao: gpt-5.4-mini
 env: CHAT_MODEL
 ```

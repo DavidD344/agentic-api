@@ -1,4 +1,5 @@
 import csv
+from difflib import SequenceMatcher
 import io
 import json
 import re
@@ -116,7 +117,68 @@ def search_terms(query: str) -> list[str]:
     return [term for term in terms if term]
 
 
-def text_matches(value: str, query: str | None) -> bool:
+def token_distance(left: str, right: str, max_distance: int) -> int:
+    if abs(len(left) - len(right)) > max_distance:
+        return max_distance + 1
+
+    previous = list(range(len(right) + 1))
+
+    for left_index, left_char in enumerate(left, start=1):
+        current = [left_index]
+
+        for right_index, right_char in enumerate(right, start=1):
+            substitution_cost = 0 if left_char == right_char else 1
+            current.append(
+                min(
+                    previous[right_index] + 1,
+                    current[right_index - 1] + 1,
+                    previous[right_index - 1] + substitution_cost,
+                )
+            )
+
+        if min(current) > max_distance:
+            return max_distance + 1
+
+        previous = current
+
+    return previous[-1]
+
+
+def fuzzy_token_matches(query_token: str, candidate_token: str) -> bool:
+    if not query_token or not candidate_token:
+        return False
+
+    if query_token == candidate_token:
+        return True
+
+    if len(query_token) <= 2:
+        return False
+
+    if candidate_token.startswith(query_token) or query_token.startswith(candidate_token):
+        return True
+
+    if len(query_token) < 4:
+        return False
+
+    max_distance = 1 if len(query_token) < 7 else 2
+
+    if token_distance(query_token, candidate_token, max_distance) <= max_distance:
+        return True
+
+    return SequenceMatcher(None, query_token, candidate_token).ratio() >= 0.82
+
+
+def fuzzy_tokens_match(haystack_tokens: set[str], query_tokens: list[str]) -> bool:
+    if not query_tokens:
+        return False
+
+    return all(
+        any(fuzzy_token_matches(query_token, candidate_token) for candidate_token in haystack_tokens)
+        for query_token in query_tokens
+    )
+
+
+def text_matches(value: str, query: str | None, *, fuzzy: bool = False) -> bool:
     if not query:
         return True
 
@@ -132,6 +194,9 @@ def text_matches(value: str, query: str | None) -> bool:
 
         term_tokens = term.split()
         if term_tokens and all(token in haystack_tokens for token in term_tokens):
+            return True
+
+        if fuzzy and fuzzy_tokens_match(haystack_tokens, term_tokens):
             return True
 
     return False
@@ -186,6 +251,46 @@ def value_matches(value, expected: str | None) -> bool:
     return text_matches(str(value), expected)
 
 
+def profile_searchable_text(profile: dict) -> str:
+    return " ".join(
+        stringify(value)
+        for value in [
+            profile.get("name"),
+            profile.get("institution"),
+            profile.get("scholarship_level"),
+            profile.get("summary"),
+            semantic_value(profile, "main_research_area"),
+            semantic_value(profile, "research_topics"),
+            semantic_value(profile, "application_domains"),
+            semantic_value(profile, "dashboard_tags"),
+        ]
+    )
+
+
+def profile_search_score(profile: dict, q: str | None) -> int:
+    if not q:
+        return 0
+
+    name = stringify(profile.get("name"))
+    institution = stringify(profile.get("institution"))
+    normalized_query = normalize_search_text(q)
+    normalized_name = normalize_search_text(name)
+
+    if normalized_query and normalized_query in normalized_name:
+        return 100
+
+    if text_matches(name, q, fuzzy=True):
+        return 90
+
+    if text_matches(institution, q):
+        return 40
+
+    if text_matches(profile_searchable_text(profile), q):
+        return 10
+
+    return 0
+
+
 def profile_matches(
     profile: dict,
     q: str | None = None,
@@ -203,25 +308,11 @@ def profile_matches(
     summary = profile_summary(profile)
 
     if q:
-        searchable = " ".join(
-            stringify(value)
-            for value in [
-                profile.get("name"),
-                profile.get("institution"),
-                profile.get("scholarship_level"),
-                profile.get("summary"),
-                semantic_value(profile, "main_research_area"),
-                semantic_value(profile, "research_topics"),
-                semantic_value(profile, "application_domains"),
-                semantic_value(profile, "dashboard_tags"),
-            ]
-        )
-
-        if not text_matches(searchable, q):
+        if profile_search_score(profile, q) <= 0:
             return False
 
     checks = [
-        (profile.get("name"), name),
+        (profile.get("name"), name, True),
         (profile.get("institution"), institution),
         (semantic_value(profile, "institution_state_uf"), uf),
         (semantic_value(profile, "institution_region"), region),
@@ -232,8 +323,15 @@ def profile_matches(
         (semantic_value(profile, "research_topics"), topic),
     ]
 
-    if any(not value_matches(value, expected) for value, expected in checks):
-        return False
+    for check in checks:
+        value, expected, *options = check
+        fuzzy = bool(options and options[0])
+
+        if expected and fuzzy:
+            if not text_matches(str(value), expected, fuzzy=True):
+                return False
+        elif not value_matches(value, expected):
+            return False
 
     if needs_review is not None and summary["needs_review"] is not needs_review:
         return False
@@ -275,6 +373,10 @@ def list_profiles(
             needs_review=needs_review,
         )
     ]
+
+    if q:
+        filtered.sort(key=lambda profile: profile_search_score(profile, q), reverse=True)
+
     page = filtered[offset : offset + limit]
 
     return {

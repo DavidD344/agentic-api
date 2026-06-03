@@ -1123,19 +1123,7 @@ export function DashboardScreen() {
           />
         </section>
 
-        <section className="mt-6 grid gap-4 lg:grid-cols-2">
-          <LineChart
-            title="Ano de doutorado por faixa"
-            items={doctorateItems}
-            note={`${doctorateUnknown} perfil(is) sem ano de doutorado identificado.`}
-          />
-          <BarList
-            title="Senioridade inferida"
-            items={metrics.distributions.seniority}
-            total={total}
-            tone="green"
-          />
-        </section>
+        <InstitutionConcentration institutions={metrics.distributions.institutions} total={total} />
 
         <section className="mt-6">
           <RegionByScholarshipBarChart
@@ -1149,7 +1137,19 @@ export function DashboardScreen() {
           />
         </section>
 
-        <InstitutionConcentration institutions={metrics.distributions.institutions} total={total} />
+        <section className="mt-6 grid gap-4 lg:grid-cols-2">
+          <LineChart
+            title="Ano de doutorado por faixa"
+            items={doctorateItems}
+            note={`${doctorateUnknown} perfil(is) sem ano de doutorado identificado.`}
+          />
+          <BarList
+            title="Senioridade inferida"
+            items={metrics.distributions.seniority}
+            total={total}
+            tone="green"
+          />
+        </section>
 
         <section className="mt-6 grid gap-4">
           <CrossTable

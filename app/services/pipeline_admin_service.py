@@ -8,6 +8,7 @@ from pathlib import Path
 PIPELINE_DIR = Path("scrape_results") / "pipeline"
 ADMIN_STATUS_PATH = PIPELINE_DIR / "admin_status.json"
 LOGS_DIR = Path("logs")
+CURRENT_PATH = Path("scrape_results") / "current.json"
 
 
 def now_iso() -> str:
@@ -57,6 +58,59 @@ def latest_log_tail(log_path: str | None, lines: int = 40) -> list[str]:
         return []
 
     return path.read_text(encoding="utf-8", errors="replace").splitlines()[-lines:]
+
+
+def pipeline_run_id(path: Path | str | None) -> str | None:
+    if not path:
+        return None
+
+    return Path(path).name
+
+
+def get_pipeline_history() -> dict:
+    current = read_json(CURRENT_PATH) if CURRENT_PATH.exists() else {}
+    active_pipeline_dir = current.get("pipeline_run_dir")
+    active_run_id = pipeline_run_id(active_pipeline_dir)
+    runs = []
+
+    if PIPELINE_DIR.exists():
+        for summary_path in sorted(PIPELINE_DIR.glob("*/pipeline_summary.json"), reverse=True):
+            summary = read_json(summary_path)
+            run_dir = summary_path.parent
+            run_id = run_dir.name
+
+            runs.append(
+                {
+                    "run_id": run_id,
+                    "pipeline_run_dir": str(run_dir),
+                    "summary_json": str(summary_path),
+                    "log_path": summary.get("log_path"),
+                    "limit": summary.get("limit"),
+                    "promoted": summary.get("promoted"),
+                    "validation_ok": summary.get("validation_ok"),
+                    "validation_reasons": summary.get("validation_reasons") or [],
+                    "cnpq_run_dir": summary.get("cnpq_run_dir"),
+                    "preview_run_dir": summary.get("preview_run_dir"),
+                    "full_run_dir": summary.get("full_run_dir"),
+                    "inference_run_dir": summary.get("inference_run_dir")
+                    or (summary.get("active_manifest") or {}).get("inference_run_dir"),
+                    "profiles_with_inferences_json": summary.get("profiles_with_inferences_json")
+                    or (summary.get("active_manifest") or {}).get("profiles_with_inferences_json"),
+                    "is_current": run_id == active_run_id,
+                }
+            )
+
+    return {
+        "current": {
+            "run_id": active_run_id,
+            "pipeline_run_dir": active_pipeline_dir,
+            "updated_at": current.get("updated_at"),
+            "profiles_with_inferences_json": current.get("profiles_with_inferences_json"),
+            "summary_json": current.get("summary_json"),
+            "log_path": current.get("log_path"),
+        },
+        "runs": runs,
+    }
 
 
 def get_pipeline_status() -> dict:
@@ -129,4 +183,3 @@ def start_pipeline(limit: int | None = None) -> dict:
         "started": True,
         **get_pipeline_status(),
     }
-

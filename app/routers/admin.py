@@ -1,7 +1,11 @@
 from fastapi import APIRouter, HTTPException
 
 from app.models.admin import RunPipelineRequest
-from app.services.pipeline_admin_service import get_pipeline_status, start_pipeline
+from app.services.pipeline_admin_service import (
+    get_pipeline_history,
+    get_pipeline_status,
+    start_pipeline,
+)
 
 
 router = APIRouter(prefix="/admin", tags=["admin"])
@@ -19,3 +23,7 @@ async def post_pipeline_run(request: RunPipelineRequest):
 async def get_pipeline_run_status():
     return get_pipeline_status()
 
+
+@router.get("/pipeline/history")
+async def get_pipeline_run_history():
+    return get_pipeline_history()

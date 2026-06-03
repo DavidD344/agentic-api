@@ -24,6 +24,7 @@ export default function ChatLayout({ children }: ChatLayoutProps) {
     { href: "/dashboard", label: "Dashboard" },
     { href: "/profiles", label: "Pesquisadores" },
     { href: "/chat", label: "Chat" },
+    { href: "/settings", label: "Configurações" },
   ];
 
   // ★ 1) flag para saber quando já rodamos o useEffect de mount

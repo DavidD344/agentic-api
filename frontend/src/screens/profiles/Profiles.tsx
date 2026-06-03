@@ -14,6 +14,7 @@ interface ProfileSemantic {
   years_since_doctorate?: number;
   sex_inferred?: string;
   main_research_area?: string;
+  academic_rank?: string;
   research_topics?: string[];
   dashboard_tags?: string[];
   profile_summary_short?: string;
@@ -26,6 +27,7 @@ interface ProfileItem {
   lattes_code?: string;
   public_lattes_id?: string;
   lattes_url?: string;
+  orcid?: string;
   photo_url?: string;
   needs_review: boolean;
   semantic: ProfileSemantic;
@@ -67,6 +69,20 @@ const initials = (name?: string) =>
     .join("")
     .toUpperCase();
 
+const externalLinks = (profile: ProfileItem) => {
+  const links = [];
+
+  if (profile.lattes_url) {
+    links.push({ label: "Lattes", url: profile.lattes_url });
+  }
+
+  if (profile.orcid) {
+    links.push({ label: "ORCID", url: profile.orcid });
+  }
+
+  return links;
+};
+
 const filterOptions = {
   scholarship_level: ["", "PQ-SR", "PQ-A", "PQ-B", "PQ-C", "PQ-1A", "PQ-1B", "PQ-1C", "PQ-1D", "PQ-2"],
   sex: ["", "male", "female"],
@@ -103,6 +119,7 @@ function ProfileCard({ profile }: { profile: ProfileItem }) {
     ? profile.semantic.dashboard_tags.slice(0, 3)
     : [];
   const visibleTerms = Array.from(new Set([...topics, ...tags]));
+  const links = externalLinks(profile);
 
   return (
     <article className="rounded-lg border border-[#E3E6EA] bg-white p-4 shadow-sm">
@@ -136,6 +153,10 @@ function ProfileCard({ profile }: { profile: ProfileItem }) {
               {formatLabel(profile.semantic.main_research_area)}
             </div>
             <div>
+              <span className="font-semibold text-[#344054]">Cargo: </span>
+              {formatLabel(profile.semantic.academic_rank)}
+            </div>
+            <div>
               <span className="font-semibold text-[#344054]">Doutorado: </span>
               {profile.semantic.doctorate_year || "Nao informado"}
             </div>
@@ -162,16 +183,19 @@ function ProfileCard({ profile }: { profile: ProfileItem }) {
             <Body className="text-[1.15rem] text-[#98A2B3]" weight="Regular">
               {profile.lattes_code || profile.public_lattes_id || "ID Lattes nao informado"}
             </Body>
-            {profile.lattes_url && (
-              <a
-                className="rounded-md border border-[#D0D5DD] px-3 py-2 text-[1.2rem] font-semibold text-[#344054] hover:border-[#98A2B3]"
-                href={profile.lattes_url}
-                rel="noreferrer"
-                target="_blank"
-              >
-                Abrir Lattes
-              </a>
-            )}
+            <div className="flex flex-wrap gap-2">
+              {links.map((link) => (
+                <a
+                  key={link.label}
+                  className="rounded-md border border-[#D0D5DD] px-3 py-2 text-[1.2rem] font-semibold text-[#344054] hover:border-[#98A2B3]"
+                  href={link.url}
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  {link.label}
+                </a>
+              ))}
+            </div>
           </div>
         </div>
       </div>

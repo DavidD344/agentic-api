@@ -261,6 +261,7 @@ export function ChatScreen({
       method: "POST",
       headers: {
         "Content-Type": "application/json",
+        "ngrok-skip-browser-warning": "true",
         Authorization: `${mainApi.defaults.headers.common.Authorization}`,
       },
       body: JSON.stringify({ sessionId: sid, userId, content: text }),

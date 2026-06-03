@@ -1,0 +1,10 @@
+version: 3
+
+endpoints:
+  - name: frontend
+    upstream:
+      url: 3000
+
+  - name: backend
+    upstream:
+      url: 8001

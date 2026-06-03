@@ -1,43 +1,87 @@
-# ADR 0006: Autenticação hardcoded para demonstração
+# ADR 0006: Hardcoded authentication for demonstration
 
-Status: aceito temporariamente
+Status: temporarily accepted
 
-## Contexto
+## Motivating Requirement
 
-O frontend reaproveitado já espera fluxo de login com token. Para a apresentação, não há necessidade de autenticação real com cadastro, banco ou refresh token.
+The main requirement does not demand real authentication. However, the reused frontend already had a login flow, token handling and protected screens.
 
-## Decisão
+To present RF02, RF03 and RF04 in the frontend, the application needed a simple way to log in.
 
-Criar rota:
+## Architectural Problem
+
+The options were:
+
+- implement real authentication with a database;
+- reuse the old backend;
+- remove authentication from the frontend;
+- create a demo login.
+
+Implementing real authentication would consume time outside the project scope. Reusing the old backend would increase coupling with code that was not part of the multi-agent solution.
+
+## Decision
+
+We will create a local demonstration route:
 
 ```txt
 POST /login
 ```
 
-com credenciais hardcoded:
+Credentials:
 
 ```txt
-admin@admin.com
-admin
+email: admin@admin.com
+password: admin
 ```
 
-A resposta segue o contrato esperado pelo frontend e retorna um JWT demo decodável.
+The response keeps the contract expected by the frontend.
 
-## Justificativa
+## Rationale
 
-Permite usar o frontend existente sem trazer o backend antigo nem implementar autenticação completa.
+Authentication supports the demonstration, but it is not central to the agents. This decision lets us focus on dataset, dashboard, query and logs.
 
-## Consequências
+## Resulting Behavior
 
-Vantagens:
+The `auth_router` responds with:
 
-- integração rápida;
-- suficiente para demo local;
-- mantém foco no dataset, dashboard e agentes.
+```txt
+id
+name
+token
+role
+email
+```
 
-Limitações:
+The token is a demo token and only enables the frontend flow.
 
-- não é autenticação segura;
-- não deve ir para produção;
-- qualquer proteção real precisa ser implementada depois.
+## Guardrails
 
+- Do not treat this login as real security.
+- Do not use it in production.
+- Document that it is a temporary choice for the presentation.
+
+## Consequences
+
+Advantages:
+
+- fast integration;
+- preserves the frontend flow;
+- reduces scope;
+- enough for the demo.
+
+Limitations:
+
+- not secure;
+- no registration;
+- no real multi-user support;
+- not suitable for production.
+
+## Notes
+
+Author: project team.
+
+Date: 2026-06-02.
+
+Related:
+
+- ADR 0015

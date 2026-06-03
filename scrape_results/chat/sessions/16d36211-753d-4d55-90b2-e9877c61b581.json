@@ -2,7 +2,7 @@
   "id": "16d36211-753d-4d55-90b2-e9877c61b581",
   "title": "Quem na UFBA está recebendo bolsa",
   "created_at": "2026-06-02T19:59:29-03:00",
-  "updated_at": "2026-06-02T19:59:34-03:00",
+  "updated_at": "2026-06-02T20:22:21-03:00",
   "messages": [
     {
       "id": "7b2ffcc2-a395-4601-bc6e-4ce82190686f",
@@ -290,6 +290,209 @@
         "vector_store_id": "vs_6a18a341349c8191a796dad6bb55d3f0",
         "max_num_results": 0,
         "response_id": "resp_070e555d8583ce5b006a1f605472b481a39cac3140026b5351",
+        "annotations": []
+      }
+    },
+    {
+      "id": "53ba5681-151c-40c1-952e-5fcefc2b7994",
+      "role": "user",
+      "content": "Me fale mais sobre ela",
+      "created_at": "2026-06-02T20:20:18-03:00",
+      "metadata": {}
+    },
+    {
+      "id": "1b6ff4dc-81e3-48dc-b4cf-1813dda480bf",
+      "role": "assistant",
+      "content": "Claro. Sobre **Tatiane Nogueira Rios**:\n\n- **Instituição:** UFBA  \n- **Nível da bolsa:** **PQ-2**  \n- **Área principal:** **Inteligência Artificial** \n\n### Perfil acadêmico\nEla é **Professora Adjunta no Instituto de Computação da UFBA** e tem **doutorado em Ciência da Computação e Matemática Computacional pela USP**. O perfil a caracteriza como pesquisadora em estágio **sênior**. \n\n### Temas de pesquisa\nOs temas mais associados ao perfil dela são:\n\n- **Inteligência Artificial**\n- **Aprendizado de Máquina**\n- **Aprendizado por Reforço**\n- **Sistemas Fuzzy**\n- **Explainable AI (XAI)**\n- **Séries temporais** \n\n### Métodos e técnicas\nEntre os métodos e técnicas inferidos no dataset, aparecem:\n\n- **fuzzy clustering**\n- **text mining**\n- **fuzzy classification**\n- **representação de séries temporais**\n- **tomada de decisão sob incerteza** \n\n### Inserção internacional\nO perfil indica **experiência internacional** e colaborações com:\n\n- **Espanha**\n- **Canadá**\n- **Japão**\n- **Portugal** \n\n### Liderança e visibilidade acadêmica\nEla também aparece com experiência de **gestão e organização científica**, incluindo funções como:\n\n- **General Chair**\n- **Program Chair**\n- **Steering Committee**\n- **Coordenadora CE-IA SBC** \n\n### Leitura prática do perfil\nPara um professor analisando o ecossistema de bolsas, Tatiane parece ser um perfil forte para colaboração em:\n- **IA aplicada**\n- **modelos interpretáveis**\n- **aprendizado em contextos incertos**\n- **mineração de textos**\n- **análise de séries temporais** \n\nSe quiser, posso agora fazer uma destas próximas análises:\n1. **compará-la com outros bolsistas da UFBA**,  \n2. **sugerir colaborações dela dentro do Nordeste**, ou  \n3. **listar outras mulheres em IA para parceria com ela**.",
+      "created_at": "2026-06-02T20:20:32-03:00",
+      "metadata": {
+        "model": "gpt-5.4",
+        "planner_model": "gpt-5.4-mini",
+        "planner_response_id": "resp_05b3b4e6d1f2ff84006a1f65332fa881a3a11b5034f07e0abb",
+        "plan": {
+          "queries": [
+            {
+              "tool": "file_search",
+              "question": "Me fale mais sobre ela",
+              "intent": "semantic_answer",
+              "reason": "a pergunta é aberta e pede descrição textual de uma pessoa específica já identificada, sem necessidade de contagem exata",
+              "filters": [
+                {
+                  "field": "name",
+                  "op": "equals",
+                  "value": "Tatiane Nogueira Rios"
+                }
+              ],
+              "group_by": null,
+              "order_by": null,
+              "limit": 1,
+              "answer_hint": "resumir o perfil com áreas, tópicos, métodos, experiência e destaques relevantes"
+            }
+          ],
+          "reason": "a pergunta é aberta e pede descrição textual de uma pessoa específica já identificada, sem necessidade de contagem exata",
+          "raw_plan": {
+            "tool": "file_search",
+            "question": "Me fale mais sobre ela",
+            "intent": "semantic_answer",
+            "reason": "a pergunta é aberta e pede descrição textual de uma pessoa específica já identificada, sem necessidade de contagem exata",
+            "filters": [
+              {
+                "field": "name",
+                "op": "equals",
+                "value": "Tatiane Nogueira Rios"
+              }
+            ],
+            "group_by": null,
+            "order_by": null,
+            "limit": 1,
+            "answer_hint": "resumir o perfil com áreas, tópicos, métodos, experiência e destaques relevantes"
+          },
+          "_planner_model": "gpt-5.4-mini",
+          "_planner_response_id": "resp_05b3b4e6d1f2ff84006a1f65332fa881a3a11b5034f07e0abb"
+        },
+        "tool_result": null,
+        "tool_results": [],
+        "file_search_plans": [
+          {
+            "index": 1,
+            "question": "Me fale mais sobre ela",
+            "plan": {
+              "tool": "file_search",
+              "question": "Me fale mais sobre ela",
+              "intent": "semantic_answer",
+              "reason": "a pergunta é aberta e pede descrição textual de uma pessoa específica já identificada, sem necessidade de contagem exata",
+              "filters": [
+                {
+                  "field": "name",
+                  "op": "equals",
+                  "value": "Tatiane Nogueira Rios"
+                }
+              ],
+              "group_by": null,
+              "order_by": null,
+              "limit": 1,
+              "answer_hint": "resumir o perfil com áreas, tópicos, métodos, experiência e destaques relevantes"
+            }
+          }
+        ],
+        "context_mode": "file_search",
+        "vector_store_id": "vs_6a18a341349c8191a796dad6bb55d3f0",
+        "max_num_results": 8,
+        "response_id": "resp_054e07dcedeacc4d006a1f65351464819f8cb218944d1eb9bc",
+        "annotations": [
+          {
+            "file_id": "file-XVGDCVh6ohG45Pty9N8HYb",
+            "filename": "profiles_search_corpus.json",
+            "index": 150,
+            "type": "file_citation"
+          },
+          {
+            "file_id": "file-XVGDCVh6ohG45Pty9N8HYb",
+            "filename": "profiles_search_corpus.json",
+            "index": 383,
+            "type": "file_citation"
+          },
+          {
+            "file_id": "file-XVGDCVh6ohG45Pty9N8HYb",
+            "filename": "profiles_search_corpus.json",
+            "index": 613,
+            "type": "file_citation"
+          },
+          {
+            "file_id": "file-XVGDCVh6ohG45Pty9N8HYb",
+            "filename": "profiles_search_corpus.json",
+            "index": 845,
+            "type": "file_citation"
+          },
+          {
+            "file_id": "file-XVGDCVh6ohG45Pty9N8HYb",
+            "filename": "profiles_search_corpus.json",
+            "index": 995,
+            "type": "file_citation"
+          },
+          {
+            "file_id": "file-XVGDCVh6ohG45Pty9N8HYb",
+            "filename": "profiles_search_corpus.json",
+            "index": 1230,
+            "type": "file_citation"
+          },
+          {
+            "file_id": "file-XVGDCVh6ohG45Pty9N8HYb",
+            "filename": "profiles_search_corpus.json",
+            "index": 1519,
+            "type": "file_citation"
+          }
+        ]
+      }
+    },
+    {
+      "id": "95723b1c-75b5-49d6-b7a8-77d257ebbcab",
+      "role": "user",
+      "content": "Responda apenas com sim ou não, ela é muher?",
+      "created_at": "2026-06-02T20:22:18-03:00",
+      "metadata": {}
+    },
+    {
+      "id": "2a6efc7b-7cee-4ce9-b66f-f1fcd4e1c6b5",
+      "role": "assistant",
+      "content": "Sim",
+      "created_at": "2026-06-02T20:22:21-03:00",
+      "metadata": {
+        "model": "gpt-5.4",
+        "planner_model": "gpt-5.4-mini",
+        "planner_response_id": "resp_0e5b478b3c9c8289006a1f65aaea8c819e886d1a8ae01fc21f",
+        "plan": {
+          "queries": [
+            {
+              "tool": "file_search",
+              "question": "Responda apenas com sim ou não, ela é muher?",
+              "intent": "semantic_answer",
+              "reason": "Planner retornou JSON inválido; usando busca semântica.",
+              "filters": [],
+              "group_by": null,
+              "order_by": null,
+              "limit": 10,
+              "answer_hint": "responder usando busca semântica"
+            }
+          ],
+          "reason": "Planner retornou JSON inválido; usando busca semântica.",
+          "raw_plan": {
+            "tool": "file_search",
+            "question": "Responda apenas com sim ou não, ela é muher?",
+            "intent": "semantic_answer",
+            "reason": "Planner retornou JSON inválido; usando busca semântica.",
+            "filters": [],
+            "group_by": null,
+            "order_by": null,
+            "limit": 10,
+            "answer_hint": "responder usando busca semântica"
+          },
+          "_planner_model": "gpt-5.4-mini",
+          "_planner_response_id": "resp_0e5b478b3c9c8289006a1f65aaea8c819e886d1a8ae01fc21f"
+        },
+        "tool_result": null,
+        "tool_results": [],
+        "file_search_plans": [
+          {
+            "index": 1,
+            "question": "Responda apenas com sim ou não, ela é muher?",
+            "plan": {
+              "tool": "file_search",
+              "question": "Responda apenas com sim ou não, ela é muher?",
+              "intent": "semantic_answer",
+              "reason": "Planner retornou JSON inválido; usando busca semântica.",
+              "filters": [],
+              "group_by": null,
+              "order_by": null,
+              "limit": 10,
+              "answer_hint": "responder usando busca semântica"
+            }
+          }
+        ],
+        "context_mode": "file_search",
+        "vector_store_id": "vs_6a18a341349c8191a796dad6bb55d3f0",
+        "max_num_results": 8,
+        "response_id": "resp_0fdcf0819cd0cd50006a1f65ac1b68819e8537e401bd9abbf9",
         "annotations": []
       }
     }

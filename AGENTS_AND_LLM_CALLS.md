@@ -614,7 +614,9 @@ Responsabilidade:
 
 ```txt
 ler a pergunta do usuario
-decidir se a resposta precisa structured_query, file_search ou fluxo hibrido
+nao responder ao usuario final
+decidir quais dados o query_answer_agent precisa receber
+decidir se a resposta precisa structured_query, topic search, file_search ou fluxo hibrido
 dividir perguntas compostas em subconsultas
 devolver JSON com plano de ferramentas
 ```
@@ -641,7 +643,9 @@ Ferramentas planejadas:
 
 ```txt
 structured_query
+topic_candidate_search
 file_search
+dashboard_metrics_context
 ```
 
 Quando usa structured_query:
@@ -662,6 +666,7 @@ pergunta aberta
 consulta semantica
 pergunta exploratoria
 pergunta que depende do texto enriquecido
+necessidade de trechos recuperados do Vector Store
 ```
 
 Guardrail:
@@ -671,6 +676,27 @@ responder somente JSON valido
 nunca escrever codigo
 se a pergunta tiver varias subperguntas, separar em queries
 para temas com contagem/listagem, usar structured_query com filtro topic
+```
+
+Handoff para o segundo agente:
+
+```txt
+query_planner_agent nao entrega resposta final.
+Ele entrega um plano JSON para o backend.
+O backend executa as ferramentas e monta um context_package para o query_answer_agent.
+```
+
+O `context_package` pode conter:
+
+```txt
+plano do query_planner_agent
+contagens calculadas localmente
+listas filtradas de perfis
+candidatos de busca por topico
+metricas agregadas do dashboard
+trechos recuperados do Vector Store via File Search
+historico recente da conversa
+observacoes sobre limitacoes ou necessidade de validacao
 ```
 
 ## structured_query_tool
@@ -719,9 +745,7 @@ app/services/chat_service.py
 Responsabilidade:
 
 ```txt
-receber o plano da primeira LLM
-executar ferramentas locais quando necessario
-usar file_search quando necessario
+receber o context_package montado a partir do plano da primeira LLM
 validar semanticamente candidatos tematicos
 redigir a resposta final
 salvar resposta e metadata no historico do chat
@@ -744,6 +768,7 @@ historico recente
 plano do query_planner_agent
 resultados structured_query
 file_search_plans quando houver
+trechos recuperados do Vector Store quando o planner escolhe file_search
 ```
 
 File Search:
@@ -752,6 +777,8 @@ File Search:
 usa OpenAI file_search com vector_store_id
 vector store aponta para profiles_search_corpus.json
 max_num_results padrao vem da chamada ask_chat, geralmente 8
+e usado sob demanda, quando o query_planner_agent indica que a pergunta precisa recuperacao semantica
+o resultado do File Search entra no context_package do query_answer_agent
 ```
 
 Guardrails:

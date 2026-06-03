@@ -51,7 +51,7 @@ const LoginForm = () => {
         password: data.password,
       });
       console.log(resp);
-      router.push("/chat");
+      router.push("/dashboard");
     } catch (error) {
       console.log(error);
       setLoginError(true);

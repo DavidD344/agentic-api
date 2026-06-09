@@ -1,5 +1,5 @@
 import { create } from 'zustand';
-import { persist } from 'zustand/middleware';
+import { createJSONStorage, persist, StateStorage } from 'zustand/middleware';
 
 type Theme = 'light' | 'dark';
 
@@ -9,6 +9,12 @@ interface ThemeState {
   setLightTheme: () => void;
   setDarkTheme: () => void;
 }
+
+const noopStorage: StateStorage = {
+  getItem: () => null,
+  setItem: () => undefined,
+  removeItem: () => undefined,
+};
 
 export const useThemeStore = create<ThemeState>()(
   persist(
@@ -37,6 +43,9 @@ export const useThemeStore = create<ThemeState>()(
     }),
     {
       name: 'theme-storage', // Persistência no localStorage
+      storage: createJSONStorage(() =>
+        typeof window !== 'undefined' ? window.localStorage : noopStorage
+      ),
       partialize: (state) => ({ theme: state.theme }), // Persistência apenas do tema
     }
   )

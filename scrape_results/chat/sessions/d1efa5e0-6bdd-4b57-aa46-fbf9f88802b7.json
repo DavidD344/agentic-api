@@ -1,0 +1,1510 @@
+{
+  "id": "d1efa5e0-6bdd-4b57-aa46-fbf9f88802b7",
+  "title": "Bolsistas da UFBA",
+  "created_at": "2026-06-05T11:02:17-03:00",
+  "updated_at": "2026-06-05T11:02:24-03:00",
+  "messages": [
+    {
+      "id": "0f6a5833-d827-478a-8c05-efef65237121",
+      "role": "user",
+      "content": "Quais são os bolsistas da ufba",
+      "created_at": "2026-06-05T11:02:17-03:00",
+      "metadata": {}
+    },
+    {
+      "id": "8ae32512-cf32-4aaa-8d66-1086e8dd4271",
+      "role": "assistant",
+      "content": "Os bolsistas da **UFBA** no dataset são **11**:\n\n1. **Eduardo Santana de Almeida** — UFBA — **PQ-A**  \n2. **Gustavo Bittencourt Figueiredo** — UFBA — **PQ-2**  \n3. **Ivan do Carmo Machado** — UFBA — **PQ-2**  \n4. **Julio Cesar Sampaio do Prado Leite** — UFBA — **PQ-SR**  \n5. **Leobino Nascimento Sampaio** — UFBA — **PQ-C**  \n6. **Luciano Rebouças de Oliveira** — UFBA — **PQ-C**  \n7. **Manoel Gomes de Mendonça Neto** — UFBA — **PQ-2**  \n8. **Maycon Leone Maciel Peixoto** — UFBA — **PQ-C**  \n9. **Rafael Augusto de Melo** — UFBA — **PQ-2**  \n10. **Ricardo Araújo Rios** — UFBA — **PQ-2**  \n11. **Tatiane Nogueira Rios** — UFBA — **PQ-2**\n\nSe quiser, eu também posso organizar essa lista por:\n- **nível da bolsa**,\n- **área de pesquisa**,\n- **potenciais colaborações dentro da UFBA**.",
+      "created_at": "2026-06-05T11:02:24-03:00",
+      "metadata": {
+        "model": "gpt-5.4",
+        "planner_model": "gpt-5.4-mini",
+        "planner_response_id": "resp_0e05a80253fa4ce9006a22d6e9eed0819cad28b3b068ddb242",
+        "plan": {
+          "queries": [
+            {
+              "tool": "structured_query",
+              "question": "Quais são os bolsistas da UFBA?",
+              "intent": "list",
+              "reason": "pedido objetivo de listagem filtrada por instituição",
+              "filters": [
+                {
+                  "field": "institution",
+                  "op": "equals",
+                  "value": "UFBA"
+                }
+              ],
+              "group_by": null,
+              "order_by": null,
+              "limit": 20,
+              "answer_hint": "listar os bolsistas da UFBA com nome e nível de bolsa"
+            }
+          ],
+          "reason": "pedido objetivo de listagem filtrada por instituição",
+          "raw_plan": {
+            "tool": "structured_query",
+            "question": "Quais são os bolsistas da UFBA?",
+            "intent": "list",
+            "reason": "pedido objetivo de listagem filtrada por instituição",
+            "filters": [
+              {
+                "field": "institution",
+                "op": "equals",
+                "value": "UFBA"
+              }
+            ],
+            "group_by": null,
+            "order_by": null,
+            "limit": 20,
+            "answer_hint": "listar os bolsistas da UFBA com nome e nível de bolsa"
+          },
+          "_planner_model": "gpt-5.4-mini",
+          "_planner_response_id": "resp_0e05a80253fa4ce9006a22d6e9eed0819cad28b3b068ddb242"
+        },
+        "tool_result": {
+          "tool": "structured_query",
+          "intent": "list",
+          "total_profiles": 480,
+          "matched_count": 11,
+          "matched_count_is_broad_candidate_count": false,
+          "validation_required": false,
+          "validation_reason": null,
+          "topic_filters": [],
+          "filters": [
+            {
+              "field": "institution",
+              "op": "equals",
+              "value": "UFBA"
+            }
+          ],
+          "group_by": null,
+          "examples": [
+            {
+              "name": "Eduardo Santana de Almeida",
+              "institution": "UFBA",
+              "scholarship_level": "PQ-A",
+              "lattes_url": "http://lattes.cnpq.br/8538761803577291",
+              "institution_state_uf": "BA",
+              "institution_region": "Nordeste",
+              "scholarship_category": "unknown",
+              "sex_inferred": "male",
+              "main_research_area": "software_engineering",
+              "secondary_research_areas": [],
+              "research_topics": [
+                "software_engineering",
+                "leadership",
+                "international_collaboration",
+                "academic_administration",
+                "books_and_articles"
+              ],
+              "methods_and_techniques": [
+                "project_coordination",
+                "program_chair",
+                "general_chair",
+                "editorial_experience",
+                "cooperation_projects"
+              ],
+              "application_domains": [
+                "healthcare"
+              ],
+              "profile_summary_short": "Professor Titular da UFBA na área de Engenharia de Software, com atuação em liderança administrativa e cooperação internacional.",
+              "profile_summary_bullets": [
+                "Professor Titular da UFBA com atuação em Engenharia de Software.",
+                "Experiência internacional com cooperação com Suécia, Espanha e Bélgica, e EUA.",
+                "Autor de três livros e mais de 270 artigos.",
+                "Liderou projetos, coordenação de MCC UFBA-UEFS, e presidência de FAPESB."
+              ],
+              "search_keywords": [
+                "Eduardo_Santana_de_Almeida",
+                "UFBA",
+                "engenharia_de_software",
+                "software_engineering",
+                "leadership",
+                "international_collaboration",
+                "books",
+                "articles",
+                "patents",
+                "FAPESB",
+                "SBC",
+                "CNPq",
+                "MCC",
+                "DCC"
+              ],
+              "dashboard_tags": [
+                "ufba",
+                "software_engineering",
+                "senior_professor",
+                "leadership",
+                "international_experience",
+                "patents",
+                "books",
+                "articles"
+              ],
+              "qa_context": "Eduardo S. Almeida, professor titular da UFBA, com atuação em Engenharia de Software, liderança acadêmica, cooperação internacional e produção bibliográfica."
+            },
+            {
+              "name": "Gustavo Bittencourt Figueiredo",
+              "institution": "UFBA",
+              "scholarship_level": "PQ-2",
+              "lattes_url": "http://lattes.cnpq.br/2204147669620762",
+              "institution_state_uf": "BA",
+              "institution_region": "Nordeste",
+              "scholarship_category": "PQ-2",
+              "sex_inferred": "male",
+              "main_research_area": "systems_computing",
+              "secondary_research_areas": [
+                "Redes Ópticas",
+                "Redes OBS",
+                "Sistemas de Computação"
+              ],
+              "research_topics": [
+                "QoS",
+                "Redes Ópticas",
+                "Redes OBS",
+                "Sistemas de Computação"
+              ],
+              "methods_and_techniques": [],
+              "application_domains": [
+                "telecommunications",
+                "computer_networks"
+              ],
+              "profile_summary_short": "Bolsista PQ-2, Professor Associado IV na UFBA, com doutorado em Ciência da Computação e pós-doutorados nos EUA.",
+              "profile_summary_bullets": [
+                "Doutorado em Ciência da Computação pela UNICAMP (2009).",
+                "Pós-doutorados na UC Davis (2016) e GWU (2024).",
+                "Revisor de periódicos em IEEE e outras revistas.",
+                "Área de atuação: Sistemas de Computação; QoS, Redes Ópticas, Redes OBS."
+              ],
+              "search_keywords": [
+                "ufba",
+                "gustavo_bittencourt",
+                "computacao",
+                "systems_computing",
+                "qos",
+                "redes_opticas",
+                "redes_obs",
+                "doutorado_2009",
+                "postdoc_usa"
+              ],
+              "dashboard_tags": [
+                "ufba",
+                "pq-2",
+                "systems_computing",
+                "postdocs_usa",
+                "associate_professor",
+                "reviewer"
+              ],
+              "qa_context": "Gustavo Bittencourt Figueiredo, UFBA, PQ-2, doutor em Ciência da Computação pela Unicamp (2009); pós-doutorados nos EUA (UC Davis 2016, GWU 2024); revisor de periódicos; área de Sistemas de Computação; temas QoS, redes ópticas, redes OBS."
+            },
+            {
+              "name": "Ivan do Carmo Machado",
+              "institution": "UFBA",
+              "scholarship_level": "PQ-2",
+              "lattes_url": "http://lattes.cnpq.br/4430958315746203",
+              "institution_state_uf": "BA",
+              "institution_region": "Nordeste",
+              "scholarship_category": "PQ-2",
+              "sex_inferred": "male",
+              "main_research_area": "software_engineering",
+              "secondary_research_areas": [
+                "software_testing",
+                "software_quality",
+                "sustainable_software_engineering",
+                "human_aspects_of_software"
+              ],
+              "research_topics": [
+                "testes de software",
+                "qualidade de software",
+                "engenharia de software sustentável",
+                "aspectos sociais e humanos de software",
+                "mineração de repositórios de software"
+              ],
+              "methods_and_techniques": [
+                "testes e qualidade de software",
+                "mineração de repositórios de software",
+                "engenharia de software aplicada a IA",
+                "avaliação de qualidade de software"
+              ],
+              "application_domains": [],
+              "profile_summary_short": "Professor adjunto e Diretor do IC/UFBA, PhD em Ciência da Computação pela UFBA (2014), com foco em testes, qualidade e engenharia de software.",
+              "profile_summary_bullets": [
+                "Professor Adjunto no IC/UFBA e Diretor do IC/UFBA (2024–presente).",
+                "Doutor em Ciência da Computação pela UFBA (2014), MSc UFPE (2010), UNEB (2006).",
+                "Interesses: testes de software, qualidade, engenharia de software sustentável e aspectos sociais de software.",
+                "Lidera AriesLab; editor da IST/JUCS; revisor de periódicos de engenharia de software."
+              ],
+              "search_keywords": [
+                "ufba",
+                "engenharia de software",
+                "teste de software",
+                "qualidade de software",
+                "mineração de repositórios de software",
+                "arieslab",
+                "direção IC UFBA",
+                "pq2",
+                "bahia",
+                "pós-doutorado",
+                "ibm_phd_fellowship",
+                "sbES",
+                "ESEM",
+                "IST",
+                "JUCS"
+              ],
+              "dashboard_tags": [
+                "ufba",
+                "software_engineering",
+                "software_testing",
+                "leadership",
+                "director",
+                "pq2",
+                "bahia",
+                "software_quality"
+              ],
+              "qa_context": "Ivan do Carmo Machado, UFBA; Professor Adjunto, Diretor; PhD em Ciência da Computação (UFBA, 2014); interesses: testes, qualidade e software."
+            },
+            {
+              "name": "Julio Cesar Sampaio do Prado Leite",
+              "institution": "UFBA",
+              "scholarship_level": "PQ-SR",
+              "lattes_url": "http://lattes.cnpq.br/6871006250321522",
+              "institution_state_uf": "BA",
+              "institution_region": "Nordeste",
+              "scholarship_category": "unknown",
+              "sex_inferred": "male",
+              "main_research_area": "software_engineering",
+              "secondary_research_areas": [
+                "requirements_engineering",
+                "software_reuse"
+              ],
+              "research_topics": [
+                "requirements_elicitation",
+                "software_requirements_engineering",
+                "software_reuse"
+              ],
+              "methods_and_techniques": [
+                "requirements_elicitation",
+                "requirements_engineering",
+                "software_reuse",
+                "leading_research_community"
+              ],
+              "application_domains": [],
+              "profile_summary_short": "Engenheiro de software e pesquisador sênior, com ênfase em Engenharia de Requisitos e reutilização de software.",
+              "profile_summary_bullets": [
+                "Membro fundador da SBC e IEEE Lifetime Member",
+                "Pioneiro em Engenharia de Requisitos; editor e organizador de conferências",
+                "Atua como professor visitante e pesquisador sênior com atuação internacional",
+                "Autor/coautor de livros sobre engenharia de software"
+              ],
+              "search_keywords": [
+                "engenharia_de_requisitos",
+                "software_requirements_engineering",
+                "software_reuse",
+                "lifelong_learning",
+                "visitante_international",
+                "editorial_experience",
+                "IEEE",
+                "SBC",
+                "requisitos_elicitation",
+                "icsr",
+                "re-13"
+              ],
+              "dashboard_tags": [
+                "engineering",
+                "senior_professor",
+                "international_experience",
+                "editorial",
+                "requisitos"
+              ],
+              "qa_context": "Perfil de bolsista CNPq de Computação na UFBA; foco em Engenharia de Requisitos; atuação internacional e editorial."
+            },
+            {
+              "name": "Leobino Nascimento Sampaio",
+              "institution": "UFBA",
+              "scholarship_level": "PQ-C",
+              "lattes_url": "http://lattes.cnpq.br/1952937182023132",
+              "institution_state_uf": "BA",
+              "institution_region": "Nordeste",
+              "scholarship_category": "PQ-C",
+              "sex_inferred": "male",
+              "main_research_area": "networks",
+              "secondary_research_areas": [
+                "cybersecurity",
+                "internet_of_the_future",
+                "infrastructure_networks"
+              ],
+              "research_topics": [
+                "networks",
+                "cybersecurity",
+                "internet_of_the_future",
+                "infrastructure"
+              ],
+              "methods_and_techniques": [
+                "case_based_reasoning",
+                "SDN_OpenFlow",
+                "mesh_networking",
+                "network_monitoring"
+              ],
+              "application_domains": [],
+              "profile_summary_short": "Doutor em Ciência da Computação pela UFPE (2011); professor associado IV da UFBA, líder do grupo INSERT, atua em redes e cibersegurança.",
+              "profile_summary_bullets": [
+                "Doutor em Ciência da Computação pela UFPE (2011)",
+                "Mestre em Redes de Computadores pela UNIFACS (2004)",
+                "Professor associado IV da UFBA",
+                "Líder do grupo INSERT - Infraestrutura e Sistemas para Redes e Telecom"
+              ],
+              "search_keywords": [
+                "networks",
+                "cybersecurity",
+                "ufba",
+                "ufpe",
+                "ucla",
+                "pq_c",
+                "leadership",
+                "l arc",
+                "insert",
+                "rnp",
+                "ieee",
+                "sbc"
+              ],
+              "dashboard_tags": [
+                "networks",
+                "cybersecurity",
+                "ufba",
+                "l arc",
+                "insert",
+                "pq_c",
+                "international_experience",
+                "leadership"
+              ],
+              "qa_context": "Leobino Nascimento Sampaio, professor associado IV da UFBA, pesquisador PQ, doutor em Ciência da Computação pela UFPE (2011); atua em redes e cibersegurança, com experiência internacional na UCLA (2020)."
+            },
+            {
+              "name": "Luciano Rebouças de Oliveira",
+              "institution": "UFBA",
+              "scholarship_level": "PQ-C",
+              "lattes_url": "http://lattes.cnpq.br/0372650483087124",
+              "institution_state_uf": "BA",
+              "institution_region": "Nordeste",
+              "scholarship_category": "PQ-C",
+              "sex_inferred": "male",
+              "main_research_area": "computer_vision",
+              "secondary_research_areas": [
+                "robotics",
+                "smart_cities",
+                "biometrics",
+                "biomedicine"
+              ],
+              "research_topics": [
+                "computer_vision",
+                "pattern_recognition",
+                "pedestrian_detection",
+                "robotics",
+                "biometrics"
+              ],
+              "methods_and_techniques": [
+                "sensor_fusion",
+                "computer_vision",
+                "pattern_recognition",
+                "biomedical_imaging"
+              ],
+              "application_domains": [
+                "robotics",
+                "smart_cities",
+                "biometrics",
+                "biomedicine"
+              ],
+              "profile_summary_short": "Doutor em Engenharia Elétrica e de Computadores; professor associado na UFBA; líder do Intelligent Vision Research Lab; pesquisador em ciência de dados na Fiocruz-Bahia.",
+              "profile_summary_bullets": [
+                "Doutor em Engenharia Elétrica e de Computadores pela UC Coimbra",
+                "Professor associado no Dept. de Ciência da Computação da UFBA; líder do Intelligent Vision Research Lab",
+                "Pesquisador em Ciência de Dados na Fiocruz-Bahia; especialista em Visão Computacional",
+                "Atua em robótica, cidades inteligentes, biometria e biomedicina"
+              ],
+              "search_keywords": [
+                "computer_vision",
+                "vision_processing",
+                "pattern_recognition",
+                "sensor_fusion",
+                "robotics",
+                "biometrics",
+                "biomedicine",
+                "smart_cities",
+                "data_science",
+                "ufba",
+                "fiocruz_bahia",
+                "pq_cnpq"
+              ],
+              "dashboard_tags": [
+                "ufba",
+                "pq_c",
+                "vision",
+                "lab_leader",
+                "data_science",
+                "biomedicine",
+                "robotics"
+              ],
+              "qa_context": "Perfil: bolsista CNPq PQ-C, UFBA; área Visão Computacional; liderança de lab; classificação por região, temas, métodos, e perguntas em linguagem natural."
+            },
+            {
+              "name": "Manoel Gomes de Mendonça Neto",
+              "institution": "UFBA",
+              "scholarship_level": "PQ-2",
+              "lattes_url": "http://lattes.cnpq.br/1608062196337851",
+              "institution_state_uf": "BA",
+              "institution_region": "Nordeste",
+              "scholarship_category": "PQ-2",
+              "sex_inferred": "male",
+              "main_research_area": "software_engineering",
+              "secondary_research_areas": [
+                "visualizacao_de_informacao",
+                "gestao_de_conhecimento",
+                "engenharia_de_software_experimental",
+                "computacao_cientifica"
+              ],
+              "research_topics": [
+                "visualizacao_de_informacao",
+                "gestao_de_conhecimento",
+                "engenharia_de_software_experimental"
+              ],
+              "methods_and_techniques": [
+                "visualizacao_de_informacao",
+                "engenharia_de_software_experimental",
+                "gestao_de_conhecimento"
+              ],
+              "application_domains": [],
+              "profile_summary_short": "Engenheiro de Computação com doutorado em Ciência da Computação pela UM (1997); atuando como professor na UFBA com foco em engenharia de software e visualização de informação.",
+              "profile_summary_bullets": [
+                "Doutor em Ciência da Computação pela Universidade de Maryland (1997).",
+                "Professor da UFBA desde 2009; atua em engenharia de software e visualização de informação.",
+                "Membro sênior de IEEE e ACM; pesquisador e consultor de agências de fomento.",
+                "Desenvolveu o COMPMAP - Mapa de Conhecimento; possui patentes registradas."
+              ],
+              "search_keywords": [
+                "engenharia_de_software",
+                "visualizacao_de_informacao",
+                "gestao_de_conhecimento",
+                "computacao",
+                "maryland",
+                "ufba",
+                "fraunhofer",
+                "patentes",
+                "commap",
+                "mapa_de_conhecimento"
+              ],
+              "dashboard_tags": [
+                "software_engineering",
+                "visualization",
+                "knowledge_management",
+                "patents",
+                "senior_professor",
+                "ufba",
+                "cnpq_funded"
+              ],
+              "qa_context": "Manoel G. Mendonça Neto, engenheiro de computação, doutor pela UM (1997); professor da UFBA com ênfase em engenharia de software, visualização de informação e gestão de conhecimento. Patentes associadas e participação editorial. Contexto para perguntas sobre carreira, produção e impactos."
+            },
+            {
+              "name": "Maycon Leone Maciel Peixoto",
+              "institution": "UFBA",
+              "scholarship_level": "PQ-C",
+              "lattes_url": "http://lattes.cnpq.br/5003713680310544",
+              "institution_state_uf": "BA",
+              "institution_region": "Nordeste",
+              "scholarship_category": "PQ-C",
+              "sex_inferred": "male",
+              "main_research_area": "cloud_and_fog_computing",
+              "secondary_research_areas": [
+                "urban_computing",
+                "vehicular_ad_hoc_networks",
+                "smart_grids",
+                "performance_evaluation"
+              ],
+              "research_topics": [
+                "cloud_computing",
+                "fog_computing",
+                "urban_computing",
+                "vehicular_networks",
+                "smart_grids",
+                "performance_evaluation"
+              ],
+              "methods_and_techniques": [],
+              "application_domains": [
+                "urban_infrastructure",
+                "energy_management",
+                "transportation"
+              ],
+              "profile_summary_short": "Professor Associado da UFBA; doutorado pela USP; pesquisando nuvem e névoa, urban computing e redes veiculares.",
+              "profile_summary_bullets": [
+                "Doutorado pela USP (2012); mestrado 2008.",
+                "Professor Associado da UFBA; experiência internacional.",
+                "Interesses: computação em nuvem/névoa, urbana, redes veiculares, Smart Grids.",
+                "Atua como revisor de periódicos e coordena projetos com financiamento público/privado."
+              ],
+              "search_keywords": [
+                "maycon_leone_peixoto",
+                "ufba",
+                "cloud_computing",
+                "fog_computing",
+                "urban_computing",
+                "vehicular_networks",
+                "smart_grids",
+                "performance_evaluation",
+                "international_experience",
+                "usp",
+                "unicamp",
+                "toronto",
+                "ufc",
+                "waterloo"
+              ],
+              "dashboard_tags": [
+                "ufba",
+                "pq-c",
+                "associate_professor",
+                "international",
+                "cloud",
+                "fog",
+                "urban",
+                "vehicular",
+                "smart_grids",
+                "reviewer",
+                "industry_collaboration"
+              ],
+              "qa_context": "Perfil de Maycon Peixoto: UFBA, PQ-C, doutor USP 2012; interesses em Cloud/Fog, Urban Computing, Vehicular Networks, Smart Grids; experiência internacional e com indústria."
+            },
+            {
+              "name": "Rafael Augusto de Melo",
+              "institution": "UFBA",
+              "scholarship_level": "PQ-2",
+              "lattes_url": "http://lattes.cnpq.br/4117373032501782",
+              "institution_state_uf": "BA",
+              "institution_region": "Nordeste",
+              "scholarship_category": "PQ-2",
+              "sex_inferred": "male",
+              "main_research_area": "optimization",
+              "secondary_research_areas": [
+                "graph_theory",
+                "operations_research",
+                "logistics",
+                "supply_chain_optimization"
+              ],
+              "research_topics": [
+                "combinatorial_optimization",
+                "graph_theory",
+                "operations_research",
+                "logistics",
+                "supply_chain_optimization",
+                "mathematical_modeling",
+                "metaheuristics",
+                "data_driven_approaches",
+                "ai_integration_with_optimization"
+              ],
+              "methods_and_techniques": [
+                "mathematical_modeling",
+                "exact_methods",
+                "metaheuristics",
+                "data_driven_methods",
+                "ai_optimization_integration"
+              ],
+              "application_domains": [
+                "supply_chain",
+                "logistics",
+                "operations_research",
+                "industrial_engineering"
+              ],
+              "profile_summary_short": "Professor Associado na UFBA, atuando em otimização e grafos, com atuação em P&D e cooperação internacional.",
+              "profile_summary_bullets": [
+                "Professor Associado no Instituto de Computação da UFBA.",
+                "Bolsista PQ-2 e Membro Júnior da Academia de Ciências da Bahia.",
+                "Doutorado em Ciências da Engenharia pela Université catholique de Louvain (2011).",
+                "Líder fundador do CInO e cooperação internacional."
+              ],
+              "search_keywords": [
+                "otimização",
+                "grafos",
+                "pesquisa_operacional",
+                "logística",
+                "supply_chain",
+                "metaheurísticas",
+                "modelos_matemáticos",
+                "integração_otimização_ai",
+                "ufba",
+                "computação"
+              ],
+              "dashboard_tags": [
+                "optimization",
+                "graph_theory",
+                "supply_chain",
+                "international_experience",
+                "leadership",
+                "ufba"
+              ],
+              "qa_context": "Resumo: Prof. Associado UFBA; doutorado 2011; líder do CInO; atuação internacional e indústria; áreas: otimização, grafos, logística."
+            },
+            {
+              "name": "Ricardo Araújo Rios",
+              "institution": "UFBA",
+              "scholarship_level": "PQ-2",
+              "lattes_url": "http://lattes.cnpq.br/0427387583450747",
+              "institution_state_uf": "BA",
+              "institution_region": "Nordeste",
+              "scholarship_category": "PQ-2",
+              "sex_inferred": "male",
+              "main_research_area": "artificial_intelligence",
+              "secondary_research_areas": [
+                "aprendizamento_de_maquina",
+                "ciência_de_dados",
+                "processamento_de_sinais",
+                "inteligencia_artificial"
+              ],
+              "research_topics": [
+                "inteligencia_artificial",
+                "aprendizado_de_maquina",
+                "ciência_de_dados",
+                "processamento_de_sinais"
+              ],
+              "methods_and_techniques": [
+                "time_series_analysis",
+                "visualization",
+                "machine_learning",
+                "data_processing"
+              ],
+              "application_domains": [
+                "healthcare",
+                "biomedical_imaging"
+              ],
+              "profile_summary_short": "Professor sênior em IA e ciência de dados na UFBA, com atuação no IC/UFBA e colaborações industriais.",
+              "profile_summary_bullets": [
+                "Doutorado em Ciência da Computação pela USP.",
+                "Pós-doutorado no ICMC/USP em 2020.",
+                "Professor do IC/UFBA desde 2014; coordena CInO e IA Lab.",
+                "Editor de revistas científicas e bolsista de produtividade CNPq."
+              ],
+              "search_keywords": [
+                "inteligencia_artificial",
+                "aprendizado_de_maquina",
+                "ciência_de_dados",
+                "processamento_de_sinais",
+                "transferencia_tecnologica",
+                "dados_medicos",
+                "visao_computacional",
+                "series_temporais"
+              ],
+              "dashboard_tags": [
+                "ia",
+                "ml",
+                "ciência_de_dados",
+                "processamento_sinais",
+                "industria",
+                "editorial"
+              ],
+              "qa_context": "Ricardo Araújo Rios é professor sênior da UFBA, com doutorado pela USP e pós-doutorado no ICMC/USP. Atua em IA, ML, ciência de dados e processamento de sinais; coordena o grupo CInO e IA Lab; editor de revistas; tem experiência internacional NZ; atua com indústria."
+            },
+            {
+              "name": "Tatiane Nogueira Rios",
+              "institution": "UFBA",
+              "scholarship_level": "PQ-2",
+              "lattes_url": "http://lattes.cnpq.br/0851148137941240",
+              "institution_state_uf": "BA",
+              "institution_region": "Nordeste",
+              "scholarship_category": "PQ-2",
+              "sex_inferred": "female",
+              "main_research_area": "artificial_intelligence",
+              "secondary_research_areas": [
+                "machine_learning",
+                "reinforcement_learning",
+                "fuzzy_systems",
+                "explainable_ai"
+              ],
+              "research_topics": [
+                "artificial_intelligence",
+                "machine_learning",
+                "reinforcement_learning",
+                "fuzzy_systems",
+                "explainable_ai",
+                "time_series"
+              ],
+              "methods_and_techniques": [
+                "fuzzy_clustering",
+                "text_mining",
+                "fuzzy_classification",
+                "time_series_representation",
+                "uncertainty_decision_making"
+              ],
+              "application_domains": [],
+              "profile_summary_short": "Professor Adjunto na UFBA com doutorado pela USP, atuação em IA e colaboração internacional.",
+              "profile_summary_bullets": [
+                "Doutorado em Ciência da Computação e Matemática Computacional pela USP.",
+                "Professor Adjunto no Instituto de Computação da UFBA.",
+                "Interesses: Inteligência Artificial, Aprendizado de Máquina, Aprendizado por Reforço, Sistemas Fuzzy e XAI.",
+                "Colaborações internacionais com Espanha, Canadá, Japão e Portugal; participação em revisões e conferências."
+              ],
+              "search_keywords": [
+                "tatiane_nogueira_rios",
+                "ufba",
+                "inteligencia_artificial",
+                "mineração_de_textos",
+                "fuzzy",
+                "aprendizado_de_maquina",
+                "aprendizado_por_reforco",
+                "sistemas_fuzzy",
+                "explainable_ai",
+                "series_temporais",
+                "usp",
+                "granada",
+                "mcgill",
+                "japao",
+                "portugal"
+              ],
+              "dashboard_tags": [
+                "ufba",
+                "pq2",
+                "ia",
+                "machine_learning",
+                "fuzzy",
+                "text_mining",
+                "international_collaboration",
+                "professor_adjunct"
+              ],
+              "qa_context": "Perguntas sobre Tatiane Nogueira Rios: UFBA, PQ-2, doutorado USP, IA e colaboração internacional com Espanha, Canadá, Japão e Portugal."
+            }
+          ]
+        },
+        "tool_results": [
+          {
+            "index": 1,
+            "question": "Quais são os bolsistas da UFBA?",
+            "plan": {
+              "tool": "structured_query",
+              "question": "Quais são os bolsistas da UFBA?",
+              "intent": "list",
+              "reason": "pedido objetivo de listagem filtrada por instituição",
+              "filters": [
+                {
+                  "field": "institution",
+                  "op": "equals",
+                  "value": "UFBA"
+                }
+              ],
+              "group_by": null,
+              "order_by": null,
+              "limit": 20,
+              "answer_hint": "listar os bolsistas da UFBA com nome e nível de bolsa"
+            },
+            "result": {
+              "tool": "structured_query",
+              "intent": "list",
+              "total_profiles": 480,
+              "matched_count": 11,
+              "matched_count_is_broad_candidate_count": false,
+              "validation_required": false,
+              "validation_reason": null,
+              "topic_filters": [],
+              "filters": [
+                {
+                  "field": "institution",
+                  "op": "equals",
+                  "value": "UFBA"
+                }
+              ],
+              "group_by": null,
+              "examples": [
+                {
+                  "name": "Eduardo Santana de Almeida",
+                  "institution": "UFBA",
+                  "scholarship_level": "PQ-A",
+                  "lattes_url": "http://lattes.cnpq.br/8538761803577291",
+                  "institution_state_uf": "BA",
+                  "institution_region": "Nordeste",
+                  "scholarship_category": "unknown",
+                  "sex_inferred": "male",
+                  "main_research_area": "software_engineering",
+                  "secondary_research_areas": [],
+                  "research_topics": [
+                    "software_engineering",
+                    "leadership",
+                    "international_collaboration",
+                    "academic_administration",
+                    "books_and_articles"
+                  ],
+                  "methods_and_techniques": [
+                    "project_coordination",
+                    "program_chair",
+                    "general_chair",
+                    "editorial_experience",
+                    "cooperation_projects"
+                  ],
+                  "application_domains": [
+                    "healthcare"
+                  ],
+                  "profile_summary_short": "Professor Titular da UFBA na área de Engenharia de Software, com atuação em liderança administrativa e cooperação internacional.",
+                  "profile_summary_bullets": [
+                    "Professor Titular da UFBA com atuação em Engenharia de Software.",
+                    "Experiência internacional com cooperação com Suécia, Espanha e Bélgica, e EUA.",
+                    "Autor de três livros e mais de 270 artigos.",
+                    "Liderou projetos, coordenação de MCC UFBA-UEFS, e presidência de FAPESB."
+                  ],
+                  "search_keywords": [
+                    "Eduardo_Santana_de_Almeida",
+                    "UFBA",
+                    "engenharia_de_software",
+                    "software_engineering",
+                    "leadership",
+                    "international_collaboration",
+                    "books",
+                    "articles",
+                    "patents",
+                    "FAPESB",
+                    "SBC",
+                    "CNPq",
+                    "MCC",
+                    "DCC"
+                  ],
+                  "dashboard_tags": [
+                    "ufba",
+                    "software_engineering",
+                    "senior_professor",
+                    "leadership",
+                    "international_experience",
+                    "patents",
+                    "books",
+                    "articles"
+                  ],
+                  "qa_context": "Eduardo S. Almeida, professor titular da UFBA, com atuação em Engenharia de Software, liderança acadêmica, cooperação internacional e produção bibliográfica."
+                },
+                {
+                  "name": "Gustavo Bittencourt Figueiredo",
+                  "institution": "UFBA",
+                  "scholarship_level": "PQ-2",
+                  "lattes_url": "http://lattes.cnpq.br/2204147669620762",
+                  "institution_state_uf": "BA",
+                  "institution_region": "Nordeste",
+                  "scholarship_category": "PQ-2",
+                  "sex_inferred": "male",
+                  "main_research_area": "systems_computing",
+                  "secondary_research_areas": [
+                    "Redes Ópticas",
+                    "Redes OBS",
+                    "Sistemas de Computação"
+                  ],
+                  "research_topics": [
+                    "QoS",
+                    "Redes Ópticas",
+                    "Redes OBS",
+                    "Sistemas de Computação"
+                  ],
+                  "methods_and_techniques": [],
+                  "application_domains": [
+                    "telecommunications",
+                    "computer_networks"
+                  ],
+                  "profile_summary_short": "Bolsista PQ-2, Professor Associado IV na UFBA, com doutorado em Ciência da Computação e pós-doutorados nos EUA.",
+                  "profile_summary_bullets": [
+                    "Doutorado em Ciência da Computação pela UNICAMP (2009).",
+                    "Pós-doutorados na UC Davis (2016) e GWU (2024).",
+                    "Revisor de periódicos em IEEE e outras revistas.",
+                    "Área de atuação: Sistemas de Computação; QoS, Redes Ópticas, Redes OBS."
+                  ],
+                  "search_keywords": [
+                    "ufba",
+                    "gustavo_bittencourt",
+                    "computacao",
+                    "systems_computing",
+                    "qos",
+                    "redes_opticas",
+                    "redes_obs",
+                    "doutorado_2009",
+                    "postdoc_usa"
+                  ],
+                  "dashboard_tags": [
+                    "ufba",
+                    "pq-2",
+                    "systems_computing",
+                    "postdocs_usa",
+                    "associate_professor",
+                    "reviewer"
+                  ],
+                  "qa_context": "Gustavo Bittencourt Figueiredo, UFBA, PQ-2, doutor em Ciência da Computação pela Unicamp (2009); pós-doutorados nos EUA (UC Davis 2016, GWU 2024); revisor de periódicos; área de Sistemas de Computação; temas QoS, redes ópticas, redes OBS."
+                },
+                {
+                  "name": "Ivan do Carmo Machado",
+                  "institution": "UFBA",
+                  "scholarship_level": "PQ-2",
+                  "lattes_url": "http://lattes.cnpq.br/4430958315746203",
+                  "institution_state_uf": "BA",
+                  "institution_region": "Nordeste",
+                  "scholarship_category": "PQ-2",
+                  "sex_inferred": "male",
+                  "main_research_area": "software_engineering",
+                  "secondary_research_areas": [
+                    "software_testing",
+                    "software_quality",
+                    "sustainable_software_engineering",
+                    "human_aspects_of_software"
+                  ],
+                  "research_topics": [
+                    "testes de software",
+                    "qualidade de software",
+                    "engenharia de software sustentável",
+                    "aspectos sociais e humanos de software",
+                    "mineração de repositórios de software"
+                  ],
+                  "methods_and_techniques": [
+                    "testes e qualidade de software",
+                    "mineração de repositórios de software",
+                    "engenharia de software aplicada a IA",
+                    "avaliação de qualidade de software"
+                  ],
+                  "application_domains": [],
+                  "profile_summary_short": "Professor adjunto e Diretor do IC/UFBA, PhD em Ciência da Computação pela UFBA (2014), com foco em testes, qualidade e engenharia de software.",
+                  "profile_summary_bullets": [
+                    "Professor Adjunto no IC/UFBA e Diretor do IC/UFBA (2024–presente).",
+                    "Doutor em Ciência da Computação pela UFBA (2014), MSc UFPE (2010), UNEB (2006).",
+                    "Interesses: testes de software, qualidade, engenharia de software sustentável e aspectos sociais de software.",
+                    "Lidera AriesLab; editor da IST/JUCS; revisor de periódicos de engenharia de software."
+                  ],
+                  "search_keywords": [
+                    "ufba",
+                    "engenharia de software",
+                    "teste de software",
+                    "qualidade de software",
+                    "mineração de repositórios de software",
+                    "arieslab",
+                    "direção IC UFBA",
+                    "pq2",
+                    "bahia",
+                    "pós-doutorado",
+                    "ibm_phd_fellowship",
+                    "sbES",
+                    "ESEM",
+                    "IST",
+                    "JUCS"
+                  ],
+                  "dashboard_tags": [
+                    "ufba",
+                    "software_engineering",
+                    "software_testing",
+                    "leadership",
+                    "director",
+                    "pq2",
+                    "bahia",
+                    "software_quality"
+                  ],
+                  "qa_context": "Ivan do Carmo Machado, UFBA; Professor Adjunto, Diretor; PhD em Ciência da Computação (UFBA, 2014); interesses: testes, qualidade e software."
+                },
+                {
+                  "name": "Julio Cesar Sampaio do Prado Leite",
+                  "institution": "UFBA",
+                  "scholarship_level": "PQ-SR",
+                  "lattes_url": "http://lattes.cnpq.br/6871006250321522",
+                  "institution_state_uf": "BA",
+                  "institution_region": "Nordeste",
+                  "scholarship_category": "unknown",
+                  "sex_inferred": "male",
+                  "main_research_area": "software_engineering",
+                  "secondary_research_areas": [
+                    "requirements_engineering",
+                    "software_reuse"
+                  ],
+                  "research_topics": [
+                    "requirements_elicitation",
+                    "software_requirements_engineering",
+                    "software_reuse"
+                  ],
+                  "methods_and_techniques": [
+                    "requirements_elicitation",
+                    "requirements_engineering",
+                    "software_reuse",
+                    "leading_research_community"
+                  ],
+                  "application_domains": [],
+                  "profile_summary_short": "Engenheiro de software e pesquisador sênior, com ênfase em Engenharia de Requisitos e reutilização de software.",
+                  "profile_summary_bullets": [
+                    "Membro fundador da SBC e IEEE Lifetime Member",
+                    "Pioneiro em Engenharia de Requisitos; editor e organizador de conferências",
+                    "Atua como professor visitante e pesquisador sênior com atuação internacional",
+                    "Autor/coautor de livros sobre engenharia de software"
+                  ],
+                  "search_keywords": [
+                    "engenharia_de_requisitos",
+                    "software_requirements_engineering",
+                    "software_reuse",
+                    "lifelong_learning",
+                    "visitante_international",
+                    "editorial_experience",
+                    "IEEE",
+                    "SBC",
+                    "requisitos_elicitation",
+                    "icsr",
+                    "re-13"
+                  ],
+                  "dashboard_tags": [
+                    "engineering",
+                    "senior_professor",
+                    "international_experience",
+                    "editorial",
+                    "requisitos"
+                  ],
+                  "qa_context": "Perfil de bolsista CNPq de Computação na UFBA; foco em Engenharia de Requisitos; atuação internacional e editorial."
+                },
+                {
+                  "name": "Leobino Nascimento Sampaio",
+                  "institution": "UFBA",
+                  "scholarship_level": "PQ-C",
+                  "lattes_url": "http://lattes.cnpq.br/1952937182023132",
+                  "institution_state_uf": "BA",
+                  "institution_region": "Nordeste",
+                  "scholarship_category": "PQ-C",
+                  "sex_inferred": "male",
+                  "main_research_area": "networks",
+                  "secondary_research_areas": [
+                    "cybersecurity",
+                    "internet_of_the_future",
+                    "infrastructure_networks"
+                  ],
+                  "research_topics": [
+                    "networks",
+                    "cybersecurity",
+                    "internet_of_the_future",
+                    "infrastructure"
+                  ],
+                  "methods_and_techniques": [
+                    "case_based_reasoning",
+                    "SDN_OpenFlow",
+                    "mesh_networking",
+                    "network_monitoring"
+                  ],
+                  "application_domains": [],
+                  "profile_summary_short": "Doutor em Ciência da Computação pela UFPE (2011); professor associado IV da UFBA, líder do grupo INSERT, atua em redes e cibersegurança.",
+                  "profile_summary_bullets": [
+                    "Doutor em Ciência da Computação pela UFPE (2011)",
+                    "Mestre em Redes de Computadores pela UNIFACS (2004)",
+                    "Professor associado IV da UFBA",
+                    "Líder do grupo INSERT - Infraestrutura e Sistemas para Redes e Telecom"
+                  ],
+                  "search_keywords": [
+                    "networks",
+                    "cybersecurity",
+                    "ufba",
+                    "ufpe",
+                    "ucla",
+                    "pq_c",
+                    "leadership",
+                    "l arc",
+                    "insert",
+                    "rnp",
+                    "ieee",
+                    "sbc"
+                  ],
+                  "dashboard_tags": [
+                    "networks",
+                    "cybersecurity",
+                    "ufba",
+                    "l arc",
+                    "insert",
+                    "pq_c",
+                    "international_experience",
+                    "leadership"
+                  ],
+                  "qa_context": "Leobino Nascimento Sampaio, professor associado IV da UFBA, pesquisador PQ, doutor em Ciência da Computação pela UFPE (2011); atua em redes e cibersegurança, com experiência internacional na UCLA (2020)."
+                },
+                {
+                  "name": "Luciano Rebouças de Oliveira",
+                  "institution": "UFBA",
+                  "scholarship_level": "PQ-C",
+                  "lattes_url": "http://lattes.cnpq.br/0372650483087124",
+                  "institution_state_uf": "BA",
+                  "institution_region": "Nordeste",
+                  "scholarship_category": "PQ-C",
+                  "sex_inferred": "male",
+                  "main_research_area": "computer_vision",
+                  "secondary_research_areas": [
+                    "robotics",
+                    "smart_cities",
+                    "biometrics",
+                    "biomedicine"
+                  ],
+                  "research_topics": [
+                    "computer_vision",
+                    "pattern_recognition",
+                    "pedestrian_detection",
+                    "robotics",
+                    "biometrics"
+                  ],
+                  "methods_and_techniques": [
+                    "sensor_fusion",
+                    "computer_vision",
+                    "pattern_recognition",
+                    "biomedical_imaging"
+                  ],
+                  "application_domains": [
+                    "robotics",
+                    "smart_cities",
+                    "biometrics",
+                    "biomedicine"
+                  ],
+                  "profile_summary_short": "Doutor em Engenharia Elétrica e de Computadores; professor associado na UFBA; líder do Intelligent Vision Research Lab; pesquisador em ciência de dados na Fiocruz-Bahia.",
+                  "profile_summary_bullets": [
+                    "Doutor em Engenharia Elétrica e de Computadores pela UC Coimbra",
+                    "Professor associado no Dept. de Ciência da Computação da UFBA; líder do Intelligent Vision Research Lab",
+                    "Pesquisador em Ciência de Dados na Fiocruz-Bahia; especialista em Visão Computacional",
+                    "Atua em robótica, cidades inteligentes, biometria e biomedicina"
+                  ],
+                  "search_keywords": [
+                    "computer_vision",
+                    "vision_processing",
+                    "pattern_recognition",
+                    "sensor_fusion",
+                    "robotics",
+                    "biometrics",
+                    "biomedicine",
+                    "smart_cities",
+                    "data_science",
+                    "ufba",
+                    "fiocruz_bahia",
+                    "pq_cnpq"
+                  ],
+                  "dashboard_tags": [
+                    "ufba",
+                    "pq_c",
+                    "vision",
+                    "lab_leader",
+                    "data_science",
+                    "biomedicine",
+                    "robotics"
+                  ],
+                  "qa_context": "Perfil: bolsista CNPq PQ-C, UFBA; área Visão Computacional; liderança de lab; classificação por região, temas, métodos, e perguntas em linguagem natural."
+                },
+                {
+                  "name": "Manoel Gomes de Mendonça Neto",
+                  "institution": "UFBA",
+                  "scholarship_level": "PQ-2",
+                  "lattes_url": "http://lattes.cnpq.br/1608062196337851",
+                  "institution_state_uf": "BA",
+                  "institution_region": "Nordeste",
+                  "scholarship_category": "PQ-2",
+                  "sex_inferred": "male",
+                  "main_research_area": "software_engineering",
+                  "secondary_research_areas": [
+                    "visualizacao_de_informacao",
+                    "gestao_de_conhecimento",
+                    "engenharia_de_software_experimental",
+                    "computacao_cientifica"
+                  ],
+                  "research_topics": [
+                    "visualizacao_de_informacao",
+                    "gestao_de_conhecimento",
+                    "engenharia_de_software_experimental"
+                  ],
+                  "methods_and_techniques": [
+                    "visualizacao_de_informacao",
+                    "engenharia_de_software_experimental",
+                    "gestao_de_conhecimento"
+                  ],
+                  "application_domains": [],
+                  "profile_summary_short": "Engenheiro de Computação com doutorado em Ciência da Computação pela UM (1997); atuando como professor na UFBA com foco em engenharia de software e visualização de informação.",
+                  "profile_summary_bullets": [
+                    "Doutor em Ciência da Computação pela Universidade de Maryland (1997).",
+                    "Professor da UFBA desde 2009; atua em engenharia de software e visualização de informação.",
+                    "Membro sênior de IEEE e ACM; pesquisador e consultor de agências de fomento.",
+                    "Desenvolveu o COMPMAP - Mapa de Conhecimento; possui patentes registradas."
+                  ],
+                  "search_keywords": [
+                    "engenharia_de_software",
+                    "visualizacao_de_informacao",
+                    "gestao_de_conhecimento",
+                    "computacao",
+                    "maryland",
+                    "ufba",
+                    "fraunhofer",
+                    "patentes",
+                    "commap",
+                    "mapa_de_conhecimento"
+                  ],
+                  "dashboard_tags": [
+                    "software_engineering",
+                    "visualization",
+                    "knowledge_management",
+                    "patents",
+                    "senior_professor",
+                    "ufba",
+                    "cnpq_funded"
+                  ],
+                  "qa_context": "Manoel G. Mendonça Neto, engenheiro de computação, doutor pela UM (1997); professor da UFBA com ênfase em engenharia de software, visualização de informação e gestão de conhecimento. Patentes associadas e participação editorial. Contexto para perguntas sobre carreira, produção e impactos."
+                },
+                {
+                  "name": "Maycon Leone Maciel Peixoto",
+                  "institution": "UFBA",
+                  "scholarship_level": "PQ-C",
+                  "lattes_url": "http://lattes.cnpq.br/5003713680310544",
+                  "institution_state_uf": "BA",
+                  "institution_region": "Nordeste",
+                  "scholarship_category": "PQ-C",
+                  "sex_inferred": "male",
+                  "main_research_area": "cloud_and_fog_computing",
+                  "secondary_research_areas": [
+                    "urban_computing",
+                    "vehicular_ad_hoc_networks",
+                    "smart_grids",
+                    "performance_evaluation"
+                  ],
+                  "research_topics": [
+                    "cloud_computing",
+                    "fog_computing",
+                    "urban_computing",
+                    "vehicular_networks",
+                    "smart_grids",
+                    "performance_evaluation"
+                  ],
+                  "methods_and_techniques": [],
+                  "application_domains": [
+                    "urban_infrastructure",
+                    "energy_management",
+                    "transportation"
+                  ],
+                  "profile_summary_short": "Professor Associado da UFBA; doutorado pela USP; pesquisando nuvem e névoa, urban computing e redes veiculares.",
+                  "profile_summary_bullets": [
+                    "Doutorado pela USP (2012); mestrado 2008.",
+                    "Professor Associado da UFBA; experiência internacional.",
+                    "Interesses: computação em nuvem/névoa, urbana, redes veiculares, Smart Grids.",
+                    "Atua como revisor de periódicos e coordena projetos com financiamento público/privado."
+                  ],
+                  "search_keywords": [
+                    "maycon_leone_peixoto",
+                    "ufba",
+                    "cloud_computing",
+                    "fog_computing",
+                    "urban_computing",
+                    "vehicular_networks",
+                    "smart_grids",
+                    "performance_evaluation",
+                    "international_experience",
+                    "usp",
+                    "unicamp",
+                    "toronto",
+                    "ufc",
+                    "waterloo"
+                  ],
+                  "dashboard_tags": [
+                    "ufba",
+                    "pq-c",
+                    "associate_professor",
+                    "international",
+                    "cloud",
+                    "fog",
+                    "urban",
+                    "vehicular",
+                    "smart_grids",
+                    "reviewer",
+                    "industry_collaboration"
+                  ],
+                  "qa_context": "Perfil de Maycon Peixoto: UFBA, PQ-C, doutor USP 2012; interesses em Cloud/Fog, Urban Computing, Vehicular Networks, Smart Grids; experiência internacional e com indústria."
+                },
+                {
+                  "name": "Rafael Augusto de Melo",
+                  "institution": "UFBA",
+                  "scholarship_level": "PQ-2",
+                  "lattes_url": "http://lattes.cnpq.br/4117373032501782",
+                  "institution_state_uf": "BA",
+                  "institution_region": "Nordeste",
+                  "scholarship_category": "PQ-2",
+                  "sex_inferred": "male",
+                  "main_research_area": "optimization",
+                  "secondary_research_areas": [
+                    "graph_theory",
+                    "operations_research",
+                    "logistics",
+                    "supply_chain_optimization"
+                  ],
+                  "research_topics": [
+                    "combinatorial_optimization",
+                    "graph_theory",
+                    "operations_research",
+                    "logistics",
+                    "supply_chain_optimization",
+                    "mathematical_modeling",
+                    "metaheuristics",
+                    "data_driven_approaches",
+                    "ai_integration_with_optimization"
+                  ],
+                  "methods_and_techniques": [
+                    "mathematical_modeling",
+                    "exact_methods",
+                    "metaheuristics",
+                    "data_driven_methods",
+                    "ai_optimization_integration"
+                  ],
+                  "application_domains": [
+                    "supply_chain",
+                    "logistics",
+                    "operations_research",
+                    "industrial_engineering"
+                  ],
+                  "profile_summary_short": "Professor Associado na UFBA, atuando em otimização e grafos, com atuação em P&D e cooperação internacional.",
+                  "profile_summary_bullets": [
+                    "Professor Associado no Instituto de Computação da UFBA.",
+                    "Bolsista PQ-2 e Membro Júnior da Academia de Ciências da Bahia.",
+                    "Doutorado em Ciências da Engenharia pela Université catholique de Louvain (2011).",
+                    "Líder fundador do CInO e cooperação internacional."
+                  ],
+                  "search_keywords": [
+                    "otimização",
+                    "grafos",
+                    "pesquisa_operacional",
+                    "logística",
+                    "supply_chain",
+                    "metaheurísticas",
+                    "modelos_matemáticos",
+                    "integração_otimização_ai",
+                    "ufba",
+                    "computação"
+                  ],
+                  "dashboard_tags": [
+                    "optimization",
+                    "graph_theory",
+                    "supply_chain",
+                    "international_experience",
+                    "leadership",
+                    "ufba"
+                  ],
+                  "qa_context": "Resumo: Prof. Associado UFBA; doutorado 2011; líder do CInO; atuação internacional e indústria; áreas: otimização, grafos, logística."
+                },
+                {
+                  "name": "Ricardo Araújo Rios",
+                  "institution": "UFBA",
+                  "scholarship_level": "PQ-2",
+                  "lattes_url": "http://lattes.cnpq.br/0427387583450747",
+                  "institution_state_uf": "BA",
+                  "institution_region": "Nordeste",
+                  "scholarship_category": "PQ-2",
+                  "sex_inferred": "male",
+                  "main_research_area": "artificial_intelligence",
+                  "secondary_research_areas": [
+                    "aprendizamento_de_maquina",
+                    "ciência_de_dados",
+                    "processamento_de_sinais",
+                    "inteligencia_artificial"
+                  ],
+                  "research_topics": [
+                    "inteligencia_artificial",
+                    "aprendizado_de_maquina",
+                    "ciência_de_dados",
+                    "processamento_de_sinais"
+                  ],
+                  "methods_and_techniques": [
+                    "time_series_analysis",
+                    "visualization",
+                    "machine_learning",
+                    "data_processing"
+                  ],
+                  "application_domains": [
+                    "healthcare",
+                    "biomedical_imaging"
+                  ],
+                  "profile_summary_short": "Professor sênior em IA e ciência de dados na UFBA, com atuação no IC/UFBA e colaborações industriais.",
+                  "profile_summary_bullets": [
+                    "Doutorado em Ciência da Computação pela USP.",
+                    "Pós-doutorado no ICMC/USP em 2020.",
+                    "Professor do IC/UFBA desde 2014; coordena CInO e IA Lab.",
+                    "Editor de revistas científicas e bolsista de produtividade CNPq."
+                  ],
+                  "search_keywords": [
+                    "inteligencia_artificial",
+                    "aprendizado_de_maquina",
+                    "ciência_de_dados",
+                    "processamento_de_sinais",
+                    "transferencia_tecnologica",
+                    "dados_medicos",
+                    "visao_computacional",
+                    "series_temporais"
+                  ],
+                  "dashboard_tags": [
+                    "ia",
+                    "ml",
+                    "ciência_de_dados",
+                    "processamento_sinais",
+                    "industria",
+                    "editorial"
+                  ],
+                  "qa_context": "Ricardo Araújo Rios é professor sênior da UFBA, com doutorado pela USP e pós-doutorado no ICMC/USP. Atua em IA, ML, ciência de dados e processamento de sinais; coordena o grupo CInO e IA Lab; editor de revistas; tem experiência internacional NZ; atua com indústria."
+                },
+                {
+                  "name": "Tatiane Nogueira Rios",
+                  "institution": "UFBA",
+                  "scholarship_level": "PQ-2",
+                  "lattes_url": "http://lattes.cnpq.br/0851148137941240",
+                  "institution_state_uf": "BA",
+                  "institution_region": "Nordeste",
+                  "scholarship_category": "PQ-2",
+                  "sex_inferred": "female",
+                  "main_research_area": "artificial_intelligence",
+                  "secondary_research_areas": [
+                    "machine_learning",
+                    "reinforcement_learning",
+                    "fuzzy_systems",
+                    "explainable_ai"
+                  ],
+                  "research_topics": [
+                    "artificial_intelligence",
+                    "machine_learning",
+                    "reinforcement_learning",
+                    "fuzzy_systems",
+                    "explainable_ai",
+                    "time_series"
+                  ],
+                  "methods_and_techniques": [
+                    "fuzzy_clustering",
+                    "text_mining",
+                    "fuzzy_classification",
+                    "time_series_representation",
+                    "uncertainty_decision_making"
+                  ],
+                  "application_domains": [],
+                  "profile_summary_short": "Professor Adjunto na UFBA com doutorado pela USP, atuação em IA e colaboração internacional.",
+                  "profile_summary_bullets": [
+                    "Doutorado em Ciência da Computação e Matemática Computacional pela USP.",
+                    "Professor Adjunto no Instituto de Computação da UFBA.",
+                    "Interesses: Inteligência Artificial, Aprendizado de Máquina, Aprendizado por Reforço, Sistemas Fuzzy e XAI.",
+                    "Colaborações internacionais com Espanha, Canadá, Japão e Portugal; participação em revisões e conferências."
+                  ],
+                  "search_keywords": [
+                    "tatiane_nogueira_rios",
+                    "ufba",
+                    "inteligencia_artificial",
+                    "mineração_de_textos",
+                    "fuzzy",
+                    "aprendizado_de_maquina",
+                    "aprendizado_por_reforco",
+                    "sistemas_fuzzy",
+                    "explainable_ai",
+                    "series_temporais",
+                    "usp",
+                    "granada",
+                    "mcgill",
+                    "japao",
+                    "portugal"
+                  ],
+                  "dashboard_tags": [
+                    "ufba",
+                    "pq2",
+                    "ia",
+                    "machine_learning",
+                    "fuzzy",
+                    "text_mining",
+                    "international_collaboration",
+                    "professor_adjunct"
+                  ],
+                  "qa_context": "Perguntas sobre Tatiane Nogueira Rios: UFBA, PQ-2, doutorado USP, IA e colaboração internacional com Espanha, Canadá, Japão e Portugal."
+                }
+              ]
+            }
+          }
+        ],
+        "file_search_plans": [],
+        "context_mode": "structured_query",
+        "vector_store_id": "vs_6a18a341349c8191a796dad6bb55d3f0",
+        "max_num_results": 0,
+        "response_id": "resp_008fa74e230094d8006a22d6ebccb081929920773ccb863278",
+        "annotations": []
+      }
+    }
+  ]
+}

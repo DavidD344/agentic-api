@@ -2,7 +2,7 @@
   "id": "344f8313-2104-453b-b88b-62b3a6df669d",
   "title": "Quantas pessoas recebem cada bolsa",
   "created_at": "2026-06-02T21:58:05-03:00",
-  "updated_at": "2026-06-02T21:58:10-03:00",
+  "updated_at": "2026-06-05T10:37:57-03:00",
   "messages": [
     {
       "id": "31e589bb-1a0d-4853-9838-842c65d3bd3b",
@@ -2661,6 +2661,918 @@
         "vector_store_id": "vs_6a18a341349c8191a796dad6bb55d3f0",
         "max_num_results": 0,
         "response_id": "resp_078e51c31e1dbedc006a1f7c1fe89c819ca7d8a22990509539",
+        "annotations": []
+      }
+    },
+    {
+      "id": "88fe58a0-54f2-40d3-b2f7-8e97c574ef54",
+      "role": "user",
+      "content": "Liste os pq-sr",
+      "created_at": "2026-06-05T10:37:48-03:00",
+      "metadata": {}
+    },
+    {
+      "id": "da5b6855-8ff3-4566-b125-0f5e0421991e",
+      "role": "assistant",
+      "content": "Os **bolsistas PQ-SR** no dataset são **6**:\n\n1. **Edmundo Albuquerque de Souza e Silva** — **UFRJ** — **PQ-SR**\n2. **José Palazzo Moreira de Oliveira** — **UFRGS** — **PQ-SR**\n3. **Julio Cesar Sampaio do Prado Leite** — **UFBA** — **PQ-SR**\n4. **Paulo Roberto Freire Cunha** — **UFPE** — **PQ-SR**\n5. **Rafael Dueire Lins** — **UFRPE** — **PQ-SR**\n6. **Valmir Carneiro Barbosa** — **UERJ** — **PQ-SR**\n\nSe quiser, posso também organizar essa lista por **região**, **UF** ou **área de pesquisa**.",
+      "created_at": "2026-06-05T10:37:57-03:00",
+      "metadata": {
+        "model": "gpt-5.4",
+        "planner_model": "gpt-5.4-mini",
+        "planner_response_id": "resp_0bf1e1355e340e6b006a22d12e23e8819f8dd40b2d64e6f67f",
+        "plan": {
+          "queries": [
+            {
+              "tool": "structured_query",
+              "question": "Liste os PQ-SR",
+              "intent": "list",
+              "reason": "precisa listar todos os bolsistas com nível PQ-SR no dataset",
+              "filters": [
+                {
+                  "field": "scholarship_level",
+                  "op": "equals",
+                  "value": "PQ-SR"
+                }
+              ],
+              "group_by": null,
+              "order_by": null,
+              "limit": 10,
+              "answer_hint": "listar os nomes com instituição e nível de bolsa, validando que todos são PQ-SR"
+            }
+          ],
+          "reason": "precisa listar todos os bolsistas com nível PQ-SR no dataset",
+          "raw_plan": {
+            "tool": "structured_query",
+            "question": "Liste os PQ-SR",
+            "intent": "list",
+            "reason": "precisa listar todos os bolsistas com nível PQ-SR no dataset",
+            "filters": [
+              {
+                "field": "scholarship_level",
+                "op": "equals",
+                "value": "PQ-SR"
+              }
+            ],
+            "group_by": null,
+            "order_by": null,
+            "limit": 10,
+            "answer_hint": "listar os nomes com instituição e nível de bolsa, validando que todos são PQ-SR"
+          },
+          "_planner_model": "gpt-5.4-mini",
+          "_planner_response_id": "resp_0bf1e1355e340e6b006a22d12e23e8819f8dd40b2d64e6f67f"
+        },
+        "tool_result": {
+          "tool": "structured_query",
+          "intent": "list",
+          "total_profiles": 480,
+          "matched_count": 6,
+          "matched_count_is_broad_candidate_count": false,
+          "validation_required": false,
+          "validation_reason": null,
+          "topic_filters": [],
+          "filters": [
+            {
+              "field": "scholarship_level",
+              "op": "equals",
+              "value": "PQ-SR"
+            }
+          ],
+          "group_by": null,
+          "examples": [
+            {
+              "name": "Edmundo Albuquerque de Souza e Silva",
+              "institution": "UFRJ",
+              "scholarship_level": "PQ-SR",
+              "lattes_url": "http://lattes.cnpq.br/9358511568098561",
+              "institution_state_uf": "RJ",
+              "institution_region": "Sudeste",
+              "scholarship_category": "unknown",
+              "sex_inferred": "male",
+              "main_research_area": "networks_and_multimedia",
+              "secondary_research_areas": [
+                "multimedia_networks",
+                "distributed_systems",
+                "system_modeling",
+                "analysis_of_computing_systems"
+              ],
+              "research_topics": [
+                "networks",
+                "multimedia_networks",
+                "queueing_networks",
+                "distributed_systems"
+              ],
+              "methods_and_techniques": [
+                "queueing_theory",
+                "modeling",
+                "performance_analysis",
+                "network_design"
+              ],
+              "application_domains": [
+                "education",
+                "internet_infrastructure",
+                "research_networks"
+              ],
+              "profile_summary_short": "Engenheiro Elétrico com doutorado em Computação pela UCLA (1984); professor titular da COPPE/UFRJ, com atuação internacional e liderança em comitês.",
+              "profile_summary_bullets": [
+                "Engenheiro Elétrico (Eletrônica) formado pela PUC-RJ (1975).",
+                "Mestrado em Engenharia Elétrica pela PUC-RJ (1976).",
+                "Doutorado em Ciência da Computação pela UCLA (1984).",
+                "Professor Titular da COPPE/UFRJ com atuação internacional."
+              ],
+              "search_keywords": [
+                "edmundo_souza_e_silva",
+                "computação",
+                "redes_multimídia",
+                "modelagem",
+                "análise_de_sistemas",
+                "queueing_networks",
+                "distributed_systems",
+                "COPPE_UFRJ",
+                "CNPq",
+                "SBRC",
+                "IFIP",
+                "ACM",
+                "IEEE"
+              ],
+              "dashboard_tags": [
+                "ufrj",
+                "coppe",
+                "doutorado_1984",
+                "multimedia_networks",
+                "international_experience",
+                "leadership",
+                "program_committees",
+                "editorial_boards"
+              ],
+              "qa_context": "Edmundo Albuquerque de Souza e Silva, UFRJ; Engenheiro Elétrico formado pela PUC-RJ (1975); doutorado em Ciência da Computação pela UCLA (1984); professor titular COPPE/UFRJ; interesses: redes multimídia, modelagem e análise de sistemas; experiência internacional em IBM, UCLA, USC, Politecnico di Torino, HKU, INRIA/IRISA, UMass Amherst; atuou em comitês técnicos de programas e liderança de conferências."
+            },
+            {
+              "name": "José Palazzo Moreira de Oliveira",
+              "institution": "UFRGS",
+              "scholarship_level": "PQ-SR",
+              "lattes_url": "http://lattes.cnpq.br/5558354805733623",
+              "institution_state_uf": "RS",
+              "institution_region": "Sul",
+              "scholarship_category": "unknown",
+              "sex_inferred": "male",
+              "main_research_area": "databases",
+              "secondary_research_areas": [
+                "ontology",
+                "conceptual_modeling",
+                "distance_education",
+                "databases"
+              ],
+              "research_topics": [
+                "ontology",
+                "conceptual_modeling",
+                "distance_education",
+                "databases",
+                "information_systems",
+                "web_systems"
+              ],
+              "methods_and_techniques": [
+                "ontology",
+                "conceptual_modeling",
+                "database_design",
+                "information_systems",
+                "web_technologies",
+                "e_learning"
+              ],
+              "application_domains": [],
+              "profile_summary_short": "Professor Titular da UFRGS com atuação em bancos de dados, ontologia e modelagem conceitual.",
+              "profile_summary_bullets": [
+                "Atual professor titular no Instituto de Informática da UFRGS; orienta mestrado e doutorado.",
+                "Experiência em bancos de dados, ontologia, modelagem conceitual, sistemas de informação e Web.",
+                "Coordenador de programas de pós-graduação; atua em comissões de CNPq e FAPERGS.",
+                "Pesquisador sênior; doutorado em Informática (Grenoble, 1984)."
+              ],
+              "search_keywords": [
+                "ontologia",
+                "modelagem_conceitual",
+                "distance_education",
+                "banco_de_dados",
+                "sistemas_de_informação",
+                "web",
+                "adaptweb",
+                "ufrgs",
+                "grenoble",
+                "frança",
+                "engenharia_eletrica",
+                "ciência_da_computação"
+              ],
+              "dashboard_tags": [
+                "professor_titular",
+                "ufrgs",
+                "informatica",
+                "ontologia",
+                "banco_de_dados",
+                "sistemas_informacao",
+                "web",
+                "ensino_a_distancia",
+                "ppgc",
+                "sbc"
+              ],
+              "qa_context": "Perguntas sobre José Palazzo Moreira de Oliveira: UFRGS, Professor Titular, doutorado 1984, áreas: bancos de dados, ontologia, modelagem conceitual; pesquisa sênior."
+            },
+            {
+              "name": "Julio Cesar Sampaio do Prado Leite",
+              "institution": "UFBA",
+              "scholarship_level": "PQ-SR",
+              "lattes_url": "http://lattes.cnpq.br/6871006250321522",
+              "institution_state_uf": "BA",
+              "institution_region": "Nordeste",
+              "scholarship_category": "unknown",
+              "sex_inferred": "male",
+              "main_research_area": "software_engineering",
+              "secondary_research_areas": [
+                "requirements_engineering",
+                "software_reuse"
+              ],
+              "research_topics": [
+                "requirements_elicitation",
+                "software_requirements_engineering",
+                "software_reuse"
+              ],
+              "methods_and_techniques": [
+                "requirements_elicitation",
+                "requirements_engineering",
+                "software_reuse",
+                "leading_research_community"
+              ],
+              "application_domains": [],
+              "profile_summary_short": "Engenheiro de software e pesquisador sênior, com ênfase em Engenharia de Requisitos e reutilização de software.",
+              "profile_summary_bullets": [
+                "Membro fundador da SBC e IEEE Lifetime Member",
+                "Pioneiro em Engenharia de Requisitos; editor e organizador de conferências",
+                "Atua como professor visitante e pesquisador sênior com atuação internacional",
+                "Autor/coautor de livros sobre engenharia de software"
+              ],
+              "search_keywords": [
+                "engenharia_de_requisitos",
+                "software_requirements_engineering",
+                "software_reuse",
+                "lifelong_learning",
+                "visitante_international",
+                "editorial_experience",
+                "IEEE",
+                "SBC",
+                "requisitos_elicitation",
+                "icsr",
+                "re-13"
+              ],
+              "dashboard_tags": [
+                "engineering",
+                "senior_professor",
+                "international_experience",
+                "editorial",
+                "requisitos"
+              ],
+              "qa_context": "Perfil de bolsista CNPq de Computação na UFBA; foco em Engenharia de Requisitos; atuação internacional e editorial."
+            },
+            {
+              "name": "Paulo Roberto Freire Cunha",
+              "institution": "UFPE",
+              "scholarship_level": "PQ-SR",
+              "lattes_url": "http://lattes.cnpq.br/2026295360734357",
+              "institution_state_uf": "PE",
+              "institution_region": "Nordeste",
+              "scholarship_category": "unknown",
+              "sex_inferred": "male",
+              "main_research_area": "computer_science",
+              "secondary_research_areas": [
+                "computer_systems",
+                "software_engineering",
+                "computer_networks",
+                "distributed_systems"
+              ],
+              "research_topics": [
+                "systems_computing",
+                "software_engineering",
+                "computer_networks",
+                "distributed_systems"
+              ],
+              "methods_and_techniques": [],
+              "application_domains": [],
+              "profile_summary_short": "Professor titular com atuação em computação, software, redes e sistemas distribuídos.",
+              "profile_summary_bullets": [
+                "Graduação em Engenharia Elétrica (UFPE, 1974); Mestrado em Ciência da Computação (UFPE, 1977); Doutorado em Ciência da Computação (Waterloo, 1981).",
+                "Pós-Doutorado no INRIA, França (1990-1991).",
+                "Professor Titular da UFPE desde 1992; consultor de CNPq, CAPES e CPqD; liderança SBC.",
+                "Pró-Reitor de P&D (1995-2003), Vice-Reitor Substituto (2010-2014), Diretor do Centro de Informática (2005-2013)."
+              ],
+              "search_keywords": [
+                "paulo_cunha",
+                "paulo_freire_cunha",
+                "ufpe",
+                "computação",
+                "engenharia_de_software",
+                "redes_de_computadores",
+                "sistemas_distribuidos",
+                "sbc",
+                "cnpq",
+                "capes",
+                "cpqd",
+                "lncc",
+                "cesar"
+              ],
+              "dashboard_tags": [
+                "ufpe",
+                "computacao",
+                "senior",
+                "professor_titular",
+                "cnpq",
+                "sbc",
+                "cpqd",
+                "lncc",
+                "cesar"
+              ],
+              "qa_context": "Perfil de bolsista CNPq PQ-SR; doutor em computação; atuação docente, gestão e SBC; ligações internacionais."
+            },
+            {
+              "name": "Rafael Dueire Lins",
+              "institution": "UFRPE",
+              "scholarship_level": "PQ-SR",
+              "lattes_url": "http://lattes.cnpq.br/7601016626256808",
+              "institution_state_uf": "PE",
+              "institution_region": "Nordeste",
+              "scholarship_category": "unknown",
+              "sex_inferred": "male",
+              "main_research_area": "computer_engineering",
+              "secondary_research_areas": [
+                "telecommunications",
+                "digital_libraries",
+                "document_engineering",
+                "pattern_recognition"
+              ],
+              "research_topics": [
+                "lambda_calculus_with_explicit_substitutions",
+                "digital_libraries",
+                "document_interference_in_printed_documents",
+                "graphics_recognition",
+                "pattern_recognition"
+              ],
+              "methods_and_techniques": [
+                "lambda_calculus_with_explicit_substitutions",
+                "digital_library_construction",
+                "document_interference_analysis",
+                "garbage_collection_algorithms",
+                "graphics_recognition"
+              ],
+              "application_domains": [
+                "computing",
+                "engineering",
+                "telecommunications",
+                "digital_libraries"
+              ],
+              "profile_summary_short": "Engenheiro Eletrônico e Professor Titular com atuação ampla em computação e telecomunicações.",
+              "profile_summary_bullets": [
+                "Engenheiro Eletrônico pela UFPE (1982); PhD em Computing (Kent, 1986).",
+                "Professor Titular na UFPE; Professor Adjunto na UFRPE.",
+                "Autor de 10 livros, incluindo Garbage Collection (1996).",
+                "Pioneiro em engenharia de documentos e bibliotecas digitais na América Latina."
+              ],
+              "search_keywords": [
+                "rafaeldueire_lins",
+                "computacao",
+                "engenharia_da_computacao",
+                "bibliotecas_digitais",
+                "engenharia_de_documentos",
+                "lambda_calculus_explicitas_substituicoes",
+                "garbage_collection",
+                "graphics_recognition",
+                "iapr",
+                "universidade_federal_de_pernambuco",
+                "ufpe",
+                "kent_university"
+              ],
+              "dashboard_tags": [
+                "computacao",
+                "engenharia_da_computacao",
+                "bibliotecas_digitais",
+                "pesquisa",
+                "educacao_superior",
+                "ufpe",
+                "lattes"
+              ],
+              "qa_context": "Perguntas sobre bolsistas PQ-SR com doutorado em Computação na Kent (1986), UFPE, professor titular; foco em computação, bibliotecas digitais e reconhecimento gráfico."
+            },
+            {
+              "name": "Valmir Carneiro Barbosa",
+              "institution": "UERJ",
+              "scholarship_level": "PQ-SR",
+              "lattes_url": "http://lattes.cnpq.br/4602221579308599",
+              "institution_state_uf": "RJ",
+              "institution_region": "Sudeste",
+              "scholarship_category": "unknown",
+              "sex_inferred": "male",
+              "main_research_area": "computer_science",
+              "secondary_research_areas": [
+                "distributed_graph_algorithms",
+                "machine_learning",
+                "artificial_intelligence",
+                "bioinformatics"
+              ],
+              "research_topics": [
+                "distributed_graph_algorithms",
+                "machine_learning",
+                "artificial_intelligence",
+                "cellular_automata",
+                "bioinformatics",
+                "networks_science",
+                "complex_systems",
+                "information_integration"
+              ],
+              "methods_and_techniques": [
+                "distributed_algorithms",
+                "machine_learning",
+                "artificial_intelligence",
+                "cellular_automata",
+                "bioinformatics",
+                "networks_science",
+                "complex_systems",
+                "heuristic_optimization",
+                "information_integration",
+                "communication_networks"
+              ],
+              "application_domains": [],
+              "profile_summary_short": "Bolsista SR em Ciência da Computação, doutor pela UCLA, com atuação em grafos distribuídos, ML/IA e redes.",
+              "profile_summary_bullets": [
+                "Doutorado em Ciência da Computação pela UCLA (1986).",
+                "Interesses: grafos distribuídos, ML/IA, redes, vida artificial.",
+                "Bolsista de Produtividade em Pesquisa CNPq - Nível SR.",
+                "Professor titular na UERJ/COPPE; editor de periódicos."
+              ],
+              "search_keywords": [
+                "valmir_carneiro_barbosa",
+                "valmir_barbosa",
+                "cnpq",
+                "uerj",
+                "ciência_da_computação",
+                "computação_distribuída",
+                "distributed_graph_algorithms",
+                "machine_learning",
+                "artificial_intelligence",
+                "cellular_automata",
+                "bioinformatics",
+                "networks_science",
+                "complex_systems",
+                "information_integration"
+              ],
+              "dashboard_tags": [
+                "cnpq_sr",
+                "uerj",
+                "professor",
+                "editorial_experience",
+                "bioinformatics",
+                "distributed_systems",
+                "machine_learning",
+                "cellular_automata",
+                "networks"
+              ],
+              "qa_context": "Valmir Carneiro Barbosa, UERJ, Bolsista SR do CNPq, Doutor em Ciência da Computação pela UCLA (1986). Principais interesses: algoritmos distribuídos em grafos, aprendizado de máquina e IA, autômatos celulares, bioinformática, redes e sistemas complexos. Atua na COPPE/UERJ; participa de comitês editoriais e possui experiência em gestão acadêmica."
+            }
+          ]
+        },
+        "tool_results": [
+          {
+            "index": 1,
+            "question": "Liste os PQ-SR",
+            "plan": {
+              "tool": "structured_query",
+              "question": "Liste os PQ-SR",
+              "intent": "list",
+              "reason": "precisa listar todos os bolsistas com nível PQ-SR no dataset",
+              "filters": [
+                {
+                  "field": "scholarship_level",
+                  "op": "equals",
+                  "value": "PQ-SR"
+                }
+              ],
+              "group_by": null,
+              "order_by": null,
+              "limit": 10,
+              "answer_hint": "listar os nomes com instituição e nível de bolsa, validando que todos são PQ-SR"
+            },
+            "result": {
+              "tool": "structured_query",
+              "intent": "list",
+              "total_profiles": 480,
+              "matched_count": 6,
+              "matched_count_is_broad_candidate_count": false,
+              "validation_required": false,
+              "validation_reason": null,
+              "topic_filters": [],
+              "filters": [
+                {
+                  "field": "scholarship_level",
+                  "op": "equals",
+                  "value": "PQ-SR"
+                }
+              ],
+              "group_by": null,
+              "examples": [
+                {
+                  "name": "Edmundo Albuquerque de Souza e Silva",
+                  "institution": "UFRJ",
+                  "scholarship_level": "PQ-SR",
+                  "lattes_url": "http://lattes.cnpq.br/9358511568098561",
+                  "institution_state_uf": "RJ",
+                  "institution_region": "Sudeste",
+                  "scholarship_category": "unknown",
+                  "sex_inferred": "male",
+                  "main_research_area": "networks_and_multimedia",
+                  "secondary_research_areas": [
+                    "multimedia_networks",
+                    "distributed_systems",
+                    "system_modeling",
+                    "analysis_of_computing_systems"
+                  ],
+                  "research_topics": [
+                    "networks",
+                    "multimedia_networks",
+                    "queueing_networks",
+                    "distributed_systems"
+                  ],
+                  "methods_and_techniques": [
+                    "queueing_theory",
+                    "modeling",
+                    "performance_analysis",
+                    "network_design"
+                  ],
+                  "application_domains": [
+                    "education",
+                    "internet_infrastructure",
+                    "research_networks"
+                  ],
+                  "profile_summary_short": "Engenheiro Elétrico com doutorado em Computação pela UCLA (1984); professor titular da COPPE/UFRJ, com atuação internacional e liderança em comitês.",
+                  "profile_summary_bullets": [
+                    "Engenheiro Elétrico (Eletrônica) formado pela PUC-RJ (1975).",
+                    "Mestrado em Engenharia Elétrica pela PUC-RJ (1976).",
+                    "Doutorado em Ciência da Computação pela UCLA (1984).",
+                    "Professor Titular da COPPE/UFRJ com atuação internacional."
+                  ],
+                  "search_keywords": [
+                    "edmundo_souza_e_silva",
+                    "computação",
+                    "redes_multimídia",
+                    "modelagem",
+                    "análise_de_sistemas",
+                    "queueing_networks",
+                    "distributed_systems",
+                    "COPPE_UFRJ",
+                    "CNPq",
+                    "SBRC",
+                    "IFIP",
+                    "ACM",
+                    "IEEE"
+                  ],
+                  "dashboard_tags": [
+                    "ufrj",
+                    "coppe",
+                    "doutorado_1984",
+                    "multimedia_networks",
+                    "international_experience",
+                    "leadership",
+                    "program_committees",
+                    "editorial_boards"
+                  ],
+                  "qa_context": "Edmundo Albuquerque de Souza e Silva, UFRJ; Engenheiro Elétrico formado pela PUC-RJ (1975); doutorado em Ciência da Computação pela UCLA (1984); professor titular COPPE/UFRJ; interesses: redes multimídia, modelagem e análise de sistemas; experiência internacional em IBM, UCLA, USC, Politecnico di Torino, HKU, INRIA/IRISA, UMass Amherst; atuou em comitês técnicos de programas e liderança de conferências."
+                },
+                {
+                  "name": "José Palazzo Moreira de Oliveira",
+                  "institution": "UFRGS",
+                  "scholarship_level": "PQ-SR",
+                  "lattes_url": "http://lattes.cnpq.br/5558354805733623",
+                  "institution_state_uf": "RS",
+                  "institution_region": "Sul",
+                  "scholarship_category": "unknown",
+                  "sex_inferred": "male",
+                  "main_research_area": "databases",
+                  "secondary_research_areas": [
+                    "ontology",
+                    "conceptual_modeling",
+                    "distance_education",
+                    "databases"
+                  ],
+                  "research_topics": [
+                    "ontology",
+                    "conceptual_modeling",
+                    "distance_education",
+                    "databases",
+                    "information_systems",
+                    "web_systems"
+                  ],
+                  "methods_and_techniques": [
+                    "ontology",
+                    "conceptual_modeling",
+                    "database_design",
+                    "information_systems",
+                    "web_technologies",
+                    "e_learning"
+                  ],
+                  "application_domains": [],
+                  "profile_summary_short": "Professor Titular da UFRGS com atuação em bancos de dados, ontologia e modelagem conceitual.",
+                  "profile_summary_bullets": [
+                    "Atual professor titular no Instituto de Informática da UFRGS; orienta mestrado e doutorado.",
+                    "Experiência em bancos de dados, ontologia, modelagem conceitual, sistemas de informação e Web.",
+                    "Coordenador de programas de pós-graduação; atua em comissões de CNPq e FAPERGS.",
+                    "Pesquisador sênior; doutorado em Informática (Grenoble, 1984)."
+                  ],
+                  "search_keywords": [
+                    "ontologia",
+                    "modelagem_conceitual",
+                    "distance_education",
+                    "banco_de_dados",
+                    "sistemas_de_informação",
+                    "web",
+                    "adaptweb",
+                    "ufrgs",
+                    "grenoble",
+                    "frança",
+                    "engenharia_eletrica",
+                    "ciência_da_computação"
+                  ],
+                  "dashboard_tags": [
+                    "professor_titular",
+                    "ufrgs",
+                    "informatica",
+                    "ontologia",
+                    "banco_de_dados",
+                    "sistemas_informacao",
+                    "web",
+                    "ensino_a_distancia",
+                    "ppgc",
+                    "sbc"
+                  ],
+                  "qa_context": "Perguntas sobre José Palazzo Moreira de Oliveira: UFRGS, Professor Titular, doutorado 1984, áreas: bancos de dados, ontologia, modelagem conceitual; pesquisa sênior."
+                },
+                {
+                  "name": "Julio Cesar Sampaio do Prado Leite",
+                  "institution": "UFBA",
+                  "scholarship_level": "PQ-SR",
+                  "lattes_url": "http://lattes.cnpq.br/6871006250321522",
+                  "institution_state_uf": "BA",
+                  "institution_region": "Nordeste",
+                  "scholarship_category": "unknown",
+                  "sex_inferred": "male",
+                  "main_research_area": "software_engineering",
+                  "secondary_research_areas": [
+                    "requirements_engineering",
+                    "software_reuse"
+                  ],
+                  "research_topics": [
+                    "requirements_elicitation",
+                    "software_requirements_engineering",
+                    "software_reuse"
+                  ],
+                  "methods_and_techniques": [
+                    "requirements_elicitation",
+                    "requirements_engineering",
+                    "software_reuse",
+                    "leading_research_community"
+                  ],
+                  "application_domains": [],
+                  "profile_summary_short": "Engenheiro de software e pesquisador sênior, com ênfase em Engenharia de Requisitos e reutilização de software.",
+                  "profile_summary_bullets": [
+                    "Membro fundador da SBC e IEEE Lifetime Member",
+                    "Pioneiro em Engenharia de Requisitos; editor e organizador de conferências",
+                    "Atua como professor visitante e pesquisador sênior com atuação internacional",
+                    "Autor/coautor de livros sobre engenharia de software"
+                  ],
+                  "search_keywords": [
+                    "engenharia_de_requisitos",
+                    "software_requirements_engineering",
+                    "software_reuse",
+                    "lifelong_learning",
+                    "visitante_international",
+                    "editorial_experience",
+                    "IEEE",
+                    "SBC",
+                    "requisitos_elicitation",
+                    "icsr",
+                    "re-13"
+                  ],
+                  "dashboard_tags": [
+                    "engineering",
+                    "senior_professor",
+                    "international_experience",
+                    "editorial",
+                    "requisitos"
+                  ],
+                  "qa_context": "Perfil de bolsista CNPq de Computação na UFBA; foco em Engenharia de Requisitos; atuação internacional e editorial."
+                },
+                {
+                  "name": "Paulo Roberto Freire Cunha",
+                  "institution": "UFPE",
+                  "scholarship_level": "PQ-SR",
+                  "lattes_url": "http://lattes.cnpq.br/2026295360734357",
+                  "institution_state_uf": "PE",
+                  "institution_region": "Nordeste",
+                  "scholarship_category": "unknown",
+                  "sex_inferred": "male",
+                  "main_research_area": "computer_science",
+                  "secondary_research_areas": [
+                    "computer_systems",
+                    "software_engineering",
+                    "computer_networks",
+                    "distributed_systems"
+                  ],
+                  "research_topics": [
+                    "systems_computing",
+                    "software_engineering",
+                    "computer_networks",
+                    "distributed_systems"
+                  ],
+                  "methods_and_techniques": [],
+                  "application_domains": [],
+                  "profile_summary_short": "Professor titular com atuação em computação, software, redes e sistemas distribuídos.",
+                  "profile_summary_bullets": [
+                    "Graduação em Engenharia Elétrica (UFPE, 1974); Mestrado em Ciência da Computação (UFPE, 1977); Doutorado em Ciência da Computação (Waterloo, 1981).",
+                    "Pós-Doutorado no INRIA, França (1990-1991).",
+                    "Professor Titular da UFPE desde 1992; consultor de CNPq, CAPES e CPqD; liderança SBC.",
+                    "Pró-Reitor de P&D (1995-2003), Vice-Reitor Substituto (2010-2014), Diretor do Centro de Informática (2005-2013)."
+                  ],
+                  "search_keywords": [
+                    "paulo_cunha",
+                    "paulo_freire_cunha",
+                    "ufpe",
+                    "computação",
+                    "engenharia_de_software",
+                    "redes_de_computadores",
+                    "sistemas_distribuidos",
+                    "sbc",
+                    "cnpq",
+                    "capes",
+                    "cpqd",
+                    "lncc",
+                    "cesar"
+                  ],
+                  "dashboard_tags": [
+                    "ufpe",
+                    "computacao",
+                    "senior",
+                    "professor_titular",
+                    "cnpq",
+                    "sbc",
+                    "cpqd",
+                    "lncc",
+                    "cesar"
+                  ],
+                  "qa_context": "Perfil de bolsista CNPq PQ-SR; doutor em computação; atuação docente, gestão e SBC; ligações internacionais."
+                },
+                {
+                  "name": "Rafael Dueire Lins",
+                  "institution": "UFRPE",
+                  "scholarship_level": "PQ-SR",
+                  "lattes_url": "http://lattes.cnpq.br/7601016626256808",
+                  "institution_state_uf": "PE",
+                  "institution_region": "Nordeste",
+                  "scholarship_category": "unknown",
+                  "sex_inferred": "male",
+                  "main_research_area": "computer_engineering",
+                  "secondary_research_areas": [
+                    "telecommunications",
+                    "digital_libraries",
+                    "document_engineering",
+                    "pattern_recognition"
+                  ],
+                  "research_topics": [
+                    "lambda_calculus_with_explicit_substitutions",
+                    "digital_libraries",
+                    "document_interference_in_printed_documents",
+                    "graphics_recognition",
+                    "pattern_recognition"
+                  ],
+                  "methods_and_techniques": [
+                    "lambda_calculus_with_explicit_substitutions",
+                    "digital_library_construction",
+                    "document_interference_analysis",
+                    "garbage_collection_algorithms",
+                    "graphics_recognition"
+                  ],
+                  "application_domains": [
+                    "computing",
+                    "engineering",
+                    "telecommunications",
+                    "digital_libraries"
+                  ],
+                  "profile_summary_short": "Engenheiro Eletrônico e Professor Titular com atuação ampla em computação e telecomunicações.",
+                  "profile_summary_bullets": [
+                    "Engenheiro Eletrônico pela UFPE (1982); PhD em Computing (Kent, 1986).",
+                    "Professor Titular na UFPE; Professor Adjunto na UFRPE.",
+                    "Autor de 10 livros, incluindo Garbage Collection (1996).",
+                    "Pioneiro em engenharia de documentos e bibliotecas digitais na América Latina."
+                  ],
+                  "search_keywords": [
+                    "rafaeldueire_lins",
+                    "computacao",
+                    "engenharia_da_computacao",
+                    "bibliotecas_digitais",
+                    "engenharia_de_documentos",
+                    "lambda_calculus_explicitas_substituicoes",
+                    "garbage_collection",
+                    "graphics_recognition",
+                    "iapr",
+                    "universidade_federal_de_pernambuco",
+                    "ufpe",
+                    "kent_university"
+                  ],
+                  "dashboard_tags": [
+                    "computacao",
+                    "engenharia_da_computacao",
+                    "bibliotecas_digitais",
+                    "pesquisa",
+                    "educacao_superior",
+                    "ufpe",
+                    "lattes"
+                  ],
+                  "qa_context": "Perguntas sobre bolsistas PQ-SR com doutorado em Computação na Kent (1986), UFPE, professor titular; foco em computação, bibliotecas digitais e reconhecimento gráfico."
+                },
+                {
+                  "name": "Valmir Carneiro Barbosa",
+                  "institution": "UERJ",
+                  "scholarship_level": "PQ-SR",
+                  "lattes_url": "http://lattes.cnpq.br/4602221579308599",
+                  "institution_state_uf": "RJ",
+                  "institution_region": "Sudeste",
+                  "scholarship_category": "unknown",
+                  "sex_inferred": "male",
+                  "main_research_area": "computer_science",
+                  "secondary_research_areas": [
+                    "distributed_graph_algorithms",
+                    "machine_learning",
+                    "artificial_intelligence",
+                    "bioinformatics"
+                  ],
+                  "research_topics": [
+                    "distributed_graph_algorithms",
+                    "machine_learning",
+                    "artificial_intelligence",
+                    "cellular_automata",
+                    "bioinformatics",
+                    "networks_science",
+                    "complex_systems",
+                    "information_integration"
+                  ],
+                  "methods_and_techniques": [
+                    "distributed_algorithms",
+                    "machine_learning",
+                    "artificial_intelligence",
+                    "cellular_automata",
+                    "bioinformatics",
+                    "networks_science",
+                    "complex_systems",
+                    "heuristic_optimization",
+                    "information_integration",
+                    "communication_networks"
+                  ],
+                  "application_domains": [],
+                  "profile_summary_short": "Bolsista SR em Ciência da Computação, doutor pela UCLA, com atuação em grafos distribuídos, ML/IA e redes.",
+                  "profile_summary_bullets": [
+                    "Doutorado em Ciência da Computação pela UCLA (1986).",
+                    "Interesses: grafos distribuídos, ML/IA, redes, vida artificial.",
+                    "Bolsista de Produtividade em Pesquisa CNPq - Nível SR.",
+                    "Professor titular na UERJ/COPPE; editor de periódicos."
+                  ],
+                  "search_keywords": [
+                    "valmir_carneiro_barbosa",
+                    "valmir_barbosa",
+                    "cnpq",
+                    "uerj",
+                    "ciência_da_computação",
+                    "computação_distribuída",
+                    "distributed_graph_algorithms",
+                    "machine_learning",
+                    "artificial_intelligence",
+                    "cellular_automata",
+                    "bioinformatics",
+                    "networks_science",
+                    "complex_systems",
+                    "information_integration"
+                  ],
+                  "dashboard_tags": [
+                    "cnpq_sr",
+                    "uerj",
+                    "professor",
+                    "editorial_experience",
+                    "bioinformatics",
+                    "distributed_systems",
+                    "machine_learning",
+                    "cellular_automata",
+                    "networks"
+                  ],
+                  "qa_context": "Valmir Carneiro Barbosa, UERJ, Bolsista SR do CNPq, Doutor em Ciência da Computação pela UCLA (1986). Principais interesses: algoritmos distribuídos em grafos, aprendizado de máquina e IA, autômatos celulares, bioinformática, redes e sistemas complexos. Atua na COPPE/UERJ; participa de comitês editoriais e possui experiência em gestão acadêmica."
+                }
+              ]
+            }
+          }
+        ],
+        "file_search_plans": [],
+        "context_mode": "structured_query",
+        "vector_store_id": "vs_6a18a341349c8191a796dad6bb55d3f0",
+        "max_num_results": 0,
+        "response_id": "resp_0d067048b829ceb6006a22d13020d0819d9d30059cbd4832a4",
         "annotations": []
       }
     }

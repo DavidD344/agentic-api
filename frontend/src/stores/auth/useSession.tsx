@@ -3,7 +3,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 
 import { create } from "zustand";
-import { persist } from "zustand/middleware";
+import { createJSONStorage, persist, StateStorage } from "zustand/middleware";
 import { AxiosError } from "axios";
 import { jwtDecode } from "jwt-decode";
 import { mainApi } from "../../api-queries/mainApi";
@@ -32,6 +32,12 @@ interface State {
   getUserRole: () => string;
   checkTokenIsValid: () => boolean;
 }
+
+const noopStorage: StateStorage = {
+  getItem: () => null,
+  setItem: () => undefined,
+  removeItem: () => undefined,
+};
 
 export const useSession = create<State>()(
   persist(
@@ -176,6 +182,9 @@ export const useSession = create<State>()(
         userData: state.userData,
       }),
       name: "session",
+      storage: createJSONStorage(() =>
+        typeof window !== "undefined" ? window.localStorage : noopStorage
+      ),
     }
   )
 );

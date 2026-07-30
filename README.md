@@ -4,6 +4,22 @@ Sistema para coletar, enriquecer, visualizar e consultar dados de bolsistas PQ d
 
 O projeto combina uma API FastAPI, uma interface Next/React e um fluxo com agentes de LLM para transformar dados públicos em dashboard, busca de pesquisadores e chat analítico.
 
+## Arquitetura Agentic
+
+### Coleta e enriquecimento dos dados
+
+[![Pipeline de coleta e enriquecimento](pipeline-agentic-1.png)](pipeline-agentic-1.pdf)
+
+### Consulta, backend e frontend
+
+[![Pipeline de consulta e visualização](pipeline-agentic-2.png)](pipeline-agentic-2.pdf)
+
+Clique nos diagramas para abrir as versões em PDF.
+
+## Relatório Do Projeto
+
+- [Artigo e apresentação do trabalho](Report_AgenticAI_ESA-3.pdf)
+
 ## O Que O Sistema Faz
 
 - coleta a lista inicial de bolsistas PQ do CNPq;
@@ -26,3 +42,4 @@ O projeto combina uma API FastAPI, uma interface Next/React e um fluxo com agent
 - [Documentação completa antiga](docs/README_COMPLETO.md)
 - [Índice da documentação técnica](docs/README.md)
 - [ADRs](ADR/)
+
